@@ -1,5 +1,7 @@
 # The 10-Point Checklist → FMP Endpoints
 
+**Recommended plan: FMP Premium** ($49/mo billed annually). Starter only includes *annual* fundamentals and ratios, but items 3-6 below need quarterly data to show a trend rather than a single once-a-year number — Premium's "Full Fundamentals and Ratios" is what unlocks the `period=quarter` parameter these calls rely on. Premium's 750 calls/min is also comfortably enough for a ~150-ticker session; the rate limit isn't the reason to go higher. The one gap Premium doesn't close is institutional ownership (item 9 below) — see that section for how the skill works around it rather than needing Ultimate.
+
 FMP has been migrating endpoints from `/api/v3/...` to a flatter `/stable/...` namespace. Which one works depends on the user's plan/key. Try `/stable/` first; if it 404s, fall back to the `/api/v3/` path listed alongside it. All calls take `apikey={FMP_API_KEY}` as a query param.
 
 For each item: pull it, and if the field is genuinely missing/null for a ticker (not just "I didn't check"), fall back to the WebSearch query shown and say in the output that this item came from a web search rather than FMP.
@@ -44,10 +46,16 @@ FMP doesn't have a direct RS-rating endpoint. Approximate it: pull the stock's t
 **Fields:** `priceEarningsRatio` (or `peRatio`), `priceToSalesRatio`, `evToEBITDA`. Valuation only means something in context — compare against the ticker's own recent history if you can pull a few periods, or against sector peers already in the day's universe, rather than judging the multiple in isolation.
 **WebSearch fallback:** `"{TICKER} PE ratio valuation vs sector average"`
 
-## 9. Institutional Ownership
+## 9. Institutional Ownership — plan gap, treat as a spot-check not a full scan
 **Endpoint:** `/stable/institutional-ownership/symbol-ownership?symbol={T}` (or `/api/v3/institutional-ownership/symbol-ownership?symbol={T}`)
 **Fields:** `ownershipPercent`, and the change in `investorsHolding` / `numberOf13Fshares` period over period if the endpoint returns a history — rising institutional ownership is a supportive signal, sharp reductions are worth a flag.
-**WebSearch fallback:** `"{TICKER} institutional ownership percentage recent 13F changes"`
+
+On the FMP Starter/Premium tiers, ownership/holdings data isn't listed as an included feature (it appears to sit under the Ultimate tier's "holdings" bucket instead) — try the endpoint first each run since FMP's plan boundaries do shift, but expect it to come back empty/unauthorized on Premium. **Don't fall back to WebSearch for this on every ticker in the universe** — at 150+ names that's 150+ searches just for one checklist item, which is slow and low-value for names nobody cares about. Instead:
+- **Run the full 10-point checklist on all 8 other API-backed items as normal.**
+- **Only spot-check institutional ownership via WebSearch for names that already stood out** on the other items — multi-red-flag names, notable movers, and watchlist entries from the Roll-Up. For everything else, mark this item `n/a` rather than guessing or skipping the row silently.
+- If the user later upgrades to a tier that includes the endpoint, drop this restriction and go back to checking it on every name like the other 9 items.
+
+**WebSearch fallback (spot-check only, per above):** `"{TICKER} institutional ownership percentage recent 13F changes"`
 
 ## 10. Becoming More or Less "Needed" (moat / structural relevance)
 This one is qualitative and FMP alone won't answer it — treat items 3-9 as supporting evidence (durable revenue growth + stable/expanding margins + growing institutional interest tends to correlate with a strengthening competitive position) but synthesize the actual judgment from:
