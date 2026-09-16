@@ -45,7 +45,19 @@ A useful default heuristic: count the ⚠️ red flags per name.
 
 Use the same logic in reverse for "names improving" — look for names moving from red/neutral to green on 2+ items versus their own recent trend, not just names that already look good.
 
-## Step 5: Assemble the briefing
+## Step 5: Load the previous snapshot for comparison
+
+Before writing the briefing, look in `reports/` for the most recent snapshot from the **same session type** (compare 3pm to the last 3pm, not to last night's midnight run — different universes aren't comparable). See `references/reports-and-dashboard.md` for the snapshot file layout and JSON schema.
+
+If one exists, compute:
+- Which tickers flipped a flag (especially green→red or red→green — a flag that got worse is more useful to know than one that's still red)
+- Red-flag-count deltas per name
+- Names that entered or dropped off "multiple red flags," "improving," or "watchlist" since last time
+- For futures: the move since the last matching session, not just today's raw %chg
+
+If there's no prior snapshot of this session type yet (first run), skip this section and say so — don't fabricate a comparison.
+
+## Step 6: Assemble the briefing
 
 Use this structure. Skip the "Stock Universe Scan" section entirely for the 7pm evening futures-only check.
 
@@ -66,6 +78,11 @@ Note cross-listed names once, don't repeat full rows.)
 - **Improving:** ...
 - **Watchlist for next session:** ...
 
+## vs Previous Report
+(from Step 5 — flag flips, red-flag-count deltas, watchlist churn since the
+last same-type session. Omit this section on the first-ever run instead of
+leaving it blank.)
+
 ## Macro / Headlines
 (1-3 lines on major macro headlines relevant to today's session, pulled via
 WebSearch — this is a supplement, not a replacement for the user's own WSJ
@@ -78,3 +95,10 @@ references/universe.md look due for a refresh.)
 ```
 
 Keep the whole thing tight enough to actually read in one sitting — that's the point of consolidating three manual sessions into one briefing.
+
+## Step 7: Save the snapshot and update the dashboard
+
+Two follow-up actions after the briefing text is done — see `references/reports-and-dashboard.md` for the exact mechanics of both:
+
+1. **Save today's snapshot** to `reports/` so the *next* run of this session type has something to compare against (Step 5 depends on this — skipping it breaks comparison for next time).
+2. **Publish/update the dashboard artifact** — a bookmarkable page showing the latest briefing plus recent history. The reference file covers how to find the existing dashboard URL (so you update the same page instead of spawning a new one each run) and what to do on the very first run when no dashboard exists yet.

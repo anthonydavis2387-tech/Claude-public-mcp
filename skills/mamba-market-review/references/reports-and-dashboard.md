@@ -1,0 +1,59 @@
+# Snapshots and the Dashboard
+
+## Snapshot files (for day-over-day comparison)
+
+Save one JSON file per run to `reports/{YYYY-MM-DD}/{session-slug}.json`, where `session-slug` is one of `evening-futures`, `midnight`, or `full-study`. Example path: `reports/2026-09-17/full-study.json`.
+
+Schema:
+
+```json
+{
+  "date": "2026-09-17",
+  "session": "full-study",
+  "generated_at": "2026-09-17T20:03:00Z",
+  "futures": [
+    {"symbol": "ES", "last": 6721.5, "chg_pct": 0.42, "trend_flag": "green"}
+  ],
+  "tickers": [
+    {
+      "symbol": "NVDA",
+      "lists": ["dow30", "nasdaq100", "megacap_leaders", "semiconductor_ai"],
+      "flags": {
+        "trend": "green", "relative_strength": "green", "revenue_growth": "green",
+        "margin_trend": "neutral", "earnings_growth": "green", "free_cash_flow": "green",
+        "debt": "neutral", "valuation": "red", "institutional_ownership": "green", "moat": "green"
+      },
+      "red_flag_count": 1,
+      "notes": "valuation stretched vs 1yr avg P/E"
+    }
+  ],
+  "rollup": {
+    "movers": ["..."],
+    "multi_red_flag": ["..."],
+    "improving": ["..."],
+    "watchlist": ["..."]
+  }
+}
+```
+
+Keep every field machine-readable (the flag values, not prose) so Step 5's comparison logic can diff two snapshots directly instead of re-parsing text. `notes` is the one free-text field — use it for anything that doesn't fit a flag.
+
+To build Step 5's comparison, find the most recent prior file under `reports/*/{same-session-slug}.json` (sort by date, take the last one before today), load both, and diff:
+- `tickers[].flags` — any key that changed value
+- `tickers[].red_flag_count` — delta
+- `rollup.*` — set differences (who's new, who dropped off)
+- `futures[].last` — % change from the prior snapshot's `last` for the same symbol
+
+No pruning logic needed yet — plain files under `reports/` are cheap and the history itself is useful (that's also what feeds the dashboard's recent-history strip below). If this grows unwieldy after months of runs, that's a future cleanup, not something to solve now.
+
+## Dashboard artifact
+
+The dashboard is a Claude Artifact (a published HTML page) that gets **updated in place** after every run rather than re-created, so the user has one stable link. Read the `artifact-design` skill (and `dataviz` if the page includes charts/sparklines) before building or rebuilding this page's HTML — don't freehand the styling.
+
+**Finding the existing dashboard:** check for `reports/.dashboard-url.txt` in this skill's directory.
+- **If it exists:** read the URL from it, then use the Artifact tool's `read` action on that URL to pull the current published page before republishing (the Artifact tool requires having read a page in-session before you can update it — this applies even though a prior run published it, because a fresh scheduled session has no memory of that). Then `publish` again with that same `url` so it updates in place instead of creating a new artifact.
+- **If it doesn't exist (first run ever):** build the page fresh and `publish` it with no `url`. Take the URL the publish call returns and write it to `reports/.dashboard-url.txt`, then make sure that file gets committed so future runs (which may be fresh sessions with no memory of this one) can find it. Tell the user the URL once, the first time — don't repeat it on every subsequent run, since the whole point is that it doesn't change.
+
+**Page content:** the latest briefing (reuse the Step 6 structure, laid out for a screen rather than plain text) plus a compact recent-history strip — e.g. red-flag counts and a couple of headline futures over the last 5-10 sessions of each type, pulled straight from the `reports/` files already on disk rather than recomputing anything. This is meant to answer "how's it trending lately," not to be a full re-derivation of the comparison in Step 5.
+
+Keep the page itself simple: it's a personal daily-glance dashboard, not a product. Resist the urge to add live data-fetching or interactivity to the artifact itself (per artifact-capabilities guidance, that would need a declared runtime capability) — regenerating and republishing static HTML after each run is sufficient and much simpler to keep correct.
