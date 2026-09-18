@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-18",
+  "session": "pipeline-test",
+  "generated_at": "2026-09-18T10:30:00Z",
+  "note": "Not a real evening/midnight/full-study session — a scoped end-to-end validation run (5 futures/crypto + 5 Dow 30 names) to confirm the FMP integration, flag logic, snapshot, and dashboard steps all work before running the skill for real.",
+  "futures": [
+    {"symbol": "ESUSD", "last": 7717.25, "chg_pct": 0.13, "trend_flag": "n/a"},
+    {"symbol": "GCUSD", "last": 4416.5, "chg_pct": 0.38, "trend_flag": "n/a"},
+    {"symbol": "SIUSD", "last": 67.52, "chg_pct": 2.16, "trend_flag": "n/a"},
+    {"symbol": "BTCUSD", "last": 78097.51, "chg_pct": 2.29, "trend_flag": "n/a"},
+    {"symbol": "ETHUSD", "last": 2511.58, "chg_pct": 2.70, "trend_flag": "n/a"}
+  ],
+  "tickers": [
+    {
+      "symbol": "AAPL",
+      "lists": ["dow30", "megacap_leaders"],
+      "flags": {"trend": "green", "relative_strength": "green", "revenue_growth": "red", "margin_trend": "neutral", "earnings_growth": "neutral", "free_cash_flow": "green", "debt": "neutral", "valuation": "red", "institutional_ownership": "n/a", "moat": "n/a"},
+      "red_flag_count": 2,
+      "notes": "Revenue growth negative last 2 quarters (-1.6%, -22.7% YoY); PE 34.8 / EV-EBITDA 108 is rich even for AAPL. FCF and trend still strong."
+    },
+    {
+      "symbol": "MSFT",
+      "lists": ["dow30", "software_cloud", "megacap_leaders"],
+      "flags": {"trend": "green", "relative_strength": "green", "revenue_growth": "green", "margin_trend": "neutral", "earnings_growth": "green", "free_cash_flow": "neutral", "debt": "green", "valuation": "neutral", "institutional_ownership": "n/a", "moat": "n/a"},
+      "red_flag_count": 0,
+      "notes": "Broadly healthy. Operating margin has drifted down ~4pts over 4 quarters even as gross margin ticked up; FCF choppy (one quarter at $5.9B vs $15-26B range) but not concerning yet."
+    },
+    {
+      "symbol": "NVDA",
+      "lists": ["dow30", "nasdaq100", "megacap_leaders", "semiconductor_ai"],
+      "flags": {"trend": "green", "relative_strength": "green", "revenue_growth": "green", "margin_trend": "green", "earnings_growth": "neutral", "free_cash_flow": "green", "debt": "green", "valuation": "neutral", "institutional_ownership": "n/a", "moat": "n/a"},
+      "red_flag_count": 0,
+      "notes": "Cleanest sheet of the test set. EPS growth of only 2.9% looks low relative to 17.9% revenue growth — worth a closer look on margin/share-count effects in a real run, not flagged red on this data alone."
+    },
+    {
+      "symbol": "JPM",
+      "lists": ["dow30"],
+      "flags": {"trend": "neutral", "relative_strength": "green", "revenue_growth": "green", "margin_trend": "green", "earnings_growth": "green", "free_cash_flow": "red", "debt": "red", "valuation": "green", "institutional_ownership": "n/a", "moat": "n/a"},
+      "red_flag_count": 2,
+      "notes": "FCF and D/E read red mechanically (FCF swings -$211B to +$120B quarter to quarter, D/E 3.3x, net-debt/EBITDA 31x) but this is normal for a bank's balance sheet, not a distress signal — checklist items 6-7 are built for non-financials and need sector context for banks. Fundamentals (revenue, margin, EPS growth) all green; valuation cheap at 10.8x PE."
+    },
+    {
+      "symbol": "CAT",
+      "lists": ["dow30"],
+      "flags": {"trend": "neutral", "relative_strength": "red", "revenue_growth": "green", "margin_trend": "green", "earnings_growth": "green", "free_cash_flow": "neutral", "debt": "red", "valuation": "red", "institutional_ownership": "n/a", "moat": "n/a"},
+      "red_flag_count": 3,
+      "notes": "Standout divergence: fundamentals improving fast (revenue +18%, EPS +42%, margins expanding) but price down ~16% over 3 months vs SPY +2.9%, D/E 2.3x, PE 34x. Worth a real look — either the market is pricing in something the trailing financials don't show yet, or this is a name getting cheaper while getting better."
+    }
+  ],
+  "rollup": {
+    "movers": ["CAT (-16.5% 3mo vs SPY +2.9%, despite improving fundamentals)"],
+    "multi_red_flag": ["AAPL (2: revenue growth, valuation)", "JPM (2: FCF, debt — sector-normal for a bank)", "CAT (3: relative strength, debt, valuation)"],
+    "improving": [],
+    "watchlist": ["CAT — fundamentals vs. price divergence worth tracking next session"]
+  },
+  "data_notes": {
+    "institutional_ownership": "Confirmed empty/404 on this FMP plan for all 5 test names — matches the documented plan gap, marked n/a rather than guessed.",
+    "moat": "Skipped for this test run (qualitative WebSearch item, out of scope for an infrastructure test) — will run for real sessions.",
+    "futures": "Only ES/GC/SI/BTC/ETH returned data; NQ/YM/RTY/CL/DX/ZB/ZN and others 402'd as plan-gated. Documented in universe.md.",
+    "endpoint_fixes_applied": [
+      "Batch quote must use /stable/batch-quote?symbols=... not /stable/quote?symbol=a,b,c (the latter silently returns [])",
+      "Debt: debtToEquityRatio lives on /stable/ratios, not key-metrics",
+      "Valuation: field is priceToEarningsRatio, not priceEarningsRatio/peRatio",
+      "analyst-estimates requires a period query param or it 400s"
+    ]
+  }
+}

@@ -14,6 +14,8 @@ Crypto (2): `BTC` `ETH`
 
 This list is stable in composition (the contracts themselves don't change) but symbols/roots can vary slightly by data provider — confirm the exact FMP or broker symbol format for futures before the first real run (e.g. some providers want a continuous-contract suffix like `ESUSD` or `CLUSD`).
 
+**Plan gap, confirmed live:** on the current FMP key, `/stable/quote?symbol={ROOT}USD` only works for a handful of these — `ESUSD` (E-mini S&P), `GCUSD` (gold), `SIUSD` (silver), `BTCUSD`, `ETHUSD` returned data. Every other root tried (`NQUSD`, `YMUSD`, `RTYUSD`, `CLUSD`, `DXUSD`, `ZBUSD`, `ZNUSD`) returned HTTP 402 "Special Endpoint... not available under your current subscription" — the futures/commodities tape beyond a few index/metal/crypto contracts appears to sit behind a higher FMP tier than what the checklist's endpoints need. Until that's confirmed/upgraded, expect most of the 40-symbol futures list to need the WebSearch fallback rather than FMP, and say so in Data Notes rather than silently omitting those rows.
+
 ## Dow 30
 
 `AAPL` `AMGN` `AMZN` `AXP` `BA` `CAT` `CRM` `CSCO` `CVX` `DIS` `GS` `HD` `HON` `IBM` `JNJ` `JPM` `KO` `MCD` `MMM` `MRK` `MSFT` `NKE` `NVDA` `PG` `SHW` `TRV` `UNH` `V` `VZ` `WMT`

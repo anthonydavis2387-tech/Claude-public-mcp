@@ -37,13 +37,13 @@ FMP doesn't have a direct RS-rating endpoint. Approximate it: pull the stock's t
 **WebSearch fallback:** `"{TICKER} free cash flow trend"`
 
 ## 7. Debt
-**Endpoint:** `/stable/key-metrics?symbol={T}&period=quarter` (or `/api/v3/key-metrics/{T}`)
-**Fields:** `debtToEquity`, `netDebtToEBITDA`. Rising leverage alongside flat/falling FCF (item 6) is the combination worth flagging red.
+**Endpoint:** `debtToEquityRatio` comes from `/stable/ratios?symbol={T}&period=quarter` (item #4's endpoint, **not** key-metrics — verified live: key-metrics has no `debtToEquity`/`debtToEquityRatio` field on this plan, it 200s but omits it). `netDebtToEBITDA` comes from `/stable/key-metrics?symbol={T}&period=quarter` as originally documented (verified present there).
+**Fields:** `debtToEquityRatio` (from ratios), `netDebtToEBITDA` (from key-metrics). Rising leverage alongside flat/falling FCF (item 6) is the combination worth flagging red. Note: for banks/financials, D/E and net-debt/EBITDA run structurally high (balance-sheet leverage is the business model) — don't flag a bank red on these two alone without noting the sector context.
 **WebSearch fallback:** `"{TICKER} debt to equity ratio balance sheet"`
 
 ## 8. Valuation
-**Endpoint:** `/stable/ratios?symbol={T}` (same family as #4) or `/stable/key-metrics?symbol={T}`
-**Fields:** `priceEarningsRatio` (or `peRatio`), `priceToSalesRatio`, `evToEBITDA`. Valuation only means something in context — compare against the ticker's own recent history if you can pull a few periods, or against sector peers already in the day's universe, rather than judging the multiple in isolation.
+**Endpoint:** `/stable/ratios?symbol={T}&period=quarter` (same family as #4) or `/stable/key-metrics?symbol={T}&period=quarter`
+**Fields:** `priceToEarningsRatio` (verified live field name on `/stable/ratios` — **not** `priceEarningsRatio` or `peRatio`, both of which are absent from the response), `priceToSalesRatio`, `evToEBITDA` (on key-metrics). Valuation only means something in context — compare against the ticker's own recent history if you can pull a few periods, or against sector peers already in the day's universe, rather than judging the multiple in isolation.
 **WebSearch fallback:** `"{TICKER} PE ratio valuation vs sector average"`
 
 ## 9. Institutional Ownership — plan gap, treat as a spot-check not a full scan
@@ -59,12 +59,13 @@ On the FMP Starter/Premium tiers, ownership/holdings data isn't listed as an inc
 
 ## 10. Becoming More or Less "Needed" (moat / structural relevance)
 This one is qualitative and FMP alone won't answer it — treat items 3-9 as supporting evidence (durable revenue growth + stable/expanding margins + growing institutional interest tends to correlate with a strengthening competitive position) but synthesize the actual judgment from:
-**Endpoint:** `/stable/profile?symbol={T}` (or `/api/v3/profile/{T}`) for the business description as a starting point, plus `/stable/analyst-estimates?symbol={T}` for whether forward estimates are being revised up or down.
+**Endpoint:** `/stable/profile?symbol={T}` (or `/api/v3/profile/{T}`) for the business description as a starting point, plus `/stable/analyst-estimates?symbol={T}&period=quarter` for whether forward estimates are being revised up or down — **the `period` query param is required**, the call 400s with "Invalid or missing query parameter - period" without it (verified live).
 **WebSearch fallback (primary source for this one, not just a fallback):** `"{TICKER} competitive moat market share 2026"` or `"is {COMPANY} losing market share to competitors"` — this is the item most worth spending an actual web search on rather than trying to infer purely from financials, since "more/less needed" is really asking about competitive dynamics that don't show up in a single quarter's numbers.
 
 ## Batching notes
 
 With 150+ tickers in a full 3pm session, avoid one-request-per-metric-per-ticker:
-- FMP's quote and profile endpoints generally accept comma-separated symbols for bulk pulls (`/stable/quote?symbol=AAPL,MSFT,NVDA`) — use that instead of looping.
+- **`/stable/quote?symbol=AAPL,MSFT,NVDA` does NOT batch** — verified live, comma-separated symbols on `/stable/quote` silently return `[]` (200 OK, empty body, no error). Use **`/stable/batch-quote?symbols=AAPL,MSFT,NVDA`** instead (plural `symbols` param, different endpoint name) — verified live, returns all requested quotes in one call.
+- Fundamentals endpoints (`financial-growth`, `ratios`, `cash-flow-statement`, `key-metrics`) take one `symbol` at a time on this plan — no bulk variant found, budget one call per ticker per statement.
 - Cache the benchmark (`SPY`/`QQQ`) historical pull once per session rather than re-fetching it for every ticker's relative-strength calc.
 - If FMP rate-limits partway through a run on a lower-tier plan, keep whatever you got, note in Data Notes which tickers were skipped, and don't burn the rest of the session retrying — a briefing with a few gaps beats one that never finishes.
