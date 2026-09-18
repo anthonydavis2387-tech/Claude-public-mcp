@@ -1,0 +1,4855 @@
+{
+ "date": "2026-09-18",
+ "session": "full-study",
+ "generated_at": "2026-09-18T15:00:00Z",
+ "futures": [
+  {
+   "symbol": "ESUSD",
+   "last": 7717.25,
+   "chg_pct": 0.13,
+   "trend_flag": "green",
+   "source": "fmp"
+  },
+  {
+   "symbol": "NQ",
+   "last": 29567.75,
+   "chg_pct": 0.7,
+   "trend_flag": "green",
+   "source": "websearch"
+  },
+  {
+   "symbol": "YM",
+   "last": 52282.0,
+   "chg_pct": 0.71,
+   "trend_flag": "green",
+   "source": "websearch"
+  },
+  {
+   "symbol": "RTY",
+   "last": 2922.5,
+   "chg_pct": -1.42,
+   "trend_flag": "red",
+   "source": "websearch"
+  },
+  {
+   "symbol": "GCUSD",
+   "last": 4416.5,
+   "chg_pct": 0.38,
+   "trend_flag": "green",
+   "source": "fmp"
+  },
+  {
+   "symbol": "SIUSD",
+   "last": 67.52,
+   "chg_pct": 2.16,
+   "trend_flag": "green",
+   "source": "fmp"
+  },
+  {
+   "symbol": "CL (WTI)",
+   "last": 101.21,
+   "chg_pct": -0.69,
+   "trend_flag": "neutral",
+   "source": "websearch"
+  },
+  {
+   "symbol": "US10Y Yield",
+   "last": 4.95,
+   "chg_pct": null,
+   "trend_flag": "red",
+   "source": "websearch",
+   "note": "yield level not %chg; near 2007 high of 5.04%"
+  },
+  {
+   "symbol": "DXY",
+   "last": 99.958,
+   "chg_pct": -0.02,
+   "trend_flag": "neutral",
+   "source": "websearch"
+  },
+  {
+   "symbol": "BTCUSD",
+   "last": 78097.51,
+   "chg_pct": 2.29,
+   "trend_flag": "green",
+   "source": "fmp"
+  },
+  {
+   "symbol": "ETHUSD",
+   "last": 2511.58,
+   "chg_pct": 2.7,
+   "trend_flag": "green",
+   "source": "fmp"
+  }
+ ],
+ "universe_counts": {
+  "total_unique_tickers": 220,
+  "dow30": 30,
+  "nasdaq100_live": 102,
+  "russell_top100_proxy_unique": 89,
+  "software_cloud": 20,
+  "megacap_leaders": 20,
+  "semiconductor_ai": 20,
+  "red_flag_distribution": {
+   "0": 47,
+   "1": 40,
+   "2": 66,
+   "3": 43,
+   "4": 18,
+   "5": 6
+  }
+ },
+ "tickers": [
+  {
+   "symbol": "AAPL",
+   "lists": [
+    "dow30",
+    "megacap_leaders",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "neutral",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 337,
+   "chg_pct": 1.38082
+  },
+  {
+   "symbol": "ABBV",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 264,
+   "chg_pct": 0.5676
+  },
+  {
+   "symbol": "ABNB",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 165.93,
+   "chg_pct": -0.94323
+  },
+  {
+   "symbol": "ABT",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 5,
+   "price": 102.19,
+   "chg_pct": -0.16608
+  },
+  {
+   "symbol": "ACN",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 190.29,
+   "chg_pct": 0.34275
+  },
+  {
+   "symbol": "ADBE",
+   "lists": [
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 252.67,
+   "chg_pct": 0.86627
+  },
+  {
+   "symbol": "ADI",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 362.65,
+   "chg_pct": 0.16849
+  },
+  {
+   "symbol": "ADP",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 272.24,
+   "chg_pct": -0.34774
+  },
+  {
+   "symbol": "ADSK",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 218.64,
+   "chg_pct": -0.75802
+  },
+  {
+   "symbol": "AEP",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 121.62,
+   "chg_pct": 0.77057
+  },
+  {
+   "symbol": "ALAB",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 293.56,
+   "chg_pct": 9.05714
+  },
+  {
+   "symbol": "ALNY",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 245.51,
+   "chg_pct": 2.56935
+  },
+  {
+   "symbol": "AMAT",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 417.4,
+   "chg_pct": 0.4863
+  },
+  {
+   "symbol": "AMD",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 545.09,
+   "chg_pct": 6.35902
+  },
+  {
+   "symbol": "AMGN",
+   "lists": [
+    "dow30",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 379.78,
+   "chg_pct": 0.91139
+  },
+  {
+   "symbol": "AMZN",
+   "lists": [
+    "dow30",
+    "megacap_leaders",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 251.19,
+   "chg_pct": 2.12636
+  },
+  {
+   "symbol": "ANET",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 199.53,
+   "chg_pct": 1.00739
+  },
+  {
+   "symbol": "APH",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 78.37,
+   "chg_pct": 1.43671
+  },
+  {
+   "symbol": "APP",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 321.6,
+   "chg_pct": -1.51886
+  },
+  {
+   "symbol": "ARM",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 264.9,
+   "chg_pct": 8.57447
+  },
+  {
+   "symbol": "ASML",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 1629.67,
+   "chg_pct": 1.71325
+  },
+  {
+   "symbol": "AVGO",
+   "lists": [
+    "megacap_leaders",
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 347.3,
+   "chg_pct": 2.29448
+  },
+  {
+   "symbol": "AXON",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 453.5,
+   "chg_pct": -3.18518
+  },
+  {
+   "symbol": "AXP",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 311.481,
+   "chg_pct": -0.30375
+  },
+  {
+   "symbol": "AZN",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 166.14,
+   "chg_pct": 1.99521
+  },
+  {
+   "symbol": "BA",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 197,
+   "chg_pct": -2.45593
+  },
+  {
+   "symbol": "BABA",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 108.53,
+   "chg_pct": 1.17461
+  },
+  {
+   "symbol": "BAC",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 58.18,
+   "chg_pct": 0.49227
+  },
+  {
+   "symbol": "BBVA",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 28.83,
+   "chg_pct": 2.59786
+  },
+  {
+   "symbol": "BHP",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 86.56,
+   "chg_pct": 2.87616
+  },
+  {
+   "symbol": "BKNG",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 170.52,
+   "chg_pct": -0.51342
+  },
+  {
+   "symbol": "BKR",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 56.565,
+   "chg_pct": 0.43501
+  },
+  {
+   "symbol": "BLK",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 1053.96,
+   "chg_pct": 1.61197
+  },
+  {
+   "symbol": "BMO",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 173.79,
+   "chg_pct": 0.68946
+  },
+  {
+   "symbol": "BMY",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 62.84,
+   "chg_pct": -1.19497
+  },
+  {
+   "symbol": "BNS",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 94.1,
+   "chg_pct": 1.22633
+  },
+  {
+   "symbol": "BP",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 45.42,
+   "chg_pct": 0.08814456
+  },
+  {
+   "symbol": "BRK-A",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 763936,
+   "chg_pct": -2.09677
+  },
+  {
+   "symbol": "BRK-B",
+   "lists": [
+    "megacap_leaders",
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 509.2,
+   "chg_pct": -2.03925
+  },
+  {
+   "symbol": "BTI",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 56.02,
+   "chg_pct": -0.1248
+  },
+  {
+   "symbol": "BUD",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 78.77,
+   "chg_pct": -1.41427
+  },
+  {
+   "symbol": "BX",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 125.41,
+   "chg_pct": 1.58769
+  },
+  {
+   "symbol": "C",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 132.7,
+   "chg_pct": -0.18805
+  },
+  {
+   "symbol": "CAT",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 798.57,
+   "chg_pct": 2.02499
+  },
+  {
+   "symbol": "CB",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 341.9,
+   "chg_pct": 0.10834
+  },
+  {
+   "symbol": "CCEP",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 100.48,
+   "chg_pct": -2.19021
+  },
+  {
+   "symbol": "CDNS",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 280.76,
+   "chg_pct": 0.30725
+  },
+  {
+   "symbol": "CEG",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "neutral",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 5,
+   "price": 262.8,
+   "chg_pct": 1.25997
+  },
+  {
+   "symbol": "CMCSA",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 22.91,
+   "chg_pct": -3.45554
+  },
+  {
+   "symbol": "COF",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 202.04,
+   "chg_pct": -0.56597
+  },
+  {
+   "symbol": "COP",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 133.19,
+   "chg_pct": 0.49041
+  },
+  {
+   "symbol": "COST",
+   "lists": [
+    "megacap_leaders",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 893.93,
+   "chg_pct": 0.02125898
+  },
+  {
+   "symbol": "CPRT",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "neutral",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 29.66,
+   "chg_pct": -3.76379
+  },
+  {
+   "symbol": "CRM",
+   "lists": [
+    "dow30",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 242.85,
+   "chg_pct": -3.06937
+  },
+  {
+   "symbol": "CRWD",
+   "lists": [
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 245.7,
+   "chg_pct": 1.79814
+  },
+  {
+   "symbol": "CRWV",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "red",
+    "debt": "red",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 5,
+   "price": 79.88,
+   "chg_pct": -4.16316
+  },
+  {
+   "symbol": "CSCO",
+   "lists": [
+    "dow30",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 110.24,
+   "chg_pct": 2.3204
+  },
+  {
+   "symbol": "CSX",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 47.9,
+   "chg_pct": 0
+  },
+  {
+   "symbol": "CTAS",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 197.96,
+   "chg_pct": -0.75203
+  },
+  {
+   "symbol": "CVS",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 90.27,
+   "chg_pct": -1.5809
+  },
+  {
+   "symbol": "CVX",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 211.5944,
+   "chg_pct": 0.02571877
+  },
+  {
+   "symbol": "DASH",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 194.56,
+   "chg_pct": -1.11812
+  },
+  {
+   "symbol": "DDOG",
+   "lists": [
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 236,
+   "chg_pct": 2.25746
+  },
+  {
+   "symbol": "DE",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 685.63,
+   "chg_pct": 2.41385
+  },
+  {
+   "symbol": "DELL",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 588.67,
+   "chg_pct": 4.50567
+  },
+  {
+   "symbol": "DHR",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 212.45,
+   "chg_pct": 1.96295
+  },
+  {
+   "symbol": "DIS",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 105.33,
+   "chg_pct": -1.55155
+  },
+  {
+   "symbol": "DOCU",
+   "lists": [
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 70.64,
+   "chg_pct": 0.34091
+  },
+  {
+   "symbol": "DXCM",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 87.93,
+   "chg_pct": 0.67552
+  },
+  {
+   "symbol": "EP-PC",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 49.87,
+   "chg_pct": -0.26
+  },
+  {
+   "symbol": "ETN",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 409.46,
+   "chg_pct": 2.93112
+  },
+  {
+   "symbol": "EXC",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 5,
+   "price": 42.64,
+   "chg_pct": 0.47125
+  },
+  {
+   "symbol": "FANG",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 196.94,
+   "chg_pct": 1.23368
+  },
+  {
+   "symbol": "FAST",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 49.18,
+   "chg_pct": 0.30594
+  },
+  {
+   "symbol": "FER",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 54.65,
+   "chg_pct": -0.85269
+  },
+  {
+   "symbol": "FTNT",
+   "lists": [
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 172.58,
+   "chg_pct": 0.47156
+  },
+  {
+   "symbol": "GE",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 313.47,
+   "chg_pct": 0.18217
+  },
+  {
+   "symbol": "GEHC",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 64.445,
+   "chg_pct": 1.50417
+  },
+  {
+   "symbol": "GEV",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 924.93,
+   "chg_pct": -0.01729561
+  },
+  {
+   "symbol": "GILD",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 150.89,
+   "chg_pct": 2.17362
+  },
+  {
+   "symbol": "GLW",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 147.71,
+   "chg_pct": 2.46254
+  },
+  {
+   "symbol": "GOOG",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 343.68,
+   "chg_pct": 1.27298
+  },
+  {
+   "symbol": "GOOGL",
+   "lists": [
+    "megacap_leaders",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 347.33,
+   "chg_pct": 1.30078
+  },
+  {
+   "symbol": "GS",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 951.47,
+   "chg_pct": 1.4382
+  },
+  {
+   "symbol": "HD",
+   "lists": [
+    "dow30",
+    "megacap_leaders"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 302.51,
+   "chg_pct": 0.01322122
+  },
+  {
+   "symbol": "HDB",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 22.66,
+   "chg_pct": 1.25112
+  },
+  {
+   "symbol": "HON",
+   "lists": [
+    "dow30",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 206.49,
+   "chg_pct": -0.56342
+  },
+  {
+   "symbol": "HONA",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 5,
+   "price": 167.13,
+   "chg_pct": 1.79681
+  },
+  {
+   "symbol": "HSBC",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "red",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 102.84,
+   "chg_pct": 1.98334
+  },
+  {
+   "symbol": "HUBS",
+   "lists": [
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 229.58,
+   "chg_pct": -2.90958
+  },
+  {
+   "symbol": "IBKR",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 88.38,
+   "chg_pct": 1.89071
+  },
+  {
+   "symbol": "IBM",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 237.75,
+   "chg_pct": 0.10948
+  },
+  {
+   "symbol": "IDXX",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 506.48,
+   "chg_pct": -1.39013
+  },
+  {
+   "symbol": "INTC",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 108.8,
+   "chg_pct": 7.66947
+  },
+  {
+   "symbol": "INTU",
+   "lists": [
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "neutral",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 313.13,
+   "chg_pct": -1.57168
+  },
+  {
+   "symbol": "ISRG",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 383.54,
+   "chg_pct": 0.32698
+  },
+  {
+   "symbol": "JNJ",
+   "lists": [
+    "dow30",
+    "megacap_leaders"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 270.22,
+   "chg_pct": 1.09997
+  },
+  {
+   "symbol": "JPM",
+   "lists": [
+    "dow30",
+    "megacap_leaders"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 349.31,
+   "chg_pct": 0.11177
+  },
+  {
+   "symbol": "KDP",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 31.43,
+   "chg_pct": -1.16352
+  },
+  {
+   "symbol": "KHC",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 24.73,
+   "chg_pct": 0
+  },
+  {
+   "symbol": "KLAC",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 168.98,
+   "chg_pct": 0.96797
+  },
+  {
+   "symbol": "KO",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 88.06,
+   "chg_pct": 0.21623
+  },
+  {
+   "symbol": "LIN",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 458.48,
+   "chg_pct": -0.78123
+  },
+  {
+   "symbol": "LITE",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 893.61,
+   "chg_pct": -2.80509
+  },
+  {
+   "symbol": "LLY",
+   "lists": [
+    "megacap_leaders",
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 1152.13,
+   "chg_pct": 1.25767
+  },
+  {
+   "symbol": "LMT",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 538.09,
+   "chg_pct": 0.15635
+  },
+  {
+   "symbol": "LRCX",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 269.31,
+   "chg_pct": 0.02971437
+  },
+  {
+   "symbol": "MA",
+   "lists": [
+    "megacap_leaders",
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 565.73,
+   "chg_pct": -0.35579
+  },
+  {
+   "symbol": "MAR",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 334,
+   "chg_pct": -0.28958
+  },
+  {
+   "symbol": "MCD",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 248.48,
+   "chg_pct": -0.03218539
+  },
+  {
+   "symbol": "MCHP",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 70.82,
+   "chg_pct": 1.7675
+  },
+  {
+   "symbol": "MDB",
+   "lists": [
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 393.42,
+   "chg_pct": 4.53845
+  },
+  {
+   "symbol": "MDLZ",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 62.04,
+   "chg_pct": -0.51315
+  },
+  {
+   "symbol": "MDT",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 92.77,
+   "chg_pct": 0.18359
+  },
+  {
+   "symbol": "MELI",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 1825.21,
+   "chg_pct": -0.78817
+  },
+  {
+   "symbol": "MER-PK",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 24.13,
+   "chg_pct": 0.75157
+  },
+  {
+   "symbol": "META",
+   "lists": [
+    "megacap_leaders",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 682.31,
+   "chg_pct": 1.33668
+  },
+  {
+   "symbol": "MFG",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 11.07,
+   "chg_pct": 1.28088
+  },
+  {
+   "symbol": "MMM",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 164.71,
+   "chg_pct": 1.26652
+  },
+  {
+   "symbol": "MNST",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 44.51,
+   "chg_pct": -0.13462
+  },
+  {
+   "symbol": "MO",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 69.73,
+   "chg_pct": -0.52782
+  },
+  {
+   "symbol": "MPC",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 421.96,
+   "chg_pct": 1.9424
+  },
+  {
+   "symbol": "MPWR",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 1169.58,
+   "chg_pct": 1.91441
+  },
+  {
+   "symbol": "MRK",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 147.17,
+   "chg_pct": 1.55959
+  },
+  {
+   "symbol": "MRVL",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 240.76,
+   "chg_pct": 4.81041
+  },
+  {
+   "symbol": "MS",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "red",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 203.46,
+   "chg_pct": 0.51378
+  },
+  {
+   "symbol": "MSFT",
+   "lists": [
+    "dow30",
+    "megacap_leaders",
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 497.75,
+   "chg_pct": 1.51948
+  },
+  {
+   "symbol": "MSTR",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "red",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 132.25,
+   "chg_pct": 4.81059
+  },
+  {
+   "symbol": "MU",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 977.5,
+   "chg_pct": 5.49889
+  },
+  {
+   "symbol": "MUFG",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 23.5,
+   "chg_pct": 1.3805
+  },
+  {
+   "symbol": "NBIS",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "red",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 217.99,
+   "chg_pct": 4.11711
+  },
+  {
+   "symbol": "NEE",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 81.28,
+   "chg_pct": 1.13226
+  },
+  {
+   "symbol": "NEM",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 124.39,
+   "chg_pct": 2.15999
+  },
+  {
+   "symbol": "NET",
+   "lists": [
+    "russell_top100_proxy",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 334.12,
+   "chg_pct": 2.91699
+  },
+  {
+   "symbol": "NFLX",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 75.31,
+   "chg_pct": -1.4396
+  },
+  {
+   "symbol": "NKE",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 36.36,
+   "chg_pct": 1.62102
+  },
+  {
+   "symbol": "NOW",
+   "lists": [
+    "russell_top100_proxy",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 138.47,
+   "chg_pct": -0.96553
+  },
+  {
+   "symbol": "NVDA",
+   "lists": [
+    "dow30",
+    "megacap_leaders",
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 219.34,
+   "chg_pct": 2.54324
+  },
+  {
+   "symbol": "NVO",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 43.195,
+   "chg_pct": 3.5603
+  },
+  {
+   "symbol": "NVS",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 140.92,
+   "chg_pct": 1.60058
+  },
+  {
+   "symbol": "NXPI",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 227.95,
+   "chg_pct": 4.09626
+  },
+  {
+   "symbol": "ODFL",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 175.09,
+   "chg_pct": 0.41867
+  },
+  {
+   "symbol": "ON",
+   "lists": [
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 68.3,
+   "chg_pct": 2.55255
+  },
+  {
+   "symbol": "ORCL",
+   "lists": [
+    "russell_top100_proxy",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "red",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 150.58,
+   "chg_pct": 5.18301
+  },
+  {
+   "symbol": "ORLY",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 84.89,
+   "chg_pct": 1.44598
+  },
+  {
+   "symbol": "PANW",
+   "lists": [
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 375.06,
+   "chg_pct": -0.15706
+  },
+  {
+   "symbol": "PAYX",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 116.51,
+   "chg_pct": -0.17992
+  },
+  {
+   "symbol": "PBR",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 20.94,
+   "chg_pct": 0.14347
+  },
+  {
+   "symbol": "PBR-A",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 18.94,
+   "chg_pct": 0.26469
+  },
+  {
+   "symbol": "PCAR",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 117.36,
+   "chg_pct": -0.72746
+  },
+  {
+   "symbol": "PDD",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 77.73,
+   "chg_pct": -1.30777
+  },
+  {
+   "symbol": "PEP",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 133.66,
+   "chg_pct": -0.50618
+  },
+  {
+   "symbol": "PFE",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 27.635,
+   "chg_pct": 0.63729
+  },
+  {
+   "symbol": "PG",
+   "lists": [
+    "dow30",
+    "megacap_leaders"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 147.51,
+   "chg_pct": 0.33329
+  },
+  {
+   "symbol": "PGR",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 216.29,
+   "chg_pct": -0.3226
+  },
+  {
+   "symbol": "PH",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 925.29,
+   "chg_pct": 0.71184
+  },
+  {
+   "symbol": "PLD",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 135.18,
+   "chg_pct": 1.07672
+  },
+  {
+   "symbol": "PLTR",
+   "lists": [
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 176.24,
+   "chg_pct": 1.08982
+  },
+  {
+   "symbol": "PM",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 190.48,
+   "chg_pct": -0.6416
+  },
+  {
+   "symbol": "PSX",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 274.21,
+   "chg_pct": 3.62015
+  },
+  {
+   "symbol": "PYPL",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 52.94,
+   "chg_pct": 0.43635
+  },
+  {
+   "symbol": "QCOM",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 188.71,
+   "chg_pct": 2.0937
+  },
+  {
+   "symbol": "REGN",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 789.45,
+   "chg_pct": 1.9158
+  },
+  {
+   "symbol": "RIO",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 98.04,
+   "chg_pct": 2.34889
+  },
+  {
+   "symbol": "RKLB",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "red",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 67.82,
+   "chg_pct": 6.46782
+  },
+  {
+   "symbol": "ROP",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 374.76,
+   "chg_pct": -0.28205
+  },
+  {
+   "symbol": "ROST",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 229.48,
+   "chg_pct": 2.08185
+  },
+  {
+   "symbol": "RTX",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 193.54,
+   "chg_pct": -1.67149
+  },
+  {
+   "symbol": "RY",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 203.57,
+   "chg_pct": 0.63275
+  },
+  {
+   "symbol": "SAN",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 14.82,
+   "chg_pct": 2.91667
+  },
+  {
+   "symbol": "SAP",
+   "lists": [
+    "russell_top100_proxy",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 213.66,
+   "chg_pct": 0.21576
+  },
+  {
+   "symbol": "SBUX",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 96.67,
+   "chg_pct": -0.68831
+  },
+  {
+   "symbol": "SCCO",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 196.11,
+   "chg_pct": 3.28102
+  },
+  {
+   "symbol": "SCHW",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 104.63,
+   "chg_pct": -0.50399
+  },
+  {
+   "symbol": "SHEL",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 95.82,
+   "chg_pct": 0.12539
+  },
+  {
+   "symbol": "SHOP",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 128.6,
+   "chg_pct": -1.04647
+  },
+  {
+   "symbol": "SHW",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 320.94,
+   "chg_pct": -0.16176
+  },
+  {
+   "symbol": "SKHY",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 182.99,
+   "chg_pct": 4.64345
+  },
+  {
+   "symbol": "SNDK",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 1614.39,
+   "chg_pct": 6.21197
+  },
+  {
+   "symbol": "SNOW",
+   "lists": [
+    "russell_top100_proxy",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 338.39,
+   "chg_pct": 2.22645
+  },
+  {
+   "symbol": "SNPS",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 381.17,
+   "chg_pct": 0.7134
+  },
+  {
+   "symbol": "SONY",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 23.83,
+   "chg_pct": 0.42141
+  },
+  {
+   "symbol": "SPCX",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "red",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 154.81,
+   "chg_pct": 2.60472
+  },
+  {
+   "symbol": "SPGI",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 404.11,
+   "chg_pct": -0.65149
+  },
+  {
+   "symbol": "STX",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 803.13,
+   "chg_pct": 2.54731
+  },
+  {
+   "symbol": "SWKS",
+   "lists": [
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 91.32,
+   "chg_pct": 6.69471
+  },
+  {
+   "symbol": "T",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 25.385,
+   "chg_pct": -1.83681
+  },
+  {
+   "symbol": "TBB",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 19.44,
+   "chg_pct": 0.10299
+  },
+  {
+   "symbol": "TD",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 121.81,
+   "chg_pct": 1.00331
+  },
+  {
+   "symbol": "TEAM",
+   "lists": [
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 192.53,
+   "chg_pct": 1.18247
+  },
+  {
+   "symbol": "TER",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 353.13,
+   "chg_pct": 3.51165
+  },
+  {
+   "symbol": "TJX",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 126.5601,
+   "chg_pct": 3.02841
+  },
+  {
+   "symbol": "TM",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 193.91,
+   "chg_pct": 0.88445
+  },
+  {
+   "symbol": "TMO",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 658.32,
+   "chg_pct": 1.52522
+  },
+  {
+   "symbol": "TMUS",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 166.45,
+   "chg_pct": -5.56564
+  },
+  {
+   "symbol": "TRI",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 99.48,
+   "chg_pct": -1.80634
+  },
+  {
+   "symbol": "TRV",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 379.49,
+   "chg_pct": 0.15043
+  },
+  {
+   "symbol": "TSLA",
+   "lists": [
+    "megacap_leaders",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 366.2,
+   "chg_pct": 2.26765
+  },
+  {
+   "symbol": "TSM",
+   "lists": [
+    "russell_top100_proxy",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 430.26,
+   "chg_pct": 3.00201
+  },
+  {
+   "symbol": "TTE",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 91.59,
+   "chg_pct": 0.82563
+  },
+  {
+   "symbol": "TTWO",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 210.62,
+   "chg_pct": -0.56182
+  },
+  {
+   "symbol": "TXN",
+   "lists": [
+    "nasdaq100",
+    "semiconductor_ai"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 258.14,
+   "chg_pct": -0.97058
+  },
+  {
+   "symbol": "UBER",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 70.87,
+   "chg_pct": -0.1409
+  },
+  {
+   "symbol": "UBS",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 50.62,
+   "chg_pct": 0.39667
+  },
+  {
+   "symbol": "UL",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 62.22,
+   "chg_pct": -0.35234
+  },
+  {
+   "symbol": "UNH",
+   "lists": [
+    "dow30",
+    "megacap_leaders"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 375.21,
+   "chg_pct": -0.0133254
+  },
+  {
+   "symbol": "UNP",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 282.48,
+   "chg_pct": 0.55532
+  },
+  {
+   "symbol": "V",
+   "lists": [
+    "dow30",
+    "megacap_leaders"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 369.93,
+   "chg_pct": -0.26959
+  },
+  {
+   "symbol": "VLO",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 412.53,
+   "chg_pct": 2.29369
+  },
+  {
+   "symbol": "VRTX",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 516.34,
+   "chg_pct": 0.60009
+  },
+  {
+   "symbol": "VZ",
+   "lists": [
+    "dow30"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 48.33,
+   "chg_pct": -2.8738
+  },
+  {
+   "symbol": "WBD",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 28.24,
+   "chg_pct": 0.60563
+  },
+  {
+   "symbol": "WDAY",
+   "lists": [
+    "nasdaq100",
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 199.28,
+   "chg_pct": 6.13549
+  },
+  {
+   "symbol": "WDC",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 423.87,
+   "chg_pct": 1.6548
+  },
+  {
+   "symbol": "WELL",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 232.17,
+   "chg_pct": -0.9936
+  },
+  {
+   "symbol": "WFC",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 86.885,
+   "chg_pct": -0.18955
+  },
+  {
+   "symbol": "WMT",
+   "lists": [
+    "dow30",
+    "megacap_leaders",
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 106.79,
+   "chg_pct": -0.66047
+  },
+  {
+   "symbol": "XEL",
+   "lists": [
+    "nasdaq100"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "red",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "red",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 5,
+   "price": 73.63,
+   "chg_pct": 1.2653
+  },
+  {
+   "symbol": "XOM",
+   "lists": [
+    "megacap_leaders",
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 163.3,
+   "chg_pct": -0.01224179
+  },
+  {
+   "symbol": "ZS",
+   "lists": [
+    "software_cloud"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "na",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 197.47,
+   "chg_pct": 3.07443
+  }
+ ],
+ "rollup": {
+  "multi_red_flag_4plus": [
+   "ABT",
+   "CEG",
+   "CRWV",
+   "EXC",
+   "HONA",
+   "XEL",
+   "AEP",
+   "ALNY",
+   "ARM",
+   "AXON",
+   "BA",
+   "CDNS",
+   "CPRT",
+   "ETN",
+   "GE",
+   "HDB",
+   "INTU",
+   "NVO",
+   "RKLB",
+   "SPGI",
+   "SWKS",
+   "TMUS",
+   "TRI",
+   "WELL"
+  ],
+  "movers_top10_by_abs_chg": [
+   "ALAB",
+   "ARM",
+   "INTC",
+   "SWKS",
+   "RKLB",
+   "AMD",
+   "SNDK",
+   "WDAY",
+   "TMUS",
+   "MU"
+  ],
+  "improving": [],
+  "watchlist": [
+   "CRWV",
+   "BA",
+   "TMUS",
+   "CEG",
+   "EXC",
+   "AEP",
+   "XEL",
+   "CAT"
+  ]
+ },
+ "macro": {
+  "fed": "FOMC hiked 25bp to 3.75-4.00% on Sept 16, 2026 (unanimous, first hike this cycle after prior cuts); Chair Warsh signaled inflation concerns persist; Fed projections point to one more quarter-point hike this year.",
+  "us10y_yield": "4.95%, near the 2007 high of 5.04%",
+  "reaction": "Dow -1.21% on decision day (Sept 16); Nasdaq recovered +1.6% next day led by tech (+2.25%); financials/banks hit hardest on more-hikes fear (regional bank ETF -2.6%, worst day since February)",
+  "oil": "WTI ~$101.21/bbl, easing as geopolitical risk premium unwinds",
+  "dollar": "DXY ~99.96, roughly flat"
+ },
+ "data_notes": {
+  "institutional_ownership": "Confirmed n/a (404) across the universe on this FMP plan; spot-checked qualitatively via WebSearch for BA only (no downgrades in 6mo from Citi/UBS/JPM = supportive institutional sentiment) rather than every 4+ red-flag name, to keep the run tractable.",
+  "moat": "Qualitative WebSearch synthesis run for CRWV (no moat, 200+ AI-cloud competitors) and BA (leveraged turnaround, positive analyst sentiment) only \u2014 full-universe moat scoring is out of scope for a single session and stays a targeted, not full, check by design.",
+  "relative_strength_proxy": "Full-universe RS used (price/50-day average momentum) vs. SPY/QQQ 3-month return as a proxy rather than a full 3-month historical pull per ticker (would have added ~220 more API calls) \u2014 directionally consistent with the pipeline-test's more precise per-name calc, but coarser. Worth tightening for flagged names in a future pass.",
+  "futures": "Only ES/GC/SI/BTC/ETH came from FMP directly (confirmed plan gap from the pipeline-test run). NQ, YM, RTY, WTI, US10Y, DXY filled via WebSearch \u2014 later/less precise than a live feed, timestamps vary by source.",
+  "endpoint_fixes_confirmed_working": [
+   "batch-quote for 220 symbols in a single call",
+   "debtToEquityRatio on /stable/ratios",
+   "priceToEarningsRatio field name",
+   "analyst-estimates with period param (not used at full-universe scale but confirmed working)"
+  ]
+ }
+}
