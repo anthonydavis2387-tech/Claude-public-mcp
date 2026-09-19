@@ -124,7 +124,34 @@
    },
    "red_flag_count": 1,
    "price": 337,
-   "chg_pct": 1.38082
+   "chg_pct": 1.38082,
+   "detail": {
+    "avg50": 320.1422,
+    "avg200": 286.3412,
+    "year_high": 344.57,
+    "year_low": 240.21,
+    "momentum_50d_pct": 4.99,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -1.59,
+    "revenue_growth_prev_pct": -22.66,
+    "eps_growth_pct": 0.99,
+    "gross_margin_pct": 50.1,
+    "gross_margin_4q_ago_pct": 47.2,
+    "op_margin_pct": 32.6,
+    "op_margin_4q_ago_pct": 31.6,
+    "debt_to_equity": 0.78,
+    "pe_ratio": 34.8,
+    "ps_ratio": 38.1,
+    "fcf_last4q": [
+     31914000000,
+     26731000000,
+     51552000000,
+     26486000000
+    ],
+    "net_debt_to_ebitda": 1.15,
+    "ev_to_ebitda": 108.0
+   }
   },
   {
    "symbol": "ABBV",
@@ -146,7 +173,34 @@
    },
    "red_flag_count": 0,
    "price": 264,
-   "chg_pct": 0.5676
+   "chg_pct": 0.5676,
+   "detail": {
+    "avg50": 255.0698,
+    "avg200": 229.4094,
+    "year_high": 267.47,
+    "year_low": 190.75,
+    "momentum_50d_pct": 3.41,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 13.25,
+    "revenue_growth_prev_pct": -9.72,
+    "eps_growth_pct": 423.08,
+    "gross_margin_pct": 74.7,
+    "gross_margin_4q_ago_pct": 66.4,
+    "op_margin_pct": 37.9,
+    "op_margin_4q_ago_pct": 12.1,
+    "debt_to_equity": -11.93,
+    "pe_ratio": 30.8,
+    "ps_ratio": 26.2,
+    "fcf_last4q": [
+     3701000000,
+     3564000000,
+     4889000000,
+     7528000000
+    ],
+    "net_debt_to_ebitda": 7.42,
+    "ev_to_ebitda": 58.9
+   }
   },
   {
    "symbol": "ABNB",
@@ -168,7 +222,34 @@
    },
    "red_flag_count": 1,
    "price": 165.93,
-   "chg_pct": -0.94323
+   "chg_pct": -0.94323,
+   "detail": {
+    "avg50": 166.6216,
+    "avg200": 141.56963,
+    "year_high": 193.453,
+    "year_low": 110.81,
+    "momentum_50d_pct": -0.24,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 34.73,
+    "revenue_growth_prev_pct": -4.39,
+    "eps_growth_pct": 411.11,
+    "gross_margin_pct": 82.5,
+    "gross_margin_4q_ago_pct": 86.6,
+    "op_margin_pct": 21.0,
+    "op_margin_4q_ago_pct": 39.7,
+    "debt_to_equity": 0.32,
+    "pe_ratio": 25.9,
+    "ps_ratio": 23.5,
+    "fcf_last4q": [
+     1270000000,
+     1708000000,
+     533000000,
+     1356000000
+    ],
+    "net_debt_to_ebitda": -5.57,
+    "ev_to_ebitda": 103.6
+   }
   },
   {
    "symbol": "ABT",
@@ -190,7 +271,34 @@
    },
    "red_flag_count": 5,
    "price": 102.19,
-   "chg_pct": -0.16608
+   "chg_pct": -0.16608,
+   "detail": {
+    "avg50": 105.8532,
+    "avg200": 105.32975,
+    "year_high": 137.49,
+    "year_low": 81.97,
+    "momentum_50d_pct": -3.12,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 12.8,
+    "revenue_growth_prev_pct": -2.57,
+    "eps_growth_pct": -14.52,
+    "gross_margin_pct": 58.0,
+    "gross_margin_4q_ago_pct": 55.7,
+    "op_margin_pct": 14.2,
+    "op_margin_4q_ago_pct": 18.1,
+    "debt_to_equity": 0.64,
+    "pe_ratio": 42.8,
+    "ps_ratio": 12.6,
+    "fcf_last4q": [
+     2887000000,
+     916000000,
+     2626000000,
+     2291000000
+    ],
+    "net_debt_to_ebitda": 15.43,
+    "ev_to_ebitda": 104.2
+   }
   },
   {
    "symbol": "ADBE",
@@ -213,7 +321,34 @@
    },
    "red_flag_count": 2,
    "price": 252.67,
-   "chg_pct": 0.86627
+   "chg_pct": 0.86627,
+   "detail": {
+    "avg50": 256.0588,
+    "avg200": 264.98816,
+    "year_high": 368.73,
+    "year_low": 190.12,
+    "momentum_50d_pct": -2.79,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 2.15,
+    "revenue_growth_prev_pct": 3.44,
+    "eps_growth_pct": 8.69,
+    "gross_margin_pct": 88.1,
+    "gross_margin_4q_ago_pct": 88.9,
+    "op_margin_pct": 34.8,
+    "op_margin_4q_ago_pct": 36.5,
+    "debt_to_equity": 0.57,
+    "pe_ratio": 15.7,
+    "ps_ratio": 17.0,
+    "fcf_last4q": [
+     2438000000,
+     2454000000,
+     2921000000,
+     3126000000
+    ],
+    "net_debt_to_ebitda": 0.94,
+    "ev_to_ebitda": 45.8
+   }
   },
   {
    "symbol": "ADI",
@@ -237,7 +372,34 @@
    },
    "red_flag_count": 0,
    "price": 362.65,
-   "chg_pct": 0.16849
+   "chg_pct": 0.16849,
+   "detail": {
+    "avg50": 373.4088,
+    "avg200": 353.74826,
+    "year_high": 445.91,
+    "year_low": 223.47,
+    "momentum_50d_pct": 0.62,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 11.0,
+    "revenue_growth_prev_pct": 14.66,
+    "eps_growth_pct": 14.52,
+    "gross_margin_pct": 67.3,
+    "gross_margin_4q_ago_pct": 63.1,
+    "op_margin_pct": 40.1,
+    "op_margin_4q_ago_pct": 30.7,
+    "debt_to_equity": 0.27,
+    "pe_ratio": 33.3,
+    "ps_ratio": 44.5,
+    "fcf_last4q": [
+     1458297000,
+     734339000,
+     1259202000,
+     1485657000
+    ],
+    "net_debt_to_ebitda": 4.26,
+    "ev_to_ebitda": 113.8
+   }
   },
   {
    "symbol": "ADP",
@@ -259,7 +421,34 @@
    },
    "red_flag_count": 2,
    "price": 272.24,
-   "chg_pct": -0.34774
+   "chg_pct": -0.34774,
+   "detail": {
+    "avg50": 268.4042,
+    "avg200": 237.86266,
+    "year_high": 294.46,
+    "year_low": 188.16,
+    "momentum_50d_pct": 1.05,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -7.84,
+    "revenue_growth_prev_pct": 10.82,
+    "eps_growth_pct": -27.73,
+    "gross_margin_pct": 53.0,
+    "gross_margin_4q_ago_pct": 45.2,
+    "op_margin_pct": 20.8,
+    "op_margin_4q_ago_pct": -2.4,
+    "debt_to_equity": 0.87,
+    "pe_ratio": 22.9,
+    "ps_ratio": 16.3,
+    "fcf_last4q": [
+     1233200000,
+     2044100000,
+     1106400000,
+     595600000
+    ],
+    "net_debt_to_ebitda": 0.83,
+    "ev_to_ebitda": 71.8
+   }
   },
   {
    "symbol": "ADSK",
@@ -281,7 +470,34 @@
    },
    "red_flag_count": 2,
    "price": 218.64,
-   "chg_pct": -0.75802
+   "chg_pct": -0.75802,
+   "detail": {
+    "avg50": 233.2038,
+    "avg200": 243.497,
+    "year_high": 326.54,
+    "year_low": 185.5,
+    "momentum_50d_pct": -6.97,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 5.79,
+    "revenue_growth_prev_pct": -1.18,
+    "eps_growth_pct": 0,
+    "gross_margin_pct": 91.4,
+    "gross_margin_4q_ago_pct": 91.1,
+    "op_margin_pct": 29.3,
+    "op_margin_4q_ago_pct": 25.6,
+    "debt_to_equity": 1.1,
+    "pe_ratio": 25.1,
+    "ps_ratio": 24.2,
+    "fcf_last4q": [
+     561000000,
+     876000000,
+     965000000,
+     430000000
+    ],
+    "net_debt_to_ebitda": -0.61,
+    "ev_to_ebitda": 76.2
+   }
   },
   {
    "symbol": "AEP",
@@ -303,7 +519,34 @@
    },
    "red_flag_count": 4,
    "price": 121.62,
-   "chg_pct": 0.77057
+   "chg_pct": 0.77057,
+   "detail": {
+    "avg50": 126.7156,
+    "avg200": 126.91305,
+    "year_high": 140.58,
+    "year_low": 105.7,
+    "momentum_50d_pct": -5.3,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -9.55,
+    "revenue_growth_prev_pct": 19.31,
+    "eps_growth_pct": -19.25,
+    "gross_margin_pct": 70.6,
+    "gross_margin_4q_ago_pct": 47.0,
+    "op_margin_pct": 47.5,
+    "op_margin_4q_ago_pct": 25.3,
+    "debt_to_equity": 1.66,
+    "pe_ratio": 26.3,
+    "ps_ratio": 13.7,
+    "fcf_last4q": [
+     4615000000,
+     -1324000000,
+     3872300000,
+     1794700000
+    ],
+    "net_debt_to_ebitda": 23.45,
+    "ev_to_ebitda": 56.3
+   }
   },
   {
    "symbol": "ALAB",
@@ -325,7 +568,34 @@
    },
    "red_flag_count": 3,
    "price": 293.56,
-   "chg_pct": 9.05714
+   "chg_pct": 9.05714,
+   "detail": {
+    "avg50": 307.6611,
+    "avg200": 230.49655,
+    "year_high": 499.476,
+    "year_low": 97.89,
+    "momentum_50d_pct": -1.43,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 27.25,
+    "revenue_growth_prev_pct": 13.96,
+    "eps_growth_pct": 89.36,
+    "gross_margin_pct": 73.3,
+    "gross_margin_4q_ago_pct": 76.2,
+    "op_margin_pct": 22.7,
+    "op_margin_4q_ago_pct": 24.0,
+    "debt_to_equity": 0,
+    "pe_ratio": 135.7,
+    "ps_ratio": 211.2,
+    "fcf_last4q": [
+     67210000,
+     67012000,
+     76576000,
+     65878000
+    ],
+    "net_debt_to_ebitda": -1.04,
+    "ev_to_ebitda": 775.2
+   }
   },
   {
    "symbol": "ALNY",
@@ -347,7 +617,34 @@
    },
    "red_flag_count": 4,
    "price": 245.51,
-   "chg_pct": 2.56935
+   "chg_pct": 2.56935,
+   "detail": {
+    "avg50": 247.9392,
+    "avg200": 312.1705,
+    "year_high": 495.55,
+    "year_low": 197.81,
+    "momentum_50d_pct": -3.38,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 10.6,
+    "revenue_growth_prev_pct": 6.39,
+    "eps_growth_pct": -20.65,
+    "gross_margin_pct": 76.9,
+    "gross_margin_4q_ago_pct": 84.2,
+    "op_margin_pct": 17.9,
+    "op_margin_4q_ago_pct": 29.5,
+    "debt_to_equity": 0.94,
+    "pe_ratio": 61.2,
+    "ps_ratio": 31.1,
+    "fcf_last4q": [
+     40642000,
+     48671000,
+     140263000,
+     312967000
+    ],
+    "net_debt_to_ebitda": -1.8,
+    "ev_to_ebitda": 162.1
+   }
   },
   {
    "symbol": "AMAT",
@@ -371,7 +668,34 @@
    },
    "red_flag_count": 3,
    "price": 417.4,
-   "chg_pct": 0.4863
+   "chg_pct": 0.4863,
+   "detail": {
+    "avg50": 501.1182,
+    "avg200": 416.26315,
+    "year_high": 739.67,
+    "year_low": 188.66,
+    "momentum_50d_pct": -11.28,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 15.23,
+    "revenue_growth_prev_pct": 12.81,
+    "eps_growth_pct": -9.35,
+    "gross_margin_pct": 50.3,
+    "gross_margin_4q_ago_pct": 48.0,
+    "op_margin_pct": 33.7,
+    "op_margin_4q_ago_pct": 25.2,
+    "debt_to_equity": 0.29,
+    "pe_ratio": 40.4,
+    "ps_ratio": 45.0,
+    "fcf_last4q": [
+     2330000000,
+     210000000,
+     1040000000,
+     2043000000
+    ],
+    "net_debt_to_ebitda": 0.1,
+    "ev_to_ebitda": 138.1
+   }
   },
   {
    "symbol": "AMD",
@@ -395,7 +719,34 @@
    },
    "red_flag_count": 1,
    "price": 545.09,
-   "chg_pct": 6.35902
+   "chg_pct": 6.35902,
+   "detail": {
+    "avg50": 495.847,
+    "avg200": 354.6241,
+    "year_high": 584.73,
+    "year_low": 154.78,
+    "momentum_50d_pct": 12.9,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 12.51,
+    "revenue_growth_prev_pct": -0.17,
+    "eps_growth_pct": 64.71,
+    "gross_margin_pct": 53.8,
+    "gross_margin_4q_ago_pct": 51.7,
+    "op_margin_pct": 17.3,
+    "op_margin_4q_ago_pct": 13.7,
+    "debt_to_equity": 0.06,
+    "pe_ratio": 93.1,
+    "ps_ratio": 73.7,
+    "fcf_last4q": [
+     1558000000,
+     2566000000,
+     2378000000,
+     1901000000
+    ],
+    "net_debt_to_ebitda": -0.24,
+    "ev_to_ebitda": 253.5
+   }
   },
   {
    "symbol": "AMGN",
@@ -419,7 +770,34 @@
    },
    "red_flag_count": 2,
    "price": 379.78,
-   "chg_pct": 0.91139
+   "chg_pct": 0.91139,
+   "detail": {
+    "avg50": 400.2724,
+    "avg200": 360.3479,
+    "year_high": 447.03,
+    "year_low": 269.77,
+    "momentum_50d_pct": -3.65,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 16.66,
+    "revenue_growth_prev_pct": -12.91,
+    "eps_growth_pct": 30.56,
+    "gross_margin_pct": 72.0,
+    "gross_margin_4q_ago_pct": 67.8,
+    "op_margin_pct": 35.0,
+    "op_margin_4q_ago_pct": 26.4,
+    "debt_to_equity": 4.9,
+    "pe_ratio": 20.6,
+    "ps_ratio": 19.4,
+    "fcf_last4q": [
+     3489000000,
+     1477000000,
+     961000000,
+     4248000000
+    ],
+    "net_debt_to_ebitda": 12.59,
+    "ev_to_ebitda": 69.4
+   }
   },
   {
    "symbol": "AMZN",
@@ -444,7 +822,34 @@
    },
    "red_flag_count": 0,
    "price": 251.19,
-   "chg_pct": 2.12636
+   "chg_pct": 2.12636,
+   "detail": {
+    "avg50": 255.8398,
+    "avg200": 240.30075,
+    "year_high": 287.2,
+    "year_low": 196,
+    "momentum_50d_pct": -0.83,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 10.52,
+    "revenue_growth_prev_pct": -14.93,
+    "eps_growth_pct": 106.38,
+    "gross_margin_pct": 52.3,
+    "gross_margin_4q_ago_pct": 50.8,
+    "op_margin_pct": 13.7,
+    "op_margin_4q_ago_pct": 9.7,
+    "debt_to_equity": 0.4,
+    "pe_ratio": 10.2,
+    "ps_ratio": 12.8,
+    "fcf_last4q": [
+     -8821000000,
+     -18171000000,
+     14937000000,
+     430000000
+    ],
+    "net_debt_to_ebitda": 1.42,
+    "ev_to_ebitda": 26.5
+   }
   },
   {
    "symbol": "ANET",
@@ -466,7 +871,34 @@
    },
    "red_flag_count": 1,
    "price": 199.53,
-   "chg_pct": 1.00739
+   "chg_pct": 1.00739,
+   "detail": {
+    "avg50": 187.2356,
+    "avg200": 154.7574,
+    "year_high": 214.89,
+    "year_low": 114.52,
+    "momentum_50d_pct": 6.49,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 12.06,
+    "revenue_growth_prev_pct": 8.89,
+    "eps_growth_pct": 18.52,
+    "gross_margin_pct": 62.9,
+    "gross_margin_4q_ago_pct": 64.6,
+    "op_margin_pct": 45.4,
+    "op_margin_4q_ago_pct": 42.4,
+    "debt_to_equity": 0,
+    "pe_ratio": 44.2,
+    "ps_ratio": 70.4,
+    "fcf_last4q": [
+     1053300000,
+     1639000000,
+     1224900000,
+     1238100000
+    ],
+    "net_debt_to_ebitda": -1.48,
+    "ev_to_ebitda": 136.4
+   }
   },
   {
    "symbol": "APH",
@@ -488,7 +920,34 @@
    },
    "red_flag_count": 1,
    "price": 78.37,
-   "chg_pct": 1.43671
+   "chg_pct": 1.43671,
+   "detail": {
+    "avg50": 79.9534,
+    "avg200": 73.38357,
+    "year_high": 89.26,
+    "year_low": 59.005,
+    "momentum_50d_pct": -3.01,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 14.93,
+    "revenue_growth_prev_pct": 18.34,
+    "eps_growth_pct": 89.47,
+    "gross_margin_pct": 40.5,
+    "gross_margin_4q_ago_pct": 38.1,
+    "op_margin_pct": 29.5,
+    "op_margin_4q_ago_pct": 27.5,
+    "debt_to_equity": 1.21,
+    "pe_ratio": 30.6,
+    "ps_ratio": 24.8,
+    "fcf_last4q": [
+     1201700000,
+     829900000,
+     1468500000,
+     1213600000
+    ],
+    "net_debt_to_ebitda": 4.61,
+    "ev_to_ebitda": 75.6
+   }
   },
   {
    "symbol": "APP",
@@ -510,7 +969,34 @@
    },
    "red_flag_count": 2,
    "price": 321.6,
-   "chg_pct": -1.51886
+   "chg_pct": -1.51886,
+   "detail": {
+    "avg50": 361.4406,
+    "avg200": 476.89468,
+    "year_high": 745.61,
+    "year_low": 297.5,
+    "momentum_50d_pct": -14.77,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 4.41,
+    "revenue_growth_prev_pct": 11.13,
+    "eps_growth_pct": 5.6,
+    "gross_margin_pct": 88.3,
+    "gross_margin_4q_ago_pct": 87.6,
+    "op_margin_pct": 77.7,
+    "op_margin_4q_ago_pct": 76.8,
+    "debt_to_equity": 1.11,
+    "pe_ratio": 34.2,
+    "ps_ratio": 90.2,
+    "fcf_last4q": [
+     869040000,
+     1291393000,
+     1285416000,
+     1053422000
+    ],
+    "net_debt_to_ebitda": 0.3,
+    "ev_to_ebitda": 111.7
+   }
   },
   {
    "symbol": "ARM",
@@ -533,7 +1019,34 @@
    },
    "red_flag_count": 4,
    "price": 264.9,
-   "chg_pct": 8.57447
+   "chg_pct": 8.57447,
+   "detail": {
+    "avg50": 262.1062,
+    "avg200": 206.58748,
+    "year_high": 452.7,
+    "year_low": 100.02,
+    "momentum_50d_pct": 5.15,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -13.49,
+    "revenue_growth_prev_pct": 19.97,
+    "eps_growth_pct": -13.79,
+    "gross_margin_pct": 97.2,
+    "gross_margin_4q_ago_pct": 97.4,
+    "op_margin_pct": 7.6,
+    "op_margin_4q_ago_pct": 14.4,
+    "debt_to_equity": 0.06,
+    "pe_ratio": 354.6,
+    "ps_ratio": 293.2,
+    "fcf_last4q": [
+     694000000,
+     170000000,
+     181000000,
+     429000000
+    ],
+    "net_debt_to_ebitda": -14.87,
+    "ev_to_ebitda": 2169.9
+   }
   },
   {
    "symbol": "ASML",
@@ -556,7 +1069,34 @@
    },
    "red_flag_count": 2,
    "price": 1629.67,
-   "chg_pct": 1.71325
+   "chg_pct": 1.71325,
+   "detail": {
+    "avg50": 1722.15,
+    "avg200": 1509.4696,
+    "year_high": 1999.96,
+    "year_low": 925.87,
+    "momentum_50d_pct": -2.45,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 6.38,
+    "revenue_growth_prev_pct": -9.79,
+    "eps_growth_pct": 6.15,
+    "gross_margin_pct": 54.0,
+    "gross_margin_4q_ago_pct": 51.6,
+    "op_margin_pct": 37.1,
+    "op_margin_4q_ago_pct": 32.8,
+    "debt_to_equity": 0.09,
+    "pe_ratio": 57.4,
+    "ps_ratio": 71.8,
+    "fcf_last4q": [
+     1436491616,
+     -2607900000,
+     10972599979,
+     243700000
+    ],
+    "net_debt_to_ebitda": -1.26,
+    "ev_to_ebitda": 179.3
+   }
   },
   {
    "symbol": "AVGO",
@@ -581,7 +1121,34 @@
    },
    "red_flag_count": 2,
    "price": 347.3,
-   "chg_pct": 2.29448
+   "chg_pct": 2.29448,
+   "detail": {
+    "avg50": 379.7552,
+    "avg200": 369.0968,
+    "year_high": 495,
+    "year_low": 289.96,
+    "momentum_50d_pct": -5.83,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 33.37,
+    "revenue_growth_prev_pct": 14.89,
+    "eps_growth_pct": 40.31,
+    "gross_margin_pct": 69.1,
+    "gross_margin_4q_ago_pct": 68.0,
+    "op_margin_pct": 53.9,
+    "op_margin_4q_ago_pct": 41.7,
+    "debt_to_equity": 0.6,
+    "pe_ratio": 35.7,
+    "ps_ratio": 63.2,
+    "fcf_last4q": [
+     13665000000,
+     10262000000,
+     8010000000,
+     7466000000
+    ],
+    "net_debt_to_ebitda": 1.94,
+    "ev_to_ebitda": 104.3
+   }
   },
   {
    "symbol": "AXON",
@@ -603,7 +1170,34 @@
    },
    "red_flag_count": 4,
    "price": 453.5,
-   "chg_pct": -3.18518
+   "chg_pct": -3.18518,
+   "detail": {
+    "avg50": 548.5054,
+    "avg200": 503.00485,
+    "year_high": 792.16,
+    "year_low": 339.01,
+    "momentum_50d_pct": -18.37,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 12.02,
+    "revenue_growth_prev_pct": 1.33,
+    "eps_growth_pct": -82.94,
+    "gross_margin_pct": 60.4,
+    "gross_margin_4q_ago_pct": 60.1,
+    "op_margin_pct": 5.2,
+    "op_margin_4q_ago_pct": -0.3,
+    "debt_to_equity": 0.5,
+    "pe_ratio": 389.3,
+    "ps_ratio": 49.8,
+    "fcf_last4q": [
+     -972000,
+     -54642000,
+     155427000,
+     33379000
+    ],
+    "net_debt_to_ebitda": 20.33,
+    "ev_to_ebitda": 761.5
+   }
   },
   {
    "symbol": "AXP",
@@ -626,7 +1220,34 @@
    },
    "red_flag_count": 2,
    "price": 311.481,
-   "chg_pct": -0.30375
+   "chg_pct": -0.30375,
+   "detail": {
+    "avg50": 336.8912,
+    "avg200": 335.5654,
+    "year_high": 387.49,
+    "year_low": 290.97,
+    "momentum_50d_pct": -7.52,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 3.42,
+    "revenue_growth_prev_pct": -0.77,
+    "eps_growth_pct": 6.07,
+    "gross_margin_pct": 85.9,
+    "gross_margin_4q_ago_pct": 83.4,
+    "op_margin_pct": 43.2,
+    "op_margin_4q_ago_pct": 18.6,
+    "debt_to_equity": 1.72,
+    "pe_ratio": 18.6,
+    "ps_ratio": 10.6,
+    "fcf_last4q": [
+     4473000000,
+     2655000000,
+     2346000000,
+     5578000000
+    ],
+    "net_debt_to_ebitda": 1.41,
+    "ev_to_ebitda": 24.7
+   }
   },
   {
    "symbol": "BA",
@@ -649,7 +1270,34 @@
    },
    "red_flag_count": 4,
    "price": 197,
-   "chg_pct": -2.45593
+   "chg_pct": -2.45593,
+   "detail": {
+    "avg50": 216.246,
+    "avg200": 221.2025,
+    "year_high": 254.35,
+    "year_low": 176.77,
+    "momentum_50d_pct": -8.35,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 10.55,
+    "revenue_growth_prev_pct": -7.23,
+    "eps_growth_pct": -509.09,
+    "gross_margin_pct": 9.8,
+    "gross_margin_4q_ago_pct": -10.2,
+    "op_margin_pct": 0.3,
+    "op_margin_4q_ago_pct": -20.6,
+    "debt_to_equity": 7.52,
+    "pe_ratio": -80.8,
+    "ps_ratio": 7.0,
+    "fcf_last4q": [
+     631000000,
+     -1454000000,
+     -1184000000,
+     1797000000
+    ],
+    "net_debt_to_ebitda": 164.47,
+    "ev_to_ebitda": 893.1
+   }
   },
   {
    "symbol": "BAC",
@@ -671,7 +1319,34 @@
    },
    "red_flag_count": 2,
    "price": 58.18,
-   "chg_pct": 0.49227
+   "chg_pct": 0.49227,
+   "detail": {
+    "avg50": 61.9392,
+    "avg200": 55.236,
+    "year_high": 65.23,
+    "year_low": 46.12,
+    "momentum_50d_pct": -6.8,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 3.15,
+    "revenue_growth_prev_pct": -3.63,
+    "eps_growth_pct": 8.93,
+    "gross_margin_pct": 61.1,
+    "gross_margin_4q_ago_pct": 55.6,
+    "op_margin_pct": 23.4,
+    "op_margin_4q_ago_pct": 19.6,
+    "debt_to_equity": 2.43,
+    "pe_ratio": 11.7,
+    "ps_ratio": 8.2,
+    "fcf_last4q": [
+     29043000000,
+     41770000000,
+     -22945000000,
+     46874000000
+    ],
+    "net_debt_to_ebitda": 60.82,
+    "ev_to_ebitda": 96.1
+   }
   },
   {
    "symbol": "BKNG",
@@ -694,7 +1369,34 @@
    },
    "red_flag_count": 3,
    "price": 170.52,
-   "chg_pct": -0.51342
+   "chg_pct": -0.51342,
+   "detail": {
+    "avg50": 192.9776,
+    "avg200": 184.96576,
+    "year_high": 224.9956,
+    "year_low": 150.14,
+    "momentum_50d_pct": -13.0,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 32.9,
+    "revenue_growth_prev_pct": -12.87,
+    "eps_growth_pct": 85.4,
+    "gross_margin_pct": 100,
+    "gross_margin_4q_ago_pct": 100,
+    "op_margin_pct": 34.0,
+    "op_margin_4q_ago_pct": 43.7,
+    "debt_to_equity": -1.92,
+    "pe_ratio": 17.5,
+    "ps_ratio": 18.6,
+    "fcf_last4q": [
+     3643000000,
+     3108000000,
+     1417000000,
+     1371000000
+    ],
+    "net_debt_to_ebitda": 1.16,
+    "ev_to_ebitda": 47.0
+   }
   },
   {
    "symbol": "BKR",
@@ -716,7 +1418,34 @@
    },
    "red_flag_count": 3,
    "price": 56.565,
-   "chg_pct": 0.43501
+   "chg_pct": 0.43501,
+   "detail": {
+    "avg50": 60.6042,
+    "avg200": 58.9359,
+    "year_high": 70.41,
+    "year_low": 43.92,
+    "momentum_50d_pct": -5.53,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 2.35,
+    "revenue_growth_prev_pct": -10.82,
+    "eps_growth_pct": -26.6,
+    "gross_margin_pct": 23.4,
+    "gross_margin_4q_ago_pct": 24.3,
+    "op_margin_pct": 12.7,
+    "op_margin_4q_ago_pct": 13.5,
+    "debt_to_equity": 0.82,
+    "pe_ratio": 20.1,
+    "ps_ratio": 8.2,
+    "fcf_last4q": [
+     1045000000,
+     164000000,
+     1285000000,
+     634000000
+    ],
+    "net_debt_to_ebitda": 0.55,
+    "ev_to_ebitda": 58.0
+   }
   },
   {
    "symbol": "BLK",
@@ -738,7 +1467,34 @@
    },
    "red_flag_count": 3,
    "price": 1053.96,
-   "chg_pct": 1.61197
+   "chg_pct": 1.61197,
+   "detail": {
+    "avg50": 1106.3029,
+    "avg200": 1061.148,
+    "year_high": 1219.94,
+    "year_low": 917.39,
+    "momentum_50d_pct": -3.3,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.76,
+    "revenue_growth_prev_pct": -4.42,
+    "eps_growth_pct": -13.34,
+    "gross_margin_pct": 82.0,
+    "gross_margin_4q_ago_pct": 45.9,
+    "op_margin_pct": 35.7,
+    "op_margin_4q_ago_pct": 31.4,
+    "debt_to_equity": 0.26,
+    "pe_ratio": 19.5,
+    "ps_ratio": 21.1,
+    "fcf_last4q": [
+     32000000,
+     -1194000000,
+     2147000000,
+     1336000000
+    ],
+    "net_debt_to_ebitda": 1.64,
+    "ev_to_ebitda": 56.2
+   }
   },
   {
    "symbol": "BMY",
@@ -760,7 +1516,34 @@
    },
    "red_flag_count": 1,
    "price": 62.84,
-   "chg_pct": -1.19497
+   "chg_pct": -1.19497,
+   "detail": {
+    "avg50": 64.008,
+    "avg200": 58.85925,
+    "year_high": 68.64,
+    "year_low": 42.52,
+    "momentum_50d_pct": -1.48,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 12.92,
+    "revenue_growth_prev_pct": -8.11,
+    "eps_growth_pct": 23.66,
+    "gross_margin_pct": 71.3,
+    "gross_margin_4q_ago_pct": 71.9,
+    "op_margin_pct": 31.5,
+    "op_margin_4q_ago_pct": 29.8,
+    "debt_to_equity": 1.93,
+    "pe_ratio": 8.9,
+    "ps_ratio": 9.1,
+    "fcf_last4q": [
+     3088000000,
+     757000000,
+     1604000000,
+     5991000000
+    ],
+    "net_debt_to_ebitda": 6.96,
+    "ev_to_ebitda": 30.8
+   }
   },
   {
    "symbol": "BNY",
@@ -782,7 +1565,34 @@
    },
    "red_flag_count": 2,
    "price": 153.79,
-   "chg_pct": 0.5032
+   "chg_pct": 0.5032,
+   "detail": {
+    "avg50": 159.2462,
+    "avg200": 135.12386,
+    "year_high": 165.84,
+    "year_low": 103.11,
+    "momentum_50d_pct": -3.43,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -1.61,
+    "revenue_growth_prev_pct": -0.05,
+    "eps_growth_pct": 28.95,
+    "gross_margin_pct": 56.0,
+    "gross_margin_4q_ago_pct": 44.6,
+    "op_margin_pct": 22.3,
+    "op_margin_4q_ago_pct": 15.0,
+    "debt_to_equity": 1.38,
+    "pe_ratio": 14.8,
+    "ps_ratio": 9.8,
+    "fcf_last4q": [
+     1975000000,
+     -1502000000,
+     1838000000,
+     -687000000
+    ],
+    "net_debt_to_ebitda": -42.78,
+    "ev_to_ebitda": 1.1
+   }
   },
   {
    "symbol": "BRK-A",
@@ -804,7 +1614,34 @@
    },
    "red_flag_count": 0,
    "price": 763936,
-   "chg_pct": -2.09677
+   "chg_pct": -2.09677,
+   "detail": {
+    "avg50": 757341.06,
+    "avg200": 738882.8,
+    "year_high": 806103,
+    "year_low": 698000,
+    "momentum_50d_pct": 0.83,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 8.68,
+    "revenue_growth_prev_pct": -0.59,
+    "eps_growth_pct": 154.27,
+    "gross_margin_pct": 23.4,
+    "gross_margin_4q_ago_pct": 24.6,
+    "op_margin_pct": 17.2,
+    "op_margin_4q_ago_pct": 17.5,
+    "debt_to_equity": 0.17,
+    "pe_ratio": 10.5,
+    "ps_ratio": 10.6,
+    "fcf_last4q": [
+     5570000000,
+     5452000000,
+     4990000000,
+     8203000000
+    ],
+    "net_debt_to_ebitda": 4.21,
+    "ev_to_ebitda": 55.2
+   }
   },
   {
    "symbol": "BRK-B",
@@ -827,7 +1664,34 @@
    },
    "red_flag_count": 0,
    "price": 509.2,
-   "chg_pct": -2.03925
+   "chg_pct": -2.03925,
+   "detail": {
+    "avg50": 505.0862,
+    "avg200": 492.6101,
+    "year_high": 537.74,
+    "year_low": 464.01,
+    "momentum_50d_pct": 0.93,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 8.68,
+    "revenue_growth_prev_pct": -0.59,
+    "eps_growth_pct": 154.49,
+    "gross_margin_pct": 23.4,
+    "gross_margin_4q_ago_pct": 24.6,
+    "op_margin_pct": 17.2,
+    "op_margin_4q_ago_pct": 17.5,
+    "debt_to_equity": 0.17,
+    "pe_ratio": 10.5,
+    "ps_ratio": 10.6,
+    "fcf_last4q": [
+     5570000000,
+     5452000000,
+     4990000000,
+     8203000000
+    ],
+    "net_debt_to_ebitda": 4.21,
+    "ev_to_ebitda": 55.3
+   }
   },
   {
    "symbol": "BX",
@@ -849,7 +1713,34 @@
    },
    "red_flag_count": 2,
    "price": 125.41,
-   "chg_pct": 1.58769
+   "chg_pct": 1.58769,
+   "detail": {
+    "avg50": 133.9996,
+    "avg200": 130.15704,
+    "year_high": 189.88,
+    "year_low": 101.73,
+    "momentum_50d_pct": -6.75,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 16.26,
+    "revenue_growth_prev_pct": -5.92,
+    "eps_growth_pct": 89.16,
+    "gross_margin_pct": 98.8,
+    "gross_margin_4q_ago_pct": 95.5,
+    "op_margin_pct": 61.9,
+    "op_margin_4q_ago_pct": 51.4,
+    "debt_to_equity": 1.56,
+    "pe_ratio": 18.7,
+    "ps_ratio": 19.3,
+    "fcf_last4q": [
+     1909441000,
+     957637000,
+     -25489000,
+     1573716000
+    ],
+    "net_debt_to_ebitda": 3.87,
+    "ev_to_ebitda": 51.3
+   }
   },
   {
    "symbol": "C",
@@ -871,7 +1762,34 @@
    },
    "red_flag_count": 2,
    "price": 132.7,
-   "chg_pct": -0.18805
+   "chg_pct": -0.18805,
+   "detail": {
+    "avg50": 134.5576,
+    "avg200": 124.62245,
+    "year_high": 147.96,
+    "year_low": 93.66,
+    "momentum_50d_pct": -2.05,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 1.95,
+    "revenue_growth_prev_pct": 9.3,
+    "eps_growth_pct": 2.88,
+    "gross_margin_pct": 49.1,
+    "gross_margin_4q_ago_pct": 44.8,
+    "op_margin_pct": 17.7,
+    "op_margin_4q_ago_pct": 12.2,
+    "debt_to_equity": 3.84,
+    "pe_ratio": 10.9,
+    "ps_ratio": 5.3,
+    "fcf_last4q": [
+     -25630000000,
+     -23288000000,
+     24924000000,
+     -517000000
+    ],
+    "net_debt_to_ebitda": 48.76,
+    "ev_to_ebitda": 74.7
+   }
   },
   {
    "symbol": "CAT",
@@ -894,7 +1812,34 @@
    },
    "red_flag_count": 2,
    "price": 798.57,
-   "chg_pct": 2.02499
+   "chg_pct": 2.02499,
+   "detail": {
+    "avg50": 840.14,
+    "avg200": 784.11127,
+    "year_high": 1073.46,
+    "year_low": 459.58,
+    "momentum_50d_pct": -3.71,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 17.96,
+    "revenue_growth_prev_pct": -8.98,
+    "eps_growth_pct": 41.82,
+    "gross_margin_pct": 37.8,
+    "gross_margin_4q_ago_pct": 33.8,
+    "op_margin_pct": 20.9,
+    "op_margin_4q_ago_pct": 17.3,
+    "debt_to_equity": 2.33,
+    "pe_ratio": 34.1,
+    "ps_ratio": 23.9,
+    "fcf_last4q": [
+     3260000000,
+     819000000,
+     2249000000,
+     2666000000
+    ],
+    "net_debt_to_ebitda": 7.24,
+    "ev_to_ebitda": 99.6
+   }
   },
   {
    "symbol": "CB",
@@ -916,7 +1861,34 @@
    },
    "red_flag_count": 2,
    "price": 341.9,
-   "chg_pct": 0.10834
+   "chg_pct": 0.10834,
+   "detail": {
+    "avg50": 345.9694,
+    "avg200": 328.3094,
+    "year_high": 365.91,
+    "year_low": 265.3,
+    "momentum_50d_pct": -1.54,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.15,
+    "revenue_growth_prev_pct": -3.54,
+    "eps_growth_pct": 26.36,
+    "gross_margin_pct": 47.5,
+    "gross_margin_4q_ago_pct": 32.5,
+    "op_margin_pct": 22.9,
+    "op_margin_4q_ago_pct": 24.0,
+    "debt_to_equity": 0.24,
+    "pe_ratio": 11.5,
+    "ps_ratio": 8.5,
+    "fcf_last4q": [
+     3730000000,
+     3947000000,
+     4761000000,
+     3639000000
+    ],
+    "net_debt_to_ebitda": 4.15,
+    "ev_to_ebitda": 40.3
+   }
   },
   {
    "symbol": "CCEP",
@@ -938,7 +1910,34 @@
    },
    "red_flag_count": 2,
    "price": 100.48,
-   "chg_pct": -2.19021
+   "chg_pct": -2.19021,
+   "detail": {
+    "avg50": 106.6114,
+    "avg200": 98.26035,
+    "year_high": 113.67,
+    "year_low": 84.66,
+    "momentum_50d_pct": -6.42,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 0.91,
+    "revenue_growth_prev_pct": 3.44,
+    "eps_growth_pct": -4.41,
+    "gross_margin_pct": 35.3,
+    "gross_margin_4q_ago_pct": 35.6,
+    "op_margin_pct": 13.6,
+    "op_margin_4q_ago_pct": 9.3,
+    "debt_to_equity": 1.47,
+    "pe_ratio": 10.1,
+    "ps_ratio": 3.6,
+    "fcf_last4q": [
+     603759912,
+     1508238667,
+     643000000,
+     1538000000
+    ],
+    "net_debt_to_ebitda": 5.42,
+    "ev_to_ebitda": 25.7
+   }
   },
   {
    "symbol": "CDNS",
@@ -960,7 +1959,34 @@
    },
    "red_flag_count": 4,
    "price": 280.76,
-   "chg_pct": 0.30725
+   "chg_pct": 0.30725,
+   "detail": {
+    "avg50": 324.7744,
+    "avg200": 326.0847,
+    "year_high": 416.69,
+    "year_low": 262.75,
+    "momentum_50d_pct": -12.89,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 7.48,
+    "revenue_growth_prev_pct": 2.37,
+    "eps_growth_pct": 8.94,
+    "gross_margin_pct": 84.9,
+    "gross_margin_4q_ago_pct": 86.4,
+    "op_margin_pct": 28.4,
+    "op_margin_4q_ago_pct": 33.8,
+    "debt_to_equity": 0.36,
+    "pe_ratio": 70.0,
+    "ps_ratio": 64.7,
+    "fcf_last4q": [
+     582301000,
+     306962000,
+     512453999,
+     276978000
+    ],
+    "net_debt_to_ebitda": 1.83,
+    "ev_to_ebitda": 181.7
+   }
   },
   {
    "symbol": "CEG",
@@ -982,7 +2008,34 @@
    },
    "red_flag_count": 5,
    "price": 262.8,
-   "chg_pct": 1.25997
+   "chg_pct": 1.25997,
+   "detail": {
+    "avg50": 271.077,
+    "avg200": 293.36438,
+    "year_high": 412.7,
+    "year_low": 228.63,
+    "momentum_50d_pct": -6.04,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -32.51,
+    "revenue_growth_prev_pct": 103.7,
+    "eps_growth_pct": -67.71,
+    "gross_margin_pct": 100,
+    "gross_margin_4q_ago_pct": 23.7,
+    "op_margin_pct": 7.7,
+    "op_margin_4q_ago_pct": 21.4,
+    "debt_to_equity": 0.77,
+    "pe_ratio": 42.8,
+    "ps_ratio": 11.7,
+    "fcf_last4q": [
+     -118000000,
+     -850000000,
+     -181000000,
+     1458000000
+    ],
+    "net_debt_to_ebitda": 12.57,
+    "ev_to_ebitda": 59.3
+   }
   },
   {
    "symbol": "CMCSA",
@@ -1004,7 +2057,34 @@
    },
    "red_flag_count": 3,
    "price": 22.91,
-   "chg_pct": -3.45554
+   "chg_pct": -3.45554,
+   "detail": {
+    "avg50": 24.9876,
+    "avg200": 26.88427,
+    "year_high": 32.86,
+    "year_low": 21.28,
+    "momentum_50d_pct": -8.99,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -4.82,
+    "revenue_growth_prev_pct": -2.64,
+    "eps_growth_pct": 65.0,
+    "gross_margin_pct": 72.0,
+    "gross_margin_4q_ago_pct": 72.3,
+    "op_margin_pct": 17.2,
+    "op_margin_4q_ago_pct": 17.7,
+    "debt_to_equity": 1.01,
+    "pe_ratio": 6.2,
+    "ps_ratio": 2.9,
+    "fcf_last4q": [
+     5190000000,
+     4540000000,
+     5092000000,
+     5622000000
+    ],
+    "net_debt_to_ebitda": 8.85,
+    "ev_to_ebitda": 18.2
+   }
   },
   {
    "symbol": "CME",
@@ -1026,7 +2106,34 @@
    },
    "red_flag_count": 2,
    "price": 276.01,
-   "chg_pct": 1.79237
+   "chg_pct": 1.79237,
+   "detail": {
+    "avg50": 266.271,
+    "avg200": 278.7072,
+    "year_high": 329.16,
+    "year_low": 218.31,
+    "momentum_50d_pct": 3.66,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -9.25,
+    "revenue_growth_prev_pct": 14.04,
+    "eps_growth_pct": -12.0,
+    "gross_margin_pct": 69.2,
+    "gross_margin_4q_ago_pct": 84.5,
+    "op_margin_pct": 64.9,
+    "op_margin_4q_ago_pct": 63.3,
+    "debt_to_equity": 0.13,
+    "pe_ratio": 19.3,
+    "ps_ratio": 46.6,
+    "fcf_last4q": [
+     923500000,
+     1238100000,
+     1101400000,
+     949700000
+    ],
+    "net_debt_to_ebitda": 1.53,
+    "ev_to_ebitda": 96.8
+   }
   },
   {
    "symbol": "COF",
@@ -1048,7 +2155,34 @@
    },
    "red_flag_count": 2,
    "price": 202.04,
-   "chg_pct": -0.56597
+   "chg_pct": -0.56597,
+   "detail": {
+    "avg50": 212.6786,
+    "avg200": 207.42294,
+    "year_high": 259.64,
+    "year_low": 174.24,
+    "momentum_50d_pct": -4.82,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 2.82,
+    "revenue_growth_prev_pct": -1.51,
+    "eps_growth_pct": 41.62,
+    "gross_margin_pct": 85.0,
+    "gross_margin_4q_ago_pct": 64.3,
+    "op_margin_pct": 37.0,
+    "op_margin_4q_ago_pct": 22.1,
+    "debt_to_equity": 0.4,
+    "pe_ratio": 10.6,
+    "ps_ratio": 6.3,
+    "fcf_last4q": [
+     8997000000,
+     5470000000,
+     8965000000,
+     8767000000
+    ],
+    "net_debt_to_ebitda": -1.19,
+    "ev_to_ebitda": 14.7
+   }
   },
   {
    "symbol": "COP",
@@ -1070,7 +2204,34 @@
    },
    "red_flag_count": 0,
    "price": 133.19,
-   "chg_pct": 0.49041
+   "chg_pct": 0.49041,
+   "detail": {
+    "avg50": 125.5414,
+    "avg200": 114.8807,
+    "year_high": 141.62,
+    "year_low": 85.57,
+    "momentum_50d_pct": 5.01,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 21.57,
+    "revenue_growth_prev_pct": 17.69,
+    "eps_growth_pct": 81.46,
+    "gross_margin_pct": 36.7,
+    "gross_margin_4q_ago_pct": 24.1,
+    "op_margin_pct": 31.2,
+    "op_margin_4q_ago_pct": 18.3,
+    "debt_to_equity": 0.36,
+    "pe_ratio": 8.0,
+    "ps_ratio": 6.6,
+    "fcf_last4q": [
+     4410000000,
+     1347000000,
+     1295000000,
+     12542000000
+    ],
+    "net_debt_to_ebitda": 1.79,
+    "ev_to_ebitda": 15.3
+   }
   },
   {
    "symbol": "COST",
@@ -1094,7 +2255,34 @@
    },
    "red_flag_count": 3,
    "price": 893.93,
-   "chg_pct": 0.02125898
+   "chg_pct": 0.02125898,
+   "detail": {
+    "avg50": 936.5394,
+    "avg200": 960.4171,
+    "year_high": 1096.5,
+    "year_low": 844.06,
+    "momentum_50d_pct": -4.4,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 1.34,
+    "revenue_growth_prev_pct": 3.4,
+    "eps_growth_pct": 7.86,
+    "gross_margin_pct": 12.8,
+    "gross_margin_4q_ago_pct": 12.9,
+    "op_margin_pct": 4.0,
+    "op_margin_4q_ago_pct": 3.9,
+    "debt_to_equity": 0.25,
+    "pe_ratio": 50.6,
+    "ps_ratio": 6.3,
+    "fcf_last4q": [
+     2036000000,
+     1707000000,
+     3162000000,
+     1901000000
+    ],
+    "net_debt_to_ebitda": -3.0,
+    "ev_to_ebitda": 121.4
+   }
   },
   {
    "symbol": "CPRT",
@@ -1116,7 +2304,34 @@
    },
    "red_flag_count": 4,
    "price": 29.66,
-   "chg_pct": -3.76379
+   "chg_pct": -3.76379,
+   "detail": {
+    "avg50": 30.4184,
+    "avg200": 34.04115,
+    "year_high": 45.95,
+    "year_low": 26.81,
+    "momentum_50d_pct": -3.74,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -6.84,
+    "revenue_growth_prev_pct": 10.29,
+    "eps_growth_pct": -18.6,
+    "gross_margin_pct": 41.8,
+    "gross_margin_4q_ago_pct": 46.5,
+    "op_margin_pct": 32.0,
+    "op_margin_4q_ago_pct": 37.3,
+    "debt_to_equity": 0.01,
+    "pe_ratio": 20.8,
+    "ps_ratio": 24.0,
+    "fcf_last4q": [
+     278731000,
+     503305000,
+     57882000,
+     427211000
+    ],
+    "net_debt_to_ebitda": -3.85,
+    "ev_to_ebitda": 54.7
+   }
   },
   {
    "symbol": "CRM",
@@ -1140,7 +2355,34 @@
    },
    "red_flag_count": 0,
    "price": 242.85,
-   "chg_pct": -3.06937
+   "chg_pct": -3.06937,
+   "detail": {
+    "avg50": 206.9272,
+    "avg200": 201.5669,
+    "year_high": 269.11,
+    "year_low": 146.32,
+    "momentum_50d_pct": 14.98,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 1.9,
+    "revenue_growth_prev_pct": -0.61,
+    "eps_growth_pct": 76.95,
+    "gross_margin_pct": 76.7,
+    "gross_margin_4q_ago_pct": 78.0,
+    "op_margin_pct": 20.5,
+    "op_margin_4q_ago_pct": 21.3,
+    "debt_to_equity": 1.09,
+    "pe_ratio": 10.7,
+    "ps_ratio": 13.3,
+    "fcf_last4q": [
+     1098000000,
+     6556000000,
+     5323000000,
+     2177000000
+    ],
+    "net_debt_to_ebitda": 6.65,
+    "ev_to_ebitda": 36.7
+   }
   },
   {
    "symbol": "CRWD",
@@ -1164,7 +2406,34 @@
    },
    "red_flag_count": 2,
    "price": 245.7,
-   "chg_pct": 1.79814
+   "chg_pct": 1.79814,
+   "detail": {
+    "avg50": 206.2992,
+    "avg200": 146.41122,
+    "year_high": 250.32,
+    "year_low": 85.68,
+    "momentum_50d_pct": 15.2,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 6.15,
+    "revenue_growth_prev_pct": 6.15,
+    "eps_growth_pct": -81.09,
+    "gross_margin_pct": 74.6,
+    "gross_margin_4q_ago_pct": 75.1,
+    "op_margin_pct": -2.3,
+    "op_margin_4q_ago_pct": -5.6,
+    "debt_to_equity": 0.16,
+    "pe_ratio": 9176.0,
+    "ps_ratio": 132.0,
+    "fcf_last4q": [
+     405855000,
+     493313000,
+     376404000,
+     297376000
+    ],
+    "net_debt_to_ebitda": -39.81,
+    "ev_to_ebitda": 1803.2
+   }
   },
   {
    "symbol": "CRWV",
@@ -1186,7 +2455,34 @@
    },
    "red_flag_count": 5,
    "price": 79.88,
-   "chg_pct": -4.16316
+   "chg_pct": -4.16316,
+   "detail": {
+    "avg50": 85.2366,
+    "avg200": 92.05598,
+    "year_high": 153.2,
+    "year_low": 60.55,
+    "momentum_50d_pct": -4.55,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 23.92,
+    "revenue_growth_prev_pct": 32.2,
+    "eps_growth_pct": 18.57,
+    "gross_margin_pct": 65.9,
+    "gross_margin_4q_ago_pct": 73.0,
+    "op_margin_pct": -1.9,
+    "op_margin_4q_ago_pct": 3.8,
+    "debt_to_equity": 10.27,
+    "pe_ratio": -21.8,
+    "ps_ratio": 21.3,
+    "fcf_last4q": [
+     -5743000000,
+     -4711000000,
+     -2501000000,
+     -699754000
+    ],
+    "net_debt_to_ebitda": 594.88,
+    "ev_to_ebitda": 1316.5
+   }
   },
   {
    "symbol": "CSCO",
@@ -1210,7 +2506,34 @@
    },
    "red_flag_count": 0,
    "price": 110.24,
-   "chg_pct": 2.3204
+   "chg_pct": 2.3204,
+   "detail": {
+    "avg50": 113.2684,
+    "avg200": 96.23905,
+    "year_high": 130.37,
+    "year_low": 66.81,
+    "momentum_50d_pct": -3.32,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 8.91,
+    "revenue_growth_prev_pct": 3.21,
+    "eps_growth_pct": 15.29,
+    "gross_margin_pct": 64.1,
+    "gross_margin_4q_ago_pct": 65.5,
+    "op_margin_pct": 24.7,
+    "op_margin_4q_ago_pct": 22.6,
+    "debt_to_equity": 0.59,
+    "pe_ratio": 29.1,
+    "ps_ratio": 26.2,
+    "fcf_last4q": [
+     4996000000,
+     3565000000,
+     2145000000,
+     2889000000
+    ],
+    "net_debt_to_ebitda": 3.75,
+    "ev_to_ebitda": 79.6
+   }
   },
   {
    "symbol": "CSX",
@@ -1232,7 +2555,34 @@
    },
    "red_flag_count": 1,
    "price": 47.9,
-   "chg_pct": 0
+   "chg_pct": 0,
+   "detail": {
+    "avg50": 50.141,
+    "avg200": 43.7852,
+    "year_high": 53.6,
+    "year_low": 32.84,
+    "momentum_50d_pct": -6.06,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 13.01,
+    "revenue_growth_prev_pct": -0.74,
+    "eps_growth_pct": 25.58,
+    "gross_margin_pct": 100,
+    "gross_margin_4q_ago_pct": 34.9,
+    "op_margin_pct": 38.3,
+    "op_margin_4q_ago_pct": 30.3,
+    "debt_to_equity": 1.37,
+    "pe_ratio": 22.0,
+    "ps_ratio": 22.4,
+    "fcf_last4q": [
+     751000000,
+     729000000,
+     709000000,
+     2832000000
+    ],
+    "net_debt_to_ebitda": 9.45,
+    "ev_to_ebitda": 54.8
+   }
   },
   {
    "symbol": "CTAS",
@@ -1254,7 +2604,34 @@
    },
    "red_flag_count": 0,
    "price": 197.96,
-   "chg_pct": -0.75203
+   "chg_pct": -0.75203,
+   "detail": {
+    "avg50": 201.4912,
+    "avg200": 187.5292,
+    "year_high": 219.17,
+    "year_low": 161.16,
+    "momentum_50d_pct": -1.91,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 2.24,
+    "revenue_growth_prev_pct": 1.48,
+    "eps_growth_pct": 0.79,
+    "gross_margin_pct": 51.0,
+    "gross_margin_4q_ago_pct": 50.3,
+    "op_margin_pct": 23.2,
+    "op_margin_4q_ago_pct": 22.7,
+    "debt_to_equity": 0.53,
+    "pe_ratio": 34.0,
+    "ps_ratio": 23.8,
+    "fcf_last4q": [
+     613106000,
+     530574000,
+     424971000,
+     312524000
+    ],
+    "net_debt_to_ebitda": 3.59,
+    "ev_to_ebitda": 106.4
+   }
   },
   {
    "symbol": "CVS",
@@ -1276,7 +2653,34 @@
    },
    "red_flag_count": 1,
    "price": 90.27,
-   "chg_pct": -1.5809
+   "chg_pct": -1.5809,
+   "detail": {
+    "avg50": 98.9476,
+    "avg200": 87.2432,
+    "year_high": 110.68,
+    "year_low": 69.51,
+    "momentum_50d_pct": -10.22,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.65,
+    "revenue_growth_prev_pct": -4.98,
+    "eps_growth_pct": 0.87,
+    "gross_margin_pct": 14.8,
+    "gross_margin_4q_ago_pct": 13.4,
+    "op_margin_pct": 4.4,
+    "op_margin_4q_ago_pct": -3.1,
+    "debt_to_equity": 0.96,
+    "pe_ratio": 11.1,
+    "ps_ratio": 1.2,
+    "fcf_last4q": [
+     5654000000,
+     3400000000,
+     2606000000,
+     98000000
+    ],
+    "net_debt_to_ebitda": 11.09,
+    "ev_to_ebitda": 33.6
+   }
   },
   {
    "symbol": "CVX",
@@ -1299,7 +2703,34 @@
    },
    "red_flag_count": 0,
    "price": 211.5944,
-   "chg_pct": 0.02571877
+   "chg_pct": 0.02571877,
+   "detail": {
+    "avg50": 198.7668,
+    "avg200": 183.89944,
+    "year_high": 217.78,
+    "year_low": 146.49,
+    "momentum_50d_pct": 5.4,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 41.3,
+    "revenue_growth_prev_pct": 3.86,
+    "eps_growth_pct": 447.32,
+    "gross_margin_pct": 45.5,
+    "gross_margin_4q_ago_pct": 31.1,
+    "op_margin_pct": 32.0,
+    "op_margin_4q_ago_pct": 8.9,
+    "debt_to_equity": 0.2,
+    "pe_ratio": 6.8,
+    "ps_ratio": 4.9,
+    "fcf_last4q": [
+     18095000000,
+     -1549000000,
+     5525000000,
+     4941000000
+    ],
+    "net_debt_to_ebitda": 1.23,
+    "ev_to_ebitda": 15.4
+   }
   },
   {
    "symbol": "DASH",
@@ -1321,7 +2752,34 @@
    },
    "red_flag_count": 2,
    "price": 194.56,
-   "chg_pct": -1.11812
+   "chg_pct": -1.11812,
+   "detail": {
+    "avg50": 205.3695,
+    "avg200": 188.60805,
+    "year_high": 285.5,
+    "year_low": 143.3,
+    "momentum_50d_pct": -6.05,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 10.36,
+    "revenue_growth_prev_pct": 2.05,
+    "eps_growth_pct": 9.52,
+    "gross_margin_pct": 52.7,
+    "gross_margin_4q_ago_pct": 51.0,
+    "op_margin_pct": 10.1,
+    "op_margin_4q_ago_pct": 7.5,
+    "debt_to_equity": 0.33,
+    "pe_ratio": 100.3,
+    "ps_ratio": 18.0,
+    "fcf_last4q": [
+     1000000000,
+     420000000,
+     254000000,
+     723000000
+    ],
+    "net_debt_to_ebitda": -2.23,
+    "ev_to_ebitda": 157.5
+   }
   },
   {
    "symbol": "DDOG",
@@ -1344,7 +2802,34 @@
    },
    "red_flag_count": 2,
    "price": 236,
-   "chg_pct": 2.25746
+   "chg_pct": 2.25746,
+   "detail": {
+    "avg50": 244.4092,
+    "avg200": 178.86763,
+    "year_high": 292.72,
+    "year_low": 98.01,
+    "momentum_50d_pct": -5.93,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 11.43,
+    "revenue_growth_prev_pct": 5.58,
+    "eps_growth_pct": -20.0,
+    "gross_margin_pct": 78.6,
+    "gross_margin_4q_ago_pct": 80.1,
+    "op_margin_pct": 0.5,
+    "op_margin_4q_ago_pct": -0.7,
+    "debt_to_equity": 0.29,
+    "pe_ratio": 542.4,
+    "ps_ratio": 82.4,
+    "fcf_last4q": [
+     278704000,
+     323264000,
+     318177000,
+     234684000
+    ],
+    "net_debt_to_ebitda": 15.33,
+    "ev_to_ebitda": 1695.1
+   }
   },
   {
    "symbol": "DE",
@@ -1366,7 +2851,34 @@
    },
    "red_flag_count": 3,
    "price": 685.63,
-   "chg_pct": 2.41385
+   "chg_pct": 2.41385,
+   "detail": {
+    "avg50": 630.1056,
+    "avg200": 577.26483,
+    "year_high": 705.88,
+    "year_low": 433,
+    "momentum_50d_pct": 8.55,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -5.69,
+    "revenue_growth_prev_pct": 39.1,
+    "eps_growth_pct": -22.1,
+    "gross_margin_pct": 37.0,
+    "gross_margin_4q_ago_pct": 32.6,
+    "op_margin_pct": 20.6,
+    "op_margin_4q_ago_pct": 15.7,
+    "debt_to_equity": 2.29,
+    "pe_ratio": 29.6,
+    "ps_ratio": 12.9,
+    "fcf_last4q": [
+     1943000000,
+     874000000,
+     -1578000000,
+     2628000000
+    ],
+    "net_debt_to_ebitda": 21.32,
+    "ev_to_ebitda": 84.3
+   }
   },
   {
    "symbol": "DELL",
@@ -1388,7 +2900,34 @@
    },
    "red_flag_count": 0,
    "price": 588.67,
-   "chg_pct": 4.50567
+   "chg_pct": 4.50567,
+   "detail": {
+    "avg50": 460.3792,
+    "avg200": 270.30515,
+    "year_high": 595.51,
+    "year_low": 110.22,
+    "momentum_50d_pct": 23.59,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.14,
+    "revenue_growth_prev_pct": 31.35,
+    "eps_growth_pct": 20.94,
+    "gross_margin_pct": 20.9,
+    "gross_margin_4q_ago_pct": 20.7,
+    "op_margin_pct": 11.6,
+    "op_margin_4q_ago_pct": 8.0,
+    "debt_to_equity": -24.15,
+    "pe_ratio": 15.8,
+    "ps_ratio": 5.6,
+    "fcf_last4q": [
+     986000000,
+     3118000000,
+     3953000000,
+     503000000
+    ],
+    "net_debt_to_ebitda": 3.68,
+    "ev_to_ebitda": 45.7
+   }
   },
   {
    "symbol": "DHR",
@@ -1410,7 +2949,34 @@
    },
    "red_flag_count": 2,
    "price": 212.45,
-   "chg_pct": 1.96295
+   "chg_pct": 1.96295,
+   "detail": {
+    "avg50": 203.5182,
+    "avg200": 201.9956,
+    "year_high": 242.8,
+    "year_low": 160.93,
+    "momentum_50d_pct": 4.05,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.28,
+    "revenue_growth_prev_pct": -12.97,
+    "eps_growth_pct": -15.17,
+    "gross_margin_pct": 57.6,
+    "gross_margin_4q_ago_pct": 58.2,
+    "op_margin_pct": 18.0,
+    "op_margin_4q_ago_pct": 19.1,
+    "debt_to_equity": 0.51,
+    "pe_ratio": 39.9,
+    "ps_ratio": 22.1,
+    "fcf_last4q": [
+     1265000000,
+     1085000000,
+     1746000000,
+     1370000000
+    ],
+    "net_debt_to_ebitda": 12.04,
+    "ev_to_ebitda": 87.1
+   }
   },
   {
    "symbol": "DIS",
@@ -1433,7 +2999,34 @@
    },
    "red_flag_count": 0,
    "price": 105.33,
-   "chg_pct": -1.55155
+   "chg_pct": -1.55155,
+   "detail": {
+    "avg50": 102.7096,
+    "avg200": 104.03195,
+    "year_high": 117.09,
+    "year_low": 92.19,
+    "momentum_50d_pct": -0.04,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.32,
+    "revenue_growth_prev_pct": -3.13,
+    "eps_growth_pct": 19.69,
+    "gross_margin_pct": 40.2,
+    "gross_margin_4q_ago_pct": 37.6,
+    "op_margin_pct": 22.0,
+    "op_margin_4q_ago_pct": 11.6,
+    "debt_to_equity": 0.42,
+    "pe_ratio": 16.2,
+    "ps_ratio": 6.8,
+    "fcf_last4q": [
+     3072000000,
+     4941000000,
+     -2278000000,
+     2558000000
+    ],
+    "net_debt_to_ebitda": 4.76,
+    "ev_to_ebitda": 24.8
+   }
   },
   {
    "symbol": "DOCU",
@@ -1455,7 +3048,34 @@
    },
    "red_flag_count": 0,
    "price": 70.64,
-   "chg_pct": 0.34091
+   "chg_pct": 0.34091,
+   "detail": {
+    "avg50": 59.2068,
+    "avg200": 53.6981,
+    "year_high": 86.27,
+    "year_low": 40.16,
+    "momentum_50d_pct": 16.66,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.48,
+    "revenue_growth_prev_pct": -0.79,
+    "eps_growth_pct": 2.5,
+    "gross_margin_pct": 79.7,
+    "gross_margin_4q_ago_pct": 79.2,
+    "op_margin_pct": 13.4,
+    "op_margin_4q_ago_pct": 10.4,
+    "debt_to_equity": 0.11,
+    "pe_ratio": 33.4,
+    "ps_ratio": 12.0,
+    "fcf_last4q": [
+     295757000,
+     289435000,
+     350199000,
+     262900000
+    ],
+    "net_debt_to_ebitda": -2.17,
+    "ev_to_ebitda": 63.6
+   }
   },
   {
    "symbol": "DUK",
@@ -1477,7 +3097,34 @@
    },
    "red_flag_count": 4,
    "price": 117.53,
-   "chg_pct": -0.85203
+   "chg_pct": -0.85203,
+   "detail": {
+    "avg50": 123.2648,
+    "avg200": 124.109,
+    "year_high": 134.49,
+    "year_low": 113.9,
+    "momentum_50d_pct": -4.65,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -17.28,
+    "revenue_growth_prev_pct": 15.62,
+    "eps_growth_pct": -29.95,
+    "gross_margin_pct": 73.1,
+    "gross_margin_4q_ago_pct": 98.7,
+    "op_margin_pct": 27.0,
+    "op_margin_4q_ago_pct": 26.9,
+    "debt_to_equity": 1.67,
+    "pe_ratio": 22.9,
+    "ps_ratio": 13.0,
+    "fcf_last4q": [
+     -5480000000,
+     -2576000000,
+     -463000000,
+     10060000000
+    ],
+    "net_debt_to_ebitda": 24.16,
+    "ev_to_ebitda": 50.5
+   }
   },
   {
    "symbol": "DXCM",
@@ -1499,7 +3146,34 @@
    },
    "red_flag_count": 0,
    "price": 87.93,
-   "chg_pct": 0.67552
+   "chg_pct": 0.67552,
+   "detail": {
+    "avg50": 83.8442,
+    "avg200": 71.99715,
+    "year_high": 92.59,
+    "year_low": 54.11,
+    "momentum_50d_pct": 6.57,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 9.77,
+    "revenue_growth_prev_pct": -5.37,
+    "eps_growth_pct": 25.0,
+    "gross_margin_pct": 63.4,
+    "gross_margin_4q_ago_pct": 60.5,
+    "op_margin_pct": 24.3,
+    "op_margin_4q_ago_pct": 20.1,
+    "debt_to_equity": 0.53,
+    "pe_ratio": 25.9,
+    "ps_ratio": 19.8,
+    "fcf_last4q": [
+     184500000,
+     449000000,
+     192100000,
+     579400000
+    ],
+    "net_debt_to_ebitda": 0.75,
+    "ev_to_ebitda": 67.2
+   }
   },
   {
    "symbol": "ELV",
@@ -1521,7 +3195,34 @@
    },
    "red_flag_count": 1,
    "price": 410.95,
-   "chg_pct": -0.79902
+   "chg_pct": -0.79902,
+   "detail": {
+    "avg50": 397.2122,
+    "avg200": 363.0922,
+    "year_high": 436.24,
+    "year_low": 274.84,
+    "momentum_50d_pct": 3.46,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.58,
+    "revenue_growth_prev_pct": 0.87,
+    "eps_growth_pct": -16.12,
+    "gross_margin_pct": 89.1,
+    "gross_margin_4q_ago_pct": 24.8,
+    "op_margin_pct": 4.1,
+    "op_margin_4q_ago_pct": 3.5,
+    "debt_to_equity": 0.69,
+    "pe_ratio": 14.4,
+    "ps_ratio": 1.7,
+    "fcf_last4q": [
+     1626000000,
+     4097000000,
+     -209000000,
+     775000000
+    ],
+    "net_debt_to_ebitda": 9.9,
+    "ev_to_ebitda": 50.0
+   }
   },
   {
    "symbol": "EMR",
@@ -1543,7 +3244,34 @@
    },
    "red_flag_count": 1,
    "price": 149.92,
-   "chg_pct": 1.70963
+   "chg_pct": 1.70963,
+   "detail": {
+    "avg50": 151.0226,
+    "avg200": 143.6031,
+    "year_high": 166.35,
+    "year_low": 122.64,
+    "momentum_50d_pct": -0.73,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 6.82,
+    "revenue_growth_prev_pct": 4.97,
+    "eps_growth_pct": 16.36,
+    "gross_margin_pct": 54.5,
+    "gross_margin_4q_ago_pct": 51.9,
+    "op_margin_pct": 20.5,
+    "op_margin_4q_ago_pct": 20.2,
+    "debt_to_equity": 0.68,
+    "pe_ratio": 28.0,
+    "ps_ratio": 16.4,
+    "fcf_last4q": [
+     1322000000,
+     694000000,
+     602000000,
+     842000000
+    ],
+    "net_debt_to_ebitda": 9.64,
+    "ev_to_ebitda": 76.0
+   }
   },
   {
    "symbol": "EP-PC",
@@ -1565,7 +3293,34 @@
    },
    "red_flag_count": 3,
    "price": 49.87,
-   "chg_pct": -0.26
+   "chg_pct": -0.26,
+   "detail": {
+    "avg50": 50.49843,
+    "avg200": 50.3148,
+    "year_high": 51.71,
+    "year_low": 48.95,
+    "momentum_50d_pct": -1.38,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 175.0,
+    "revenue_growth_prev_pct": -63.89,
+    "eps_growth_pct": -11.36,
+    "gross_margin_pct": 68.6,
+    "gross_margin_4q_ago_pct": -102.3,
+    "op_margin_pct": 30.1,
+    "op_margin_4q_ago_pct": 25.6,
+    "debt_to_equity": 1.02,
+    "pe_ratio": 32.4,
+    "ps_ratio": 25.1,
+    "fcf_last4q": [
+     978000000,
+     687000000,
+     872000000,
+     621000000
+    ],
+    "net_debt_to_ebitda": 14.5,
+    "ev_to_ebitda": 65.3
+   }
   },
   {
    "symbol": "EPD",
@@ -1587,7 +3342,34 @@
    },
    "red_flag_count": 1,
    "price": 38.89,
-   "chg_pct": 1.14434
+   "chg_pct": 1.14434,
+   "detail": {
+    "avg50": 38.4624,
+    "avg200": 36.59625,
+    "year_high": 40.17,
+    "year_low": 30.01,
+    "momentum_50d_pct": 1.11,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 26.99,
+    "revenue_growth_prev_pct": 4.3,
+    "eps_growth_pct": 23.53,
+    "gross_margin_pct": 12.1,
+    "gross_margin_4q_ago_pct": 13.8,
+    "op_margin_pct": 11.7,
+    "op_margin_4q_ago_pct": 14.0,
+    "debt_to_equity": 1.12,
+    "pe_ratio": 10.9,
+    "ps_ratio": 4.4,
+    "fcf_last4q": [
+     2023000000,
+     486000000,
+     1171000000,
+     -220000000
+    ],
+    "net_debt_to_ebitda": 11.8,
+    "ev_to_ebitda": 39.9
+   }
   },
   {
    "symbol": "EQIX",
@@ -1609,7 +3391,34 @@
    },
    "red_flag_count": 2,
    "price": 1021.34,
-   "chg_pct": -0.44837
+   "chg_pct": -0.44837,
+   "detail": {
+    "avg50": 1043.8378,
+    "avg200": 973.19226,
+    "year_high": 1128.68,
+    "year_low": 720.62,
+    "momentum_50d_pct": -2.16,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.41,
+    "revenue_growth_prev_pct": 0.08,
+    "eps_growth_pct": 15.17,
+    "gross_margin_pct": 53.1,
+    "gross_margin_4q_ago_pct": 50.7,
+    "op_margin_pct": 25.3,
+    "op_margin_4q_ago_pct": 20.5,
+    "debt_to_equity": 1.62,
+    "pe_ratio": 53.6,
+    "ps_ratio": 39.2,
+    "fcf_last4q": [
+     2323000000,
+     -539000000,
+     -292000000,
+     -122000000
+    ],
+    "net_debt_to_ebitda": 18.18,
+    "ev_to_ebitda": 101.7
+   }
   },
   {
    "symbol": "ETN",
@@ -1631,7 +3440,34 @@
    },
    "red_flag_count": 4,
    "price": 409.46,
-   "chg_pct": 2.93112
+   "chg_pct": 2.93112,
+   "detail": {
+    "avg50": 415.864,
+    "avg200": 384.2908,
+    "year_high": 478,
+    "year_low": 311.92,
+    "momentum_50d_pct": 2.14,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 14.49,
+    "revenue_growth_prev_pct": 5.61,
+    "eps_growth_pct": -5.38,
+    "gross_margin_pct": 33.5,
+    "gross_margin_4q_ago_pct": 38.3,
+    "op_margin_pct": 16.3,
+    "op_margin_4q_ago_pct": 19.6,
+    "debt_to_equity": 1.05,
+    "pe_ratio": 50.5,
+    "ps_ratio": 19.4,
+    "fcf_last4q": [
+     874000000,
+     314000000,
+     2143000000,
+     1173000000
+    ],
+    "net_debt_to_ebitda": 11.95,
+    "ev_to_ebitda": 106.9
+   }
   },
   {
    "symbol": "EXC",
@@ -1653,7 +3489,34 @@
    },
    "red_flag_count": 5,
    "price": 42.64,
-   "chg_pct": 0.47125
+   "chg_pct": 0.47125,
+   "detail": {
+    "avg50": 45.0404,
+    "avg200": 45.7963,
+    "year_high": 50.65,
+    "year_low": 42.01,
+    "momentum_50d_pct": -6.59,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -17.61,
+    "revenue_growth_prev_pct": 33.81,
+    "eps_growth_pct": -56.67,
+    "gross_margin_pct": 41.0,
+    "gross_margin_4q_ago_pct": 43.1,
+    "op_margin_pct": 16.4,
+    "op_margin_4q_ago_pct": 22.4,
+    "debt_to_equity": 1.76,
+    "pe_ratio": 29.9,
+    "ps_ratio": 8.0,
+    "fcf_last4q": [
+     -255000000,
+     -634000000,
+     -1190000000,
+     163000000
+    ],
+    "net_debt_to_ebitda": 25.13,
+    "ev_to_ebitda": 48.7
+   }
   },
   {
    "symbol": "FANG",
@@ -1675,7 +3538,34 @@
    },
    "red_flag_count": 0,
    "price": 196.94,
-   "chg_pct": 1.23368
+   "chg_pct": 1.23368,
+   "detail": {
+    "avg50": 199.1622,
+    "avg200": 183.0375,
+    "year_high": 216.9,
+    "year_low": 136.13,
+    "momentum_50d_pct": -3.39,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 31.18,
+    "revenue_growth_prev_pct": 25.59,
+    "eps_growth_pct": 8212.5,
+    "gross_margin_pct": 45.2,
+    "gross_margin_4q_ago_pct": 34.6,
+    "op_margin_pct": 45.2,
+    "op_margin_4q_ago_pct": 31.5,
+    "debt_to_equity": 0.33,
+    "pe_ratio": 6.6,
+    "ps_ratio": 8.9,
+    "fcf_last4q": [
+     2593000000,
+     895000000,
+     1400000000,
+     1609000000
+    ],
+    "net_debt_to_ebitda": 3.07,
+    "ev_to_ebitda": 15.5
+   }
   },
   {
    "symbol": "FAST",
@@ -1697,7 +3587,34 @@
    },
    "red_flag_count": 0,
    "price": 49.18,
-   "chg_pct": 0.30594
+   "chg_pct": 0.30594,
+   "detail": {
+    "avg50": 48.9886,
+    "avg200": 45.78325,
+    "year_high": 52.92,
+    "year_low": 38.97,
+    "momentum_50d_pct": 0.04,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 8.41,
+    "revenue_growth_prev_pct": 8.6,
+    "eps_growth_pct": 10.0,
+    "gross_margin_pct": 44.6,
+    "gross_margin_4q_ago_pct": 45.3,
+    "op_margin_pct": 21.0,
+    "op_margin_4q_ago_pct": 20.7,
+    "debt_to_equity": 0.11,
+    "pe_ratio": 36.4,
+    "ps_ratio": 23.1,
+    "fcf_last4q": [
+     78200000,
+     319500000,
+     308100000,
+     326600000
+    ],
+    "net_debt_to_ebitda": 0.43,
+    "ev_to_ebitda": 100.9
+   }
   },
   {
    "symbol": "FCX",
@@ -1719,7 +3636,34 @@
    },
    "red_flag_count": 0,
    "price": 71.54,
-   "chg_pct": 0.97389
+   "chg_pct": 0.97389,
+   "detail": {
+    "avg50": 68.4086,
+    "avg200": 62.30765,
+    "year_high": 80.24,
+    "year_low": 35.15,
+    "momentum_50d_pct": 4.58,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 12.75,
+    "revenue_growth_prev_pct": 10.67,
+    "eps_growth_pct": 11.48,
+    "gross_margin_pct": 31.1,
+    "gross_margin_4q_ago_pct": 29.9,
+    "op_margin_pct": 28.5,
+    "op_margin_4q_ago_pct": 28.1,
+    "debt_to_equity": 0.52,
+    "pe_ratio": 23.1,
+    "ps_ratio": 12.9,
+    "fcf_last4q": [
+     3040000000,
+     522000000,
+     1749000000,
+     608000000
+    ],
+    "net_debt_to_ebitda": 2.46,
+    "ev_to_ebitda": 38.1
+   }
   },
   {
    "symbol": "FER",
@@ -1741,7 +3685,34 @@
    },
    "red_flag_count": 3,
    "price": 54.65,
-   "chg_pct": -0.85269
+   "chg_pct": -0.85269,
+   "detail": {
+    "avg50": 61.9135,
+    "avg200": 66.41798,
+    "year_high": 74.79,
+    "year_low": 53.91,
+    "momentum_50d_pct": -11.1,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 124.07,
+    "revenue_growth_prev_pct": -59.33,
+    "eps_growth_pct": 0,
+    "gross_margin_pct": 10.4,
+    "gross_margin_4q_ago_pct": 86.7,
+    "op_margin_pct": 10.4,
+    "op_margin_4q_ago_pct": 9.1,
+    "debt_to_equity": 1.86,
+    "pe_ratio": 41.7,
+    "ps_ratio": 9.2,
+    "fcf_last4q": [
+     733000000,
+     353000000,
+     1332000000,
+     587000000
+    ],
+    "net_debt_to_ebitda": 9.11,
+    "ev_to_ebitda": 67.1
+   }
   },
   {
    "symbol": "FTNT",
@@ -1765,7 +3736,34 @@
    },
    "red_flag_count": 1,
    "price": 172.58,
-   "chg_pct": 0.47156
+   "chg_pct": 0.47156,
+   "detail": {
+    "avg50": 160.1626,
+    "avg200": 113.8825,
+    "year_high": 176.1,
+    "year_low": 73.55,
+    "momentum_50d_pct": 6.04,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 10.72,
+    "revenue_growth_prev_pct": -2.91,
+    "eps_growth_pct": 15.28,
+    "gross_margin_pct": 80.2,
+    "gross_margin_4q_ago_pct": 81.5,
+    "op_margin_pct": 33.7,
+    "op_margin_4q_ago_pct": 31.6,
+    "debt_to_equity": 0.32,
+    "pe_ratio": 46.3,
+    "ps_ratio": 55.2,
+    "fcf_last4q": [
+     965600000,
+     1006500000,
+     577400000,
+     567500000
+    ],
+    "net_debt_to_ebitda": -3.19,
+    "ev_to_ebitda": 144.6
+   }
   },
   {
    "symbol": "GD",
@@ -1787,7 +3785,34 @@
    },
    "red_flag_count": 2,
    "price": 353.05,
-   "chg_pct": -0.81472
+   "chg_pct": -0.81472,
+   "detail": {
+    "avg50": 376.2866,
+    "avg200": 355.26474,
+    "year_high": 400,
+    "year_low": 306.77,
+    "momentum_50d_pct": -6.18,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 4.55,
+    "revenue_growth_prev_pct": -6.25,
+    "eps_growth_pct": 3.37,
+    "gross_margin_pct": 15.5,
+    "gross_margin_4q_ago_pct": 15.2,
+    "op_margin_pct": 10.4,
+    "op_margin_4q_ago_pct": 10.3,
+    "debt_to_equity": 0.35,
+    "pe_ratio": 21.9,
+    "ps_ratio": 7.2,
+    "fcf_last4q": [
+     1646000000,
+     1952000000,
+     952000000,
+     1897000000
+    ],
+    "net_debt_to_ebitda": 3.05,
+    "ev_to_ebitda": 63.4
+   }
   },
   {
    "symbol": "GE",
@@ -1809,7 +3834,34 @@
    },
    "red_flag_count": 4,
    "price": 313.47,
-   "chg_pct": 0.18217
+   "chg_pct": 0.18217,
+   "detail": {
+    "avg50": 348.0898,
+    "avg200": 322.46365,
+    "year_high": 388.84,
+    "year_low": 268.91,
+    "momentum_50d_pct": -9.72,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.72,
+    "revenue_growth_prev_pct": -2.56,
+    "eps_growth_pct": 25.27,
+    "gross_margin_pct": 35.0,
+    "gross_margin_4q_ago_pct": 36.5,
+    "op_margin_pct": 18.6,
+    "op_margin_4q_ago_pct": 22.9,
+    "debt_to_equity": 1.09,
+    "pe_ratio": 41.0,
+    "ps_ratio": 29.1,
+    "fcf_last4q": [
+     2860000000,
+     1492000000,
+     1795000000,
+     2249000000
+    ],
+    "net_debt_to_ebitda": 3.25,
+    "ev_to_ebitda": 132.1
+   }
   },
   {
    "symbol": "GEHC",
@@ -1831,7 +3883,34 @@
    },
    "red_flag_count": 2,
    "price": 64.445,
-   "chg_pct": 1.50417
+   "chg_pct": 1.50417,
+   "detail": {
+    "avg50": 68.2263,
+    "avg200": 72.25195,
+    "year_high": 89.77,
+    "year_low": 58.75,
+    "momentum_50d_pct": -6.0,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 3.2,
+    "revenue_growth_prev_pct": 9.78,
+    "eps_growth_pct": 45.88,
+    "gross_margin_pct": 41.2,
+    "gross_margin_4q_ago_pct": 38.7,
+    "op_margin_pct": 14.0,
+    "op_margin_4q_ago_pct": 12.7,
+    "debt_to_equity": 0.92,
+    "pe_ratio": 12.9,
+    "ps_ratio": 5.5,
+    "fcf_last4q": [
+     -617000000,
+     112000000,
+     917000000,
+     483000000
+    ],
+    "net_debt_to_ebitda": 8.38,
+    "ev_to_ebitda": 38.8
+   }
   },
   {
    "symbol": "GEV",
@@ -1853,7 +3932,34 @@
    },
    "red_flag_count": 3,
    "price": 924.93,
-   "chg_pct": -0.01729561
+   "chg_pct": -0.01729561,
+   "detail": {
+    "avg50": 986.217,
+    "avg200": 900.14233,
+    "year_high": 1195.94,
+    "year_low": 530.16,
+    "momentum_50d_pct": -4.65,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 18.9,
+    "revenue_growth_prev_pct": -14.76,
+    "eps_growth_pct": -85.89,
+    "gross_margin_pct": 21.3,
+    "gross_margin_4q_ago_pct": 19.0,
+    "op_margin_pct": 5.9,
+    "op_margin_4q_ago_pct": 3.7,
+    "debt_to_equity": 0.33,
+    "pe_ratio": 118.0,
+    "ps_ratio": 28.4,
+    "fcf_last4q": [
+     5106000000,
+     4791000000,
+     1809000000,
+     733000000
+    ],
+    "net_debt_to_ebitda": -9.9,
+    "ev_to_ebitda": 330.5
+   }
   },
   {
    "symbol": "GILD",
@@ -1876,7 +3982,34 @@
    },
    "red_flag_count": 3,
    "price": 150.89,
-   "chg_pct": 2.17362
+   "chg_pct": 2.17362,
+   "detail": {
+    "avg50": 139.56,
+    "avg200": 135.28764,
+    "year_high": 157.29,
+    "year_low": 108.46,
+    "momentum_50d_pct": 7.56,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 12.11,
+    "revenue_growth_prev_pct": -12.17,
+    "eps_growth_pct": -618.4,
+    "gross_margin_pct": 79.8,
+    "gross_margin_4q_ago_pct": 79.8,
+    "op_margin_pct": -133.2,
+    "op_margin_4q_ago_pct": 42.8,
+    "debt_to_equity": 2.22,
+    "pe_ratio": -3.7,
+    "ps_ratio": 20.1,
+    "fcf_last4q": [
+     3690000000,
+     2427000000,
+     3121000000,
+     3961000000
+    ],
+    "net_debt_to_ebitda": -2.31,
+    "ev_to_ebitda": -18.0
+   }
   },
   {
    "symbol": "GLW",
@@ -1898,7 +4031,34 @@
    },
    "red_flag_count": 2,
    "price": 147.71,
-   "chg_pct": 2.46254
+   "chg_pct": 2.46254,
+   "detail": {
+    "avg50": 155.8306,
+    "avg200": 146.7307,
+    "year_high": 271.78,
+    "year_low": 77.05,
+    "momentum_50d_pct": -3.67,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 8.71,
+    "revenue_growth_prev_pct": -1.68,
+    "eps_growth_pct": 51.16,
+    "gross_margin_pct": 36.1,
+    "gross_margin_4q_ago_pct": 37.1,
+    "op_margin_pct": 15.5,
+    "op_margin_4q_ago_pct": 14.4,
+    "debt_to_equity": 0.75,
+    "pe_ratio": 98.2,
+    "ps_ratio": 48.8,
+    "fcf_last4q": [
+     1295000000,
+     30000000,
+     620000000,
+     450000000
+    ],
+    "net_debt_to_ebitda": 6.06,
+    "ev_to_ebitda": 199.8
+   }
   },
   {
    "symbol": "GOOG",
@@ -1921,7 +4081,34 @@
    },
    "red_flag_count": 0,
    "price": 343.68,
-   "chg_pct": 1.27298
+   "chg_pct": 1.27298,
+   "detail": {
+    "avg50": 343.7138,
+    "avg200": 336.03226,
+    "year_high": 404.47,
+    "year_low": 236.685,
+    "momentum_50d_pct": 0.2,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 9.01,
+    "revenue_growth_prev_pct": -3.45,
+    "eps_growth_pct": 78.53,
+    "gross_margin_pct": 61.6,
+    "gross_margin_4q_ago_pct": 59.6,
+    "op_margin_pct": 34.0,
+    "op_margin_4q_ago_pct": 30.5,
+    "debt_to_equity": 0.18,
+    "pe_ratio": 9.6,
+    "ps_ratio": 35.8,
+    "fcf_last4q": [
+     -5855000000,
+     10116000000,
+     24551000000,
+     24461000000
+    ],
+    "net_debt_to_ebitda": 0.39,
+    "ev_to_ebitda": 29.6
+   }
   },
   {
    "symbol": "GOOGL",
@@ -1945,7 +4132,34 @@
    },
    "red_flag_count": 0,
    "price": 347.33,
-   "chg_pct": 1.30078
+   "chg_pct": 1.30078,
+   "detail": {
+    "avg50": 345.5772,
+    "avg200": 337.4959,
+    "year_high": 408.61,
+    "year_low": 235.84,
+    "momentum_50d_pct": 1.15,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 9.01,
+    "revenue_growth_prev_pct": -3.45,
+    "eps_growth_pct": 78.53,
+    "gross_margin_pct": 61.6,
+    "gross_margin_4q_ago_pct": 59.6,
+    "op_margin_pct": 34.0,
+    "op_margin_4q_ago_pct": 30.5,
+    "debt_to_equity": 0.18,
+    "pe_ratio": 9.6,
+    "ps_ratio": 35.8,
+    "fcf_last4q": [
+     -5855000000,
+     10116000000,
+     24551000000,
+     24461000000
+    ],
+    "net_debt_to_ebitda": 0.39,
+    "ev_to_ebitda": 29.6
+   }
   },
   {
    "symbol": "GS",
@@ -1968,7 +4182,34 @@
    },
    "red_flag_count": 3,
    "price": 951.47,
-   "chg_pct": 1.4382
+   "chg_pct": 1.4382,
+   "detail": {
+    "avg50": 1036.4064,
+    "avg200": 956.8552,
+    "year_high": 1153.99,
+    "year_low": 740.01,
+    "momentum_50d_pct": -9.11,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 123.09,
+    "revenue_growth_prev_pct": -42.81,
+    "eps_growth_pct": 19.9,
+    "gross_margin_pct": 52.7,
+    "gross_margin_4q_ago_pct": 46.2,
+    "op_margin_pct": 30.0,
+    "op_margin_4q_ago_pct": 16.8,
+    "debt_to_equity": 6.04,
+    "pe_ratio": 11.9,
+    "ps_ratio": 7.9,
+    "fcf_last4q": [
+     5603000000,
+     -32433000000,
+     -16807000000,
+     2122000000
+    ],
+    "net_debt_to_ebitda": 46.09,
+    "ev_to_ebitda": 71.3
+   }
   },
   {
    "symbol": "HCA",
@@ -1990,7 +4231,34 @@
    },
    "red_flag_count": 0,
    "price": 427.71,
-   "chg_pct": -0.30999
+   "chg_pct": -0.30999,
+   "detail": {
+    "avg50": 406.3034,
+    "avg200": 448.69156,
+    "year_high": 556.52,
+    "year_low": 353.99,
+    "momentum_50d_pct": 5.27,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.87,
+    "revenue_growth_prev_pct": -2.07,
+    "eps_growth_pct": 6.57,
+    "gross_margin_pct": 15.2,
+    "gross_margin_4q_ago_pct": 41.8,
+    "op_margin_pct": 15.2,
+    "op_margin_4q_ago_pct": 15.5,
+    "debt_to_equity": -7.42,
+    "pe_ratio": 12.8,
+    "ps_ratio": 4.3,
+    "fcf_last4q": [
+     1104000000,
+     895000000,
+     870000000,
+     3128000000
+    ],
+    "net_debt_to_ebitda": 11.91,
+    "ev_to_ebitda": 33.6
+   }
   },
   {
    "symbol": "HD",
@@ -2014,7 +4282,34 @@
    },
    "red_flag_count": 3,
    "price": 302.51,
-   "chg_pct": 0.01322122
+   "chg_pct": 0.01322122,
+   "detail": {
+    "avg50": 331.6808,
+    "avg200": 342.1837,
+    "year_high": 418.58,
+    "year_low": 289.1,
+    "momentum_50d_pct": -9.56,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 14.6,
+    "revenue_growth_prev_pct": 9.34,
+    "eps_growth_pct": 44.71,
+    "gross_margin_pct": 33.7,
+    "gross_margin_4q_ago_pct": 33.4,
+    "op_margin_pct": 14.3,
+    "op_margin_4q_ago_pct": 12.9,
+    "debt_to_equity": 3.77,
+    "pe_ratio": 17.7,
+    "ps_ratio": 7.1,
+    "fcf_last4q": [
+     4512000000,
+     5188000000,
+     2289000000,
+     3112000000
+    ],
+    "net_debt_to_ebitda": 8.77,
+    "ev_to_ebitda": 57.8
+   }
   },
   {
    "symbol": "HON",
@@ -2037,7 +4332,34 @@
    },
    "red_flag_count": 2,
    "price": 206.49,
-   "chg_pct": -0.56342
+   "chg_pct": -0.56342,
+   "detail": {
+    "avg50": 224.837,
+    "avg200": 229.98065,
+    "year_high": 260.28317,
+    "year_low": 195.86786,
+    "momentum_50d_pct": -8.17,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 6.3,
+    "revenue_growth_prev_pct": 33.28,
+    "eps_growth_pct": 590.31,
+    "gross_margin_pct": 37.6,
+    "gross_margin_4q_ago_pct": 34.1,
+    "op_margin_pct": 17.9,
+    "op_margin_4q_ago_pct": 16.9,
+    "debt_to_equity": 1.35,
+    "pe_ratio": 3.1,
+    "ps_ratio": 7.3,
+    "fcf_last4q": [
+     961000000,
+     -873000000,
+     1117000000,
+     2914000000
+    ],
+    "net_debt_to_ebitda": 3.2,
+    "ev_to_ebitda": 12.2
+   }
   },
   {
    "symbol": "HONA",
@@ -2059,7 +4381,32 @@
    },
    "red_flag_count": 5,
    "price": 167.13,
-   "chg_pct": 1.79681
+   "chg_pct": 1.79681,
+   "detail": {
+    "avg50": 180.4484,
+    "avg200": 194.53136,
+    "year_high": 297.5,
+    "year_low": 149.19,
+    "momentum_50d_pct": -9.34,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 3.91,
+    "revenue_growth_prev_pct": 0,
+    "eps_growth_pct": -50.94,
+    "gross_margin_pct": 35.0,
+    "gross_margin_4q_ago_pct": 37.4,
+    "op_margin_pct": 12.8,
+    "op_margin_4q_ago_pct": 24.3,
+    "debt_to_equity": -2.79,
+    "pe_ratio": 70.8,
+    "ps_ratio": 15.5,
+    "fcf_last4q": [
+     448000000,
+     -362000000
+    ],
+    "net_debt_to_ebitda": 21.18,
+    "ev_to_ebitda": 121.2
+   }
   },
   {
    "symbol": "HOOD",
@@ -2081,7 +4428,34 @@
    },
    "red_flag_count": 3,
    "price": 119.82,
-   "chg_pct": 9.11575
+   "chg_pct": 9.11575,
+   "detail": {
+    "avg50": 103.0808,
+    "avg200": 94.91778,
+    "year_high": 153.86,
+    "year_low": 63.515,
+    "momentum_50d_pct": 16.24,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 22.59,
+    "revenue_growth_prev_pct": -16.84,
+    "eps_growth_pct": 58.97,
+    "gross_margin_pct": 82.0,
+    "gross_margin_4q_ago_pct": 86.7,
+    "op_margin_pct": 43.9,
+    "op_margin_4q_ago_pct": 49.8,
+    "debt_to_equity": 2.4,
+    "pe_ratio": 40.4,
+    "ps_ratio": 68.9,
+    "fcf_last4q": [
+     696000000,
+     2020000000,
+     -950000000,
+     -1588000000
+    ],
+    "net_debt_to_ebitda": 29.05,
+    "ev_to_ebitda": 180.1
+   }
   },
   {
    "symbol": "HUBS",
@@ -2103,7 +4477,34 @@
    },
    "red_flag_count": 3,
    "price": 229.58,
-   "chg_pct": -2.90958
+   "chg_pct": -2.90958,
+   "detail": {
+    "avg50": 230.7468,
+    "avg200": 255.485,
+    "year_high": 525.51,
+    "year_low": 169.63,
+    "momentum_50d_pct": -6.24,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 3.49,
+    "revenue_growth_prev_pct": 4.1,
+    "eps_growth_pct": 38.71,
+    "gross_margin_pct": 82.4,
+    "gross_margin_4q_ago_pct": 83.5,
+    "op_margin_pct": 4.8,
+    "op_margin_4q_ago_pct": 1.4,
+    "debt_to_equity": 0.14,
+    "pe_ratio": 53.1,
+    "ps_ratio": 10.1,
+    "fcf_last4q": [
+     203103000,
+     183403000,
+     203716000,
+     177010000
+    ],
+    "net_debt_to_ebitda": -14.44,
+    "ev_to_ebitda": 170.3
+   }
   },
   {
    "symbol": "HWM",
@@ -2125,7 +4526,34 @@
    },
    "red_flag_count": 4,
    "price": 229.67,
-   "chg_pct": 1.73193
+   "chg_pct": 1.73193,
+   "detail": {
+    "avg50": 267.6256,
+    "avg200": 246.7708,
+    "year_high": 310,
+    "year_low": 183.83,
+    "momentum_50d_pct": -14.18,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 10.12,
+    "revenue_growth_prev_pct": 6.69,
+    "eps_growth_pct": -8.28,
+    "gross_margin_pct": 37.3,
+    "gross_margin_4q_ago_pct": 31.2,
+    "op_margin_pct": 27.9,
+    "op_margin_4q_ago_pct": 25.9,
+    "debt_to_equity": 0.79,
+    "pe_ratio": 50.5,
+    "ps_ratio": 42.2,
+    "fcf_last4q": [
+     479000000,
+     359000000,
+     530000000,
+     202000000
+    ],
+    "net_debt_to_ebitda": 5.03,
+    "ev_to_ebitda": 142.2
+   }
   },
   {
    "symbol": "IBKR",
@@ -2147,7 +4575,34 @@
    },
    "red_flag_count": 2,
    "price": 88.38,
-   "chg_pct": 1.89071
+   "chg_pct": 1.89071,
+   "detail": {
+    "avg50": 91.5708,
+    "avg200": 80.0903,
+    "year_high": 98.75,
+    "year_low": 58.95,
+    "momentum_50d_pct": -0.96,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 9.33,
+    "revenue_growth_prev_pct": -1.75,
+    "eps_growth_pct": 16.67,
+    "gross_margin_pct": 95.2,
+    "gross_margin_4q_ago_pct": 90.8,
+    "op_margin_pct": 86.4,
+    "op_margin_4q_ago_pct": 87.2,
+    "debt_to_equity": 7.69,
+    "pe_ratio": 31.1,
+    "ps_ratio": 13.2,
+    "fcf_last4q": [
+     6198000000,
+     3585000000,
+     1587000000,
+     4464000000
+    ],
+    "net_debt_to_ebitda": -7.32,
+    "ev_to_ebitda": 51.3
+   }
   },
   {
    "symbol": "IBM",
@@ -2170,7 +4625,34 @@
    },
    "red_flag_count": 1,
    "price": 237.75,
-   "chg_pct": 0.10948
+   "chg_pct": 0.10948,
+   "detail": {
+    "avg50": 232.19,
+    "avg200": 259.6191,
+    "year_high": 332.46,
+    "year_low": 199.19,
+    "momentum_50d_pct": -1.14,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.82,
+    "revenue_growth_prev_pct": -19.15,
+    "eps_growth_pct": 76.92,
+    "gross_margin_pct": 57.7,
+    "gross_margin_4q_ago_pct": 58.7,
+    "op_margin_pct": 15.2,
+    "op_margin_4q_ago_pct": 16.3,
+    "debt_to_equity": 1.89,
+    "pe_ratio": 30.6,
+    "ps_ratio": 15.4,
+    "fcf_last4q": [
+     2368000000,
+     4778000000,
+     3658000000,
+     2827000000
+    ],
+    "net_debt_to_ebitda": 19.6,
+    "ev_to_ebitda": 108.7
+   }
   },
   {
    "symbol": "ICE",
@@ -2192,7 +4674,34 @@
    },
    "red_flag_count": 2,
    "price": 155.47,
-   "chg_pct": 1.41553
+   "chg_pct": 1.41553,
+   "detail": {
+    "avg50": 152.5772,
+    "avg200": 155.29315,
+    "year_high": 176.05,
+    "year_low": 121.79,
+    "momentum_50d_pct": 1.9,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -1.5,
+    "revenue_growth_prev_pct": 16.75,
+    "eps_growth_pct": -31.73,
+    "gross_margin_pct": 73.8,
+    "gross_margin_4q_ago_pct": 56.8,
+    "op_margin_pct": 55.0,
+    "op_margin_4q_ago_pct": 39.0,
+    "debt_to_equity": 0.69,
+    "pe_ratio": 18.1,
+    "ps_ratio": 19.2,
+    "fcf_last4q": [
+     1736000000,
+     1150000000,
+     1109000000,
+     853000000
+    ],
+    "net_debt_to_ebitda": 9.37,
+    "ev_to_ebitda": 42.8
+   }
   },
   {
    "symbol": "IDXX",
@@ -2214,7 +4723,34 @@
    },
    "red_flag_count": 2,
    "price": 506.48,
-   "chg_pct": -1.39013
+   "chg_pct": -1.39013,
+   "detail": {
+    "avg50": 550.943,
+    "avg200": 597.44,
+    "year_high": 769.98,
+    "year_low": 500.61,
+    "momentum_50d_pct": -7.13,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 6.64,
+    "revenue_growth_prev_pct": 4.61,
+    "eps_growth_pct": 21.55,
+    "gross_margin_pct": 64.0,
+    "gross_margin_4q_ago_pct": 61.8,
+    "op_margin_pct": 35.0,
+    "op_margin_4q_ago_pct": 32.1,
+    "debt_to_equity": 0.68,
+    "pe_ratio": 31.1,
+    "ps_ratio": 34.7,
+    "fcf_last4q": [
+     322516000,
+     234264000,
+     322588000,
+     371226000
+    ],
+    "net_debt_to_ebitda": 1.92,
+    "ev_to_ebitda": 91.9
+   }
   },
   {
    "symbol": "INTC",
@@ -2238,7 +4774,34 @@
    },
    "red_flag_count": 1,
    "price": 108.8,
-   "chg_pct": 7.66947
+   "chg_pct": 7.66947,
+   "detail": {
+    "avg50": 97.0936,
+    "avg200": 77.1559,
+    "year_high": 142.35,
+    "year_low": 28.73,
+    "momentum_50d_pct": 11.85,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 18.79,
+    "revenue_growth_prev_pct": -0.71,
+    "eps_growth_pct": -195.89,
+    "gross_margin_pct": 41.5,
+    "gross_margin_4q_ago_pct": 38.2,
+    "op_margin_pct": 12.3,
+    "op_margin_4q_ago_pct": 5.0,
+    "debt_to_equity": 0.58,
+    "pe_ratio": -14.9,
+    "ps_ratio": 40.6,
+    "fcf_last4q": [
+     4450000000,
+     -2540000000,
+     800000000,
+     121000000
+    ],
+    "net_debt_to_ebitda": -5.19,
+    "ev_to_ebitda": -95.4
+   }
   },
   {
    "symbol": "INTU",
@@ -2261,7 +4824,34 @@
    },
    "red_flag_count": 4,
    "price": 313.13,
-   "chg_pct": -1.57168
+   "chg_pct": -1.57168,
+   "detail": {
+    "avg50": 324.3588,
+    "avg200": 412.6295,
+    "year_high": 705.08,
+    "year_low": 252.84,
+    "momentum_50d_pct": -6.53,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -49.12,
+    "revenue_growth_prev_pct": 84.0,
+    "eps_growth_pct": -87.93,
+    "gross_margin_pct": 78.1,
+    "gross_margin_4q_ago_pct": 78.8,
+    "op_margin_pct": 17.6,
+    "op_margin_4q_ago_pct": 13.7,
+    "debt_to_equity": 0.44,
+    "pe_ratio": 59.0,
+    "ps_ratio": 19.7,
+    "fcf_last4q": [
+     1258000000,
+     5236000000,
+     1524000000,
+     599000000
+    ],
+    "net_debt_to_ebitda": 4.49,
+    "ev_to_ebitda": 108.3
+   }
   },
   {
    "symbol": "ISRG",
@@ -2284,7 +4874,34 @@
    },
    "red_flag_count": 1,
    "price": 383.54,
-   "chg_pct": 0.32698
+   "chg_pct": 0.32698,
+   "detail": {
+    "avg50": 373.4892,
+    "avg200": 455.10565,
+    "year_high": 603.88,
+    "year_low": 328.57,
+    "momentum_50d_pct": 5.31,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 4.39,
+    "revenue_growth_prev_pct": -3.33,
+    "eps_growth_pct": 0.43,
+    "gross_margin_pct": 67.8,
+    "gross_margin_4q_ago_pct": 66.4,
+    "op_margin_pct": 33.6,
+    "op_margin_4q_ago_pct": 30.3,
+    "debt_to_equity": 0,
+    "pe_ratio": 42.9,
+    "ps_ratio": 48.7,
+    "fcf_last4q": [
+     948400000,
+     808600000,
+     730000000,
+     735600000
+    ],
+    "net_debt_to_ebitda": -2.35,
+    "ev_to_ebitda": 117.7
+   }
   },
   {
    "symbol": "JNJ",
@@ -2308,7 +4925,34 @@
    },
    "red_flag_count": 1,
    "price": 270.22,
-   "chg_pct": 1.09997
+   "chg_pct": 1.09997,
+   "detail": {
+    "avg50": 263.2866,
+    "avg200": 238.65884,
+    "year_high": 281.07,
+    "year_low": 174.12,
+    "momentum_50d_pct": 2.55,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.19,
+    "revenue_growth_prev_pct": -2.04,
+    "eps_growth_pct": 6.07,
+    "gross_margin_pct": 68.2,
+    "gross_margin_4q_ago_pct": 69.6,
+    "op_margin_pct": 28.3,
+    "op_margin_4q_ago_pct": 29.6,
+    "debt_to_equity": 0.58,
+    "pe_ratio": 28.5,
+    "ps_ratio": 24.9,
+    "fcf_last4q": [
+     3390000000,
+     1465000000,
+     5472000000,
+     8381000000
+    ],
+    "net_debt_to_ebitda": 3.18,
+    "ev_to_ebitda": 73.4
+   }
   },
   {
    "symbol": "JPM",
@@ -2332,7 +4976,34 @@
    },
    "red_flag_count": 2,
    "price": 349.31,
-   "chg_pct": 0.11177
+   "chg_pct": 0.11177,
+   "detail": {
+    "avg50": 353.199,
+    "avg200": 320.53586,
+    "year_high": 366.5,
+    "year_low": 279.1,
+    "momentum_50d_pct": -1.0,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 11.95,
+    "revenue_growth_prev_pct": 5.82,
+    "eps_growth_pct": 27.56,
+    "gross_margin_pct": 66.5,
+    "gross_margin_4q_ago_pct": 59.8,
+    "op_margin_pct": 33.4,
+    "op_margin_4q_ago_pct": 26.1,
+    "debt_to_equity": 3.3,
+    "pe_ratio": 10.8,
+    "ps_ratio": 11.1,
+    "fcf_last4q": [
+     -25283000000,
+     -211761000000,
+     119724000000,
+     -45214000000
+    ],
+    "net_debt_to_ebitda": 31.11,
+    "ev_to_ebitda": 61.7
+   }
   },
   {
    "symbol": "KDP",
@@ -2354,7 +5025,34 @@
    },
    "red_flag_count": 3,
    "price": 31.43,
-   "chg_pct": -1.16352
+   "chg_pct": -1.16352,
+   "detail": {
+    "avg50": 31.1606,
+    "avg200": 29.32115,
+    "year_high": 33.82,
+    "year_low": 24.88,
+    "momentum_50d_pct": -0.64,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 83.83,
+    "revenue_growth_prev_pct": -11.62,
+    "eps_growth_pct": -77.95,
+    "gross_margin_pct": 41.9,
+    "gross_margin_4q_ago_pct": 54.3,
+    "op_margin_pct": 9.2,
+    "op_margin_4q_ago_pct": 23.1,
+    "debt_to_equity": 1.37,
+    "pe_ratio": 185.5,
+    "ps_ratio": 6.1,
+    "fcf_last4q": [
+     714000000,
+     165000000,
+     566000000,
+     527000000
+    ],
+    "net_debt_to_ebitda": 49.15,
+    "ev_to_ebitda": 115.7
+   }
   },
   {
    "symbol": "KHC",
@@ -2376,7 +5074,34 @@
    },
    "red_flag_count": 2,
    "price": 24.73,
-   "chg_pct": 0
+   "chg_pct": 0,
+   "detail": {
+    "avg50": 25.4304,
+    "avg200": 24.00525,
+    "year_high": 28.09,
+    "year_low": 21.035,
+    "momentum_50d_pct": -3.93,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 3.56,
+    "revenue_growth_prev_pct": -4.83,
+    "eps_growth_pct": -786.57,
+    "gross_margin_pct": 32.4,
+    "gross_margin_4q_ago_pct": 31.9,
+    "op_margin_pct": -102.7,
+    "op_margin_4q_ago_pct": 16.4,
+    "debt_to_equity": 0.53,
+    "pe_ratio": -1.3,
+    "ps_ratio": 4.5,
+    "fcf_last4q": [
+     893000000,
+     766000000,
+     1171000000,
+     986000000
+    ],
+    "net_debt_to_ebitda": -2.76,
+    "ev_to_ebitda": -7.4
+   }
   },
   {
    "symbol": "KKR",
@@ -2398,7 +5123,34 @@
    },
    "red_flag_count": 3,
    "price": 98.81,
-   "chg_pct": 0.63143
+   "chg_pct": 0.63143,
+   "detail": {
+    "avg50": 103.9904,
+    "avg200": 104.87605,
+    "year_high": 152.1,
+    "year_low": 82.67,
+    "momentum_50d_pct": -4.98,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 33.03,
+    "revenue_growth_prev_pct": -25.19,
+    "eps_growth_pct": 80.49,
+    "gross_margin_pct": 18.9,
+    "gross_margin_4q_ago_pct": 24.7,
+    "op_margin_pct": 5.8,
+    "op_margin_4q_ago_pct": 9.4,
+    "debt_to_equity": 1.63,
+    "pe_ratio": 31.0,
+    "ps_ratio": 14.5,
+    "fcf_last4q": [
+     3203958000,
+     1719246000,
+     -4934167000,
+     2350887000
+    ],
+    "net_debt_to_ebitda": 18.59,
+    "ev_to_ebitda": 56.8
+   }
   },
   {
    "symbol": "KLAC",
@@ -2422,7 +5174,34 @@
    },
    "red_flag_count": 3,
    "price": 168.98,
-   "chg_pct": 0.96797
+   "chg_pct": 0.96797,
+   "detail": {
+    "avg50": 192.745,
+    "avg200": 174.2847,
+    "year_high": 307.37,
+    "year_low": 98.097,
+    "momentum_50d_pct": -8.17,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 7.1,
+    "revenue_growth_prev_pct": 3.58,
+    "eps_growth_pct": 13.04,
+    "gross_margin_pct": 61.4,
+    "gross_margin_4q_ago_pct": 61.3,
+    "op_margin_pct": 42.5,
+    "op_margin_4q_ago_pct": 41.7,
+    "debt_to_equity": 0.97,
+    "pe_ratio": 72.5,
+    "ps_ratio": 108.2,
+    "fcf_last4q": [
+     817142000,
+     622264000,
+     1262031000,
+     1065697000
+    ],
+    "net_debt_to_ebitda": 3.76,
+    "ev_to_ebitda": 334.5
+   }
   },
   {
    "symbol": "KO",
@@ -2445,7 +5224,34 @@
    },
    "red_flag_count": 0,
    "price": 88.06,
-   "chg_pct": 0.21623
+   "chg_pct": 0.21623,
+   "detail": {
+    "avg50": 87.0508,
+    "avg200": 79.16925,
+    "year_high": 92.49,
+    "year_low": 65.35,
+    "momentum_50d_pct": 1.38,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.28,
+    "revenue_growth_prev_pct": 5.5,
+    "eps_growth_pct": 13.19,
+    "gross_margin_pct": 62.9,
+    "gross_margin_4q_ago_pct": 61.5,
+    "op_margin_pct": 34.9,
+    "op_margin_4q_ago_pct": 32.0,
+    "debt_to_equity": 1.2,
+    "pe_ratio": 20.4,
+    "ps_ratio": 27.1,
+    "fcf_last4q": [
+     5104000000,
+     1755000000,
+     2874000000,
+     4564000000
+    ],
+    "net_debt_to_ebitda": 5.01,
+    "ev_to_ebitda": 64.3
+   }
   },
   {
    "symbol": "LIN",
@@ -2468,7 +5274,34 @@
    },
    "red_flag_count": 2,
    "price": 458.48,
-   "chg_pct": -0.78123
+   "chg_pct": -0.78123,
+   "detail": {
+    "avg50": 489.701,
+    "avg200": 482.8821,
+    "year_high": 548.2,
+    "year_low": 387.78,
+    "momentum_50d_pct": -5.98,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 5.79,
+    "revenue_growth_prev_pct": 0.19,
+    "eps_growth_pct": 4.25,
+    "gross_margin_pct": 47.7,
+    "gross_margin_4q_ago_pct": 38.0,
+    "op_margin_pct": 27.3,
+    "op_margin_4q_ago_pct": 27.2,
+    "debt_to_equity": 0.72,
+    "pe_ratio": 31.1,
+    "ps_ratio": 25.8,
+    "fcf_last4q": [
+     833000000,
+     898000000,
+     1572000000,
+     1672000000
+    ],
+    "net_debt_to_ebitda": 6.47,
+    "ev_to_ebitda": 73.7
+   }
   },
   {
    "symbol": "LITE",
@@ -2490,7 +5323,34 @@
    },
    "red_flag_count": 1,
    "price": 893.61,
-   "chg_pct": -2.80509
+   "chg_pct": -2.80509,
+   "detail": {
+    "avg50": 838.8695,
+    "avg200": 710.6629,
+    "year_high": 1085.68,
+    "year_low": 144.52,
+    "momentum_50d_pct": 10.97,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 24.48,
+    "revenue_growth_prev_pct": 21.47,
+    "eps_growth_pct": -4929.65,
+    "gross_margin_pct": 47.4,
+    "gross_margin_4q_ago_pct": 34.0,
+    "op_margin_pct": 26.9,
+    "op_margin_4q_ago_pct": 2.8,
+    "debt_to_equity": 0.36,
+    "pe_ratio": -2.1,
+    "ps_ratio": 60.6,
+    "fcf_last4q": [
+     286800000,
+     79100000,
+     202900000,
+     -18300000
+    ],
+    "net_debt_to_ebitda": 0.05,
+    "ev_to_ebitda": -8.1
+   }
   },
   {
    "symbol": "LLY",
@@ -2513,7 +5373,34 @@
    },
    "red_flag_count": 2,
    "price": 1152.13,
-   "chg_pct": 1.25767
+   "chg_pct": 1.25767,
+   "detail": {
+    "avg50": 1178.6404,
+    "avg200": 1065.8717,
+    "year_high": 1292.65,
+    "year_low": 712.05,
+    "momentum_50d_pct": -2.24,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 16.04,
+    "revenue_growth_prev_pct": 2.63,
+    "eps_growth_pct": -3.86,
+    "gross_margin_pct": 85.8,
+    "gross_margin_4q_ago_pct": 82.9,
+    "op_margin_pct": 54.2,
+    "op_margin_4q_ago_pct": 47.6,
+    "debt_to_equity": 1.62,
+    "pe_ratio": 37.7,
+    "ps_ratio": 46.6,
+    "fcf_last4q": [
+     7757000000,
+     3007000000,
+     677900000,
+     8612000000
+    ],
+    "net_debt_to_ebitda": 3.54,
+    "ev_to_ebitda": 85.9
+   }
   },
   {
    "symbol": "LMT",
@@ -2535,7 +5422,34 @@
    },
    "red_flag_count": 3,
    "price": 538.09,
-   "chg_pct": 0.15635
+   "chg_pct": 0.15635,
+   "detail": {
+    "avg50": 556.2308,
+    "avg200": 559.6796,
+    "year_high": 692,
+    "year_low": 437.25,
+    "momentum_50d_pct": -4.02,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 11.33,
+    "revenue_growth_prev_pct": -11.36,
+    "eps_growth_pct": 23.34,
+    "gross_margin_pct": 12.2,
+    "gross_margin_4q_ago_pct": 12.0,
+    "op_margin_pct": 12.4,
+    "op_margin_4q_ago_pct": 12.3,
+    "debt_to_equity": 2.34,
+    "pe_ratio": 15.7,
+    "ps_ratio": 5.8,
+    "fcf_last4q": [
+     2917000000,
+     -291000000,
+     2756000000,
+     3347000000
+    ],
+    "net_debt_to_ebitda": 6.76,
+    "ev_to_ebitda": 53.4
+   }
   },
   {
    "symbol": "LOW",
@@ -2557,7 +5471,34 @@
    },
    "red_flag_count": 2,
    "price": 192.43,
-   "chg_pct": -0.90633
+   "chg_pct": -0.90633,
+   "detail": {
+    "avg50": 209.422,
+    "avg200": 234.7951,
+    "year_high": 293.06,
+    "year_low": 192.09,
+    "momentum_50d_pct": -8.11,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 12.47,
+    "revenue_growth_prev_pct": 12.11,
+    "eps_growth_pct": 47.59,
+    "gross_margin_pct": 33.0,
+    "gross_margin_4q_ago_pct": 34.2,
+    "op_margin_pct": 13.7,
+    "op_margin_4q_ago_pct": 11.9,
+    "debt_to_equity": -5.65,
+    "pe_ratio": 12.1,
+    "ps_ratio": 4.5,
+    "fcf_last4q": [
+     3117000000,
+     2829000000,
+     964000000,
+     90000000
+    ],
+    "net_debt_to_ebitda": 10.95,
+    "ev_to_ebitda": 43.7
+   }
   },
   {
    "symbol": "LRCX",
@@ -2581,7 +5522,34 @@
    },
    "red_flag_count": 2,
    "price": 269.31,
-   "chg_pct": 0.02971437
+   "chg_pct": 0.02971437,
+   "detail": {
+    "avg50": 307.3808,
+    "avg200": 267.20016,
+    "year_high": 438.5,
+    "year_low": 125.02,
+    "momentum_50d_pct": -6.27,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 15.08,
+    "revenue_growth_prev_pct": 9.29,
+    "eps_growth_pct": 24.66,
+    "gross_margin_pct": 51.7,
+    "gross_margin_4q_ago_pct": 50.4,
+    "op_margin_pct": 37.4,
+    "op_margin_4q_ago_pct": 34.4,
+    "debt_to_equity": 0.33,
+    "pe_ratio": 56.4,
+    "ps_ratio": 76.7,
+    "fcf_last4q": [
+     822427000,
+     809816000,
+     1665166000,
+     1593843000
+    ],
+    "net_debt_to_ebitda": -0.56,
+    "ev_to_ebitda": 198.4
+   }
   },
   {
    "symbol": "MA",
@@ -2604,7 +5572,34 @@
    },
    "red_flag_count": 1,
    "price": 565.73,
-   "chg_pct": -0.35579
+   "chg_pct": -0.35579,
+   "detail": {
+    "avg50": 566.2632,
+    "avg200": 531.6974,
+    "year_high": 601.23,
+    "year_low": 464.52,
+    "momentum_50d_pct": -0.18,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 10.47,
+    "revenue_growth_prev_pct": -4.63,
+    "eps_growth_pct": 14.48,
+    "gross_margin_pct": 100,
+    "gross_margin_4q_ago_pct": 100,
+    "op_margin_pct": 61.7,
+    "op_margin_4q_ago_pct": 60.1,
+    "debt_to_equity": 4.39,
+    "pe_ratio": 25.8,
+    "ps_ratio": 48.8,
+    "fcf_last4q": [
+     3295000000,
+     2845000000,
+     4823000000,
+     5485000000
+    ],
+    "net_debt_to_ebitda": 2.22,
+    "ev_to_ebitda": 77.6
+   }
   },
   {
    "symbol": "MAR",
@@ -2626,7 +5621,34 @@
    },
    "red_flag_count": 2,
    "price": 334,
-   "chg_pct": -0.28958
+   "chg_pct": -0.28958,
+   "detail": {
+    "avg50": 354.737,
+    "avg200": 346.511,
+    "year_high": 410.98,
+    "year_low": 256.76,
+    "momentum_50d_pct": -4.46,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 6.27,
+    "revenue_growth_prev_pct": -0.54,
+    "eps_growth_pct": 18.26,
+    "gross_margin_pct": 22.0,
+    "gross_margin_4q_ago_pct": 21.9,
+    "op_margin_pct": 17.4,
+    "op_margin_4q_ago_pct": 18.2,
+    "debt_to_equity": -3.93,
+    "pe_ratio": 32.5,
+    "ps_ratio": 14.1,
+    "fcf_last4q": [
+     796000000,
+     728000000,
+     657000000,
+     951000000
+    ],
+    "net_debt_to_ebitda": 13.69,
+    "ev_to_ebitda": 92.3
+   }
   },
   {
    "symbol": "MCD",
@@ -2649,7 +5671,34 @@
    },
    "red_flag_count": 2,
    "price": 248.48,
-   "chg_pct": -0.03218539
+   "chg_pct": -0.03218539,
+   "detail": {
+    "avg50": 265.4044,
+    "avg200": 293.47446,
+    "year_high": 341.75,
+    "year_low": 247.65,
+    "momentum_50d_pct": -6.47,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 8.95,
+    "revenue_growth_prev_pct": -7.02,
+    "eps_growth_pct": 19.0,
+    "gross_margin_pct": 58.0,
+    "gross_margin_4q_ago_pct": 58.0,
+    "op_margin_pct": 46.5,
+    "op_margin_4q_ago_pct": 47.4,
+    "debt_to_equity": -53.36,
+    "pe_ratio": 20.4,
+    "ps_ratio": 27.1,
+    "fcf_last4q": [
+     1976000000,
+     1730000000,
+     1638000000,
+     2417000000
+    ],
+    "net_debt_to_ebitda": 13.75,
+    "ev_to_ebitda": 62.9
+   }
   },
   {
    "symbol": "MCHP",
@@ -2672,7 +5721,34 @@
    },
    "red_flag_count": 3,
    "price": 70.82,
-   "chg_pct": 1.7675
+   "chg_pct": 1.7675,
+   "detail": {
+    "avg50": 77.0998,
+    "avg200": 78.30225,
+    "year_high": 105.91,
+    "year_low": 48.52,
+    "momentum_50d_pct": -4.97,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 13.23,
+    "revenue_growth_prev_pct": 10.56,
+    "eps_growth_pct": 76.19,
+    "gross_margin_pct": 63.2,
+    "gross_margin_4q_ago_pct": 55.9,
+    "op_margin_pct": 22.7,
+    "op_margin_4q_ago_pct": 8.3,
+    "debt_to_equity": 0.84,
+    "pe_ratio": 61.6,
+    "ps_ratio": 33.3,
+    "fcf_last4q": [
+     497600000,
+     242800000,
+     318900000,
+     51600000
+    ],
+    "net_debt_to_ebitda": 10.35,
+    "ev_to_ebitda": 110.2
+   }
   },
   {
    "symbol": "MCK",
@@ -2694,7 +5770,34 @@
    },
    "red_flag_count": 1,
    "price": 874.65,
-   "chg_pct": -0.55936
+   "chg_pct": -0.55936,
+   "detail": {
+    "avg50": 866.6686,
+    "avg200": 844.1512,
+    "year_high": 999,
+    "year_low": 687.68,
+    "momentum_50d_pct": 0.92,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 9.43,
+    "revenue_growth_prev_pct": -9.29,
+    "eps_growth_pct": -62.48,
+    "gross_margin_pct": 3.5,
+    "gross_margin_4q_ago_pct": 3.4,
+    "op_margin_pct": 1.3,
+    "op_margin_4q_ago_pct": 1.4,
+    "debt_to_equity": -2.76,
+    "pe_ratio": 36.5,
+    "ps_ratio": 0.9,
+    "fcf_last4q": [
+     -332000000,
+     3236000000,
+     1057000000,
+     2224000000
+    ],
+    "net_debt_to_ebitda": 4.72,
+    "ev_to_ebitda": 69.5
+   }
   },
   {
    "symbol": "MDB",
@@ -2716,7 +5819,34 @@
    },
    "red_flag_count": 1,
    "price": 393.42,
-   "chg_pct": 4.53845
+   "chg_pct": 4.53845,
+   "detail": {
+    "avg50": 377.4292,
+    "avg200": 344.1173,
+    "year_high": 473.1,
+    "year_low": 215.68,
+    "momentum_50d_pct": 1.62,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 12.24,
+    "revenue_growth_prev_pct": -1.07,
+    "eps_growth_pct": 823.91,
+    "gross_margin_pct": 73.8,
+    "gross_margin_4q_ago_pct": 71.5,
+    "op_margin_pct": 3.7,
+    "op_margin_4q_ago_pct": -2.9,
+    "debt_to_equity": 0.01,
+    "pe_ratio": 165.4,
+    "ps_ratio": 35.2,
+    "fcf_last4q": [
+     139406000,
+     199312000,
+     178470000,
+     150153000
+    ],
+    "net_debt_to_ebitda": -17.27,
+    "ev_to_ebitda": 464.4
+   }
   },
   {
    "symbol": "MDLZ",
@@ -2738,7 +5868,34 @@
    },
    "red_flag_count": 1,
    "price": 62.04,
-   "chg_pct": -0.51315
+   "chg_pct": -0.51315,
+   "detail": {
+    "avg50": 61.9752,
+    "avg200": 59.35245,
+    "year_high": 66.65,
+    "year_low": 51.2,
+    "momentum_50d_pct": -1.82,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -7.19,
+    "revenue_growth_prev_pct": -3.96,
+    "eps_growth_pct": 179.07,
+    "gross_margin_pct": 42.6,
+    "gross_margin_4q_ago_pct": 26.8,
+    "op_margin_pct": 20.8,
+    "op_margin_4q_ago_pct": 7.6,
+    "debt_to_equity": 0.83,
+    "pe_ratio": 12.1,
+    "ps_ratio": 8.0,
+    "fcf_last4q": [
+     513000000,
+     155000000,
+     1999000000,
+     418000000
+    ],
+    "net_debt_to_ebitda": 8.5,
+    "ev_to_ebitda": 39.7
+   }
   },
   {
    "symbol": "MELI",
@@ -2760,7 +5917,34 @@
    },
    "red_flag_count": 3,
    "price": 1825.21,
-   "chg_pct": -0.78817
+   "chg_pct": -0.78817,
+   "detail": {
+    "avg50": 1877.4672,
+    "avg200": 1853,
+    "year_high": 2548.5,
+    "year_low": 1495,
+    "momentum_50d_pct": -4.8,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 14.97,
+    "revenue_growth_prev_pct": 0.98,
+    "eps_growth_pct": 11.66,
+    "gross_margin_pct": 40.9,
+    "gross_margin_4q_ago_pct": 43.3,
+    "op_margin_pct": 6.7,
+    "op_margin_4q_ago_pct": 9.8,
+    "debt_to_equity": 1.68,
+    "pe_ratio": 46.2,
+    "ps_ratio": 8.5,
+    "fcf_last4q": [
+     3933000000,
+     1281000000,
+     4782000000,
+     2463989680
+    ],
+    "net_debt_to_ebitda": 14.26,
+    "ev_to_ebitda": 143.1
+   }
   },
   {
    "symbol": "MER-PK",
@@ -2782,7 +5966,34 @@
    },
    "red_flag_count": 2,
    "price": 24.13,
-   "chg_pct": 0.75157
+   "chg_pct": 0.75157,
+   "detail": {
+    "avg50": 27.05879,
+    "avg200": 26.775,
+    "year_high": 27.5,
+    "year_low": 21.01,
+    "momentum_50d_pct": -11.19,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 1.91,
+    "revenue_growth_prev_pct": 0,
+    "eps_growth_pct": 7.63,
+    "gross_margin_pct": 21.6,
+    "gross_margin_4q_ago_pct": 18.1,
+    "op_margin_pct": 13.8,
+    "op_margin_4q_ago_pct": 9.0,
+    "debt_to_equity": 1.33,
+    "pe_ratio": 5.0,
+    "ps_ratio": 12.5,
+    "fcf_last4q": [
+     70813000000,
+     41770000000,
+     46874000000,
+     -9132000000
+    ],
+    "net_debt_to_ebitda": 139.82,
+    "ev_to_ebitda": 209.4
+   }
   },
   {
    "symbol": "META",
@@ -2806,7 +6017,34 @@
    },
    "red_flag_count": 2,
    "price": 682.31,
-   "chg_pct": 1.33668
+   "chg_pct": 1.33668,
+   "detail": {
+    "avg50": 606.6936,
+    "avg200": 624.0341,
+    "year_high": 785.73,
+    "year_low": 520.26,
+    "momentum_50d_pct": 9.73,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 7.97,
+    "revenue_growth_prev_pct": -5.98,
+    "eps_growth_pct": -41.06,
+    "gross_margin_pct": 81.4,
+    "gross_margin_4q_ago_pct": 82.0,
+    "op_margin_pct": 30.9,
+    "op_margin_4q_ago_pct": 40.1,
+    "debt_to_equity": 0.43,
+    "pe_ratio": 22.6,
+    "ps_ratio": 23.6,
+    "fcf_last4q": [
+     1746000000,
+     13229000000,
+     14831000000,
+     11170000000
+    ],
+    "net_debt_to_ebitda": 5.16,
+    "ev_to_ebitda": 81.5
+   }
   },
   {
    "symbol": "MMM",
@@ -2828,7 +6066,34 @@
    },
    "red_flag_count": 3,
    "price": 164.71,
-   "chg_pct": 1.26652
+   "chg_pct": 1.26652,
+   "detail": {
+    "avg50": 172.273,
+    "avg200": 160.7073,
+    "year_high": 184.9,
+    "year_low": 139.34,
+    "momentum_50d_pct": -3.65,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.79,
+    "revenue_growth_prev_pct": -1.68,
+    "eps_growth_pct": 45.53,
+    "gross_margin_pct": 41.3,
+    "gross_margin_4q_ago_pct": 41.8,
+    "op_margin_pct": 15.1,
+    "op_margin_4q_ago_pct": 24.7,
+    "debt_to_equity": 4.25,
+    "pe_ratio": 22.6,
+    "ps_ratio": 13.1,
+    "fcf_last4q": [
+     763000000,
+     349000000,
+     1335000000,
+     1538000000
+    ],
+    "net_debt_to_ebitda": 8.57,
+    "ev_to_ebitda": 84.4
+   }
   },
   {
    "symbol": "MNST",
@@ -2850,7 +6115,34 @@
    },
    "red_flag_count": 3,
    "price": 44.51,
-   "chg_pct": -0.13462
+   "chg_pct": -0.13462,
+   "detail": {
+    "avg50": 46.5852,
+    "avg200": 42.1016,
+    "year_high": 50.17,
+    "year_low": 31.505,
+    "momentum_50d_pct": -4.03,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 7.83,
+    "revenue_growth_prev_pct": 10.43,
+    "eps_growth_pct": 3.45,
+    "gross_margin_pct": 55.9,
+    "gross_margin_4q_ago_pct": 55.7,
+    "op_margin_pct": 29.2,
+    "op_margin_4q_ago_pct": 30.7,
+    "debt_to_equity": 0,
+    "pe_ratio": 40.1,
+    "ps_ratio": 37.1,
+    "fcf_last4q": [
+     460788000,
+     584382000,
+     351241000,
+     701505000
+    ],
+    "net_debt_to_ebitda": -2.49,
+    "ev_to_ebitda": 104.4
+   }
   },
   {
    "symbol": "MO",
@@ -2872,7 +6164,34 @@
    },
    "red_flag_count": 1,
    "price": 69.73,
-   "chg_pct": -0.52782
+   "chg_pct": -0.52782,
+   "detail": {
+    "avg50": 69.2756,
+    "avg200": 66.82045,
+    "year_high": 77.06,
+    "year_low": 54.7,
+    "momentum_50d_pct": 0.33,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 12.58,
+    "revenue_growth_prev_pct": 6.87,
+    "eps_growth_pct": 5.38,
+    "gross_margin_pct": 74.9,
+    "gross_margin_4q_ago_pct": 72.6,
+    "op_margin_pct": 51.3,
+    "op_margin_4q_ago_pct": 61.6,
+    "debt_to_equity": -9.21,
+    "pe_ratio": 13.1,
+    "ps_ratio": 19.7,
+    "fcf_last4q": [
+     -147000000,
+     2231000000,
+     3179000000,
+     3040000000
+    ],
+    "net_debt_to_ebitda": 6.89,
+    "ev_to_ebitda": 44.2
+   }
   },
   {
    "symbol": "MPC",
@@ -2894,7 +6213,34 @@
    },
    "red_flag_count": 0,
    "price": 421.96,
-   "chg_pct": 1.9424
+   "chg_pct": 1.9424,
+   "detail": {
+    "avg50": 347.0604,
+    "avg200": 251.2639,
+    "year_high": 428,
+    "year_low": 161.93,
+    "momentum_50d_pct": 22.43,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 50.41,
+    "revenue_growth_prev_pct": 6.12,
+    "eps_growth_pct": 921.97,
+    "gross_margin_pct": 17.2,
+    "gross_margin_4q_ago_pct": 8.0,
+    "op_margin_pct": 14.1,
+    "op_margin_4q_ago_pct": 4.8,
+    "debt_to_equity": 1.8,
+    "pe_ratio": 3.6,
+    "ps_ratio": 1.4,
+    "fcf_last4q": [
+     9141000000,
+     208000000,
+     1888000000,
+     1662000000
+    ],
+    "net_debt_to_ebitda": 3.21,
+    "ev_to_ebitda": 12.2
+   }
   },
   {
    "symbol": "MPWR",
@@ -2917,7 +6263,34 @@
    },
    "red_flag_count": 3,
    "price": 1169.58,
-   "chg_pct": 1.91441
+   "chg_pct": 1.91441,
+   "detail": {
+    "avg50": 1303.066,
+    "avg200": 1263.5967,
+    "year_high": 1714.09,
+    "year_low": 833.18,
+    "momentum_50d_pct": -6.54,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 21.94,
+    "revenue_growth_prev_pct": 7.06,
+    "eps_growth_pct": 32.74,
+    "gross_margin_pct": 55.2,
+    "gross_margin_4q_ago_pct": 55.1,
+    "op_margin_pct": 31.0,
+    "op_margin_4q_ago_pct": 26.5,
+    "debt_to_equity": 0,
+    "pe_ratio": 66.1,
+    "ps_ratio": 69.2,
+    "fcf_last4q": [
+     145483000,
+     179404000,
+     61897000,
+     198753000
+    ],
+    "net_debt_to_ebitda": -3.28,
+    "ev_to_ebitda": 218.2
+   }
   },
   {
    "symbol": "MRK",
@@ -2940,7 +6313,34 @@
    },
    "red_flag_count": 1,
    "price": 147.17,
-   "chg_pct": 1.55959
+   "chg_pct": 1.55959,
+   "detail": {
+    "avg50": 137.4342,
+    "avg200": 120.2328,
+    "year_high": 156.92,
+    "year_low": 77.58,
+    "momentum_50d_pct": 6.79,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 1.97,
+    "revenue_growth_prev_pct": -0.23,
+    "eps_growth_pct": 68.6,
+    "gross_margin_pct": 73.5,
+    "gross_margin_4q_ago_pct": 75.6,
+    "op_margin_pct": -4.1,
+    "op_margin_4q_ago_pct": 43.4,
+    "debt_to_equity": 1.29,
+    "pe_ratio": -59.5,
+    "ps_ratio": 19.1,
+    "fcf_last4q": [
+     4477000000,
+     2927000000,
+     1824000000,
+     6835000000
+    ],
+    "net_debt_to_ebitda": 33.02,
+    "ev_to_ebitda": 255.9
+   }
   },
   {
    "symbol": "MRSH",
@@ -2962,7 +6362,34 @@
    },
    "red_flag_count": 3,
    "price": 175.01,
-   "chg_pct": 0.24631
+   "chg_pct": 0.24631,
+   "detail": {
+    "avg50": 185.623,
+    "avg200": 177.7851,
+    "year_high": 207.83,
+    "year_low": 156.6,
+    "momentum_50d_pct": -5.72,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -2.54,
+    "revenue_growth_prev_pct": 15.19,
+    "eps_growth_pct": 10.97,
+    "gross_margin_pct": 44.1,
+    "gross_margin_4q_ago_pct": 38.7,
+    "op_margin_pct": 25.6,
+    "op_margin_4q_ago_pct": 18.4,
+    "debt_to_equity": 1.47,
+    "pe_ratio": 15.8,
+    "ps_ratio": 10.9,
+    "fcf_last4q": [
+     1451000000,
+     -750000000,
+     2056000000,
+     2010000000
+    ],
+    "net_debt_to_ebitda": 17.23,
+    "ev_to_ebitda": 84.2
+   }
   },
   {
    "symbol": "MRVL",
@@ -2986,7 +6413,34 @@
    },
    "red_flag_count": 1,
    "price": 240.76,
-   "chg_pct": 4.81041
+   "chg_pct": 4.81041,
+   "detail": {
+    "avg50": 215.9458,
+    "avg200": 158.4151,
+    "year_high": 329.88,
+    "year_low": 70.69,
+    "momentum_50d_pct": 13.11,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 13.3,
+    "revenue_growth_prev_pct": 8.97,
+    "eps_growth_pct": 769.57,
+    "gross_margin_pct": 53.1,
+    "gross_margin_4q_ago_pct": 51.6,
+    "op_margin_pct": 16.7,
+    "op_margin_4q_ago_pct": 17.2,
+    "debt_to_equity": 0.29,
+    "pe_ratio": 137.9,
+    "ps_ratio": 61.4,
+    "fcf_last4q": [
+     478800000,
+     483100000,
+     259400000,
+     508800000
+    ],
+    "net_debt_to_ebitda": 1.77,
+    "ev_to_ebitda": 221.8
+   }
   },
   {
    "symbol": "MS",
@@ -3008,7 +6462,34 @@
    },
    "red_flag_count": 3,
    "price": 203.46,
-   "chg_pct": 0.51378
+   "chg_pct": 0.51378,
+   "detail": {
+    "avg50": 214.7184,
+    "avg200": 192.7869,
+    "year_high": 232.25,
+    "year_low": 151.84,
+    "momentum_50d_pct": -5.68,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 3.98,
+    "revenue_growth_prev_pct": 14.86,
+    "eps_growth_pct": 0.58,
+    "gross_margin_pct": 61.6,
+    "gross_margin_4q_ago_pct": 56.9,
+    "op_margin_pct": 21.5,
+    "op_margin_4q_ago_pct": 20.1,
+    "debt_to_equity": 4.75,
+    "pe_ratio": 15.1,
+    "ps_ratio": 9.5,
+    "fcf_last4q": [
+     -3566000000,
+     -7852000000,
+     -221000000,
+     -4045000000
+    ],
+    "net_debt_to_ebitda": 49.6,
+    "ev_to_ebitda": 94.3
+   }
   },
   {
    "symbol": "MSFT",
@@ -3034,7 +6515,34 @@
    },
    "red_flag_count": 1,
    "price": 497.75,
-   "chg_pct": 1.51948
+   "chg_pct": 1.51948,
+   "detail": {
+    "avg50": 464.6806,
+    "avg200": 431.60315,
+    "year_high": 553.72,
+    "year_low": 349.2,
+    "momentum_50d_pct": 6.26,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 8.59,
+    "revenue_growth_prev_pct": 1.98,
+    "eps_growth_pct": 12.38,
+    "gross_margin_pct": 67.2,
+    "gross_margin_4q_ago_pct": 69.0,
+    "op_margin_pct": 45.1,
+    "op_margin_4q_ago_pct": 48.9,
+    "debt_to_equity": 0.29,
+    "pe_ratio": 19.4,
+    "ps_ratio": 30.8,
+    "fcf_last4q": [
+     19639000000,
+     15803000000,
+     5882000000,
+     25663000000
+    ],
+    "net_debt_to_ebitda": 2.12,
+    "ev_to_ebitda": 56.5
+   }
   },
   {
    "symbol": "MSTR",
@@ -3056,7 +6564,34 @@
    },
    "red_flag_count": 3,
    "price": 132.25,
-   "chg_pct": 4.81059
+   "chg_pct": 4.81059,
+   "detail": {
+    "avg50": 110.8152,
+    "avg200": 137.0424,
+    "year_high": 365.21,
+    "year_low": 81.81,
+    "momentum_50d_pct": 38.9,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -1.55,
+    "revenue_growth_prev_pct": 1.07,
+    "eps_growth_pct": 37.07,
+    "gross_margin_pct": 66.6,
+    "gross_margin_4q_ago_pct": 70.5,
+    "op_margin_pct": -6808.1,
+    "op_margin_4q_ago_pct": -0.0,
+    "debt_to_equity": 0.15,
+    "pe_ratio": -0.9,
+    "ps_ratio": 243.9,
+    "fcf_last4q": [
+     -6426881000,
+     -7238089000,
+     -3116348000,
+     -4968187000
+    ],
+    "net_debt_to_ebitda": -0.62,
+    "ev_to_ebitda": -4.2
+   }
   },
   {
    "symbol": "MU",
@@ -3080,7 +6615,34 @@
    },
    "red_flag_count": 0,
    "price": 977.5,
-   "chg_pct": 5.49889
+   "chg_pct": 5.49889,
+   "detail": {
+    "avg50": 927.257,
+    "avg200": 640.14636,
+    "year_high": 1255,
+    "year_low": 154.65,
+    "momentum_50d_pct": 9.55,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 73.75,
+    "revenue_growth_prev_pct": 74.89,
+    "eps_growth_pct": 104.41,
+    "gross_margin_pct": 84.6,
+    "gross_margin_4q_ago_pct": 44.7,
+    "op_margin_pct": 80.4,
+    "op_margin_4q_ago_pct": 33.2,
+    "debt_to_equity": 0.06,
+    "pe_ratio": 9.2,
+    "ps_ratio": 25.1,
+    "fcf_last4q": [
+     17562000000,
+     5516000000,
+     3022000000,
+     72000000
+    ],
+    "net_debt_to_ebitda": -0.52,
+    "ev_to_ebitda": 28.8
+   }
   },
   {
    "symbol": "NBIS",
@@ -3102,7 +6664,34 @@
    },
    "red_flag_count": 2,
    "price": 217.99,
-   "chg_pct": 4.11711
+   "chg_pct": 4.11711,
+   "detail": {
+    "avg50": 211.812,
+    "avg200": 160.08812,
+    "year_high": 299.86,
+    "year_low": 73.52,
+    "momentum_50d_pct": 5.54,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 45.94,
+    "revenue_growth_prev_pct": 75.23,
+    "eps_growth_pct": -128.33,
+    "gross_margin_pct": 77.1,
+    "gross_margin_4q_ago_pct": 70.6,
+    "op_margin_pct": -30.2,
+    "op_margin_4q_ago_pct": -89.1,
+    "debt_to_equity": 0.97,
+    "pe_ratio": -101.5,
+    "ps_ratio": 132.8,
+    "fcf_last4q": [
+     -3411299999,
+     -214900000,
+     -1221700000,
+     -1035900000
+    ],
+    "net_debt_to_ebitda": 24.03,
+    "ev_to_ebitda": 946.8
+   }
   },
   {
    "symbol": "NEE",
@@ -3124,7 +6713,34 @@
    },
    "red_flag_count": 3,
    "price": 81.28,
-   "chg_pct": 1.13226
+   "chg_pct": 1.13226,
+   "detail": {
+    "avg50": 85.4716,
+    "avg200": 87.6797,
+    "year_high": 98.75,
+    "year_low": 70.37,
+    "momentum_50d_pct": -5.85,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 8.28,
+    "revenue_growth_prev_pct": 6.02,
+    "eps_growth_pct": 43.81,
+    "gross_margin_pct": 81.8,
+    "gross_margin_4q_ago_pct": 66.2,
+    "op_margin_pct": 29.7,
+    "op_margin_4q_ago_pct": 31.7,
+    "debt_to_equity": 1.93,
+    "pe_ratio": 14.5,
+    "ps_ratio": 24.3,
+    "fcf_last4q": [
+     -11418000000,
+     -580000000,
+     277000000,
+     1546000000
+    ],
+    "net_debt_to_ebitda": 22.44,
+    "ev_to_ebitda": 60.8
+   }
   },
   {
    "symbol": "NEM",
@@ -3146,7 +6762,34 @@
    },
    "red_flag_count": 3,
    "price": 124.39,
-   "chg_pct": 2.15999
+   "chg_pct": 2.15999,
+   "detail": {
+    "avg50": 112.5498,
+    "avg200": 110.2015,
+    "year_high": 135.29,
+    "year_low": 76.05,
+    "momentum_50d_pct": 9.65,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -51.91,
+    "revenue_growth_prev_pct": 9.31,
+    "eps_growth_pct": -31.23,
+    "gross_margin_pct": 39.7,
+    "gross_margin_4q_ago_pct": 48.3,
+    "op_margin_pct": 31.8,
+    "op_margin_4q_ago_pct": 45.7,
+    "debt_to_equity": 0.15,
+    "pe_ratio": 11.3,
+    "ps_ratio": 28.8,
+    "fcf_last4q": [
+     2205000000,
+     3144000000,
+     5848000000,
+     1571000000
+    ],
+    "net_debt_to_ebitda": -2.34,
+    "ev_to_ebitda": 63.3
+   }
   },
   {
    "symbol": "NET",
@@ -3169,7 +6812,34 @@
    },
    "red_flag_count": 3,
    "price": 334.12,
-   "chg_pct": 2.91699
+   "chg_pct": 2.91699,
+   "detail": {
+    "avg50": 290.7794,
+    "avg200": 227.21194,
+    "year_high": 338,
+    "year_low": 158.83,
+    "momentum_50d_pct": 11.42,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 8.8,
+    "revenue_growth_prev_pct": 4.11,
+    "eps_growth_pct": -638.46,
+    "gross_margin_pct": 71.8,
+    "gross_margin_4q_ago_pct": 74.0,
+    "op_margin_pct": -29.6,
+    "op_margin_4q_ago_pct": -6.7,
+    "debt_to_equity": 2.18,
+    "pe_ratio": -127.8,
+    "ps_ratio": 124.9,
+    "fcf_last4q": [
+     56384000,
+     84074000,
+     155690000,
+     82482000
+    ],
+    "net_debt_to_ebitda": -18.75,
+    "ev_to_ebitda": -892.3
+   }
   },
   {
    "symbol": "NFLX",
@@ -3192,7 +6862,34 @@
    },
    "red_flag_count": 2,
    "price": 75.31,
-   "chg_pct": -1.4396
+   "chg_pct": -1.4396,
+   "detail": {
+    "avg50": 75.7172,
+    "avg200": 85.48175,
+    "year_high": 124.86,
+    "year_low": 65.08,
+    "momentum_50d_pct": -5.19,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 2.53,
+    "revenue_growth_prev_pct": 1.65,
+    "eps_growth_pct": -35.2,
+    "gross_margin_pct": 51.9,
+    "gross_margin_4q_ago_pct": 46.4,
+    "op_margin_pct": 33.4,
+    "op_margin_4q_ago_pct": 28.2,
+    "debt_to_equity": 0.47,
+    "pe_ratio": 22.0,
+    "ps_ratio": 23.8,
+    "fcf_last4q": [
+     1367771000,
+     5094075000,
+     1872307000,
+     2660455000
+    ],
+    "net_debt_to_ebitda": 1.23,
+    "ev_to_ebitda": 71.7
+   }
   },
   {
    "symbol": "NKE",
@@ -3214,7 +6911,34 @@
    },
    "red_flag_count": 3,
    "price": 36.36,
-   "chg_pct": 1.62102
+   "chg_pct": 1.62102,
+   "detail": {
+    "avg50": 40.4492,
+    "avg200": 50.22165,
+    "year_high": 76.97,
+    "year_low": 35.5,
+    "momentum_50d_pct": -12.21,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -2.72,
+    "revenue_growth_prev_pct": -9.24,
+    "eps_growth_pct": 105.71,
+    "gross_margin_pct": 49.2,
+    "gross_margin_4q_ago_pct": 42.2,
+    "op_margin_pct": 12.0,
+    "op_margin_4q_ago_pct": 7.9,
+    "debt_to_equity": 0.74,
+    "pe_ratio": 15.9,
+    "ps_ratio": 6.2,
+    "fcf_last4q": [
+     1499000000,
+     284000000,
+     386000000,
+     15000000
+    ],
+    "net_debt_to_ebitda": 2.29,
+    "ev_to_ebitda": 47.3
+   }
   },
   {
    "symbol": "NOW",
@@ -3237,7 +6961,34 @@
    },
    "red_flag_count": 3,
    "price": 138.47,
-   "chg_pct": -0.96553
+   "chg_pct": -0.96553,
+   "detail": {
+    "avg50": 122.128,
+    "avg200": 117.53638,
+    "year_high": 194.726,
+    "year_low": 81.24,
+    "momentum_50d_pct": 10.92,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.76,
+    "revenue_growth_prev_pct": 5.66,
+    "eps_growth_pct": -35.56,
+    "gross_margin_pct": 70.7,
+    "gross_margin_4q_ago_pct": 77.3,
+    "op_margin_pct": 4.1,
+    "op_margin_4q_ago_pct": 16.8,
+    "debt_to_equity": 0.68,
+    "pe_ratio": 85.6,
+    "ps_ratio": 25.7,
+    "fcf_last4q": [
+     473000000,
+     1529000000,
+     2000000000,
+     578000000
+    ],
+    "net_debt_to_ebitda": 6.53,
+    "ev_to_ebitda": 119.1
+   }
   },
   {
    "symbol": "NVDA",
@@ -3263,7 +7014,34 @@
    },
    "red_flag_count": 0,
    "price": 219.34,
-   "chg_pct": 2.54324
+   "chg_pct": 2.54324,
+   "detail": {
+    "avg50": 214.2726,
+    "avg200": 198.37814,
+    "year_high": 236.54,
+    "year_low": 164.27,
+    "momentum_50d_pct": 3.73,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 17.9,
+    "revenue_growth_prev_pct": 19.8,
+    "eps_growth_pct": 2.92,
+    "gross_margin_pct": 75.0,
+    "gross_margin_4q_ago_pct": 73.4,
+    "op_margin_pct": 66.2,
+    "op_margin_4q_ago_pct": 63.2,
+    "debt_to_equity": 0.17,
+    "pe_ratio": 19.9,
+    "ps_ratio": 49.4,
+    "fcf_last4q": [
+     21400000000,
+     48587000000,
+     34904000000,
+     22115000000
+    ],
+    "net_debt_to_ebitda": 0.23,
+    "ev_to_ebitda": 65.7
+   }
   },
   {
    "symbol": "NXPI",
@@ -3286,7 +7064,34 @@
    },
    "red_flag_count": 3,
    "price": 227.95,
-   "chg_pct": 4.09626
+   "chg_pct": 4.09626,
+   "detail": {
+    "avg50": 240.6496,
+    "avg200": 245.2525,
+    "year_high": 339.95,
+    "year_low": 183,
+    "momentum_50d_pct": -5.26,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 9.9,
+    "revenue_growth_prev_pct": -4.62,
+    "eps_growth_pct": -31.53,
+    "gross_margin_pct": 57.3,
+    "gross_margin_4q_ago_pct": 56.3,
+    "op_margin_pct": 30.6,
+    "op_margin_4q_ago_pct": 28.1,
+    "debt_to_equity": 0.96,
+    "pe_ratio": 22.9,
+    "ps_ratio": 20.1,
+    "fcf_last4q": [
+     939000000,
+     714000000,
+     793047370,
+     508000000
+    ],
+    "net_debt_to_ebitda": 6.7,
+    "ev_to_ebitda": 67.4
+   }
   },
   {
    "symbol": "ODFL",
@@ -3308,7 +7113,34 @@
    },
    "red_flag_count": 2,
    "price": 175.09,
-   "chg_pct": 0.41867
+   "chg_pct": 0.41867,
+   "detail": {
+    "avg50": 207.5792,
+    "avg200": 198.64755,
+    "year_high": 252.03,
+    "year_low": 126.01,
+    "momentum_50d_pct": -16.66,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 16.43,
+    "revenue_growth_prev_pct": 2.1,
+    "eps_growth_pct": 47.37,
+    "gross_margin_pct": 35.0,
+    "gross_margin_4q_ago_pct": 33.3,
+    "op_margin_pct": 29.9,
+    "op_margin_4q_ago_pct": 25.7,
+    "debt_to_equity": 0.0,
+    "pe_ratio": 32.2,
+    "ps_ratio": 29.1,
+    "fcf_last4q": [
+     195664000,
+     311060000,
+     264517000,
+     343529000
+    ],
+    "net_debt_to_ebitda": -0.47,
+    "ev_to_ebitda": 80.7
+   }
   },
   {
    "symbol": "ON",
@@ -3330,7 +7162,34 @@
    },
    "red_flag_count": 2,
    "price": 68.3,
-   "chg_pct": 2.55255
+   "chg_pct": 2.55255,
+   "detail": {
+    "avg50": 79.5472,
+    "avg200": 79.3933,
+    "year_high": 134.92,
+    "year_low": 44.56,
+    "momentum_50d_pct": -12.03,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.96,
+    "revenue_growth_prev_pct": -1.1,
+    "eps_growth_pct": 825.0,
+    "gross_margin_pct": 38.4,
+    "gross_margin_4q_ago_pct": 37.9,
+    "op_margin_pct": 16.1,
+    "op_margin_4q_ago_pct": 17.0,
+    "debt_to_equity": 0.62,
+    "pe_ratio": 39.3,
+    "ps_ratio": 22.2,
+    "fcf_last4q": [
+     425400000,
+     217200000,
+     485400000,
+     644500000
+    ],
+    "net_debt_to_ebitda": 2.27,
+    "ev_to_ebitda": 85.9
+   }
   },
   {
    "symbol": "ORCL",
@@ -3353,7 +7212,34 @@
    },
    "red_flag_count": 2,
    "price": 150.58,
-   "chg_pct": 5.18301
+   "chg_pct": 5.18301,
+   "detail": {
+    "avg50": 140.9346,
+    "avg200": 166.51785,
+    "year_high": 329.5,
+    "year_low": 114.5,
+    "momentum_50d_pct": 4.73,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.84,
+    "revenue_growth_prev_pct": 11.6,
+    "eps_growth_pct": 7.48,
+    "gross_margin_pct": 60.0,
+    "gross_margin_4q_ago_pct": 66.5,
+    "op_margin_pct": 34.8,
+    "op_margin_4q_ago_pct": 29.5,
+    "debt_to_equity": 2.34,
+    "pe_ratio": 23.6,
+    "ps_ratio": 22.9,
+    "fcf_last4q": [
+     -5396000000,
+     -1873000000,
+     -11484000000,
+     -9967000000
+    ],
+    "net_debt_to_ebitda": 11.5,
+    "ev_to_ebitda": 54.1
+   }
   },
   {
    "symbol": "ORLY",
@@ -3375,7 +7261,34 @@
    },
    "red_flag_count": 2,
    "price": 84.89,
-   "chg_pct": 1.44598
+   "chg_pct": 1.44598,
+   "detail": {
+    "avg50": 88.472,
+    "avg200": 91.5079,
+    "year_high": 108.72,
+    "year_low": 82.59,
+    "momentum_50d_pct": -4.25,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 7.27,
+    "revenue_growth_prev_pct": 3.31,
+    "eps_growth_pct": 20.83,
+    "gross_margin_pct": 51.4,
+    "gross_margin_4q_ago_pct": 51.9,
+    "op_margin_pct": 20.2,
+    "op_margin_4q_ago_pct": 20.7,
+    "debt_to_equity": -5.22,
+    "pe_ratio": 26.5,
+    "ps_ratio": 15.5,
+    "fcf_last4q": [
+     698896000,
+     788466000,
+     364460000,
+     304437000
+    ],
+    "net_debt_to_ebitda": 9.52,
+    "ev_to_ebitda": 87.1
+   }
   },
   {
    "symbol": "PANW",
@@ -3399,7 +7312,34 @@
    },
    "red_flag_count": 2,
    "price": 375.06,
-   "chg_pct": -0.15706
+   "chg_pct": -0.15706,
+   "detail": {
+    "avg50": 352.2738,
+    "avg200": 239.69925,
+    "year_high": 398.88,
+    "year_low": 139.57,
+    "momentum_50d_pct": 3.21,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 13.59,
+    "revenue_growth_prev_pct": 15.73,
+    "eps_growth_pct": -20.69,
+    "gross_margin_pct": 67.6,
+    "gross_margin_4q_ago_pct": 74.2,
+    "op_margin_pct": 5.0,
+    "op_margin_4q_ago_pct": 12.5,
+    "debt_to_equity": 0.09,
+    "pe_ratio": -237.0,
+    "ps_ratio": 72.9,
+    "fcf_last4q": [
+     1273000000,
+     788000000,
+     638000000,
+     1687000000
+    ],
+    "net_debt_to_ebitda": 0.01,
+    "ev_to_ebitda": -232.9
+   }
   },
   {
    "symbol": "PAYX",
@@ -3421,7 +7361,34 @@
    },
    "red_flag_count": 2,
    "price": 116.51,
-   "chg_pct": -0.17992
+   "chg_pct": -0.17992,
+   "detail": {
+    "avg50": 118.6814,
+    "avg200": 104.29675,
+    "year_high": 130.88,
+    "year_low": 85.45,
+    "momentum_50d_pct": -2.14,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -11.24,
+    "revenue_growth_prev_pct": 16.13,
+    "eps_growth_pct": -24.36,
+    "gross_margin_pct": 74.0,
+    "gross_margin_4q_ago_pct": 73.1,
+    "op_margin_pct": 37.7,
+    "op_margin_4q_ago_pct": 35.2,
+    "debt_to_equity": 1.24,
+    "pe_ratio": 21.7,
+    "ps_ratio": 22.8,
+    "fcf_last4q": [
+     515000000,
+     761500000,
+     382800000,
+     662500000
+    ],
+    "net_debt_to_ebitda": 4.79,
+    "ev_to_ebitda": 55.1
+   }
   },
   {
    "symbol": "PCAR",
@@ -3443,7 +7410,34 @@
    },
    "red_flag_count": 2,
    "price": 117.36,
-   "chg_pct": -0.72746
+   "chg_pct": -0.72746,
+   "detail": {
+    "avg50": 127.5886,
+    "avg200": 120.6862,
+    "year_high": 139.24,
+    "year_low": 92.25,
+    "momentum_50d_pct": -9.04,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 21.05,
+    "revenue_growth_prev_pct": -8.6,
+    "eps_growth_pct": 24.35,
+    "gross_margin_pct": 16.1,
+    "gross_margin_4q_ago_pct": 16.2,
+    "op_margin_pct": 11.7,
+    "op_margin_4q_ago_pct": 9.5,
+    "debt_to_equity": 0.72,
+    "pe_ratio": 21,
+    "ps_ratio": 8.4,
+    "fcf_last4q": [
+     309000000,
+     824600000,
+     778000000,
+     1222200000
+    ],
+    "net_debt_to_ebitda": 10.38,
+    "ev_to_ebitda": 82.4
+   }
   },
   {
    "symbol": "PDD",
@@ -3465,7 +7459,34 @@
    },
    "red_flag_count": 2,
    "price": 77.73,
-   "chg_pct": -1.30777
+   "chg_pct": -1.30777,
+   "detail": {
+    "avg50": 85.261,
+    "avg200": 96.57335,
+    "year_high": 139.41,
+    "year_low": 71.94,
+    "momentum_50d_pct": -7.46,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 5.77,
+    "revenue_growth_prev_pct": -14.27,
+    "eps_growth_pct": 117.12,
+    "gross_margin_pct": 57.3,
+    "gross_margin_4q_ago_pct": 56.7,
+    "op_margin_pct": 24.7,
+    "op_margin_4q_ago_pct": 23.1,
+    "debt_to_equity": 0.01,
+    "pe_ratio": 6.7,
+    "ps_ratio": 6.5,
+    "fcf_last4q": [
+     25670000000,
+     16445000000,
+     24119546000,
+     45660545000
+    ],
+    "net_debt_to_ebitda": -3.72,
+    "ev_to_ebitda": 18.1
+   }
   },
   {
    "symbol": "PEP",
@@ -3488,7 +7509,34 @@
    },
    "red_flag_count": 3,
    "price": 133.66,
-   "chg_pct": -0.50618
+   "chg_pct": -0.50618,
+   "detail": {
+    "avg50": 138.6106,
+    "avg200": 148.24025,
+    "year_high": 171.48,
+    "year_low": 129.55,
+    "momentum_50d_pct": -6.39,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 24.37,
+    "revenue_growth_prev_pct": -33.74,
+    "eps_growth_pct": 28.24,
+    "gross_margin_pct": 54.2,
+    "gross_margin_4q_ago_pct": 53.6,
+    "op_margin_pct": 16.6,
+    "op_margin_4q_ago_pct": 15.5,
+    "debt_to_equity": 2.41,
+    "pe_ratio": 16.5,
+    "ps_ratio": 8.1,
+    "fcf_last4q": [
+     1505000000,
+     -406000000,
+     4703000000,
+     3480000000
+    ],
+    "net_debt_to_ebitda": 8.32,
+    "ev_to_ebitda": 46.5
+   }
   },
   {
    "symbol": "PFE",
@@ -3510,7 +7558,34 @@
    },
    "red_flag_count": 1,
    "price": 27.635,
-   "chg_pct": 0.63729
+   "chg_pct": 0.63729,
+   "detail": {
+    "avg50": 26.5526,
+    "avg200": 26.2605,
+    "year_high": 29.21,
+    "year_low": 23.58,
+    "momentum_50d_pct": 3.94,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 4.03,
+    "revenue_growth_prev_pct": -17.69,
+    "eps_growth_pct": -109.19,
+    "gross_margin_pct": 72.8,
+    "gross_margin_4q_ago_pct": 74.9,
+    "op_margin_pct": 31.3,
+    "op_margin_4q_ago_pct": 21.3,
+    "debt_to_equity": 0.74,
+    "pe_ratio": -141.0,
+    "ps_ratio": 9.2,
+    "fcf_last4q": [
+     302000000,
+     2179000000,
+     4504000000,
+     4001000000
+    ],
+    "net_debt_to_ebitda": 51.89,
+    "ev_to_ebitda": 167.7
+   }
   },
   {
    "symbol": "PG",
@@ -3534,7 +7609,34 @@
    },
    "red_flag_count": 3,
    "price": 147.51,
-   "chg_pct": 0.33329
+   "chg_pct": 0.33329,
+   "detail": {
+    "avg50": 146.1286,
+    "avg200": 147.4649,
+    "year_high": 167.25,
+    "year_low": 137.62,
+    "momentum_50d_pct": 0.14,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -0.15,
+    "revenue_growth_prev_pct": -4.38,
+    "eps_growth_pct": -23.49,
+    "gross_margin_pct": 48.5,
+    "gross_margin_4q_ago_pct": 51.4,
+    "op_margin_pct": 18.6,
+    "op_margin_4q_ago_pct": 26.2,
+    "debt_to_equity": 0.64,
+    "pe_ratio": 28.9,
+    "ps_ratio": 16.8,
+    "fcf_last4q": [
+     4874000000,
+     3026000000,
+     3805000000,
+     4208000000
+    ],
+    "net_debt_to_ebitda": 13.77,
+    "ev_to_ebitda": 208.7
+   }
   },
   {
    "symbol": "PGR",
@@ -3556,7 +7658,34 @@
    },
    "red_flag_count": 0,
    "price": 216.29,
-   "chg_pct": -0.3226
+   "chg_pct": -0.3226,
+   "detail": {
+    "avg50": 215.5992,
+    "avg200": 210.1779,
+    "year_high": 248.17,
+    "year_low": 189.2,
+    "momentum_50d_pct": -0.98,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 6.48,
+    "revenue_growth_prev_pct": -2.45,
+    "eps_growth_pct": 18.09,
+    "gross_margin_pct": 25.2,
+    "gross_margin_4q_ago_pct": 15.8,
+    "op_margin_pct": 17.8,
+    "op_margin_4q_ago_pct": 14.8,
+    "debt_to_equity": 0.24,
+    "pe_ratio": 8.5,
+    "ps_ratio": 4.8,
+    "fcf_last4q": [
+     3469000000,
+     4304000000,
+     3049000000,
+     5129000000
+    ],
+    "net_debt_to_ebitda": 1.88,
+    "ev_to_ebitda": 27.5
+   }
   },
   {
    "symbol": "PH",
@@ -3578,7 +7707,34 @@
    },
    "red_flag_count": 2,
    "price": 925.29,
-   "chg_pct": 0.71184
+   "chg_pct": 0.71184,
+   "detail": {
+    "avg50": 986.7508,
+    "avg200": 940.4045,
+    "year_high": 1099.94,
+    "year_low": 715.37,
+    "momentum_50d_pct": -4.38,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 4.9,
+    "revenue_growth_prev_pct": 6.03,
+    "eps_growth_pct": 20.95,
+    "gross_margin_pct": 39.0,
+    "gross_margin_4q_ago_pct": 37.5,
+    "op_margin_pct": 23.9,
+    "op_margin_4q_ago_pct": 20.3,
+    "debt_to_equity": 0.57,
+    "pe_ratio": 28.2,
+    "ps_ratio": 21.4,
+    "fcf_last4q": [
+     1563000000,
+     881000000,
+     768000000,
+     693000000
+    ],
+    "net_debt_to_ebitda": 5.2,
+    "ev_to_ebitda": 83.1
+   }
   },
   {
    "symbol": "PLD",
@@ -3600,7 +7756,34 @@
    },
    "red_flag_count": 2,
    "price": 135.18,
-   "chg_pct": 1.07672
+   "chg_pct": 1.07672,
+   "detail": {
+    "avg50": 141.3204,
+    "avg200": 137.74416,
+    "year_high": 153.35,
+    "year_low": 111.03,
+    "momentum_50d_pct": -4.59,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.56,
+    "revenue_growth_prev_pct": 2.0,
+    "eps_growth_pct": 8.57,
+    "gross_margin_pct": 17.3,
+    "gross_margin_4q_ago_pct": 45.7,
+    "op_margin_pct": 39.6,
+    "op_margin_4q_ago_pct": 40.3,
+    "debt_to_equity": 0.68,
+    "pe_ratio": 29.7,
+    "ps_ratio": 52.1,
+    "fcf_last4q": [
+     1496756000,
+     1138255000,
+     1158236000,
+     1447728000
+    ],
+    "net_debt_to_ebitda": 15.78,
+    "ev_to_ebitda": 73.3
+   }
   },
   {
    "symbol": "PLTR",
@@ -3624,7 +7807,34 @@
    },
    "red_flag_count": 1,
    "price": 176.24,
-   "chg_pct": 1.08982
+   "chg_pct": 1.08982,
+   "detail": {
+    "avg50": 157.2872,
+    "avg200": 151.70192,
+    "year_high": 207.52,
+    "year_low": 106.37,
+    "momentum_50d_pct": 12.94,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 18.55,
+    "revenue_growth_prev_pct": 16.05,
+    "eps_growth_pct": 22.22,
+    "gross_margin_pct": 84.7,
+    "gross_margin_4q_ago_pct": 82.4,
+    "op_margin_pct": 47.1,
+    "op_margin_4q_ago_pct": 33.3,
+    "debt_to_equity": 0.02,
+    "pe_ratio": 66.3,
+    "ps_ratio": 144.5,
+    "fcf_last4q": [
+     1201613000,
+     891764000,
+     764023000,
+     501872000
+    ],
+    "net_debt_to_ebitda": -1.67,
+    "ev_to_ebitda": 255.0
+   }
   },
   {
    "symbol": "PM",
@@ -3646,7 +7856,34 @@
    },
    "red_flag_count": 0,
    "price": 190.48,
-   "chg_pct": -0.6416
+   "chg_pct": -0.6416,
+   "detail": {
+    "avg50": 189.2424,
+    "avg200": 175.95045,
+    "year_high": 207.76,
+    "year_low": 142.11,
+    "momentum_50d_pct": -0.33,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 10.31,
+    "revenue_growth_prev_pct": -2.08,
+    "eps_growth_pct": 15.38,
+    "gross_margin_pct": 68.4,
+    "gross_margin_4q_ago_pct": 67.8,
+    "op_margin_pct": 40.5,
+    "op_margin_4q_ago_pct": 39.3,
+    "debt_to_equity": -5.72,
+    "pe_ratio": 25.1,
+    "ps_ratio": 25.3,
+    "fcf_last4q": [
+     5112000000,
+     -752000000,
+     4265000000,
+     4097000000
+    ],
+    "net_debt_to_ebitda": 9.51,
+    "ev_to_ebitda": 71.9
+   }
   },
   {
    "symbol": "PNC",
@@ -3668,7 +7905,34 @@
    },
    "red_flag_count": 1,
    "price": 233.17,
-   "chg_pct": 0.49998
+   "chg_pct": 0.49998,
+   "detail": {
+    "avg50": 247.6038,
+    "avg200": 226.9994,
+    "year_high": 258.96,
+    "year_low": 176.88,
+    "momentum_50d_pct": -5.83,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 4.35,
+    "revenue_growth_prev_pct": -0.88,
+    "eps_growth_pct": 16.46,
+    "gross_margin_pct": 69.2,
+    "gross_margin_4q_ago_pct": 65.5,
+    "op_margin_pct": 28.7,
+    "op_margin_4q_ago_pct": 26.1,
+    "debt_to_equity": 1.34,
+    "pe_ratio": 12.8,
+    "ps_ratio": 11.0,
+    "fcf_last4q": [
+     2147000000,
+     1928000000,
+     757000000,
+     2656000000
+    ],
+    "net_debt_to_ebitda": 21.16,
+    "ev_to_ebitda": 58.1
+   }
   },
   {
    "symbol": "PSX",
@@ -3690,7 +7954,34 @@
    },
    "red_flag_count": 0,
    "price": 274.21,
-   "chg_pct": 3.62015
+   "chg_pct": 3.62015,
+   "detail": {
+    "avg50": 228.0854,
+    "avg200": 177.494,
+    "year_high": 277.12,
+    "year_low": 126.74,
+    "momentum_50d_pct": 19.75,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 49.68,
+    "revenue_growth_prev_pct": 0.18,
+    "eps_growth_pct": 1780.39,
+    "gross_margin_pct": 14.4,
+    "gross_margin_4q_ago_pct": 5.5,
+    "op_margin_pct": 9.8,
+    "op_margin_4q_ago_pct": 2.6,
+    "debt_to_equity": 0.65,
+    "pe_ratio": 4.4,
+    "ps_ratio": 1.3,
+    "fcf_last4q": [
+     6533000000,
+     -2846000000,
+     2070000000,
+     637000000
+    ],
+    "net_debt_to_ebitda": 2.81,
+    "ev_to_ebitda": 14.4
+   }
   },
   {
    "symbol": "PWR",
@@ -3712,7 +8003,34 @@
    },
    "red_flag_count": 2,
    "price": 636.71,
-   "chg_pct": 3.27232
+   "chg_pct": 3.27232,
+   "detail": {
+    "avg50": 642.0926,
+    "avg200": 596.0013,
+    "year_high": 788.75,
+    "year_low": 382.24,
+    "momentum_50d_pct": -0.84,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 21.36,
+    "revenue_growth_prev_pct": 0.44,
+    "eps_growth_pct": 104.76,
+    "gross_margin_pct": 16.2,
+    "gross_margin_4q_ago_pct": 14.5,
+    "op_margin_pct": 7.3,
+    "op_margin_4q_ago_pct": 6.9,
+    "debt_to_equity": 0.69,
+    "pe_ratio": 59.8,
+    "ps_ratio": 11.3,
+    "fcf_last4q": [
+     864489000,
+     171651000,
+     933971000,
+     421047000
+    ],
+    "net_debt_to_ebitda": 6.32,
+    "ev_to_ebitda": 118.4
+   }
   },
   {
    "symbol": "PYPL",
@@ -3734,7 +8052,34 @@
    },
    "red_flag_count": 1,
    "price": 52.94,
-   "chg_pct": 0.43635
+   "chg_pct": 0.43635,
+   "detail": {
+    "avg50": 56.4077,
+    "avg200": 50.72107,
+    "year_high": 79.215,
+    "year_low": 38.46,
+    "momentum_50d_pct": -7.09,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 3.94,
+    "revenue_growth_prev_pct": -3.72,
+    "eps_growth_pct": 3.28,
+    "gross_margin_pct": 44.9,
+    "gross_margin_4q_ago_pct": 46.0,
+    "op_margin_pct": 21.8,
+    "op_margin_4q_ago_pct": 18.1,
+    "debt_to_equity": 0.72,
+    "pe_ratio": 8.6,
+    "ps_ratio": 4.5,
+    "fcf_last4q": [
+     1775000000,
+     903000000,
+     2190000000,
+     1718000000
+    ],
+    "net_debt_to_ebitda": 3.13,
+    "ev_to_ebitda": 23.6
+   }
   },
   {
    "symbol": "QCOM",
@@ -3758,7 +8103,34 @@
    },
    "red_flag_count": 3,
    "price": 188.71,
-   "chg_pct": 2.0937
+   "chg_pct": 2.0937,
+   "detail": {
+    "avg50": 168.5188,
+    "avg200": 168.5525,
+    "year_high": 259.92,
+    "year_low": 121.99,
+    "momentum_50d_pct": 5.46,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -6.15,
+    "revenue_growth_prev_pct": -13.49,
+    "eps_growth_pct": -72.69,
+    "gross_margin_pct": 53.1,
+    "gross_margin_4q_ago_pct": 55.3,
+    "op_margin_pct": 16.3,
+    "op_margin_4q_ago_pct": 25.9,
+    "debt_to_equity": 0.55,
+    "pe_ratio": 25.0,
+    "ps_ratio": 20.1,
+    "fcf_last4q": [
+     495000000,
+     1916000000,
+     4416000000,
+     3589000000
+    ],
+    "net_debt_to_ebitda": 3.54,
+    "ev_to_ebitda": 69.2
+   }
   },
   {
    "symbol": "REGN",
@@ -3780,7 +8152,34 @@
    },
    "red_flag_count": 0,
    "price": 789.45,
-   "chg_pct": 1.9158
+   "chg_pct": 1.9158,
+   "detail": {
+    "avg50": 763.5692,
+    "avg200": 733.7968,
+    "year_high": 859.34,
+    "year_low": 541,
+    "momentum_50d_pct": 2.79,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 19.01,
+    "revenue_growth_prev_pct": -7.18,
+    "eps_growth_pct": 80.11,
+    "gross_margin_pct": 86.6,
+    "gross_margin_4q_ago_pct": 86.1,
+    "op_margin_pct": 33.1,
+    "op_margin_4q_ago_pct": 27.3,
+    "debt_to_equity": 0.06,
+    "pe_ratio": 12.4,
+    "ps_ratio": 15.0,
+    "fcf_last4q": [
+     334300000,
+     848300000,
+     922000000,
+     1417300000
+    ],
+    "net_debt_to_ebitda": -0.28,
+    "ev_to_ebitda": 38.5
+   }
   },
   {
    "symbol": "RKLB",
@@ -3802,7 +8201,34 @@
    },
    "red_flag_count": 4,
    "price": 67.82,
-   "chg_pct": 6.46782
+   "chg_pct": 6.46782,
+   "detail": {
+    "avg50": 70.2532,
+    "avg200": 80.35442,
+    "year_high": 151,
+    "year_low": 37.57,
+    "momentum_50d_pct": -8.09,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 16.83,
+    "revenue_growth_prev_pct": 11.52,
+    "eps_growth_pct": -14.29,
+    "gross_margin_pct": 36.1,
+    "gross_margin_4q_ago_pct": 37.0,
+    "op_margin_pct": -24.6,
+    "op_margin_4q_ago_pct": -38.0,
+    "debt_to_equity": 0.04,
+    "pe_ratio": -317.7,
+    "ps_ratio": 273.5,
+    "fcf_last4q": [
+     -137336000,
+     -77397000,
+     -114185000,
+     -69435000
+    ],
+    "net_debt_to_ebitda": 89.07,
+    "ev_to_ebitda": -2767.5
+   }
   },
   {
    "symbol": "ROP",
@@ -3824,7 +8250,34 @@
    },
    "red_flag_count": 0,
    "price": 374.76,
-   "chg_pct": -0.28205
+   "chg_pct": -0.28205,
+   "detail": {
+    "avg50": 389.9882,
+    "avg200": 373.45105,
+    "year_high": 521.28,
+    "year_low": 305.96,
+    "momentum_50d_pct": -4.42,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 0.65,
+    "revenue_growth_prev_pct": 1.78,
+    "eps_growth_pct": 136.07,
+    "gross_margin_pct": 69.7,
+    "gross_margin_4q_ago_pct": 69.5,
+    "op_margin_pct": 27.7,
+    "op_margin_4q_ago_pct": 28.4,
+    "debt_to_equity": 0.61,
+    "pe_ratio": 7.3,
+    "ps_ratio": 16.4,
+    "fcf_last4q": [
+     458500000,
+     577800000,
+     728200000,
+     857900000
+    ],
+    "net_debt_to_ebitda": 6.64,
+    "ev_to_ebitda": 27.6
+   }
   },
   {
    "symbol": "ROST",
@@ -3846,7 +8299,34 @@
    },
    "red_flag_count": 0,
    "price": 229.48,
-   "chg_pct": 2.08185
+   "chg_pct": 2.08185,
+   "detail": {
+    "avg50": 236.9804,
+    "avg200": 215.17235,
+    "year_high": 257,
+    "year_low": 143.71,
+    "momentum_50d_pct": -4.38,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 4.23,
+    "revenue_growth_prev_pct": -9.42,
+    "eps_growth_pct": 31.37,
+    "gross_margin_pct": 33.8,
+    "gross_margin_4q_ago_pct": 28.0,
+    "op_margin_pct": 17.6,
+    "op_margin_4q_ago_pct": 11.6,
+    "debt_to_equity": 0.7,
+    "pe_ratio": 23.4,
+    "ps_ratio": 12.8,
+    "fcf_last4q": [
+     624495000,
+     627055000,
+     920809000,
+     617827000
+    ],
+    "net_debt_to_ebitda": 0.37,
+    "ev_to_ebitda": 68.9
+   }
   },
   {
    "symbol": "RTX",
@@ -3868,7 +8348,34 @@
    },
    "red_flag_count": 2,
    "price": 193.54,
-   "chg_pct": -1.67149
+   "chg_pct": -1.67149,
+   "detail": {
+    "avg50": 208.0508,
+    "avg200": 194.16534,
+    "year_high": 226.88,
+    "year_low": 155.64,
+    "momentum_50d_pct": -6.75,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 11.92,
+    "revenue_growth_prev_pct": -8.92,
+    "eps_growth_pct": 3.27,
+    "gross_margin_pct": 20.8,
+    "gross_margin_4q_ago_pct": 20.4,
+    "op_margin_pct": 11.4,
+    "op_margin_4q_ago_pct": 11.2,
+    "debt_to_equity": 0.59,
+    "pe_ratio": 30.0,
+    "ps_ratio": 10.4,
+    "fcf_last4q": [
+     3588000000,
+     1211000000,
+     3195000000,
+     4025000000
+    ],
+    "net_debt_to_ebitda": 7.21,
+    "ev_to_ebitda": 67.6
+   }
   },
   {
    "symbol": "SAP",
@@ -3890,7 +8397,34 @@
    },
    "red_flag_count": 0,
    "price": 213.66,
-   "chg_pct": 0.21576
+   "chg_pct": 0.21576,
+   "detail": {
+    "avg50": 195.6612,
+    "avg200": 195.22604,
+    "year_high": 281.37,
+    "year_low": 144.97,
+    "momentum_50d_pct": 7.05,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 3.38,
+    "revenue_growth_prev_pct": -1.33,
+    "eps_growth_pct": 13.86,
+    "gross_margin_pct": 73.2,
+    "gross_margin_4q_ago_pct": 73.5,
+    "op_margin_pct": 26.8,
+    "op_margin_4q_ago_pct": 27.4,
+    "debt_to_equity": 0.22,
+    "pe_ratio": 17.8,
+    "ps_ratio": 15.7,
+    "fcf_last4q": [
+     3038000000,
+     3274000000,
+     1094837626,
+     1301000000
+    ],
+    "net_debt_to_ebitda": -0.16,
+    "ev_to_ebitda": 42.5
+   }
   },
   {
    "symbol": "SBUX",
@@ -3912,7 +8446,34 @@
    },
    "red_flag_count": 3,
    "price": 96.67,
-   "chg_pct": -0.68831
+   "chg_pct": -0.68831,
+   "detail": {
+    "avg50": 104.4608,
+    "avg200": 98.25525,
+    "year_high": 110.51,
+    "year_low": 77.99,
+    "momentum_50d_pct": -8.26,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -2.19,
+    "revenue_growth_prev_pct": -3.8,
+    "eps_growth_pct": 102.22,
+    "gross_margin_pct": 69.7,
+    "gross_margin_4q_ago_pct": 23.1,
+    "op_margin_pct": 10.5,
+    "op_margin_4q_ago_pct": 9.9,
+    "debt_to_equity": -2.92,
+    "pe_ratio": 28.6,
+    "ps_ratio": 12.8,
+    "fcf_last4q": [
+     1350500000,
+     91800000,
+     1274000000,
+     925800000
+    ],
+    "net_debt_to_ebitda": 9.91,
+    "ev_to_ebitda": 72.0
+   }
   },
   {
    "symbol": "SCCO",
@@ -3934,7 +8495,34 @@
    },
    "red_flag_count": 0,
    "price": 196.11,
-   "chg_pct": 3.28102
+   "chg_pct": 3.28102,
+   "detail": {
+    "avg50": 192.17313,
+    "avg200": 178.56345,
+    "year_high": 220.78,
+    "year_low": 104.3196,
+    "momentum_50d_pct": 1.84,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.88,
+    "revenue_growth_prev_pct": 9.86,
+    "eps_growth_pct": 4.69,
+    "gross_margin_pct": 62.0,
+    "gross_margin_4q_ago_pct": 59.8,
+    "op_margin_pct": 61.2,
+    "op_margin_4q_ago_pct": 52.4,
+    "debt_to_equity": 0.68,
+    "pe_ratio": 21.7,
+    "ps_ratio": 33.7,
+    "fcf_last4q": [
+     2430400000,
+     1252600000,
+     1071700000,
+     1210400000
+    ],
+    "net_debt_to_ebitda": 1.01,
+    "ev_to_ebitda": 51.7
+   }
   },
   {
    "symbol": "SCHW",
@@ -3956,7 +8544,34 @@
    },
    "red_flag_count": 1,
    "price": 104.63,
-   "chg_pct": -0.50399
+   "chg_pct": -0.50399,
+   "detail": {
+    "avg50": 106.7878,
+    "avg200": 98.09905,
+    "year_high": 114.53,
+    "year_low": 83.96,
+    "momentum_50d_pct": -1.44,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 16.68,
+    "revenue_growth_prev_pct": 1.84,
+    "eps_growth_pct": 13.14,
+    "gross_margin_pct": 83.0,
+    "gross_margin_4q_ago_pct": 87.1,
+    "op_margin_pct": 43.1,
+    "op_margin_4q_ago_pct": 42.9,
+    "debt_to_equity": 0.74,
+    "pe_ratio": 14.9,
+    "ps_ratio": 18.8,
+    "fcf_last4q": [
+     -2969000000,
+     7202000000,
+     -921000000,
+     393000000
+    ],
+    "net_debt_to_ebitda": -3.62,
+    "ev_to_ebitda": 36.3
+   }
   },
   {
    "symbol": "SHOP",
@@ -3978,7 +8593,34 @@
    },
    "red_flag_count": 2,
    "price": 128.6,
-   "chg_pct": -1.04647
+   "chg_pct": -1.04647,
+   "detail": {
+    "avg50": 135.9706,
+    "avg200": 130.44905,
+    "year_high": 182.19,
+    "year_low": 94,
+    "momentum_50d_pct": -5.49,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 13.03,
+    "revenue_growth_prev_pct": -13.67,
+    "eps_growth_pct": 357.78,
+    "gross_margin_pct": 47.7,
+    "gross_margin_4q_ago_pct": 48.9,
+    "op_margin_pct": 13.6,
+    "op_margin_4q_ago_pct": 12.1,
+    "debt_to_equity": 0.01,
+    "pe_ratio": 24.6,
+    "ps_ratio": 41.3,
+    "fcf_last4q": [
+     654000000,
+     476000000,
+     715000000,
+     507000000
+    ],
+    "net_debt_to_ebitda": 2.04,
+    "ev_to_ebitda": -201.7
+   }
   },
   {
    "symbol": "SHW",
@@ -4000,7 +8642,34 @@
    },
    "red_flag_count": 3,
    "price": 320.94,
-   "chg_pct": -0.16176
+   "chg_pct": -0.16176,
+   "detail": {
+    "avg50": 339.2698,
+    "avg200": 333.5135,
+    "year_high": 377.77,
+    "year_low": 289.86,
+    "momentum_50d_pct": -5.46,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 19.81,
+    "revenue_growth_prev_pct": 1.27,
+    "eps_growth_pct": 58.26,
+    "gross_margin_pct": 49.2,
+    "gross_margin_4q_ago_pct": 49.2,
+    "op_margin_pct": 18.1,
+    "op_margin_4q_ago_pct": 18.4,
+    "debt_to_equity": 3.69,
+    "pe_ratio": 25.0,
+    "ps_ratio": 12.4,
+    "fcf_last4q": [
+     1239100000,
+     800000,
+     862100000,
+     1111200000
+    ],
+    "net_debt_to_ebitda": 11.15,
+    "ev_to_ebitda": 78.7
+   }
   },
   {
    "symbol": "SNDK",
@@ -4023,7 +8692,34 @@
    },
    "red_flag_count": 0,
    "price": 1614.39,
-   "chg_pct": 6.21197
+   "chg_pct": 6.21197,
+   "detail": {
+    "avg50": 1505.5303,
+    "avg200": 1060.3298,
+    "year_high": 2354.39,
+    "year_low": 93.535,
+    "momentum_50d_pct": 19.02,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 50.67,
+    "revenue_growth_prev_pct": 96.69,
+    "eps_growth_pct": 92.92,
+    "gross_margin_pct": 84.6,
+    "gross_margin_4q_ago_pct": 29.8,
+    "op_margin_pct": 78.2,
+    "op_margin_4q_ago_pct": 8.3,
+    "debt_to_equity": 0.02,
+    "pe_ratio": 9.3,
+    "ps_ratio": 28.6,
+    "fcf_last4q": [
+     7083000000,
+     2993000000,
+     980000000,
+     438000000
+    ],
+    "net_debt_to_ebitda": -0.57,
+    "ev_to_ebitda": 32.6
+   }
   },
   {
    "symbol": "SNOW",
@@ -4046,7 +8742,34 @@
    },
    "red_flag_count": 0,
    "price": 338.39,
-   "chg_pct": 2.22645
+   "chg_pct": 2.22645,
+   "detail": {
+    "avg50": 309.0784,
+    "avg200": 222.3072,
+    "year_high": 384.56,
+    "year_low": 118.3,
+    "momentum_50d_pct": 7.56,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 11.2,
+    "revenue_growth_prev_pct": 8.33,
+    "eps_growth_pct": 36.05,
+    "gross_margin_pct": 67.0,
+    "gross_margin_4q_ago_pct": 67.8,
+    "op_margin_pct": -17.0,
+    "op_margin_4q_ago_pct": -27.2,
+    "debt_to_equity": 1.29,
+    "pe_ratio": -133.3,
+    "ps_ratio": 66.2,
+    "fcf_last4q": [
+     83803000,
+     232772000,
+     765085000,
+     113614000
+    ],
+    "net_debt_to_ebitda": -5.67,
+    "ev_to_ebitda": -555.8
+   }
   },
   {
    "symbol": "SNPS",
@@ -4068,7 +8791,34 @@
    },
    "red_flag_count": 2,
    "price": 381.17,
-   "chg_pct": 0.7134
+   "chg_pct": 0.7134,
+   "detail": {
+    "avg50": 402.1588,
+    "avg200": 446.47794,
+    "year_high": 539.48,
+    "year_low": 362.55,
+    "momentum_50d_pct": -4.27,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 8.82,
+    "revenue_growth_prev_pct": -5.51,
+    "eps_growth_pct": 3066.67,
+    "gross_margin_pct": 72.6,
+    "gross_margin_4q_ago_pct": 71.0,
+    "op_margin_pct": 14.4,
+    "op_margin_4q_ago_pct": 5.4,
+    "debt_to_equity": 0.35,
+    "pe_ratio": 34.1,
+    "ps_ratio": 30.1,
+    "fcf_last4q": [
+     746266000,
+     616842000,
+     821512000,
+     605192000
+    ],
+    "net_debt_to_ebitda": 5.69,
+    "ev_to_ebitda": 64.2
+   }
   },
   {
    "symbol": "SO",
@@ -4090,7 +8840,34 @@
    },
    "red_flag_count": 5,
    "price": 85.52,
-   "chg_pct": -1.42923
+   "chg_pct": -1.42923,
+   "detail": {
+    "avg50": 91.709,
+    "avg200": 92.2916,
+    "year_high": 100.84,
+    "year_low": 83.8,
+    "momentum_50d_pct": -6.75,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -16.91,
+    "revenue_growth_prev_pct": 20.28,
+    "eps_growth_pct": -14.88,
+    "gross_margin_pct": 51.3,
+    "gross_margin_4q_ago_pct": 55.0,
+    "op_margin_pct": 25.5,
+    "op_margin_4q_ago_pct": 33.2,
+    "debt_to_equity": 1.95,
+    "pe_ratio": 23.2,
+    "ps_ratio": 15.6,
+    "fcf_last4q": [
+     5595000000,
+     -1718000000,
+     -1688000000,
+     384000000
+    ],
+    "net_debt_to_ebitda": 23.09,
+    "ev_to_ebitda": 57.0
+   }
   },
   {
    "symbol": "SPCX",
@@ -4112,7 +8889,33 @@
    },
    "red_flag_count": 2,
    "price": 154.81,
-   "chg_pct": 2.60472
+   "chg_pct": 2.60472,
+   "detail": {
+    "avg50": 134.6174,
+    "avg200": 142.63866,
+    "year_high": 225.64,
+    "year_low": 104.83,
+    "momentum_50d_pct": 13.44,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 66.47,
+    "revenue_growth_prev_pct": 0,
+    "eps_growth_pct": 92.91,
+    "gross_margin_pct": 55.3,
+    "gross_margin_4q_ago_pct": 51.8,
+    "op_margin_pct": -1.8,
+    "op_margin_4q_ago_pct": 0.7,
+    "debt_to_equity": 0.31,
+    "pe_ratio": -474.6,
+    "ps_ratio": 128.2,
+    "fcf_last4q": [
+     -15950000000,
+     -9060000000,
+     -3413000000
+    ],
+    "net_debt_to_ebitda": -487.91,
+    "ev_to_ebitda": 19802.5
+   }
   },
   {
    "symbol": "SPGI",
@@ -4134,7 +8937,34 @@
    },
    "red_flag_count": 4,
    "price": 404.11,
-   "chg_pct": -0.65149
+   "chg_pct": -0.65149,
+   "detail": {
+    "avg50": 425.3788,
+    "avg200": 427.6858,
+    "year_high": 522.46924,
+    "year_low": 361.03122,
+    "momentum_50d_pct": -4.72,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -0.6,
+    "revenue_growth_prev_pct": 6.51,
+    "eps_growth_pct": -12.15,
+    "gross_margin_pct": 71.9,
+    "gross_margin_4q_ago_pct": 71.2,
+    "op_margin_pct": 50.8,
+    "op_margin_4q_ago_pct": 43.1,
+    "debt_to_equity": 0.5,
+    "pe_ratio": 23.4,
+    "ps_ratio": 27.4,
+    "fcf_last4q": [
+     1401000000,
+     1010000000,
+     1702000000,
+     1460000000
+    ],
+    "net_debt_to_ebitda": 5.48,
+    "ev_to_ebitda": 59.2
+   }
   },
   {
    "symbol": "STX",
@@ -4157,7 +8987,34 @@
    },
    "red_flag_count": 1,
    "price": 803.13,
-   "chg_pct": 2.54731
+   "chg_pct": 2.54731,
+   "detail": {
+    "avg50": 843.3332,
+    "avg200": 619.3196,
+    "year_high": 1145,
+    "year_low": 209,
+    "momentum_50d_pct": 1.83,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 16.61,
+    "revenue_growth_prev_pct": 10.16,
+    "eps_growth_pct": 72.49,
+    "gross_margin_pct": 52.3,
+    "gross_margin_4q_ago_pct": 39.4,
+    "op_margin_pct": 42.5,
+    "op_margin_4q_ago_pct": 26.9,
+    "debt_to_equity": 1.78,
+    "pe_ratio": 35.2,
+    "ps_ratio": 49.5,
+    "fcf_last4q": [
+     1118000000,
+     953000000,
+     828000000,
+     427000000
+    ],
+    "net_debt_to_ebitda": 1.44,
+    "ev_to_ebitda": 121.1
+   }
   },
   {
    "symbol": "SWKS",
@@ -4179,7 +9036,34 @@
    },
    "red_flag_count": 4,
    "price": 91.32,
-   "chg_pct": 6.69471
+   "chg_pct": 6.69471,
+   "detail": {
+    "avg50": 68.619,
+    "avg200": 64.82465,
+    "year_high": 92.3,
+    "year_low": 51.93,
+    "momentum_50d_pct": 29.35,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -0.94,
+    "revenue_growth_prev_pct": -8.86,
+    "eps_growth_pct": -8.33,
+    "gross_margin_pct": 40.1,
+    "gross_margin_4q_ago_pct": 40.7,
+    "op_margin_pct": 5.2,
+    "op_margin_4q_ago_pct": 10.1,
+    "debt_to_equity": 0.12,
+    "pe_ratio": 71.1,
+    "ps_ratio": 10.0,
+    "fcf_last4q": [
+     -254700000,
+     -32000000,
+     339000000,
+     144000000
+    ],
+    "net_debt_to_ebitda": -0.64,
+    "ev_to_ebitda": 54.2
+   }
   },
   {
    "symbol": "SYK",
@@ -4201,7 +9085,34 @@
    },
    "red_flag_count": 2,
    "price": 275.12,
-   "chg_pct": -1.78846
+   "chg_pct": -1.78846,
+   "detail": {
+    "avg50": 320.3956,
+    "avg200": 334.38754,
+    "year_high": 392.55,
+    "year_low": 267,
+    "momentum_50d_pct": -14.13,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 9.45,
+    "revenue_growth_prev_pct": -16.05,
+    "eps_growth_pct": 70.26,
+    "gross_margin_pct": 68.3,
+    "gross_margin_4q_ago_pct": 63.6,
+    "op_margin_pct": 25.2,
+    "op_margin_4q_ago_pct": 18.7,
+    "debt_to_equity": 0.62,
+    "pe_ratio": 23.7,
+    "ps_ratio": 18.3,
+    "fcf_last4q": [
+     1059000000,
+     415000000,
+     1875000000,
+     1353000000
+    ],
+    "net_debt_to_ebitda": 7.39,
+    "ev_to_ebitda": 84.6
+   }
   },
   {
    "symbol": "T",
@@ -4223,7 +9134,34 @@
    },
    "red_flag_count": 0,
    "price": 25.385,
-   "chg_pct": -1.83681
+   "chg_pct": -1.83681,
+   "detail": {
+    "avg50": 24.286,
+    "avg200": 25.15035,
+    "year_high": 29.44,
+    "year_low": 19.89,
+    "momentum_50d_pct": 4.65,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.17,
+    "revenue_growth_prev_pct": -5.86,
+    "eps_growth_pct": 22.22,
+    "gross_margin_pct": 61.8,
+    "gross_margin_4q_ago_pct": 61.5,
+    "op_margin_pct": 22.3,
+    "op_margin_4q_ago_pct": 19.9,
+    "debt_to_equity": 1.47,
+    "pe_ratio": 7.8,
+    "ps_ratio": 4.6,
+    "fcf_last4q": [
+     5170000000,
+     2680000000,
+     4539000000,
+     5265000000
+    ],
+    "net_debt_to_ebitda": 11.47,
+    "ev_to_ebitda": 22.8
+   }
   },
   {
    "symbol": "TBB",
@@ -4245,7 +9183,34 @@
    },
    "red_flag_count": 2,
    "price": 19.44,
-   "chg_pct": 0.10299
+   "chg_pct": 0.10299,
+   "detail": {
+    "avg50": 19.77708,
+    "avg200": 21.29942,
+    "year_high": 23.8,
+    "year_low": 19.26,
+    "momentum_50d_pct": -1.63,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.17,
+    "revenue_growth_prev_pct": -5.86,
+    "eps_growth_pct": 22.22,
+    "gross_margin_pct": 61.8,
+    "gross_margin_4q_ago_pct": 61.5,
+    "op_margin_pct": 22.3,
+    "op_margin_4q_ago_pct": 19.9,
+    "debt_to_equity": 1.47,
+    "pe_ratio": 7.8,
+    "ps_ratio": 4.6,
+    "fcf_last4q": [
+     5170000000,
+     2680000000,
+     4539000000,
+     5265000000
+    ],
+    "net_debt_to_ebitda": 11.47,
+    "ev_to_ebitda": 22.8
+   }
   },
   {
    "symbol": "TEAM",
@@ -4267,7 +9232,34 @@
    },
    "red_flag_count": 1,
    "price": 192.53,
-   "chg_pct": 1.18247
+   "chg_pct": 1.18247,
+   "detail": {
+    "avg50": 142.2452,
+    "avg200": 110.77273,
+    "year_high": 198.6,
+    "year_low": 56.01,
+    "momentum_50d_pct": 34.99,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -1.15,
+    "revenue_growth_prev_pct": 12.65,
+    "eps_growth_pct": 239.47,
+    "gross_margin_pct": 86.9,
+    "gross_margin_4q_ago_pct": 82.0,
+    "op_margin_pct": 11.9,
+    "op_margin_4q_ago_pct": -6.7,
+    "debt_to_equity": 1.16,
+    "pe_ratio": 36.7,
+    "ps_ratio": 11.1,
+    "fcf_last4q": [
+     474692000,
+     561264000,
+     168516000,
+     114603000
+    ],
+    "net_debt_to_ebitda": -0.03,
+    "ev_to_ebitda": 78.5
+   }
   },
   {
    "symbol": "TER",
@@ -4289,7 +9281,34 @@
    },
    "red_flag_count": 2,
    "price": 353.13,
-   "chg_pct": 3.51165
+   "chg_pct": 3.51165,
+   "detail": {
+    "avg50": 364.2548,
+    "avg200": 324.8506,
+    "year_high": 487.91,
+    "year_low": 117.54,
+    "momentum_50d_pct": 1.98,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 3.63,
+    "revenue_growth_prev_pct": 18.38,
+    "eps_growth_pct": -6.27,
+    "gross_margin_pct": 59.8,
+    "gross_margin_4q_ago_pct": 58.4,
+    "op_margin_pct": 32.9,
+    "op_margin_4q_ago_pct": 18.9,
+    "debt_to_equity": 0.03,
+    "pe_ratio": 48.5,
+    "ps_ratio": 54.5,
+    "fcf_last4q": [
+     378432000,
+     200391000,
+     218751000,
+     2358000
+    ],
+    "net_debt_to_ebitda": -0.52,
+    "ev_to_ebitda": 151.4
+   }
   },
   {
    "symbol": "TJX",
@@ -4311,7 +9330,34 @@
    },
    "red_flag_count": 2,
    "price": 126.5601,
-   "chg_pct": 3.02841
+   "chg_pct": 3.02841,
+   "detail": {
+    "avg50": 145.2884,
+    "avg200": 153.647,
+    "year_high": 170,
+    "year_low": 122.78,
+    "momentum_50d_pct": -12.42,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.98,
+    "revenue_growth_prev_pct": -19.28,
+    "eps_growth_pct": 14.29,
+    "gross_margin_pct": 33.4,
+    "gross_margin_4q_ago_pct": 33.0,
+    "op_margin_pct": 13.1,
+    "op_margin_4q_ago_pct": 13.0,
+    "debt_to_equity": 1.34,
+    "pe_ratio": 28.9,
+    "ps_ratio": 11.6,
+    "fcf_last4q": [
+     1729000000,
+     457000000,
+     2689000000,
+     1001000000
+    ],
+    "net_debt_to_ebitda": 4.12,
+    "ev_to_ebitda": 91.2
+   }
   },
   {
    "symbol": "TMO",
@@ -4333,7 +9379,34 @@
    },
    "red_flag_count": 0,
    "price": 658.32,
-   "chg_pct": 1.52522
+   "chg_pct": 1.52522,
+   "detail": {
+    "avg50": 590.8992,
+    "avg200": 537.93024,
+    "year_high": 663.57,
+    "year_low": 435.27,
+    "momentum_50d_pct": 10.25,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 8.99,
+    "revenue_growth_prev_pct": -9.91,
+    "eps_growth_pct": 5.41,
+    "gross_margin_pct": 41.2,
+    "gross_margin_4q_ago_pct": 41.8,
+    "op_margin_pct": 17.4,
+    "op_margin_4q_ago_pct": 17.5,
+    "debt_to_equity": 0.81,
+    "pe_ratio": 27.4,
+    "ps_ratio": 15.9,
+    "fcf_last4q": [
+     1675000000,
+     816000000,
+     2992000000,
+     1835000000
+    ],
+    "net_debt_to_ebitda": 14.96,
+    "ev_to_ebitda": 89.0
+   }
   },
   {
    "symbol": "TMUS",
@@ -4356,7 +9429,34 @@
    },
    "red_flag_count": 4,
    "price": 166.45,
-   "chg_pct": -5.56564
+   "chg_pct": -5.56564,
+   "detail": {
+    "avg50": 181.2114,
+    "avg200": 193.15015,
+    "year_high": 242.37,
+    "year_low": 164.02,
+    "momentum_50d_pct": -7.19,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -1.37,
+    "revenue_growth_prev_pct": -5.04,
+    "eps_growth_pct": 31.14,
+    "gross_margin_pct": 64.8,
+    "gross_margin_4q_ago_pct": 49.3,
+    "op_margin_pct": 24.1,
+    "op_margin_4q_ago_pct": 22.1,
+    "debt_to_equity": 2.06,
+    "pe_ratio": 14.0,
+    "ps_ratio": 8.0,
+    "fcf_last4q": [
+     4313000000,
+     4599000000,
+     1617000000,
+     4818000000
+    ],
+    "net_debt_to_ebitda": 12.84,
+    "ev_to_ebitda": 33.4
+   }
   },
   {
    "symbol": "TRI",
@@ -4378,7 +9478,34 @@
    },
    "red_flag_count": 4,
    "price": 99.48,
-   "chg_pct": -1.80634
+   "chg_pct": -1.80634,
+   "detail": {
+    "avg50": 100.4982,
+    "avg200": 100.24375,
+    "year_high": 164.3,
+    "year_low": 76.28,
+    "momentum_50d_pct": -6.08,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -6.37,
+    "revenue_growth_prev_pct": 3.88,
+    "eps_growth_pct": -1.94,
+    "gross_margin_pct": 38.0,
+    "gross_margin_4q_ago_pct": 75.9,
+    "op_margin_pct": 28.6,
+    "op_margin_4q_ago_pct": 33.3,
+    "debt_to_equity": 0.29,
+    "pe_ratio": 20.2,
+    "ps_ratio": 18.3,
+    "fcf_last4q": [
+     722298895,
+     349000000,
+     607448339,
+     537289021
+    ],
+    "net_debt_to_ebitda": 3.22,
+    "ev_to_ebitda": 47.6
+   }
   },
   {
    "symbol": "TRV",
@@ -4400,7 +9527,34 @@
    },
    "red_flag_count": 0,
    "price": 379.49,
-   "chg_pct": 0.15043
+   "chg_pct": 0.15043,
+   "detail": {
+    "avg50": 369.9372,
+    "avg200": 316.1815,
+    "year_high": 398.7,
+    "year_low": 252.26,
+    "momentum_50d_pct": 1.27,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 1.92,
+    "revenue_growth_prev_pct": -4.09,
+    "eps_growth_pct": 31.94,
+    "gross_margin_pct": 36.6,
+    "gross_margin_4q_ago_pct": 32.3,
+    "op_margin_pct": 23.7,
+    "op_margin_4q_ago_pct": 18.8,
+    "debt_to_equity": 0.27,
+    "pe_ratio": 7.9,
+    "ps_ratio": 5.7,
+    "fcf_last4q": [
+     1916000000,
+     2198000000,
+     2685000000,
+     4227000000
+    ],
+    "net_debt_to_ebitda": 2.93,
+    "ev_to_ebitda": 27.1
+   }
   },
   {
    "symbol": "TSLA",
@@ -4424,7 +9578,34 @@
    },
    "red_flag_count": 2,
    "price": 366.2,
-   "chg_pct": 2.26765
+   "chg_pct": 2.26765,
+   "detail": {
+    "avg50": 350.2456,
+    "avg200": 397.32565,
+    "year_high": 498.83,
+    "year_low": 297.38,
+    "momentum_50d_pct": 4.0,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 26.13,
+    "revenue_growth_prev_pct": -10.1,
+    "eps_growth_pct": 126.67,
+    "gross_margin_pct": 16.8,
+    "gross_margin_4q_ago_pct": 18.0,
+    "op_margin_pct": 1.4,
+    "op_margin_4q_ago_pct": 5.8,
+    "debt_to_equity": 0.11,
+    "pe_ratio": 309.3,
+    "ps_ratio": 48.2,
+    "fcf_last4q": [
+     -1092000000,
+     1444000000,
+     1420000000,
+     3990000000
+    ],
+    "net_debt_to_ebitda": -1.94,
+    "ev_to_ebitda": 447.5
+   }
   },
   {
    "symbol": "TSM",
@@ -4446,7 +9627,34 @@
    },
    "red_flag_count": 0,
    "price": 430.26,
-   "chg_pct": 3.00201
+   "chg_pct": 3.00201,
+   "detail": {
+    "avg50": 417.3738,
+    "avg200": 379.32504,
+    "year_high": 479,
+    "year_low": 265.45,
+    "momentum_50d_pct": 4.14,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 12.02,
+    "revenue_growth_prev_pct": 7.4,
+    "eps_growth_pct": 22.14,
+    "gross_margin_pct": 67.7,
+    "gross_margin_4q_ago_pct": 59.5,
+    "op_margin_pct": 60.3,
+    "op_margin_4q_ago_pct": 50.6,
+    "debt_to_equity": 0.17,
+    "pe_ratio": 27.9,
+    "ps_ratio": 62.1,
+    "fcf_last4q": [
+     287363000000,
+     377110497000,
+     388173091000,
+     139377000000
+    ],
+    "net_debt_to_ebitda": -2.3,
+    "ev_to_ebitda": 85.7
+   }
   },
   {
    "symbol": "TTWO",
@@ -4468,7 +9676,34 @@
    },
    "red_flag_count": 3,
    "price": 210.62,
-   "chg_pct": -0.56182
+   "chg_pct": -0.56182,
+   "detail": {
+    "avg50": 232.966,
+    "avg200": 226.6315,
+    "year_high": 265.94,
+    "year_low": 187.63,
+    "momentum_50d_pct": -11.81,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -8.69,
+    "revenue_growth_prev_pct": -1.13,
+    "eps_growth_pct": 43.75,
+    "gross_margin_pct": 57.5,
+    "gross_margin_4q_ago_pct": 55.3,
+    "op_margin_pct": -2.3,
+    "op_margin_4q_ago_pct": -5.5,
+    "debt_to_equity": 0.82,
+    "pe_ratio": -347.2,
+    "ps_ratio": 30.3,
+    "fcf_last4q": [
+     -193800000,
+     187200000,
+     236200000,
+     96500000
+    ],
+    "net_debt_to_ebitda": 53.92,
+    "ev_to_ebitda": 1642.5
+   }
   },
   {
    "symbol": "TXN",
@@ -4492,7 +9727,34 @@
    },
    "red_flag_count": 1,
    "price": 258.14,
-   "chg_pct": -0.97058
+   "chg_pct": -0.97058,
+   "detail": {
+    "avg50": 273.8944,
+    "avg200": 243.92136,
+    "year_high": 334.03,
+    "year_low": 152.73,
+    "momentum_50d_pct": -2.65,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 13.22,
+    "revenue_growth_prev_pct": 9.09,
+    "eps_growth_pct": 25.88,
+    "gross_margin_pct": 61.4,
+    "gross_margin_4q_ago_pct": 57.4,
+    "op_margin_pct": 42.3,
+    "op_margin_4q_ago_pct": 35.1,
+    "debt_to_equity": 0.78,
+    "pe_ratio": 34.8,
+    "ps_ratio": 49.8,
+    "fcf_last4q": [
+     2189000000,
+     844000000,
+     1329000000,
+     993000000
+    ],
+    "net_debt_to_ebitda": 4.37,
+    "ev_to_ebitda": 118.6
+   }
   },
   {
    "symbol": "UBER",
@@ -4514,7 +9776,34 @@
    },
    "red_flag_count": 2,
    "price": 70.87,
-   "chg_pct": -0.1409
+   "chg_pct": -0.1409,
+   "detail": {
+    "avg50": 73.7504,
+    "avg200": 75.7525,
+    "year_high": 101.99,
+    "year_low": 65.41,
+    "momentum_50d_pct": -4.41,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.48,
+    "revenue_growth_prev_pct": -8.1,
+    "eps_growth_pct": 807.69,
+    "gross_margin_pct": 44.9,
+    "gross_margin_4q_ago_pct": 39.8,
+    "op_margin_pct": 14.6,
+    "op_margin_4q_ago_pct": 8.3,
+    "debt_to_equity": 0.54,
+    "pe_ratio": 15.3,
+    "ps_ratio": 10.4,
+    "fcf_last4q": [
+     2792000000,
+     2286000000,
+     2808000000,
+     2230000000
+    ],
+    "net_debt_to_ebitda": 2.67,
+    "ev_to_ebitda": 42.5
+   }
   },
   {
    "symbol": "UNH",
@@ -4538,7 +9827,34 @@
    },
    "red_flag_count": 2,
    "price": 375.21,
-   "chg_pct": -0.0133254
+   "chg_pct": -0.0133254,
+   "detail": {
+    "avg50": 404.3268,
+    "avg200": 354.32016,
+    "year_high": 461.62,
+    "year_low": 255.97,
+    "momentum_50d_pct": -6.78,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.28,
+    "revenue_growth_prev_pct": -1.32,
+    "eps_growth_pct": -12.32,
+    "gross_margin_pct": 32.7,
+    "gross_margin_4q_ago_pct": 18.2,
+    "op_margin_pct": 7.1,
+    "op_margin_4q_ago_pct": 3.8,
+    "debt_to_equity": 0.74,
+    "pe_ratio": 17.2,
+    "ps_ratio": 3.4,
+    "fcf_last4q": [
+     10253000000,
+     8149000000,
+     160000000,
+     5055000000
+    ],
+    "net_debt_to_ebitda": 4.99,
+    "ev_to_ebitda": 47.0
+   }
   },
   {
    "symbol": "UNP",
@@ -4560,7 +9876,34 @@
    },
    "red_flag_count": 1,
    "price": 282.48,
-   "chg_pct": 0.55532
+   "chg_pct": 0.55532,
+   "detail": {
+    "avg50": 294.5918,
+    "avg200": 262.86996,
+    "year_high": 315.99,
+    "year_low": 215.53,
+    "momentum_50d_pct": -5.17,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 10.41,
+    "revenue_growth_prev_pct": 2.17,
+    "eps_growth_pct": 17.07,
+    "gross_margin_pct": 45.5,
+    "gross_margin_4q_ago_pct": 46.5,
+    "op_margin_pct": 40.3,
+    "op_margin_4q_ago_pct": 40.8,
+    "debt_to_equity": 1.51,
+    "pe_ratio": 20.2,
+    "ps_ratio": 23.5,
+    "fcf_last4q": [
+     2203000000,
+     1503000000,
+     1226000000,
+     1572000000
+    ],
+    "net_debt_to_ebitda": 8.43,
+    "ev_to_ebitda": 54.5
+   }
   },
   {
    "symbol": "UPS",
@@ -4582,7 +9925,34 @@
    },
    "red_flag_count": 4,
    "price": 99.02,
-   "chg_pct": -1.14805
+   "chg_pct": -1.14805,
+   "detail": {
+    "avg50": 106.283,
+    "avg200": 105.15665,
+    "year_high": 122.41,
+    "year_low": 82,
+    "momentum_50d_pct": -6.83,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.7,
+    "revenue_growth_prev_pct": -13.39,
+    "eps_growth_pct": -30.39,
+    "gross_margin_pct": 13.3,
+    "gross_margin_4q_ago_pct": 16.3,
+    "op_margin_pct": 4.1,
+    "op_margin_4q_ago_pct": 8.4,
+    "debt_to_equity": 1.9,
+    "pe_ratio": 37.9,
+    "ps_ratio": 4.0,
+    "fcf_last4q": [
+     194000000,
+     1193000000,
+     2586000000,
+     1512000000
+    ],
+    "net_debt_to_ebitda": 13.4,
+    "ev_to_ebitda": 64.4
+   }
   },
   {
    "symbol": "USB",
@@ -4604,7 +9974,34 @@
    },
    "red_flag_count": 1,
    "price": 60.06,
-   "chg_pct": -0.31535
+   "chg_pct": -0.31535,
+   "detail": {
+    "avg50": 63.052,
+    "avg200": 57.34015,
+    "year_high": 66.08,
+    "year_low": 45.02,
+    "momentum_50d_pct": -4.75,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.81,
+    "revenue_growth_prev_pct": -1.28,
+    "eps_growth_pct": 14.41,
+    "gross_margin_pct": 65.4,
+    "gross_margin_4q_ago_pct": 61.1,
+    "op_margin_pct": 24.9,
+    "op_margin_4q_ago_pct": 23.0,
+    "debt_to_equity": 1.42,
+    "pe_ratio": 11.2,
+    "ps_ratio": 8.6,
+    "fcf_last4q": [
+     4820000000,
+     1340000000,
+     2836000000,
+     3388000000
+    ],
+    "net_debt_to_ebitda": 10.42,
+    "ev_to_ebitda": 43.5
+   }
   },
   {
    "symbol": "V",
@@ -4628,7 +10025,34 @@
    },
    "red_flag_count": 1,
    "price": 369.93,
-   "chg_pct": -0.26959
+   "chg_pct": -0.26959,
+   "detail": {
+    "avg50": 367.0804,
+    "avg200": 335.9414,
+    "year_high": 385.57,
+    "year_low": 293.89,
+    "momentum_50d_pct": 0.33,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 3.59,
+    "revenue_growth_prev_pct": 3.02,
+    "eps_growth_pct": -5.71,
+    "gross_margin_pct": 76.5,
+    "gross_margin_4q_ago_pct": 81.5,
+    "op_margin_pct": 59.1,
+    "op_margin_4q_ago_pct": 57.3,
+    "debt_to_equity": 0.68,
+    "pe_ratio": 28.9,
+    "ps_ratio": 56.4,
+    "fcf_last4q": [
+     6137000000,
+     2625000000,
+     6402000000,
+     5849000000
+    ],
+    "net_debt_to_ebitda": 1.6,
+    "ev_to_ebitda": 92.7
+   }
   },
   {
    "symbol": "VLO",
@@ -4650,7 +10074,34 @@
    },
    "red_flag_count": 0,
    "price": 412.53,
-   "chg_pct": 2.29369
+   "chg_pct": 2.29369,
+   "detail": {
+    "avg50": 337.6608,
+    "avg200": 249.49976,
+    "year_high": 416.66,
+    "year_low": 155.29,
+    "momentum_50d_pct": 22.4,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 13.18,
+    "revenue_growth_prev_pct": 2.05,
+    "eps_growth_pct": 199.05,
+    "gross_margin_pct": 19.5,
+    "gross_margin_4q_ago_pct": 5.5,
+    "op_margin_pct": 14.2,
+    "op_margin_4q_ago_pct": 4.7,
+    "debt_to_equity": 0.45,
+    "pe_ratio": 5.2,
+    "ps_ratio": 2.1,
+    "fcf_last4q": [
+     5354000000,
+     1225000000,
+     1837000000,
+     1704000000
+    ],
+    "net_debt_to_ebitda": 0.57,
+    "ev_to_ebitda": 13.2
+   }
   },
   {
    "symbol": "VRT",
@@ -4672,7 +10123,34 @@
    },
    "red_flag_count": 3,
    "price": 249.39,
-   "chg_pct": 3.27136
+   "chg_pct": 3.27136,
+   "detail": {
+    "avg50": 272.9428,
+    "avg200": 260.736,
+    "year_high": 379.935,
+    "year_low": 133.85,
+    "momentum_50d_pct": -8.63,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 23.58,
+    "revenue_growth_prev_pct": -8.0,
+    "eps_growth_pct": 26.47,
+    "gross_margin_pct": 37.7,
+    "gross_margin_4q_ago_pct": 37.8,
+    "op_margin_pct": 19.5,
+    "op_margin_4q_ago_pct": 19.3,
+    "debt_to_equity": 0.68,
+    "pe_ratio": 64.9,
+    "ps_ratio": 39.3,
+    "fcf_last4q": [
+     925300000,
+     652800000,
+     883900000,
+     462000000
+    ],
+    "net_debt_to_ebitda": 0.63,
+    "ev_to_ebitda": 181.7
+   }
   },
   {
    "symbol": "VRTX",
@@ -4695,7 +10173,34 @@
    },
    "red_flag_count": 1,
    "price": 516.34,
-   "chg_pct": 0.60009
+   "chg_pct": 0.60009,
+   "detail": {
+    "avg50": 510.5954,
+    "avg200": 470.1541,
+    "year_high": 560.25,
+    "year_low": 374.17,
+    "momentum_50d_pct": -0.44,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 11.62,
+    "revenue_growth_prev_pct": -7.44,
+    "eps_growth_pct": 6.65,
+    "gross_margin_pct": 85.3,
+    "gross_margin_4q_ago_pct": 86.5,
+    "op_margin_pct": 37.4,
+    "op_margin_4q_ago_pct": 38.6,
+    "debt_to_equity": 0.1,
+    "pe_ratio": 28.7,
+    "ps_ratio": 37.8,
+    "fcf_last4q": [
+     1013200000,
+     1294700000,
+     348600000,
+     1139600000
+    ],
+    "net_debt_to_ebitda": -2.99,
+    "ev_to_ebitda": 87.6
+   }
   },
   {
    "symbol": "VZ",
@@ -4718,7 +10223,34 @@
    },
    "red_flag_count": 3,
    "price": 48.33,
-   "chg_pct": -2.8738
+   "chg_pct": -2.8738,
+   "detail": {
+    "avg50": 47.6674,
+    "avg200": 46.1245,
+    "year_high": 51.68,
+    "year_low": 38.39,
+    "momentum_50d_pct": 0.89,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": -0.54,
+    "revenue_growth_prev_pct": -5.34,
+    "eps_growth_pct": -23.33,
+    "gross_margin_pct": 47.2,
+    "gross_margin_4q_ago_pct": 46.9,
+    "op_margin_pct": 21.0,
+    "op_margin_4q_ago_pct": 24.0,
+    "debt_to_equity": 1.81,
+    "pe_ratio": 11.5,
+    "ps_ratio": 5.2,
+    "fcf_last4q": [
+     6426000000,
+     3783000000,
+     4366000000,
+     6850000000
+    ],
+    "net_debt_to_ebitda": 15.32,
+    "ev_to_ebitda": 29.8
+   }
   },
   {
    "symbol": "WBD",
@@ -4740,7 +10272,34 @@
    },
    "red_flag_count": 3,
    "price": 28.24,
-   "chg_pct": 0.60563
+   "chg_pct": 0.60563,
+   "detail": {
+    "avg50": 27.372,
+    "avg200": 27.50435,
+    "year_high": 30,
+    "year_low": 17.08,
+    "momentum_50d_pct": 1.56,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -1.98,
+    "revenue_growth_prev_pct": -5.99,
+    "eps_growth_pct": 105.13,
+    "gross_margin_pct": 47.0,
+    "gross_margin_4q_ago_pct": 49.5,
+    "op_margin_pct": 2.7,
+    "op_margin_4q_ago_pct": 6.8,
+    "debt_to_equity": 0.98,
+    "pe_ratio": 111.1,
+    "ps_ratio": 7.7,
+    "fcf_last4q": [
+     572000000,
+     -476000000,
+     1383000000,
+     701000000
+    ],
+    "net_debt_to_ebitda": 20.48,
+    "ev_to_ebitda": 68.3
+   }
   },
   {
    "symbol": "WDAY",
@@ -4763,7 +10322,34 @@
    },
    "red_flag_count": 0,
    "price": 199.28,
-   "chg_pct": 6.13549
+   "chg_pct": 6.13549,
+   "detail": {
+    "avg50": 174.9814,
+    "avg200": 158.8422,
+    "year_high": 249.85,
+    "year_low": 110.36,
+    "momentum_50d_pct": 10.79,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 4.29,
+    "revenue_growth_prev_pct": 0.39,
+    "eps_growth_pct": 196.55,
+    "gross_margin_pct": 75.4,
+    "gross_margin_4q_ago_pct": 75.7,
+    "op_margin_pct": 12.0,
+    "op_margin_4q_ago_pct": 10.6,
+    "debt_to_equity": 0.58,
+    "pe_ratio": 15.5,
+    "ps_ratio": 15.1,
+    "fcf_last4q": [
+     460000000,
+     616000000,
+     1218000000,
+     550000000
+    ],
+    "net_debt_to_ebitda": 7.64,
+    "ev_to_ebitda": 105.9
+   }
   },
   {
    "symbol": "WDC",
@@ -4786,7 +10372,34 @@
    },
    "red_flag_count": 2,
    "price": 423.87,
-   "chg_pct": 1.6548
+   "chg_pct": 1.6548,
+   "detail": {
+    "avg50": 481.7082,
+    "avg200": 385.87256,
+    "year_high": 799.87,
+    "year_low": 105.42,
+    "momentum_50d_pct": -8.38,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 12.29,
+    "revenue_growth_prev_pct": 10.61,
+    "eps_growth_pct": -0.32,
+    "gross_margin_pct": 54.1,
+    "gross_margin_4q_ago_pct": 43.5,
+    "op_margin_pct": 41.7,
+    "op_margin_4q_ago_pct": 28.1,
+    "debt_to_equity": 0.12,
+    "pe_ratio": 14.6,
+    "ps_ratio": 49.6,
+    "fcf_last4q": [
+     991000000,
+     978000000,
+     653000000,
+     599000000
+    ],
+    "net_debt_to_ebitda": -0.32,
+    "ev_to_ebitda": 111.6
+   }
   },
   {
    "symbol": "WELL",
@@ -4808,7 +10421,34 @@
    },
    "red_flag_count": 4,
    "price": 232.17,
-   "chg_pct": -0.9936
+   "chg_pct": -0.9936,
+   "detail": {
+    "avg50": 237.5564,
+    "avg200": 212.35506,
+    "year_high": 255.2,
+    "year_low": 163.75,
+    "momentum_50d_pct": -3.66,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.23,
+    "revenue_growth_prev_pct": 5.47,
+    "eps_growth_pct": -67.31,
+    "gross_margin_pct": 39.3,
+    "gross_margin_4q_ago_pct": 40.0,
+    "op_margin_pct": 16.6,
+    "op_margin_4q_ago_pct": 18.1,
+    "debt_to_equity": 0.42,
+    "pe_ratio": 166.9,
+    "ps_ratio": 45.1,
+    "fcf_last4q": [
+     881220000,
+     281706000,
+     646853000,
+     852206000
+    ],
+    "net_debt_to_ebitda": 13.38,
+    "ev_to_ebitda": 133.9
+   }
   },
   {
    "symbol": "WFC",
@@ -4830,7 +10470,34 @@
    },
    "red_flag_count": 2,
    "price": 86.885,
-   "chg_pct": -0.18955
+   "chg_pct": -0.18955,
+   "detail": {
+    "avg50": 87.195,
+    "avg200": 85.1723,
+    "year_high": 97.76,
+    "year_low": 72.78,
+    "momentum_50d_pct": -1.23,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.64,
+    "revenue_growth_prev_pct": -0.07,
+    "eps_growth_pct": 24.69,
+    "gross_margin_pct": 64.6,
+    "gross_margin_4q_ago_pct": 65.1,
+    "op_margin_pct": 24.0,
+    "op_margin_4q_ago_pct": 21.7,
+    "debt_to_equity": 2.55,
+    "pe_ratio": 10.2,
+    "ps_ratio": 7.5,
+    "fcf_last4q": [
+     6775000000,
+     9143000000,
+     4121000000,
+     -869000000
+    ],
+    "net_debt_to_ebitda": 31.78,
+    "ev_to_ebitda": 63.1
+   }
   },
   {
    "symbol": "WM",
@@ -4852,7 +10519,34 @@
    },
    "red_flag_count": 3,
    "price": 211.1,
-   "chg_pct": -1.04533
+   "chg_pct": -1.04533,
+   "detail": {
+    "avg50": 225.8974,
+    "avg200": 225.19875,
+    "year_high": 248.13,
+    "year_low": 194.11,
+    "momentum_50d_pct": -6.55,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 7.34,
+    "revenue_growth_prev_pct": -1.36,
+    "eps_growth_pct": 9.5,
+    "gross_margin_pct": 40.8,
+    "gross_margin_4q_ago_pct": 29.2,
+    "op_margin_pct": 18.7,
+    "op_margin_4q_ago_pct": 18.9,
+    "debt_to_equity": 2.35,
+    "pe_ratio": 28.4,
+    "ps_ratio": 13.4,
+    "fcf_last4q": [
+     1096000000,
+     851000000,
+     810000000,
+     816000000
+    ],
+    "net_debt_to_ebitda": 11.21,
+    "ev_to_ebitda": 55.3
+   }
   },
   {
    "symbol": "WMB",
@@ -4874,7 +10568,34 @@
    },
    "red_flag_count": 3,
    "price": 72.05,
-   "chg_pct": 0.33422
+   "chg_pct": 0.33422,
+   "detail": {
+    "avg50": 73.035,
+    "avg200": 70.7328,
+    "year_high": 80.08,
+    "year_low": 56.19,
+    "momentum_50d_pct": -1.35,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 0.76,
+    "revenue_growth_prev_pct": -5.25,
+    "eps_growth_pct": -4.23,
+    "gross_margin_pct": 83.3,
+    "gross_margin_4q_ago_pct": 83.9,
+    "op_margin_pct": 38.7,
+    "op_margin_4q_ago_pct": 37.9,
+    "debt_to_equity": 2.33,
+    "pe_ratio": 27.3,
+    "ps_ratio": 29.8,
+    "fcf_last4q": [
+     -458000000,
+     244000000,
+     -485000000,
+     485000000
+    ],
+    "net_debt_to_ebitda": 14.57,
+    "ev_to_ebitda": 57.9
+   }
   },
   {
    "symbol": "WMT",
@@ -4899,7 +10620,34 @@
    },
    "red_flag_count": 1,
    "price": 106.79,
-   "chg_pct": -0.66047
+   "chg_pct": -0.66047,
+   "detail": {
+    "avg50": 109.9076,
+    "avg200": 118.70085,
+    "year_high": 135.16,
+    "year_low": 98.88,
+    "momentum_50d_pct": -2.89,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": 5.73,
+    "revenue_growth_prev_pct": -6.77,
+    "eps_growth_pct": 19.4,
+    "gross_margin_pct": 26.1,
+    "gross_margin_4q_ago_pct": 25.0,
+    "op_margin_pct": 5.0,
+    "op_margin_4q_ago_pct": 3.7,
+    "debt_to_equity": 0.75,
+    "pe_ratio": 34.8,
+    "ps_ratio": 4.7,
+    "fcf_last4q": [
+     7475000000,
+     -1946000000,
+     6098000000,
+     1882000000
+    ],
+    "net_debt_to_ebitda": 7.52,
+    "ev_to_ebitda": 114.4
+   }
   },
   {
    "symbol": "XEL",
@@ -4921,7 +10669,34 @@
    },
    "red_flag_count": 5,
    "price": 73.63,
-   "chg_pct": 1.2653
+   "chg_pct": 1.2653,
+   "detail": {
+    "avg50": 77.6188,
+    "avg200": 78.3574,
+    "year_high": 84.23,
+    "year_low": 71.8,
+    "momentum_50d_pct": -6.85,
+    "benchmark_3m_pct": -0.77,
+    "benchmark_used": "QQQ",
+    "revenue_growth_pct": -22.43,
+    "revenue_growth_prev_pct": 12.92,
+    "eps_growth_pct": 4.49,
+    "gross_margin_pct": 53.1,
+    "gross_margin_4q_ago_pct": 52.6,
+    "op_margin_pct": 22.7,
+    "op_margin_4q_ago_pct": 26.5,
+    "debt_to_equity": 1.68,
+    "pe_ratio": 21.6,
+    "ps_ratio": 16.1,
+    "fcf_last4q": [
+     -1848000000,
+     -1325000000,
+     -3229000000,
+     -1290000000
+    ],
+    "net_debt_to_ebitda": 23.75,
+    "ev_to_ebitda": 54.9
+   }
   },
   {
    "symbol": "XOM",
@@ -4944,7 +10719,34 @@
    },
    "red_flag_count": 0,
    "price": 163.3,
-   "chg_pct": -0.01224179
+   "chg_pct": -0.01224179,
+   "detail": {
+    "avg50": 157.2634,
+    "avg200": 146.66795,
+    "year_high": 176.41,
+    "year_low": 110.39,
+    "momentum_50d_pct": 3.76,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 37.72,
+    "revenue_growth_prev_pct": 3.9,
+    "eps_growth_pct": 248.0,
+    "gross_margin_pct": 22.4,
+    "gross_margin_4q_ago_pct": 22.4,
+    "op_margin_pct": 15.9,
+    "op_margin_4q_ago_pct": 11.0,
+    "debt_to_equity": 0.16,
+    "pe_ratio": 9.8,
+    "ps_ratio": 5.0,
+    "fcf_last4q": [
+     17028000000,
+     2235000000,
+     5229000000,
+     6061000000
+    ],
+    "net_debt_to_ebitda": 1.12,
+    "ev_to_ebitda": 21.3
+   }
   },
   {
    "symbol": "ZS",
@@ -4966,7 +10768,34 @@
    },
    "red_flag_count": 0,
    "price": 197.47,
-   "chg_pct": 3.07443
+   "chg_pct": 3.07443,
+   "detail": {
+    "avg50": 166.6096,
+    "avg200": 168.54002,
+    "year_high": 336.99,
+    "year_low": 114.625,
+    "momentum_50d_pct": 18.43,
+    "benchmark_3m_pct": 2.92,
+    "benchmark_used": "SPY",
+    "revenue_growth_pct": 5.61,
+    "revenue_growth_prev_pct": 4.26,
+    "eps_growth_pct": 77.78,
+    "gross_margin_pct": 76.7,
+    "gross_margin_4q_ago_pct": 76.6,
+    "op_margin_pct": -1.7,
+    "op_margin_4q_ago_pct": -4.6,
+    "debt_to_equity": 0.71,
+    "pe_ratio": -1890.0,
+    "ps_ratio": 27.0,
+    "fcf_last4q": [
+     64043000,
+     135954000,
+     239057000,
+     413296000
+    ],
+    "net_debt_to_ebitda": 9.32,
+    "ev_to_ebitda": 252.8
+   }
   }
  ],
  "rollup": {
