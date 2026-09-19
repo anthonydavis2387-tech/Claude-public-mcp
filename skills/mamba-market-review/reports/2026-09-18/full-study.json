@@ -83,29 +83,32 @@
   }
  ],
  "universe_counts": {
-  "total_unique_tickers": 220,
+  "total_unique_tickers": 216,
   "dow30": 30,
   "nasdaq100_live": 102,
-  "russell_top100_proxy_unique": 89,
+  "sp500_top100_live": 100,
+  "russell_top100_proxy_unique": 37,
   "software_cloud": 20,
   "megacap_leaders": 20,
   "semiconductor_ai": 20,
   "red_flag_distribution": {
-   "0": 47,
-   "1": 40,
-   "2": 66,
-   "3": 43,
-   "4": 18,
-   "5": 6
+   "0": 42,
+   "1": 38,
+   "2": 65,
+   "3": 45,
+   "4": 19,
+   "5": 7
   }
  },
  "tickers": [
   {
    "symbol": "AAPL",
+   "name": "Apple Inc.",
    "lists": [
     "dow30",
     "megacap_leaders",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -125,8 +128,9 @@
   },
   {
    "symbol": "ABBV",
+   "name": "AbbVie Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -146,6 +150,7 @@
   },
   {
    "symbol": "ABNB",
+   "name": "Airbnb, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -167,8 +172,9 @@
   },
   {
    "symbol": "ABT",
+   "name": "Abbott Laboratories",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -187,28 +193,8 @@
    "chg_pct": -0.16608
   },
   {
-   "symbol": "ACN",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "neutral",
-    "relative_strength": "green",
-    "revenue_growth": "neutral",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 0,
-   "price": 190.29,
-   "chg_pct": 0.34275
-  },
-  {
    "symbol": "ADBE",
+   "name": "Adobe Inc.",
    "lists": [
     "nasdaq100",
     "software_cloud"
@@ -231,9 +217,11 @@
   },
   {
    "symbol": "ADI",
+   "name": "Analog Devices, Inc.",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -253,6 +241,7 @@
   },
   {
    "symbol": "ADP",
+   "name": "Automatic Data Processing, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -274,6 +263,7 @@
   },
   {
    "symbol": "ADSK",
+   "name": "Autodesk, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -295,6 +285,7 @@
   },
   {
    "symbol": "AEP",
+   "name": "American Electric Power Company, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -316,6 +307,7 @@
   },
   {
    "symbol": "ALAB",
+   "name": "Astera Labs, Inc. Common Stock",
    "lists": [
     "nasdaq100"
    ],
@@ -337,6 +329,7 @@
   },
   {
    "symbol": "ALNY",
+   "name": "Alnylam Pharmaceuticals, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -358,9 +351,11 @@
   },
   {
    "symbol": "AMAT",
+   "name": "Applied Materials, Inc.",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -380,9 +375,11 @@
   },
   {
    "symbol": "AMD",
+   "name": "Advanced Micro Devices, Inc.",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -402,9 +399,11 @@
   },
   {
    "symbol": "AMGN",
+   "name": "Amgen Inc.",
    "lists": [
     "dow30",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -424,10 +423,12 @@
   },
   {
    "symbol": "AMZN",
+   "name": "Amazon.com, Inc.",
    "lists": [
     "dow30",
     "megacap_leaders",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -447,8 +448,9 @@
   },
   {
    "symbol": "ANET",
+   "name": "Arista Networks, Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -468,8 +470,9 @@
   },
   {
    "symbol": "APH",
+   "name": "Amphenol Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -489,6 +492,7 @@
   },
   {
    "symbol": "APP",
+   "name": "AppLovin Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -510,6 +514,7 @@
   },
   {
    "symbol": "ARM",
+   "name": "Arm Holdings plc American Depositary Shares",
    "lists": [
     "nasdaq100",
     "semiconductor_ai"
@@ -532,6 +537,7 @@
   },
   {
    "symbol": "ASML",
+   "name": "ASML Holding N.V.",
    "lists": [
     "nasdaq100",
     "semiconductor_ai"
@@ -554,10 +560,12 @@
   },
   {
    "symbol": "AVGO",
+   "name": "Broadcom Inc.",
    "lists": [
     "megacap_leaders",
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -577,6 +585,7 @@
   },
   {
    "symbol": "AXON",
+   "name": "Axon Enterprise, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -598,8 +607,10 @@
   },
   {
    "symbol": "AXP",
+   "name": "American Express Company",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -618,30 +629,11 @@
    "chg_pct": -0.30375
   },
   {
-   "symbol": "AZN",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "neutral",
-    "relative_strength": "neutral",
-    "revenue_growth": "neutral",
-    "margin_trend": "red",
-    "earnings_growth": "red",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "neutral",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 166.14,
-   "chg_pct": 1.99521
-  },
-  {
    "symbol": "BA",
+   "name": "The Boeing Company",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -660,30 +652,10 @@
    "chg_pct": -2.45593
   },
   {
-   "symbol": "BABA",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "red",
-    "free_cash_flow": "neutral",
-    "debt": "green",
-    "valuation": "neutral",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 3,
-   "price": 108.53,
-   "chg_pct": 1.17461
-  },
-  {
    "symbol": "BAC",
+   "name": "Bank of America Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -702,51 +674,11 @@
    "chg_pct": 0.49227
   },
   {
-   "symbol": "BBVA",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "red",
-    "margin_trend": "green",
-    "earnings_growth": "neutral",
-    "free_cash_flow": "neutral",
-    "debt": "neutral",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 1,
-   "price": 28.83,
-   "chg_pct": 2.59786
-  },
-  {
-   "symbol": "BHP",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "neutral",
-    "relative_strength": "red",
-    "revenue_growth": "green",
-    "margin_trend": "neutral",
-    "earnings_growth": "red",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 86.56,
-   "chg_pct": 2.87616
-  },
-  {
    "symbol": "BKNG",
+   "name": "Booking Holdings Inc.",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -766,6 +698,7 @@
   },
   {
    "symbol": "BKR",
+   "name": "Baker Hughes Company",
    "lists": [
     "nasdaq100"
    ],
@@ -787,8 +720,9 @@
   },
   {
    "symbol": "BLK",
+   "name": "BlackRock, Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -807,30 +741,10 @@
    "chg_pct": 1.61197
   },
   {
-   "symbol": "BMO",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "neutral",
-    "relative_strength": "red",
-    "revenue_growth": "green",
-    "margin_trend": "red",
-    "earnings_growth": "red",
-    "free_cash_flow": "neutral",
-    "debt": "neutral",
-    "valuation": "neutral",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 3,
-   "price": 173.79,
-   "chg_pct": 0.68946
-  },
-  {
    "symbol": "BMY",
+   "name": "Bristol-Myers Squibb Company",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -849,49 +763,30 @@
    "chg_pct": -1.19497
   },
   {
-   "symbol": "BNS",
+   "symbol": "BNY",
+   "name": "Bank of New York Mellon Corp",
    "lists": [
     "russell_top100_proxy"
    ],
    "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "green",
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "red",
     "margin_trend": "green",
     "earnings_growth": "green",
-    "free_cash_flow": "neutral",
-    "debt": "red",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 1,
-   "price": 94.1,
-   "chg_pct": 1.22633
-  },
-  {
-   "symbol": "BP",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "neutral",
     "free_cash_flow": "neutral",
     "debt": "neutral",
     "valuation": "green",
     "institutional_ownership": "na",
     "moat": "na"
    },
-   "red_flag_count": 0,
-   "price": 45.42,
-   "chg_pct": 0.08814456
+   "red_flag_count": 2,
+   "price": 153.79,
+   "chg_pct": 0.5032
   },
   {
    "symbol": "BRK-A",
+   "name": "Berkshire Hathaway Inc.",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -913,9 +808,10 @@
   },
   {
    "symbol": "BRK-B",
+   "name": "Berkshire Hathaway Inc.",
    "lists": [
     "megacap_leaders",
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -934,51 +830,10 @@
    "chg_pct": -2.03925
   },
   {
-   "symbol": "BTI",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "neutral",
-    "margin_trend": "green",
-    "earnings_growth": "neutral",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 56.02,
-   "chg_pct": -0.1248
-  },
-  {
-   "symbol": "BUD",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "neutral",
-    "relative_strength": "red",
-    "revenue_growth": "neutral",
-    "margin_trend": "neutral",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 1,
-   "price": 78.77,
-   "chg_pct": -1.41427
-  },
-  {
    "symbol": "BX",
+   "name": "Blackstone Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -998,8 +853,9 @@
   },
   {
    "symbol": "C",
+   "name": "Citigroup Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -1019,8 +875,10 @@
   },
   {
    "symbol": "CAT",
+   "name": "Caterpillar Inc.",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -1040,8 +898,9 @@
   },
   {
    "symbol": "CB",
+   "name": "Chubb Limited",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -1061,6 +920,7 @@
   },
   {
    "symbol": "CCEP",
+   "name": "Coca-Cola Europacific Partners PLC",
    "lists": [
     "nasdaq100"
    ],
@@ -1082,6 +942,7 @@
   },
   {
    "symbol": "CDNS",
+   "name": "Cadence Design Systems, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -1103,6 +964,7 @@
   },
   {
    "symbol": "CEG",
+   "name": "Constellation Energy Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -1124,6 +986,7 @@
   },
   {
    "symbol": "CMCSA",
+   "name": "Comcast Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -1144,9 +1007,32 @@
    "chg_pct": -3.45554
   },
   {
-   "symbol": "COF",
+   "symbol": "CME",
+   "name": "CME Group Inc.",
    "lists": [
     "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 276.01,
+   "chg_pct": 1.79237
+  },
+  {
+   "symbol": "COF",
+   "name": "Capital One Financial Corporation",
+   "lists": [
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -1166,8 +1052,9 @@
   },
   {
    "symbol": "COP",
+   "name": "ConocoPhillips",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1187,9 +1074,11 @@
   },
   {
    "symbol": "COST",
+   "name": "Costco Wholesale Corporation",
    "lists": [
     "megacap_leaders",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -1209,6 +1098,7 @@
   },
   {
    "symbol": "CPRT",
+   "name": "Copart, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -1230,9 +1120,11 @@
   },
   {
    "symbol": "CRM",
+   "name": "Salesforce, Inc.",
    "lists": [
     "dow30",
-    "software_cloud"
+    "software_cloud",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1252,9 +1144,11 @@
   },
   {
    "symbol": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
    "lists": [
     "nasdaq100",
-    "software_cloud"
+    "software_cloud",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1274,6 +1168,7 @@
   },
   {
    "symbol": "CRWV",
+   "name": "CoreWeave, Inc. Class A Common Stock",
    "lists": [
     "nasdaq100"
    ],
@@ -1295,9 +1190,11 @@
   },
   {
    "symbol": "CSCO",
+   "name": "Cisco Systems, Inc.",
    "lists": [
     "dow30",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -1317,6 +1214,7 @@
   },
   {
    "symbol": "CSX",
+   "name": "CSX Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -1338,6 +1236,7 @@
   },
   {
    "symbol": "CTAS",
+   "name": "Cintas Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -1359,6 +1258,7 @@
   },
   {
    "symbol": "CVS",
+   "name": "CVS Health Corp.",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -1380,8 +1280,10 @@
   },
   {
    "symbol": "CVX",
+   "name": "Chevron Corporation",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1401,6 +1303,7 @@
   },
   {
    "symbol": "DASH",
+   "name": "DoorDash, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -1422,6 +1325,7 @@
   },
   {
    "symbol": "DDOG",
+   "name": "Datadog, Inc.",
    "lists": [
     "nasdaq100",
     "software_cloud"
@@ -1444,8 +1348,9 @@
   },
   {
    "symbol": "DE",
+   "name": "Deere & Company",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1465,8 +1370,9 @@
   },
   {
    "symbol": "DELL",
+   "name": "Dell Technologies Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1486,8 +1392,9 @@
   },
   {
    "symbol": "DHR",
+   "name": "Danaher Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1507,8 +1414,10 @@
   },
   {
    "symbol": "DIS",
+   "name": "The Walt Disney Company",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1528,6 +1437,7 @@
   },
   {
    "symbol": "DOCU",
+   "name": "DocuSign, Inc.",
    "lists": [
     "software_cloud"
    ],
@@ -1548,7 +1458,30 @@
    "chg_pct": 0.34091
   },
   {
+   "symbol": "DUK",
+   "name": "Duke Energy Corporation",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "neutral",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 117.53,
+   "chg_pct": -0.85203
+  },
+  {
    "symbol": "DXCM",
+   "name": "DexCom, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -1569,7 +1502,52 @@
    "chg_pct": 0.67552
   },
   {
+   "symbol": "ELV",
+   "name": "Elevance Health Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 410.95,
+   "chg_pct": -0.79902
+  },
+  {
+   "symbol": "EMR",
+   "name": "Emerson Electric Co.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 149.92,
+   "chg_pct": 1.70963
+  },
+  {
    "symbol": "EP-PC",
+   "name": "El Paso Energy Capital Trust I PFD CV TR SECS",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -1590,9 +1568,54 @@
    "chg_pct": -0.26
   },
   {
-   "symbol": "ETN",
+   "symbol": "EPD",
+   "name": "Enterprise Products Partners L.P.",
    "lists": [
     "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 38.89,
+   "chg_pct": 1.14434
+  },
+  {
+   "symbol": "EQIX",
+   "name": "Equinix, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 1021.34,
+   "chg_pct": -0.44837
+  },
+  {
+   "symbol": "ETN",
+   "name": "Eaton Corporation plc",
+   "lists": [
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -1612,6 +1635,7 @@
   },
   {
    "symbol": "EXC",
+   "name": "Exelon Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -1633,6 +1657,7 @@
   },
   {
    "symbol": "FANG",
+   "name": "Diamondback Energy, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -1654,6 +1679,7 @@
   },
   {
    "symbol": "FAST",
+   "name": "Fastenal Company",
    "lists": [
     "nasdaq100"
    ],
@@ -1674,7 +1700,30 @@
    "chg_pct": 0.30594
   },
   {
+   "symbol": "FCX",
+   "name": "Freeport-McMoRan Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 71.54,
+   "chg_pct": 0.97389
+  },
+  {
    "symbol": "FER",
+   "name": "Ferrovial SE",
    "lists": [
     "nasdaq100"
    ],
@@ -1696,9 +1745,11 @@
   },
   {
    "symbol": "FTNT",
+   "name": "Fortinet, Inc.",
    "lists": [
     "nasdaq100",
-    "software_cloud"
+    "software_cloud",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1717,9 +1768,32 @@
    "chg_pct": 0.47156
   },
   {
-   "symbol": "GE",
+   "symbol": "GD",
+   "name": "General Dynamics Corporation",
    "lists": [
     "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "neutral",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 353.05,
+   "chg_pct": -0.81472
+  },
+  {
+   "symbol": "GE",
+   "name": "GE Aerospace",
+   "lists": [
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -1739,6 +1813,7 @@
   },
   {
    "symbol": "GEHC",
+   "name": "GE HealthCare Technologies Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -1760,8 +1835,9 @@
   },
   {
    "symbol": "GEV",
+   "name": "GE Vernova Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -1781,8 +1857,10 @@
   },
   {
    "symbol": "GILD",
+   "name": "Gilead Sciences, Inc.",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1802,8 +1880,9 @@
   },
   {
    "symbol": "GLW",
+   "name": "Corning Inc",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -1823,8 +1902,10 @@
   },
   {
    "symbol": "GOOG",
+   "name": "Alphabet Inc.",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -1844,9 +1925,11 @@
   },
   {
    "symbol": "GOOGL",
+   "name": "Alphabet Inc.",
    "lists": [
     "megacap_leaders",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -1866,8 +1949,10 @@
   },
   {
    "symbol": "GS",
+   "name": "The Goldman Sachs Group, Inc.",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -1886,10 +1971,34 @@
    "chg_pct": 1.4382
   },
   {
+   "symbol": "HCA",
+   "name": "HCA Healthcare, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 0,
+   "price": 427.71,
+   "chg_pct": -0.30999
+  },
+  {
    "symbol": "HD",
+   "name": "The Home Depot, Inc.",
    "lists": [
     "dow30",
-    "megacap_leaders"
+    "megacap_leaders",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -1908,28 +2017,8 @@
    "chg_pct": 0.01322122
   },
   {
-   "symbol": "HDB",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "green",
-    "margin_trend": "red",
-    "earnings_growth": "red",
-    "free_cash_flow": "neutral",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 4,
-   "price": 22.66,
-   "chg_pct": 1.25112
-  },
-  {
    "symbol": "HON",
+   "name": "Honeywell International Inc.",
    "lists": [
     "dow30",
     "nasdaq100"
@@ -1952,6 +2041,7 @@
   },
   {
    "symbol": "HONA",
+   "name": "Honeywell Aerospace Inc",
    "lists": [
     "nasdaq100"
    ],
@@ -1972,28 +2062,30 @@
    "chg_pct": 1.79681
   },
   {
-   "symbol": "HSBC",
+   "symbol": "HOOD",
+   "name": "Robinhood Markets, Inc.",
    "lists": [
     "russell_top100_proxy"
    ],
    "flags": {
-    "trend": "neutral",
-    "relative_strength": "red",
-    "revenue_growth": "neutral",
-    "margin_trend": "green",
+    "trend": "green",
+    "relative_strength": "green",
+    "revenue_growth": "green",
+    "margin_trend": "red",
     "earnings_growth": "green",
-    "free_cash_flow": "red",
-    "debt": "green",
-    "valuation": "green",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "red",
     "institutional_ownership": "na",
     "moat": "na"
    },
-   "red_flag_count": 2,
-   "price": 102.84,
-   "chg_pct": 1.98334
+   "red_flag_count": 3,
+   "price": 119.82,
+   "chg_pct": 9.11575
   },
   {
    "symbol": "HUBS",
+   "name": "HubSpot, Inc.",
    "lists": [
     "software_cloud"
    ],
@@ -2014,9 +2106,32 @@
    "chg_pct": -2.90958
   },
   {
-   "symbol": "IBKR",
+   "symbol": "HWM",
+   "name": "Howmet Aerospace Inc.",
    "lists": [
     "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 229.67,
+   "chg_pct": 1.73193
+  },
+  {
+   "symbol": "IBKR",
+   "name": "Interactive Brokers Group, Inc.",
+   "lists": [
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -2036,8 +2151,10 @@
   },
   {
    "symbol": "IBM",
+   "name": "International Business Machines Corporation",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -2056,7 +2173,30 @@
    "chg_pct": 0.10948
   },
   {
+   "symbol": "ICE",
+   "name": "Intercontinental Exchange, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 155.47,
+   "chg_pct": 1.41553
+  },
+  {
    "symbol": "IDXX",
+   "name": "IDEXX Laboratories, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -2078,9 +2218,11 @@
   },
   {
    "symbol": "INTC",
+   "name": "Intel Corp.",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2100,6 +2242,7 @@
   },
   {
    "symbol": "INTU",
+   "name": "Intuit Inc.",
    "lists": [
     "nasdaq100",
     "software_cloud"
@@ -2122,8 +2265,10 @@
   },
   {
    "symbol": "ISRG",
+   "name": "Intuitive Surgical, Inc.",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -2143,9 +2288,11 @@
   },
   {
    "symbol": "JNJ",
+   "name": "Johnson & Johnson",
    "lists": [
     "dow30",
-    "megacap_leaders"
+    "megacap_leaders",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2165,9 +2312,11 @@
   },
   {
    "symbol": "JPM",
+   "name": "JPMorgan Chase & Co.",
    "lists": [
     "dow30",
-    "megacap_leaders"
+    "megacap_leaders",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -2187,6 +2336,7 @@
   },
   {
    "symbol": "KDP",
+   "name": "Keurig Dr Pepper Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -2208,6 +2358,7 @@
   },
   {
    "symbol": "KHC",
+   "name": "The Kraft Heinz Company",
    "lists": [
     "nasdaq100"
    ],
@@ -2228,10 +2379,34 @@
    "chg_pct": 0
   },
   {
+   "symbol": "KKR",
+   "name": "KKR & Co. Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 98.81,
+   "chg_pct": 0.63143
+  },
+  {
    "symbol": "KLAC",
+   "name": "KLA Corporation",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -2251,8 +2426,10 @@
   },
   {
    "symbol": "KO",
+   "name": "The Coca-Cola Company",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2272,8 +2449,10 @@
   },
   {
    "symbol": "LIN",
+   "name": "Linde plc",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -2293,6 +2472,7 @@
   },
   {
    "symbol": "LITE",
+   "name": "Lumentum Holdings Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -2314,9 +2494,10 @@
   },
   {
    "symbol": "LLY",
+   "name": "Eli Lilly and Company",
    "lists": [
     "megacap_leaders",
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -2336,8 +2517,9 @@
   },
   {
    "symbol": "LMT",
+   "name": "Lockheed Martin Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -2356,10 +2538,34 @@
    "chg_pct": 0.15635
   },
   {
+   "symbol": "LOW",
+   "name": "Lowe's Companies, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 192.43,
+   "chg_pct": -0.90633
+  },
+  {
    "symbol": "LRCX",
+   "name": "Lam Research Corporation",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -2379,9 +2585,10 @@
   },
   {
    "symbol": "MA",
+   "name": "Mastercard Incorporated",
    "lists": [
     "megacap_leaders",
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2401,6 +2608,7 @@
   },
   {
    "symbol": "MAR",
+   "name": "Marriott International, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -2422,8 +2630,10 @@
   },
   {
    "symbol": "MCD",
+   "name": "McDonald's Corporation",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -2443,6 +2653,7 @@
   },
   {
    "symbol": "MCHP",
+   "name": "Microchip Technology Incorporated",
    "lists": [
     "nasdaq100",
     "semiconductor_ai"
@@ -2464,7 +2675,30 @@
    "chg_pct": 1.7675
   },
   {
+   "symbol": "MCK",
+   "name": "McKesson Corporation",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "green",
+    "relative_strength": "neutral",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 874.65,
+   "chg_pct": -0.55936
+  },
+  {
    "symbol": "MDB",
+   "name": "MongoDB, Inc.",
    "lists": [
     "software_cloud"
    ],
@@ -2486,6 +2720,7 @@
   },
   {
    "symbol": "MDLZ",
+   "name": "Mondelez International, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -2506,28 +2741,8 @@
    "chg_pct": -0.51315
   },
   {
-   "symbol": "MDT",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "red",
-    "margin_trend": "neutral",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 1,
-   "price": 92.77,
-   "chg_pct": 0.18359
-  },
-  {
    "symbol": "MELI",
+   "name": "MercadoLibre, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -2549,6 +2764,7 @@
   },
   {
    "symbol": "MER-PK",
+   "name": "Bank of America Corp 6.45 % Notes 2018-15.12.66 Income Capital Obligations",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -2570,9 +2786,11 @@
   },
   {
    "symbol": "META",
+   "name": "Meta Platforms, Inc.",
    "lists": [
     "megacap_leaders",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2591,28 +2809,8 @@
    "chg_pct": 1.33668
   },
   {
-   "symbol": "MFG",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "neutral",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "neutral",
-    "debt": "red",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 1,
-   "price": 11.07,
-   "chg_pct": 1.28088
-  },
-  {
    "symbol": "MMM",
+   "name": "3M Company",
    "lists": [
     "dow30"
    ],
@@ -2634,6 +2832,7 @@
   },
   {
    "symbol": "MNST",
+   "name": "Monster Beverage Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -2655,6 +2854,7 @@
   },
   {
    "symbol": "MO",
+   "name": "Altria Group, Inc.",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -2676,8 +2876,9 @@
   },
   {
    "symbol": "MPC",
+   "name": "Marathon Petroleum Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2697,6 +2898,7 @@
   },
   {
    "symbol": "MPWR",
+   "name": "Monolithic Power Systems, Inc.",
    "lists": [
     "nasdaq100",
     "semiconductor_ai"
@@ -2719,8 +2921,10 @@
   },
   {
    "symbol": "MRK",
+   "name": "Merck & Co., Inc.",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2739,10 +2943,34 @@
    "chg_pct": 1.55959
   },
   {
+   "symbol": "MRSH",
+   "name": "Marsh & McLennan Companies, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "red",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 175.01,
+   "chg_pct": 0.24631
+  },
+  {
    "symbol": "MRVL",
+   "name": "Marvell Technology, Inc.",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2762,8 +2990,9 @@
   },
   {
    "symbol": "MS",
+   "name": "Morgan Stanley",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -2783,11 +3012,13 @@
   },
   {
    "symbol": "MSFT",
+   "name": "Microsoft Corporation",
    "lists": [
     "dow30",
     "megacap_leaders",
     "nasdaq100",
-    "software_cloud"
+    "software_cloud",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2807,6 +3038,7 @@
   },
   {
    "symbol": "MSTR",
+   "name": "Strategy Inc",
    "lists": [
     "nasdaq100"
    ],
@@ -2828,9 +3060,11 @@
   },
   {
    "symbol": "MU",
+   "name": "Micron Technology, Inc.",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2849,28 +3083,8 @@
    "chg_pct": 5.49889
   },
   {
-   "symbol": "MUFG",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "red",
-    "margin_trend": "neutral",
-    "earnings_growth": "green",
-    "free_cash_flow": "neutral",
-    "debt": "red",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 23.5,
-   "chg_pct": 1.3805
-  },
-  {
    "symbol": "NBIS",
+   "name": "Nebius Group N.V.",
    "lists": [
     "nasdaq100"
    ],
@@ -2892,8 +3106,9 @@
   },
   {
    "symbol": "NEE",
+   "name": "NextEra Energy, Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -2913,8 +3128,9 @@
   },
   {
    "symbol": "NEM",
+   "name": "Newmont Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -2934,6 +3150,7 @@
   },
   {
    "symbol": "NET",
+   "name": "Cloudflare, Inc.",
    "lists": [
     "russell_top100_proxy",
     "software_cloud"
@@ -2956,8 +3173,10 @@
   },
   {
    "symbol": "NFLX",
+   "name": "Netflix, Inc.",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -2977,6 +3196,7 @@
   },
   {
    "symbol": "NKE",
+   "name": "NIKE, Inc.",
    "lists": [
     "dow30"
    ],
@@ -2998,9 +3218,10 @@
   },
   {
    "symbol": "NOW",
+   "name": "ServiceNow, Inc.",
    "lists": [
-    "russell_top100_proxy",
-    "software_cloud"
+    "software_cloud",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3020,11 +3241,13 @@
   },
   {
    "symbol": "NVDA",
+   "name": "NVIDIA Corporation",
    "lists": [
     "dow30",
     "megacap_leaders",
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3043,49 +3266,8 @@
    "chg_pct": 2.54324
   },
   {
-   "symbol": "NVO",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "red",
-    "margin_trend": "green",
-    "earnings_growth": "red",
-    "free_cash_flow": "neutral",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 4,
-   "price": 43.195,
-   "chg_pct": 3.5603
-  },
-  {
-   "symbol": "NVS",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "neutral",
-    "free_cash_flow": "green",
-    "debt": "neutral",
-    "valuation": "neutral",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 140.92,
-   "chg_pct": 1.60058
-  },
-  {
    "symbol": "NXPI",
+   "name": "NXP Semiconductors N.V.",
    "lists": [
     "nasdaq100",
     "semiconductor_ai"
@@ -3108,6 +3290,7 @@
   },
   {
    "symbol": "ODFL",
+   "name": "Old Dominion Freight Line, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3129,6 +3312,7 @@
   },
   {
    "symbol": "ON",
+   "name": "ON Semiconductor Corporation",
    "lists": [
     "semiconductor_ai"
    ],
@@ -3150,9 +3334,10 @@
   },
   {
    "symbol": "ORCL",
+   "name": "Oracle Corporation",
    "lists": [
-    "russell_top100_proxy",
-    "software_cloud"
+    "software_cloud",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -3172,6 +3357,7 @@
   },
   {
    "symbol": "ORLY",
+   "name": "O'Reilly Automotive, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3193,9 +3379,11 @@
   },
   {
    "symbol": "PANW",
+   "name": "Palo Alto Networks, Inc.",
    "lists": [
     "nasdaq100",
-    "software_cloud"
+    "software_cloud",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3215,6 +3403,7 @@
   },
   {
    "symbol": "PAYX",
+   "name": "Paychex, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3235,49 +3424,8 @@
    "chg_pct": -0.17992
   },
   {
-   "symbol": "PBR",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 0,
-   "price": 20.94,
-   "chg_pct": 0.14347
-  },
-  {
-   "symbol": "PBR-A",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "red",
-    "margin_trend": "green",
-    "earnings_growth": "red",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 18.94,
-   "chg_pct": 0.26469
-  },
-  {
    "symbol": "PCAR",
+   "name": "PACCAR Inc",
    "lists": [
     "nasdaq100"
    ],
@@ -3299,6 +3447,7 @@
   },
   {
    "symbol": "PDD",
+   "name": "PDD Holdings Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3320,8 +3469,10 @@
   },
   {
    "symbol": "PEP",
+   "name": "PepsiCo, Inc.",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -3341,8 +3492,9 @@
   },
   {
    "symbol": "PFE",
+   "name": "Pfizer Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3362,9 +3514,11 @@
   },
   {
    "symbol": "PG",
+   "name": "The Procter & Gamble Company",
    "lists": [
     "dow30",
-    "megacap_leaders"
+    "megacap_leaders",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3384,8 +3538,9 @@
   },
   {
    "symbol": "PGR",
+   "name": "The Progressive Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3405,6 +3560,7 @@
   },
   {
    "symbol": "PH",
+   "name": "Parker-Hannifin Corporation",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -3426,8 +3582,9 @@
   },
   {
    "symbol": "PLD",
+   "name": "Prologis, Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -3447,9 +3604,11 @@
   },
   {
    "symbol": "PLTR",
+   "name": "Palantir Technologies Inc.",
    "lists": [
     "nasdaq100",
-    "software_cloud"
+    "software_cloud",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3469,8 +3628,9 @@
   },
   {
    "symbol": "PM",
+   "name": "Philip Morris International Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3489,7 +3649,30 @@
    "chg_pct": -0.6416
   },
   {
+   "symbol": "PNC",
+   "name": "The PNC Financial Services Group, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 233.17,
+   "chg_pct": 0.49998
+  },
+  {
    "symbol": "PSX",
+   "name": "Phillips 66",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -3510,7 +3693,30 @@
    "chg_pct": 3.62015
   },
   {
+   "symbol": "PWR",
+   "name": "Quanta Services, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 636.71,
+   "chg_pct": 3.27232
+  },
+  {
    "symbol": "PYPL",
+   "name": "PayPal Holdings, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3532,9 +3738,11 @@
   },
   {
    "symbol": "QCOM",
+   "name": "QUALCOMM Incorporated",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3554,6 +3762,7 @@
   },
   {
    "symbol": "REGN",
+   "name": "Regeneron Pharmaceuticals, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3574,28 +3783,8 @@
    "chg_pct": 1.9158
   },
   {
-   "symbol": "RIO",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "neutral",
-    "revenue_growth": "neutral",
-    "margin_trend": "neutral",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 0,
-   "price": 98.04,
-   "chg_pct": 2.34889
-  },
-  {
    "symbol": "RKLB",
+   "name": "Rocket Lab USA, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3617,6 +3806,7 @@
   },
   {
    "symbol": "ROP",
+   "name": "Roper Technologies, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3638,6 +3828,7 @@
   },
   {
    "symbol": "ROST",
+   "name": "Ross Stores, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3659,8 +3850,9 @@
   },
   {
    "symbol": "RTX",
+   "name": "RTX Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -3679,51 +3871,9 @@
    "chg_pct": -1.67149
   },
   {
-   "symbol": "RY",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "neutral",
-    "relative_strength": "red",
-    "revenue_growth": "green",
-    "margin_trend": "neutral",
-    "earnings_growth": "green",
-    "free_cash_flow": "neutral",
-    "debt": "red",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 203.57,
-   "chg_pct": 0.63275
-  },
-  {
-   "symbol": "SAN",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "green",
-    "margin_trend": "red",
-    "earnings_growth": "red",
-    "free_cash_flow": "neutral",
-    "debt": "red",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 3,
-   "price": 14.82,
-   "chg_pct": 2.91667
-  },
-  {
    "symbol": "SAP",
+   "name": "SAP SE",
    "lists": [
-    "russell_top100_proxy",
     "software_cloud"
    ],
    "flags": {
@@ -3744,6 +3894,7 @@
   },
   {
    "symbol": "SBUX",
+   "name": "Starbucks Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -3765,6 +3916,7 @@
   },
   {
    "symbol": "SCCO",
+   "name": "Southern Copper Corporation",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -3786,8 +3938,9 @@
   },
   {
    "symbol": "SCHW",
+   "name": "The Charles Schwab Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -3806,28 +3959,8 @@
    "chg_pct": -0.50399
   },
   {
-   "symbol": "SHEL",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 0,
-   "price": 95.82,
-   "chg_pct": 0.12539
-  },
-  {
    "symbol": "SHOP",
+   "name": "Shopify Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3849,6 +3982,7 @@
   },
   {
    "symbol": "SHW",
+   "name": "The Sherwin-Williams Company",
    "lists": [
     "dow30"
    ],
@@ -3869,30 +4003,11 @@
    "chg_pct": -0.16176
   },
   {
-   "symbol": "SKHY",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 0,
-   "price": 182.99,
-   "chg_pct": 4.64345
-  },
-  {
    "symbol": "SNDK",
+   "name": "Sandisk Corporation",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -3912,6 +4027,7 @@
   },
   {
    "symbol": "SNOW",
+   "name": "Snowflake Inc.",
    "lists": [
     "russell_top100_proxy",
     "software_cloud"
@@ -3934,6 +4050,7 @@
   },
   {
    "symbol": "SNPS",
+   "name": "Synopsys, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -3954,28 +4071,30 @@
    "chg_pct": 0.7134
   },
   {
-   "symbol": "SONY",
+   "symbol": "SO",
+   "name": "The Southern Company",
    "lists": [
     "russell_top100_proxy"
    ],
    "flags": {
-    "trend": "green",
-    "relative_strength": "green",
+    "trend": "red",
+    "relative_strength": "red",
     "revenue_growth": "red",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "green",
-    "valuation": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "neutral",
+    "valuation": "neutral",
     "institutional_ownership": "na",
     "moat": "na"
    },
-   "red_flag_count": 1,
-   "price": 23.83,
-   "chg_pct": 0.42141
+   "red_flag_count": 5,
+   "price": 85.52,
+   "chg_pct": -1.42923
   },
   {
    "symbol": "SPCX",
+   "name": "Space Exploration Technologies Corp.",
    "lists": [
     "nasdaq100"
    ],
@@ -3997,6 +4116,7 @@
   },
   {
    "symbol": "SPGI",
+   "name": "S&P Global Inc.",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -4018,8 +4138,10 @@
   },
   {
    "symbol": "STX",
+   "name": "Seagate Technology Holdings plc",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -4039,6 +4161,7 @@
   },
   {
    "symbol": "SWKS",
+   "name": "Skyworks Solutions, Inc.",
    "lists": [
     "semiconductor_ai"
    ],
@@ -4059,9 +4182,32 @@
    "chg_pct": 6.69471
   },
   {
-   "symbol": "T",
+   "symbol": "SYK",
+   "name": "Stryker Corporation",
    "lists": [
     "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 2,
+   "price": 275.12,
+   "chg_pct": -1.78846
+  },
+  {
+   "symbol": "T",
+   "name": "AT&T Inc.",
+   "lists": [
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -4081,6 +4227,7 @@
   },
   {
    "symbol": "TBB",
+   "name": "AT&T Inc. 5.35% GLB NTS 66",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -4101,28 +4248,8 @@
    "chg_pct": 0.10299
   },
   {
-   "symbol": "TD",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "neutral",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "neutral",
-    "debt": "red",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 1,
-   "price": 121.81,
-   "chg_pct": 1.00331
-  },
-  {
    "symbol": "TEAM",
+   "name": "Atlassian Corporation",
    "lists": [
     "software_cloud"
    ],
@@ -4144,6 +4271,7 @@
   },
   {
    "symbol": "TER",
+   "name": "Teradyne, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -4165,8 +4293,9 @@
   },
   {
    "symbol": "TJX",
+   "name": "The TJX Companies, Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -4185,30 +4314,10 @@
    "chg_pct": 3.02841
   },
   {
-   "symbol": "TM",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "neutral",
-    "relative_strength": "green",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "neutral",
-    "debt": "neutral",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 0,
-   "price": 193.91,
-   "chg_pct": 0.88445
-  },
-  {
    "symbol": "TMO",
+   "name": "Thermo Fisher Scientific Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -4228,8 +4337,10 @@
   },
   {
    "symbol": "TMUS",
+   "name": "T-Mobile US, Inc.",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -4249,6 +4360,7 @@
   },
   {
    "symbol": "TRI",
+   "name": "Thomson Reuters Corporation",
    "lists": [
     "nasdaq100"
    ],
@@ -4270,6 +4382,7 @@
   },
   {
    "symbol": "TRV",
+   "name": "The Travelers Companies, Inc.",
    "lists": [
     "dow30"
    ],
@@ -4291,9 +4404,11 @@
   },
   {
    "symbol": "TSLA",
+   "name": "Tesla, Inc.",
    "lists": [
     "megacap_leaders",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -4313,8 +4428,8 @@
   },
   {
    "symbol": "TSM",
+   "name": "Taiwan Semiconductor Manufacturing Company Limited",
    "lists": [
-    "russell_top100_proxy",
     "semiconductor_ai"
    ],
    "flags": {
@@ -4334,28 +4449,8 @@
    "chg_pct": 3.00201
   },
   {
-   "symbol": "TTE",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "green",
-    "relative_strength": "green",
-    "revenue_growth": "green",
-    "margin_trend": "neutral",
-    "earnings_growth": "red",
-    "free_cash_flow": "neutral",
-    "debt": "green",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 1,
-   "price": 91.59,
-   "chg_pct": 0.82563
-  },
-  {
    "symbol": "TTWO",
+   "name": "Take-Two Interactive Software, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -4377,9 +4472,11 @@
   },
   {
    "symbol": "TXN",
+   "name": "Texas Instruments Incorporated",
    "lists": [
     "nasdaq100",
-    "semiconductor_ai"
+    "semiconductor_ai",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -4399,8 +4496,9 @@
   },
   {
    "symbol": "UBER",
+   "name": "Uber Technologies, Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -4419,52 +4517,12 @@
    "chg_pct": -0.1409
   },
   {
-   "symbol": "UBS",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "neutral",
-    "relative_strength": "red",
-    "revenue_growth": "neutral",
-    "margin_trend": "green",
-    "earnings_growth": "red",
-    "free_cash_flow": "neutral",
-    "debt": "red",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 3,
-   "price": 50.62,
-   "chg_pct": 0.39667
-  },
-  {
-   "symbol": "UL",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "neutral",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 62.22,
-   "chg_pct": -0.35234
-  },
-  {
    "symbol": "UNH",
+   "name": "UnitedHealth Group Incorporated",
    "lists": [
     "dow30",
-    "megacap_leaders"
+    "megacap_leaders",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -4484,8 +4542,9 @@
   },
   {
    "symbol": "UNP",
+   "name": "Union Pacific Corporation",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -4504,10 +4563,56 @@
    "chg_pct": 0.55532
   },
   {
+   "symbol": "UPS",
+   "name": "United Parcel Service, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "red",
+    "earnings_growth": "red",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 4,
+   "price": 99.02,
+   "chg_pct": -1.14805
+  },
+  {
+   "symbol": "USB",
+   "name": "U.S. Bancorp",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "green",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "neutral",
+    "valuation": "green",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 1,
+   "price": 60.06,
+   "chg_pct": -0.31535
+  },
+  {
    "symbol": "V",
+   "name": "Visa Inc.",
    "lists": [
     "dow30",
-    "megacap_leaders"
+    "megacap_leaders",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -4527,6 +4632,7 @@
   },
   {
    "symbol": "VLO",
+   "name": "Valero Energy Corporation",
    "lists": [
     "russell_top100_proxy"
    ],
@@ -4547,9 +4653,33 @@
    "chg_pct": 2.29369
   },
   {
-   "symbol": "VRTX",
+   "symbol": "VRT",
+   "name": "Vertiv Holdings Co",
    "lists": [
-    "nasdaq100"
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "green",
+    "valuation": "red",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 249.39,
+   "chg_pct": 3.27136
+  },
+  {
+   "symbol": "VRTX",
+   "name": "Vertex Pharmaceuticals Incorporated",
+   "lists": [
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -4569,8 +4699,10 @@
   },
   {
    "symbol": "VZ",
+   "name": "Verizon Communications Inc.",
    "lists": [
-    "dow30"
+    "dow30",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -4590,6 +4722,7 @@
   },
   {
    "symbol": "WBD",
+   "name": "Warner Bros. Discovery, Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -4611,6 +4744,7 @@
   },
   {
    "symbol": "WDAY",
+   "name": "Workday, Inc.",
    "lists": [
     "nasdaq100",
     "software_cloud"
@@ -4633,8 +4767,10 @@
   },
   {
    "symbol": "WDC",
+   "name": "Western Digital Corporation",
    "lists": [
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -4654,8 +4790,9 @@
   },
   {
    "symbol": "WELL",
+   "name": "Welltower Inc.",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -4675,8 +4812,9 @@
   },
   {
    "symbol": "WFC",
+   "name": "Wells Fargo & Company",
    "lists": [
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "neutral",
@@ -4695,11 +4833,57 @@
    "chg_pct": -0.18955
   },
   {
+   "symbol": "WM",
+   "name": "Waste Management, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "red",
+    "relative_strength": "red",
+    "revenue_growth": "green",
+    "margin_trend": "neutral",
+    "earnings_growth": "green",
+    "free_cash_flow": "green",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 211.1,
+   "chg_pct": -1.04533
+  },
+  {
+   "symbol": "WMB",
+   "name": "The Williams Companies, Inc.",
+   "lists": [
+    "russell_top100_proxy"
+   ],
+   "flags": {
+    "trend": "neutral",
+    "relative_strength": "red",
+    "revenue_growth": "neutral",
+    "margin_trend": "neutral",
+    "earnings_growth": "red",
+    "free_cash_flow": "neutral",
+    "debt": "red",
+    "valuation": "neutral",
+    "institutional_ownership": "na",
+    "moat": "na"
+   },
+   "red_flag_count": 3,
+   "price": 72.05,
+   "chg_pct": 0.33422
+  },
+  {
    "symbol": "WMT",
+   "name": "Walmart Inc.",
    "lists": [
     "dow30",
     "megacap_leaders",
-    "nasdaq100"
+    "nasdaq100",
+    "sp500_top100"
    ],
    "flags": {
     "trend": "red",
@@ -4719,6 +4903,7 @@
   },
   {
    "symbol": "XEL",
+   "name": "Xcel Energy Inc.",
    "lists": [
     "nasdaq100"
    ],
@@ -4740,9 +4925,10 @@
   },
   {
    "symbol": "XOM",
+   "name": "Exxon Mobil Corporation",
    "lists": [
     "megacap_leaders",
-    "russell_top100_proxy"
+    "sp500_top100"
    ],
    "flags": {
     "trend": "green",
@@ -4762,6 +4948,7 @@
   },
   {
    "symbol": "ZS",
+   "name": "Zscaler, Inc.",
    "lists": [
     "software_cloud"
    ],
@@ -4789,6 +4976,7 @@
    "CRWV",
    "EXC",
    "HONA",
+   "SO",
    "XEL",
    "AEP",
    "ALNY",
@@ -4797,16 +4985,17 @@
    "BA",
    "CDNS",
    "CPRT",
+   "DUK",
    "ETN",
    "GE",
-   "HDB",
+   "HWM",
    "INTU",
-   "NVO",
    "RKLB",
    "SPGI",
    "SWKS",
    "TMUS",
    "TRI",
+   "UPS",
    "WELL"
   ],
   "movers_top10_by_abs_chg": [
@@ -4828,8 +5017,11 @@
    "TMUS",
    "CEG",
    "EXC",
+   "SO",
    "AEP",
    "XEL",
+   "DUK",
+   "WELL",
    "CAT"
   ]
  },
@@ -4850,6 +5042,7 @@
    "debtToEquityRatio on /stable/ratios",
    "priceToEarningsRatio field name",
    "analyst-estimates with period param (not used at full-universe scale but confirmed working)"
-  ]
+  ],
+  "sp500_correction": "Added a live, accurate S&P 500 Top 100 list (/stable/sp500-constituent, ranked by market cap) after user feedback that it was missing. Also fixed a data-quality bug: the prior large-cap screener call had no country filter and included 44 non-U.S. companies (TSM, BABA, HSBC, SAP, Toyota, Shell, etc.) as if they were large-cap U.S. constituents, plus 2 junk duplicate tickers for Southern Company (SOJE, SOMN). Universe went from 220 (with contamination) to 216 (clean)."
  }
 }
