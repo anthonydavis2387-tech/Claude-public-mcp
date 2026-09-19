@@ -1,21 +1,22 @@
 ---
 name: mamba-market-review
-description: Runs the user's personal daily "Mamba Mentality" market study routine (7pm Central futures check, midnight futures + stocks check, 3pm Central full study session covering Dow 30 / Nasdaq 100 / Russell Top 100 / sector watchlists) and produces one consolidated market briefing. Use this whenever the user asks to review the market, run their market review/briefing/scan, check futures, study stocks, mentions "Mamba" or their market routine, asks about Dow 30, Nasdaq 100, Russell Top 100, or their software/mega-cap/semiconductor watchlists, or wants a daily recap covering trend, relative strength, revenue growth, margins, earnings growth, free cash flow, debt, valuation, institutional ownership, or competitive moat ("more/less needed") across a stock universe. Also trigger on session-specific phrasing like "run my 7pm check", "midnight futures review", "3pm study session", or "what should I be watching today" in a trading/investing context.
+description: Runs the user's personal daily "Mamba Mentality" market study routine (8am MT weekday macro + Bitcoin update, 2pm MT weekday full study at market close, 5pm MT Sun-Thu futures-only check, midnight MT lightweight futures + ~100-stock check) and produces one consolidated market briefing. Use this whenever the user asks to review the market, run their market review/briefing/scan, check futures, study stocks, mentions "Mamba" or their market routine, asks about Dow 30, Nasdaq 100, S&P 500, Russell Top 100, or their software/mega-cap/semiconductor watchlists, or wants a daily recap covering trend, relative strength, revenue growth, margins, earnings growth, free cash flow, debt, valuation, institutional ownership, or competitive moat ("more/less needed") across a stock universe. Also trigger on session-specific phrasing like "run my 8am check", "futures check", "midnight review", "full study session", or "what should I be watching today" in a trading/investing context.
 ---
 
 # Mamba Market Review
 
-Consolidates a personal daily market-study routine — three review sessions a day across futures, the Dow 30, Nasdaq 100, a Russell Top 100 proxy, and three 20-name sector watchlists — into one briefing, so the user doesn't have to manually pull each name one at a time.
+Consolidates a personal daily market-study routine — four review sessions a day (all times Mountain) across futures, Bitcoin, the Dow 30, Nasdaq 100, S&P 500 Top 100, a large-cap proxy, and three 20-name sector watchlists — into one briefing, so the user doesn't have to manually pull each name one at a time.
 
 ## Step 1: Figure out which session this is
 
-The routine has three checkpoints. Infer the session from the user's phrasing or the current time (Central); ask only if genuinely ambiguous:
+The routine has four checkpoints, all Mountain Time. Infer the session from the user's phrasing or the current time; ask only if genuinely ambiguous:
 
-| Session | When | Universe |
-|---|---|---|
-| **Evening futures check** | ~7pm Central | Futures only (40 symbols) |
-| **Midnight check** | ~midnight Central | Futures (40) + a 100-stock scan (Dow 30 + Nasdaq 100 + Russell Top 100, deduped, capped/sampled to ~100 if the user wants it lighter) |
-| **Full study session** | ~3pm Central | Everything: all futures, Dow 30, Nasdaq 100, Russell Top 100, and the three 20-name sector baskets |
+| Session | When | Days | Universe |
+|---|---|---|---|
+| **Morning macro + Bitcoin update** | 8am MT | Weekdays (Mon-Fri) | Macro headlines, Bitcoin status/movement, and whatever futures FMP + WebSearch fallback cover — no stock scan |
+| **Futures-only check** | 5pm MT | Sun-Thu (skip Fri & Sat) | Futures only (40 symbols) |
+| **Midnight check** | midnight MT | Nights leading into Mon-Fri | Futures (40) + a ~100-stock scan (Dow 30 + Nasdaq 100 + S&P 500 Top 100, deduped, capped/sampled to ~100 — this is the lightweight session, don't run the full 200+ universe here) |
+| **Full study session** | 2pm MT (market close) | Weekdays (Mon-Fri) | Everything: all futures, Bitcoin, Dow 30, Nasdaq 100, S&P 500 Top 100, the large-cap proxy, and the three 20-name sector baskets |
 
 If the user just says "run my market review" with no time context, default to the full study session — it's a superset and never wrong to over-deliver.
 
@@ -47,7 +48,7 @@ Use the same logic in reverse for "names improving" — look for names moving fr
 
 ## Step 5: Load the previous snapshot for comparison
 
-Before writing the briefing, look in `reports/` for the most recent snapshot from the **same session type** (compare 3pm to the last 3pm, not to last night's midnight run — different universes aren't comparable). See `references/reports-and-dashboard.md` for the snapshot file layout and JSON schema.
+Before writing the briefing, look in `reports/` for the most recent snapshot from the **same session type** (compare the 2pm full study to the last 2pm full study, not to last night's midnight run — different universes aren't comparable). See `references/reports-and-dashboard.md` for the snapshot file layout and JSON schema.
 
 If one exists, compute:
 - Which tickers flipped a flag (especially green→red or red→green — a flag that got worse is more useful to know than one that's still red)
@@ -59,7 +60,7 @@ If there's no prior snapshot of this session type yet (first run), skip this sec
 
 ## Step 6: Assemble the briefing
 
-Use this structure. Skip the "Stock Universe Scan" section entirely for the 7pm evening futures-only check.
+Use this structure. Skip the "Stock Universe Scan" section entirely for the 5pm futures-only check and the 8am morning macro + Bitcoin update — neither scans stocks.
 
 ```
 # Daily Market Briefing — [date] — [session name]
@@ -67,10 +68,15 @@ Use this structure. Skip the "Stock Universe Scan" section entirely for the 7pm 
 ## Futures Tape
 [compact table: symbol | last | % chg | trend flag | note]
 
+## Bitcoin
+(8am and 2pm sessions only — see references/reports-and-dashboard.md's
+Bitcoin section spec: price, %chg, 52wk range, trend vs 50d/200d, 7/30/90-day
+moves, brief context.)
+
 ## Stock Universe Scan
-(only for midnight / 3pm sessions — organize by list: Dow 30, Nasdaq 100,
-Russell Top 100, Software/Cloud, Mega-Cap Leaders, Semiconductor/AI.
-Note cross-listed names once, don't repeat full rows.)
+(only for midnight / 2pm sessions — organize by list: Dow 30, Nasdaq 100,
+S&P 500 Top 100, large-cap proxy, Software/Cloud, Mega-Cap Leaders,
+Semiconductor/AI. Note cross-listed names once, don't repeat full rows.)
 
 ## Roll-Up
 - **Notable movers / breakouts:** ...
