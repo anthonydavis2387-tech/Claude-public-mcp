@@ -83,7 +83,7 @@
   }
  ],
  "universe_counts": {
-  "total_unique_tickers": 216,
+  "total_unique_tickers": 213,
   "dow30": 30,
   "nasdaq100_live": 102,
   "sp500_top100_live": 100,
@@ -94,8 +94,8 @@
   "red_flag_distribution": {
    "0": 42,
    "1": 38,
-   "2": 65,
-   "3": 45,
+   "2": 63,
+   "3": 44,
    "4": 19,
    "5": 7
   }
@@ -3274,55 +3274,6 @@
    }
   },
   {
-   "symbol": "EP-PC",
-   "name": "El Paso Energy Capital Trust I PFD CV TR SECS",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "green",
-    "margin_trend": "green",
-    "earnings_growth": "red",
-    "free_cash_flow": "green",
-    "debt": "neutral",
-    "valuation": "neutral",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 3,
-   "price": 49.87,
-   "chg_pct": -0.26,
-   "detail": {
-    "avg50": 50.49843,
-    "avg200": 50.3148,
-    "year_high": 51.71,
-    "year_low": 48.95,
-    "momentum_50d_pct": -1.38,
-    "benchmark_3m_pct": 2.92,
-    "benchmark_used": "SPY",
-    "revenue_growth_pct": 175.0,
-    "revenue_growth_prev_pct": -63.89,
-    "eps_growth_pct": -11.36,
-    "gross_margin_pct": 68.6,
-    "gross_margin_4q_ago_pct": -102.3,
-    "op_margin_pct": 30.1,
-    "op_margin_4q_ago_pct": 25.6,
-    "debt_to_equity": 1.02,
-    "pe_ratio": 32.4,
-    "ps_ratio": 25.1,
-    "fcf_last4q": [
-     978000000,
-     687000000,
-     872000000,
-     621000000
-    ],
-    "net_debt_to_ebitda": 14.5,
-    "ev_to_ebitda": 65.3
-   }
-  },
-  {
    "symbol": "EPD",
    "name": "Enterprise Products Partners L.P.",
    "lists": [
@@ -5944,55 +5895,6 @@
     ],
     "net_debt_to_ebitda": 14.26,
     "ev_to_ebitda": 143.1
-   }
-  },
-  {
-   "symbol": "MER-PK",
-   "name": "Bank of America Corp 6.45 % Notes 2018-15.12.66 Income Capital Obligations",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "neutral",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "neutral",
-    "debt": "neutral",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 24.13,
-   "chg_pct": 0.75157,
-   "detail": {
-    "avg50": 27.05879,
-    "avg200": 26.775,
-    "year_high": 27.5,
-    "year_low": 21.01,
-    "momentum_50d_pct": -11.19,
-    "benchmark_3m_pct": 2.92,
-    "benchmark_used": "SPY",
-    "revenue_growth_pct": 1.91,
-    "revenue_growth_prev_pct": 0,
-    "eps_growth_pct": 7.63,
-    "gross_margin_pct": 21.6,
-    "gross_margin_4q_ago_pct": 18.1,
-    "op_margin_pct": 13.8,
-    "op_margin_4q_ago_pct": 9.0,
-    "debt_to_equity": 1.33,
-    "pe_ratio": 5.0,
-    "ps_ratio": 12.5,
-    "fcf_last4q": [
-     70813000000,
-     41770000000,
-     46874000000,
-     -9132000000
-    ],
-    "net_debt_to_ebitda": 139.82,
-    "ev_to_ebitda": 209.4
    }
   },
   {
@@ -9164,55 +9066,6 @@
    }
   },
   {
-   "symbol": "TBB",
-   "name": "AT&T Inc. 5.35% GLB NTS 66",
-   "lists": [
-    "russell_top100_proxy"
-   ],
-   "flags": {
-    "trend": "red",
-    "relative_strength": "red",
-    "revenue_growth": "neutral",
-    "margin_trend": "green",
-    "earnings_growth": "green",
-    "free_cash_flow": "green",
-    "debt": "neutral",
-    "valuation": "green",
-    "institutional_ownership": "na",
-    "moat": "na"
-   },
-   "red_flag_count": 2,
-   "price": 19.44,
-   "chg_pct": 0.10299,
-   "detail": {
-    "avg50": 19.77708,
-    "avg200": 21.29942,
-    "year_high": 23.8,
-    "year_low": 19.26,
-    "momentum_50d_pct": -1.63,
-    "benchmark_3m_pct": 2.92,
-    "benchmark_used": "SPY",
-    "revenue_growth_pct": 0.17,
-    "revenue_growth_prev_pct": -5.86,
-    "eps_growth_pct": 22.22,
-    "gross_margin_pct": 61.8,
-    "gross_margin_4q_ago_pct": 61.5,
-    "op_margin_pct": 22.3,
-    "op_margin_4q_ago_pct": 19.9,
-    "debt_to_equity": 1.47,
-    "pe_ratio": 7.8,
-    "ps_ratio": 4.6,
-    "fcf_last4q": [
-     5170000000,
-     2680000000,
-     4539000000,
-     5265000000
-    ],
-    "net_debt_to_ebitda": 11.47,
-    "ev_to_ebitda": 22.8
-   }
-  },
-  {
    "symbol": "TEAM",
    "name": "Atlassian Corporation",
    "lists": [
@@ -10872,6 +10725,7 @@
    "priceToEarningsRatio field name",
    "analyst-estimates with period param (not used at full-universe scale but confirmed working)"
   ],
-  "sp500_correction": "Added a live, accurate S&P 500 Top 100 list (/stable/sp500-constituent, ranked by market cap) after user feedback that it was missing. Also fixed a data-quality bug: the prior large-cap screener call had no country filter and included 44 non-U.S. companies (TSM, BABA, HSBC, SAP, Toyota, Shell, etc.) as if they were large-cap U.S. constituents, plus 2 junk duplicate tickers for Southern Company (SOJE, SOMN). Universe went from 220 (with contamination) to 216 (clean)."
+  "sp500_correction": "Added a live, accurate S&P 500 Top 100 list (/stable/sp500-constituent, ranked by market cap) after user feedback that it was missing. Also fixed a data-quality bug: the prior large-cap screener call had no country filter and included 44 non-U.S. companies (TSM, BABA, HSBC, SAP, Toyota, Shell, etc.) as if they were large-cap U.S. constituents, plus 2 junk duplicate tickers for Southern Company (SOJE, SOMN). Universe went from 220 (with contamination) to 216 (clean).",
+  "non_equity_securities_fix": "A user question about the '44 non-U.S. companies' framing prompted a full re-check by country field. Of the ~45 originally flagged names: 32 were genuinely non-U.S. (correctly excluded); 2 (TSM, SAP) remain on the page intentionally via the hand-picked Semiconductor/AI and Software/Cloud watchlists, unrelated to the screener bug; 10 were legitimate U.S. large caps mislabeled as foreign in the original diff (correctly still listed: BRK-A, CVS, MO, NET, PH, PSX, SCCO, SNOW, SPGI, VLO); and 3 (EP-PC, MER-PK, TBB) were preferred shares/corporate notes, not common stock, and have now been removed. The screener query now also excludes any result whose company name contains a coupon rate ('%') or terms like notes/trust/preferred/depositary shares, in addition to the existing isEtf/isFund/country=US filters."
  }
 }
