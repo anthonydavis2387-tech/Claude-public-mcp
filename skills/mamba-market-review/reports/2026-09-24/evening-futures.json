@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-24",
+  "session": "evening-futures",
+  "generated_at": "2026-09-24T23:20:00Z",
+  "futures": [
+    {"symbol": "ES", "name": "E-Mini S&P 500", "last": 7756, "chg_pct": -0.14, "trend_flag": "green", "source": "fmp", "note": "above 50d (7659.52) and 200d (7262.67) avg despite today's dip"},
+    {"symbol": "GC", "name": "Gold Futures", "last": 4308, "chg_pct": 0.23, "trend_flag": "red", "source": "fmp", "note": "below both 50d (4352) and 200d (4584.61) avg — well off yearHigh 5626.8, corrective trend despite today's small bounce"},
+    {"symbol": "SI", "name": "Silver Futures", "last": 64.23, "chg_pct": 0.36, "trend_flag": "amber", "source": "fmp", "note": "above 50d (63.52), below 200d (72.92) — mixed/transitioning"},
+    {"symbol": "BTC", "name": "Bitcoin USD", "last": 84324.66, "chg_pct": -0.05, "trend_flag": "green", "source": "fmp", "note": "above 50d (74531.88) and 200d (70758.85) avg, uptrend intact"},
+    {"symbol": "ETH", "name": "Ethereum USD", "last": 2687.02, "chg_pct": 0.11, "trend_flag": "green", "source": "fmp", "note": "above 50d (2325.52) and 200d (2087.10) avg, uptrend intact"},
+    {"symbol": "NQ", "name": "Nasdaq 100 / Nasdaq Composite proxy", "last": null, "chg_pct": -0.78, "trend_flag": "red", "source": "websearch", "note": "Nasdaq Composite cash-index % used as proxy — futures point level unconfirmed/plan-gated"},
+    {"symbol": "YM", "name": "Dow Futures / Dow cash proxy", "last": null, "chg_pct": -0.32, "trend_flag": "red", "source": "websearch", "note": "Dow cash-index % used as proxy — futures point level unconfirmed/plan-gated"},
+    {"symbol": "RTY", "name": "Russell 2000 Futures / cash proxy", "last": null, "chg_pct": -1.77, "trend_flag": "red", "source": "websearch", "note": "worst-performing major index today; small-caps hit hardest by the yield spike — cash-index % used as proxy, futures point level unconfirmed/plan-gated"},
+    {"symbol": "CL", "name": "WTI Crude Oil", "last": 94.76, "chg_pct": 2.82, "trend_flag": "green", "source": "websearch", "note": "up on escalating US-Iran / Hormuz tension"},
+    {"symbol": "ZN", "name": "10-Year Treasury Note (yield proxy)", "last": null, "chg_pct": null, "trend_flag": "red", "source": "websearch", "note": "10yr yield ~5.11%, highest since July 2007 — bond prices under pressure; note is a yield read, not a futures price/chg"},
+    {"symbol": "DX", "name": "US Dollar Index", "last": 101.08, "chg_pct": -0.02, "trend_flag": "green", "source": "websearch", "note": "flat today but holding near its highest level in ~2 months"}
+  ],
+  "rollup": {
+    "movers": [
+      "10yr Treasury yield spiked to ~5.11% (highest since July 2007) on hot economic data / inflation concerns",
+      "WTI crude +2.82% to $94.76 on US-Iran/Hormuz tension",
+      "Russell 2000 -1.77%, worst major index today — small-caps most rate-sensitive",
+      "Gold sitting below both its 50d and 200d averages despite a small up day — corrective, not trending"
+    ],
+    "multi_red_flag": [],
+    "improving": [],
+    "watchlist": ["GC — confirm whether the break below 200d average is the start of a deeper correction", "ZN/10yr — watch for follow-through above 5.11%", "RTY — small-cap underperformance vs ES/NQ"]
+  },
+  "data_notes": {
+    "fmp_direct": ["ES (ESUSD)", "GC (GCUSD)", "SI (SIUSD)", "BTC (BTCUSD)", "ETH (ETHUSD)"],
+    "websearch_fallback": ["NQ", "YM", "RTY", "CL", "ZN (10yr yield proxy)", "DX"],
+    "not_covered_this_session": ["VX", "ZB", "ZF", "ZT", "SR3", "BZ", "NG", "RB", "HO", "HG", "PL", "PA", "ZC", "ZS", "ZW", "ZM", "ZL", "KC", "SB", "CC", "CT", "LE", "6E", "6J", "6B", "6A", "6C", "6S", "6N"],
+    "note": "Per skill design for the evening-futures (5pm) session, only the FMP-direct 5 plus the highest-signal WebSearch fallbacks (equity index futures, crude, 10yr, dollar index) were pulled — not all ~30 plan-gated symbols. NQ/YM/RTY figures are cash-index % changes used as a proxy since futures-specific point levels weren't reliably confirmable via search this run."
+  }
+}
