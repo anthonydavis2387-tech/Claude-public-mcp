@@ -1,4 +1,114 @@
 {
+  "AAPL": {
+    "inst_own_pct": 73.6,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/AAPL",
+    "inst_own_summary": "73.6% institutional ownership per GuruFocus (Jun 2026); other trackers (Yahoo/SimplyWallSt) show low-60s% for late 2025, with methodology differences explaining the spread rather than a real swing.",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1492181-apple-remains-the-consumer-electronics-standard-bearer-with-a-wide-economic-moat",
+    "moat_summary": "Morningstar rates Apple Wide moat/Stable trend, driven by switching costs and network effects across 2.2B+ active devices; the one flagged risk is AI (Siri/Apple Intelligence) falling behind Gemini/GPT by 2027.",
+    "moat_verdict": "durable"
+  },
+  "ABBV": {
+    "inst_own_pct": 70.23,
+    "inst_own_source": "https://fintel.io/so/us/abbv",
+    "inst_own_summary": "70.23% institutional as of Oct 2025, down from the 73-74% range reported earlier in 2025.",
+    "inst_own_trend": "declining slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://artificall.com/analysis/companies/abbvie-inc/",
+    "moat_summary": "Humira revenue fell 40% YoY (Q1 2026) on biosimilar competition, but Skyrizi and Rinvoq have more than offset ~$16B of Humira erosion, driving record 2025 sales of $61.1B (+8.6%).",
+    "moat_verdict": "stable"
+  },
+  "ABT": {
+    "inst_own_pct": 80,
+    "inst_own_source": "https://finance.yahoo.com/news/80-institutional-ownership-abbott-laboratories-120013119.html",
+    "inst_own_summary": "~80% institutional per multiple Simply Wall St-sourced Yahoo Finance articles (mid-2025); one outlier source cites 58.7%, likely a different ownership-base methodology.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1270609-abbotts-narrow-economic-moat-rests-on-a-solid-product-portfolio",
+    "moat_summary": "Morningstar assigns Abbott a Narrow moat (not Wide) resting on its product portfolio breadth; the company still lags peers on profitability margins despite operating in attractive device/diagnostics niches.",
+    "moat_verdict": "stable"
+  },
+  "ADI": {
+    "inst_own_pct": 85.9,
+    "inst_own_source": "https://fintel.io/so/us/adi",
+    "inst_own_summary": "85.9% institutional as of Dec 2025, down notably from 93.1% in Sept 2025; BlackRock is the top holder at ~8.68%.",
+    "inst_own_trend": "declining",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://koalagains.com/stocks/NASDAQ/ADI/business-and-moat",
+    "moat_summary": "ADI holds >40% share in high-performance data converters/amplifiers and is the #2 analog chipmaker behind TI, using a focused premium-pricing niche strategy rather than competing across the full spectrum.",
+    "moat_verdict": "durable"
+  },
+  "AMAT": {
+    "inst_own_pct": 79.0,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/amat/ownership",
+    "inst_own_summary": "79.0% institutional as of March 2026, down from 82.1% the prior quarter.",
+    "inst_own_trend": "declining",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://247wallst.com/investing/2026/08/26/applied-materials-china-problem-is-getting-worse/",
+    "moat_summary": "Wide moat from equipment switching costs remains intact at leading-edge nodes (2nm/3nm, HBM, hybrid bonding), but China export controls are cutting China revenue share from ~40% to the mid-20s% and six domestic Chinese equipment makers grew combined sales 10x from 2020-2025.",
+    "moat_verdict": "stable"
+  },
+  "AMD": {
+    "inst_own_pct": 71.34,
+    "inst_own_source": "https://fintel.io/so/us/amd",
+    "inst_own_summary": "71.34% institutional as of Oct 24, 2025 per 13F data; BlackRock is the largest holder (~$29.6B position as of Mar 2026 13F).",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026",
+    "moat_summary": "AMD's AI GPU share has stayed stuck at roughly 5-7% vs. Nvidia's ~80% and essentially unchanged over the past 12 months; Nvidia's CUDA software lock-in still holds despite AMD's ROCm and MI350X hardware parity claims.",
+    "moat_verdict": "stable"
+  },
+  "AMGN": {
+    "inst_own_pct": 81,
+    "inst_own_source": "https://finance.yahoo.com/news/81-ownership-amgen-inc-nasdaq-110017926.html",
+    "inst_own_summary": "81% institutional per Yahoo/Simply Wall St data (Nov 2025); other trackers show 71.7%-79% depending on methodology.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1492869-amgens-cardiometabolic-pipeline-is-likely-to-build-on-repatha-and-further-support-its-wide-moat",
+    "moat_summary": "Wide moat maintained as Repatha and a strengthening pipeline offset accelerating biosimilar erosion on Prolia/Xgeva, which intensified through 2026; FY2026 revenue guidance was raised to $38.8B.",
+    "moat_verdict": "stable"
+  },
+  "AMZN": {
+    "inst_own_pct": 72.2,
+    "inst_own_source": "https://fintel.io/so/us/amzn",
+    "inst_own_summary": "Institutional ownership commonly cited in the 65-75% range for late 2025 (72.2% per one tracker); figures vary by source/date.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/stocks/ahead-earnings-is-amazon-stock-buy-sell-or-fairly-valued",
+    "moat_summary": "Morningstar rates AWS/retail/ads all Wide moat; AWS holds ~29-30% global cloud share, still #1 but growing slower than Azure (20% share) in percentage terms.",
+    "moat_verdict": "stable"
+  },
+  "ANET": {
+    "inst_own_pct": 82.47,
+    "inst_own_source": "https://simplywall.st/stocks/us/tech/nyse-anet/arista-networks/news/institutional-investors-are-arista-networks-incs-nyseanet-bi",
+    "inst_own_summary": "82.47% institutional as of Sept 2025, up from 68.79%-70% reported earlier in 2025.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.tikr.com/blog/arista-vs-cisco-which-networking-stock-owns-the-ai-data-center",
+    "moat_summary": "Arista's investor presentation shows 'strong, sustained share gains' vs. Cisco in high-speed (100G-800G) data center switching through 2025, with EOS software lock-in as the key differentiator; NVIDIA entering Ethernet via InfiniBand is the main named future risk.",
+    "moat_verdict": "durable"
+  },
+  "APH": {
+    "inst_own_pct": 94.84,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/aph/ownership",
+    "inst_own_summary": "94.84% institutional, 0.52% insiders, 4.64% retail; Vanguard is the largest holder at 11.51%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.gurufocus.com/term/moat-score/APH",
+    "moat_summary": "GuruFocus Moat Score of 7/10 (entry-level wide moat); components requiring military/AEC-Q automotive certification get 'spec'd in' for a platform's entire 5-15 year production life, and revenue grew 51.7% YoY, reflecting continued share gains via its acquisition-driven strategy.",
+    "moat_verdict": "durable"
+  },
   "ARM": {
     "inst_own_pct": 7.53,
     "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/arm/ownership",
@@ -8,6 +118,39 @@
     "last_quick_check": "2026-09-28",
     "moat_source": "https://koalagains.com/stocks/NASDAQ/ARM/business-and-moat",
     "moat_summary": "Arm's ISA licensing model underpins chips in over 99% of smartphones with 22M+ developers building on the architecture, creating a two-sided network effect and high switching costs that make its IP moat hard to dislodge.",
+    "moat_verdict": "durable"
+  },
+  "ASML": {
+    "inst_own_pct": 14.8,
+    "inst_own_source": "https://fintel.io/so/us/asml",
+    "inst_own_summary": "14.8% institutional (US 13F filers) as of Dec 2025, down from 15.4% in Sept 2025 -- reflects only US-registered institutional filers against ASML's NASDAQ-listed shares, not global ownership, since ASML's primary listing is Euronext Amsterdam; not a controlling-insider situation.",
+    "inst_own_trend": "declining slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1160464-asmls-lithography-is-unmatched-in-the-chip-equipment-market-and-worthy-of-a-wide-moat",
+    "moat_summary": "ASML is the sole global supplier of EUV lithography systems; Morningstar rates it Wide moat, noting rivals would need decades of R&D and tens of billions in investment to replicate the technology, and TSMC/Intel/Samsung fabs are already redesigned around it.",
+    "moat_verdict": "durable"
+  },
+  "AVGO": {
+    "inst_own_pct": 77.15,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/AVGO",
+    "inst_own_summary": "77.15% institutional as of May 24, 2026 per GuruFocus, up from the 71.9-73.3% range reported for Sept-Dec 2025.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.fool.com/investing/2026/05/05/broadcom-is-dominating-the-custom-ai-chip-market/",
+    "moat_summary": "Broadcom holds ~70% share of the custom AI ASIC market with deals across Alphabet, Meta, Anthropic and OpenAI, but MediaTek is targeting 15-20% of an estimated $80B custom AI-chip market by 2027, and hyperscaler in-house chip development is the named longer-term risk.",
+    "moat_verdict": "stable"
+  },
+  "AXP": {
+    "inst_own_pct": 66,
+    "inst_own_source": "https://finance.yahoo.com/news/66-institutional-ownership-american-express-110019513.html",
+    "inst_own_summary": "Sources disagreed unusually widely (41.5% to 84.3%) depending on methodology; 66% (Feb 2025, Simply Wall St/Yahoo) is used as the most consistent figure relative to comparable tickers, but treat with caution.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.tipranks.com/news/american-express-axp-continues-to-build-a-wider-moat-than-the-market-realizes",
+    "moat_summary": "Amex's closed-loop network lets it capture the full economics of a swipe (issuing + acquiring + network) unlike open-loop Visa/Mastercard-based issuers, and card fee revenue grew 18% YoY in Q1 2026, decoupling profitability from cyclical spend.",
     "moat_verdict": "durable"
   },
   "BA": {
@@ -21,6 +164,171 @@
     "moat_summary": "Boeing's 737 MAX now holds only ~40% of the global narrowbody market vs. the Airbus A320neo family's ~60%, and the A321neo gives Airbus a range/efficiency edge; the Boeing-Airbus duopoly still provides residual pricing power but Boeing keeps ceding narrowbody share.",
     "moat_verdict": "eroding"
   },
+  "BAC": {
+    "inst_own_pct": 72.1,
+    "inst_own_source": "https://fintel.io/so/us/bac",
+    "inst_own_summary": "72.1% institutional as of Dec 2025, down from 74.4% in Sept 2025; Vanguard is the top holder at 8.54%.",
+    "inst_own_trend": "declining slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.gurufocus.com/term/moat-score/BAC",
+    "moat_summary": "Wide moat from #1 US retail deposit share (~$298B lead over next competitor) and lowest industry cost of deposits, but Morningstar and independent analysts flag fintech (SoFi, etc.) encroachment on deposits/payments as an active erosion risk -- moat is 'durable but not impermeable.'",
+    "moat_verdict": "stable"
+  },
+  "BKNG": {
+    "inst_own_pct": 91.2,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/bkng/ownership",
+    "inst_own_summary": "91.20% institutional / 0.18% insider / 8.62% retail; one Dec 2025 source cited a higher ~96% figure.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1269661-booking-holdings-stout-network-and-ai-position-drive-our-moat-rating-to-wide-from-narrow",
+    "moat_summary": "Morningstar upgraded Booking to Wide moat from Narrow in 2025 on network strength and AI positioning, but shares fell ~10% in 2026 on fears that Meta's 'Muse' AI shopping agent and Google's own AI search could disintermediate OTA platforms -- a live, named threat.",
+    "moat_verdict": "stable"
+  },
+  "BLK": {
+    "inst_own_pct": 84.54,
+    "inst_own_source": "https://fintel.io/so/us/blk",
+    "inst_own_summary": "84.54% institutional as of Q4 2025 (3,530 institutions holding 129.03M shares), up from 79.31% in Sept 2025; one outlier source cited 44.53%, likely a different denominator.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://icfs.com/specialists-desk/big-three-blackrock-vanguard-state-street",
+    "moat_summary": "Aladdin's risk-analytics platform creates high switching costs for institutional clients, and iShares' 1,600+ ETF lineup plus BlackRock/Vanguard/State Street's ~74% combined US equity ETF market share reinforces a scale-driven network effect.",
+    "moat_verdict": "durable"
+  },
+  "BMY": {
+    "inst_own_pct": 81,
+    "inst_own_source": "https://finance.yahoo.com/news/81-ownership-bristol-myers-squibb-110023700.html",
+    "inst_own_summary": "81% institutional per a May 2025 source; other 2025 figures ranged 77-78%, and BMY's own 10-K/proxy puts it above 70%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1488680-bristol-is-countering-a-significant-patent-cliff-with-a-promising-diversified-pipeline",
+    "moat_summary": "Facing a ~$30B patent cliff through 2026, but the Growth Portfolio (Mirati/RayzeBio/Karuna deals) now generates 55% of revenue and grew 12% YoY in Q1 2026, overtaking the declining Legacy Portfolio (-6%) -- a successful but still in-progress transition.",
+    "moat_verdict": "stable"
+  },
+  "BRK-B": {
+    "inst_own_pct": 65.1,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/brk.b/ownership",
+    "inst_own_summary": "65.10% institutional / 5.55% insider / 29.35% retail per WallStreetZen; other sources cite figures as low as 43%, likely reflecting Class A/B share differences and Buffett-family-linked holdings, which act as a partial controlling-insider stake.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/stocks/berkshire-hathaway-moat-rating-lowered-narrow-firm-faces-diminishing-returns-over-time",
+    "moat_summary": "Morningstar cut Berkshire's rating to Narrow moat/Low uncertainty in 2026, explicitly citing that the capital-allocation edge which historically justified a Wide rating 'has gotten thinner over the years' and is expected to weaken further under new CEO Greg Abel.",
+    "moat_verdict": "eroding"
+  },
+  "BX": {
+    "inst_own_pct": 71.65,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/bx/ownership",
+    "inst_own_summary": "71.65% institutional / 1.05% insider / 27.30% retail; Vanguard is the top holder at 9.18%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://finance.yahoo.com/markets/stocks/articles/bx-vs-blk-asset-manager-144300729.html",
+    "moat_summary": "Blackstone's $1.3T AUM and proprietary deal-sourcing data (270+ portfolio companies, 13,000 real estate assets, 5,000 lending relationships) support a scale moat, with $213.3B in dry powder as of Q1 2026 giving it an edge in sourcing quality deals.",
+    "moat_verdict": "durable"
+  },
+  "C": {
+    "inst_own_pct": 82,
+    "inst_own_source": "https://finance.yahoo.com/news/82-institutional-ownership-citigroup-inc-110027845.html",
+    "inst_own_summary": "82% institutional as of Nov 2025, up from 74% in Feb 2025.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/stocks/citigroup-earnings-could-this-time-really-be-different-targets-look-achievable",
+    "moat_summary": "Morningstar explicitly rates Citigroup 'no-moat,' noting wealth/card markets remain highly competitive and Citi isn't building retail scale to rival peers, despite strength in its institutional cross-border payments network (94-country local clearing licenses).",
+    "moat_verdict": "eroding"
+  },
+  "CAT": {
+    "inst_own_pct": 71.85,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/cat/ownership",
+    "inst_own_summary": "71.85% institutional / 1.13% insider / 27.02% retail per WallStreetZen; a second source cited 69.01%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/stocks/caterpillar-innovates-competition-escalates",
+    "moat_summary": "Morningstar rates Caterpillar Wide moat on ~20% market share across key products, 20,000+ patents, and dealer-network switching costs, but flags directly in its own headline that 'competition escalates' as a live dynamic to watch.",
+    "moat_verdict": "stable"
+  },
+  "CB": {
+    "inst_own_pct": 83.8,
+    "inst_own_source": "https://fintel.io/so/us/cb",
+    "inst_own_summary": "About 83.8% institutional as of mid-Sept 2026, down from ~90.8% reported in March 2026 (sources vary in methodology/date).",
+    "inst_own_trend": "declining slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1316525-chubb-is-a-diversified-insurance-company-with-a-moat",
+    "moat_summary": "Morningstar calls Chubb a 'moaty' global insurer post ACE-Chubb merger \u2014 one of few insurers with the global footprint to service multinational corporate clients, creating a real barrier to entry for smaller rivals.",
+    "moat_verdict": "stable"
+  },
+  "COP": {
+    "inst_own_pct": 83.9,
+    "inst_own_source": "https://hedgefollow.com/stocks/COP",
+    "inst_own_summary": "83.9% institutional; trailing-12-month 13F activity shows 1,801 institutional buyers vs 1,264 sellers and $20.1B inflows vs $8.9B outflows, a clear net-buying trend.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.gurufocus.com/term/moat-score/COP",
+    "moat_summary": "GuruFocus moat score of 7/10 (entry-level wide moat) driven by ~15B boe of Lower-48/Permian resource inventory with sub-$40/bbl WTI breakeven cost \u2014 a structural low-cost asset advantage over less-efficient producers.",
+    "moat_verdict": "durable"
+  },
+  "COST": {
+    "inst_own_pct": 69.0,
+    "inst_own_source": "https://finance.yahoo.com/news/69-institutional-ownership-costco-wholesale-140016561.html",
+    "inst_own_summary": "69% institutional (Vanguard 9.4%, BlackRock 7.6%, State Street 4.1% are largest holders); no clear recent buy/sell trend surfaced.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1483751-wide-moat-costcos-membership-led-model-and-global-playbook-cement-its-leadership-in-value-retail",
+    "moat_summary": "Morningstar wide-moat rating: Costco holds over 60% share of the US warehouse-club market and ~90% membership renewal rates, with membership fees (not merchandise margin) funding the bulk of operating profit \u2014 a structurally hard-to-replicate model.",
+    "moat_verdict": "durable"
+  },
+  "CRM": {
+    "inst_own_pct": 80.4,
+    "inst_own_source": "https://fintel.io/so/us/crm",
+    "inst_own_summary": "80.4% institutional per recent aggregated data; no explicit recent 13F buy/sell trend found (stock itself is down ~42.5% off highs on AI-related growth concerns, which is a price move, not a confirmed ownership-trend datapoint).",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.trefis.com/stock/crm/articles/589495/has-salesforce-lost-its-moat/2026-02-04",
+    "moat_summary": "Seat-based pricing model is directly threatened by AI agents (Agentforce and rivals) that let customers cut human-license headcount; revenue growth of 8.4% is lagging peers as value shifts up the AI stack toward foundation-model and hardware providers (OpenAI, Anthropic, Nvidia).",
+    "moat_verdict": "eroding"
+  },
+  "CRWD": {
+    "inst_own_pct": 70.9,
+    "inst_own_source": "https://fintel.io/so/us/crwd",
+    "inst_own_summary": "70.9% institutional as of May 2026 (other trackers show 60-74% depending on date/methodology); no clear directional trend confirmed.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://simplywall.st/stocks/us/software/nasdaq-crwd/crowdstrike-holdings/news/is-crowdstrike-crwd-turning-ai-powered-threats-into-its-next",
+    "moat_summary": "Leads endpoint protection with 22.7% market share and a widening data moat (5T+ security events/day across 29,000+ customers via Falcon Flex), but faces real pricing pressure from Microsoft bundling Defender into E3/E5 licenses and SentinelOne crossing $1B ARR.",
+    "moat_verdict": "stable"
+  },
+  "CSCO": {
+    "inst_own_pct": 76.6,
+    "inst_own_source": "https://finance.yahoo.com/news/75-ownership-cisco-systems-inc-120020226.html",
+    "inst_own_summary": "76.6% institutional as of May 2026 (one other source cites ~83%); no clear recent trend confirmed.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1430615-wide-moat-cisco-generates-tremendous-profit-and-cash-flow-and-now-ai-growth",
+    "moat_summary": "Morningstar rates Cisco wide-moat on dominant switching/routing/wireless-access share plus high switching costs; fiscal 2026 AI infrastructure revenue guidance was raised to $4B (from $3B) as networking becomes a bottleneck/enabler for AI buildouts.",
+    "moat_verdict": "durable"
+  },
+  "CVX": {
+    "inst_own_pct": 67.0,
+    "inst_own_source": "https://finance.yahoo.com/news/67-ownership-chevron-corporation-nyse-130016249.html",
+    "inst_own_summary": "~67% institutional per Yahoo/early-2026 data; other trackers show a wide 54-74% range depending on methodology, so treat this as an approximate midpoint rather than a precise figure.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://artificall.com/analysis/companies/chevron-corporation/",
+    "moat_summary": "Analysis flags ROIC running below WACC and a sharply declining profitability trend from 2021-2025 despite scale advantages; management is targeting $3-4B of structural cost savings by end-2026 specifically to try to offset the erosion.",
+    "moat_verdict": "eroding"
+  },
   "DE": {
     "inst_own_pct": 72.0,
     "inst_own_source": "https://finance.yahoo.com/news/72-institutional-ownership-deere-company-140022954.html",
@@ -31,6 +339,39 @@
     "moat_source": "https://pitchgrade.com/research/deere-ai-margin-pressure",
     "moat_summary": "Deere's precision-ag software stack (1M+ connected machines, 500M engaged acres) creates switching costs and an estimated 3-5 year technology gap over CNH Industrial and AGCO in autonomy/crop analytics, reinforced by a 2,200+ dealer network.",
     "moat_verdict": "durable"
+  },
+  "DELL": {
+    "inst_own_pct": 38.2,
+    "inst_own_source": "https://www.gurufocus.com/stock/DELL/ownership",
+    "inst_own_summary": "38.2% institutional \u2014 unusually low because founder/CEO Michael Dell personally and via trust controls roughly 46-52% of shares (figures vary by source/date after recent insider sales), leaving less of the float for institutions.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://infotechlead.com/networking/dell-technologies-targets-nearly-half-of-ai-server-market-as-enterprise-ai-infrastructure-demand-accelerates-96001",
+    "moat_summary": "AI-centric server revenue grew 422% YoY in Q1 2026 and Dell is approaching roughly half of the OEM AI server/systems market with #1 share in AI-centric storage, though HPE and Supermicro are adding competing full-rack solutions.",
+    "moat_verdict": "durable"
+  },
+  "DHR": {
+    "inst_own_pct": 82.4,
+    "inst_own_source": "https://www.gurufocus.com/stock/DHR/ownership",
+    "inst_own_summary": "82.4% institutional per GuruFocus (other sources show ~79%); no clear recent buy/sell trend confirmed.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://inpractise.com/articles/danaher-cytiva-and-bioprocessing-moats",
+    "moat_summary": "Bioprocessing orders returned to mid-teens growth in Q2 2026 ('early innings' of a multi-year capex cycle per management); moat rests on workflow lock-in in diagnostics/bioprocessing where validation is slow and switching is costly.",
+    "moat_verdict": "stable"
+  },
+  "DIS": {
+    "inst_own_pct": 76.8,
+    "inst_own_source": "https://businessquant.com/stocks/dis/institutional-ownership",
+    "inst_own_summary": "76.8% institutional in June 2026, up from 74.1% in March 2026.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://finance.yahoo.com/markets/stocks/articles/disney-dis-faces-fresh-calls-031317710.html",
+    "moat_summary": "ESPN/linear-TV moat is weakening as Amazon and Apple bid aggressively for live sports rights (NBA, MLS) and regional sports networks collapse (FanDuel Sports Network wound down May 2026); content IP (Marvel/Star Wars/Pixar) and a newly profitable streaming segment (10.6% operating margin) are the offsetting strength.",
+    "moat_verdict": "eroding"
   },
   "ETN": {
     "inst_own_pct": 83.98,
@@ -43,6 +384,39 @@
     "moat_summary": "Eaton sits at the physical bottleneck of AI data-center power delivery (grid-to-chip voltage conversion); Electrical Americas orders were up 60% YoY with data-center orders up 240%, a hard-to-replicate infrastructure position.",
     "moat_verdict": "durable"
   },
+  "FTNT": {
+    "inst_own_pct": 65.2,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/ftnt/ownership",
+    "inst_own_summary": "65.2% institutional as of late July 2026, down from ~83.7% cited in a March 2026 report \u2014 sources disagree substantially on methodology, but the direction is consistently down across the year.",
+    "inst_own_trend": "declining",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://seekingalpha.com/article/4888946-fortinets-competitive-moat-is-being-tested",
+    "moat_summary": "FortiGate holds over 50% of the global network firewall market on a proprietary-silicon/hardware moat (1,280+ patents), but the industry's shift to cloud-native SASE/endpoint architectures is a named structural threat from Palo Alto Networks and CrowdStrike.",
+    "moat_verdict": "stable"
+  },
+  "GE": {
+    "inst_own_pct": 74.8,
+    "inst_own_source": "https://bullfincher.io/companies/general-electric-company/ownership",
+    "inst_own_summary": "74.8% institutional per 2026 data (an earlier figure cited ~80%); no clear recent trend confirmed.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://koalagains.com/stocks/NYSE/GE/business-and-moat",
+    "moat_summary": "GE holds roughly 70% of the narrow-body jet engine market in a structural duopoly with Pratt & Whitney/Rolls-Royce; its 40,000+ engine installed base locks airlines into multi-decade, high-margin aftermarket service contracts.",
+    "moat_verdict": "durable"
+  },
+  "GEV": {
+    "inst_own_pct": 76.0,
+    "inst_own_source": "https://www.quiverquant.com/stock/GEV/institutions/",
+    "inst_own_summary": "~76% of shares outstanding held by 13F institutional filers as of Q1 2026 (3,062 institutional managers reported positions); Vanguard's stake was trimmed below the 5% disclosure threshold per a March 2026 13G/A amendment, a modest reduction rather than a broad trend.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://armrinvesting.substack.com/p/equity-research-ge-vernova-gev",
+    "moat_summary": "GE Vernova holds a global 25-30% share in heavy-duty gas turbines off a ~7,000-unit installed base; once a utility commits to a GEV HA-class turbine it is effectively locked into a 20-30 year parts/service relationship.",
+    "moat_verdict": "durable"
+  },
   "GILD": {
     "inst_own_pct": 86.0,
     "inst_own_source": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-gild/gilead-sciences/news/institutional-investors-control-86-of-gilead-sciences-inc-na/amp",
@@ -52,6 +426,72 @@
     "last_quick_check": "2026-09-28",
     "moat_source": "https://www.morningstar.com/company-reports/1237748-gileads-long-term-dominance-of-the-hiv-treatment-and-prevention-markets-supports-a-wide-moat",
     "moat_summary": "Biktarvy holds >52% share of the HIV treatment market and Descovy >45% of U.S. PrEP share; Biktarvy's U.S. patent exclusivity runs to 2036 and the new twice-yearly injectable lenacapavir (Yeztugo) further reinforces Gilead's HIV franchise lead.",
+    "moat_verdict": "durable"
+  },
+  "GLW": {
+    "inst_own_pct": 70.9,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/glw/ownership",
+    "inst_own_summary": "70.9% institutional as of July 21, 2026 per WallStreetZen (other trackers show 58-73%); Samsung Display is the single largest holder at 9.3%. No clear recent trend confirmed.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.cnbc.com/2026/01/27/apple-supplier-corning-wins-6-billion-from-meta-for-ai-optical-fiber.html",
+    "moat_summary": "Rated a narrow (not wide) moat by analysts, but strengthening: Corning has signed multi-year, prepaid AI-fiber supply agreements with Meta (up to $6B), Amazon and Nvidia, evidence customers are paying up for capacity they see as hard to replace.",
+    "moat_verdict": "stable"
+  },
+  "GOOG": {
+    "inst_own_pct": 64.5,
+    "inst_own_source": "https://www.rankred.com/who-owns-google/",
+    "inst_own_summary": "64.5% institutional per 2026 aggregated data (~8,008 institutional 13F/13D/G filers); figures are essentially identical to GOOGL since both are the same underlying company. Note: this is the Class C (no-vote) share class.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.cnbc.com/2026/06/23/googles-online-dominance-is-showing-signs-of-cracking-in-ai-era.html",
+    "moat_summary": "Google's global search share fell below 90% for the first time in a decade (89.87%, down from ~91%) as ChatGPT Search, Perplexity, and other AI tools capture 15-20% of informational query volume, though Google retains dominance in navigational/transactional search plus Maps, YouTube and Android defaults.",
+    "moat_verdict": "eroding"
+  },
+  "GOOGL": {
+    "inst_own_pct": 64.5,
+    "inst_own_source": "https://www.rankred.com/who-owns-google/",
+    "inst_own_summary": "64.5% institutional per 2026 aggregated data (~8,008 institutional 13F/13D/G filers). GOOG and GOOGL are Alphabet's two share classes (Class C and Class A) \u2014 same company, same underlying ownership and moat picture.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.cnbc.com/2026/06/23/googles-online-dominance-is-showing-signs-of-cracking-in-ai-era.html",
+    "moat_summary": "Google's global search share fell below 90% for the first time in a decade (89.87%, down from ~91%) as ChatGPT Search, Perplexity, and other AI tools capture 15-20% of informational query volume, though Google retains dominance in navigational/transactional search plus Maps, YouTube and Android defaults.",
+    "moat_verdict": "eroding"
+  },
+  "GS": {
+    "inst_own_pct": 70.8,
+    "inst_own_source": "https://businessquant.com/stocks/gs/institutional-ownership",
+    "inst_own_summary": "70.8% institutional in March 2026, up marginally from 70.7% in December 2025 (essentially flat).",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://simplywall.st/community/narratives/us/diversified-financials/nyse-gs/goldman-sachs-group/psldncs1-gs-the-investment-banking-resurgence-and-the-capital-markets-inflection-point-capitalizing-on-a-37t-asset-supervision-moat",
+    "moat_summary": "Tier-1 advisory franchise and the integrated 'One Goldman Sachs' model (banking, markets, asset/wealth management) keep client switching costs high, but analysts note the firm's moat is 'narrower than it was' as trading/capital-markets businesses face rivals with larger, lower-cost balance sheets.",
+    "moat_verdict": "stable"
+  },
+  "HD": {
+    "inst_own_pct": 73.0,
+    "inst_own_source": "https://finance.yahoo.com/news/home-depot-inc-nyse-hd-130013875.html",
+    "inst_own_summary": "73% institutional per an April 2025 report (a February 2026 source confirms it remains 'over 70%'); no precise recent trend figure found.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.hudson-labs.com/research/home-depot-competitors-hd-top-rivals-in-2026",
+    "moat_summary": "51% share of US home-improvement retail vs. Lowe's 28.8%, plus ~43% of online home-improvement sales vs. Lowe's ~21%; the SRS Distribution and GMS acquisitions expand Home Depot's addressable Pro-contractor market by roughly $50B.",
+    "moat_verdict": "durable"
+  },
+  "IBKR": {
+    "inst_own_pct": null,
+    "inst_own_source": "https://blockchain.news/flashnews/ibkr-added-to-s-p-500-thomas-peterffy-s-75-2b-wealth-75-ownership-and-index-inclusion-trading-setups",
+    "inst_own_summary": "No clean 'institutional % of total shares' figure was found. Founder Thomas Peterffy controls ~76% of total voting power through IBG Holdings LLC, which alone holds ~73.5% of the company; the public float is only ~26.5% of shares outstanding, and institutional funds (Vanguard, BlackRock, State Street) dominate that smaller public float rather than the company as a whole \u2014 this is a controlling-insider situation, not a data gap.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.fool.com/investing/2025/11/02/interactive-brokers-is-quietly-building-the-most-e/",
+    "moat_summary": "Automation-driven low-cost structure delivered a 79% pre-tax margin in Q4 2025; client equity reached ~$560B, up 28% YoY, letting IBKR spread fixed costs over a growing base in a way pricier full-service brokers can't easily match.",
     "moat_verdict": "durable"
   },
   "IBM": {
@@ -76,6 +516,182 @@
     "moat_summary": "Intel's server CPU share fell to 54.9% in Q1 2026 from 64.4% a year earlier as AMD (+230bps to 27.4%) and Arm (+140bps to 17.7%) took share, and AMD's data-center revenue surpassed Intel's for the first time.",
     "moat_verdict": "eroding"
   },
+  "ISRG": {
+    "inst_own_pct": 81.8,
+    "inst_own_source": "https://finance.yahoo.com/news/85-institutional-ownership-intuitive-surgical-120043303.html",
+    "inst_own_summary": "81.8% institutional as of September 2025, down from 84.4% in June 2025.",
+    "inst_own_trend": "declining slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.fool.com/investing/2026/07/01/intuitive-surgicals-moat-is-getting-stronger-is-th/",
+    "moat_summary": "Holds an estimated 70-80% share of soft-tissue robotic surgery (11,395 da Vinci systems installed, +12% YoY) with a moat reinforced by surgeon-training lock-in and 4,500+ patents; new entrants (Medtronic Hugo, J&J Ottava) are emerging but haven't yet dented share.",
+    "moat_verdict": "durable"
+  },
+  "JNJ": {
+    "inst_own_pct": 83.8,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/JNJ",
+    "inst_own_summary": "83.8% institutional per GuruFocus (June 2026); other trackers show a lower 70-74% range depending on date/methodology.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.investing.com/analysis/johnson--johnson-clears-the-patent-cliff-as-2026-guidance-resets-the-narrative-200673620",
+    "moat_summary": "Facing $4-4.5B of 2026 patent-cliff exposure (Stelara sales down 43% from biosimilar entrants), but J&J's MedTech arm (robotic-surgery entry via Ottava, hospital contract bundling) provides diversification pure-pharma rivals like Pfizer lack, and management still guides to >5% 2026 top-line growth.",
+    "moat_verdict": "stable"
+  },
+  "JPM": {
+    "inst_own_pct": 71.08,
+    "inst_own_source": "https://fintel.io/so/us/jpm",
+    "inst_own_summary": "71.08% institutional ownership per Fintel; Vanguard Group is the largest holder at 9.53%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1272879-jpmorgans-moat-is-as-wide-as-it-has-ever-been-but-shares-are-not-cheap",
+    "moat_summary": "Morningstar rates JPMorgan a Wide Moat; it holds top market share across global IB fees, institutional trading, domestic deposits, merchant acquiring, and credit card issuance, backed by switching costs and efficient scale.",
+    "moat_verdict": "durable"
+  },
+  "KLAC": {
+    "inst_own_pct": 86.65,
+    "inst_own_source": "https://ycharts.com/companies/KLAC/institutional_investor_ownership_percentage",
+    "inst_own_summary": "86.65% institutional ownership; trailing-12-month 13Fs show net institutional buying (~$13.2B inflows vs ~$8.9B outflows).",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://247wallst.com/investing/2026/03/27/this-ai-semi-equipment-maker-has-been-quietly-chewing-up-the-competition/",
+    "moat_summary": "KLA holds ~57% share in process-control/inspection segments with high switching costs from long equipment-qualification cycles, more than quadruple the share of its nearest rival Applied Materials in that niche.",
+    "moat_verdict": "durable"
+  },
+  "KO": {
+    "inst_own_pct": 76.97,
+    "inst_own_source": "https://fintel.io/so/us/ko",
+    "inst_own_summary": "76.97% institutional ownership per Fintel (some sources show ~70%); Berkshire Hathaway remains the largest holder at 9.30%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.tradingkey.com/analysis/stocks/us-stocks/261823681-coca-cola-stock-earnings-braun-ai-dividend-buffett-pricing-power-moat-tradingkey",
+    "moat_summary": "Wide brand/distribution moat remains intact (20 consecutive quarters of value-share gains through 2026), but ~70% of revenue still comes from carbonated soft drinks, a category in structural decline in mature markets, creating slow erosion pressure.",
+    "moat_verdict": "stable"
+  },
+  "LIN": {
+    "inst_own_pct": 85,
+    "inst_own_source": "https://www.moomoo.com/news/post/51103899/with-85-institutional-ownership-linde-plc-nasdaq-lin-is-a",
+    "inst_own_summary": "85% institutional ownership; top holders are Vanguard (6.54%), BlackRock (4.99%), and State Street (4.19%).",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://compoundingtitans.substack.com/p/linde-plc-the-invisible-giant",
+    "moat_summary": "Linde's moat rests on irreplaceable on-site/pipeline infrastructure, inflation-indexed take-or-pay contracts, and route density (lowest per-delivery cost in its zip codes), a structural advantage over Air Products, its closest rival.",
+    "moat_verdict": "durable"
+  },
+  "LLY": {
+    "inst_own_pct": 88.53,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/lly/ownership",
+    "inst_own_summary": "Estimates range widely by source (64%-92%); WallStreetZen cites 88.53% institutional, with Lilly Endowment (a large controlling foundation stake, not an index fund) holding ~10.1% as top shareholder.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.pharmamanufacturing.com/editors-review/article/55407744/glp-1-pill-market-fuels-manufacturing-race-between-eli-lilly-and-novo-nordisk",
+    "moat_summary": "Eli Lilly leads the US GLP-1 obesity/diabetes market with 60.1% share vs Novo Nordisk's 39.4%, and is extending the lead via a $6.5B API plant for its oral small-molecule GLP-1 (Foundayo), which is more scalable than Novo's peptide manufacturing.",
+    "moat_verdict": "durable"
+  },
+  "LRCX": {
+    "inst_own_pct": 84.61,
+    "inst_own_source": "https://hedgefollow.com/stocks/LRCX",
+    "inst_own_summary": "84.61% institutional ownership; trailing-12-month 13Fs show strong net buying (~$57.1B inflows vs ~$5.0B outflows).",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://moatmasters.substack.com/p/lam-research",
+    "moat_summary": "Lam's etch/deposition tools carry high switching costs once qualified into a chipmaker's process node, and its large installed base drives high-margin recurring service revenue; it leads in etch/thin-film deposition though trails ASML/Applied Materials in overall WFE share.",
+    "moat_verdict": "durable"
+  },
+  "MA": {
+    "inst_own_pct": 88,
+    "inst_own_source": "https://finance.yahoo.com/news/88-institutional-ownership-mastercard-incorporated-110047334.html",
+    "inst_own_summary": "~88% institutional ownership; Vanguard (8.6%) and BlackRock (7.7%) are the top holders per SEC filings.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://invetso.com/economic-moat/ma",
+    "moat_summary": "Mastercard's moat score of 9/10 reflects powerful two-sided network effects (9.1 sub-score), high switching costs for issuing banks, and regulatory licensing barriers across 210+ countries.",
+    "moat_verdict": "durable"
+  },
+  "MCD": {
+    "inst_own_pct": 75.3,
+    "inst_own_source": "https://www.tickergate.com/stocks/mcd/ownership",
+    "inst_own_summary": "75.30% institutional ownership; Vanguard is the largest holder at 10.15%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.insidermonkey.com/news/is-mcdonalds-mcd-moat-narrowing-as-glp-1-drugs-reshape-menus-1844833/",
+    "moat_summary": "McDonald's real-estate/franchise moat (46% operating margin) remains structurally intact against restaurant rivals, but GLP-1 drug adoption is reducing customer food consumption \u2014 a demand-side threat traditional competitive moats don't defend against.",
+    "moat_verdict": "stable"
+  },
+  "META": {
+    "inst_own_pct": 79.91,
+    "inst_own_source": "https://fintel.io/so/us/meta",
+    "inst_own_summary": "~79.91% institutional ownership as of 2026.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.stockintent.com/blog/meta-moat-analysis",
+    "moat_summary": "Meta holds a Wide Moat rating with a Stable trend (moat score 8/10), driven by network effects across 3.54B daily active users and advertiser switching costs embedded in its ad platform.",
+    "moat_verdict": "durable"
+  },
+  "MRK": {
+    "inst_own_pct": 83,
+    "inst_own_source": "https://www.macroaxis.com/stock-analysis/MRK/Merck-Company",
+    "inst_own_summary": "~79-83% institutional ownership depending on source/date; Macroaxis's more recent figure is 83%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.pharmexec.com/view/jp-morgan-2026-preview-merck-prepares-patent-cliff",
+    "moat_summary": "Keytruda (~40% of pharma revenue, ~$29.5B in 2024 sales) faces core US patent expiry in 2028, threatening up to 30% of total company revenue from biosimilar competition despite Merck's efforts to extend exclusivity via new formulations and follow-on patents.",
+    "moat_verdict": "eroding"
+  },
+  "MRVL": {
+    "inst_own_pct": 79.25,
+    "inst_own_source": "https://fintel.io/so/us/mrvl",
+    "inst_own_summary": "Institutional ownership estimated 78.6%-83% depending on source; commonly cited figure is ~79.25%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://247wallst.com/investing/2026/08/17/whos-really-the-king-of-custom-silicon-broadcom-or-marvell-technology/",
+    "moat_summary": "Marvell's custom AI silicon (ASIC) business grew data-center revenue 42% YoY to ~$8.2B in fiscal 2026 via sticky hyperscaler design-in relationships (Amazon, Google, Microsoft), but it remains smaller and less diversified than chief rival Broadcom in custom silicon.",
+    "moat_verdict": "stable"
+  },
+  "MS": {
+    "inst_own_pct": 62.61,
+    "inst_own_source": "https://www.itiger.com/hant/news/2511545450",
+    "inst_own_summary": "Institutional ownership estimates vary widely by source (59%-84%); most-cited figure is ~62.6%. Mitsubishi UFJ Financial Group is the largest holder at 24.00%, a strategic partner stake rather than a typical index position.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://finance.yahoo.com/news/ms-wealth-asset-management-moat-125900951.html",
+    "moat_summary": "Morgan Stanley's wealth & asset management franchise (54% of net revenue, $9.3T in client assets) provides sticky recurring fee revenue, reinforced by its 'Morgan Stanley at Work' equity-plan platform that funnels future high-net-worth clients ahead of their IPOs.",
+    "moat_verdict": "durable"
+  },
+  "MSFT": {
+    "inst_own_pct": 81.55,
+    "inst_own_source": "https://www.gurufocus.com/term/InstitutionalOwnership/NAS:MSFT/Institutional-Ownership/Microsoft",
+    "inst_own_summary": "81.55% institutional ownership as of July 2026 per GuruFocus (other sources show 66-74% depending on date/methodology); BlackRock is the largest holder (~$219.7B stake as of Q1 2026).",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.gurufocus.com/term/moat-score/MSFT",
+    "moat_summary": "Microsoft holds a Moat Score of 9/10 (#1 of 2,837 Software companies per GuruFocus), anchored by enterprise switching costs across Windows/Office/Azure and Azure's $75B+ annual revenue run-rate as the #2 global cloud provider.",
+    "moat_verdict": "durable"
+  },
+  "MU": {
+    "inst_own_pct": 84.44,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/MU",
+    "inst_own_summary": "84.44% institutional ownership as of June 2026 per GuruFocus.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.fool.com/investing/2026/09/10/micron-is-1-6-points-from-taking-the-no-2-spot-in-dram/",
+    "moat_summary": "Micron narrowed the DRAM share gap with SK Hynix in Q2 2026 (Micron ~23-25% vs SK Hynix ~26%, Samsung ~39%) on HBM growth, but remains a distant third in HBM behind SK Hynix's dominant position with NVIDIA's flagship parts.",
+    "moat_verdict": "stable"
+  },
   "NEE": {
     "inst_own_pct": 85.0,
     "inst_own_source": "https://fintel.io/so/us/nee",
@@ -86,6 +702,28 @@
     "moat_source": "https://www.trefis.com/stock/nee/articles/594895/why-nextera-stock-is-the-energy-transitions-biggest-winner/2026-03-26",
     "moat_summary": "NextEra's Florida Power & Light is the largest rate-regulated utility in Florida (~70% of NEE's earnings) operating in a constructive regulatory environment; the pending all-stock Dominion Energy acquisition would make NEE the world's largest regulated electric utility by market cap.",
     "moat_verdict": "durable"
+  },
+  "NEM": {
+    "inst_own_pct": 82.37,
+    "inst_own_source": "https://markets.financialcontent.com/stocks/article/finterra-2026-2-19-the-gold-standard-a-deep-dive-into-newmont-corporation-nem-in-2026",
+    "inst_own_summary": "82.37% institutional ownership as of Q1 2026 (879.38M shares, 3,100 institutions); inflows accelerated in early 2026 as hedge funds rotated from tech into 'real assets' like gold miners.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://seekingalpha.com/article/4887391-newmont-top-gold-miner-trading-at-25-percent-discount",
+    "moat_summary": "Newmont's moat comes from being the world's largest gold producer by scale/reserves, with copper byproduct credits lowering its all-in-sustaining costs, though as a commodity price-taker its moat is limited to cost-curve position rather than pricing power.",
+    "moat_verdict": "stable"
+  },
+  "NFLX": {
+    "inst_own_pct": 83.7,
+    "inst_own_source": "https://247wallst.com/investing/2026/04/02/institutional-investors-pile-into-netflix-even-as-company-executives-head-for-the-exits/",
+    "inst_own_summary": "83.7% institutional ownership as of April 2026, up from ~82.1% in January 2026 - institutions have been piling in even as company executives head for the exits.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.crispidea.com/streaming-platform-market-share-in-2026/",
+    "moat_summary": "Netflix remains the largest US streaming service (~27% share, 325M global subscribers), but its dominance is narrowing as Amazon Prime Video (~26%) and Disney+ grow, and YouTube increasingly dominates connected-TV viewing time.",
+    "moat_verdict": "stable"
   },
   "NOW": {
     "inst_own_pct": 83.4,
@@ -98,6 +736,17 @@
     "moat_summary": "ServiceNow's Now Assist AI product exceeded $600M in annual contract value in 2025 and is tracking toward $1B+ in 2026, deepening the platform's workflow-centrality and switching costs that underpin its moat.",
     "moat_verdict": "durable"
   },
+  "NVDA": {
+    "inst_own_pct": 67.36,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/NVDA",
+    "inst_own_summary": "67.36% institutional ownership as of Aug 27, 2026 per GuruFocus (range 54%-70% across sources/dates).",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://news.alphastreet.com/nvidias-cuda-lock-in-and-supply-scarcity-make-its-ai-chip-moat-harder-to-break-than-it-looks/",
+    "moat_summary": "NVIDIA holds ~75-81% of the AI accelerator market via its CUDA software moat (4M+ registered developers), but that moat is narrowing as open alternatives (Triton, PyTorch, ROCm 7) mature and hyperscaler custom ASIC shipments grow 44.6% YoY, nearly triple GPU growth.",
+    "moat_verdict": "stable"
+  },
   "ORCL": {
     "inst_own_pct": 44.1,
     "inst_own_source": "https://www.quiverquant.com/stock/ORCL/institutions/",
@@ -109,6 +758,17 @@
     "moat_summary": "Morningstar downgraded Oracle's economic moat rating from wide to narrow, citing AI's potential to disrupt Oracle's traditional database/enterprise-software business even as its OCI cloud-infrastructure revenue grows fast (77% YoY in FY2026).",
     "moat_verdict": "eroding"
   },
+  "PANW": {
+    "inst_own_pct": 79.82,
+    "inst_own_source": "https://www.tickergate.com/stocks/panw/ownership",
+    "inst_own_summary": "~79.82% institutional ownership as of Q2 2026 (range 76.6%-80% across sources).",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://6sense.com/tech/network-security/palo-alto-networks-market-share",
+    "moat_summary": "Palo Alto Networks captured the largest share of network-security market growth in 2024 (28.4%, outpacing rivals), with platform-consolidation switching costs ($1.2M-$3.5M migration cost vs $456K average contract) securing 85% of Fortune 100 as customers.",
+    "moat_verdict": "durable"
+  },
   "PEP": {
     "inst_own_pct": 75.17,
     "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/pep/ownership",
@@ -118,6 +778,17 @@
     "last_quick_check": "2026-09-28",
     "moat_source": "https://simplywall.st/stocks/us/food-beverage-tobacco/nasdaq-pep/pepsico/news/pepsico-pep-report-flags-glp-1-drugs-as-a-major-brand-mix-ri",
     "moat_summary": "PepsiCo carries a wide brand moat (GuruFocus moat score 8) but GLP-1 weight-loss drugs are flagged as a major structural risk to snack/soda volumes, with North American demand described in 2026 analyst commentary as 'fading.'",
+    "moat_verdict": "eroding"
+  },
+  "PFE": {
+    "inst_own_pct": 66,
+    "inst_own_source": "https://finance.yahoo.com/news/pfizer-inc-nyse-pfe-favoured-110020551.html",
+    "inst_own_summary": "66% institutional ownership as of Jan 2026; Vanguard (8.97%), BlackRock (7.70%), and State Street (5.10%) are top holders.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.trefis.com/stock/pfe/articles/598398/can-pfizer-stock-outrun-a-17b-revenue-void/2026-05-06",
+    "moat_summary": "Pfizer faces $17-18B in annual revenue exposure from 2026-2028 patent expirations on blockbusters including Eliquis, Ibrance, and Xtandi, directly eroding its IP-based moat despite cost cuts and new oncology launches.",
     "moat_verdict": "eroding"
   },
   "PG": {
@@ -131,6 +802,39 @@
     "moat_summary": "P&G retains a Morningstar wide-moat rating on #1/#2 category-share brands (Tide, Pampers, Gillette) and >$8B annual ad spend, but recent growth has leaned on price hikes rather than volume, a flagged warning sign for pricing-power durability.",
     "moat_verdict": "stable"
   },
+  "PLD": {
+    "inst_own_pct": 92.83,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/pld/ownership",
+    "inst_own_summary": "92.83% institutional ownership per WallStreetZen (other sources cite up to 93.5%); Vanguard is the largest holder at 13.14%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://portersfiveforce.com/blogs/competitors/prologis",
+    "moat_summary": "Prologis is the world's largest logistics REIT (~1.3B sq ft across 20 countries, ~20% share of key global distribution hubs), with scale-driven barriers to entry (5,500+ properties) sustaining 97%+ occupancy and 3-5% same-store NOI growth.",
+    "moat_verdict": "durable"
+  },
+  "PLTR": {
+    "inst_own_pct": 60.57,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/PLTR",
+    "inst_own_summary": "60.57% institutional per GuruFocus (Sep 2026), though HedgeFollow shows a much lower 45.65%; 13F data shows more institutional buyers than sellers by count but shrinking average position sizes last quarter.",
+    "inst_own_trend": "mixed",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://finance.yahoo.com/markets/stocks/articles/palantir-technologies-inc-pltr-losing-173807904.html",
+    "moat_summary": "Morningstar-style coverage calls it a narrow-but-widening moat built on ~150% net dollar retention and deep government/defense integration, but the rise of agentic AI frameworks and rivals like Anthropic is specifically cited as beginning to erode that switching-cost advantage.",
+    "moat_verdict": "stable"
+  },
+  "PM": {
+    "inst_own_pct": 84.0,
+    "inst_own_source": "https://www.tradingkey.com/markets/stocks/pm/ownership",
+    "inst_own_summary": "~84% institutional ownership as of 2026, up from 77% in an earlier-year reading, led by Capital Research and Vanguard.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://news.alphastreet.com/philip-morris-international-pm-q1-2026-iqos-overtakes-marlboro-as-smoke-free-momentum-drives-16-eps-growth/",
+    "moat_summary": "IQOS passed Marlboro as PMI's top nicotine brand by volume and hit a record 34.9% adjusted nicotine share in Q1 2026, with ~75% global category share in heat-not-burn.",
+    "moat_verdict": "durable"
+  },
   "QCOM": {
     "inst_own_pct": 78.38,
     "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/qcom/ownership",
@@ -141,6 +845,105 @@
     "moat_source": "https://www.stockintent.com/blog/qualcomm-moat-analysis",
     "moat_summary": "Qualcomm's smartphone chipset share fell from 27% (Q1 2025) to 23% (Q1 2026) as MediaTek grew to 32% share and Apple's in-house modem push cut Apple-related revenue sharply; Qualcomm is diversifying into automotive and data-center silicon to offset the decline.",
     "moat_verdict": "eroding"
+  },
+  "RTX": {
+    "inst_own_pct": 84.76,
+    "inst_own_source": "https://gurufocus.com/term/InstitutionalOwnership/RTX/Institutional-Ownership",
+    "inst_own_summary": "84.76% institutional as of April 2026 (GuruFocus), up from ~81% reported in January 2026.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.hudson-labs.com/research/rtx-competitors-rtx-top-peers-in-2026",
+    "moat_summary": "Wide moat from patents, government contracts and a $86B defense backlog (Q2 2026), though Anduril is specifically named as an emerging threat in autonomous/AI battle-management systems.",
+    "moat_verdict": "durable"
+  },
+  "SCHW": {
+    "inst_own_pct": 81.23,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/SCHW",
+    "inst_own_summary": "81.23% institutional as of August 2026 per GuruFocus, consistent with WallStreetZen's 81.11% in June 2026.",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.hudson-labs.com/research/charles-schwab-competitors-schw-peer-comparison-2026",
+    "moat_summary": "Dominant in RIA custody with over 40% market share and $10T+ in client assets; integrated custody/banking/trading workflows create high switching costs for advisors.",
+    "moat_verdict": "durable"
+  },
+  "SHOP": {
+    "inst_own_pct": 76.0,
+    "inst_own_source": "https://www.gurufocus.com/stock/SHOP/ownership",
+    "inst_own_summary": "~76% institutional as of July 2026, up from figures in the 65-68% range earlier in 2026 across multiple trackers.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.demandsage.com/shopify-market-share/",
+    "moat_summary": "Shopify's share of top e-commerce sites grew from 18.5% to 26.9% over six years, directly taking share from Magento (down to 1.7%) as Adobe's enterprise pricing pushed SMBs to Shopify.",
+    "moat_verdict": "durable"
+  },
+  "SNDK": {
+    "inst_own_pct": 76.85,
+    "inst_own_source": "https://fintel.io/so/us/sndk",
+    "inst_own_summary": "76.85% institutional as of July 2026, down from 87.8% in Sept 2025 and 94.4% in June 2025 \u2014 a clear, sourced downward trend.",
+    "inst_own_trend": "declining sharply",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://artificall.com/analysis/companies/sandisk-corporation/",
+    "moat_summary": "SanDisk holds only ~13% of the NAND market (5th place) versus Samsung/SK Hynix/Micron/Kioxia; a dedicated 2026 moat analysis explicitly flags a declining moat despite BiCS8/9 technology gains.",
+    "moat_verdict": "eroding"
+  },
+  "SPCX": {
+    "inst_own_pct": null,
+    "inst_own_source": null,
+    "inst_own_summary": "No usable post-IPO institutional-ownership percentage found after multiple queries (MarketBeat, Nasdaq, Fintel, Investing.com pages exist but did not return a figure); SpaceX listed June 12, 2026 with a 70:30 institutional:retail IPO allocation split, too recent for a 13F-based trend read.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.cnbc.com/2026/06/12/spacexs-out-of-this-world-valuation-supported-by-its-rocket-launch-moat-says-wolfe-research.html",
+    "moat_summary": "Falcon 9/Heavy carry ~85-90% of all payload mass launched to orbit globally, with SpaceX's share of the commercial launch market rising from ~60% (2025) to ~82% (March 2026); reusability and Starship give a widening cost advantage.",
+    "moat_verdict": "durable"
+  },
+  "STX": {
+    "inst_own_pct": 87.55,
+    "inst_own_source": "https://www.tradingkey.com/markets/stocks/stx/sentiment",
+    "inst_own_summary": "87.55% institutional, down 8.75 percentage points quarter-over-quarter per mid-2026 data.",
+    "inst_own_trend": "declining",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://finance.yahoo.com/markets/stocks/articles/seagate-vs-western-digital-hdd-131200065.html",
+    "moat_summary": "Seagate leads Western Digital in HAMR deployment (Mozaic 3+ platform, 3TB+/platter density) and holds ~49% of the external-HDD segment, within a two-player HDD duopoly with high capital barriers to entry.",
+    "moat_verdict": "durable"
+  },
+  "T": {
+    "inst_own_pct": 57.1,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/t/ownership",
+    "inst_own_summary": "57.10% institutional in Q3 2026, down from 66% reported in January 2026 \u2014 roughly a 9-point drop over the year.",
+    "inst_own_trend": "declining",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://about.att.com/story/2026/att-fiber-opensignal-report.html",
+    "moat_summary": "AT&T's fiber footprint (38M+ locations, densest in the US, boosted by the Lumen Mass Markets acquisition) wins share from cable where deployed, but wireless remains highly competitive against T-Mobile and Verizon.",
+    "moat_verdict": "stable"
+  },
+  "TJX": {
+    "inst_own_pct": 90.14,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/tjx/ownership",
+    "inst_own_summary": "90.14% institutional per WallStreetZen (May 2026); one outlier source reported 31.46% but three other sources (94%, 90.14%, and share-count math) corroborate the ~90-94% range, so the low figure looks like a data anomaly.",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1476902-global-procurement-scale-anchors-wide-moat-tjxs-leadership-in-off-price-retail",
+    "moat_summary": "Marmaxx (TJ Maxx/Marshalls/Sierra) captures roughly half of all US off-price retail sales; Morningstar explicitly rates TJX a wide moat anchored in global procurement scale that smaller off-price rivals like Ross and Burlington can't match.",
+    "moat_verdict": "durable"
+  },
+  "TMO": {
+    "inst_own_pct": 94.89,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/tmo/ownership",
+    "inst_own_summary": "94.89% institutional as of August 2026, up from 89.23% reported mid-2026.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://ltsi.substack.com/p/thermo-fisher-scientific-inc-deep",
+    "moat_summary": "~16% share of the life science tools market and the largest scale player; embedded service engineers and co-development partnerships with pharma/hospital customers create very high switching costs, with consumables/services now 78%+ of revenue.",
+    "moat_verdict": "durable"
   },
   "TMUS": {
     "inst_own_pct": 41.08,
@@ -164,6 +967,72 @@
     "moat_summary": "Tesla's U.S. EV market share dropped to 43.9% for full-year 2025 (its first time below 50%, down from ~80% in 2019) as deliveries fell 9% while the global EV market grew 26%, with Lucid and XPeng each posting triple-digit growth in competing segments.",
     "moat_verdict": "eroding"
   },
+  "TXN": {
+    "inst_own_pct": 97.31,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/TXN",
+    "inst_own_summary": "97.31% institutional as of June 2026 per GuruFocus; other 2025-era sources cited 87-88%, suggesting a rising or at minimum stably-high level.",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://simplywall.st/community/narratives/us/semiconductors/nasdaq-txn/texas-instruments/pop3u7hv-texas-instruments-inc-txn-the-analog-recovery-and-the-300mm-competitive-moat",
+    "moat_summary": "TI holds ~19% of the global analog chip market (largest single share) and its $15B+ in owned 300mm fab capacity is called the strongest cost moat in analog semis, which no single competitor has matched.",
+    "moat_verdict": "durable"
+  },
+  "UBER": {
+    "inst_own_pct": 83.55,
+    "inst_own_source": "https://www.gurufocus.com/term/InstitutionalOwnership/uber",
+    "inst_own_summary": "83.55% institutional as of April 2026 per GuruFocus, close to an 85.05% figure from another tracker \u2014 consistently in the low-to-mid 80s.",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.proactiveinvestors.com/companies/news/1098843/uber-faces-growing-av-competition-but-bofa-sees-limited-market-share-erosion-1098843.html",
+    "moat_summary": "Uber holds ~76% of US rideshare vs Lyft's ~24%, but BofA projects that share slipping to ~73% by 2028 as Waymo, Tesla and Zoox autonomous fleets expand, even though Uber is positioning itself as the demand-aggregation layer those AV fleets plug into.",
+    "moat_verdict": "stable"
+  },
+  "UNH": {
+    "inst_own_pct": 87.86,
+    "inst_own_source": "https://hedgefollow.com/stocks/UNH",
+    "inst_own_summary": "87.86% institutional per recent 2026 tracking data; individual 13F activity is mixed, with some large holders (Norges Bank new position, Geode Capital +3.3%) adding even as the stock has sold off.",
+    "inst_own_trend": "mixed",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.bitget.com/amp/news/detail/12560605270460",
+    "moat_summary": "Regulatory scrutiny of prior authorization and Optum's PBM practices, plus a projected 1.3-1.4M Medicare Advantage member loss in 2026 and a ~40% YoY drop in 2025 operating earnings, is explicitly described by analysts as narrowing UNH's historically wide moat.",
+    "moat_verdict": "eroding"
+  },
+  "UNP": {
+    "inst_own_pct": 83.47,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/unp/ownership",
+    "inst_own_summary": "83.47% institutional as of December 2025, consistent with an ~82% figure from another source around the same period.",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.supplychaindive.com/news/union-pacific-norfolk-southern-merger-market-impact/809390/",
+    "moat_summary": "Structural rail right-of-way barriers protect UNP's core position, and its pending Norfolk Southern combination would create the first US transcontinental railroad with >40% share of most commodity freight lanes, subject to a 2027 STB decision.",
+    "moat_verdict": "durable"
+  },
+  "V": {
+    "inst_own_pct": 77.24,
+    "inst_own_source": "https://www.gurufocus.com/term/InstitutionalOwnership/%20V",
+    "inst_own_summary": "77.24% institutional currently, with other 2026 readings ranging 74.8%-83.8% depending on date/methodology \u2014 no clear directional trend, best read as stable in the high-70s to low-80s.",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.fool.com/investing/2026/04/24/visa-mastercard-widest-moats-financial-services/",
+    "moat_summary": "Network effects across 130M+ merchant locations underpin a wide moat; rather than being disrupted by stablecoins, Visa launched its own Visa Stablecoin Platform and is already processing $3.7B in stablecoin-linked card volume, turning a potential threat into a product line.",
+    "moat_verdict": "durable"
+  },
+  "VRTX": {
+    "inst_own_pct": 93.79,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/vrtx/ownership",
+    "inst_own_summary": "93.79% institutional per WallStreetZen 2026 data; no reliable prior-period figure was found to establish a trend direction.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://seekingalpha.com/article/4918829-vertex-pharmaceuticals-has-one-of-the-widest-and-most-durable-moats-in-biotech",
+    "moat_summary": "Near-monopoly in cystic fibrosis with Trikafta/Alyftrek covering 95% of US CF patients and >40% operating margins, though Sionna Therapeutics' NBD1 stabilizers and Krystal Biotech's KB407 are named as the first credible emerging threats to that dominance.",
+    "moat_verdict": "durable"
+  },
   "VZ": {
     "inst_own_pct": 63.5,
     "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/vz/ownership",
@@ -174,6 +1043,17 @@
     "moat_source": "https://www.techbuzz.ai/articles/verizon-board-forces-leadership-shake-up-as-market-share-plunges-30",
     "moat_summary": "Verizon holds a Morningstar narrow moat but has been steadily losing postpaid wireless share to T-Mobile and AT&T -- one analysis cites a roughly 30% share decline over eight years -- after 5G network investment leveled the playing field among all three major carriers.",
     "moat_verdict": "eroding"
+  },
+  "WDC": {
+    "inst_own_pct": 95.03,
+    "inst_own_source": "https://fintel.io/so/us/wdc",
+    "inst_own_summary": "95.03% institutional as of June 2026, up slightly from ~92.5% in April 2026.",
+    "inst_own_trend": "rising slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.bitget.com/news/detail/12560605388049",
+    "moat_summary": "Now a pure-play HDD company post-SanDisk spin-off, WDC holds ~40-41% of the HDD market in a duopoly with Seagate; its entire 2026 HDD production capacity is sold out with supply contracts extending to 2027-2028.",
+    "moat_verdict": "durable"
   },
   "WELL": {
     "inst_own_pct": 96.09,
@@ -186,6 +1066,17 @@
     "moat_summary": "Welltower's proprietary data/tech platform compresses senior-housing deal diligence to 30 days vs. 5-10 months industry-standard, and SHOP occupancy rose to 87.3% in Q1 2026 from 85.1% a year earlier, reinforcing its operating-scale advantage.",
     "moat_verdict": "durable"
   },
+  "WFC": {
+    "inst_own_pct": 79.64,
+    "inst_own_source": "https://www.tradingkey.com/markets/stocks/wfc/sentiment",
+    "inst_own_summary": "79.64% institutional as of July 31, 2026, a quarter-over-quarter decrease of 0.91 points.",
+    "inst_own_trend": "declining slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.usnews.com/banking/articles/wells-fargos-asset-cap-is-lifted",
+    "moat_summary": "The Fed's 2025 removal of Wells Fargo's $1.95T asset cap (in place since the 2018 fake-accounts scandal) restores its ability to compete on scale after 7 constrained years; its low-cost deposit base and Western/Southern US brand remain intact underlying advantages.",
+    "moat_verdict": "stable"
+  },
   "WMT": {
     "inst_own_pct": 35.9,
     "inst_own_source": "https://vcpscanner.com/stock/wmt/institutional-holders",
@@ -195,6 +1086,17 @@
     "last_quick_check": "2026-09-28",
     "moat_source": "https://www.morningstar.com/company-reports/1482980-wide-moat-walmart-anchors-competitive-positioning-through-digital-and-omnichannel-scale",
     "moat_summary": "Walmart holds a Morningstar wide-moat rating (GuruFocus moat score 8-9) backed by roughly two-thirds share of the U.S. superstore/warehouse-club market and a leading ~31% online grocery share, driven by scale-based cost leadership.",
+    "moat_verdict": "durable"
+  },
+  "XOM": {
+    "inst_own_pct": 66.61,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/xom/ownership",
+    "inst_own_summary": "66.61% institutional per WallStreetZen (Aug 2026), down from a 76.71% GuruFocus reading in June 2026 \u2014 likely partly methodology-driven, so treat the drop's exact size with caution.",
+    "inst_own_trend": "declining",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://finance.yahoo.com/sectors/energy/articles/exxonmobils-permian-advantage-low-breakeven-153200191.html",
+    "moat_summary": "Lowest-cost-producer moat backed by $15.6B in cumulative structural cost savings since 2019 and a Permian asset base with double the low-cost drilling locations of its nearest competitor; advantaged-barrel mix (Permian/Guyana/LNG) rose from 52% to 59% of production.",
     "moat_verdict": "durable"
   }
 }
