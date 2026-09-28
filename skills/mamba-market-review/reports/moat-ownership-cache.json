@@ -1,0 +1,200 @@
+{
+  "ARM": {
+    "inst_own_pct": 7.53,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/arm/ownership",
+    "inst_own_summary": "13F-reported institutional ownership is only ~7.5% because SoftBank Group holds ~86% of ARM as a controlling insider, leaving a small float for institutions/retail.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://koalagains.com/stocks/NASDAQ/ARM/business-and-moat",
+    "moat_summary": "Arm's ISA licensing model underpins chips in over 99% of smartphones with 22M+ developers building on the architecture, creating a two-sided network effect and high switching costs that make its IP moat hard to dislodge.",
+    "moat_verdict": "durable"
+  },
+  "BA": {
+    "inst_own_pct": 73.0,
+    "inst_own_source": "https://www.thestreet.com/investing/boeing-stock-ownership-institutional-and-executive-shareholders",
+    "inst_own_summary": "Institutions hold about 73% of Boeing shares (2,784 holders, ~572.2M shares) as of late April 2026; Vanguard and BlackRock are the largest holders.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.nomadlawyer.org/how-the-boeing-737-max-stacks-up-against-the-airbu",
+    "moat_summary": "Boeing's 737 MAX now holds only ~40% of the global narrowbody market vs. the Airbus A320neo family's ~60%, and the A321neo gives Airbus a range/efficiency edge; the Boeing-Airbus duopoly still provides residual pricing power but Boeing keeps ceding narrowbody share.",
+    "moat_verdict": "eroding"
+  },
+  "DE": {
+    "inst_own_pct": 72.0,
+    "inst_own_source": "https://finance.yahoo.com/news/72-institutional-ownership-deere-company-140022954.html",
+    "inst_own_summary": "Institutions own roughly 71-74% of Deere shares across multiple 2025/2026 reports (figures vary by source/date).",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://pitchgrade.com/research/deere-ai-margin-pressure",
+    "moat_summary": "Deere's precision-ag software stack (1M+ connected machines, 500M engaged acres) creates switching costs and an estimated 3-5 year technology gap over CNH Industrial and AGCO in autonomy/crop analytics, reinforced by a 2,200+ dealer network.",
+    "moat_verdict": "durable"
+  },
+  "ETN": {
+    "inst_own_pct": 83.98,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/ETN",
+    "inst_own_summary": "Institutional ownership rose to 83.98% by July 2026 from 82.38% in August 2025 and 82.97% in October 2025, per GuruFocus.",
+    "inst_own_trend": "rising slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://simplywall.st/community/narratives/us/capital-goods/nyse-etn/eaton/ta3l90cm-grid-to-chip-how-eaton-controls-the-physical-bottlenecks-of-ai-data-centers",
+    "moat_summary": "Eaton sits at the physical bottleneck of AI data-center power delivery (grid-to-chip voltage conversion); Electrical Americas orders were up 60% YoY with data-center orders up 240%, a hard-to-replicate infrastructure position.",
+    "moat_verdict": "durable"
+  },
+  "GILD": {
+    "inst_own_pct": 86.0,
+    "inst_own_source": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-gild/gilead-sciences/news/institutional-investors-control-86-of-gilead-sciences-inc-na/amp",
+    "inst_own_summary": "Institutional investors control roughly 86% of Gilead shares, led by Capital Research (~11%), BlackRock (~9.7%) and Vanguard (~9.3%).",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1237748-gileads-long-term-dominance-of-the-hiv-treatment-and-prevention-markets-supports-a-wide-moat",
+    "moat_summary": "Biktarvy holds >52% share of the HIV treatment market and Descovy >45% of U.S. PrEP share; Biktarvy's U.S. patent exclusivity runs to 2036 and the new twice-yearly injectable lenacapavir (Yeztugo) further reinforces Gilead's HIV franchise lead.",
+    "moat_verdict": "durable"
+  },
+  "IBM": {
+    "inst_own_pct": 66.2,
+    "inst_own_source": "https://businessquant.com/stocks/ibm/institutional-ownership",
+    "inst_own_summary": "Institutional ownership rose to 66.2% in June 2026 from 63.3% in March 2026; BlackRock is the top holder at 8.16%.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.alphaspread.com/security/nyse/ibm/qualitative/block/economic-moat",
+    "moat_summary": "IBM holds a narrow moat (per AlphaSpread) built on high switching costs from complex enterprise integrations and OpenShift's hybrid-cloud differentiation vs. pure-public-cloud rivals AWS/Azure/GCP, aided by deep vertical expertise in regulated industries.",
+    "moat_verdict": "stable"
+  },
+  "INTC": {
+    "inst_own_pct": 68.4,
+    "inst_own_source": "https://ycharts.com/companies/INTC/institutional_investor_ownership_percentage",
+    "inst_own_summary": "Institutional ownership slipped to 68.4% in September 2025 from 68.9% in June 2025 per YCharts; BlackRock is the top holder at ~9.09%.",
+    "inst_own_trend": "declining slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://finance.yahoo.com/markets/stocks/articles/intel-supposed-cpu-era-losing-133002267.html",
+    "moat_summary": "Intel's server CPU share fell to 54.9% in Q1 2026 from 64.4% a year earlier as AMD (+230bps to 27.4%) and Arm (+140bps to 17.7%) took share, and AMD's data-center revenue surpassed Intel's for the first time.",
+    "moat_verdict": "eroding"
+  },
+  "NEE": {
+    "inst_own_pct": 85.0,
+    "inst_own_source": "https://fintel.io/so/us/nee",
+    "inst_own_summary": "Institutional ownership estimates cluster around 85% (range ~79-87% across sources/quarters); Vanguard is the top holder at 10.34%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.trefis.com/stock/nee/articles/594895/why-nextera-stock-is-the-energy-transitions-biggest-winner/2026-03-26",
+    "moat_summary": "NextEra's Florida Power & Light is the largest rate-regulated utility in Florida (~70% of NEE's earnings) operating in a constructive regulatory environment; the pending all-stock Dominion Energy acquisition would make NEE the world's largest regulated electric utility by market cap.",
+    "moat_verdict": "durable"
+  },
+  "NOW": {
+    "inst_own_pct": 83.4,
+    "inst_own_source": "https://businessquant.com/stocks/now/institutional-ownership/",
+    "inst_own_summary": "Institutional ownership fell to 83.4% in December 2025 from 90.4% in September 2025, per Business Quant.",
+    "inst_own_trend": "declining",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://simplywall.st/stocks/us/software/nyse-now/servicenow/news/is-servicenows-now-ai-native-workflow-push-quietly-rewiring",
+    "moat_summary": "ServiceNow's Now Assist AI product exceeded $600M in annual contract value in 2025 and is tracking toward $1B+ in 2026, deepening the platform's workflow-centrality and switching costs that underpin its moat.",
+    "moat_verdict": "durable"
+  },
+  "ORCL": {
+    "inst_own_pct": 44.1,
+    "inst_own_source": "https://www.quiverquant.com/stock/ORCL/institutions/",
+    "inst_own_summary": "Institutional ownership has held in the 44-45% range through 2025 and into 2026 (44.10% in Q1 2026), with Vanguard (~6.02%) and BlackRock the largest holders.",
+    "inst_own_trend": "stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/stocks/oracle-despite-some-ai-benefits-lowering-moat-rating-disruption-threat",
+    "moat_summary": "Morningstar downgraded Oracle's economic moat rating from wide to narrow, citing AI's potential to disrupt Oracle's traditional database/enterprise-software business even as its OCI cloud-infrastructure revenue grows fast (77% YoY in FY2026).",
+    "moat_verdict": "eroding"
+  },
+  "PEP": {
+    "inst_own_pct": 75.17,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/pep/ownership",
+    "inst_own_summary": "Institutional ownership fell to 75.17% by August 2026 from 79.67% in Q1 2026; Vanguard (~10.1%) and BlackRock (~8.2%) are top holders.",
+    "inst_own_trend": "declining",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://simplywall.st/stocks/us/food-beverage-tobacco/nasdaq-pep/pepsico/news/pepsico-pep-report-flags-glp-1-drugs-as-a-major-brand-mix-ri",
+    "moat_summary": "PepsiCo carries a wide brand moat (GuruFocus moat score 8) but GLP-1 weight-loss drugs are flagged as a major structural risk to snack/soda volumes, with North American demand described in 2026 analyst commentary as 'fading.'",
+    "moat_verdict": "eroding"
+  },
+  "PG": {
+    "inst_own_pct": 68.67,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/pg/ownership",
+    "inst_own_summary": "About 66-69% of P&G shares are institutionally held (Vanguard ~9.6%, BlackRock ~6.8%, State Street ~4.4%), a level that has held fairly steady across recent quarters.",
+    "inst_own_trend": "roughly stable",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/stocks/procter-gamble-earnings-brand-investments-support-competitive-prowess",
+    "moat_summary": "P&G retains a Morningstar wide-moat rating on #1/#2 category-share brands (Tide, Pampers, Gillette) and >$8B annual ad spend, but recent growth has leaned on price hikes rather than volume, a flagged warning sign for pricing-power durability.",
+    "moat_verdict": "stable"
+  },
+  "QCOM": {
+    "inst_own_pct": 78.38,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/qcom/ownership",
+    "inst_own_summary": "Institutional ownership was 78.38% as of August 2026 per WallStreetZen, up from ~74% cited in late November 2025.",
+    "inst_own_trend": "rising",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.stockintent.com/blog/qualcomm-moat-analysis",
+    "moat_summary": "Qualcomm's smartphone chipset share fell from 27% (Q1 2025) to 23% (Q1 2026) as MediaTek grew to 32% share and Apple's in-house modem push cut Apple-related revenue sharply; Qualcomm is diversifying into automotive and data-center silicon to offset the decline.",
+    "moat_verdict": "eroding"
+  },
+  "TMUS": {
+    "inst_own_pct": 41.08,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/tmus/ownership",
+    "inst_own_summary": "Institutional ownership is about 41% of total shares; free float is constrained because Deutsche Telekom holds voting control of roughly 54.5% of outstanding stock.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.investing.com/news/transcripts/tmobile-at-goldman-sachs-conference-growth-moat-stays-central-93CH-4896598",
+    "moat_summary": "T-Mobile's network-performance lead (fastest 5G speeds and broadest coverage per Ookla/Opensignal) plus rapid Fixed Wireless Access broadband expansion continue to drive postpaid market-share gains over AT&T and Verizon.",
+    "moat_verdict": "durable"
+  },
+  "TSLA": {
+    "inst_own_pct": 42.81,
+    "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/TSLA",
+    "inst_own_summary": "Institutional ownership was 42.81% as of August 2026 per GuruFocus; Vanguard (~6.1%) and BlackRock (~5.0%) are the top holders.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.fool.com/investing/2026/03/22/here-are-teslas-top-competitors-in-2026/",
+    "moat_summary": "Tesla's U.S. EV market share dropped to 43.9% for full-year 2025 (its first time below 50%, down from ~80% in 2019) as deliveries fell 9% while the global EV market grew 26%, with Lucid and XPeng each posting triple-digit growth in competing segments.",
+    "moat_verdict": "eroding"
+  },
+  "VZ": {
+    "inst_own_pct": 63.5,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/vz/ownership",
+    "inst_own_summary": "Institutional ownership estimates cluster in the low-to-high 60s (63.5%-69.7% depending on source/quarter); Vanguard, BlackRock and State Street are the top three holders.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.techbuzz.ai/articles/verizon-board-forces-leadership-shake-up-as-market-share-plunges-30",
+    "moat_summary": "Verizon holds a Morningstar narrow moat but has been steadily losing postpaid wireless share to T-Mobile and AT&T -- one analysis cites a roughly 30% share decline over eight years -- after 5G network investment leveled the playing field among all three major carriers.",
+    "moat_verdict": "eroding"
+  },
+  "WELL": {
+    "inst_own_pct": 96.09,
+    "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/well/ownership",
+    "inst_own_summary": "WallStreetZen shows Welltower institutional ownership at 96.09%, with Vanguard the top holder at ~15.5%.",
+    "inst_own_trend": null,
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://seniorhousingnews.com/2026/04/29/welltower-embraces-shop-growth-data-science-as-senior-livings-best-years-lie-just-ahead/",
+    "moat_summary": "Welltower's proprietary data/tech platform compresses senior-housing deal diligence to 30 days vs. 5-10 months industry-standard, and SHOP occupancy rose to 87.3% in Q1 2026 from 85.1% a year earlier, reinforcing its operating-scale advantage.",
+    "moat_verdict": "durable"
+  },
+  "WMT": {
+    "inst_own_pct": 35.9,
+    "inst_own_source": "https://vcpscanner.com/stock/wmt/institutional-holders",
+    "inst_own_summary": "Q1 2026 13F data show institutional ownership at 35.9% (4,337 institutions), up ~3.66 points QoQ; the Walton family separately controls ~45% of shares as insiders, which caps the institutional share below typical mega-cap levels.",
+    "inst_own_trend": "rising slightly",
+    "last_deep_check": "2026-09-28",
+    "last_quick_check": "2026-09-28",
+    "moat_source": "https://www.morningstar.com/company-reports/1482980-wide-moat-walmart-anchors-competitive-positioning-through-digital-and-omnichannel-scale",
+    "moat_summary": "Walmart holds a Morningstar wide-moat rating (GuruFocus moat score 8-9) backed by roughly two-thirds share of the U.S. superstore/warehouse-club market and a leading ~31% online grocery share, driven by scale-based cost leadership.",
+    "moat_verdict": "durable"
+  }
+}
