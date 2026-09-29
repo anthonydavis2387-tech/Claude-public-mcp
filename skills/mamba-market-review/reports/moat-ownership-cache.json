@@ -1088,6 +1088,17 @@
   "moat_summary": "FortiGate holds over 50% of the global network firewall market on a proprietary-silicon/hardware moat (1,280+ patents), but the industry's shift to cloud-native SASE/endpoint architectures is a named structural threat from Palo Alto Networks and CrowdStrike.",
   "moat_verdict": "stable"
  },
+ "GD": {
+  "inst_own_pct": 86.14,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership of about 86.1% per recent 13F data (2,199 institutional holders, 234.8M shares) on Fintel; a Simply Wall St piece cited 81%.",
+  "inst_own_source": "https://fintel.io/so/us/gd",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar describes a moaty aerospace and defense portfolio with regulated margins, customer-paid R&D and a record $136.5B backlog, with defense budgets growing on NATO/Japan demand.",
+  "moat_source": "https://www.morningstar.com/company-reports/1491217-general-dynamics-is-benefiting-from-investments-in-its-moaty-aerospace-and-defense-portfolio",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "GE": {
   "inst_own_pct": 74.8,
   "inst_own_source": "https://bullfincher.io/companies/general-electric-company/ownership",
@@ -1098,6 +1109,17 @@
   "moat_source": "https://koalagains.com/stocks/NYSE/GE/business-and-moat",
   "moat_summary": "GE holds roughly 70% of the narrow-body jet engine market in a structural duopoly with Pratt & Whitney/Rolls-Royce; its 40,000+ engine installed base locks airlines into multi-decade, high-margin aftermarket service contracts.",
   "moat_verdict": "durable"
+ },
+ "GEHC": {
+  "inst_own_pct": 82.06,
+  "inst_own_trend": "stable",
+  "inst_own_summary": "Institutional ownership about 82.1% per recent 13F data (1,543 holders, 413.6M shares) on Fintel, with Yahoo/Simply Wall St reports ranging 75-83%; no clear directional trend.",
+  "inst_own_source": "https://fintel.io/so/us/gehc",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar rates GEHC wide moat: a top-three global medical imaging player with a large installed base and service network creating high switching costs.",
+  "moat_source": "https://www.morningstar.com/stocks/ge-healthcare-initiating-coverage-with-wide-moat-rating-fair-value-estimate-98",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "GEV": {
   "inst_own_pct": 76.0,
@@ -1131,6 +1153,17 @@
   "moat_source": "https://www.cnbc.com/2026/01/27/apple-supplier-corning-wins-6-billion-from-meta-for-ai-optical-fiber.html",
   "moat_summary": "Rated a narrow (not wide) moat by analysts, but strengthening: Corning has signed multi-year, prepaid AI-fiber supply agreements with Meta (up to $6B), Amazon and Nvidia, evidence customers are paying up for capacity they see as hard to replace.",
   "moat_verdict": "stable"
+ },
+ "GM": {
+  "inst_own_pct": 92.67,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "Institutional ownership about 92.7% on recent 13F data (2,496 holders) per Fintel, versus 89% (Nov 2025) and 86% (Jan 2026) in Simply Wall St reports, so sources disagree.",
+  "inst_own_source": "https://fintel.io/so/us/gm",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar gives GM no economic moat rating, but notes a competitive lineup, a $2B cost cut in 2023-24, a lower North America breakeven of about 10-11M units and roughly $10B annual auto free cash flow.",
+  "moat_source": "https://www.morningstar.com/stocks/gm-earnings-2026-guidance-cash-shareholders-are-all-good-news",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "GOOG": {
   "inst_own_pct": 64.5,
@@ -1242,6 +1275,28 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "HPE": {
+  "inst_own_pct": 80.78,
+  "inst_own_trend": "stable",
+  "inst_own_summary": "Institutional ownership about 80.8% recently (1,135 holders, 1.21B shares) per Fintel/aggregators, versus about 82% in early 2025; Vanguard ~12.3%, BlackRock ~9.6%.",
+  "inst_own_source": "https://fintel.io/so/us/hpe",
+  "moat_verdict": "eroding",
+  "moat_summary": "Morningstar says HPE lacks an economic moat: a top-five server/networking vendor competing with Dell, Lenovo and Supermicro in a price-competitive OEM space where hardware differentiation is hard, though Juniper could help margins.",
+  "moat_source": "https://www.morningstar.com/company-reports/1115144-hewlett-packard-enterprise-it-portfolio-spans-computing-and-networking-lacks-economic-moat",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "HUBS": {
+  "inst_own_pct": 90.39,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership about 90.4% per recent 13F data (769 holders, 47.0M shares) on Fintel; trailing-12-month flows were 580 buyers vs 379 sellers.",
+  "inst_own_source": "https://fintel.io/so/us/hubs",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar gave HubSpot a narrow moat that is widening, built on product innovation and ease of use as the midmarket marketing/sales software leader, though SMB exposure makes results more volatile.",
+  "moat_source": "https://www.morningstar.com/company-reports/1170946-hubspot-has-earned-a-narrow-moat-and-leads-in-software-for-scaling-businesses",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "HWM": {
   "inst_own_pct": 90.46,
   "inst_own_trend": null,
@@ -1274,6 +1329,17 @@
   "moat_source": "https://www.alphaspread.com/security/nyse/ibm/qualitative/block/economic-moat",
   "moat_summary": "IBM holds a narrow moat (per AlphaSpread) built on high switching costs from complex enterprise integrations and OpenShift's hybrid-cloud differentiation vs. pure-public-cloud rivals AWS/Azure/GCP, aided by deep vertical expertise in regulated industries.",
   "moat_verdict": "stable"
+ },
+ "ICE": {
+  "inst_own_pct": 89.3,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership about 89.3% per recent 13F data (2,470 holders, 634.1M shares) on Fintel.",
+  "inst_own_source": "https://fintel.io/so/us/ice",
+  "moat_verdict": "durable",
+  "moat_summary": "Wide moat from network effects, high switching costs and data advantages across NYSE, clearing houses, fixed income data and mortgage technology; about half of revenue is recurring, reducing reliance on trading fees.",
+  "moat_source": "https://finance.yahoo.com/markets/stocks/articles/intercontinental-exchange-ice-moat-built-131953527.html",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "IDXX": {
   "inst_own_pct": 87.84,
@@ -1318,6 +1384,17 @@
   "moat_source": "https://www.fool.com/investing/2026/07/01/intuitive-surgicals-moat-is-getting-stronger-is-th/",
   "moat_summary": "Holds an estimated 70-80% share of soft-tissue robotic surgery (11,395 da Vinci systems installed, +12% YoY) with a moat reinforced by surgeon-training lock-in and 4,500+ patents; new entrants (Medtronic Hugo, J&J Ottava) are emerging but haven't yet dented share.",
   "moat_verdict": "durable"
+ },
+ "ITW": {
+  "inst_own_pct": 79.77,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership about 79.8% per latest 13F data (1,918 holders, 243.1M shares) on Fintel; Simply Wall St reports ranged 82-85% earlier.",
+  "inst_own_source": "https://fintel.io/so/us/itw",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar rates ITW wide moat: decentralized niche businesses with razor-and-blade consumables (e.g. welding) and roughly 25% operating margins, though organic growth is low (Q1 2026 +0.4%, full-year guide 1-3%).",
+  "moat_source": "https://www.morningstar.com/company-reports/1423439-itws-wide-economic-moat-combines-with-low-growth-to-create-a-cash-cow",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "JNJ": {
   "inst_own_pct": 83.8,
@@ -1429,6 +1506,17 @@
   "moat_summary": "Linde's moat rests on irreplaceable on-site/pipeline infrastructure, inflation-indexed take-or-pay contracts, and route density (lowest per-delivery cost in its zip codes), a structural advantage over Air Products, its closest rival.",
   "moat_verdict": "durable"
  },
+ "LITE": {
+  "inst_own_pct": 94.05,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional investors and hedge funds hold about 94.1% per recent 13F data (1,080 holders, 99.7M shares) on Fintel; BlackRock is largest holder per its June 30, 2026 13F.",
+  "inst_own_source": "https://fintel.io/so/us/lite",
+  "moat_verdict": "stable",
+  "moat_summary": "No Morningstar moat rating found; third-party analysis says Lumentum lacks a wide moat but has strong 200G/lane EML laser leadership and cloud-provider qualification switching costs, with silicon photonics (Nvidia/Coherent) as a threat.",
+  "moat_source": "https://www.investing.com/news/swot-analysis/lumentum-holdings-incs-swot-analysis-optical-stock-positioned-for-ai-data-center-growth-93CH-4708678",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "LLY": {
   "inst_own_pct": 88.53,
   "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/lly/ownership",
@@ -1439,6 +1527,39 @@
   "moat_source": "https://www.pharmamanufacturing.com/editors-review/article/55407744/glp-1-pill-market-fuels-manufacturing-race-between-eli-lilly-and-novo-nordisk",
   "moat_summary": "Eli Lilly leads the US GLP-1 obesity/diabetes market with 60.1% share vs Novo Nordisk's 39.4%, and is extending the lead via a $6.5B API plant for its oral small-molecule GLP-1 (Foundayo), which is more scalable than Novo's peptide manufacturing.",
   "moat_verdict": "durable"
+ },
+ "LMT": {
+  "inst_own_pct": 75.07,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutions hold about 75.1% (insiders 0.43%, retail 24.5%) per Simply Wall St; Fintel counts 2,748 institutional holders with 170.5M shares, State Street the largest at ~15%.",
+  "inst_own_source": "https://finance.yahoo.com/news/75-ownership-shares-lockheed-martin-140011984.html",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar calls Lockheed a wide-moat defense giant: about 72% of its $75B 2025 sales are US military and it runs the F-35 through the 2060s, though F-35 (~30% of sales) execution and funding negotiations are risks.",
+  "moat_source": "https://www.morningstar.com/company-reports/1500247-lockheed-martin-is-positioned-to-remain-the-bellwether-of-the-defense-industry",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "LNG": {
+  "inst_own_pct": 87.26,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership about 87.3% per recent 13F data (1,244 holders, 186.5M shares); Vanguard ($5.09B) is the largest holder, Blackstone and CPPIB also appear.",
+  "inst_own_source": "https://fintel.io/so/us/lng",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar affirmed a wide moat: about 90% of volumes are under roughly 20-year contracts locking in a fee spread, and it raised fair value to $229 from $184 on Corpus Christi and Sabine Pass expansion odds.",
+  "moat_source": "https://www.morningstar.com/company-reports/1264115-cheniere-energy-retains-wide-moat-rating-after-fresh-look",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "LOW": {
+  "inst_own_pct": 74.06,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership about 74.1% per MarketBeat-sourced recent 13F data (3,729 holders, 496.4M shares), versus 77-78% in Simply Wall St reports; Vanguard 9.7%, BlackRock 7.1%.",
+  "inst_own_source": "https://fintel.io/so/us/low",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar assigns a wide moat from intangibles and scale: the second-largest home improvement retailer (~$92B fiscal 2026 sales) expected to gain incremental share of a ~$1T market, though housing demand is tepid near term.",
+  "moat_source": "https://www.morningstar.com/stocks/after-earnings-is-lowes-stock-buy-sell-or-fairly-valued",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "LRCX": {
   "inst_own_pct": 84.61,
@@ -1516,6 +1637,39 @@
   "moat_source": "https://www.morningstar.com/company-reports/1490317-moodys-wide-moat-and-profits-revolve-around-its-ratings-business",
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
+ },
+ "MDB": {
+  "inst_own_pct": 89.29,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership about 89.3% per recent 13F data (1,013 holders, 72.4M shares) on Fintel; Vanguard raised its stake 5.0% in Q3.",
+  "inst_own_source": "https://fintel.io/so/us/mdb",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar assigns MongoDB no moat and a Very High uncertainty rating, citing intense competition from open-source and hyperscaler NoSQL databases, though Atlas growth was ~25% in the recent quarter.",
+  "moat_source": "https://www.morningstar.com/stocks/after-earnings-is-mongodb-stock-buy-sell-or-fairly-valued-6",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "MDLZ": {
+  "inst_own_pct": 84.38,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "Institutional ownership 84.38% per GuruFocus (Apr 27, 2026), versus 78.32% at MarketBeat and 91.95% elsewhere (1,904 holders on Fintel), so sources differ.",
+  "inst_own_source": "https://www.gurufocus.com/term/InstitutionalOwnership/MDLZ",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar rates Mondelez wide moat from scale and intangibles as a leading global snack company (over 75% of revenue international), but North America is weak and European volume has fallen ~4% on average over two years after price hikes.",
+  "moat_source": "https://www.morningstar.com/stocks/this-wide-moat-stock-is-still-buy-after-its-rally",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "MELI": {
+  "inst_own_pct": 87.62,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "Institutional ownership 87.62% in current data, versus 76.0% at Dec 2025 (down from 82.6% in Sept 2025) per one report; 1,469 institutions filed 13Fs for Q4 2025, Baillie Gifford the top holder.",
+  "inst_own_source": "https://fintel.io/so/us/meli",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar describes MercadoLibre's ecosystem (marketplace, Mercado Pago, Mercado Envios, ads) as continuing to entrench its wide moat and dominant Latin America position, with heavy 2026 investment compressing margins near term.",
+  "moat_source": "https://www.morningstar.com/company-reports/1266354-mercadolibres-comprehensive-ecosystem-continues-to-entrench-its-moat-alluring-long-term-prospects",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "META": {
   "inst_own_pct": 79.91,
