@@ -2111,6 +2111,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "PCAR": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership not confirmed: a search snippet showed about 72.14% but did not name its source, so it is not used here. Check the linked ticker page for the current figure.",
+  "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/pcar/ownership",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar cites superior margins/returns from a premium product and a strong number-two North American position, with a near-$10B cash pile and no debt; but PACCAR's SEC 10-Q shows US heavy-duty share slipping to 29.6% in 1H26 from 30.4% in 1H25.",
+  "moat_source": "https://www.morningstar.com/company-reports/1490790-paccar-rolls-out-of-class-8-downturn-as-parts-provides-steady-growth",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "PDD": {
   "inst_own_pct": 39.83,
   "inst_own_trend": "mixed",
@@ -2154,6 +2165,28 @@
   "moat_source": "https://www.morningstar.com/stocks/procter-gamble-earnings-brand-investments-support-competitive-prowess",
   "moat_summary": "P&G retains a Morningstar wide-moat rating on #1/#2 category-share brands (Tide, Pampers, Gillette) and >$8B annual ad spend, but recent growth has leaned on price hikes rather than volume, a flagged warning sign for pricing-power durability.",
   "moat_verdict": "stable"
+ },
+ "PGR": {
+  "inst_own_pct": 87,
+  "inst_own_trend": null,
+  "inst_own_summary": "Yahoo Finance (Simply Wall St) reports institutions own 87% of Progressive, with Vanguard the largest at 9.4%; top 20 holders own 51% so no controlling holder; trend not stated (date not given).",
+  "inst_own_source": "https://finance.yahoo.com/news/progressive-corporation-nyse-pgr-favoured-140008732.html",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar rates Progressive narrow moat (roughly 10-year advantage), with ~27M personal auto policies in force and 35% trailing ROE, but views insurance as mean-reverting and the shares as overvalued vs a $144 fair value.",
+  "moat_source": "https://www.morningstar.com/company-reports/1232928-progressive-earnings-multiple-tailwinds-continue-to-drive-strong-results",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "PH": {
+  "inst_own_pct": 83,
+  "inst_own_trend": null,
+  "inst_own_summary": "Yahoo Finance (Simply Wall St) article says institutions hold 83% of Parker-Hannifin (other snapshots 82.44% to 90%); 1,870 institutional filers hold 116.4M shares; trend not stated.",
+  "inst_own_source": "https://finance.yahoo.com/news/parker-hannifin-corporation-nyse-ph-120049919.html",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar maintains a narrow moat: about 85% of motion and control revenue is IP-protected and 17,000+ independent distributors feed high-margin aftermarket; fair value trimmed to $450 from $458 on slower long-term growth.",
+  "moat_source": "https://www.morningstar.com/company-reports/1256529-parker-hannifin-this-niche-industrial-components-firm-trades-at-a-lofty-valuation",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "PLD": {
   "inst_own_pct": 92.83,
@@ -2232,6 +2265,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "PYPL": {
+  "inst_own_pct": 78,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "Yahoo Finance reports 78% institutional ownership of PayPal (Jan 2026); other snapshots range 59.2% (Dec 2025) to 68.32%, and a Fintel-style tally shows 707 holders reducing vs 574 increasing, so the trend is mixed.",
+  "inst_own_source": "https://finance.yahoo.com/news/78-institutional-ownership-paypal-holdings-140013818.html",
+  "moat_verdict": "eroding",
+  "moat_summary": "Morningstar frames 2026 as a reset year for PayPal with slowing growth and a new CEO; its narrow moat (network effects, brand) faces new competition since the pandemic tailwinds reversed.",
+  "moat_source": "https://www.morningstar.com/company-reports/1423309-paypal-faces-a-reset-in-2026",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "QCOM": {
   "inst_own_pct": 78.38,
   "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nasdaq/qcom/ownership",
@@ -2242,6 +2286,72 @@
   "moat_source": "https://www.stockintent.com/blog/qualcomm-moat-analysis",
   "moat_summary": "Qualcomm's smartphone chipset share fell from 27% (Q1 2025) to 23% (Q1 2026) as MediaTek grew to 32% share and Apple's in-house modem push cut Apple-related revenue sharply; Qualcomm is diversifying into automotive and data-center silicon to offset the decline.",
   "moat_verdict": "eroding"
+ },
+ "RCL": {
+  "inst_own_pct": 82,
+  "inst_own_trend": null,
+  "inst_own_summary": "Yahoo Finance reports institutions control 82% of Royal Caribbean (MarketBeat-style data shows 87.53%); 1,436 institutional holders own 239.3M shares; 869 buyers vs 501 sellers over 12 months per Fintel-style summary.",
+  "inst_own_source": "https://finance.yahoo.com/news/institutional-investors-control-82-royal-110020233.html",
+  "moat_verdict": "durable",
+  "moat_summary": "Industry moat comes from constrained shipyard capacity for mega-ships; RCL earns higher revenue per passenger and is more profitable than larger rival Carnival (no Morningstar rating shown in the results).",
+  "moat_source": "https://markets.financialcontent.com/stocks/article/marketminute-2026-2-25-high-seas-and-higher-guidance-royal-caribbean-leads-a-dominant-2026-cruise-sector-rally",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "REGN": {
+  "inst_own_pct": 83.31,
+  "inst_own_trend": null,
+  "inst_own_summary": "MarketBeat shows current institutional ownership of Regeneron at 83.31% per 13F filings; 2,262 institutional filers hold 110.3M shares (Fintel-style count); trend not stated.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NASDAQ/REGN/institutional-ownership",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar says the portfolio still supports a narrow moat despite Eylea threats; EYLEA HD converted over 50% of US franchise volume to counter Roche's Vabysmo and aflibercept biosimilars, while Dupixent passed $17.8B in global sales.",
+  "moat_source": "https://www.morningstar.com/company-reports/1481241-regenerons-portfolio-still-supports-a-narrow-moat-despite-competitive-threats-to-eylea",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "RKLB": {
+  "inst_own_pct": 71.78,
+  "inst_own_trend": "declining",
+  "inst_own_summary": "MarketBeat's latest 13F-based figure is 71.78% for Rocket Lab; a separate tracker shows institutions owning 51.7% in Dec 2025, down from 54.2% the prior quarter, so recent trend is declining and the two measures differ.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NASDAQ/RKLB/institutional-ownership/",
+  "moat_verdict": "stable",
+  "moat_summary": "Moat rests on vertical integration (own launch pads, flight computers, solar cells, 80+ launches) and Neutron is pitched as the only near-term US medium-lift alternative to SpaceX, which still dominates launch; no Morningstar moat rating appears in the results.",
+  "moat_source": "https://stockbywealth.com/rocket-lab-investment-thesis-2026/",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "ROP": {
+  "inst_own_pct": 93.31,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "MarketBeat shows institutional ownership of Roper at 93.31% per 13F filings; over the last 12 months 966 institutional buyers vs 707 sellers with $11.55B inflows vs $6.47B outflows (Fintel-style summary), i.e. net accumulation.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NASDAQ/ROP/institutional-ownership",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar upgraded Roper to a wide moat from narrow, citing sticky niche software businesses with gross retention above 95% and switching-cost advantages in oligopolistic markets.",
+  "moat_source": "https://www.morningstar.com/company-reports/1261513-ropers-portfolio-and-competitive-advantages-remain-strong-and-our-long-term-thesis-is-intact",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "ROST": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership not confirmed: a search snippet showed about 86.86% but did not name its source, so it is not used here. Check the linked ticker page for the current figure.",
+  "inst_own_source": "https://fintel.io/so/us/rost",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar calls Ross a wide-moat off-price retailer with about 30% of US off-price apparel and 2,100+ stores giving vendor purchasing leverage, though tariff exposure and rising competition for closeout inventory are flagged risks.",
+  "moat_source": "https://www.morningstar.com/company-reports/1483059-fast-turns-and-deep-vendor-access-anchor-wide-moat-ross-cost-advantage",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "RSG": {
+  "inst_own_pct": 57.73,
+  "inst_own_trend": null,
+  "inst_own_summary": "MarketBeat shows 57.73% institutional ownership of Republic Services per 13F data; 1,433 institutions hold 185.2M shares and Vanguard is largest at 6.14%, so no controlling holder explains the lower percentage; trend not stated.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NYSE/RSG/institutional-ownership",
+  "moat_verdict": "durable",
+  "moat_summary": "Landfill network (average landfill life of 56 years, far above peers) and transfer stations are nearly impossible to replicate; Morningstar's March 2026 note cites strong pricing and margin expansion, with valuation and US Ecology integration as the risks.",
+  "moat_source": "https://www.morningstar.com/company-reports/1480857-republic-services-earnings-robust-pricing-growth-and-margin-expansion-continues-to-drive-results",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "RTX": {
   "inst_own_pct": 84.76,
@@ -2320,6 +2430,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "SLB": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership not confirmed: a search snippet showed about 78.2% but did not name its source, so it is not used here. Check the linked ticker page for the current figure.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NYSE/SLB/institutional-ownership/",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar assigns SLB a narrow moat (intangibles, cost advantage, digital switching costs), noting first or second position in most of its oligopolistic markets and R&D spend far above rivals, with digital strength expected to grow after ChampionX.",
+  "moat_source": "https://www.morningstar.com/stocks/undervalued-by-21-this-stock-could-be-smart-play-hot-trend",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "SNDK": {
   "inst_own_pct": 76.85,
   "inst_own_source": "https://fintel.io/so/us/sndk",
@@ -2330,6 +2451,28 @@
   "moat_source": "https://artificall.com/analysis/companies/sandisk-corporation/",
   "moat_summary": "SanDisk holds only ~13% of the NAND market (5th place) versus Samsung/SK Hynix/Micron/Kioxia; a dedicated 2026 moat analysis explicitly flags a declining moat despite BiCS8/9 technology gains.",
   "moat_verdict": "eroding"
+ },
+ "SNOW": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership not confirmed: a search snippet showed about 71.99% but did not name its source, so it is not used here. Check the linked ticker page for the current figure.",
+  "inst_own_source": "https://www.tickergate.com/stocks/snow/ownership",
+  "moat_verdict": null,
+  "moat_summary": "Morningstar rates Snowflake as having no economic moat. Morningstar rates Snowflake no-moat, though 26% fiscal 2026 revenue growth and Marketplace data sharing (40% of customers) could build network effects; it faces heavy competition from Databricks and hyperscalers.",
+  "moat_source": "https://www.morningstar.com/stocks/snowflake-earnings-solid-start-fiscal-2026-positions-company-favorably-competition",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "SNPS": {
+  "inst_own_pct": 88,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "Yahoo Finance (Simply Wall St) says institutions own 88% of Synopsys; Fintel-style data for Sept 2025 quarter shows 927 institutions buying vs 380 selling of 1,408 holders, with Vanguard at 11.72%.",
+  "inst_own_source": "https://finance.yahoo.com/news/88-ownership-synopsys-inc-nasdaq-120015247.html",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar calls Synopsys a wide-moat player: oligopolistic EDA/IP market with Cadence, high switching costs and hard-to-replicate IP; revenue grew 42% year over year including Ansys, and AI-driven design starts should help.",
+  "moat_source": "https://www.morningstar.com/company-reports/1332791-synopsys-is-a-wide-moat-player-in-the-chip-design-ecosystem",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "SO": {
   "inst_own_pct": 70.01,
@@ -2396,6 +2539,17 @@
   "moat_source": "https://finance.yahoo.com/markets/stocks/articles/seagate-vs-western-digital-hdd-131200065.html",
   "moat_summary": "Seagate leads Western Digital in HAMR deployment (Mozaic 3+ platform, 3TB+/platter density) and holds ~49% of the external-HDD segment, within a two-player HDD duopoly with high capital barriers to entry.",
   "moat_verdict": "durable"
+ },
+ "SWKS": {
+  "inst_own_pct": 81,
+  "inst_own_trend": null,
+  "inst_own_summary": "Simply Wall St reports institutions own 81% of Skyworks (other snapshots 85.43% and 97.47%); 1,470 institutional filers hold 176.4M shares and Vanguard holds 13.81%; trend not stated.",
+  "inst_own_source": "https://simplywall.st/stocks/us/semiconductors/nasdaq-swks/skyworks-solutions/news/with-81-ownership-skyworks-solutions-inc-nasdaqswks-boasts-o",
+  "moat_verdict": "eroding",
+  "moat_summary": "Morningstar holds a narrow moat on RF design/packaging intangibles but expects Skyworks to lose share in Apple's iPhone 17 series, with Broadcom holding a strategic RF agreement and Apple's modem/RFFE plans capping durability.",
+  "moat_source": "https://www.morningstar.com/company-reports/1268672-skyworks-solutions-moat-has-eroded-but-it-still-has-valuable-rf-expertise",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "T": {
   "inst_own_pct": 57.1,
