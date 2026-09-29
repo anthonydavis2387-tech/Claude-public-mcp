@@ -1,0 +1,39 @@
+{
+  "push_headlines": [
+    "Oil fell about 4% (WTI ~$89) despite fresh Iran tension in Hormuz",
+    "Asia slipped overnight: Nikkei -0.6%, Kospi -1.1%, Hang Seng -0.5%",
+    "Europe's STOXX 600 is headed for its first monthly loss since March on record-high bond yields"
+  ],
+  "on_notice": [
+    "Global bond yields: European sovereign yields are at their highest since 2008 and the ECB is still hiking. Watch whether US 10-year strength (5.24% Monday) spreads abroad.",
+    "Strait of Hormuz: Iran reportedly struck a US-escorted tanker, yet crude still fell. Watch whether that divergence holds overnight.",
+    "Mexican peso: near 18.0 per dollar, within reach of its 52-week weak level (18.68). A peso break would signal wider emerging-market strain."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Asia slipped on rising global bond yields.",
+      "detail": "Tuesday's session: Japan's Nikkei fell 0.60% to 65,481, South Korea's Kospi 1.07% to 6,816, Australia's ASX 200 0.11%. SoftBank (-2.1%), Mitsubishi UFJ (-2.5%) and Toyota (-2.7%) led Tokyo lower. Korea's US-listed fund rose today even though its home market fell overnight.",
+      "sources": [{"name": "Armenpress Asian stocks", "url": "https://armenpress.am/en/article/1261600"}]
+    },
+    "china": {
+      "headline": "Shanghai edged up while Hong Kong fell.",
+      "detail": "The Shanghai Composite rose 0.18% to 3,830 and the Hang Seng fell 0.48% to 24,524. Mainland stocks held up better than Hong Kong's more globally exposed listings.",
+      "sources": [{"name": "Armenpress Asian stocks", "url": "https://armenpress.am/en/article/1261600"}]
+    },
+    "europe": {
+      "headline": "Europe closed lower as bond yields and oil offset a chip rally.",
+      "detail": "Germany's DAX ended flat and France's CAC 40 and the UK's FTSE 100 each slipped about 0.5%. The STOXX 600 is down nearly 2% in September, on track for its first monthly loss since March, with sovereign yields at post-2008 highs and the ECB still hiking.",
+      "sources": [{"name": "Invezz", "url": "https://invezz.com/news/2026/09/29/european-stocks-close-lower-as-bond-yields-and-oil-offset-anthropic-driven-tech-rally/"}]
+    },
+    "latam": {
+      "headline": "A broad but mild Latin American retreat.",
+      "detail": "Monday: Brazil's Ibovespa -0.26%, Mexico's IPC -0.39%, Colombia's COLCAP -0.33%, a region-wide risk-off move rather than a country story. The Mexican peso closed near 17.99 per dollar, close to its 52-week weak point of 18.68.",
+      "sources": [{"name": "Rio Times: Mexico markets", "url": "https://www.riotimesonline.com/mexico-markets-ipc-peso-tuesday-september-29-2026"}, {"name": "Rio Times: LatAm pre-open", "url": "https://www.riotimesonline.com/latam-pre-open-monday-september-28-2026/"}]
+    },
+    "mideast": {
+      "headline": "Crude fell about 4% despite a reported tanker strike in the Strait of Hormuz.",
+      "detail": "Brent traded near $100 in the afternoon, down about $2.56 on the day. Saudi Arabia restarted exports through its East-West pipeline after drone-strike repairs, and Gulf exports rose, which offset reports that Iran hit a US-escorted tanker.",
+      "sources": [{"name": "Fortune: oil price Sept 29", "url": "https://fortune.com/article/price-of-oil-09-29-2026/"}, {"name": "Morgan Downey commodity news", "url": "https://commoditynews.morgandowney.com/news/2026-09-29"}]
+    }
+  }
+}
