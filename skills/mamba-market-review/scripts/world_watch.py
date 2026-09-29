@@ -153,6 +153,8 @@ TEMPLATE = r'''<title>World Watch</title>
 
 <div class="label">Go look yourself</div>
 <div class="links">
+  <a href="https://claude.ai/artifact/CjZFMqQ5r2b8qgBR2bVkav">&#8599; Mamba Market Review</a>
+  <a href="https://claude.ai/artifact/RoP2VyESnddYMDYSHiyj83">&#8599; 10-Point Analyzer</a>
   <a href="https://www.tradingview.com/markets/world-indices/" target="_blank" rel="noopener">&#8599; World indices (TradingView)</a>
   <a href="https://www.tradingview.com/markets/futures/quotes-all/" target="_blank" rel="noopener">&#8599; All futures (TradingView)</a>
   <a href="https://www.investing.com/indices/major-indices" target="_blank" rel="noopener">&#8599; Major indices (Investing.com)</a>
