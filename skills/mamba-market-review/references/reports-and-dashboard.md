@@ -109,14 +109,15 @@ Each session's scope is every ticker in that session's directory (all 100-277 of
 **Page nav under The Bottom Line — required on every publish, every session type.** The user wants every companion page and section reachable from the top of the dashboard. As the last element inside the lead section (after the pull-quote row, before `</section>`), always include this block exactly, even when the session rewrites the lead prose. The 8am and 2pm runs both regenerate the lead, and a run that drops this block breaks navigation. Read each URL from its file (`reports/.analyzer-url.txt`, `reports/.worldwatch-url.txt`); add any new companion page here when it is created. Keep the matching `.page-nav` CSS in the page's `<style>`, and keep both pages in the Quick Links row as well. Inline source links inside the lead paragraphs are still expected on top of this.
 ```html
 <nav class="page-nav" id="page-nav" aria-label="Pages and sections">
-<span class="nav-label">Pages</span><span class="nav-group"><a class="page" href="{analyzer url}">10-Point Analyzer &#8599;</a><a class="page" href="{world watch url}">World Watch (5pm) &#8599;</a></span>
-<span class="nav-label">Sections</span><span class="nav-group"><a href="#bitcoin">Bitcoin</a><a href="#spotlight">Sector Spotlight</a><a href="#movers">Movers &amp; Sentiment</a><a href="#flagged">Red Flags</a><a href="#universe">Full Universe Directory</a><a href="#rollup">Roll-Up</a><a href="#whats-next">What&rsquo;s Next</a><a href="#news">News &amp; Research</a></span>
+<div class="nav-row"><span class="nav-label">Pages</span><span class="nav-group"><a class="page" href="{analyzer url}">10-Point Analyzer &#8599;</a><a class="page" href="{world watch url}">World Watch (5pm) &#8599;</a></span></div>
+<div class="nav-row"><span class="nav-label">Sections</span><span class="nav-group"><a href="#bitcoin">Bitcoin</a><a href="#spotlight">Sector Spotlight</a><a href="#movers">Movers &amp; Sentiment</a><a href="#flagged">Red Flags</a><a href="#universe">Full Universe Directory</a><a href="#rollup">Roll-Up</a><a href="#whats-next">What&rsquo;s Next</a><a href="#news">News &amp; Research</a></span></div>
 </nav>
 ```
 ```css
-.page-nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-top: 4px; font-family: 'Source Sans 3', sans-serif; font-size: 13.5px; }
+.page-nav { display: grid; gap: 8px; margin-top: 4px; font-family: 'Source Sans 3', sans-serif; font-size: 13.5px; }
 .page-nav .nav-label { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-faint); }
-.page-nav .nav-group { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.page-nav .nav-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+  .page-nav .nav-group { display: flex; flex-wrap: wrap; gap: 6px 14px; }
 .page-nav a.page { font-weight: 700; }
 ```
 Only list a section link if that section exists on the page this session (the 8am run keeps the last full study's sections, so all of them normally exist).
