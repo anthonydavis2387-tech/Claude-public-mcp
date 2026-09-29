@@ -65,6 +65,50 @@
   "moat_summary": "ADI holds >40% share in high-performance data converters/amplifiers and is the #2 analog chipmaker behind TI, using a focused premium-pricing niche strategy rather than competing across the full spectrum.",
   "moat_verdict": "durable"
  },
+ "ADP": {
+  "inst_own_pct": 80.03,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership is 80.03% per 13F data (2,396 holders; 1,566 buyers vs 1,353 sellers over last 12 months, inflows $15.87B vs outflows $7.60B) on the Quiver Quantitative/CapEdge-type 13F aggregate.",
+  "inst_own_source": "https://www.quiverquant.com/stock/ADP/institutions/",
+  "moat_verdict": "eroding",
+  "moat_summary": "In Morningstar's early-2026 AI-driven moat review, ADP was among companies receiving a moat downgrade, with payroll firms flagged for seat-based pricing exposure and application-layer economics, although operations remain strong (EPS +10%, record bookings).",
+  "moat_source": "https://www.morningstar.com/stocks/updating-moat-ratings-fair-value-estimates-payroll-firms",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "AEP": {
+  "inst_own_pct": 75.24,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership of about 75.24% per the latest search-result data (Fintel-listed, 1,903 holders with 437.4M shares); an older Yahoo/Simply Wall St piece cited 77% in Oct 2024, hinting at a slight decline.",
+  "inst_own_source": "https://fintel.io/so/us/aep",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar rates AEP narrow-moat (regulated utility, 5M+ customers in 11 states) with fair value of $141; it has struggled to earn allowed returns at some regulated units.",
+  "moat_source": "https://finance.yahoo.com/research/reports/MS_0P000000CR_AnalystReport_1790282485000",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "AFL": {
+  "inst_own_pct": 67.44,
+  "inst_own_trend": null,
+  "inst_own_summary": "MarketBeat shows institutional ownership of 67.44% from 13F filings (other sources say 69-70%); largest holder Japan Post Holdings at 9.7%, with Vanguard and State Street next.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NYSE/AFL/institutional-ownership",
+  "moat_verdict": "stable",
+  "moat_summary": "Search results did not show Morningstar's exact moat rating; snippets indicate Aflac has kept a position among insurers with the highest return on capital and lowest cost of capital in supplemental insurance in the US and Japan, so a steady position is inferred.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/afl/quote",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "ALAB": {
+  "inst_own_pct": 69.5,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "Institutional ownership edged up to 69.5% in September 2025 from 64.4% in June 2025 (647 institutions, 115.55M shares) per Fintel 13F data; no newer figure surfaced.",
+  "inst_own_source": "https://fintel.io/so/us/alab",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar-style narrow moat; GuruFocus moat score 4/10 (Jun 2026). Revenue doubled to $392.4M in Q2 2026 but is concentrated among few hyperscalers and gross margin slipped to 73.3%; supports UALink, NVLink and Ethernet.",
+  "moat_source": "https://www.gurufocus.com/term/moat-score/ALAB",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
  "ALL": {
   "inst_own_pct": 80,
   "inst_own_trend": null,
@@ -153,6 +197,17 @@
   "moat_summary": "Arista's investor presentation shows 'strong, sustained share gains' vs. Cisco in high-speed (100G-800G) data center switching through 2025, with EOS software lock-in as the key differentiator; NVIDIA entering Ethernet via InfiniBand is the main named future risk.",
   "moat_verdict": "durable"
  },
+ "APD": {
+  "inst_own_pct": 81.66,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership of 81.66% per Fintel, with 1,856 institutional holders owning 221.5M shares; no trend stated.",
+  "inst_own_source": "https://fintel.io/so/us/apd",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar upgraded Air Products to a wide moat (from narrow) on switching costs and intangibles from long-term industrial gas contracts; new management is derisking the hydrogen backlog.",
+  "moat_source": "https://www.morningstar.com/company-reports/1215715-upgrading-air-products-to-wide-moat-rating",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
  "APH": {
   "inst_own_pct": 94.84,
   "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/aph/ownership",
@@ -163,6 +218,17 @@
   "moat_source": "https://www.gurufocus.com/term/moat-score/APH",
   "moat_summary": "GuruFocus Moat Score of 7/10 (entry-level wide moat); components requiring military/AEC-Q automotive certification get 'spec'd in' for a platform's entire 5-15 year production life, and revenue grew 51.7% YoY, reflecting continued share gains via its acquisition-driven strategy.",
   "moat_verdict": "durable"
+ },
+ "APO": {
+  "inst_own_pct": 62.51,
+  "inst_own_trend": null,
+  "inst_own_summary": "Fintel/other trackers show 62.51% institutions, 27.07% insiders, 10.43% retail (another source says 77.06%); Vanguard is the largest holder at 8.11% and insiders hold a large block.",
+  "inst_own_source": "https://fintel.io/so/us/apo",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar calls Apollo a solid narrow-moat firm in an expanding alternatives market, with $938.4B total AUM at end-2025 ($723B in private credit) and access to permanent insurance-linked capital that competitors struggle to replicate.",
+  "moat_source": "https://www.morningstar.com/company-reports/1350821-apollo-global-management-a-solid-narrow-moat-firm-in-an-expanding-market-for-alternative-assets",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
  },
  "ARM": {
   "inst_own_pct": 7.53,
@@ -240,6 +306,17 @@
   "moat_source": "https://www.gurufocus.com/term/moat-score/BAC",
   "moat_summary": "Wide moat from #1 US retail deposit share (~$298B lead over next competitor) and lowest industry cost of deposits, but Morningstar and independent analysts flag fintech (SoFi, etc.) encroachment on deposits/payments as an active erosion risk -- moat is 'durable but not impermeable.'",
   "moat_verdict": "stable"
+ },
+ "BAM": {
+  "inst_own_pct": 68.41,
+  "inst_own_trend": null,
+  "inst_own_summary": "MarketBeat shows 68.41% institutional ownership; other sources range from 73% (Simply Wall St/Yahoo) to 92.76%; Fintel lists 633 institutional owners. Parent Brookfield Corp is the largest holder.",
+  "inst_own_source": "https://fintel.io/so/us/bam",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar rates Brookfield Asset Management narrow-moat: second-largest alternatives manager with $603B fee-earning assets at Dec 2025 (+11.9% y/y), though private-credit turmoil is flagged as eventual headwind.",
+  "moat_source": "https://www.morningstar.com/company-reports/1350814-brookfield-asset-management-a-solid-narrow-moat-firm-in-an-expanding-market-for-alternative-assets",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
  },
  "BKNG": {
   "inst_own_pct": 91.2,
@@ -340,6 +417,17 @@
   "moat_summary": "Morningstar explicitly rates Citigroup 'no-moat,' noting wealth/card markets remain highly competitive and Citi isn't building retail scale to rival peers, despite strength in its institutional cross-border payments network (94-country local clearing licenses).",
   "moat_verdict": "eroding"
  },
+ "CAH": {
+  "inst_own_pct": 87.17,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "Institutional ownership of 87.17% per search-result 13F data (Fintel/Simply Wall St era: BlackRock ~13%, Vanguard ~13%); last 12 months had 854 buyers vs 577 sellers with $6.04B inflows vs $4.81B outflows.",
+  "inst_own_source": "https://finance.yahoo.com/news/88-ownership-cardinal-health-inc-120019590.html",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar reaffirmed a narrow moat for Cardinal, which supplies roughly a quarter of US drug distribution (over $230B FY2026 sales) in an oligopoly with McKesson and Cencora covering 90%+ of the market.",
+  "moat_source": "https://www.morningstar.com/company-reports/1110343-reaffirming-narrow-moat-for-cardinal-health",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
  "CAT": {
   "inst_own_pct": 71.85,
   "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/cat/ownership",
@@ -361,6 +449,17 @@
   "moat_source": "https://www.morningstar.com/company-reports/1316525-chubb-is-a-diversified-insurance-company-with-a-moat",
   "moat_summary": "Morningstar calls Chubb a 'moaty' global insurer post ACE-Chubb merger \u2014 one of few insurers with the global footprint to service multinational corporate clients, creating a real barrier to entry for smaller rivals.",
   "moat_verdict": "stable"
+ },
+ "CCEP": {
+  "inst_own_pct": 31.35,
+  "inst_own_trend": null,
+  "inst_own_summary": "MarketBeat shows 31.35% institutional ownership from 13F data (sources range 10.65%-33.83%); low because private companies (Olive Partners / Coca-Cola Company related holders) own about 36%.",
+  "inst_own_source": "https://finance.yahoo.com/news/while-institutions-own-32-coca-092637752.html",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar rates CCEP narrow moat and raised fair value to GBX 6,300 from 5,400 in Feb 2026; it is Coca-Cola's largest bottler by revenue, but The Coca-Cola Company holds bargaining power through concentrate pricing.",
+  "moat_source": "https://global.morningstar.com/en-gb/stocks/coca-cola-europacific-partners-earnings-nice-profitability-expansion-challenging-year",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
  },
  "CDNS": {
   "inst_own_pct": 84.85,
@@ -417,6 +516,28 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "CMI": {
+  "inst_own_pct": 84.39,
+  "inst_own_trend": null,
+  "inst_own_summary": "Cummins is 84.39% institutionally owned (another source 83.46%; Yahoo/Simply Wall St cite 87%); Vanguard holds 12.88%, BlackRock ~8.56%; 1,090 buyers vs 809 sellers over 12 months.",
+  "inst_own_source": "https://fintel.io/so/us/cmi",
+  "moat_verdict": null,
+  "moat_summary": "Search did not return a Morningstar moat rating or trend for Cummins; only its business description (diesel engines, powertrain, generators) was available.",
+  "moat_source": "https://www.morningstar.com/stocks/xstu/cum/quote",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "COHR": {
+  "inst_own_pct": 83.33,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership of 83.33% per Fintel-listed data, with 938 institutional holders owning 166.0M shares; Bain Capital is among the top holders.",
+  "inst_own_source": "https://fintel.io/so/us/cohr",
+  "moat_verdict": "stable",
+  "moat_summary": "GuruFocus gives Coherent a Moat Score of 5 (narrow), based on laser IP and vertical integration; views are mixed, with Q2 FY2026 revenue of $1.7B up 17.5% YoY.",
+  "moat_source": "https://www.gurufocus.com/term/moat-score/COHR",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
  "COP": {
   "inst_own_pct": 83.9,
   "inst_own_source": "https://hedgefollow.com/stocks/COP",
@@ -427,6 +548,17 @@
   "moat_source": "https://www.gurufocus.com/term/moat-score/COP",
   "moat_summary": "GuruFocus moat score of 7/10 (entry-level wide moat) driven by ~15B boe of Lower-48/Permian resource inventory with sub-$40/bbl WTI breakeven cost \u2014 a structural low-cost asset advantage over less-efficient producers.",
   "moat_verdict": "durable"
+ },
+ "COR": {
+  "inst_own_pct": 97.52,
+  "inst_own_trend": "stable",
+  "inst_own_summary": "MarketBeat shows 97.52% institutional ownership; Fintel counts 2,291 institutional filers, with 939 buyers vs 630 sellers over 12 months (inflows $11.02B vs outflows $10.50B); Vanguard, BlackRock, Walgreens Boots Alliance are top holders.",
+  "inst_own_source": "https://fintel.io/so/us/cor",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar gives Cencora a narrow moat: about one-third of US drug distribution in an oligopoly with McKesson and Cardinal (over 90% of the market), but Walgreens volume began moving away from July.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/cor/quote",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
  },
  "COST": {
   "inst_own_pct": 69.0,
@@ -502,6 +634,28 @@
   "moat_verdict": "durable",
   "moat_summary": "Morningstar wide moat strengthening: route density, 90%+ retention and bundled uniforms/mats/safety products lift revenue per stop, with ROIC around 27%.",
   "moat_source": "https://www.morningstar.com/company-reports/1500334-cintas-wide-moat-strengthens-amid-accelerating-organic-growth",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "CTVA": {
+  "inst_own_pct": 85.91,
+  "inst_own_trend": null,
+  "inst_own_summary": "Corteva is 85.91% institutionally owned (another source 81.54%; Simply Wall St says 87%); top holders Vanguard, State Street, Geode, Capital International.",
+  "inst_own_source": "https://fintel.io/so/us/ctva",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar assigns Corteva a wide moat from intangible assets (patented seeds and crop chemicals) and it leads in biologicals; seed business spin-off (Vylor) planned for late 2026.",
+  "moat_source": "https://www.morningstar.com/stocks/wide-moat-stock-buy-thats-flying-under-radarfor-now",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "CVS": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "No overall institutional ownership percentage found; Fintel lists 3,034 institutional holders with 1.50B shares, led by BlackRock, Vanguard, Capital World Investors and State Street.",
+  "inst_own_source": "https://fintel.io/so/us/cvs",
+  "moat_verdict": "eroding",
+  "moat_summary": "Morningstar downgraded CVS to no-moat over economic profitability uncertainty (High Uncertainty Rating) despite Caremark being the largest US PBM (~2.3B claims in FY2024); UnitedHealth's Optum has deeper physician ownership.",
+  "moat_source": "https://www.morningstar.com/company-reports/1269364-cvs-moat-rating-downgraded-on-economic-profitability-uncertainty",
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
@@ -604,6 +758,39 @@
   "moat_summary": "ESPN/linear-TV moat is weakening as Amazon and Apple bid aggressively for live sports rights (NBA, MLS) and regional sports networks collapse (FanDuel Sports Network wound down May 2026); content IP (Marvel/Star Wars/Pixar) and a newly profitable streaming segment (10.6% operating margin) are the offsetting strength.",
   "moat_verdict": "eroding"
  },
+ "DLR": {
+  "inst_own_pct": 99.71,
+  "inst_own_trend": null,
+  "inst_own_summary": "Fintel/aggregators show institutions holding 99.71% of DLR, with 1,242 institutional filers holding 345.4M shares; Vanguard and BlackRock lead.",
+  "inst_own_source": "https://fintel.io/so/us/dlr",
+  "moat_verdict": "eroding",
+  "moat_summary": "Morningstar's exact rating was not visible; one 2026 analysis describes a declining moat and falling profitability for Digital Realty, and Morningstar views real estate as largely no-moat, though DLR operates 300+ data centers globally.",
+  "moat_source": "https://artificall.com/analysis/companies/digital-realty-trust-inc/",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "DUK": {
+  "inst_own_pct": 65.31,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership is about 65.31% currently (65.95% in May 2025; Yahoo/Simply Wall St cite 67%) per GuruFocus/Fintel; 2,632 institutional owners.",
+  "inst_own_source": "https://www.gurufocus.com/term/InstitutionalOwnership/DUK",
+  "moat_verdict": "stable",
+  "moat_summary": "Duke is a regulated legal-monopoly utility with moat from regulatory barriers and efficient scale, but equity issuance and capex delays have strained stakeholder relationships (Morningstar quote page summary).",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/duk/quote",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "DXCM": {
+  "inst_own_pct": 97.75,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership of 97.75% per latest 13F data (Fintel-listed), with 933 holders owning 367.9M shares.",
+  "inst_own_source": "https://fintel.io/so/us/dxcm",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar gave DexCom a narrow moat on intangible assets (most accurate CGM sensors); it faces 2026 headwinds and competition from Abbott and Medtronic but is fending them off.",
+  "moat_source": "https://www.morningstar.com/company-reports/1479057-dexcom-faces-potential-headwinds-in-2026-but-expanding-reimbursement-offers-long-term-prospects",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
  "ECL": {
   "inst_own_pct": 74.91,
   "inst_own_trend": "rising",
@@ -670,6 +857,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "ET": {
+  "inst_own_pct": 30.5,
+  "inst_own_trend": "declining",
+  "inst_own_summary": "Fintel/Nasdaq data as of Sept 2025 show 1,191 institutions holding 30.5% of ET units with a -1.34% quarterly change in institutional shares; low because insiders (Kelcy Warren) and MLP retail hold much of the float.",
+  "inst_own_source": "https://fintel.io/so/us/et",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar describes Energy Transfer as a diversified midstream firm with a nationwide competitive natural gas gathering and transport footprint and $5.0-5.5B of 2026 growth capex, but its acquisitive nature risks overpaying; explicit moat rating not shown in results.",
+  "moat_source": "https://www.morningstar.com/company-reports/1498307-energy-transfer-is-a-diversified-midstream-firm-with-a-competitive-natural-gas-footprint",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
  "ETN": {
   "inst_own_pct": 83.98,
   "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/ETN",
@@ -680,6 +878,28 @@
   "moat_source": "https://simplywall.st/community/narratives/us/capital-goods/nyse-etn/eaton/ta3l90cm-grid-to-chip-how-eaton-controls-the-physical-bottlenecks-of-ai-data-centers",
   "moat_summary": "Eaton sits at the physical bottleneck of AI data-center power delivery (grid-to-chip voltage conversion); Electrical Americas orders were up 60% YoY with data-center orders up 240%, a hard-to-replicate infrastructure position.",
   "moat_verdict": "durable"
+ },
+ "FANG": {
+  "inst_own_pct": 90.01,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "Institutional ownership is 90.01% per Fintel 13F data (1,345 holders); 887 buyers vs 592 sellers over 12 months with inflows $5.72B vs outflows $4.85B (Yahoo cites 89%).",
+  "inst_own_source": "https://fintel.io/so/us/fang",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar rates Diamondback narrow-moat with some of the lowest unit costs among Permian peers; the Sept 2024 $26B Endeavor merger doubled acreage, and it operates ~97% of its acreage. Shares traded ~16% below fair value in Sept 2026.",
+  "moat_source": "https://www.morningstar.com/stocks/xnas/fang/quote",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "FCX": {
+  "inst_own_pct": 83.17,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "Institutional ownership rose to 83.17% in the latest period per search-result data (Fintel-listed; 1,740 holders with 1.23B shares).",
+  "inst_own_source": "https://fintel.io/so/us/fcx",
+  "moat_verdict": null,
+  "moat_summary": "Morningstar moat rating not visible in results; Freeport sits mid-curve on copper costs (49% of Grasberg, 72% of Morenci, ~1.1Mt copper sold in 2025) and one analysis notes ROIC below WACC.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/fcx/quote",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
  },
  "FDX": {
   "inst_own_pct": 81.4,
@@ -857,6 +1077,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "HOOD": {
+  "inst_own_pct": 65,
+  "inst_own_trend": null,
+  "inst_own_summary": "Simply Wall St (via Yahoo) states institutions hold about 65% of Robinhood, though another source shows 98.71%; 1,306 13F filers per Fintel.",
+  "inst_own_source": "https://finance.yahoo.com/news/65-ownership-robinhood-markets-inc-130015735.html",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar initiated Robinhood at narrow moat (intangible assets, $50 fair value, Very High Uncertainty) with $322B client assets at end of 2025; unclear whether young clients stay or graduate to Schwab or Fidelity.",
+  "moat_source": "https://www.morningstar.com/stocks/robinhood-initiating-coverage-financial-services-firm-with-narrow-moat-rating",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
  "HWM": {
   "inst_own_pct": 90.46,
   "inst_own_trend": null,
@@ -955,6 +1186,17 @@
   "moat_source": "https://www.morningstar.com/company-reports/1272879-jpmorgans-moat-is-as-wide-as-it-has-ever-been-but-shares-are-not-cheap",
   "moat_summary": "Morningstar rates JPMorgan a Wide Moat; it holds top market share across global IB fees, institutional trading, domestic deposits, merchant acquiring, and credit card issuance, backed by switching costs and efficient scale.",
   "moat_verdict": "durable"
+ },
+ "KDP": {
+  "inst_own_pct": 93.99,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "Institutional ownership of 93.99% per Fintel-listed 13F data; last 12 months show 635 buyers ($9.28B inflows) vs 329 sellers ($3.56B outflows).",
+  "inst_own_source": "https://fintel.io/so/us/kdp",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar gives KDP a narrow moat: Keurig has ~80% of North American single-serve pod volume across 40M+ households, but carbonated soft drink headwinds and coffee competition temper conviction; the JDE Peet's deal closed April 2026 with a split planned for early 2027.",
+  "moat_source": "https://www.morningstar.com/company-reports/1270031-keurig-dr-pepper-holds-ground-in-soda-but-coffee-competition-tempers-our-conviction-on-its-edge",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
  },
  "KEYS": {
   "inst_own_pct": 93.3,
@@ -1096,6 +1338,17 @@
   "moat_verdict": "durable",
   "moat_summary": "MPLAB X tooling and a 50,000+ SKU catalog lock in engineers on its microcontrollers, with cross-sold analog/power content and Microsemi-derived aerospace and defense positions.",
   "moat_source": "https://markets.financialcontent.com/stocks/article/finterra-2026-3-6-the-great-recovery-a-deep-dive-into-microchip-technology-mchp-in-2026",
+  "last_deep_check": "2026-09-28",
+  "last_quick_check": "2026-09-28"
+ },
+ "MCK": {
+  "inst_own_pct": 85.07,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutional ownership of 85.07% per latest 13F data (Fintel-listed), with 2,049 holders owning 108.1M shares.",
+  "inst_own_source": "https://fintel.io/so/us/mck",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar rates McKesson narrow-moat (switching costs and efficient scale): it supplies about a third of US drug distribution (over $300B sales) in an oligopoly with Cardinal and Cencora above 90% share.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/mck/quote",
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
