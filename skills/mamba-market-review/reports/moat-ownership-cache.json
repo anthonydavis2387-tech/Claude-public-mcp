@@ -1671,6 +1671,17 @@
   "last_deep_check": "2026-09-29",
   "last_quick_check": "2026-09-29"
  },
+ "MET": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Total institutional percentage not confirmed in search results; Fintel lists Vanguard (~9.7%) and BlackRock (~7.1%) as the largest holders. Check the source for the current aggregate.",
+  "inst_own_source": "https://fintel.io/so/us/met",
+  "moat_verdict": "stable",
+  "moat_summary": "MetLife carries a moderate/narrow-style moat from switching costs and scale, holding the #1 or #2 position in US group life and dental by market share. Morningstar covers the 'New Frontier' strategy of simplifying the business after divesting US retail.",
+  "moat_source": "https://www.morningstar.com/company-reports/1493968-metlife-is-executing-its-new-frontier-strategy",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "META": {
   "inst_own_pct": 79.91,
   "inst_own_source": "https://fintel.io/so/us/meta",
@@ -1726,6 +1737,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "MPLX": {
+  "inst_own_pct": 20.0,
+  "inst_own_trend": null,
+  "inst_own_summary": "MPLX is 20.00% institutionally owned per one 13F-based source (another shows 24.25%; 660 institutions hold about 189.2M units); low share suggests a large non-13F sponsor holder but the results did not name one.",
+  "inst_own_source": "https://fintel.io/so/us/mplx",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar notes MPLX's pipelines serve Marathon refineries and can keep raising fees via inflation indexation, with growth focused on Permian and Marcellus gas and NGL. The exact moat rating was not visible in results, and the NGL push adds volatility versus a pure fee model, so stable is inferred.",
+  "moat_source": "https://finance.yahoo.com/research/reports/MS_0P0000X7UQ_AnalystReport_1784933077000",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "MPWR": {
   "inst_own_pct": 93.46,
   "inst_own_trend": "rising",
@@ -1747,6 +1769,28 @@
   "moat_source": "https://www.pharmexec.com/view/jp-morgan-2026-preview-merck-prepares-patent-cliff",
   "moat_summary": "Keytruda (~40% of pharma revenue, ~$29.5B in 2024 sales) faces core US patent expiry in 2028, threatening up to 30% of total company revenue from biosimilar competition despite Merck's efforts to extend exclusivity via new formulations and follow-on patents.",
   "moat_verdict": "eroding"
+ },
+ "MRNA": {
+  "inst_own_pct": 75.33,
+  "inst_own_trend": null,
+  "inst_own_summary": "MarketBeat 13F data shows 75.33% institutional ownership of Moderna; Fintel counts 1,844 institutions holding 263.06M shares, with Baillie Gifford, Vanguard, BlackRock and Flagship among top holders.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NASDAQ/MRNA/institutional-ownership/",
+  "moat_verdict": null,
+  "moat_summary": "No usable Morningstar moat assessment of Moderna turned up in the search; only general 2026 strategy items (mNEXSPIKE uptake, up to 10% revenue growth guidance).",
+  "moat_source": null,
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "MRSH": {
+  "inst_own_pct": 91.92,
+  "inst_own_trend": null,
+  "inst_own_summary": "MarketBeat shows 91.92% institutional ownership of Marsh McLennan (insiders 0.95%); BlackRock is the largest holder at 8.81%.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NYSE/MRSH/institutional-ownership/",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar rates Marsh McLennan narrow moat, calling it a tollbooth-like broker with sticky client relationships and fair value of $157; it is the largest broker (about $23B revenue) with 27.1% operating margin versus Aon 24.5%.",
+  "moat_source": "https://www.morningstar.com/stocks/marsh-mclennan-earnings-strong-growth-margin-improvement-continues",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "MRVL": {
   "inst_own_pct": 79.25,
@@ -1825,6 +1869,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "NDAQ": {
+  "inst_own_pct": 72.47,
+  "inst_own_trend": null,
+  "inst_own_summary": "About 72.47% of Nasdaq Inc is institutionally owned per 13F data (1,098 institutions holding 478.75M shares), with Vanguard, Investor AB and BlackRock leading.",
+  "inst_own_source": "https://fintel.io/so/us/ndaq",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar says Nasdaq's options exchanges are strong, but its equity exchange business has steadily lost share for years to MEMX, MIAX Pearl and the Texas Stock Exchange (launched 2026). Core equities are eroding while other segments hold up, so overall stable.",
+  "moat_source": "https://www.morningstar.com/company-reports/1477372-revenue-growth-continues-to-power-nasdaq",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "NEE": {
   "inst_own_pct": 85.0,
   "inst_own_source": "https://fintel.io/so/us/nee",
@@ -1847,6 +1902,17 @@
   "moat_summary": "Newmont's moat comes from being the world's largest gold producer by scale/reserves, with copper byproduct credits lowering its all-in-sustaining costs, though as a commodity price-taker its moat is limited to cost-curve position rather than pricing power.",
   "moat_verdict": "stable"
  },
+ "NET": {
+  "inst_own_pct": 69.1,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "Cloudflare institutional ownership is 69.1% across 1,097 institutions per Q1 2026 13Fs (VCP Scanner); institutions bought 146.3M and sold 163.1M shares recently, other sources show up to 78%.",
+  "inst_own_source": "https://vcpscanner.com/stock/net/institutional-holders",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar rates Cloudflare narrow moat (switching costs, network effects) and upgraded it in its AI-risk reassessment; over 20% of global internet traffic and a third of websites use it, though it competes with Amazon, Microsoft and Google in edge computing.",
+  "moat_source": "https://www.morningstar.com/stocks/moat-valuation-uncertainty-changes-we-reassess-our-cybersecurity-coverage-with-ai-mind",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "NFLX": {
   "inst_own_pct": 83.7,
   "inst_own_source": "https://247wallst.com/investing/2026/04/02/institutional-investors-pile-into-netflix-even-as-company-executives-head-for-the-exits/",
@@ -1858,6 +1924,28 @@
   "moat_summary": "Netflix remains the largest US streaming service (~27% share, 325M global subscribers), but its dominance is narrowing as Amazon Prime Video (~26%) and Disney+ grow, and YouTube increasingly dominates connected-TV viewing time.",
   "moat_verdict": "stable"
  },
+ "NKE": {
+  "inst_own_pct": 67.7,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "Institutional ownership of Nike rose to 67.7% in December 2025 from 65.8% in September 2025 (Fintel/13F); another source shows 64.25%, with Vanguard at 7.83%.",
+  "inst_own_source": "https://fintel.io/so/us/nke",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar maintains a Wide moat on Nike's brand and pricing power, the largest athletic footwear brand in all major categories, even amid a troubled 2026 (weak product, strained wholesale ties, slow turnaround).",
+  "moat_source": "https://finance.yahoo.com/markets/stocks/articles/nike-continues-troubled-2026-potential-145322250.html",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "NOC": {
+  "inst_own_pct": 83.4,
+  "inst_own_trend": null,
+  "inst_own_summary": "Northrop Grumman is 83.40% institutionally owned per 13F data (1,828 institutions holding 117.25M shares); 12-month inflows $15.58B vs outflows $4.64B, a net-buying tilt.",
+  "inst_own_source": "https://fintel.io/so/us/noc",
+  "moat_verdict": "durable",
+  "moat_summary": "Wide moat from product complexity, classified programs like B-21 and few alternative suppliers; record backlog near $95-96B and a Q2 2026 $7.6B Sentinel surge widen the moat.",
+  "moat_source": "https://www.morningstar.com/company-reports/1500265-northrop-grumman-is-well-positioned-for-growing-opportunity-in-space-missiles-and-aircraft",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "NOW": {
   "inst_own_pct": 83.4,
   "inst_own_source": "https://businessquant.com/stocks/now/institutional-ownership/",
@@ -1868,6 +1956,17 @@
   "moat_source": "https://simplywall.st/stocks/us/software/nyse-now/servicenow/news/is-servicenows-now-ai-native-workflow-push-quietly-rewiring",
   "moat_summary": "ServiceNow's Now Assist AI product exceeded $600M in annual contract value in 2025 and is tracking toward $1B+ in 2026, deepening the platform's workflow-centrality and switching costs that underpin its moat.",
   "moat_verdict": "durable"
+ },
+ "NSC": {
+  "inst_own_pct": 75.1,
+  "inst_own_trend": null,
+  "inst_own_summary": "Norfolk Southern has 75.10% institutional ownership per 13F filings (1,865 institutions, 192.36M shares); BlackRock is largest at 6.80%.",
+  "inst_own_source": "https://fintel.io/so/us/nsc",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar's wide moat rests on cost advantage and efficient scale from hard-to-replicate rail assets; the wide moat was reaffirmed ('remains on the rails') amid Union Pacific's merger interest.",
+  "moat_source": "https://www.morningstar.com/stocks/norfolk-southerns-wide-moat-remains-rails",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "NTRA": {
   "inst_own_pct": 99.9,
@@ -1924,6 +2023,39 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "ODFL": {
+  "inst_own_pct": 80.19,
+  "inst_own_trend": null,
+  "inst_own_summary": "Old Dominion is 80.19% institutionally owned per recent data (other sources 78-79%; 939 institutions holding 163.48M shares).",
+  "inst_own_source": "https://fintel.io/so/us/odfl",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar upgraded ODFL from no moat to narrow on a freight density advantage built from decades of terminal investment; it is the second-largest US LTL carrier after FedEx Freight and keeps taking share.",
+  "moat_source": "https://www.morningstar.com/stocks/old-dominion-upgrading-moat-narrow-robust-freight-density-advantage",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "OKE": {
+  "inst_own_pct": 69.13,
+  "inst_own_trend": null,
+  "inst_own_summary": "ONEOK institutional ownership is 69.13% per the most recent 13F data (1,766 institutions, 495.63M shares); older readings ranged 55-75%.",
+  "inst_own_source": "https://fintel.io/so/us/oke",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar reaffirmed a narrow moat: about 90% fee-based earnings, 80-90% investment-grade customers and NGL scale; $500M of Magellan synergies realized with $150M more expected in 2026.",
+  "moat_source": "https://www.morningstar.com/company-reports/1254114-oneok-we-reaffirm-our-narrow-moat-rating-after-fresh-look-shares-overvalued",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "ON": {
+  "inst_own_pct": 97.7,
+  "inst_own_trend": null,
+  "inst_own_summary": "MarketBeat shows 97.70% institutional ownership of ON Semiconductor; Fintel counts 1,570 institutions holding 516.5M shares, led by FMR, Vanguard and BlackRock.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NASDAQ/ON/institutional-ownership",
+  "moat_verdict": null,
+  "moat_summary": "No usable Morningstar moat rating or competitive analysis for ON Semiconductor turned up in the search results.",
+  "moat_source": null,
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "ORCL": {
   "inst_own_pct": 44.1,
   "inst_own_source": "https://www.quiverquant.com/stock/ORCL/institutions/",
@@ -1934,6 +2066,28 @@
   "moat_source": "https://www.morningstar.com/stocks/oracle-despite-some-ai-benefits-lowering-moat-rating-disruption-threat",
   "moat_summary": "Morningstar downgraded Oracle's economic moat rating from wide to narrow, citing AI's potential to disrupt Oracle's traditional database/enterprise-software business even as its OCI cloud-infrastructure revenue grows fast (77% YoY in FY2026).",
   "moat_verdict": "eroding"
+ },
+ "ORLY": {
+  "inst_own_pct": 83.17,
+  "inst_own_trend": null,
+  "inst_own_summary": "O'Reilly is 83.17% institutionally owned (other sources up to 85-86%); 2,453 institutions hold 811.0M shares and Vanguard holds about 9-9.5%.",
+  "inst_own_source": "https://fintel.io/so/us/orly",
+  "moat_verdict": "durable",
+  "moat_summary": "Wide moat from a hub-and-spoke network of 30+ distribution centers, nearly 400 hub stores and 6,300+ stores, with a balanced DIY/professional mix (49%/49% of nearly $18B FY2025 sales) and roughly 20% operating margins.",
+  "moat_source": "https://www.morningstar.com/company-reports/1483900-entrenched-hub-and-spoke-density-anchors-wide-moat-oreillys-dual-market-dominance",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "OXY": {
+  "inst_own_pct": 50.0,
+  "inst_own_trend": null,
+  "inst_own_summary": "Institutions hold around 50% of Occidental per Simply Wall St; 1,162 institutions hold 764.7M shares per Fintel, and Berkshire Hathaway is the top holder (a large controlling-style stake).",
+  "inst_own_source": "https://finance.yahoo.com/news/50-institutional-ownership-occidental-petroleum-130016939.html",
+  "moat_verdict": null,
+  "moat_summary": "Morningstar rates Occidental's economic moat 'None' because of its position on the cost curve and a thin margin of safety, with High uncertainty and more debt than peers; Delaware Basin efficiency and downstream/midstream are positives. No moat to trend either way.",
+  "moat_source": "https://www.morningstar.com/stocks/occidental-earnings-guidance-revisions-wont-stop-deleveraging",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "PANW": {
   "inst_own_pct": 79.82,
