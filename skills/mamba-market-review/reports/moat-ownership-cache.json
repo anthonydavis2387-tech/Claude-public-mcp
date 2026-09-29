@@ -2551,6 +2551,17 @@
   "last_deep_check": "2026-09-29",
   "last_quick_check": "2026-09-29"
  },
+ "SYK": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited roughly 77% institutional ownership from 13F data but did not tie the figure to a single named result, so it is not recorded; top holders are Vanguard, BlackRock, State Street.",
+  "inst_own_source": null,
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar rates Stryker wide-moat, citing top-tier positions in orthopedic implants, surgical instruments, endoscopy and neurovascular plus a long innovation record and switching costs.",
+  "moat_source": "https://www.morningstar.com/company-reports/1190308-strykers-consistent-innovation-supports-wide-economic-moat",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "T": {
   "inst_own_pct": 57.1,
   "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/t/ownership",
@@ -2561,6 +2572,28 @@
   "moat_source": "https://about.att.com/story/2026/att-fiber-opensignal-report.html",
   "moat_summary": "AT&T's fiber footprint (38M+ locations, densest in the US, boosted by the Lumen Mass Markets acquisition) wins share from cable where deployed, but wireless remains highly competitive against T-Mobile and Verizon.",
   "moat_verdict": "stable"
+ },
+ "TDG": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited about 95.8% institutional ownership (1,820 13F filers; 813 buyers vs 513 sellers over 12 months) but not attributable to one named result, so no figure recorded; inflows exceeded outflows.",
+  "inst_own_source": null,
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar assigns TransDigm a wide moat built on proprietary aftermarket IP; roughly three-fourths of sales are sole-source, with FAA certification creating high switching costs.",
+  "moat_source": "https://www.morningstar.com/stocks/transdigms-business-model-remains-success",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "TEAM": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary gave conflicting figures (about 59.6% vs 94.5%) without clear per-result attribution, so none recorded; 1,292 13F filers, Vanguard, BlackRock and Baillie Gifford are top holders.",
+  "inst_own_source": null,
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar holds Atlassian at narrow moat ('Entering the AI Age With Narrow Moat Intact'), with Jira/Confluence moving upmarket to enterprise; AI disruption is the watch item.",
+  "moat_source": "https://www.morningstar.com/company-reports/1494204-entering-the-ai-age-with-narrow-moat-intact",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "TER": {
   "inst_own_pct": 99.77,
@@ -2628,6 +2661,17 @@
   "moat_summary": "T-Mobile's network-performance lead (fastest 5G speeds and broadest coverage per Ookla/Opensignal) plus rapid Fixed Wireless Access broadband expansion continue to drive postpaid market-share gains over AT&T and Verizon.",
   "moat_verdict": "durable"
  },
+ "TRGP": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited about 92% institutional ownership (992 13F filers, top holders Vanguard, BlackRock, Wellington) but not tied to a single named result, so no figure recorded.",
+  "inst_own_source": null,
+  "moat_verdict": null,
+  "moat_summary": "No Morningstar moat rating was found in results; non-Morningstar analysis cites Permian density, integrated Grand Prix NGL pipeline to Mont Belvieu fractionation and export dock, and hard-to-replicate rights-of-way.",
+  "moat_source": "https://www.morningstar.com/stocks/XNYS/TRGP/quote",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "TRI": {
   "inst_own_pct": null,
   "inst_own_trend": null,
@@ -2639,6 +2683,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "TRV": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited about 82% (13F) with Simply Wall St headlines of 84-88%, but no figure was attributable to one named result, so none recorded; Vanguard is largest at 9.4%.",
+  "inst_own_source": null,
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar gives Travelers a narrow moat from the strength of its commercial insurance operations; catastrophe and weather-loss exposure adds volatility.",
+  "moat_source": "https://www.morningstar.com/company-reports/1110547-the-strength-of-travelers-commercial-insurance-operations-gives-it-a-narrow-economic-moat",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "TSLA": {
   "inst_own_pct": 42.81,
   "inst_own_source": "https://www.gurufocus.com/term/inst-ownership/TSLA",
@@ -2649,6 +2704,17 @@
   "moat_source": "https://www.fool.com/investing/2026/03/22/here-are-teslas-top-competitors-in-2026/",
   "moat_summary": "Tesla's U.S. EV market share dropped to 43.9% for full-year 2025 (its first time below 50%, down from ~80% in 2019) as deliveries fell 9% while the global EV market grew 26%, with Lucid and XPeng each posting triple-digit growth in competing segments.",
   "moat_verdict": "eroding"
+ },
+ "TSM": {
+  "inst_own_pct": null,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "Search summary said institutional ownership of ADRs rose 5.88% for the June 30, 2026 period (FMR largest, 3,118 13F filers), but the ~16.5% figure was not attributable to one named result, so no percentage recorded; low % reflects most shares held on Taiwan exchange.",
+  "inst_own_source": null,
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar rates TSMC wide-moat, with about 70% foundry market share in 2025 and leading-edge process pricing power; it raised fair value to $534 per ADR.",
+  "moat_source": "https://www.morningstar.com/stocks/taiwan-semiconductor-earnings-raising-fair-value-estimate-after-beat-and-raise-quarter",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "TXN": {
   "inst_own_pct": 97.31,
@@ -2716,6 +2782,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "USB": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited about 77.6% (other sources 81-82%) but not tied to one named result, so no figure recorded; Berkshire Hathaway holds about 19% and Vanguard 9.2%.",
+  "inst_own_source": null,
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar says U.S. Bancorp's moat widened to wide, as the largest non-G-SIB US bank with strong efficiency and returns; payments competition is a headwind and the efficiency gap has narrowed.",
+  "moat_source": "https://www.morningstar.com/stocks/us-bancorps-moat-widens",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "V": {
   "inst_own_pct": 77.24,
   "inst_own_source": "https://www.gurufocus.com/term/InstitutionalOwnership/%20V",
@@ -2737,6 +2814,17 @@
   "moat_source": "https://koalagains.com/stocks/NYSE/VLO/business-and-moat",
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
+ },
+ "VRT": {
+  "inst_own_pct": null,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "Search summary cited about 89.9% but not attributable to one named result, so no figure recorded; last quarter showed institutions buying 202.2M shares and selling 379.8M (net selling).",
+  "inst_own_source": null,
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar (April 2026) calls Vertiv's narrow moat strengthening via co-development of data center equipment with leading suppliers; over 80% of revenue is data center, backed by a large installed base and service network.",
+  "moat_source": "https://www.morningstar.com/company-reports/1467537-vertivs-moat-is-strengthening-as-it-co-develops-data-center-equipment-with-leading-suppliers",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  },
  "VRTX": {
   "inst_own_pct": 93.79,
@@ -2771,6 +2859,17 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28"
  },
+ "WDAY": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited about 82.65% institutional ownership but not tied to one named result, so no figure recorded; top holders Vanguard, BlackRock, State Street.",
+  "inst_own_source": null,
+  "moat_verdict": "eroding",
+  "moat_summary": "Morningstar cut Workday's moat to narrow from wide in March 2026 on AI/LLM disruption risk, and it was removed from the Wide Moat Focus Index; agentic AI ARR nears $600M.",
+  "moat_source": "https://www.morningstar.com/stocks/workday-with-potential-ai-disruption-we-downgrade-moat-rating-fair-value-estimate",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "WDC": {
   "inst_own_pct": 95.03,
   "inst_own_source": "https://fintel.io/so/us/wdc",
@@ -2804,6 +2903,28 @@
   "moat_summary": "The Fed's 2025 removal of Wells Fargo's $1.95T asset cap (in place since the 2018 fake-accounts scandal) restores its ability to compete on scale after 7 constrained years; its low-cost deposit base and Western/Southern US brand remain intact underlying advantages.",
   "moat_verdict": "stable"
  },
+ "WM": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited about 80-83% (Yahoo/Simply Wall St headlines say 83%) but no figure was attributable to one named result, so none recorded; Vanguard holds 9.5%.",
+  "inst_own_source": null,
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar rates Waste Management wide-moat from landfill permits and route density, with strong pricing power; the Advanced Disposal and Stericycle acquisitions extended its leadership.",
+  "moat_source": "https://www.morningstar.com/company-reports/1447046-wms-moat-gives-it-strong-pricing-power-increasing-fve-to-210",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
+ "WMB": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited about 86.4% (Simply Wall St headlines 87-89%) but not tied to one named result, so no figure recorded; Vanguard 11%, BlackRock 8.7%.",
+  "inst_own_source": null,
+  "moat_verdict": "stable",
+  "moat_summary": "No Morningstar rating text was returned; per an Investing.com SWOT summary, the Transco pipeline is irreplaceable and 2026 capex is fully contracted, though record pipeline buildout risks overcapacity.",
+  "moat_source": "https://www.investing.com/news/swot-analysis/williams-companies-swot-analysis-midstream-stock-eyes-power-growth-93CH-4708019",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "WMT": {
   "inst_own_pct": 35.9,
   "inst_own_source": "https://vcpscanner.com/stock/wmt/institutional-holders",
@@ -2815,6 +2936,17 @@
   "moat_summary": "Walmart holds a Morningstar wide-moat rating (GuruFocus moat score 8-9) backed by roughly two-thirds share of the U.S. superstore/warehouse-club market and a leading ~31% online grocery share, driven by scale-based cost leadership.",
   "moat_verdict": "durable"
  },
+ "XEL": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary cited about 78.4% (other sources 79-90%) but not attributable to one named result, so no figure recorded; Vanguard, BlackRock and State Street lead.",
+  "inst_own_source": null,
+  "moat_verdict": "stable",
+  "moat_summary": "Described as a wide-moat regulated utility (government-sanctioned monopoly) in a Seeking Alpha piece, not confirmed from Morningstar text; $60B 2026-2030 capex on data-center demand, with wildfire liability the key risk.",
+  "moat_source": "https://seekingalpha.com/article/4874696-xcel-energy-a-wide-moat-and-growing-dividends",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
+ },
  "XOM": {
   "inst_own_pct": 66.61,
   "inst_own_source": "https://www.wallstreetzen.com/stocks/us/nyse/xom/ownership",
@@ -2825,5 +2957,16 @@
   "moat_source": "https://finance.yahoo.com/sectors/energy/articles/exxonmobils-permian-advantage-low-breakeven-153200191.html",
   "moat_summary": "Lowest-cost-producer moat backed by $15.6B in cumulative structural cost savings since 2019 and a Permian asset base with double the low-cost drilling locations of its nearest competitor; advantaged-barrel mix (Permian/Guyana/LNG) rose from 52% to 59% of production.",
   "moat_verdict": "durable"
+ },
+ "ZS": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Search summary said 828 filers held about 50.3% as of Dec 2025 but not tied to one named result, so no figure recorded; Vanguard held 6.88%.",
+  "inst_own_source": null,
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar gives Zscaler a narrow moat on switching costs and network effects with strong retention; its platform is narrower than CrowdStrike and Palo Alto, and hyperscalers offer competing security.",
+  "moat_source": "https://www.morningstar.com/company-reports/1498430-zscaler-is-a-network-security-leader-with-an-impressive-product-portfolio",
+  "last_deep_check": "2026-09-29",
+  "last_quick_check": "2026-09-29"
  }
 }
