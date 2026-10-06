@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Searches returned little verified data for Oct 6; Europe's STOXX 600 rose 0.7% on Friday Oct 2",
+    "Oil: Brent has held above $100 since Sept 3 amid a prolonged Mideast conflict (per late-September reports)",
+    "Asia, China and Latin America: no reliable Oct 6 closing figures found tonight"
+  ],
+  "on_notice": [
+    "Middle East supply risk: reports describe a prolonged conflict keeping Brent elevated; watch overnight crude.",
+    "Latin America: Ibovespa was 185,229 (-0.41%) and USD/BRL 5.14 as of Sept 20, the latest Rio Times figures found; check for newer moves.",
+    "China: the latest Shanghai Composite figure found was 3,931 (Aug 31); stale, so confirm current levels."
+  ],
+  "regions": {
+    "asia": {"headline": "No reliable Oct 6 Asia closing data found.", "detail": "One search result quoted implausible index levels that conflict with recent sessions, so no Asian figures are reported tonight.", "sources": []},
+    "china": {"headline": "No usable Oct 6 China data.", "detail": "The most recent Shanghai Composite reading found was 3,931, down 0.5% on Aug 31, which is stale.", "sources": [{"name": "Trading Economics China", "url": "https://tradingeconomics.com/china/stock-market/news/579328"}]},
+    "europe": {"headline": "STOXX 600 rose 0.7% on Friday Oct 2.", "detail": "No Oct 6 close was found. The latest verified figure is the pan-European STOXX 600 gaining 0.7% on Friday, Oct 2.", "sources": [{"name": "QNA European stocks close higher", "url": "https://qna.org.qa/en/News-Area/News/2026-10/2/european-stocks-close-higher"}]},
+    "latam": {"headline": "Latest Latin America figures are from Sept 20.", "detail": "Rio Times showed the Ibovespa at 185,229.17 (-0.41%), USD/BRL at 5.14 and USD/MXN at 17.22 on Sept 20. Nothing newer was found.", "sources": [{"name": "Rio Times Rio daily brief Sept 20", "url": "https://www.riotimesonline.com/rio-de-janeiro-daily-brief-for-sunday-september-20-2026/"}]},
+    "mideast": {"headline": "Prolonged Mideast conflict keeps oil supply worries alive.", "detail": "Late-September reports say oil rose on fears of a prolonged Middle East conflict, with Brent holding above $100 since Sept 3. No dated Oct 6 oil quote was found.", "sources": [{"name": "NST Oil rises on prolonged Mideast conflict", "url": "https://www.nst.com.my/amp/business/economy/2026/09/1528051/oil-rises-risks-prolonged-mideast-conflict-heighten-supply-worries"}]}
+  }
+}
