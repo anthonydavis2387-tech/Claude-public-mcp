@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Searches returned no verified Oct 7 closes for Asia, Europe, China or Latin America",
+    "Oil: last dated settlement found was Brent $104.61 / WTI $100.05 on Sept 12 amid Hormuz/Red Sea worries",
+    "Mainland China markets are normally shut for Golden Week early October (2026 schedule unconfirmed)"
+  ],
+  "on_notice": [
+    "Oil: Kalshi Brent contracts for Oct 9 imply traders expect roughly $100, but these are odds, not prices; confirm the live quote.",
+    "Middle East: maritime security concerns around Hormuz and the Red Sea were the cited driver of the September highs near $107-109.",
+    "China: confirm whether mainland exchanges reopened after the National Day holiday before reading any Shanghai levels."
+  ],
+  "regions": {
+    "asia": {"headline": "No Oct 7 Asia closing data found.", "detail": "Latest 2026 reports found were Aug 12 (Nikkei 67,524, Hang Seng 25,440), too old to describe current conditions.", "sources": [{"name": "RTHK Aug 12", "url": "https://news.rthk.hk/rthk/en/component/k2/1865904-20260812.htm"}]},
+    "china": {"headline": "No usable Oct 7 China data; Golden Week may have kept mainland markets closed.", "detail": "Latest Shanghai Composite found was 3,956.6 on Aug 27. The 2026 holiday schedule was not confirmed.", "sources": [{"name": "Yicai Global", "url": "https://www.yicaiglobal.com/news/chinese-stocks-end-mixed-as-cicc-says-a-shares-have-reached-second-buying-opportunity-of-2026"}]},
+    "europe": {"headline": "No Oct 7 Europe close found.", "detail": "Latest dated figure found was Aug 4: STOXX 600 +0.5% to 652.09, DAX +1.59%, FTSE 100 -0.1%.", "sources": [{"name": "QNA Aug 4", "url": "https://qna.org.qa/en/News-Area/News/2026-8/4/european-stocks-close-higher"}]},
+    "latam": {"headline": "No dated Oct 7 Latin America figures found.", "detail": "Rio Times pages showed undated, conflicting tickers, so no levels are reported.", "sources": []},
+    "mideast": {"headline": "Oil last dated at Brent $104.61 on Sept 12; Oct 7 quote not found.", "detail": "On Sept 12 Brent settled $104.61 (-2.81%) and WTI $100.05 (-2.37%), after touching $107-109 earlier that week on Hormuz and Red Sea concerns. Kalshi odds for early October pointed to Brent near $100.", "sources": [{"name": "PSU Connect Sept 12", "url": "https://www.psuconnect.in/market/crude-oil-price-today-12-september-2026-brent-holds-near-104-wti-at-100"}]}
+  }
+}
