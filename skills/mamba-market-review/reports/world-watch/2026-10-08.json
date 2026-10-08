@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Oil: Brent reported above $104 on Hormuz shipping attacks and reports of possible new US strikes on Iran",
+    "US: S&P 500 and Nasdaq down a second day as the AI trade weakens (Yahoo Finance live blog)",
+    "No verified Oct 8 closes found for Asia, Europe or Latin America"
+  ],
+  "on_notice": [
+    "Oil: Brent above $104 per search snippet; watch Hormuz shipping attacks and any US-Iran strike headlines overnight.",
+    "Gulf of Mexico: producers reportedly cut output ahead of a tropical storm, a further supply risk.",
+    "China: mainland markets were closed Oct 1-7 for National Day; Oct 8 is the first session back after the break, with the latest stimulus in focus."
+  ],
+  "regions": {
+    "asia": {"headline": "No Oct 8 Asia closing data found.", "detail": "Latest dated item found was an Oct 1 morning note: Nikkei +2.19% while mainland China and Hong Kong were on holiday. No closing levels reported.", "sources": [{"name": "Search: Asia close (newsonair / Axis Direct note)", "url": "https://newsonair.gov.in/asian-and-european-stock-markets-close-mixed-today"}]},
+    "china": {"headline": "First session after National Day break; no Oct 8 close found.", "detail": "Shanghai Composite last closed at 3,842.2 (+0.31%) on Sept 30, down 3.61% for September. Markets were shut Oct 1-7. Policymakers recently unveiled mortgage subsidies and expanded central bank funding support.", "sources": [{"name": "Trading Economics", "url": "https://tradingeconomics.com/china/stock-market/news/588052"}]},
+    "europe": {"headline": "No Oct 8 Europe close found.", "detail": "Latest 2026 close found was Fri Oct 2: European stocks closed higher, STOXX 600 +0.7%. Index levels were not available.", "sources": [{"name": "QNA Oct 2", "url": "https://qna.org.qa/en/News-Area/News/2026-10/2/european-stocks-close-higher"}]},
+    "latam": {"headline": "No Oct 8 Latin America figures found.", "detail": "Latest Rio Times figures are Sept 23: Ibovespa +0.44% to 187,423, Mexico IPC +1.45%, COLCAP +0.90%, Merval -0.04%. Stale; not current.", "sources": [{"name": "Rio Times Sept 23", "url": "https://riotimesonline.com/brazil-markets-ibovespa-real-wednesday-september-23-2026"}]},
+    "mideast": {"headline": "Brent reported above $104 on Hormuz attacks and Iran strike reports.", "detail": "A Yahoo Finance live blog says Brent rose above $104 after reports the President is weighing more strikes on Iran before the midterms, with attacks on Gulf and Hormuz shipping increasing. The same blog had S&P 500 -0.47% at 7,765.36 and Nasdaq -1.25%. Quote is from a search snippet and not independently confirmed.", "sources": [{"name": "Yahoo Finance Oct 8", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-8-dow-sp-500-nasdaq-080537884.html"}, {"name": "Yahoo Finance Oct 7", "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html"}]}
+  }
+}
