@@ -2968,5 +2968,16 @@
   "moat_source": "https://www.morningstar.com/company-reports/1498430-zscaler-is-a-network-security-leader-with-an-impressive-product-portfolio",
   "last_deep_check": "2026-09-29",
   "last_quick_check": "2026-09-29"
+ },
+ "EBAY": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "No current aggregate institutional-ownership percentage surfaced in a fresh search; the one tracker returned (Insiderset) showed only stale 2023 13F activity, so no figure is quoted.",
+  "inst_own_source": "https://www.insiderset.com/investors/stocks/ebay/ownership-changes",
+  "moat_verdict": "stable",
+  "moat_summary": "Enthusiast-category depth (about 16M enthusiast buyers per Morningstar) and rising first-party ad revenue defend the franchise, but cross-border share has slid against Temu and Amazon and niche platforms (Vinted, StockX) are drawing listings.",
+  "moat_source": "https://morningstar.ca/ca/news/247004/ebay-stock-of-the-week.aspx",
+  "last_deep_check": "2026-10-08",
+  "last_quick_check": "2026-10-08"
  }
 }
