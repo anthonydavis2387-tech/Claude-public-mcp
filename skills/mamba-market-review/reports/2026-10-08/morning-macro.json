@@ -1,0 +1,208 @@
+{
+ "date": "2026-10-08",
+ "session": "morning-macro",
+ "generated_at": "2026-10-08T14:05:00Z",
+ "futures": [
+  {
+   "symbol": "ES",
+   "name": "E-Mini S&P 500",
+   "last": 7830.75,
+   "chg_pct": -0.28,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NQ",
+   "name": "Nasdaq 100",
+   "last": 31192.25,
+   "chg_pct": -0.67,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "YM",
+   "name": "Mini Dow Jones Industrial Average Index",
+   "last": 51398,
+   "chg_pct": -0.1,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "RTY",
+   "name": "Micro E-mini Russell 2000 Index Futures",
+   "last": 2799.8,
+   "chg_pct": -0.44,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZB",
+   "name": "30 Year U.S. Treasury Bond Futures",
+   "last": 102.25,
+   "chg_pct": 0.03,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZN",
+   "name": "10-Year T-Note Futures",
+   "last": 104.40625,
+   "chg_pct": -0.07,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZF",
+   "name": "Five-Year US Treasury Note",
+   "last": 103.52344,
+   "chg_pct": -0.09,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZT",
+   "name": "2-Year T-Note Futures",
+   "last": 101.82813,
+   "chg_pct": -0.06,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "CL",
+   "name": "Crude Oil",
+   "last": 92.27,
+   "chg_pct": 4.52,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BZ",
+   "name": "Brent Crude Oil",
+   "last": 104.78,
+   "chg_pct": 4.57,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NG",
+   "name": "Natural Gas",
+   "last": 3.214,
+   "chg_pct": 0.34,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "RB",
+   "name": "Gasoline RBOB",
+   "last": 3.1795,
+   "chg_pct": 3.53,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "HO",
+   "name": "Heating Oil",
+   "last": 4.8376,
+   "chg_pct": 4.65,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "GC",
+   "name": "Gold Futures",
+   "last": 4154.7,
+   "chg_pct": 0.34,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "SI",
+   "name": "Silver Futures",
+   "last": 59.455,
+   "chg_pct": -1.39,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HG",
+   "name": "Copper",
+   "last": 6.6083,
+   "chg_pct": -0.62,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "PL",
+   "name": "Platinum",
+   "last": 1649.6,
+   "chg_pct": -0.01,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "PA",
+   "name": "Palladium",
+   "last": 1123.75,
+   "chg_pct": -0.29,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZM",
+   "name": "Soybean Meal Futures",
+   "last": 360.25,
+   "chg_pct": -1.52,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "CC",
+   "name": "Cocoa",
+   "last": 5557,
+   "chg_pct": -2.51,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "DX",
+   "name": "US Dollar",
+   "last": 102.045,
+   "chg_pct": 0.03,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BTC",
+   "name": "Bitcoin USD",
+   "last": 82201.01,
+   "chg_pct": -1.29,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "ETH",
+   "name": "Ethereum USD",
+   "last": 2523.38,
+   "chg_pct": -1.94,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "VIX",
+   "name": "CBOE Volatility Index",
+   "last": 15.43,
+   "chg_pct": 2.32,
+   "trend_flag": "green"
+  }
+ ],
+ "bitcoin": {
+  "price": 82201.01,
+  "chg_pct": -1.29,
+  "year_high": 126296,
+  "year_low": 57717.55,
+  "avg50": 80280.07,
+  "avg200": 71728.984,
+  "move_7d_pct": -3.26,
+  "move_30d_pct": 4.63,
+  "move_90d_pct": 28.0,
+  "ytd_pct": -6.19
+ },
+ "unavailable": [
+  "SR3",
+  "VX",
+  "ZC",
+  "ZW",
+  "ZL",
+  "KC",
+  "LE",
+  "6E",
+  "6J",
+  "6B",
+  "6A",
+  "6C",
+  "6S",
+  "6N",
+  "SB",
+  "CT"
+ ],
+ "macro": {
+  "note": "No Oct 8 morning headlines found; Oct 6 preview: 10y 5.27%, 30y 5.63%, ~25% Oct hike odds; FMP treasury 2026-10-06 10y 5.27 30y 5.64 2y 4.79"
+ }
+}
