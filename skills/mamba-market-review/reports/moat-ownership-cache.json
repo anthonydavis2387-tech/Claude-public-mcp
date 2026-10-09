@@ -2979,5 +2979,16 @@
   "moat_source": "https://morningstar.ca/ca/news/247004/ebay-stock-of-the-week.aspx",
   "last_deep_check": "2026-10-08",
   "last_quick_check": "2026-10-08"
+ },
+ "HUM": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "No aggregate institutional-ownership percentage surfaced; one 13F tracker lists the top 10 holders at about 53% of reported 13F value and the top 25 at about 75%, and reports a large quarter-over-quarter drop in the aggregate that is unverified. Q2 2026 filings are mixed (Hancock Classic Value sold about 1.07M shares, Eagle Capital bought about 880K).",
+  "inst_own_source": "https://www.insiderset.com/investors/stocks/HUM/activity",
+  "moat_verdict": "stable",
+  "moat_summary": "Top-two Medicare Advantage insurer (sources conflict on whether it is first or second) with Stars-rating bonus economics, but the medical loss ratio rose to 93.1% and 2026 EPS guidance (about $9) came in well below prior expectations, so the position is intact but under margin pressure. No Morningstar rating was found; sources are secondary.",
+  "moat_source": "https://distilinfo.com/2026/02/12/humana-medicare-advantage-leadership/",
+  "last_deep_check": "2026-10-09",
+  "last_quick_check": "2026-10-09"
  }
 }
