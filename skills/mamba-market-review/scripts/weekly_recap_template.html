@@ -1,0 +1,198 @@
+<title>Mamba Week in Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: a weekly edition. Lead story, scoreboard of sparkline cards, day-by-day log, then sectors, movers, watchlist and next week. */
+:root{
+  --bg:#f2f3ee;--surface:#fbfbf8;--line:#cfd3c8;--ink:#17201c;--ink-soft:#46524c;--ink-faint:#717d76;
+  --accent:#1d4e5f;--accent-soft:#e0e9ec;--up:#1e6b3c;--down:#a3342a;--up-soft:#dcebe0;--down-soft:#f4dfdb;--spark:#1d4e5f;
+  --display:"Newsreader",Georgia,serif;--ui:"Source Sans 3",-apple-system,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121715;--surface:#19201d;--line:#2f3a35;--ink:#e6ebe7;--ink-soft:#b5c0ba;--ink-faint:#86928b;
+  --accent:#8cc3d4;--accent-soft:#1d2c31;--up:#6fca8f;--down:#ef8a7f;--up-soft:#1b3024;--down-soft:#3a201d;--spark:#8cc3d4;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121715;--surface:#19201d;--line:#2f3a35;--ink:#e6ebe7;--ink-soft:#b5c0ba;--ink-faint:#86928b;
+  --accent:#8cc3d4;--accent-soft:#1d2c31;--up:#6fca8f;--down:#ef8a7f;--up-soft:#1b3024;--down-soft:#3a201d;--spark:#8cc3d4;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--ui)}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:18px;padding-block:22px 64px;display:grid;gap:30px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mast{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 20px;align-items:flex-end;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.mast h1{font:700 clamp(28px,4.4vw,40px)/1.05 var(--display);margin:0;letter-spacing:-.01em}
+.mast .dates{font:600 13px var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px}
+.picker{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-faint)}
+select{font:600 14px var(--ui);padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
+.nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px}
+.label{font:700 11px var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px}
+h2.sec{font:700 22px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
+.lead h2{font:700 clamp(24px,3.4vw,32px)/1.15 var(--display);margin:0 0 10px;text-wrap:balance;max-width:30ch}
+.lead p{margin:0;max-width:72ch;color:var(--ink-soft);font-size:17px}
+.mood{display:inline-flex;gap:8px;align-items:center;margin-top:14px;font-size:14px;color:var(--ink-soft);flex-wrap:wrap}
+.pill{font:700 12px var(--ui);padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent);letter-spacing:.02em}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px 8px;display:grid;gap:2px;min-width:0;position:relative}
+.card .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.card .nm{font-weight:600;font-size:14px;line-height:1.25}
+.card .tk{font:500 11.5px var(--mono);color:var(--ink-faint)}
+.card .wk{font:600 18px var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.card .px{font:500 12px var(--mono);color:var(--ink-faint);font-variant-numeric:tabular-nums}
+.card .tv{font-size:12px}
+.card .read{font:500 11.5px var(--mono);color:var(--ink-faint);min-height:1.4em}
+svg.spark{width:100%;height:44px;display:block;overflow:visible;cursor:crosshair}
+.up{color:var(--up)}.down{color:var(--down)}
+.breadth{display:grid;gap:6px;max-width:560px}
+.bar{display:flex;height:14px;border-radius:4px;overflow:hidden;gap:2px;background:var(--bg)}
+.bar span{display:block;height:100%}
+.bar .u{background:var(--up)}.bar .d{background:var(--down)}
+.bnote{font-size:14px;color:var(--ink-soft)}
+.days{display:grid;gap:0;border-top:1px solid var(--line)}
+.day{display:grid;grid-template-columns:120px minmax(0,1fr);gap:8px 20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.day .when{font:700 17px/1.2 var(--display)}
+.day .when small{display:block;font:500 12px var(--ui);color:var(--ink-faint);margin-top:2px}
+.day .chg{display:inline-block;margin-top:6px;font:600 12.5px var(--mono);padding:2px 7px;border-radius:4px}
+.chg.up{background:var(--up-soft)}.chg.down{background:var(--down-soft)}
+.day ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.day .dash{margin-top:8px;font-size:13.5px;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:4px 16px}
+.day .dash b{font-weight:600;color:var(--ink)}
+.day .src{margin-top:6px;font-size:12.5px;color:var(--ink-faint);display:flex;flex-wrap:wrap;gap:2px 12px}
+.day .src a{color:var(--ink-faint)}
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px 24px}
+.themes h3{font:700 17px/1.25 var(--display);margin:0 0 4px}
+.themes p{margin:0;color:var(--ink-soft);font-size:15px}
+.sectors{display:grid;gap:4px;max-width:720px}
+.srow{display:grid;grid-template-columns:minmax(120px,190px) minmax(0,1fr) 64px;gap:10px;align-items:center;font-size:14px}
+.srow .track{position:relative;height:16px}
+.srow .track::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;border-left:1px solid var(--ink-faint)}
+.srow .fill{position:absolute;top:2px;height:12px;border-radius:2px}
+.srow .v{font:600 13px var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+table{border-collapse:collapse;width:100%}
+td,th{padding:6px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle;font-size:14px}
+th{font:700 11px var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint)}
+td.num{text-align:right;font:600 13px var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td .co{display:block;font-size:12.5px;color:var(--ink-faint);line-height:1.25}
+td svg.spark{height:24px;width:90px}
+a.sym{font:600 13.5px var(--mono);text-decoration:none}
+a.sym:hover{text-decoration:underline}
+.tbox{overflow-x:auto}
+.next{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.evday{margin-bottom:10px}
+.evday h4{font:700 13px var(--ui);margin:0 0 4px;letter-spacing:.04em}
+.evday ul{list-style:none;margin:0;padding:0;display:grid;gap:3px;font-size:14px}
+.evday .t{font:500 12px var(--mono);color:var(--ink-faint);margin-right:6px}
+.evday .est{color:var(--ink-faint);font-size:12.5px}
+.qs{margin:0;padding-left:20px;display:grid;gap:10px;max-width:78ch;font-size:16px}
+.foot{font-size:13px;color:var(--ink-faint);max-width:80ch;display:grid;gap:6px}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font:500 12px var(--mono);padding:4px 7px;border-radius:4px;white-space:nowrap;z-index:5}
+@media (max-width:560px){.day{grid-template-columns:1fr}.srow{grid-template-columns:110px minmax(0,1fr) 58px}}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .15s}.card:hover{border-color:var(--ink-faint)}}
+</style>
+<div class="wrap" id="app">
+  <header class="mast">
+    <div><h1>Week in Review</h1><div class="dates" id="dates"></div></div>
+    <div class="picker"><label for="wk">Week ending</label><select id="wk"></select></div>
+  </header>
+  <nav class="nav" id="nav" aria-label="Other pages"></nav>
+  <section class="lead" id="lead"></section>
+  <section><p class="label">Scoreboard</p><h2 class="sec">The indexes, Friday close to Friday close</h2><div class="cards" id="idx"></div></section>
+  <section><p class="label">Sentiment &amp; macro</p><h2 class="sec">How the market felt</h2>
+    <div class="breadth" id="breadth"></div>
+    <div class="cards" id="mac" style="margin-top:14px"></div></section>
+  <section><p class="label">Day by day</p><h2 class="sec">What happened each session</h2><div class="days" id="days"></div></section>
+  <section><p class="label">Themes</p><h2 class="sec">The stories that mattered</h2><div class="themes" id="themes"></div></section>
+  <section><p class="label">Sectors</p><h2 class="sec">Sector funds for the week</h2><div class="sectors" id="sectors"></div></section>
+  <section><p class="label">Movers</p><h2 class="sec">Biggest weekly moves in the dashboard universe</h2><div class="two" id="movers"></div></section>
+  <section><p class="label">Your watchlist</p><h2 class="sec">How your names did</h2><div class="tbox" id="watch"></div></section>
+  <section><p class="label">Next week</p><h2 class="sec">On the calendar</h2><div class="next" id="next"></div></section>
+  <section><p class="label">Think it through</p><h2 class="sec">Questions for the weekend</h2><ol class="qs" id="qs"></ol></section>
+  <footer class="foot" id="foot"></footer>
+</div>
+<div id="tip" hidden></div>
+<script id="recap-data" type="application/json">__DATA__</script>
+<script>
+const D=JSON.parse(document.getElementById('recap-data').textContent);
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TV={'^VIX':'TVC:VIX','BTCUSD':'BITSTAMP:BTCUSD'};
+const tv=s=>'https://www.tradingview.com/chart/?symbol='+encodeURIComponent(TV[s]||s);
+const ana=s=>D.urls.analyzer?D.urls.analyzer+'#t-'+s:tv(s);
+const anaSector=n=>D.urls.analyzer?D.urls.analyzer+'#sector-'+n.replace(/\s+/g,'-'):'#';
+const pct=(v,d=1)=>v==null?'—':(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(d)+'%';
+const cls=v=>v>0.05?'up':v<-0.05?'down':'';
+const dfmt=(iso,o={weekday:'short',month:'short',day:'numeric'})=>new Date(iso+'T12:00:00').toLocaleDateString('en-US',o);
+const px=v=>v>=1000?v.toLocaleString('en-US',{maximumFractionDigits:0}):v.toFixed(2);
+let SID=0;
+function spark(points,small){
+  const w=small?90:180,h=small?24:44,p=small?2:4;const ys=points.map(x=>x[1]);
+  const lo=Math.min(...ys),hi=Math.max(...ys),rng=hi-lo||1;
+  const X=i=>p+i*(w-2*p)/(points.length-1),Y=v=>h-p-(v-lo)*(h-2*p)/rng;
+  const path=points.map((pt,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(pt[1]).toFixed(1)).join(' ');
+  const up=ys[ys.length-1]>=ys[0];const col=up?'var(--up)':'var(--down)';const id='s'+(SID++);
+  const base=Y(ys[0]).toFixed(1);
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" data-pts='${esc(JSON.stringify(points))}' role="img" aria-label="Closing prices ${esc(points.map(x=>x[0].slice(5)+' '+px(x[1])).join(', '))}">
+    <line x1="${p}" x2="${w-p}" y1="${base}" y2="${base}" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 3" vector-effect="non-scaling-stroke"/>
+    <path d="${path} L${X(points.length-1).toFixed(1)} ${h} L${X(0).toFixed(1)} ${h} Z" fill="${col}" opacity=".08"/>
+    <path d="${path}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    ${small?'':`<circle cx="${X(points.length-1).toFixed(1)}" cy="${Y(ys[ys.length-1]).toFixed(1)}" r="3" fill="${col}"/>`}</svg>`;
+}
+function card(it){
+  const last=it.points[it.points.length-1][1];
+  return `<div class="card"><div class="top"><div><div class="nm">${esc(it.label)}</div><div class="tk">${esc(it.s.replace('^',''))}</div></div>
+   <div class="wk ${cls(it.week_pct)}">${pct(it.week_pct)}</div></div>${spark(it.points)}
+   <div class="top"><span class="px">${px(last)}</span><a class="tv" href="${tv(it.s)}" target="_blank" rel="noopener">5-day chart ↗</a></div></div>`;
+}
+function render(w){
+  SID=0;
+  $('dates').textContent=dfmt(w.week_start,{month:'long',day:'numeric'})+' – '+dfmt(w.week_end,{month:'long',day:'numeric',year:'numeric'});
+  const n=w.notes;
+  $('nav').innerHTML=[['Dashboard',D.urls.dashboard],['10-Point Analyzer',D.urls.analyzer],['World Watch',D.urls.worldwatch]].filter(x=>x[1]).map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join('');
+  $('lead').innerHTML=`<p class="label">The week in one read</p><h2>${esc(n.headline)}</h2><p>${esc(n.summary)}</p>${n.mood?`<div class="mood"><span class="pill">${esc(n.mood)}</span></div>`:''}`;
+  $('idx').innerHTML=w.indexes.map(card).join('');
+  const b=w.breadth;const upw=(b.up/b.total*100).toFixed(1);
+  $('breadth').innerHTML=`<div class="bnote"><b class="up">${b.up}</b> of ${b.total} tracked names rose for the week, <b class="down">${b.total-b.up}</b> fell.</div>
+   <div class="bar" role="img" aria-label="${b.up} up, ${b.total-b.up} down"><span class="u" style="width:${upw}%"></span><span class="d" style="flex:1"></span></div>
+   ${n.mood_detail?`<div class="bnote">${esc(n.mood_detail)}</div>`:''}`;
+  $('mac').innerHTML=w.macro.map(card).join('');
+  $('days').innerHTML=w.days.map(d=>{
+    const nd=(n.days||[]).find(x=>x.date===d)||{};const dd=(w.daily||[]).find(x=>x.date===d)||{};
+    const link=s=>`<a class="sym" href="${ana(s)}" target="_blank" rel="noopener">${s}</a>`;
+    const dash=dd.saved?`<div class="dash"><span>Dashboard: <b>${dd.advancers}</b> of ${dd.names} up</span>${dd.vix!=null?`<span>VIX <b>${dd.vix}</b></span>`:''}${dd.ust10y!=null?`<span>10-yr <b>${dd.ust10y}%</b></span>`:''}
+      <span>Best ${dd.best.map(x=>link(x[0])+' '+pct(x[1])).join(', ')}</span><span>Worst ${dd.worst.map(x=>link(x[0])+' '+pct(x[1])).join(', ')}</span></div>`
+      :`<div class="dash"><span>No dashboard snapshot was saved this day.</span></div>`;
+    return `<article class="day"><div class="when">${dfmt(d,{weekday:'long'})}<small>${dfmt(d,{month:'short',day:'numeric'})}</small>
+      ${dd.spy_pct!=null?`<span class="chg ${cls(dd.spy_pct)}">S&amp;P ${pct(dd.spy_pct,2)}</span>`:''}</div>
+      <div>${(nd.headlines||[]).length?`<ul>${nd.headlines.map(h=>`<li>${esc(h)}</li>`).join('')}</ul>`:'<p style="margin:0;color:var(--ink-faint)">No headlines recorded.</p>'}${dash}
+      ${(nd.sources||[]).length?`<div class="src">${nd.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join('')}</div>`:''}</div></article>`;
+  }).join('');
+  $('themes').innerHTML=(n.themes||[]).map(t=>`<div><h3>${esc(t.title)}</h3><p>${esc(t.text)}</p></div>`).join('');
+  const sec=[...w.sectors].sort((a,b)=>b.week_pct-a.week_pct);const mx=Math.max(...sec.map(s=>Math.abs(s.week_pct)),1);
+  $('sectors').innerHTML=sec.map(s=>{const half=Math.abs(s.week_pct)/mx*50;
+    return `<div class="srow"><a href="${anaSector(s.label)}" target="_blank" rel="noopener">${esc(s.label)} <span class="tk" style="font:500 11.5px var(--mono);color:var(--ink-faint)">${s.s}</span></a>
+     <div class="track" title="${esc(s.label)} ${pct(s.week_pct,2)}"><span class="fill" style="${s.week_pct>=0?`left:50%;width:${half}%;background:var(--up)`:`right:50%;width:${half}%;background:var(--down)`}"></span></div>
+     <span class="v ${cls(s.week_pct)}">${pct(s.week_pct)}</span></div>`}).join('');
+  const mtab=(title,rows)=>`<div class="tbox"><h3 class="label" style="margin-bottom:4px">${title}</h3><table><thead><tr><th>Name</th><th>Sector</th><th>Week</th><th class="num">%</th></tr></thead><tbody>${rows.map(m=>`<tr>
+    <td><a class="sym" href="${ana(m.s)}" target="_blank" rel="noopener">${m.s}</a><span class="co">${esc(m.name)}</span></td><td style="font-size:13px;color:var(--ink-soft)">${esc(m.sector||'')}</td>
+    <td>${spark(m.points,true)}</td><td class="num ${cls(m.week_pct)}">${pct(m.week_pct)}</td></tr>`).join('')}</tbody></table></div>`;
+  $('movers').innerHTML=mtab('Top 10 gainers',w.best)+mtab('Top 10 decliners',w.worst);
+  $('watch').innerHTML=(w.watchlist||[]).length?`<table style="max-width:640px"><thead><tr><th>Name</th><th>Week</th><th class="num">Close</th><th class="num">%</th><th></th></tr></thead><tbody>${w.watchlist.filter(x=>x.points).map(m=>`<tr>
+    <td><a class="sym" href="${ana(m.s)}" target="_blank" rel="noopener">${m.s}</a><span class="co">${esc(m.name)}</span></td><td>${spark(m.points,true)}</td>
+    <td class="num">${px(m.points[m.points.length-1][1])}</td><td class="num ${cls(m.week_pct)}">${pct(m.week_pct)}</td>
+    <td style="font-size:12.5px"><a href="${tv(m.s)}" target="_blank" rel="noopener">5-day chart ↗</a></td></tr>`).join('')}</tbody></table>`:'<p>No watchlist names this week.</p>';
+  const evDays=[...new Set(w.next_events.map(e=>e.day))];
+  const erDays=[...new Set(w.next_earnings.map(e=>e.date))].sort();
+  $('next').innerHTML=`<div><h3 class="label">Economic reports (times in MT)</h3>${evDays.map(d=>`<div class="evday"><h4>${dfmt(d)}</h4><ul>${w.next_events.filter(e=>e.day===d).map(e=>`<li><span class="t">${e.when.split(', ').pop()}</span>${esc(e.event)}${e.estimate!=null?` <span class="est">est ${e.estimate}, prior ${e.previous}</span>`:''}</li>`).join('')}</ul></div>`).join('')||'<p>None found.</p>'}</div>
+   <div><h3 class="label">Earnings from your dashboard names</h3>${erDays.map(d=>`<div class="evday"><h4>${dfmt(d)}</h4><ul>${w.next_earnings.filter(e=>e.date===d).map(e=>`<li><a class="sym" href="${ana(e.s)}" target="_blank" rel="noopener">${e.s}</a> ${esc(e.name||'')}${e.eps_est!=null?` <span class="est">EPS est ${e.eps_est}</span>`:''}</li>`).join('')}</ul></div>`).join('')||'<p>None scheduled.</p>'}</div>`;
+  $('qs').innerHTML=(n.questions||[]).map(q=>`<li>${esc(q)}</li>`).join('');
+  $('foot').innerHTML=`${n.gaps?`<div>${esc(n.gaps)}</div>`:''}<div>Prices: FMP daily closes from ${esc(w.indexes[0]?.base_date||'')} to ${esc(w.week_end)}. Weekly % compares Friday's close with the prior week's last close. Headlines come from the news sources linked under each day. Built ${esc(w.built_at.replace('T',' ').slice(0,16))} UTC.</div>`;
+}
+function hashWeek(){const m=(location.hash||'').match(/^#w-(\d{4}-\d{2}-\d{2})$/);return m&&D.weeks.find(w=>w.week_end===m[1])}
+$('wk').innerHTML=D.weeks.map(w=>`<option value="${w.week_end}">${dfmt(w.week_end,{month:'short',day:'numeric',year:'numeric'})}</option>`).join('');
+const start=hashWeek()||D.weeks[0];$('wk').value=start.week_end;render(start);
+$('wk').onchange=e=>{render(D.weeks.find(w=>w.week_end===e.target.value));window.scrollTo({top:0})};
+const tip=$('tip');
+document.addEventListener('mousemove',e=>{const s=e.target.closest&&e.target.closest('svg.spark');if(!s){tip.hidden=true;return}
+  const pts=JSON.parse(s.dataset.pts);const r=s.getBoundingClientRect();const i=Math.max(0,Math.min(pts.length-1,Math.round((e.clientX-r.left)/r.width*(pts.length-1))));
+  tip.textContent=(i===0?'Prior close ':'')+dfmt(pts[i][0])+' · '+px(pts[i][1]);tip.hidden=false;tip.style.left=Math.min(e.clientX+12,innerWidth-170)+'px';tip.style.top=(e.clientY+14)+'px'});
+</script>

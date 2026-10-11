@@ -9,12 +9,13 @@ Consolidates a personal daily market-study routine — four review sessions a da
 
 ## Step 1: Figure out which session this is
 
-The routine has three checkpoints (the midnight scan was retired on 2026-09-29), all Mountain Time. Infer the session from the user's phrasing or the current time; ask only if genuinely ambiguous:
+The routine has three daily checkpoints plus a Friday weekly recap (the midnight scan was retired on 2026-09-29), all Mountain Time. Infer the session from the user's phrasing or the current time; ask only if genuinely ambiguous:
 
 | Session | When | Days | Universe |
 |---|---|---|---|
 | **Morning macro + Bitcoin update** | 8am MT | Weekdays (Mon-Fri) | Macro headlines, Bitcoin status/movement, and whatever futures FMP + WebSearch fallback cover — no stock scan |
 | **World Watch** | 5pm MT | Sun-Thu (skip Fri & Sat) | Phone reminder to review futures + a light international macro page. Follow `references/world-watch.md` only; skip Steps 2-7 below |
+| **Week in Review** | Fri 5pm MT | Fri | Weekly recap page (headlines by day, sentiment, 5-day charts, sectors, movers, watchlist, next week's calendar) with an archive of past weeks. Follow `references/weekly-recap.md` only; skip Steps 2-7 below |
 | **Full study session** | 2pm MT (market close) | Weekdays (Mon-Fri) | Everything: all futures, Bitcoin, Dow 30, Nasdaq 100, S&P 500 Top 100, the large-cap proxy, and the three 20-name sector baskets |
 
 If the user just says "run my market review" with no time context, default to the full study session — it's a superset and never wrong to over-deliver.
