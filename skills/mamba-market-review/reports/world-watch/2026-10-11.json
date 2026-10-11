@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "China: Shanghai Composite closed Oct 8 at 3,811 (-0.81%), a two-month low, after a Wall Street selloff driven by surging Treasury yields",
+    "Brazil: Ibovespa about 204,302 on Oct 7 (-0.74%), near its 52-week high of about 209,606",
+    "No verified Oct 9 closes found for Asia, Europe or oil"
+  ],
+  "on_notice": [
+    "Treasury yields: surging US yields drove the recent Wall Street selloff and dragged Asian markets; watch for follow-through in Monday's Asia open.",
+    "China: Shanghai Composite is down about 3.6% over four weeks and sits at a two-month low; watch for policy support.",
+    "Oil/Middle East: no verified October oil or Hormuz update found in this run; check Brent and Iran headlines before relying on older figures."
+  ],
+  "regions": {
+    "asia": {"headline": "No Oct 9 Asia closing data found.", "detail": "Searches returned no Nikkei, Hang Seng or Kospi closes for Oct 9. The Oct 8 Shanghai decline was described as tracking losses across Asian markets after a sharp overnight Wall Street selloff driven by surging Treasury yields.", "sources": [{"name": "Trading Economics (Shanghai Oct 8)", "url": "https://tradingeconomics.com/china/stock-market/news/590450"}]},
+    "china": {"headline": "Shanghai Composite -0.81% to 3,811 on Oct 8, a two-month low.", "detail": "The index fell 31 points to close at 3,811 (another report: 3,811.9) on Oct 8, down about 3.64% over four weeks. No Oct 9 close found.", "sources": [{"name": "Trading Economics", "url": "https://tradingeconomics.com/china/stock-market/news/590450"}]},
+    "europe": {"headline": "No Oct 9 Europe close found.", "detail": "Latest 2026 close found was Fri Oct 2: European stocks closed higher, with the pan-European index up 0.7%. Index levels were not available.", "sources": [{"name": "QNA Oct 2", "url": "https://qna.org.qa/en/News-Area/News/2026-10/2/european-stocks-close-higher"}]},
+    "latam": {"headline": "Ibovespa about 204,302 on Oct 7 (-0.74%); no Oct 9 close found.", "detail": "Bloomberg Linea's quote page showed the index near 204,302 on Oct 7, with a 52-week range of roughly 140,231 to 209,606. No Rio Times coverage for Oct 9 turned up.", "sources": [{"name": "Bloomberg Linea IBOV", "url": "https://www.bloomberglinea.com/mercados/ibov:ind/"}]},
+    "mideast": {"headline": "No October oil or Middle East update found.", "detail": "Search returned only older items (March to July 2026) on Brent and US-Iran tensions; no dated October figures were verified, so none are quoted.", "sources": []}
+  }
+}
