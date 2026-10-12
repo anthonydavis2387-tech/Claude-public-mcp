@@ -1,0 +1,602 @@
+[
+ {
+  "s": "SPY",
+  "cat": "Broad US market",
+  "core": true,
+  "why": "S&P 500, the benchmark everything is measured against"
+ },
+ {
+  "s": "QQQ",
+  "cat": "Broad US market",
+  "core": true,
+  "why": "Nasdaq 100, big tech and growth"
+ },
+ {
+  "s": "DIA",
+  "cat": "Broad US market",
+  "core": true,
+  "why": "Dow 30, price-weighted blue chips"
+ },
+ {
+  "s": "IWM",
+  "cat": "Broad US market",
+  "core": true,
+  "why": "Russell 2000 small caps, sensitive to rates and the US economy"
+ },
+ {
+  "s": "VTI",
+  "cat": "Broad US market",
+  "core": true,
+  "why": "Entire US stock market in one fund"
+ },
+ {
+  "s": "MDY",
+  "cat": "Broad US market",
+  "core": false,
+  "why": "S&P 400 mid caps, the gap between large and small"
+ },
+ {
+  "s": "IJR",
+  "cat": "Broad US market",
+  "core": false,
+  "why": "S&P 600 small caps, profitable-only small caps"
+ },
+ {
+  "s": "OEF",
+  "cat": "Broad US market",
+  "core": false,
+  "why": "S&P 100, the most concentrated large caps"
+ },
+ {
+  "s": "VXF",
+  "cat": "Broad US market",
+  "core": false,
+  "why": "Everything outside the S&P 500"
+ },
+ {
+  "s": "VT",
+  "cat": "Broad US market",
+  "core": false,
+  "why": "Whole world stock market, US plus international"
+ },
+ {
+  "s": "XLK",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Technology"
+ },
+ {
+  "s": "XLF",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Financials"
+ },
+ {
+  "s": "XLV",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Health care"
+ },
+ {
+  "s": "XLE",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Energy"
+ },
+ {
+  "s": "XLI",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Industrials"
+ },
+ {
+  "s": "XLY",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Consumer discretionary"
+ },
+ {
+  "s": "XLP",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Consumer staples"
+ },
+ {
+  "s": "XLU",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Utilities"
+ },
+ {
+  "s": "XLB",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Materials"
+ },
+ {
+  "s": "XLRE",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Real estate"
+ },
+ {
+  "s": "XLC",
+  "cat": "Sectors",
+  "core": true,
+  "why": "Communication services"
+ },
+ {
+  "s": "KRE",
+  "cat": "Industries",
+  "core": false,
+  "why": "Regional banks, the credit-stress gauge"
+ },
+ {
+  "s": "XOP",
+  "cat": "Industries",
+  "core": false,
+  "why": "Oil and gas producers, more oil-price-sensitive than XLE"
+ },
+ {
+  "s": "OIH",
+  "cat": "Industries",
+  "core": false,
+  "why": "Oil services"
+ },
+ {
+  "s": "XME",
+  "cat": "Industries",
+  "core": false,
+  "why": "Metals and mining"
+ },
+ {
+  "s": "XRT",
+  "cat": "Industries",
+  "core": false,
+  "why": "Retail, equal-weighted consumer read"
+ },
+ {
+  "s": "ITB",
+  "cat": "Industries",
+  "core": false,
+  "why": "Homebuilders, mortgage-rate sensitive"
+ },
+ {
+  "s": "IYT",
+  "cat": "Industries",
+  "core": false,
+  "why": "Transports, the classic Dow Theory confirmation"
+ },
+ {
+  "s": "JETS",
+  "cat": "Industries",
+  "core": false,
+  "why": "Airlines, fuel and travel demand"
+ },
+ {
+  "s": "IBB",
+  "cat": "Industries",
+  "core": false,
+  "why": "Large biotech"
+ },
+ {
+  "s": "IHI",
+  "cat": "Industries",
+  "core": false,
+  "why": "Medical devices"
+ },
+ {
+  "s": "PAVE",
+  "cat": "Industries",
+  "core": false,
+  "why": "US infrastructure build-out"
+ },
+ {
+  "s": "TAN",
+  "cat": "Industries",
+  "core": false,
+  "why": "Solar"
+ },
+ {
+  "s": "RSP",
+  "cat": "Factors & income",
+  "core": true,
+  "why": "Equal-weight S&P 500, shows if the average stock keeps up with the giants"
+ },
+ {
+  "s": "SCHD",
+  "cat": "Factors & income",
+  "core": true,
+  "why": "Quality dividend payers"
+ },
+ {
+  "s": "VUG",
+  "cat": "Factors & income",
+  "core": true,
+  "why": "Large-cap growth"
+ },
+ {
+  "s": "VTV",
+  "cat": "Factors & income",
+  "core": true,
+  "why": "Large-cap value"
+ },
+ {
+  "s": "MTUM",
+  "cat": "Factors & income",
+  "core": true,
+  "why": "Momentum, what has been working"
+ },
+ {
+  "s": "USMV",
+  "cat": "Factors & income",
+  "core": true,
+  "why": "Low volatility, defensive tilt"
+ },
+ {
+  "s": "QUAL",
+  "cat": "Factors & income",
+  "core": false,
+  "why": "Quality: high ROE, low debt"
+ },
+ {
+  "s": "VIG",
+  "cat": "Factors & income",
+  "core": false,
+  "why": "Dividend growers"
+ },
+ {
+  "s": "VYM",
+  "cat": "Factors & income",
+  "core": false,
+  "why": "High dividend yield"
+ },
+ {
+  "s": "COWZ",
+  "cat": "Factors & income",
+  "core": false,
+  "why": "Free-cash-flow leaders"
+ },
+ {
+  "s": "JEPI",
+  "cat": "Factors & income",
+  "core": false,
+  "why": "S&P covered-call income"
+ },
+ {
+  "s": "JEPQ",
+  "cat": "Factors & income",
+  "core": false,
+  "why": "Nasdaq covered-call income"
+ },
+ {
+  "s": "VEA",
+  "cat": "International",
+  "core": true,
+  "why": "Developed markets ex-US (Europe, Japan, Australia)"
+ },
+ {
+  "s": "VWO",
+  "cat": "International",
+  "core": true,
+  "why": "Emerging markets"
+ },
+ {
+  "s": "EWJ",
+  "cat": "International",
+  "core": true,
+  "why": "Japan"
+ },
+ {
+  "s": "FXI",
+  "cat": "International",
+  "core": true,
+  "why": "China large caps"
+ },
+ {
+  "s": "VGK",
+  "cat": "International",
+  "core": true,
+  "why": "Europe"
+ },
+ {
+  "s": "INDA",
+  "cat": "International",
+  "core": true,
+  "why": "India"
+ },
+ {
+  "s": "EWZ",
+  "cat": "International",
+  "core": false,
+  "why": "Brazil"
+ },
+ {
+  "s": "EWW",
+  "cat": "International",
+  "core": false,
+  "why": "Mexico"
+ },
+ {
+  "s": "EWY",
+  "cat": "International",
+  "core": false,
+  "why": "South Korea"
+ },
+ {
+  "s": "EWT",
+  "cat": "International",
+  "core": false,
+  "why": "Taiwan, chip supply chain"
+ },
+ {
+  "s": "EWG",
+  "cat": "International",
+  "core": false,
+  "why": "Germany"
+ },
+ {
+  "s": "EWU",
+  "cat": "International",
+  "core": false,
+  "why": "United Kingdom"
+ },
+ {
+  "s": "KWEB",
+  "cat": "International",
+  "core": false,
+  "why": "China internet"
+ },
+ {
+  "s": "SGOV",
+  "cat": "Bonds",
+  "core": true,
+  "why": "0-3 month T-bills, cash yield"
+ },
+ {
+  "s": "IEF",
+  "cat": "Bonds",
+  "core": true,
+  "why": "7-10 year Treasuries"
+ },
+ {
+  "s": "TLT",
+  "cat": "Bonds",
+  "core": true,
+  "why": "20+ year Treasuries, the long-rate bet"
+ },
+ {
+  "s": "LQD",
+  "cat": "Bonds",
+  "core": true,
+  "why": "Investment-grade corporate bonds"
+ },
+ {
+  "s": "HYG",
+  "cat": "Bonds",
+  "core": true,
+  "why": "High-yield (junk) bonds, a risk-appetite gauge"
+ },
+ {
+  "s": "TIP",
+  "cat": "Bonds",
+  "core": true,
+  "why": "Inflation-protected Treasuries"
+ },
+ {
+  "s": "BND",
+  "cat": "Bonds",
+  "core": false,
+  "why": "Total US bond market"
+ },
+ {
+  "s": "SHY",
+  "cat": "Bonds",
+  "core": false,
+  "why": "1-3 year Treasuries"
+ },
+ {
+  "s": "MUB",
+  "cat": "Bonds",
+  "core": false,
+  "why": "Municipal bonds"
+ },
+ {
+  "s": "EMB",
+  "cat": "Bonds",
+  "core": false,
+  "why": "Emerging-market bonds"
+ },
+ {
+  "s": "BKLN",
+  "cat": "Bonds",
+  "core": false,
+  "why": "Floating-rate bank loans"
+ },
+ {
+  "s": "GLD",
+  "cat": "Commodities & currency",
+  "core": true,
+  "why": "Gold"
+ },
+ {
+  "s": "SLV",
+  "cat": "Commodities & currency",
+  "core": true,
+  "why": "Silver"
+ },
+ {
+  "s": "USO",
+  "cat": "Commodities & currency",
+  "core": true,
+  "why": "WTI crude oil"
+ },
+ {
+  "s": "DBC",
+  "cat": "Commodities & currency",
+  "core": true,
+  "why": "Broad commodity basket"
+ },
+ {
+  "s": "GDX",
+  "cat": "Commodities & currency",
+  "core": false,
+  "why": "Gold miners, leveraged to the gold price"
+ },
+ {
+  "s": "CPER",
+  "cat": "Commodities & currency",
+  "core": false,
+  "why": "Copper, the economy's barometer"
+ },
+ {
+  "s": "UNG",
+  "cat": "Commodities & currency",
+  "core": false,
+  "why": "Natural gas"
+ },
+ {
+  "s": "DBA",
+  "cat": "Commodities & currency",
+  "core": false,
+  "why": "Agriculture"
+ },
+ {
+  "s": "UUP",
+  "cat": "Commodities & currency",
+  "core": false,
+  "why": "US dollar index"
+ },
+ {
+  "s": "SMH",
+  "cat": "Themes",
+  "core": true,
+  "why": "Semiconductors"
+ },
+ {
+  "s": "IGV",
+  "cat": "Themes",
+  "core": true,
+  "why": "Software"
+ },
+ {
+  "s": "CIBR",
+  "cat": "Themes",
+  "core": true,
+  "why": "Cybersecurity"
+ },
+ {
+  "s": "BOTZ",
+  "cat": "Themes",
+  "core": true,
+  "why": "Robotics and AI"
+ },
+ {
+  "s": "ICLN",
+  "cat": "Themes",
+  "core": true,
+  "why": "Clean energy"
+ },
+ {
+  "s": "XBI",
+  "cat": "Themes",
+  "core": true,
+  "why": "Small and mid biotech, equal-weight"
+ },
+ {
+  "s": "ITA",
+  "cat": "Themes",
+  "core": true,
+  "why": "Aerospace and defense"
+ },
+ {
+  "s": "ARKK",
+  "cat": "Themes",
+  "core": true,
+  "why": "Disruptive innovation, high-beta growth"
+ },
+ {
+  "s": "URA",
+  "cat": "Themes",
+  "core": false,
+  "why": "Uranium and nuclear"
+ },
+ {
+  "s": "LIT",
+  "cat": "Themes",
+  "core": false,
+  "why": "Lithium and batteries"
+ },
+ {
+  "s": "SKYY",
+  "cat": "Themes",
+  "core": false,
+  "why": "Cloud computing"
+ },
+ {
+  "s": "QTUM",
+  "cat": "Themes",
+  "core": false,
+  "why": "Quantum computing and machine learning"
+ },
+ {
+  "s": "ESPO",
+  "cat": "Themes",
+  "core": false,
+  "why": "Video games and esports"
+ },
+ {
+  "s": "BLOK",
+  "cat": "Themes",
+  "core": false,
+  "why": "Blockchain companies"
+ },
+ {
+  "s": "IBIT",
+  "cat": "New & rising",
+  "core": true,
+  "why": "Spot Bitcoin, the largest ETF launched in years"
+ },
+ {
+  "s": "BAI",
+  "cat": "New & rising",
+  "core": true,
+  "why": "Actively managed AI and tech"
+ },
+ {
+  "s": "QQQI",
+  "cat": "New & rising",
+  "core": true,
+  "why": "Nasdaq 100 high income"
+ },
+ {
+  "s": "SHLD",
+  "cat": "New & rising",
+  "core": true,
+  "why": "Defense technology"
+ },
+ {
+  "s": "ETHA",
+  "cat": "New & rising",
+  "core": false,
+  "why": "Spot Ether"
+ },
+ {
+  "s": "IDEF",
+  "cat": "New & rising",
+  "core": false,
+  "why": "Defense industrials"
+ },
+ {
+  "s": "GPIQ",
+  "cat": "New & rising",
+  "core": false,
+  "why": "Nasdaq 100 premium income"
+ },
+ {
+  "s": "JTEK",
+  "cat": "New & rising",
+  "core": false,
+  "why": "JPMorgan US tech leaders, active"
+ }
+]

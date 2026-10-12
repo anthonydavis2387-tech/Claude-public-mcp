@@ -1,0 +1,182 @@
+<title>ETF Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: fund list on the left, selected fund on the right (stacks on phones); reverse lookup above both. */
+:root{
+  --bg:#f3f6f5;--panel:#ffffff;--fg:#16201c;--muted:#5b6862;--line:#d8e0dc;
+  --accent:#0f6b5c;--accent-soft:#e0efea;--up:#1f7a3f;--down:#b3372b;--core:#8a5a00;--core-soft:#fbefd6;--bar:#0f6b5c;
+  --display:"Archivo",system-ui,sans-serif;--body:"Source Sans 3",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1513;--panel:#161e1b;--fg:#e3eae6;--muted:#97a69f;--line:#2a3531;
+  --accent:#55c4ab;--accent-soft:#1b2f2a;--up:#62cf88;--down:#f07d70;--core:#e8b75a;--core-soft:#33291a;--bar:#55c4ab;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1513;--panel:#161e1b;--fg:#e3eae6;--muted:#97a69f;--line:#2a3531;
+  --accent:#55c4ab;--accent-soft:#1b2f2a;--up:#62cf88;--down:#f07d70;--core:#e8b75a;--core-soft:#33291a;--bar:#55c4ab;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body)}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:18px;padding-block:22px 60px;display:grid;gap:18px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;align-items:flex-end}
+h1{font:800 clamp(26px,4vw,34px)/1.1 var(--display);margin:0}
+.sub{color:var(--muted);margin:4px 0 0;max-width:72ch}
+.nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px}
+.lookup{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:8px}
+.lookup label{font:700 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lookup .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input,select{font:14px var(--body);padding:7px 10px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--fg);min-width:0}
+#lk{width:200px;text-transform:uppercase}
+.lkres{display:flex;flex-wrap:wrap;gap:6px;font-size:14px}
+.tag{display:inline-flex;gap:6px;align-items:baseline;border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--bg);cursor:pointer;color:var(--fg);font:600 13px var(--body)}
+.tag b{font:600 12.5px var(--mono);color:var(--accent)}
+.tag span{font:12px var(--mono);color:var(--muted)}
+.layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:880px){.layout{grid-template-columns:1fr}}
+.side{background:var(--panel);border:1px solid var(--line);border-radius:10px;display:grid;grid-template-rows:auto minmax(0,1fr);max-height:calc(100vh - 40px);position:sticky;top:12px}
+@media (max-width:880px){.side{position:static;max-height:420px}}
+.filters{display:grid;gap:8px;padding:12px;border-bottom:1px solid var(--line)}
+.filters .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.list{overflow-y:auto}
+.cat{font:700 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:10px 12px 4px;position:sticky;top:0;background:var(--panel)}
+.item{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:7px 12px;cursor:pointer;border:0;background:none;width:100%;text-align:left;color:var(--fg);font:inherit;border-left:3px solid transparent}
+.item:hover{background:var(--bg)}
+.item[aria-current="true"]{background:var(--accent-soft);border-left-color:var(--accent)}
+.item .t{font:600 13.5px var(--mono);color:var(--accent)}
+.item .n{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .r{font:600 12px var(--mono);font-variant-numeric:tabular-nums}
+.badge{font:700 9.5px var(--mono);letter-spacing:.06em;padding:1px 5px;border-radius:4px;background:var(--core-soft);color:var(--core);margin-left:4px;vertical-align:1px}
+.main{display:grid;gap:16px;min-width:0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;min-width:0}
+.fh{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.fh h2{font:800 28px/1 var(--display);margin:0;color:var(--accent)}
+.fh .nm{font:600 18px/1.3 var(--body)}
+.why{color:var(--muted);margin:6px 0 0}
+.links{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;margin-top:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:12px 16px;margin-top:14px}
+.stat .k{font:700 10.5px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.stat .v{font:600 17px var(--mono);font-variant-numeric:tabular-nums}
+.up{color:var(--up)}.down{color:var(--down)}
+h3{font:700 16px var(--display);margin:0 0 10px}
+.secs{display:grid;gap:5px;max-width:560px}
+.sec{display:grid;grid-template-columns:170px minmax(0,1fr) 52px;gap:10px;align-items:center;font-size:13.5px}
+.sec .tr{height:10px;background:var(--bg);border-radius:3px;overflow:hidden}
+.sec .tr i{display:block;height:100%;background:var(--bar);border-radius:3px}
+.sec .v{font:12.5px var(--mono);text-align:right}
+.hhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:8px}
+.src{font-size:13px;color:var(--muted)}
+.tbox{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;font-size:14px;vertical-align:middle}
+th{font:700 10.5px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.rk{color:var(--muted);font:12px var(--mono);width:36px}
+.sym{font:600 13px var(--mono);text-decoration:none}
+.sym:hover{text-decoration:underline}
+.ana{font:700 9.5px var(--mono);padding:1px 5px;border-radius:4px;background:var(--accent-soft);color:var(--accent);margin-left:6px;text-decoration:none}
+.wbar{width:120px}
+.wbar i{display:block;height:8px;background:var(--bar);border-radius:2px;opacity:.75}
+.note{padding:12px 14px;background:var(--bg);border-radius:8px;color:var(--muted)}
+.toggle{display:inline-flex;gap:6px;align-items:center;font-size:13.5px;color:var(--muted)}
+.more{margin-top:8px;font:600 13.5px var(--body);background:none;border:1px solid var(--line);border-radius:7px;padding:6px 12px;color:var(--fg);cursor:pointer}
+.foot{font-size:12.5px;color:var(--muted);max-width:90ch}
+</style>
+<div class="wrap">
+<header>
+  <div><h1>ETF Explorer</h1><p class="sub">100 funds covering the US market, sectors, industries, factors, countries, bonds, commodities and themes. Pick a fund to see what it holds; names in your dashboard open in the 10-Point Analyzer.</p></div>
+  <nav class="nav" id="nav" aria-label="Other pages"></nav>
+</header>
+<section class="lookup">
+  <label for="lk">Which ETFs hold a stock?</label>
+  <div class="row"><input id="lk" type="search" placeholder="Ticker, e.g. NVDA" autocomplete="off"><span class="src" id="lkmsg">Type a dashboard ticker to see every fund here that owns it, by weight.</span></div>
+  <div class="lkres" id="lkres"></div>
+</section>
+<div class="layout">
+  <aside class="side">
+    <div class="filters">
+      <input id="q" type="search" placeholder="Search funds" aria-label="Search funds">
+      <div class="two">
+        <select id="fc" aria-label="Category"><option value="">All categories</option></select>
+        <select id="fs" aria-label="Sort"><option value="">Group by category</option><option value="aum">Largest assets</option><option value="y1">1-year return</option><option value="ytd">YTD return</option><option value="m1">1-month return</option><option value="d5">5-day return</option><option value="er">Lowest fee</option></select>
+      </div>
+    </div>
+    <div class="list" id="list" role="list"></div>
+  </aside>
+  <main class="main" id="detail"></main>
+</div>
+<p class="foot" id="foot"></p>
+</div>
+<script id="etf-data" type="application/json">__DATA__</script>
+<script>
+const D=JSON.parse(document.getElementById('etf-data').textContent);
+const F=D.funds, BY=Object.fromEntries(F.map(f=>[f.s,f]));
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pct=(v,d=1)=>v==null?'—':(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(d)+'%';
+const cls=v=>v>0.05?'up':v<-0.05?'down':'';
+const money=v=>v==null?'—':v>=1e12?'$'+(v/1e12).toFixed(2)+'T':v>=1e9?'$'+(v/1e9).toFixed(v>=1e10?0:1)+'B':'$'+(v/1e6).toFixed(0)+'M';
+const tv=s=>'https://www.tradingview.com/chart/?symbol='+encodeURIComponent(s);
+const ana=s=>D.urls.analyzer+'#t-'+s;
+const CATS=[...new Set(F.map(f=>f.cat))];
+const CATN={EC:'Stock',DBT:'Bond',STIV:'Short-term',RE:'Real estate',DCO:'Commodity deriv.',DFE:'FX deriv.',DIR:'Rate deriv.',DE:'Equity deriv.',DCR:'Credit deriv.',ABS:'Asset-backed',LON:'Loan',OTHER:'Other'};
+let cur=null, cat='', sort='', q='', showAll=false, onlyDash=false;
+$('nav').innerHTML=[['Dashboard',D.urls.dashboard],['10-Point Analyzer',D.urls.analyzer],['Week in Review',D.urls.weekly],['World Watch',D.urls.worldwatch]].filter(x=>x[1]).map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join('');
+$('fc').innerHTML+=CATS.map(c=>`<option>${esc(c)}</option>`).join('');
+function list(){
+  let v=F.filter(f=>(!cat||f.cat===cat)&&(!q||(f.s+' '+f.name+' '+f.why).toLowerCase().includes(q)));
+  const item=f=>`<button class="item" role="listitem" data-s="${f.s}" aria-current="${f.s===cur}"><span class="t">${f.s}${f.core?'<span class="badge">CORE</span>':''}</span><span class="n">${esc(f.name)}</span><span class="r ${cls(sort&&sort!=='aum'&&sort!=='er'?f[sort]:f.ytd)}">${sort==='aum'?money(f.aum):sort==='er'?(f.er==null?'—':f.er.toFixed(2)+'%'):pct(sort?f[sort]:f.ytd)}</span></button>`;
+  if(sort){const asc=sort==='er';v=[...v].sort((a,b)=>(a[sort]??(asc?9e9:-9e9))>(b[sort]??(asc?9e9:-9e9))?(asc?1:-1):(asc?-1:1));$('list').innerHTML=v.map(item).join('')}
+  else $('list').innerHTML=CATS.map(c=>{const g=v.filter(f=>f.cat===c);return g.length?`<div class="cat">${esc(c)} · ${g.length}</div>`+g.map(item).join(''):''}).join('');
+  if(!v.length)$('list').innerHTML='<p style="padding:12px;color:var(--muted)">No funds match.</p>';
+}
+function holdingsHtml(f){
+  const h=f.h||{};
+  if(h.kind==='direct')return `<div class="panel"><h3>Holdings</h3><div class="note">This fund holds ${esc(h.holds)} directly, not company stocks, so there is no holdings list. Its price follows the asset itself.</div></div>`;
+  if(!h.rows)return `<div class="panel"><h3>Holdings</h3><div class="note">Holdings aren't available for this fund yet${h.note?' ('+esc(h.note)+')':''}.</div></div>`;
+  let rows=h.rows.map((r,i)=>({...r,rank:i+1}));
+  if(onlyDash)rows=rows.filter(r=>r.in_uni);
+  const shown=showAll?rows:rows.slice(0,25);const mx=Math.max(...h.rows.map(r=>r.pct),1);
+  const src=h.kind==='computed'?esc(h.note):`SEC N-PORT filing for ${h.source&&h.source!==f.s?`<b>${esc(h.source)}</b> (tracks the same index; ${esc(f.s)} itself doesn't file holdings)`:esc(f.s)}, as of ${esc(h.as_of)}. <a href="${esc(h.filing_url)}" target="_blank" rel="noopener">Filing ↗</a>`;
+  return `<div class="panel"><div class="hhead"><h3 style="margin:0">Holdings <span class="src">· ${h.count.toLocaleString()} positions · top 10 = ${h.top10_pct}%</span></h3>
+    <label class="toggle"><input type="checkbox" id="od" ${onlyDash?'checked':''}> Only names in my dashboard</label></div>
+    <p class="src" style="margin:0 0 8px">${src}</p>
+    <div class="tbox"><table><thead><tr><th>#</th><th>Holding</th><th>Type</th><th class="num">Weight</th><th></th></tr></thead><tbody>
+    ${shown.map(r=>`<tr><td class="rk">${r.rank}</td><td>${r.tk?`<a class="sym" href="${r.in_uni?ana(r.tk):tv(r.tk)}" target="_blank" rel="noopener">${esc(r.tk)}</a>${r.in_uni?`<a class="ana" href="${ana(r.tk)}" target="_blank" rel="noopener" title="Open in the 10-Point Analyzer">ANALYZER</a>`:''} `:''}<span style="color:var(--muted);font-size:13px">${esc(r.name)}</span></td>
+      <td style="font-size:12.5px;color:var(--muted)">${esc(CATN[r.cat]||r.cat||'')}${r.country&&r.country!=='US'?' · '+esc(r.country):''}</td><td class="num">${r.pct.toFixed(2)}%</td><td class="wbar"><i style="width:${Math.max(2,r.pct/mx*100)}%"></i></td></tr>`).join('')||'<tr><td colspan="5" style="color:var(--muted)">None of this fund\'s listed holdings are in your dashboard.</td></tr>'}
+    </tbody></table></div>
+    ${rows.length>25?`<button class="more" id="more">${showAll?'Show top 25':'Show all '+rows.length+(h.count>h.rows.length&&!onlyDash?' of the top '+h.rows.length:'')}</button>`:''}</div>`;
+}
+function detail(){
+  const f=BY[cur];if(!f){$('detail').innerHTML='';return}
+  const st=(k,v,c='')=>`<div class="stat"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`;
+  $('detail').innerHTML=`<div class="panel"><div class="fh"><h2>${f.s}</h2><span class="nm">${esc(f.name)}</span>${f.core?'<span class="badge">CORE 50</span>':''}</div>
+    <p class="why">${esc(f.cat)} · ${esc(f.why)}${f.issuer?' · '+esc(f.issuer):''}</p>
+    <div class="links"><a href="${tv(f.s)}" target="_blank" rel="noopener">TradingView chart ↗</a><a href="https://finance.yahoo.com/quote/${f.s}/profile/" target="_blank" rel="noopener">Yahoo profile ↗</a></div>
+    <div class="stats">${st('Price',f.price==null?'—':'$'+f.price.toFixed(2))}${st('Today',pct(f.d1,2),cls(f.d1))}${st('5 day',pct(f.d5),cls(f.d5))}${st('1 month',pct(f.m1),cls(f.m1))}${st('YTD',pct(f.ytd),cls(f.ytd))}${st('1 year',pct(f.y1),cls(f.y1))}
+    ${st('Assets',money(f.aum))}${st('Fee / yr',f.er==null?'—':f.er.toFixed(2)+'%')}${st('Launched',f.inc?f.inc.slice(0,4):'—')}</div>
+    ${(f.similar||[]).length?`<p class="src" style="margin:12px 0 0">Most similar here: ${f.similar.map(([s,o])=>`<a href="#e-${s}" data-go="${s}">${s}</a> (${o}% overlap)`).join(', ')}</p>`:''}</div>
+    ${f.sectors&&f.sectors.length&&f.cls==='Equity'?`<div class="panel"><h3>Sector mix</h3><div class="secs">${f.sectors.map(([n,v])=>`<div class="sec"><span>${esc(n)}</span><span class="tr"><i style="width:${Math.min(100,v)}%"></i></span><span class="v">${v.toFixed(1)}%</span></div>`).join('')}</div></div>`:''}
+    ${holdingsHtml(f)}`;
+  const od=$('od');if(od)od.onchange=e=>{onlyDash=e.target.checked;showAll=false;detail()};
+  const mb=$('more');if(mb)mb.onclick=()=>{showAll=!showAll;detail()};
+  $('detail').querySelectorAll('[data-go]').forEach(a=>a.onclick=e=>{e.preventDefault();pick(a.dataset.go)});
+}
+function pick(s){cur=s;showAll=false;list();detail();try{history.replaceState(null,'','#e-'+s)}catch(e){}
+  const el=document.querySelector(`.item[data-s="${s}"]`);if(el){const L=$('list');L.scrollTop=el.offsetTop-L.offsetTop-60}
+  if(innerWidth<=880)$('detail').scrollIntoView({behavior:'smooth',block:'start'})}
+$('list').onclick=e=>{const b=e.target.closest('.item');if(b)pick(b.dataset.s)};
+$('q').oninput=e=>{q=e.target.value.trim().toLowerCase();list()};
+$('fc').onchange=e=>{cat=e.target.value;list()};
+$('fs').onchange=e=>{sort=e.target.value;list()};
+$('lk').oninput=e=>{const t=e.target.value.trim().toUpperCase();const r=D.index[t];
+  if(!t){$('lkres').innerHTML='';$('lkmsg').textContent='Type a dashboard ticker to see every fund here that owns it, by weight.';return}
+  if(!r){$('lkres').innerHTML='';$('lkmsg').textContent=t.length<2?'':'None of the 100 funds list '+t+' among their reported holdings, or it isn\'t a dashboard name.';return}
+  $('lkmsg').innerHTML=`<a href="${ana(t)}" target="_blank" rel="noopener">${t}</a> is held by ${r.length} of these funds:`;
+  $('lkres').innerHTML=r.map(([s,w])=>`<button class="tag" data-go="${s}"><b>${s}</b><span>${w.toFixed(2)}%</span></button>`).join('')};
+$('lkres').onclick=e=>{const b=e.target.closest('[data-go]');if(b)pick(b.dataset.go)};
+const m=(location.hash||'').match(/^#e-([A-Z0-9.\-]+)$/);
+pick(m&&BY[m[1]]?m[1]:'SPY');
+const nport=F.filter(f=>f.h&&f.h.kind==='nport'),asof=[...new Set(nport.map(f=>f.h.as_of))].sort();
+$('foot').textContent=`Holdings come from each fund's SEC N-PORT filing (funds report quarter-end holdings about 60 days later; ${nport.length} funds here, reporting dates ${asof[0]||'—'} to ${asof[asof.length-1]||'—'}). Fund stats and returns from FMP; returns are price only, so bond and income funds look lower than their total return. Built ${D.built_at.replace('T',' ')} UTC.`;
+</script>
