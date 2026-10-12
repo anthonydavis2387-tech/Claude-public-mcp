@@ -2990,5 +2990,16 @@
   "moat_source": "https://distilinfo.com/2026/02/12/humana-medicare-advantage-leadership/",
   "last_deep_check": "2026-10-09",
   "last_quick_check": "2026-10-09"
+ },
+ "ETR": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "No aggregate institutional-ownership percentage surfaced; Q2 2026 13F changes show Renaissance Technologies trimming ~77,600 shares (to ~484,100) after selling ~201,200 in Q1, and small advisers (MFA Wealth, Sequoia Financial) trimming too. Fintel share counts around the Dec 2024 2-for-1 split are not split-adjusted.",
+  "inst_own_source": "https://www.insiderset.com/investors/stocks/etr/activity",
+  "moat_verdict": null,
+  "moat_summary": "Morningstar's moat rating is paywalled in cached text; its page shows the stock at a premium to fair value, with the bull case resting on cheap Gulf Coast power and data-center demand (Meta agreement, $57B 4-year capital plan) and the bear case on storm-recovery costs. No usable moat verdict found after two searches.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/etr/quote",
+  "last_deep_check": "2026-10-12",
+  "last_quick_check": "2026-10-12"
  }
 }
