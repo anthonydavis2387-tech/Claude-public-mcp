@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "US: Dow +0.38% to ~51,850, S&P -0.06% to ~7,807, Nasdaq -0.44% to ~27,246 on Oct 12 as memory chips weighed",
+    "Oil: crude above $106 a barrel on Middle East supply worries; energy ETF at an all-time high",
+    "CPI report due Wednesday; bank earnings this week"
+  ],
+  "on_notice": [
+    "Oil: crude above $106 on Middle East supply concerns; watch Hormuz/Red Sea headlines overnight.",
+    "US CPI on Wednesday plus rate-hike bets could move futures; bond market was closed Monday for Columbus Day.",
+    "Memory/chip stocks (Micron -3.9%) weighed on the Nasdaq; watch for follow-through in Asia tech."
+  ],
+  "regions": {
+    "asia": {"headline": "No Oct 12 Asia closing data found.", "detail": "Searches returned no Nikkei, Hang Seng or Kospi closes for Oct 12; results were from earlier years.", "sources": []},
+    "china": {"headline": "No Oct 12 China close found.", "detail": "No verified Shanghai Composite figure for today. Last verified: Oct 8 close of 3,811 (-0.81%), a two-month low.", "sources": [{"name": "Trading Economics (Oct 8)", "url": "https://tradingeconomics.com/china/stock-market/news/590450"}]},
+    "europe": {"headline": "No Oct 12 Europe close found.", "detail": "Search surfaced only July/August 2026 closes; nothing for today.", "sources": []},
+    "latam": {"headline": "No Oct 12 Latin America data found.", "detail": "Latest Rio Times board found was Sept 23 (Ibovespa 187,422.92); too stale to rely on. Last verified from the prior run: Ibovespa about 204,302 on Oct 7.", "sources": [{"name": "Rio Times Sept 23", "url": "https://riotimesonline.com/brazil-markets-ibovespa-real-wednesday-september-23-2026"}]},
+    "mideast": {"headline": "Crude above $106 on Middle East supply concerns.", "detail": "US session reports on Oct 12 cite crude oil climbing above $106 a barrel on Middle East supply disruption worries, with the energy sector ETF at an all-time high. No dated Brent quote found.", "sources": [{"name": "Vista P Global", "url": "https://vistapglobal.com/stock-market-today-october-12-2026-bull-celebrates-4th-birthday-as-dow-gains-nasdaq-slips-and-crude-oil-rises-ahead-of-inflation-data-asts-crm-docs-gs-eprx-ionq-jmp-meta-modd-ms-mu/"},{"name": "CNBC", "url": "https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html"}]}
+  }
+}
