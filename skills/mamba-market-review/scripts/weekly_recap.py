@@ -1,11 +1,12 @@
-"""Build the Week in Review page (Friday 5pm MT).
+"""Build the STOP THE CAP weekly recap page (Saturday morning MT).
 
 Usage:
   python3 weekly_recap.py build WEEK_END notes.json   # WEEK_END = the Friday, YYYY-MM-DD
       Pulls the week's prices from FMP (FMP_API_KEY env var), reads the week's saved daily snapshots,
       merges in the hand-written notes (see references/weekly-recap.md) and writes
       reports/weekly/WEEK_END.json.
-  python3 weekly_recap.py render out.html
+  python3 weekly_recap.py render out.html [--prior published.html]
+      With --prior, weeks found on the live page that have no local file are kept too.
       Renders every reports/weekly/*.json into one page (newest week shown, older weeks in the
       archive picker). Prints the phone-reminder text on stdout.
 """
@@ -152,8 +153,23 @@ def build(week_end, notes_path):
     print(f'wrote {path}: {len(moves)} names, {up} up; {len(earnings)} earnings, {len(events)} events next week')
 
 
-def render(out_path):
+def prior_weeks(published_path):
+    """Weeks already on the live page (its recap-data island), so the archive survives even when a run can't save to GitHub."""
+    import re
+    try:
+        html = open(published_path).read()
+        m = re.search(r'<script id="recap-data" type="application/json">(.*?)</script>', html, re.S)
+        return json.loads(m.group(1).replace('<\\/', '</'))['weeks'] if m else []
+    except Exception:
+        return []
+
+
+def render(out_path, prior=None):
     weeks = [json.load(open(f)) for f in sorted(glob.glob(os.path.join(WEEKLY, '*.json')), reverse=True)]
+    have = {w['week_end'] for w in weeks}
+    if prior:
+        weeks += [w for w in prior_weeks(prior) if w.get('week_end') not in have]
+        weeks.sort(key=lambda w: w['week_end'], reverse=True)
     if not weeks:
         raise SystemExit('no weekly files')
     urls = {}
@@ -169,14 +185,14 @@ def render(out_path):
     w = weeks[0]
     spy = next((i for i in w['indexes'] if i['s'] == 'SPY'), None)
     lead = w['notes'].get('push') or w['notes'].get('headline', '')
-    print(f"Your week in review is ready. S&P 500 {spy['week_pct']:+.1f}% this week. {lead}".strip() if spy else
-          f"Your week in review is ready. {lead}".strip())
+    print(f"STOP THE CAP: your weekly recap is ready. S&P 500 {spy['week_pct']:+.1f}% this week. {lead}".strip() if spy else
+          f"STOP THE CAP: your weekly recap is ready. {lead}".strip())
 
 
 if __name__ == '__main__':
     if len(sys.argv) >= 4 and sys.argv[1] == 'build':
         build(sys.argv[2], sys.argv[3])
     elif len(sys.argv) >= 3 and sys.argv[1] == 'render':
-        render(sys.argv[2])
+        render(sys.argv[2], sys.argv[4] if len(sys.argv) >= 5 and sys.argv[3] == '--prior' else None)
     else:
         print(__doc__); sys.exit(1)

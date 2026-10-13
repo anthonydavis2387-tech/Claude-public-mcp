@@ -156,7 +156,7 @@ const ana=s=>D.urls.analyzer+'#t-'+s;
 const CATS=[...new Set(F.map(f=>f.cat))];
 const CATN={EC:'Stock',DBT:'Bond',STIV:'Short-term',RE:'Real estate',DCO:'Commodity deriv.',DFE:'FX deriv.',DIR:'Rate deriv.',DE:'Equity deriv.',DCR:'Credit deriv.',ABS:'Asset-backed',LON:'Loan',OTHER:'Other'};
 let cur=null, cat='', sort='', q='', showAll=false, onlyDash=false;
-$('nav').innerHTML=[['Dashboard',D.urls.dashboard],['10-Point Analyzer',D.urls.analyzer],['Week in Review',D.urls.weekly],['World Watch',D.urls.worldwatch]].filter(x=>x[1]).map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join('');
+$('nav').innerHTML=[['Dashboard',D.urls.dashboard],['10-Point Analyzer',D.urls.analyzer],['Stop the Cap',D.urls.weekly],['World Watch',D.urls.worldwatch]].filter(x=>x[1]).map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join('');
 $('fc').innerHTML+=CATS.map(c=>`<option>${esc(c)}</option>`).join('');
 function list(){
   let v=F.filter(f=>(!cat||f.cat===cat)&&(!q||(f.s+' '+f.name+' '+f.why).toLowerCase().includes(q)));

@@ -1,6 +1,6 @@
-# Week in Review (Friday 5pm MT)
+# STOP THE CAP: the weekly recap (Saturday 8:52am MT)
 
-A recap page for the user to catch up on the week if they couldn't follow it day to day. One artifact holds every
+The user named this page "STOP THE CAP" (page title "Stop the Cap"; it was called Week in Review before 2026-10-13). It runs Saturday morning and recaps Monday to Friday of the week that just ended (`week_end` = yesterday, the Friday). A recap page for the user to catch up on the week if they couldn't follow it day to day. One artifact holds every
 week: the newest week shows by default, and older weeks sit in the "Week ending" picker. Do not touch the dashboard,
 the 10-Point Analyzer, the stock universe or the research cache in this session.
 
@@ -36,7 +36,10 @@ the 10-Point Analyzer, the stock universe or the research cache in this session.
    It pulls Friday-to-Friday closes from FMP for the indexes, sector funds, macro gauges, every dashboard name and the
    watchlist, reads that week's saved daily snapshots for the dashboard's own readings, and pulls next week's
    earnings (dashboard names only) and key US economic releases.
-5. Run `python3 skills/mamba-market-review/scripts/weekly_recap.py render /tmp/week-in-review.html` and publish that file
-   to the URL in `reports/.weekly-url.txt`. The script prints the phone-notification line.
+5. Read the live page first: Artifact read of the URL in `reports/.weekly-url.txt` with `path: "index.html"` and
+   `out_dir: "/tmp/stopthecap"` (also read it once without `path`, which a republish requires). Then run
+   `python3 skills/mamba-market-review/scripts/weekly_recap.py render /tmp/stop-the-cap.html --prior /tmp/stopthecap/index.html`
+   and publish `/tmp/stop-the-cap.html` to that URL. `--prior` keeps every week already on the page even if earlier runs
+   could not save their week files to GitHub. The script prints the phone-notification line.
 6. Commit the notes file and the built week file, then push as the routine prompt describes.
 7. The final reply is only the line the script printed; it becomes the phone notification.

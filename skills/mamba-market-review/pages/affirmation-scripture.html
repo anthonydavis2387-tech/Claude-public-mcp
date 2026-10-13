@@ -99,6 +99,29 @@ button { font: inherit; color: inherit; }
 .trk.now .t { color: var(--lamp); font-style: italic; }
 .now-say { margin-top: 22px; min-height: 2.6em; font: 400 clamp(26px, 3.6vw, 40px)/1.15 var(--brush); color: var(--ink); }
 
+/* Goal setting: a cassette that opens the clip, and the 12 Week Year line in the room's brush hand */
+.goals { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 48px; align-items: center; }
+@media (max-width: 820px) { .goals { grid-template-columns: 1fr; gap: 26px; } }
+.tape { position: relative; display: block; aspect-ratio: 1.6; max-width: 100%; border-radius: 14px; text-decoration: none; color: var(--paper-ink);
+  background: linear-gradient(160deg, var(--clay), color-mix(in srgb, var(--clay) 70%, var(--wall))); padding: 14px; box-shadow: 0 18px 36px var(--shadow); transform: rotate(-2deg); transition: transform .4s ease; }
+.tape:hover { transform: rotate(0deg) translateY(-3px); }
+.tape .card { position: absolute; left: 14px; right: 14px; top: 14px; height: 46%; background: var(--paper); border-radius: 6px; padding: 10px 14px;
+  display: grid; align-content: start; gap: 2px; }
+.tape .card b { font: 400 clamp(18px, 2.4vw, 24px)/1.1 var(--tag); }
+.tape .card span { font: 800 12px var(--poster); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-faint); }
+.tape .window { position: absolute; left: 22%; right: 22%; bottom: 14%; height: 26%; border-radius: 999px; background: var(--vinyl);
+  display: flex; align-items: center; justify-content: space-between; padding: 0 9%; }
+.tape .reel { width: 26%; aspect-ratio: 1; border-radius: 50%; border: 3px dashed var(--paper); opacity: .85; }
+.tape:hover .reel, .tape:focus-visible .reel { animation: spin 2.4s linear infinite; }
+.tape .play { position: absolute; right: 16px; bottom: 12px; font: 800 13px var(--poster); letter-spacing: .14em; text-transform: uppercase; color: var(--paper); }
+.goals h2 { margin: 0 0 6px; font: 900 clamp(34px, 5vw, 56px)/1 var(--poster); text-transform: uppercase; }
+.goals .say { margin: 14px 0 10px; font: 400 clamp(30px, 4.4vw, 50px)/1.1 var(--brush); color: var(--ink); text-wrap: balance; }
+.goals .say .hl { color: var(--lamp); }
+.goals .cite { font: 400 22px var(--tag); color: var(--lamp); }
+.goals .cite small { display: block; font: italic 14px var(--read); color: var(--ink-faint); margin-top: 4px; }
+.goals .how { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; color: var(--ink-soft); font-size: 16px; }
+.goals .how li::before { content: "\2192\00a0"; color: var(--clay); }
+
 /* Notes on the wall */
 .wall-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 28px; }
 .wall-head h2 { margin: 0; font: 900 clamp(34px, 5vw, 56px)/1 var(--poster); text-transform: uppercase; }
@@ -138,7 +161,7 @@ button { font: inherit; color: inherit; }
 <main class="room">
   <header class="top">
     <span class="tagline">home &mdash; where the work gets quiet</span>
-    <nav aria-label="Other pages"><a href="https://claude.ai/artifact/CjZFMqQ5r2b8qgBR2bVkav">Dashboard</a><a href="https://claude.ai/artifact/SWUGyzTjTg3NUsziPT32LW">ETFs</a><a href="https://claude.ai/artifact/McDtLcaxEVWSW5MG1tuHwb">Week in Review</a></nav>
+    <nav aria-label="Other pages"><a href="https://claude.ai/artifact/CjZFMqQ5r2b8qgBR2bVkav">Dashboard</a><a href="https://claude.ai/artifact/SWUGyzTjTg3NUsziPT32LW">ETFs</a><a href="https://claude.ai/artifact/McDtLcaxEVWSW5MG1tuHwb">Stop the Cap</a></nav>
   </header>
 
   <section class="mural" aria-labelledby="verse">
@@ -166,6 +189,24 @@ button { font: inherit; color: inherit; }
       <p class="sub">Tap a track to put it on.</p>
       <ol id="tracks"></ol>
       <p class="now-say" id="nowSay" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="goals" aria-labelledby="goals">
+    <a class="tape" href="https://www.youtube.com/live/gMxOS-qzGpI?t=6242" target="_blank" rel="noopener" aria-label="Watch the goal-setting clip on YouTube, starting at 1:44:02">
+      <span class="card"><span>Side B &middot; 1:44:02</span><b>How to set proper goals</b></span>
+      <span class="window" aria-hidden="true"><i class="reel"></i><i class="reel"></i></span>
+      <span class="play">Play clip &#8599;</span>
+    </a>
+    <div>
+      <h2 id="goals">Goals, set right</h2>
+      <p class="say">I don&rsquo;t control the goal. I don&rsquo;t control the outcome, but I desire it. <span class="hl">I control my actions.</span></p>
+      <p class="cite">The 12 Week Year<small>Brian P. Moran &amp; Michael Lennington, put in my own words</small></p>
+      <ul class="how">
+        <li>Every goal gets the actions that make it happen.</li>
+        <li>I plan in 12 weeks, so this week always matters.</li>
+        <li>I score my actions each week, not my wishes.</li>
+      </ul>
     </div>
   </section>
 
@@ -252,7 +293,7 @@ button { font: inherit; color: inherit; }
     return vs.sort(function(a, b){ return rank(b) - rank(a); })[0] || null;
   }
   var SCRIPT = ['I can do all things through Christ who strengthens me. Philippians, four thirteen.']
-    .concat(TRACKS).concat(['Don’t criticize, condemn, or complain.', 'Give honest and sincere appreciation.', 'Arouse in the other person an eager want.']);
+      .concat(TRACKS).concat(['I don\u2019t control the goal. I don\u2019t control the outcome, but I desire it. I control my actions.']).concat(['Don’t criticize, condemn, or complain.', 'Give honest and sincere appreciation.', 'Arouse in the other person an eager want.']);
   if (!synth || !window.SpeechSynthesisUtterance) sBtn.hidden = true;
   else sBtn.addEventListener('click', function(){
     synth.cancel();
