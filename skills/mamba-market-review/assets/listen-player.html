@@ -4,82 +4,79 @@
   :root { --lp-surface: var(--surface, var(--panel, #fbf9f2)); --lp-ink: var(--ink, var(--fg, #1a1712)); --lp-soft: var(--ink-soft, var(--muted, #4a4438));
     --lp-faint: var(--ink-faint, var(--muted, #7d7561)); --lp-line: var(--line, #c9bfa0); --lp-strong: var(--line-strong, var(--line, #1a1712));
     --lp-accent: var(--accent, #7a1f2b); --lp-on-accent: var(--accent-ink, var(--bg, #fbf9f2)); --lp-hl: var(--amber-bg, var(--accent-soft, #ece2c8)); }
-  /* Listen player: reads the whole dashboard aloud, in page order, with the sentence being read highlighted. */
-  .voice-spacer { height: 84px; }
-  .lp-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--lp-surface);
-    border-top: 2px solid var(--lp-strong); padding: 0 14px calc(10px + env(safe-area-inset-bottom, 0px));
-    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--lp-ink); }
-  .lp-progress { height: 3px; margin: 0 -14px 10px; background: var(--lp-line); }
+  /* Listen player: a small floating pill (bottom-left) that reads the page aloud; extra controls and settings open on demand. */
+  .voice-spacer { height: 72px; }
+  .lp-bar { position: fixed; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 40; max-width: calc(100vw - 32px);
+    background: var(--lp-surface); color: var(--lp-ink); border: 1px solid var(--lp-strong); border-radius: 999px; padding: 5px;
+    box-shadow: 0 6px 22px rgba(0,0,0,.18); font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif; }
+  .lp-bar.open { border-radius: 16px; }
+  .lp-progress { position: absolute; left: 18px; right: 18px; bottom: 1px; height: 2px; background: transparent; border-radius: 2px; overflow: hidden; }
   .lp-progress i { display: block; height: 100%; width: 0; background: var(--lp-accent); transition: width .3s; }
-  .lp-row { max-width: 1040px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
-  .lp-play { flex: none; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px 0 14px;
-    border: 0; border-radius: 999px; background: var(--lp-accent); color: var(--lp-on-accent); cursor: pointer;
-    font: 700 15px 'Source Sans 3', sans-serif; letter-spacing: .01em; }
-  .lp-play svg { width: 18px; height: 18px; fill: currentColor; }
+  .lp-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .lp-play { flex: none; display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 15px 0 11px;
+    border: 0; border-radius: 999px; background: var(--lp-accent); color: var(--lp-on-accent); cursor: pointer; font: 700 14px 'Source Sans 3', sans-serif; }
+  .lp-play svg { width: 15px; height: 15px; fill: currentColor; }
   .lp-play:hover { filter: brightness(1.08); }
-  .lp-ibtn { flex: none; width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--lp-strong);
-    background: var(--lp-surface); color: var(--lp-ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
-  .lp-ibtn svg { width: 16px; height: 16px; fill: currentColor; }
+  .lp-ibtn { flex: none; width: 34px; height: 34px; border-radius: 999px; border: 1px solid var(--lp-line); background: transparent; color: var(--lp-ink);
+    cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+  .lp-ibtn svg { width: 14px; height: 14px; fill: currentColor; }
   .lp-ibtn:hover:not(:disabled) { border-color: var(--lp-accent); color: var(--lp-accent); }
-  .lp-ibtn:disabled { opacity: .35; cursor: default; }
-  .lp-now { flex: 1; min-width: 0; display: grid; gap: 1px; }
-  .lp-now .lp-k { font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--lp-faint); }
-  .lp-now .lp-t { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .lp-sel { flex: none; max-width: 210px; font: 600 13px 'Source Sans 3', sans-serif; padding: 8px 10px; border-radius: 6px;
-    border: 1px solid var(--lp-strong); background: var(--lp-surface); color: var(--lp-ink); }
-  .lp-speed { flex: none; min-width: 52px; height: 38px; border-radius: 999px; border: 1px solid var(--lp-strong);
-    background: var(--lp-surface); color: var(--lp-ink); font: 700 13px 'IBM Plex Mono', monospace; cursor: pointer; }
+  .lp-more { border-color: transparent; }
+  .lp-more svg { transition: transform .2s; }
+  .lp-bar.open .lp-more svg { transform: rotate(180deg); }
+  .lp-now { min-width: 0; max-width: 190px; display: none; gap: 0; padding: 0 4px; line-height: 1.2; }
+  .lp-bar.active .lp-now, .lp-bar.open .lp-now { display: grid; }
+  .lp-now .lp-k { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--lp-faint); white-space: nowrap; }
+  .lp-now .lp-t { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .lp-x { display: none; }
+  .lp-bar.open .lp-x { display: inline-flex; }
+  .lp-bar.open .lp-row { padding: 2px 2px 4px; }
+  .lp-sel { flex: 1 1 170px; min-width: 0; max-width: 240px; font: 600 13px 'Source Sans 3', sans-serif; padding: 7px 8px; border-radius: 8px;
+    border: 1px solid var(--lp-line); background: var(--lp-surface); color: var(--lp-ink); }
+  .lp-speed { flex: none; min-width: 46px; height: 34px; align-items: center; justify-content: center; padding: 0 8px; border-radius: 999px; border: 1px solid var(--lp-line); background: transparent; color: var(--lp-ink);
+    font: 700 12.5px 'IBM Plex Mono', ui-monospace, monospace; cursor: pointer; }
   .lp-speed:hover, .lp-sel:hover { border-color: var(--lp-accent); }
   .lp-bar button:focus-visible, .lp-bar select:focus-visible, .lp-bar input:focus-visible, .lp-sec-btn:focus-visible { outline: 2px solid var(--lp-accent); outline-offset: 2px; }
-  .lp-panel { max-width: 1040px; margin: 12px auto 0; padding-top: 12px; border-top: 1px solid var(--lp-line);
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px 22px; align-items: start; max-height: 55vh; overflow-y: auto; }
+  .lp-panel { position: absolute; left: 0; bottom: calc(100% + 8px); width: min(400px, calc(100vw - 32px)); max-height: min(60vh, 480px); overflow-y: auto;
+    background: var(--lp-surface); border: 1px solid var(--lp-strong); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.2); padding: 14px 16px;
+    display: grid; gap: 14px; }
   .lp-panel[hidden] { display: none; }
   .lp-field { display: grid; gap: 6px; font-size: 13px; color: var(--lp-soft); }
   .lp-field > span { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--lp-faint); }
-  .lp-field select { font: 14px 'Source Sans 3', sans-serif; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--lp-strong); background: var(--lp-surface); color: var(--lp-ink); min-width: 0; }
+  .lp-field select { font: 14px 'Source Sans 3', sans-serif; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--lp-line); background: var(--lp-surface); color: var(--lp-ink); min-width: 0; }
   .lp-field input[type=range] { accent-color: var(--lp-accent); width: 100%; }
   .lp-check { display: flex; gap: 8px; align-items: flex-start; font-size: 13.5px; color: var(--lp-ink); cursor: pointer; }
   .lp-check input { accent-color: var(--lp-accent); margin-top: 3px; }
   .lp-check small { display: block; color: var(--lp-faint); font-size: 12px; }
   .lp-links { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .lp-link { font: 600 13px 'Source Sans 3', sans-serif; border: 1px solid var(--lp-strong); background: var(--lp-surface); color: var(--lp-ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  .lp-link { font: 600 13px 'Source Sans 3', sans-serif; border: 1px solid var(--lp-line); background: transparent; color: var(--lp-ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
   .lp-link:hover { border-color: var(--lp-accent); color: var(--lp-accent); }
-  .lp-note { grid-column: 1 / -1; font-size: 12.5px; color: var(--lp-faint); line-height: 1.5; margin: 0; }
+  .lp-note { font-size: 12px; color: var(--lp-faint); line-height: 1.5; margin: 0; }
+  .lp-panel-head { display: flex; justify-content: space-between; align-items: center; font: 700 13px 'Source Sans 3', sans-serif; }
   .lp-sec-btn { margin-left: 10px; vertical-align: middle; font: 700 11px 'Source Sans 3', sans-serif; letter-spacing: .06em; text-transform: uppercase;
     border: 1px solid var(--lp-line); background: var(--lp-surface); color: var(--lp-accent); border-radius: 999px; padding: 3px 9px 3px 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; }
   .lp-sec-btn svg { width: 10px; height: 10px; fill: currentColor; }
   .lp-sec-btn:hover { border-color: var(--lp-accent); }
   .lp-reading { background: var(--lp-hl) !important; box-shadow: -6px 0 0 var(--lp-hl), 6px 0 0 var(--lp-hl); border-radius: 2px; transition: background .2s; }
   tr.lp-reading td { background: var(--lp-hl) !important; }
-  @media (max-width: 720px) {
-    .voice-spacer { height: 150px; }
-    .lp-row { flex-wrap: wrap; gap: 8px; }
-    .lp-now { order: -1; flex-basis: 100%; }
-    .lp-play { padding: 0 16px 0 12px; }
-    .lp-speed { order: 1; }
-    .lp-sel { order: 2; flex: 1 1 160px; max-width: none; min-width: 0; }
-    #lpGear { order: 3; }
-    #lpStop { display: none; }
+  @media (max-width: 520px) {
+    .lp-bar.open { left: 12px; right: 12px; }
+    .lp-bar.open .lp-now { flex: 1 1 calc(100% - 160px); max-width: none; order: 1; }
+    .lp-bar.open .lp-x { flex: none; }
+    .lp-bar.open .lp-more { order: 2; }
+    .lp-bar.open .lp-x { order: 3; }
+    .lp-bar.open .lp-sel { order: 9; flex-basis: 100%; max-width: none; }
+    .lp-now { max-width: 140px; }
+    body.lp-open .to-top { opacity: 0 !important; pointer-events: none !important; }
   }
   @media (prefers-reduced-motion: reduce) { .lp-progress i, .lp-reading { transition: none; } }
-  .to-top { bottom: calc(96px + env(safe-area-inset-bottom, 0px)) !important; }
-  @media (max-width: 720px) { .to-top { bottom: calc(166px + env(safe-area-inset-bottom, 0px)) !important; } }
+  .to-top { bottom: calc(20px + env(safe-area-inset-bottom, 0px)) !important; }
 </style>
 <!-- LISTEN-PLAYER:MARKUP -->
 <div class="voice-spacer"></div>
-<div class="lp-bar" id="listenBar" role="region" aria-label="Listen to this dashboard">
-  <div class="lp-progress" aria-hidden="true"><i id="lpProg"></i></div>
-  <div class="lp-row">
-    <button class="lp-play" id="lpPlay" type="button" aria-label="Listen to the dashboard"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg><span id="lpPlayLabel">Listen</span></button>
-    <button class="lp-ibtn" id="lpPrev" type="button" aria-label="Previous paragraph" title="Previous paragraph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
-    <button class="lp-ibtn" id="lpNext" type="button" aria-label="Next paragraph" title="Next paragraph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5l11 7-11 7z"/></svg></button>
-    <div class="lp-now" aria-live="polite"><span class="lp-k" id="lpKicker">Read aloud</span><span class="lp-t" id="lpTitle">The full dashboard, top to bottom</span></div>
-    <select class="lp-sel" id="lpSection" aria-label="Start from section"></select>
-    <button class="lp-speed" id="lpSpeed" type="button" aria-label="Reading speed" title="Reading speed">1&times;</button>
-    <button class="lp-ibtn" id="lpStop" type="button" aria-label="Stop and go back to the start" title="Stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z"/></svg></button>
-    <button class="lp-ibtn" id="lpGear" type="button" aria-label="Voice settings" aria-expanded="false" title="Voice settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4L10.6 6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.6h4l.4-2.6a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5A3.5 3.5 0 1 1 13 8.5a3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg></button>
-  </div>
+<div class="lp-bar" id="listenBar" role="region" aria-label="Listen to this page">
   <div class="lp-panel" id="lpPanel" hidden>
+    <div class="lp-panel-head"><span>Voice settings</span><button class="lp-ibtn" id="lpClose" type="button" aria-label="Close settings" title="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4 17.6 5 12 10.6z"/></svg></button></div>
     <label class="lp-field"><span>Voice</span><select id="lpVoice"></select></label>
     <label class="lp-field"><span>Speed <b id="lpRateVal">1.0&times;</b></span><input type="range" id="lpRate" min="0.7" max="1.6" step="0.05" value="1"></label>
     <label class="lp-field"><span>Pitch <b id="lpPitchVal">1.0</b></span><input type="range" id="lpPitch" min="0.7" max="1.3" step="0.05" value="1"></label>
@@ -90,6 +87,18 @@
     <div class="lp-field"><span>Check it</span><div class="lp-links"><button class="lp-link" id="lpTest" type="button">Play a voice sample</button><button class="lp-link" id="lpReset" type="button">Reset to clear defaults</button></div></div>
     <p class="lp-note" id="lpNote">Voices come from your device. The clearest are marked &ldquo;natural&rdquo;, &ldquo;enhanced&rdquo; or &ldquo;premium&rdquo; and are chosen first. On iPhone and Mac you can add better ones in Settings &rarr; Accessibility &rarr; Spoken Content &rarr; Voices. Turn your phone's ringer on; silent mode can mute speech.</p>
   </div>
+  <div class="lp-row">
+    <button class="lp-play" id="lpPlay" type="button" aria-label="Listen to this page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg><span id="lpPlayLabel">Listen</span></button>
+    <div class="lp-now" aria-live="polite"><span class="lp-k" id="lpKicker">Read aloud</span><span class="lp-t" id="lpTitle">The full dashboard, top to bottom</span></div>
+    <button class="lp-ibtn lp-x" id="lpPrev" type="button" aria-label="Previous paragraph" title="Previous paragraph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+    <button class="lp-ibtn lp-x" id="lpNext" type="button" aria-label="Next paragraph" title="Next paragraph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5l11 7-11 7z"/></svg></button>
+    <select class="lp-sel lp-x" id="lpSection" aria-label="Start from section"></select>
+    <button class="lp-speed lp-x" id="lpSpeed" type="button" aria-label="Reading speed" title="Reading speed">1&times;</button>
+    <button class="lp-ibtn lp-x" id="lpStop" type="button" aria-label="Stop and go back to the start" title="Stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z"/></svg></button>
+    <button class="lp-ibtn lp-x" id="lpGear" type="button" aria-label="Voice settings" aria-expanded="false" title="Voice settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4L10.6 6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.6h4l.4-2.6a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5A3.5 3.5 0 1 1 13 8.5a3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg></button>
+    <button class="lp-ibtn lp-more" id="lpMore" type="button" aria-label="More controls" aria-expanded="false" title="More controls"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 15.4 12 10.8l4.6 4.6L18 14l-6-6-6 6z"/></svg></button>
+  </div>
+  <div class="lp-progress" aria-hidden="true"><i id="lpProg"></i></div>
 </div>
 <!-- LISTEN-PLAYER:SCRIPT -->
 <script id="listen-player">
@@ -304,7 +313,8 @@
   function ensure(){ if (!built) { build(); fillSections(); built = true; } }
   function setPlayUI(){
     playBtn.innerHTML = (playing ? PAUSE : PLAY) + '<span id="lpPlayLabel">' + (playing ? 'Pause' : (idx > 0 ? 'Resume' : 'Listen')) + '</span>';
-    playBtn.setAttribute('aria-label', playing ? 'Pause reading' : 'Listen to the dashboard');
+    playBtn.setAttribute('aria-label', playing ? 'Pause reading' : 'Listen to this page');
+    bar.classList.toggle('active', playing || idx > 0);
   }
   function highlight(el){
     if (lit) lit.classList.remove('lp-reading');
@@ -386,6 +396,11 @@
   }
   function startSection(i){ ensure(); var f = items.findIndex(function(it){ return it.sec === i; }); if (f >= 0) start(f); }
 
+  // Compact by default: only Listen shows; "more" opens the other controls, the gear opens settings above the pill.
+  function setOpen(o){ bar.classList.toggle('open', o); document.body.classList.toggle('lp-open', o); $('lpMore').setAttribute('aria-expanded', String(o)); if (!o) { $('lpPanel').hidden = true; $('lpGear').setAttribute('aria-expanded', 'false'); } prefs.open = o; save(); }
+  $('lpMore').addEventListener('click', function(){ ensure(); setOpen(!bar.classList.contains('open')); });
+  $('lpClose').addEventListener('click', function(){ $('lpPanel').hidden = true; $('lpGear').setAttribute('aria-expanded', 'false'); });
+  if (prefs.open) { bar.classList.add('open'); document.body.classList.add('lp-open'); }
   playBtn.addEventListener('click', function(){ if (playing) pause(); else start(); });
   $('lpPrev').addEventListener('click', function(){ jump(-1); });
   $('lpNext').addEventListener('click', function(){ jump(1); });
@@ -411,6 +426,7 @@
   $('lpDir').addEventListener('change', function(e){ prefs.dir = e.target.checked; save(); var was = playing, at = items[idx]; built = false; ensure();
     if (at) { var f = items.findIndex(function(x){ return x.el === at.el; }); idx = f >= 0 ? f : 0; } if (was) start(); });
   $('lpGear').addEventListener('click', function(){ var p = $('lpPanel'); p.hidden = !p.hidden; this.setAttribute('aria-expanded', String(!p.hidden)); if (!p.hidden) loadVoices(); });
+  document.addEventListener('click', function(e){ var p = $('lpPanel'); if (!p.hidden && !bar.contains(e.target)) { p.hidden = true; $('lpGear').setAttribute('aria-expanded', 'false'); } });
   $('lpTest').addEventListener('click', function(){
     gen++; playing = false; setPlayUI(); synth.cancel();
     var u = new SpeechSynthesisUtterance('This is the voice that will read your Mamba Market Review. The S and P 500 closed up 0.6 percent.');
