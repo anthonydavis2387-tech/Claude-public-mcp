@@ -31,3 +31,5 @@ Replaces the old 5pm futures-only check and the midnight scan. Two outputs, both
 ```
 
 Known data quirk: FMP's `BZUSD` (Brent) jumps on contract rolls (it showed −9% on a −2.5% day), so the script leaves it out. Quote Brent from the news source instead.
+
+The page carries the Listen player (read-aloud bar at the bottom); `world_watch.py` adds it, so there is nothing to do by hand.

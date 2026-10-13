@@ -1,60 +1,69 @@
 <!-- LISTEN-PLAYER:CSS -->
 <style id="listen-css">
+  /* Works on every Mamba page: map each page's own color tokens, with safe fallbacks. */
+  :root { --lp-surface: var(--surface, var(--panel, #fbf9f2)); --lp-ink: var(--ink, var(--fg, #1a1712)); --lp-soft: var(--ink-soft, var(--muted, #4a4438));
+    --lp-faint: var(--ink-faint, var(--muted, #7d7561)); --lp-line: var(--line, #c9bfa0); --lp-strong: var(--line-strong, var(--line, #1a1712));
+    --lp-accent: var(--accent, #7a1f2b); --lp-on-accent: var(--accent-ink, var(--bg, #fbf9f2)); --lp-hl: var(--amber-bg, var(--accent-soft, #ece2c8)); }
   /* Listen player: reads the whole dashboard aloud, in page order, with the sentence being read highlighted. */
   .voice-spacer { height: 84px; }
-  .lp-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--surface);
-    border-top: 2px solid var(--line-strong); padding: 0 14px calc(10px + env(safe-area-inset-bottom, 0px));
-    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); }
-  .lp-progress { height: 3px; margin: 0 -14px 10px; background: var(--line); }
-  .lp-progress i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+  .lp-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--lp-surface);
+    border-top: 2px solid var(--lp-strong); padding: 0 14px calc(10px + env(safe-area-inset-bottom, 0px));
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--lp-ink); }
+  .lp-progress { height: 3px; margin: 0 -14px 10px; background: var(--lp-line); }
+  .lp-progress i { display: block; height: 100%; width: 0; background: var(--lp-accent); transition: width .3s; }
   .lp-row { max-width: 1040px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
   .lp-play { flex: none; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px 0 14px;
-    border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-ink); cursor: pointer;
+    border: 0; border-radius: 999px; background: var(--lp-accent); color: var(--lp-on-accent); cursor: pointer;
     font: 700 15px 'Source Sans 3', sans-serif; letter-spacing: .01em; }
   .lp-play svg { width: 18px; height: 18px; fill: currentColor; }
   .lp-play:hover { filter: brightness(1.08); }
-  .lp-ibtn { flex: none; width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--line-strong);
-    background: var(--surface); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+  .lp-ibtn { flex: none; width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--lp-strong);
+    background: var(--lp-surface); color: var(--lp-ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
   .lp-ibtn svg { width: 16px; height: 16px; fill: currentColor; }
-  .lp-ibtn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .lp-ibtn:hover:not(:disabled) { border-color: var(--lp-accent); color: var(--lp-accent); }
   .lp-ibtn:disabled { opacity: .35; cursor: default; }
   .lp-now { flex: 1; min-width: 0; display: grid; gap: 1px; }
-  .lp-now .lp-k { font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); }
+  .lp-now .lp-k { font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--lp-faint); }
   .lp-now .lp-t { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .lp-sel { flex: none; max-width: 210px; font: 600 13px 'Source Sans 3', sans-serif; padding: 8px 10px; border-radius: 6px;
-    border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); }
-  .lp-speed { flex: none; min-width: 52px; height: 38px; border-radius: 999px; border: 1px solid var(--line-strong);
-    background: var(--surface); color: var(--ink); font: 700 13px 'IBM Plex Mono', monospace; cursor: pointer; }
-  .lp-speed:hover, .lp-sel:hover { border-color: var(--accent); }
-  .lp-bar button:focus-visible, .lp-bar select:focus-visible, .lp-bar input:focus-visible, .lp-sec-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .lp-panel { max-width: 1040px; margin: 12px auto 0; padding-top: 12px; border-top: 1px solid var(--line);
+    border: 1px solid var(--lp-strong); background: var(--lp-surface); color: var(--lp-ink); }
+  .lp-speed { flex: none; min-width: 52px; height: 38px; border-radius: 999px; border: 1px solid var(--lp-strong);
+    background: var(--lp-surface); color: var(--lp-ink); font: 700 13px 'IBM Plex Mono', monospace; cursor: pointer; }
+  .lp-speed:hover, .lp-sel:hover { border-color: var(--lp-accent); }
+  .lp-bar button:focus-visible, .lp-bar select:focus-visible, .lp-bar input:focus-visible, .lp-sec-btn:focus-visible { outline: 2px solid var(--lp-accent); outline-offset: 2px; }
+  .lp-panel { max-width: 1040px; margin: 12px auto 0; padding-top: 12px; border-top: 1px solid var(--lp-line);
     display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px 22px; align-items: start; max-height: 55vh; overflow-y: auto; }
   .lp-panel[hidden] { display: none; }
-  .lp-field { display: grid; gap: 6px; font-size: 13px; color: var(--ink-soft); }
-  .lp-field > span { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
-  .lp-field select { font: 14px 'Source Sans 3', sans-serif; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); min-width: 0; }
-  .lp-field input[type=range] { accent-color: var(--accent); width: 100%; }
-  .lp-check { display: flex; gap: 8px; align-items: flex-start; font-size: 13.5px; color: var(--ink); cursor: pointer; }
-  .lp-check input { accent-color: var(--accent); margin-top: 3px; }
-  .lp-check small { display: block; color: var(--ink-faint); font-size: 12px; }
+  .lp-field { display: grid; gap: 6px; font-size: 13px; color: var(--lp-soft); }
+  .lp-field > span { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--lp-faint); }
+  .lp-field select { font: 14px 'Source Sans 3', sans-serif; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--lp-strong); background: var(--lp-surface); color: var(--lp-ink); min-width: 0; }
+  .lp-field input[type=range] { accent-color: var(--lp-accent); width: 100%; }
+  .lp-check { display: flex; gap: 8px; align-items: flex-start; font-size: 13.5px; color: var(--lp-ink); cursor: pointer; }
+  .lp-check input { accent-color: var(--lp-accent); margin-top: 3px; }
+  .lp-check small { display: block; color: var(--lp-faint); font-size: 12px; }
   .lp-links { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .lp-link { font: 600 13px 'Source Sans 3', sans-serif; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
-  .lp-link:hover { border-color: var(--accent); color: var(--accent); }
-  .lp-note { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink-faint); line-height: 1.5; margin: 0; }
+  .lp-link { font: 600 13px 'Source Sans 3', sans-serif; border: 1px solid var(--lp-strong); background: var(--lp-surface); color: var(--lp-ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  .lp-link:hover { border-color: var(--lp-accent); color: var(--lp-accent); }
+  .lp-note { grid-column: 1 / -1; font-size: 12.5px; color: var(--lp-faint); line-height: 1.5; margin: 0; }
   .lp-sec-btn { margin-left: 10px; vertical-align: middle; font: 700 11px 'Source Sans 3', sans-serif; letter-spacing: .06em; text-transform: uppercase;
-    border: 1px solid var(--line); background: var(--surface); color: var(--accent); border-radius: 999px; padding: 3px 9px 3px 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; }
+    border: 1px solid var(--lp-line); background: var(--lp-surface); color: var(--lp-accent); border-radius: 999px; padding: 3px 9px 3px 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; }
   .lp-sec-btn svg { width: 10px; height: 10px; fill: currentColor; }
-  .lp-sec-btn:hover { border-color: var(--accent); }
-  .lp-reading { background: var(--amber-bg) !important; box-shadow: -6px 0 0 var(--amber-bg), 6px 0 0 var(--amber-bg); border-radius: 2px; transition: background .2s; }
-  tr.lp-reading td { background: var(--amber-bg) !important; }
+  .lp-sec-btn:hover { border-color: var(--lp-accent); }
+  .lp-reading { background: var(--lp-hl) !important; box-shadow: -6px 0 0 var(--lp-hl), 6px 0 0 var(--lp-hl); border-radius: 2px; transition: background .2s; }
+  tr.lp-reading td { background: var(--lp-hl) !important; }
   @media (max-width: 720px) {
-    .voice-spacer { height: 128px; }
+    .voice-spacer { height: 150px; }
     .lp-row { flex-wrap: wrap; gap: 8px; }
     .lp-now { order: -1; flex-basis: 100%; }
-    .lp-sel { flex: 1; max-width: none; }
     .lp-play { padding: 0 16px 0 12px; }
+    .lp-speed { order: 1; }
+    .lp-sel { order: 2; flex: 1 1 160px; max-width: none; min-width: 0; }
+    #lpGear { order: 3; }
+    #lpStop { display: none; }
   }
   @media (prefers-reduced-motion: reduce) { .lp-progress i, .lp-reading { transition: none; } }
+  .to-top { bottom: calc(96px + env(safe-area-inset-bottom, 0px)) !important; }
+  @media (max-width: 720px) { .to-top { bottom: calc(166px + env(safe-area-inset-bottom, 0px)) !important; } }
 </style>
 <!-- LISTEN-PLAYER:MARKUP -->
 <div class="voice-spacer"></div>
@@ -108,7 +117,7 @@
   $('lpDir').checked = !!prefs.dir;
 
   // ---------- Turning page text into clear speech ----------
-  var KEEP = {VIX:1,ETF:1,ETFS:1,FOMC:1,GDP:1,CPI:1,PPI:1,PCE:1,AI:1,US:1,USA:1,UK:1,EU:1,OPEC:1,SEC:1,FMP:1,CEO:1,ECB:1,IPO:1,EPS:1,ROIC:1,ROE:1,WTI:1,NASDAQ:1,NYSE:1,TRAP:1,UTC:1,OK:1,FX:1,CBOE:1,LNG:1,EV:1,EVS:1,CLO:1,TSX:1,DAX:1,FTSE:1,STOXX:1,NATO:1,IMF:1,API:1,EIA:1,ADP:1,ISM:1,PMI:1,JOLTS:1,MSCI:1,CNBC:1,AP:1,FT:1,WSJ:1,NBA:1,HBM:1,GPU:1,GPUS:1,CPU:1,SOFR:1,TIPS:1};
+  var KEEP = {AM:1,PM:1,VIX:1,ETF:1,ETFS:1,FOMC:1,GDP:1,CPI:1,PPI:1,PCE:1,AI:1,US:1,USA:1,UK:1,EU:1,OPEC:1,SEC:1,FMP:1,CEO:1,ECB:1,IPO:1,EPS:1,ROIC:1,ROE:1,WTI:1,NASDAQ:1,NYSE:1,TRAP:1,UTC:1,OK:1,FX:1,CBOE:1,LNG:1,EV:1,EVS:1,CLO:1,TSX:1,DAX:1,FTSE:1,STOXX:1,NATO:1,IMF:1,API:1,EIA:1,ADP:1,ISM:1,PMI:1,JOLTS:1,MSCI:1,CNBC:1,AP:1,FT:1,WSJ:1,NBA:1,HBM:1,GPU:1,GPUS:1,CPU:1,SOFR:1,TIPS:1};
   var SCALE = {K:' thousand', M:' million', B:' billion', T:' trillion'};
   function speakable(t){
     t = ' ' + t + ' ';
@@ -127,10 +136,11 @@
     t = t.replace(/\bP\/E\b/g, 'P E').replace(/\bbps?\b/g, 'basis points').replace(/\bMT\b/g, 'Mountain Time').replace(/\bET\b/g, 'Eastern');
     t = t.replace(/\bQ([1-4])\b/g, function(m, q){ return ['', 'first', 'second', 'third', 'fourth'][q] + ' quarter'; });
     t = t.replace(/\b10-Pt\b/g, '10-point').replace(/\bw\/\s?/g, 'with ').replace(/\bChg\b/g, 'change').replace(/\b(\d+)Y\b/g, '$1-year');
-    t = t.replace(/(\d)\s?\/\s?(\d)/g, '$1 of $2').replace(/\s?\/\s?/g, ' and ');
+    t = t.replace(/\s?\/\s?yr\b/g, ' per year').replace(/(^|[^\d.])(\d[\d,]*)\s\/\s(\d[\d,]*)(?![\d.]|-?[a-zA-Z])/g, '$1$2 of $3').replace(/\s?\/\s?/g, ' and ');
     t = t.replace(/\b([A-Z]{2,5})\b/g, function(m){ return KEEP[m] ? m : m.split('').join(' '); });  // tickers letter by letter
     t = t.replace(/\(\s+/g, '(').replace(/\s+\)/g, ')').replace(/\s+([,.;:!?])/g, '$1').replace(/\s+/g, ' ').trim();
-    return /[.!?:;]$/.test(t) ? t : t + '.';
+    t = t.replace(/[:;,]+$/, '');
+    return /[.!?]$/.test(t) ? t : t + '.';
   }
   function sentences(t){
     var parts = t.replace(/([.!?;])\s+(?=[A-Z0-9"“(])/g, '$1\u0001').split('\u0001'), out = [];
@@ -145,12 +155,13 @@
   }
 
   // ---------- Reading the whole page, in order ----------
-  var SKIP = 'script,style,nav,.kicker-label,.session-badge,.page-nav,.lp-bar,.voice-bar,.to-top,.dir-controls,.tk-lists,.tv-link,.src-tag,.flagsrow,.names,.watch-toast,.lp-sec-btn,input,select,button,.expbtn,.links-row,footer';
+  var SKIP = 'script,style,nav,.kicker-label,.session-badge,.lookup,.side,.list-panel,.links,div.src,a.sym,.ana,.back-link,.badge,.wbar,.tr,.page-nav,.lp-bar,.voice-bar,.to-top,.dir-controls,.tk-lists,.tv-link,.src-tag,.flagsrow,.names,.watch-toast,.lp-sec-btn,input,select,button,.expbtn,.links-row,footer';
   function visible(el){ return el.getClientRects().length > 0; }
   function clean(el){
     var c = el.cloneNode(true);
     c.querySelectorAll(SKIP).forEach(function(x){ x.remove(); });
-    return (c.textContent || '').replace(/\s+/g, ' ').trim();
+    c.querySelectorAll('*').forEach(function(x){ x.insertAdjacentText('beforebegin', ' '); x.insertAdjacentText('afterend', ' '); });   // "Nvidia" + "NVDA" -> "Nvidia NVDA"
+    return (c.textContent || '').replace(/\s+/g, ' ').replace(/\s+([,.;:!?)])/g, '$1').replace(/([($])\s+/g, '$1').trim();
   }
   function txt(el, sel){ var x = el.querySelector(sel); return x ? clean(x) : ''; }
   var sections = [], items = [];
@@ -167,21 +178,23 @@
       var cells = tr.children, name = '', parts = [];
       for (var i = 0; i < cells.length; i++) {
         var h = (heads[i] || '').toLowerCase(), v = clean(cells[i]);
-        if (!v || /^(watch|lists|10-pt flags|ticker)$/.test(h)) continue;
-        if (h === 'company') { name = v; continue; }
+        if (!v || !h.trim() && i > 0 || /^(#|watch|lists|10-pt flags|ticker)$/.test(h)) continue;
+        if (h === 'company' || h === 'holding') { name = v; continue; }
         if (/why|note/.test(h) || cells[i].classList.contains('note-cell')) { parts.push(v); continue; }
         if (i === 0 && !name) { name = v; continue; }
         parts.push((h ? (h === 'red' ? 'Red flags' : heads[i]) + ' ' : '') + v);
       }
       if (!name) { var tk = tr.querySelector('.tk'); name = tk ? clean(tk) : ''; }
-      add(sec, tr, (name ? name + '. ' : '') + parts.join('. ') + '.');
+      add(sec, tr, (name ? name.replace(/[.\s]+$/, '') + '. ' : '') + parts.join('. ') + '.');
     });
   }
   var BLOCKY = /^(P|LI|H1|H2|H3|H4|UL|OL|TABLE|DIV|SECTION|BLOCKQUOTE)$/;
   function walk(sec, el){
     if (el.nodeType !== 1 || el.matches(SKIP) || !visible(el)) return;
-    if (el.matches('h2,h3,h4')) { add(sec, el, clean(el) + '.', 380); return; }
-    if (el.matches('.stat')) { add(sec, el, txt(el, '.l') + ', ' + txt(el, '.n') + '.'); return; }
+    if (el.matches('h2,h3,h4,.label')) { add(sec, el, clean(el) + '.', 380); return; }
+    if (el.matches('.stat')) { add(sec, el, (txt(el, '.l') || txt(el, '.k')) + ', ' + (txt(el, '.n') || txt(el, '.v')) + '.'); return; }
+    if (el.matches('.point')) { var f = el.querySelector('.flag'), st = !f ? '' : f.classList.contains('green') ? 'green' : f.classList.contains('red') ? 'red flag' : f.classList.contains('neutral') ? 'neutral' : 'no data';
+      add(sec, el, txt(el, '.point-num') + ', ' + txt(el, '.point-label') + ': ' + st + '. ' + txt(el, '.point-vals')); return; }
     if (el.matches('.pull')) { add(sec, el, txt(el, '.pl') + ', ' + txt(el, '.pn') + '.'); return; }
     if (el.matches('.fcard')) { var s = el.querySelectorAll('.sym'); add(sec, el, (s[0] ? clean(s[0]) : '') + ', ' + txt(el, '.px') + ', ' + txt(el, '.chg') + (s[1] ? ', ' + clean(s[1]) : '') + '.'); return; }
     if (el.matches('.btc-move')) { add(sec, el, txt(el, '.bm-label') + ', ' + txt(el, '.bm-val') + '.'); return; }
@@ -194,32 +207,57 @@
       else if (n.nodeType === 1) walk(sec, n);
     });
   }
+  function addSection(name, els, live){
+    var idx = sections.push({ name: name, el: els[0], live: live }) - 1, before = items.length;
+    els.forEach(function(el){ walk(idx, el); });
+    if (items.length - before <= 1 && !live) { items.length = before; sections.pop(); }   // heading only (e.g. a list of links)
+  }
+  function all(sel){ return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+  function heading(sel, fallback){ var h = document.querySelector(sel); return h ? clean(h) : fallback; }
   function build(){
     sections = []; items = [];
-    var mast = document.querySelector('.masthead'), ed = document.querySelector('.edition-bar');
-    if (mast) {
+    var mast = document.querySelector('.masthead');
+    if (mast && document.querySelector('body section')) {                       // the main dashboard
+      var ed = document.querySelector('.edition-bar');
       sections.push({ name: 'Introduction', el: mast });
       add(0, mast, txt(mast, 'h1') + '.', 300);
       if (ed) add(0, ed, clean(ed));
+      all('body section').forEach(function(s){
+        if (s.closest('.lp-bar') || !visible(s)) return;
+        var h = s.querySelector('h2'), before = items.length;
+        var idx = sections.push({ name: h ? clean(h) : 'Section', el: s }) - 1;
+        Array.prototype.forEach.call(s.children, function(c){ walk(idx, c); });
+        if (items.length - before <= 1) { items.length = before; sections.pop(); }
+      });
+    } else if (document.getElementById('analyzer-data')) {                       // 10-Point Analyzer: the selected company first
+      addSection(heading('#detail h2', 'Selected company'), all('#detail'), true);
+      addSection('About this page', all('header.page, p.intro'));
+      addSection('Scoring legend', all('#legend'));
+    } else if (document.getElementById('etf-data')) {                            // ETF Explorer: the selected fund first
+      addSection(heading('#detail h2', 'Selected fund') + ' \u00B7 ' + heading('#detail .nm', ''), all('#detail'), true);
+      addSection('About this page', all('body header'));
+    } else if (document.querySelector('.label')) {                               // World Watch: one section per label
+      addSection(heading('h1', document.title), all('body > .top, body > .lede'));
+      all('body > .label').forEach(function(l){
+        var els = [l], n = l.nextElementSibling;
+        while (n && !n.classList.contains('label') && !n.matches('footer,script,.voice-spacer,.lp-bar')) { els.push(n); n = n.nextElementSibling; }
+        addSection(clean(l), els);
+      });
+    } else {
+      addSection(document.title || 'This page', [document.body]);
     }
-    Array.prototype.forEach.call(document.querySelectorAll('body section'), function(s){
-      if (s.closest('.lp-bar') || !visible(s)) return;
-      var h = s.querySelector('h2');
-      var idx = sections.push({ name: h ? clean(h) : 'Section', el: s }) - 1, before = items.length;
-      Array.prototype.forEach.call(s.children, function(c){ walk(idx, c); });
-      if (items.length - before <= 1) { items.length = before; sections.pop(); }   // heading only (e.g. a list of links)
-    });
     sections.forEach(function(sec, i){
-      var words = items.filter(function(it){ return it.sec === i; }).reduce(function(n, it){ return n + it.text.split(/\s+/).length; }, 0);
-      sec.words = words;
+      sec.words = items.filter(function(it){ return it.sec === i; }).reduce(function(n, it){ return n + it.text.split(/\s+/).length; }, 0);
     });
     var rows = document.querySelectorAll('#universe tbody tr.drow').length;
     if ($('lpDirMin')) $('lpDirMin').textContent = Math.max(1, Math.round(rows * 22 / 160));
+    if (!rows && $('lpDir')) { var c = $('lpDir').closest('.lp-check'); if (c) c.hidden = true; }
   }
+  function idleTitle(){ return document.querySelector('.masthead') ? 'The full dashboard, top to bottom' : (sections[0] ? sections[0].name : 'This page, top to bottom'); }
   function mins(words){ var m = words / (165 * rate); return m < 1 ? '<1 min' : Math.round(m) + ' min'; }
   function fillSections(){
     var total = sections.reduce(function(n, s){ return n + s.words; }, 0);
-    secSel.innerHTML = '<option value="0">Whole dashboard · ' + mins(total) + '</option>' + sections.map(function(s, i){
+    secSel.innerHTML = '<option value="0">' + (document.querySelector('.masthead') ? 'Whole dashboard' : 'Whole page') + ' · ' + mins(total) + '</option>' + sections.map(function(s, i){
       return '<option value="s' + i + '">' + s.name.replace(/</g, '&lt;') + ' · ' + mins(s.words) + '</option>';
     }).join('');
   }
@@ -333,7 +371,7 @@
   function stop(){
     gen++; playing = false; synth.cancel(); idx = 0; sub = 0; queue = null;
     highlight(null); prog.style.width = '0%'; setPlayUI(); wake(false);
-    kicker.textContent = 'Read aloud'; title.textContent = 'The full dashboard, top to bottom'; secSel.value = '0';
+    kicker.textContent = 'Read aloud'; title.textContent = idleTitle(); secSel.value = '0';
     prefs.pos = null; save();
   }
   function finish(){
@@ -386,7 +424,7 @@
   document.addEventListener('visibilitychange', function(){ if (!document.hidden && playing && !synth.speaking) start(); });
 
   // Small "Listen" button beside every section heading.
-  Array.prototype.forEach.call(document.querySelectorAll('body section h2'), function(h){
+  Array.prototype.forEach.call(document.querySelector('.masthead') ? document.querySelectorAll('body section h2') : [], function(h){
     if (h.closest('.lp-bar')) return;
     var b = document.createElement('button');
     b.type = 'button'; b.className = 'lp-sec-btn'; b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>Listen';
@@ -397,12 +435,27 @@
     h.appendChild(b);
   });
 
+  // Analyzer and ETF Explorer: when a different company or fund is picked, rebuild; if reading, read the new one.
+  all('#detail').forEach(function(d){
+    if (!document.getElementById('analyzer-data') && !document.getElementById('etf-data')) return;
+    var t = null;
+    new MutationObserver(function(){
+      clearTimeout(t);
+      t = setTimeout(function(){
+        var was = playing; gen++; playing = false; synth.cancel(); highlight(null);
+        built = false; ensure(); idx = 0; sub = 0; queue = null;
+        if (was) start(0); else { setPlayUI(); kicker.textContent = 'Read aloud'; title.textContent = sections[0] ? sections[0].name : document.title; }
+      }, 150);
+    }).observe(d, { childList: true });
+  });
+
   // Start-up: offer to resume where this edition was left off.
   setRate(rate); $('lpPitchVal').textContent = (+pitch).toFixed(2).replace(/0$/, '');
-  secSel.innerHTML = '<option value="0">Whole dashboard</option>';
+  secSel.innerHTML = '<option value="0">' + (document.querySelector('.masthead') ? 'Whole dashboard' : 'Whole page') + '</option>';
   setTimeout(function(){
     ensure();
     var p = prefs.pos;
+    if (!document.querySelector('.masthead')) { title.textContent = idleTitle(); return; }
     if (p && p.ed === edition.slice(0, 120) && p.idx > 0 && p.idx < items.length) {
       idx = p.idx; setPlayUI(); kicker.textContent = 'Pick up where you left off'; title.textContent = sections[items[idx].sec].name;
       secSel.value = 's' + items[idx].sec;

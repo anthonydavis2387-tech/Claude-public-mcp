@@ -74,7 +74,9 @@ def main(notes_path, out_path):
     page = TEMPLATE.replace('{{STAMP}}', e(stamp)).replace('{{TICKS}}', '\n'.join(fut_cells)) \
         .replace('{{CARDS}}', '\n'.join(cards)).replace('{{WATCH}}', watch) \
         .replace('{{GENERATED}}', now.isoformat())
-    open(out_path, 'w').write(page)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from install_listen_player import player_block
+    open(out_path, 'w').write(page + '\n' + player_block() + '\n')
     heads = notes.get('push_headlines', [])[:3]
     print(f"Time to review the futures. {', '.join(top5)}. " + ' '.join(f'• {h}' for h in heads))
 

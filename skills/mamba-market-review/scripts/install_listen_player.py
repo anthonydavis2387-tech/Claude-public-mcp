@@ -1,8 +1,9 @@
-"""Swap the dashboard's read-aloud bar for the Listen player in assets/listen-player.html.
+"""Install (or update) the Listen player from assets/listen-player.html on any Mamba page.
 
 Usage: python3 install_listen_player.py published.html out.html
-  published.html is the dashboard as read back from its artifact. Replaces the old voice bar (CSS, markup and
-  script) or an earlier copy of the Listen player, and strips the publish skeleton so the output can be republished.
+  published.html is the page as read back from its artifact (dashboard, 10-Point Analyzer, ...). Replaces an earlier
+  copy of the player or the dashboard's old voice bar, otherwise appends it; strips the publish skeleton so the
+  output can be republished.
 """
 import os, re, sys
 
@@ -26,7 +27,7 @@ def main(src, out):
     elif old.search(s):
         s = old.sub(lambda m: player.strip(), s, count=1)
     else:
-        raise SystemExit('no voice bar or listen player found')
+        s = s.rstrip() + '\n' + player.strip() + '\n'   # pages that never had a read-aloud bar
     if 'id="voice-scripts"' in s or 'vMic' in s:
         raise SystemExit('old voice command code still present')
     open(out, 'w').write(s)
@@ -35,3 +36,8 @@ def main(src, out):
 
 if __name__ == '__main__':
     main(sys.argv[1], sys.argv[2])
+
+
+def player_block():
+    """The player markup for page builders (etf_explorer.py, world_watch.py) to append."""
+    return re.sub(r'<!-- LISTEN-PLAYER:\w+ -->\n', '', open(os.path.join(HERE, '..', 'assets', 'listen-player.html')).read()).strip()
