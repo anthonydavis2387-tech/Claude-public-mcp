@@ -1,6 +1,6 @@
 """Pull full ETF holdings from the SEC's free N-PORT filings for the ETF Explorer.
 
-Usage: python3 etf_holdings.py
+Usage: python3 etf_holdings.py [SYMBOL ...]   (no symbols = all 100 funds)
   Reads etf/etf_list.json (the 100 funds) and writes:
     etf/holdings/{SYMBOL}.json  - the fund's latest reported holdings (top 250 by weight, plus totals)
     etf/holdings-index.json     - reverse map: dashboard ticker -> [[ETF, weight %], ...] across all 100 funds
@@ -139,15 +139,26 @@ def norm(n):
     return re.sub(r'\s+', ' ', NORM_DROP.sub(' ', n)).strip()
 
 
+def key(n):
+    # 'ExxonMobil' vs 'Exxon Mobil Corp', 'D.R. Horton' vs 'DR Horton Inc'
+    return norm(n).replace(' ', '')
+
+
+NAME_FIX = {'IDEF': 'iShares Defense Industrials Active ETF'}  # FMP truncates this fund's name
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     etfs = json.load(open(os.path.join(ROOT, 'etf', 'etf_list.json')))
+    only = set(a.upper() for a in sys.argv[1:])
+    if only:
+        etfs = [e for e in etfs if e['s'] in only]
     mf = sec('https://www.sec.gov/files/company_tickers_mf.json', as_json=True)
     series_of = {r[mf['fields'].index('symbol')]: (r[mf['fields'].index('cik')], r[mf['fields'].index('seriesId')]) for r in mf['data']}
     ct = sec('https://www.sec.gov/files/company_tickers.json', as_json=True)
     name_to_tk = {}
     for v in ct.values():
-        name_to_tk.setdefault(norm(v['title']), v['ticker'])
+        name_to_tk.setdefault(key(v['title']), v['ticker'])
 
     # Dashboard names: CUSIP -> ticker, so holdings can link to the Analyzer.
     snaps = sorted(glob.glob(os.path.join(ROOT, 'reports', '20*', 'full-study.json')))
@@ -160,17 +171,18 @@ def main():
             cus[s] = (p[0].get('cusip') if isinstance(p, list) and p else None)
     json.dump(cus, open(cache_p, 'w'), indent=0, sort_keys=True)
     cusip_to_tk = {c: s for s, c in cus.items() if c}
-    uni_norm = {norm(n): s for s, n in uni.items() if n}
+    uni_norm = {key(n): s for s, n in uni.items() if n}
 
     def ticker_for(r):
         if r['cusip'] and r['cusip'] in cusip_to_tk:
             return cusip_to_tk[r['cusip']], True
-        n = norm(r['name']) or norm(r['title'])
+        n = key(r['name']) or key(r['title'])
         if n in uni_norm:
             return uni_norm[n], True
         if r['ticker'] and re.fullmatch(r'[A-Z.\-]{1,6}', r['ticker']):
             return r['ticker'], r['ticker'] in uni
-        return name_to_tk.get(n), False
+        tk = name_to_tk.get(n)
+        return tk, tk in uni
 
     index, report = {}, []
     for e in etfs:
@@ -187,7 +199,8 @@ def main():
                           key=lambda r: -r['pct'])
             out.update(kind='computed', note='Dow 30 weights computed from share prices (price-weighted index)',
                        as_of=datetime.now(timezone.utc).date().isoformat(), count=len(rows),
-                       top10_pct=round(sum(r['pct'] for r in rows[:10]), 2), rows=rows)
+                       top10_pct=round(sum(r['pct'] for r in rows[:10]), 2), rows=rows,
+                       dash=[[r['tk'], r['pct']] for r in rows if r['in_uni']])
             for r in rows:
                 index.setdefault(r['tk'], {})[sym] = r['pct']
         else:
@@ -197,7 +210,7 @@ def main():
             found = None
             if not src or src not in series_of:
                 info = fmp('etf/info', symbol=sym)
-                fname = info[0].get('name') if isinstance(info, list) and info else None
+                fname = NAME_FIX.get(sym) or (info[0].get('name') if isinstance(info, list) and info else None)
                 found = find_by_name(fname) if fname else None
                 if not found:
                     out.update(kind='missing', note='No SEC holdings filing found for this fund yet')
@@ -210,7 +223,8 @@ def main():
                            filing_url=f'https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace("-", "")}/',
                            as_of=d['as_of'], series_name=d['series_name'], net_assets=d['net_assets'],
                            count=d['count'], top10_pct=round(sum(r['pct'] for r in d['rows'][:10]), 2),
-                           rows=[{k: r[k] for k in ('name', 'tk', 'in_uni', 'pct', 'cat', 'country')} for r in d['rows'][:KEEP]])
+                           rows=[{k: r[k] for k in ('name', 'tk', 'in_uni', 'pct', 'cat', 'country')} for r in d['rows'][:KEEP]],
+                           dash=[[r['tk'], r['pct']] for r in d['rows'] if r['in_uni'] and r['tk'] and r['pct'] > 0])
                 for r in d['rows']:
                     if r['in_uni'] and r['tk'] and r['pct'] > 0:
                         index.setdefault(r['tk'], {})
@@ -232,7 +246,8 @@ def main():
                                    filing_url=f'https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace("-", "")}/',
                                    as_of=d['as_of'], series_name=d['series_name'], net_assets=d['net_assets'],
                                    count=d['count'], top10_pct=round(sum(r['pct'] for r in d['rows'][:10]), 2),
-                                   rows=[{k: r[k] for k in ('name', 'tk', 'in_uni', 'pct', 'cat', 'country')} for r in d['rows'][:KEEP]])
+                                   rows=[{k: r[k] for k in ('name', 'tk', 'in_uni', 'pct', 'cat', 'country')} for r in d['rows'][:KEEP]],
+                           dash=[[r['tk'], r['pct']] for r in d['rows'] if r['in_uni'] and r['tk'] and r['pct'] > 0])
                         for r in d['rows']:
                             if r['in_uni'] and r['tk'] and r['pct'] > 0:
                                 index.setdefault(r['tk'], {})
@@ -240,6 +255,12 @@ def main():
         json.dump(out, open(os.path.join(OUT, f'{sym}.json'), 'w'), separators=(',', ':'))
         report.append((sym, out['kind'], out.get('as_of'), out.get('count'), out.get('source')))
         print(sym, out['kind'], out.get('source', ''), out.get('as_of', ''), out.get('count', ''), flush=True)
+    index = {}
+    for f in sorted(glob.glob(os.path.join(OUT, '*.json'))):
+        h = json.load(open(f))
+        for tk, p in h.get('dash', []):
+            index.setdefault(tk, {})
+            index[tk][h['s']] = index[tk].get(h['s'], 0) + p
     idx = {tk: sorted([[e, round(p, 3)] for e, p in m.items()], key=lambda x: -x[1]) for tk, m in sorted(index.items())}
     json.dump(idx, open(os.path.join(ROOT, 'etf', 'holdings-index.json'), 'w'), separators=(',', ':'))
     kinds = {}
