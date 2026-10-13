@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Searches returned no Oct 13 closes for Asia, Europe or China; see page for latest dated data.",
+    "Brent last seen near $108 on Sep 15 (Houthi attacks on Saudi East-West pipeline); Rio Times board showed Brent 88.88 on Oct 8.",
+    "Ibovespa at 206,034.59 (+0.85% intraday) on Oct 8, Selic 14.00%."
+  ],
+  "on_notice": [
+    "Oil/Hormuz headlines: Brent has swung between roughly $80 and $108 in recent weeks, so check energy futures first.",
+    "Same-day Asia and Europe closes were not available in search; verify against live futures before trading.",
+    "Brazil: Ibovespa near record territory with Selic at 14.00%; watch for political and data risk."
+  ],
+  "regions": {
+    "asia": {"headline": "No Oct 13 Asia closes found in search.", "detail": "Search returned only older Asian market reports; no Nikkei, Hang Seng or Kospi levels for today are available.", "sources": []},
+    "china": {"headline": "No Oct 13 Shanghai close found; latest is Sep 7.", "detail": "The Shanghai Composite gained 3 points, or 0.07%, to 3933 on Sep 7, after falling 0.29% to 3931 on Sep 4. These are stale and not today's levels.", "sources": [{"name": "Trading Economics", "url": "https://tradingeconomics.com/china/stock-market/news/581558"}, {"name": "Trading Economics", "url": "https://tradingeconomics.com/china/stock-market/news/581174"}]},
+    "europe": {"headline": "No Oct 13 European close found; latest is Aug 11.", "detail": "On Aug 4 the STOXX 600 rose 0.5% to 652.09 near a record, with the DAX +1.59% and FTSE 100 -0.1%. Nothing newer was found.", "sources": [{"name": "The Peninsula", "url": "https://s.thepeninsula.qa/article/04/08/2026/european-stocks-close-higher-4"}]},
+    "latam": {"headline": "Ibovespa 206,034.59 on Oct 8 (latest found).", "detail": "Rio Times board dated Oct 8 showed the Ibovespa +0.85% intraday, dollar at 5.16 reais, Selic 14.00%, Brent 88.88. Materials led (+2.35%). No Oct 13 report was found.", "sources": [{"name": "Rio Times", "url": "https://riotimesonline.com/brazil-markets-ibovespa-real-wednesday-september-23-2026"}]},
+    "mideast": {"headline": "Brent near $108 on Sep 15 amid Houthi pipeline attacks; no Oct 13 report found.", "detail": "ICE Brent was $107.89 at 09:00 GMT on Sep 15 after Houthi attacks on Saudi Arabia's East-West pipeline, an alternative to the Strait of Hormuz. ING expected support until Saudi supply is clearer. Brent had been about $80 in early August.", "sources": [{"name": "Gulf News", "url": "https://gulfnews.com/business/markets/brent-oil-nears-100-after-surging-5-on-mideast-attacks-1.500617548"}]}
+  }
+}
