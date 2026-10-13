@@ -1,0 +1,125 @@
+<style id="annual-css">
+  /* Annual report & shareholder letter box (Analyzer detail, below the TRAP #4 check) */
+  .annual-box { margin-top: 22px; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; background: var(--surface); }
+  .annual-box h3 { font-family: 'Source Sans 3', sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--plum); }
+  .annual-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 14px; margin-bottom: 4px; }
+  .annual-head .ah-meta { font-family: 'Source Sans 3', sans-serif; font-size: 12.5px; color: var(--ink-faint); }
+  .annual-letter { font-size: 14px; line-height: 1.6; color: var(--ink-soft); margin: 8px 0 14px; padding-left: 12px; border-left: 3px solid var(--plum); }
+  .annual-letter .al-by { display: block; font-family: 'Source Sans 3', sans-serif; font-size: 11.5px; color: var(--ink-faint); margin-top: 4px; }
+  .annual-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .acard { border-left: 3px solid var(--line); padding: 4px 0 4px 12px; font-family: 'Source Sans 3', sans-serif; font-size: 13px; color: var(--ink-soft); line-height: 1.5; min-width: 0; }
+  .acard.ok { border-color: var(--green); } .acard.mid { border-color: var(--amber); } .acard.bad { border-color: var(--red); }
+  .acard .ac-q { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); }
+  .acard .ac-a { font-size: 15px; font-weight: 700; color: var(--ink); margin: 2px 0 4px; }
+  .acard .ac-n { font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+  .acard .up { color: var(--green); font-weight: 600; } .acard .down { color: var(--red); font-weight: 600; }
+  .acard ul { margin: 4px 0 0; padding-left: 16px; }
+  .acard li { margin: 2px 0; }
+  .akind { display: inline-block; border-radius: 5px; padding: 1px 7px; font-size: 11.5px; font-weight: 700; margin-left: 4px; }
+  .akind.growth { background: var(--green-bg); color: var(--green); }
+  .akind.returns { background: var(--amber-bg); color: var(--amber); }
+  .akind.other { background: var(--surface-2); color: var(--ink-soft); }
+  .annual-src { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-family: 'Source Sans 3', sans-serif; font-size: 12px; color: var(--ink-faint); line-height: 1.6; }
+  .annual-src a { margin-right: 10px; }
+</style>
+<script id="annual-report">
+(function(){
+  var island = document.getElementById('analyzer-data'), detail = document.getElementById('detail');
+  if (!island || !detail) return;
+  var DATA; try { DATA = JSON.parse(island.textContent); } catch (e) { return; }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function money(v, cur){
+    if (v == null) return '&mdash;';
+    var a = Math.abs(v), sign = v < 0 ? '-' : '', pre = (!cur || cur === 'USD') ? '$' : '';
+    var s = a >= 1e12 ? (a / 1e12).toFixed(2) + 'T' : a >= 1e9 ? (a / 1e9).toFixed(1) + 'B' : a >= 1e6 ? (a / 1e6).toFixed(0) + 'M' : a.toFixed(0);
+    return sign + pre + s + (pre ? '' : ' ' + esc(cur));
+  }
+  function pct(v){ return v == null ? '&mdash;' : '<span class="' + (v >= 0 ? 'up' : 'down') + '">' + (v >= 0 ? '+' : '') + v.toFixed(1) + '%</span>'; }
+  function grew(v){ return v == null ? 'no data' : v > 0 ? 'increased' : v < 0 ? 'decreased' : 'was flat'; }
+
+  function build(sym, A){
+    var R = A.research || {}, h = '';
+    var fy = A.fiscal_year ? 'FY' + A.fiscal_year : 'Latest fiscal year';
+    h += '<div class="annual-box" data-sym="' + esc(sym) + '">';
+    h += '<div class="annual-head"><h3>Annual Report &amp; Shareholder Letter</h3><span class="ah-meta">' + fy +
+         (A.period_end ? ' &middot; year ended ' + esc(A.period_end) : '') + (A.report ? ' &middot; ' + esc(A.report.form) + ' filed ' + esc(A.report.filed) : '') + '</span></div>';
+    if (R.letter) {
+      h += '<p class="annual-letter">' + esc(R.letter) + (R.letter_by ? '<span class="al-by">Letter by ' + esc(R.letter_by) + (R.report_year ? ' &middot; ' + esc(R.report_year) + ' annual report' : '') + '</span>' : '') + '</p>';
+    }
+    h += '<div class="annual-grid">';
+
+    // 1. Earnings & profit, this year and the year before
+    var ni = A.net_income_growth, rev = A.revenue_growth;
+    var cls = ni == null ? 'mid' : ni > 0 && (rev == null || rev >= 0) ? 'ok' : ni > 0 || (rev != null && rev > 0) ? 'mid' : 'bad';
+    h += '<div class="acard ' + cls + '"><div class="ac-q">Did earnings &amp; profit increase?</div>' +
+         '<div class="ac-a">Profit ' + grew(ni) + (A.net_income_growth_prior != null ? '; the year before it ' + grew(A.net_income_growth_prior) : '') + '</div>' +
+         '<div class="ac-n">Revenue ' + money(A.revenue, A.currency) + ' ' + pct(rev) + ' <span style="color:var(--ink-faint)">(prior yr ' + pct(A.revenue_growth_prior) + ')</span><br>' +
+         'Net income ' + money(A.net_income, A.currency) + ' ' + pct(ni) + ' <span style="color:var(--ink-faint)">(prior yr ' + pct(A.net_income_growth_prior) + ')</span><br>' +
+         'EPS ' + (A.eps != null ? A.eps.toFixed(2) : '&mdash;') + ' ' + pct(A.eps_growth) + '<br>' +
+         'Net margin ' + (A.net_margin_prior != null ? A.net_margin_prior.toFixed(1) + '% &rarr; ' : '') + (A.net_margin != null ? A.net_margin.toFixed(1) + '%' : '&mdash;') + '</div></div>';
+
+    // 2. Debt: up or down, and if up, what it paid for
+    var D = A.debt;
+    if (D) {
+      var dir = D.direction === 'up' ? 'Took on more debt' : D.direction === 'down' ? 'Paid debt down' : 'Debt about flat';
+      var kind = D.purpose_kind === 'growth' ? '<span class="akind growth">Growth</span>' : D.purpose_kind === 'shareholder returns' ? '<span class="akind returns">Shareholder returns</span>' : D.purpose_kind ? '<span class="akind other">Other</span>' : '';
+      var dcls = D.direction === 'up' ? (D.purpose_kind === 'growth' ? 'mid' : 'bad') : 'ok';
+      h += '<div class="acard ' + dcls + '"><div class="ac-q">Debt: increase or decrease? Why?</div>' +
+           '<div class="ac-a">' + dir + ' ' + kind + '</div>' +
+           '<div class="ac-n">Total debt ' + money(D.prior_total_debt, A.currency) + ' &rarr; ' + money(D.total_debt, A.currency) + ' ' + pct(D.change_pct) + '<br>' +
+           'Free cash flow ' + money(D.fcf, A.currency) + ' &middot; buybacks ' + money(D.uses.buybacks, A.currency) + ' &middot; dividends ' + money(D.uses.dividends, A.currency) +
+           (D.uses.acquisitions ? ' &middot; acquisitions ' + money(D.uses.acquisitions, A.currency) : '') + ' &middot; capex ' + money(D.uses.capex, A.currency) + '</div>' +
+           (R.debt_reason ? '<div style="margin-top:4px">' + esc(R.debt_reason) + '</div>' :
+             (D.purpose ? '<div style="margin-top:4px">From the cash flow statement: ' + esc(D.purpose) + '.</div>' : '')) + '</div>';
+    }
+
+    // 3. Innovation pipeline
+    var P = R.pipeline || [];
+    h += '<div class="acard ' + (P.length || (A.rnd_growth != null && A.rnd_growth > 0) ? 'ok' : 'mid') + '"><div class="ac-q">What&rsquo;s new in the pipeline?</div>' +
+         (A.rnd ? '<div class="ac-n">R&amp;D ' + money(A.rnd, A.currency) + ' ' + pct(A.rnd_growth) + '</div>' : '') +
+         (P.length ? '<ul>' + P.map(function(p){ return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>'
+                   : '<div style="margin-top:4px">No written pipeline summary yet; see the annual report&rsquo;s business section.</div>') + '</div>';
+
+    // 4. Dividend
+    var V = A.dividend || {};
+    if (V.pays) {
+      var vcls = V.trend === 'increased' || V.trend === 'started' ? 'ok' : V.trend === 'held steady' ? 'mid' : 'bad';
+      h += '<div class="acard ' + vcls + '"><div class="ac-q">Dividend: increase or decrease?</div>' +
+           '<div class="ac-a">' + esc(V.trend.charAt(0).toUpperCase() + V.trend.slice(1)) + '</div>' +
+           '<div class="ac-n">Last 12 months ' + (V.ttm != null ? '$' + V.ttm.toFixed(2) : '&mdash;') + ' vs ' + (V.prior_ttm != null ? '$' + V.prior_ttm.toFixed(2) : '&mdash;') + ' ' + pct(V.change_pct) + '<br>' +
+           (V.latest != null ? 'Latest payment $' + V.latest.toFixed(2) + (V.frequency ? ' (' + esc(V.frequency.toLowerCase()) + ')' : '') + '<br>' : '') +
+           'Raises in last 8 payments: ' + V.raises_last_8 + (V.cuts_last_8 ? ' &middot; cuts: ' + V.cuts_last_8 : '') + '</div></div>';
+    } else {
+      h += '<div class="acard mid"><div class="ac-q">Dividend: increase or decrease?</div><div class="ac-a">No dividend</div><div>This company doesn&rsquo;t pay a regular dividend.</div></div>';
+    }
+    h += '</div>';
+
+    h += '<div class="annual-src">Numbers: annual statements and dividend history from FMP' + (A.checked ? ', checked ' + esc(A.checked) : '') +
+         '. When debt rose, the reason is read from the cash flow statement' + (R.debt_reason ? ' and the company&rsquo;s own filings' : '') + '.<br>';
+    if (A.report && A.report.url) h += '<a href="' + esc(A.report.url) + '" target="_blank" rel="noopener">Full ' + esc(A.report.form) + ' on SEC &#8599;</a>';
+    (R.sources || []).forEach(function(s){ h += '<a href="' + esc(s[1]) + '" target="_blank" rel="noopener">' + esc(s[0]) + ' &#8599;</a>'; });
+    h += '</div></div>';
+    return h;
+  }
+
+  function place(){
+    var symEl = detail.querySelector('.dsym');
+    if (!symEl) return;
+    var sym = symEl.textContent.trim(), d = DATA[sym], A = d && d.annual;
+    var old = detail.querySelector('.annual-box');
+    if (old && old.getAttribute('data-sym') === sym) return;
+    if (old) old.remove();
+    if (!A || A.error || A.revenue == null) return;
+    var wrap = document.createElement('div');
+    wrap.innerHTML = build(sym, A);
+    var box = wrap.firstChild, trap = detail.querySelector('.trap-box');
+    if (trap) trap.after(box);
+    else {
+      var h3 = Array.prototype.filter.call(detail.querySelectorAll('h3'), function(x){ return /Trend Detail/.test(x.textContent); })[0];
+      if (h3) h3.before(box); else detail.appendChild(box);
+    }
+  }
+  new MutationObserver(place).observe(detail, { childList: true });
+  place();
+})();
+</script>

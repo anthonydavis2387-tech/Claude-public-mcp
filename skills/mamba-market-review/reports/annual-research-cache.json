@@ -1,0 +1,131 @@
+{
+ "AMGN": {
+  "as_of": "2026-10-13",
+  "letter_by": "Robert A. Bradway, Chairman and CEO",
+  "report_year": "2025",
+  "letter": "Amgen says it now serves about 17 million patients and calls its strategy consistent: innovation plus disciplined execution. Profit rose sharply in 2025 from a weak 2024, and the company kept paying down the debt it took on to buy Horizon Therapeutics.",
+  "pipeline": [
+   "MariTide (monthly-or-less obesity shot): six global Phase 3 studies underway; 2026 is a data-generation year",
+   "Repatha: Phase 3 VESALIUS-CV showed fewer heart attacks and strokes in high-risk patients without a prior event",
+   "IMDELLTRA: full FDA approval in Nov 2025 for small cell lung cancer after the DeLLphi-304 study",
+   "Setback: bemarituzumab will not be filed in first-line gastric cancer (Feb 2026)"
+  ],
+  "debt_reason": "Debt fell about $5.5B as Amgen kept repaying the money it borrowed in 2023 to buy Horizon Therapeutics, a growth acquisition.",
+  "sources": [
+   [
+    "2025 shareholder letter",
+    "https://amgen.com/stories/2026/03/2025-letter-to-shareholders"
+   ],
+   [
+    "Annual report (SEC ARS PDF)",
+    "https://www.sec.gov/Archives/edgar/data/318154/000031815426000035/amgn_ars_filing_2026.pdf"
+   ]
+  ]
+ },
+ "CAT": {
+  "as_of": "2026-10-13",
+  "letter_by": "Joe Creed, CEO (since May 2025)",
+  "report_year": "2025",
+  "letter": "Caterpillar's centennial year brought the highest sales and revenues in its history (about $67.6B, up 4%), but tariffs and costs squeezed margins, so profit per share fell to $18.81 from $22.05. The refreshed strategy has three pillars: Commercial Excellence, Advanced Technology Leader, and Transform How We Work.",
+  "pipeline": [
+   "Autonomous mining machines and fleet-management technology (Resource Industries)",
+   "Power generation for data centers: engines and turbines riding AI demand",
+   "More capacity: capital spending rose about 33% in 2025"
+  ],
+  "debt_reason": "Most of the increase sits in Cat Financial (up $3.8B), which borrows to fund the loans and leases customers use to buy equipment. That is normal for its finance arm, not a sign of stress. Buybacks plus dividends (about $8B) also ran above free cash flow (about $7.5B).",
+  "sources": [
+   [
+    "2025 10-K",
+    "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/cat-20251231.htm"
+   ],
+   [
+    "Annual report (SEC ARS PDF)",
+    "https://www.sec.gov/Archives/edgar/data/0000018230/000130817926000360/cat015318-ars.pdf"
+   ]
+  ]
+ },
+ "GLW": {
+  "as_of": "2026-10-13",
+  "letter_by": "Wendell P. Weeks, Chairman and CEO",
+  "report_year": "2025",
+  "letter": "Corning calls its Springboard plan a 'tremendous success' two years in. Core sales rose 13% to $16.4B, core EPS rose 29%, and adjusted free cash flow nearly doubled. The company raised its high-confidence target to $4B of added annual sales by end of 2026 and set goals of a $30B run rate by 2028 and $40B by 2030.",
+  "pipeline": [
+   "Optical connectivity for AI data centers (Gen AI fiber and cable)",
+   "Hemlock solar: polysilicon and US-made solar modules ramping (Q4 sales up 62%)",
+   "Adding capacity and technology for Springboard, with customers sharing the cost and risk"
+  ],
+  "debt_reason": "Growth. The rise came mainly from finance leases for new capacity (up to $869M from $144M) and new Chinese yuan loans that Corning says fund capital investment, with spending up 33%.",
+  "sources": [
+   [
+    "2025 10-K",
+    "https://www.sec.gov/Archives/edgar/data/24741/000002474126000124/glw-20251231.htm"
+   ],
+   [
+    "Q3 2025 10-Q (debt detail)",
+    "https://www.sec.gov/Archives/edgar/data/24741/000002474125000121/glw-20250930.htm"
+   ]
+  ]
+ },
+ "KLAC": {
+  "as_of": "2026-10-13",
+  "letter_by": "Rick Wallace, President and CEO",
+  "report_year": "FY2026 (ended June 2026)",
+  "letter": "Revenue rose 12% to $13.58B (product +10%, services +16%). KLA says it sits on the 'critical path' of the AI build-out, with high-bandwidth memory and advanced packaging driving new demand. The board approved a higher dividend and $7B more for buybacks, and management expects momentum to speed up into 2027.",
+  "pipeline": [
+   "Advanced-packaging process control, which KLA expects to top about $1.1B in calendar 2026 (up 70%+)",
+   "Inspection and metrology for leading-edge AI chips and HBM",
+   "R&D up 13% to $1.5B"
+  ],
+  "debt_reason": "Debt was flat. Buybacks and dividends were paid from free cash flow (about $3.8B).",
+  "sources": [
+   [
+    "FY2026 annual report (SEC ARS PDF)",
+    "https://www.sec.gov/Archives/edgar/data/0000319201/000119312526397978/d311668dars.pdf"
+   ]
+  ]
+ },
+ "RTX": {
+  "as_of": "2026-10-13",
+  "letter_by": "Christopher T. Calio, Chairman and CEO",
+  "report_year": "2025",
+  "letter": "Sales rose 10% to $88.6B and free cash flow reached $7.9B. Over $138B of new orders lifted backlog 23% to a record $268B ($161B commercial, $107B defense). The 2026 focus is new capabilities, more production capacity and working down the backlog; guidance is $92-93B in sales.",
+  "pipeline": [
+   "GTF Advantage engine certified by the FAA and EASA (4-8% more takeoff thrust, up to 1% less fuel)",
+   "GTF repair network expanded to 21 sites (shop visits up 26%)",
+   "Raytheon missile and air-defense capacity expansion"
+  ],
+  "debt_reason": "Debt fell about $3.4B as RTX repaid borrowings from operating cash.",
+  "sources": [
+   [
+    "2025 results and 2026 outlook",
+    "https://www.rtx.com/news/news-center/2026/01/27/rtx-reports-2025-results-and-announces-2026-outlook"
+   ],
+   [
+    "2026 proxy statement",
+    "https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm"
+   ]
+  ]
+ },
+ "UNH": {
+  "as_of": "2026-10-13",
+  "letter_by": "Stephen J. Hemsley, CEO (returned May 2025)",
+  "report_year": "2025",
+  "letter": "This is a turnaround year. Hemsley came back after Andrew Witty stepped down, promised to change leadership, culture, practices and board oversight, and asked shareholders for patience. Medical costs rose faster than expected, so profit fell again even as revenue grew 12%. He guided to 'solid but moderate' earnings growth for 2026 and stronger growth after that.",
+  "pipeline": [
+   "Repricing Medicare Advantage and exiting unprofitable plans",
+   "Fixing Optum Health's performance, which management says has not met expectations",
+   "Technology- and data-driven care at Optum"
+  ],
+  "debt_reason": "Debt was roughly flat (up 2%). Acquisitions, buybacks and dividends were covered by about $16B of free cash flow.",
+  "sources": [
+   [
+    "2025 10-K",
+    "https://www.sec.gov/Archives/edgar/data/731766/000073176626000062/unh-20251231.htm"
+   ],
+   [
+    "Annual meeting update",
+    "https://www.unitedhealthgroup.com/newsroom/2025/2025-06-uhg-updates-annual-shareholders-meeting-board-actions.html"
+   ]
+  ]
+ }
+}
