@@ -20,8 +20,8 @@ from datetime import datetime, timezone
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
 OUT = os.path.join(ROOT, 'etf', 'holdings')
-UA = os.environ.get('SEC_USER_AGENT', 'MambaMarketReview anthonydavis2387-tech@users.noreply.github.com')
-PROXY = {'SPY': 'IVV', 'QQQ': 'QQQM'}  # same index, open-end fund that files N-PORT
+UA = os.environ.get('SEC_USER_AGENT', 'Mamba Market Review anthonydavis2387@gmail.com')  # SEC requires a real contact
+PROXY = {'SPY': 'IVV', 'QQQ': 'QQQM', 'MDY': 'IJH'}  # same index, open-end fund that files N-PORT
 DOW30 = ('AAPL AMGN AMZN AXP BA CAT CRM CSCO CVX DIS GS HD HON IBM JNJ JPM KO MCD MMM MRK MSFT NKE NVDA PG SHW '
          'TRV UNH V VZ WMT').split()
 DIRECT = {'GLD': 'Physical gold bullion', 'SLV': 'Physical silver bullion', 'IBIT': 'Bitcoin', 'ETHA': 'Ether',
@@ -85,12 +85,27 @@ def latest_nport(cik, series):
     return None
 
 
-def parse_nport(xml_bytes):
+def find_by_name(fund_name):
+    """For funds too new for company_tickers_mf.json: full-text search N-PORT filings for the fund's name and keep
+    the newest filing whose own series name matches. Returns (cik, accession, xml) or None."""
+    r = sec('https://efts.sec.gov/LATEST/search-index?' + urllib.parse.urlencode({'q': f'"{fund_name}"', 'forms': 'NPORT-P'}), as_json=True)
+    hits = sorted((r or {}).get('hits', {}).get('hits', []), key=lambda h: h['_source'].get('period_ending') or '', reverse=True)
+    for h in hits[:6]:
+        acc, cik = h['_id'].split(':')[0], int(h['_source']['ciks'][0])
+        xml = sec(f'https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace("-", "")}/primary_doc.xml')
+        if xml and norm(parse_nport(xml, header_only=True)) == norm(fund_name):
+            return cik, acc, xml
+    return None
+
+
+def parse_nport(xml_bytes, header_only=False):
     root = ET.fromstring(xml_bytes)
     strip = lambda t: t.split('}', 1)[-1]
     for el in root.iter():
         el.tag = strip(el.tag)
     gen = root.find('.//genInfo')
+    if header_only:
+        return gen.findtext('seriesName') if gen is not None else ''
     fund = root.find('.//fundInfo')
     rows = []
     for inv in root.iter('invstOrSec'):
@@ -179,9 +194,28 @@ def main():
             src = sym if sym in series_of else PROXY.get(sym)
             if sym in PROXY and sym not in series_of:
                 src = PROXY[sym]
+            found = None
             if not src or src not in series_of:
-                out.update(kind='missing', note='No SEC series found for this fund')
-            else:
+                info = fmp('etf/info', symbol=sym)
+                fname = info[0].get('name') if isinstance(info, list) and info else None
+                found = find_by_name(fname) if fname else None
+                if not found:
+                    out.update(kind='missing', note='No SEC holdings filing found for this fund yet')
+            if found:
+                cik, acc, xml = found
+                d = parse_nport(xml)
+                for r in d['rows']:
+                    r['tk'], r['in_uni'] = ticker_for(r)
+                out.update(kind='nport', source=sym, series=None, cik=cik, accession=acc,
+                           filing_url=f'https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace("-", "")}/',
+                           as_of=d['as_of'], series_name=d['series_name'], net_assets=d['net_assets'],
+                           count=d['count'], top10_pct=round(sum(r['pct'] for r in d['rows'][:10]), 2),
+                           rows=[{k: r[k] for k in ('name', 'tk', 'in_uni', 'pct', 'cat', 'country')} for r in d['rows'][:KEEP]])
+                for r in d['rows']:
+                    if r['in_uni'] and r['tk'] and r['pct'] > 0:
+                        index.setdefault(r['tk'], {})
+                        index[r['tk']][sym] = round(index[r['tk']].get(sym, 0) + r['pct'], 4)
+            elif src and src in series_of:
                 cik, series = series_of[src]
                 acc = latest_nport(cik, series)
                 if not acc:
