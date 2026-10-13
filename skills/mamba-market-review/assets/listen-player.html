@@ -1,0 +1,412 @@
+<!-- LISTEN-PLAYER:CSS -->
+<style id="listen-css">
+  /* Listen player: reads the whole dashboard aloud, in page order, with the sentence being read highlighted. */
+  .voice-spacer { height: 84px; }
+  .lp-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--surface);
+    border-top: 2px solid var(--line-strong); padding: 0 14px calc(10px + env(safe-area-inset-bottom, 0px));
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); }
+  .lp-progress { height: 3px; margin: 0 -14px 10px; background: var(--line); }
+  .lp-progress i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+  .lp-row { max-width: 1040px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .lp-play { flex: none; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px 0 14px;
+    border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-ink); cursor: pointer;
+    font: 700 15px 'Source Sans 3', sans-serif; letter-spacing: .01em; }
+  .lp-play svg { width: 18px; height: 18px; fill: currentColor; }
+  .lp-play:hover { filter: brightness(1.08); }
+  .lp-ibtn { flex: none; width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--line-strong);
+    background: var(--surface); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+  .lp-ibtn svg { width: 16px; height: 16px; fill: currentColor; }
+  .lp-ibtn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .lp-ibtn:disabled { opacity: .35; cursor: default; }
+  .lp-now { flex: 1; min-width: 0; display: grid; gap: 1px; }
+  .lp-now .lp-k { font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); }
+  .lp-now .lp-t { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .lp-sel { flex: none; max-width: 210px; font: 600 13px 'Source Sans 3', sans-serif; padding: 8px 10px; border-radius: 6px;
+    border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); }
+  .lp-speed { flex: none; min-width: 52px; height: 38px; border-radius: 999px; border: 1px solid var(--line-strong);
+    background: var(--surface); color: var(--ink); font: 700 13px 'IBM Plex Mono', monospace; cursor: pointer; }
+  .lp-speed:hover, .lp-sel:hover { border-color: var(--accent); }
+  .lp-bar button:focus-visible, .lp-bar select:focus-visible, .lp-bar input:focus-visible, .lp-sec-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lp-panel { max-width: 1040px; margin: 12px auto 0; padding-top: 12px; border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px 22px; align-items: start; max-height: 55vh; overflow-y: auto; }
+  .lp-panel[hidden] { display: none; }
+  .lp-field { display: grid; gap: 6px; font-size: 13px; color: var(--ink-soft); }
+  .lp-field > span { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
+  .lp-field select { font: 14px 'Source Sans 3', sans-serif; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); min-width: 0; }
+  .lp-field input[type=range] { accent-color: var(--accent); width: 100%; }
+  .lp-check { display: flex; gap: 8px; align-items: flex-start; font-size: 13.5px; color: var(--ink); cursor: pointer; }
+  .lp-check input { accent-color: var(--accent); margin-top: 3px; }
+  .lp-check small { display: block; color: var(--ink-faint); font-size: 12px; }
+  .lp-links { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .lp-link { font: 600 13px 'Source Sans 3', sans-serif; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  .lp-link:hover { border-color: var(--accent); color: var(--accent); }
+  .lp-note { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink-faint); line-height: 1.5; margin: 0; }
+  .lp-sec-btn { margin-left: 10px; vertical-align: middle; font: 700 11px 'Source Sans 3', sans-serif; letter-spacing: .06em; text-transform: uppercase;
+    border: 1px solid var(--line); background: var(--surface); color: var(--accent); border-radius: 999px; padding: 3px 9px 3px 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; }
+  .lp-sec-btn svg { width: 10px; height: 10px; fill: currentColor; }
+  .lp-sec-btn:hover { border-color: var(--accent); }
+  .lp-reading { background: var(--amber-bg) !important; box-shadow: -6px 0 0 var(--amber-bg), 6px 0 0 var(--amber-bg); border-radius: 2px; transition: background .2s; }
+  tr.lp-reading td { background: var(--amber-bg) !important; }
+  @media (max-width: 720px) {
+    .voice-spacer { height: 128px; }
+    .lp-row { flex-wrap: wrap; gap: 8px; }
+    .lp-now { order: -1; flex-basis: 100%; }
+    .lp-sel { flex: 1; max-width: none; }
+    .lp-play { padding: 0 16px 0 12px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .lp-progress i, .lp-reading { transition: none; } }
+</style>
+<!-- LISTEN-PLAYER:MARKUP -->
+<div class="voice-spacer"></div>
+<div class="lp-bar" id="listenBar" role="region" aria-label="Listen to this dashboard">
+  <div class="lp-progress" aria-hidden="true"><i id="lpProg"></i></div>
+  <div class="lp-row">
+    <button class="lp-play" id="lpPlay" type="button" aria-label="Listen to the dashboard"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg><span id="lpPlayLabel">Listen</span></button>
+    <button class="lp-ibtn" id="lpPrev" type="button" aria-label="Previous paragraph" title="Previous paragraph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+    <button class="lp-ibtn" id="lpNext" type="button" aria-label="Next paragraph" title="Next paragraph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5l11 7-11 7z"/></svg></button>
+    <div class="lp-now" aria-live="polite"><span class="lp-k" id="lpKicker">Read aloud</span><span class="lp-t" id="lpTitle">The full dashboard, top to bottom</span></div>
+    <select class="lp-sel" id="lpSection" aria-label="Start from section"></select>
+    <button class="lp-speed" id="lpSpeed" type="button" aria-label="Reading speed" title="Reading speed">1&times;</button>
+    <button class="lp-ibtn" id="lpStop" type="button" aria-label="Stop and go back to the start" title="Stop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z"/></svg></button>
+    <button class="lp-ibtn" id="lpGear" type="button" aria-label="Voice settings" aria-expanded="false" title="Voice settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4L10.6 6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.6h4l.4-2.6a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5A3.5 3.5 0 1 1 13 8.5a3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg></button>
+  </div>
+  <div class="lp-panel" id="lpPanel" hidden>
+    <label class="lp-field"><span>Voice</span><select id="lpVoice"></select></label>
+    <label class="lp-field"><span>Speed <b id="lpRateVal">1.0&times;</b></span><input type="range" id="lpRate" min="0.7" max="1.6" step="0.05" value="1"></label>
+    <label class="lp-field"><span>Pitch <b id="lpPitchVal">1.0</b></span><input type="range" id="lpPitch" min="0.7" max="1.3" step="0.05" value="1"></label>
+    <div class="lp-field"><span>Options</span>
+      <label class="lp-check"><input type="checkbox" id="lpFollow" checked> Follow along <small>Scroll to and highlight what's being read.</small></label>
+      <label class="lp-check"><input type="checkbox" id="lpDir"> Read every row of the Full Universe Directory <small>All scanned names, one by one (adds about <b id="lpDirMin">25</b> minutes).</small></label>
+    </div>
+    <div class="lp-field"><span>Check it</span><div class="lp-links"><button class="lp-link" id="lpTest" type="button">Play a voice sample</button><button class="lp-link" id="lpReset" type="button">Reset to clear defaults</button></div></div>
+    <p class="lp-note" id="lpNote">Voices come from your device. The clearest are marked &ldquo;natural&rdquo;, &ldquo;enhanced&rdquo; or &ldquo;premium&rdquo; and are chosen first. On iPhone and Mac you can add better ones in Settings &rarr; Accessibility &rarr; Spoken Content &rarr; Voices. Turn your phone's ringer on; silent mode can mute speech.</p>
+  </div>
+</div>
+<!-- LISTEN-PLAYER:SCRIPT -->
+<script id="listen-player">
+(function(){
+  var synth = window.speechSynthesis;
+  var bar = document.getElementById('listenBar');
+  if (!bar) return;
+  var $ = function(id){ return document.getElementById(id); };
+  var playBtn = $('lpPlay'), playLabel = $('lpPlayLabel'), kicker = $('lpKicker'), title = $('lpTitle'), prog = $('lpProg');
+  var secSel = $('lpSection'), speedBtn = $('lpSpeed'), voiceSel = $('lpVoice'), rateIn = $('lpRate'), pitchIn = $('lpPitch');
+  var PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
+  var PAUSE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h4.5v15H6zM13.5 4.5H18v15h-4.5z"/></svg>';
+  if (!synth || !window.SpeechSynthesisUtterance) {
+    playBtn.disabled = true; title.textContent = 'This browser can’t read aloud. Try Chrome, Edge or Safari.'; return;
+  }
+
+  // ---------- Preferences (this browser only) ----------
+  var KEY = 'mamba_listen_v2';
+  var prefs = {};
+  try { prefs = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { prefs = {}; }
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(prefs)); } catch (e) {} }
+  var rate = +prefs.rate || 1, pitch = +prefs.pitch || 1;
+  rateIn.value = rate; pitchIn.value = pitch;
+  $('lpFollow').checked = prefs.follow !== false;
+  $('lpDir').checked = !!prefs.dir;
+
+  // ---------- Turning page text into clear speech ----------
+  var KEEP = {VIX:1,ETF:1,ETFS:1,FOMC:1,GDP:1,CPI:1,PPI:1,PCE:1,AI:1,US:1,USA:1,UK:1,EU:1,OPEC:1,SEC:1,FMP:1,CEO:1,ECB:1,IPO:1,EPS:1,ROIC:1,ROE:1,WTI:1,NASDAQ:1,NYSE:1,TRAP:1,UTC:1,OK:1,FX:1,CBOE:1,LNG:1,EV:1,EVS:1,CLO:1,TSX:1,DAX:1,FTSE:1,STOXX:1,NATO:1,IMF:1,API:1,EIA:1,ADP:1,ISM:1,PMI:1,JOLTS:1,MSCI:1,CNBC:1,AP:1,FT:1,WSJ:1,NBA:1,HBM:1,GPU:1,GPUS:1,CPU:1,SOFR:1,TIPS:1};
+  var SCALE = {K:' thousand', M:' million', B:' billion', T:' trillion'};
+  function speakable(t){
+    t = ' ' + t + ' ';
+    t = t.replace(/[↗↖↘↙▲▼■▶▸↑↓#*_|]/g, ' ');
+    t = t.replace(/S&(amp;)?P/g, 'S and P').replace(/&/g, ' and ');
+    t = t.replace(/\s\(([A-Z]{1,5}(?:[.\-][A-Z]{1,2})?)\)/g, '');            // "ExxonMobil (XOM)" -> "ExxonMobil"
+    t = t.replace(/\$(\d[\d,]*\.?\d*)\s?([KMBT])\b/g, function(m, n, s){ return n + SCALE[s] + ' dollars'; });
+    t = t.replace(/([+\-−])\s?(\d[\d,]*\.?\d*)\s?%/g, function(m, s, n){ return (s === '+' ? ' up ' : ' down ') + n + ' percent'; });
+    t = t.replace(/%/g, ' percent');
+    t = t.replace(/(\d)\+(?!\d)/g, '$1 or more');
+    t = t.replace(/(\d)\s?[–—]\s?(\d)/g, '$1 to $2').replace(/[–—]/g, ', ');
+    t = t.replace(/·|•/g, ', ').replace(/×/g, ' times ');
+    t = t.replace(/\b(\d+)d\b/g, '$1-day').replace(/\b52-wk\b/gi, '52-week').replace(/\bwk\b/g, 'week');
+    t = t.replace(/\b1Y\b/g, 'one-year').replace(/\b(\d+)M\b(?![a-z])/g, '$1-month').replace(/\bYTD\b/g, 'year to date');
+    t = t.replace(/\bvs\.?(?=\s)/gi, 'versus').replace(/\be\.g\./gi, 'for example').replace(/\bi\.e\./gi, 'that is');
+    t = t.replace(/\bP\/E\b/g, 'P E').replace(/\bbps?\b/g, 'basis points').replace(/\bMT\b/g, 'Mountain Time').replace(/\bET\b/g, 'Eastern');
+    t = t.replace(/\bQ([1-4])\b/g, function(m, q){ return ['', 'first', 'second', 'third', 'fourth'][q] + ' quarter'; });
+    t = t.replace(/\b10-Pt\b/g, '10-point').replace(/\bw\/\s?/g, 'with ').replace(/\bChg\b/g, 'change').replace(/\b(\d+)Y\b/g, '$1-year');
+    t = t.replace(/(\d)\s?\/\s?(\d)/g, '$1 of $2').replace(/\s?\/\s?/g, ' and ');
+    t = t.replace(/\b([A-Z]{2,5})\b/g, function(m){ return KEEP[m] ? m : m.split('').join(' '); });  // tickers letter by letter
+    t = t.replace(/\(\s+/g, '(').replace(/\s+\)/g, ')').replace(/\s+([,.;:!?])/g, '$1').replace(/\s+/g, ' ').trim();
+    return /[.!?:;]$/.test(t) ? t : t + '.';
+  }
+  function sentences(t){
+    var parts = t.replace(/([.!?;])\s+(?=[A-Z0-9"“(])/g, '$1\u0001').split('\u0001'), out = [];
+    parts.forEach(function(p){
+      while (p.length > 220) {                       // long clauses: break at a comma so no engine cuts out
+        var cut = p.lastIndexOf(', ', 200); if (cut < 60) cut = p.indexOf(' ', 200); if (cut < 0) break;
+        out.push(p.slice(0, cut + 1)); p = p.slice(cut + 1).trim();
+      }
+      if (p) out.push(p);
+    });
+    return out;
+  }
+
+  // ---------- Reading the whole page, in order ----------
+  var SKIP = 'script,style,nav,.kicker-label,.session-badge,.page-nav,.lp-bar,.voice-bar,.to-top,.dir-controls,.tk-lists,.tv-link,.src-tag,.flagsrow,.names,.watch-toast,.lp-sec-btn,input,select,button,.expbtn,.links-row,footer';
+  function visible(el){ return el.getClientRects().length > 0; }
+  function clean(el){
+    var c = el.cloneNode(true);
+    c.querySelectorAll(SKIP).forEach(function(x){ x.remove(); });
+    return (c.textContent || '').replace(/\s+/g, ' ').trim();
+  }
+  function txt(el, sel){ var x = el.querySelector(sel); return x ? clean(x) : ''; }
+  var sections = [], items = [];
+  function add(sec, el, text, pause){ text = (text || '').trim(); if (text.length > 1) items.push({ sec: sec, el: el, text: text, pause: pause || 0 }); }
+  function readTable(sec, table, isDir){
+    var heads = Array.prototype.map.call(table.querySelectorAll('thead th'), function(th){ return clean(th).replace(/[^\w\s&\/-]/g, '').trim(); });
+    var rows = table.querySelectorAll('tbody tr');
+    if (isDir && !$('lpDir').checked) {
+      add(sec, table, 'This table lists all ' + table.querySelectorAll('tbody tr.drow').length + ' scanned names. Turn on "Read every row of the Full Universe Directory" in voice settings to hear each one.');
+      return;
+    }
+    Array.prototype.forEach.call(rows, function(tr){
+      if (!visible(tr) || tr.classList.contains('detail-row')) return;
+      var cells = tr.children, name = '', parts = [];
+      for (var i = 0; i < cells.length; i++) {
+        var h = (heads[i] || '').toLowerCase(), v = clean(cells[i]);
+        if (!v || /^(watch|lists|10-pt flags|ticker)$/.test(h)) continue;
+        if (h === 'company') { name = v; continue; }
+        if (/why|note/.test(h) || cells[i].classList.contains('note-cell')) { parts.push(v); continue; }
+        if (i === 0 && !name) { name = v; continue; }
+        parts.push((h ? (h === 'red' ? 'Red flags' : heads[i]) + ' ' : '') + v);
+      }
+      if (!name) { var tk = tr.querySelector('.tk'); name = tk ? clean(tk) : ''; }
+      add(sec, tr, (name ? name + '. ' : '') + parts.join('. ') + '.');
+    });
+  }
+  var BLOCKY = /^(P|LI|H1|H2|H3|H4|UL|OL|TABLE|DIV|SECTION|BLOCKQUOTE)$/;
+  function walk(sec, el){
+    if (el.nodeType !== 1 || el.matches(SKIP) || !visible(el)) return;
+    if (el.matches('h2,h3,h4')) { add(sec, el, clean(el) + '.', 380); return; }
+    if (el.matches('.stat')) { add(sec, el, txt(el, '.l') + ', ' + txt(el, '.n') + '.'); return; }
+    if (el.matches('.pull')) { add(sec, el, txt(el, '.pl') + ', ' + txt(el, '.pn') + '.'); return; }
+    if (el.matches('.fcard')) { var s = el.querySelectorAll('.sym'); add(sec, el, (s[0] ? clean(s[0]) : '') + ', ' + txt(el, '.px') + ', ' + txt(el, '.chg') + (s[1] ? ', ' + clean(s[1]) : '') + '.'); return; }
+    if (el.matches('.btc-move')) { add(sec, el, txt(el, '.bm-label') + ', ' + txt(el, '.bm-val') + '.'); return; }
+    if (el.matches('table')) { readTable(sec, el, !!el.closest('#universe')); return; }
+    if (el.matches('p,li,.q,.hint,.qnum,.btc-price,.btc-chg-row,.section-note')) { add(sec, el, clean(el)); return; }
+    var kids = Array.prototype.filter.call(el.children, function(c){ return BLOCKY.test(c.tagName) && !c.matches(SKIP); });
+    if (!kids.length) { add(sec, el, clean(el)); return; }
+    Array.prototype.forEach.call(el.childNodes, function(n){
+      if (n.nodeType === 3 && n.textContent.trim().length > 2) add(sec, el, n.textContent.trim());
+      else if (n.nodeType === 1) walk(sec, n);
+    });
+  }
+  function build(){
+    sections = []; items = [];
+    var mast = document.querySelector('.masthead'), ed = document.querySelector('.edition-bar');
+    if (mast) {
+      sections.push({ name: 'Introduction', el: mast });
+      add(0, mast, txt(mast, 'h1') + '.', 300);
+      if (ed) add(0, ed, clean(ed));
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('body section'), function(s){
+      if (s.closest('.lp-bar') || !visible(s)) return;
+      var h = s.querySelector('h2');
+      var idx = sections.push({ name: h ? clean(h) : 'Section', el: s }) - 1, before = items.length;
+      Array.prototype.forEach.call(s.children, function(c){ walk(idx, c); });
+      if (items.length - before <= 1) { items.length = before; sections.pop(); }   // heading only (e.g. a list of links)
+    });
+    sections.forEach(function(sec, i){
+      var words = items.filter(function(it){ return it.sec === i; }).reduce(function(n, it){ return n + it.text.split(/\s+/).length; }, 0);
+      sec.words = words;
+    });
+    var rows = document.querySelectorAll('#universe tbody tr.drow').length;
+    if ($('lpDirMin')) $('lpDirMin').textContent = Math.max(1, Math.round(rows * 22 / 160));
+  }
+  function mins(words){ var m = words / (165 * rate); return m < 1 ? '<1 min' : Math.round(m) + ' min'; }
+  function fillSections(){
+    var total = sections.reduce(function(n, s){ return n + s.words; }, 0);
+    secSel.innerHTML = '<option value="0">Whole dashboard · ' + mins(total) + '</option>' + sections.map(function(s, i){
+      return '<option value="s' + i + '">' + s.name.replace(/</g, '&lt;') + ' · ' + mins(s.words) + '</option>';
+    }).join('');
+  }
+
+  // ---------- Voices: pick the clearest one this device has ----------
+  var voices = [];
+  function score(v){
+    var n = v.name.toLowerCase(), l = (v.lang || '').toLowerCase().replace('_', '-'), s = 0;
+    if (l.indexOf('en') !== 0) return -1;
+    if (/novelty|albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|hysterical|deranged|bruce|ralph|junior|rocko|grandma|grandpa|eddy|reed|flo|sandy|shelley/.test(n)) return -1;
+    s += l === 'en-us' ? 4 : (l === 'en-gb' ? 3 : 2);
+    if (/natural|neural/.test(n)) s += 14;
+    if (/premium/.test(n)) s += 12;
+    if (/enhanced|siri/.test(n)) s += 10;
+    if (/online/.test(n)) s += 6;
+    if (/google/.test(n)) s += 7;
+    if (/samantha|daniel|karen|moira|ava|allison|aria|jenny|guy|evan|zoe|tom/.test(n)) s += 3;
+    if (/compact|espeak|eloquence|mbrola/.test(n)) s -= 12;
+    if (v.localService === false) s += 1;
+    return s;
+  }
+  function label(v){
+    var n = v.name.replace(/^Microsoft\s+|^Google\s+/i, '').replace(/\s*-\s*English.*$/i, '').replace(/\s*\(.*?\)\s*/g, ' ').trim();
+    var q = /natural|neural/i.test(v.name) ? ' · natural' : /premium/i.test(v.name) ? ' · premium' : /enhanced|siri/i.test(v.name) ? ' · enhanced' : '';
+    return n + ' (' + (v.lang || '').replace('_', '-') + ')' + q;
+  }
+  function loadVoices(){
+    var all = synth.getVoices() || [];
+    voices = all.map(function(v){ return { v: v, s: score(v) }; }).filter(function(x){ return x.s >= 0; })
+      .sort(function(a, b){ return b.s - a.s || a.v.name.localeCompare(b.v.name); }).map(function(x){ return x.v; });
+    if (!voices.length) { voiceSel.innerHTML = '<option value="">Device default</option>'; return; }
+    voiceSel.innerHTML = '<option value="">Clearest available — ' + label(voices[0]).replace(/</g, '&lt;') + '</option>' +
+      voices.map(function(v, i){ return '<option value="' + i + '">' + label(v).replace(/</g, '&lt;') + '</option>'; }).join('');
+    var i = prefs.voice ? voices.findIndex(function(v){ return v.name === prefs.voice; }) : -1;
+    voiceSel.value = i >= 0 ? String(i) : '';
+  }
+  function voice(){ var i = voiceSel.value; return i === '' ? (voices[0] || null) : voices[+i]; }
+  loadVoices();
+  if ('onvoiceschanged' in synth) synth.addEventListener ? synth.addEventListener('voiceschanged', loadVoices) : (synth.onvoiceschanged = loadVoices);
+
+  // ---------- Playback ----------
+  var idx = 0, sub = 0, queue = null, playing = false, gen = 0, current = null, lit = null, lock = null, built = false;
+  var edition = (document.querySelector('.edition-bar') || {}).textContent || '';
+  function ensure(){ if (!built) { build(); fillSections(); built = true; } }
+  function setPlayUI(){
+    playBtn.innerHTML = (playing ? PAUSE : PLAY) + '<span id="lpPlayLabel">' + (playing ? 'Pause' : (idx > 0 ? 'Resume' : 'Listen')) + '</span>';
+    playBtn.setAttribute('aria-label', playing ? 'Pause reading' : 'Listen to the dashboard');
+  }
+  function highlight(el){
+    if (lit) lit.classList.remove('lp-reading');
+    lit = el;
+    if (!el) return;
+    el.classList.add('lp-reading');
+    if ($('lpFollow').checked) {
+      var r = el.getBoundingClientRect(), barH = bar.getBoundingClientRect().height;
+      if (r.top < 70 || r.bottom > window.innerHeight - barH - 20) {
+        var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: window.scrollY + r.top - Math.max(80, (window.innerHeight - barH) * 0.3), behavior: reduce ? 'auto' : 'smooth' });
+      }
+    }
+  }
+  function status(){
+    var it = items[idx];
+    if (!it) return;
+    kicker.textContent = (playing ? 'Reading' : 'Paused') + ' · ' + (it.sec + 1) + ' of ' + sections.length;
+    title.textContent = sections[it.sec].name;
+    prog.style.width = (items.length ? Math.round(idx / items.length * 100) : 0) + '%';
+    secSel.value = 's' + it.sec;
+  }
+  function remember(){ prefs.pos = { ed: edition.slice(0, 120), idx: idx }; save(); }
+  function wake(on){
+    try {
+      if (on && navigator.wakeLock && !lock) navigator.wakeLock.request('screen').then(function(l){ lock = l; l.addEventListener('release', function(){ lock = null; }); }).catch(function(){});
+      if (!on && lock) { lock.release(); lock = null; }
+    } catch (e) {}
+  }
+  function speakNext(){
+    var my = gen;
+    if (!playing) return;
+    if (queue && sub >= queue.length) {
+      var prevPause = items[idx] ? items[idx].pause : 0;
+      idx++; sub = 0; queue = null;
+      if (idx >= items.length) { finish(); return; }
+      setTimeout(function(){ if (my === gen) speakNext(); }, 140 + prevPause);
+      return;
+    }
+    var it = items[idx];
+    if (!queue) { queue = sentences(speakable(it.text)); sub = 0; highlight(it.el); status(); if (!queue.length) return speakNext(); }
+    var u = new SpeechSynthesisUtterance(queue[sub]);
+    var v = voice(); if (v) { u.voice = v; u.lang = v.lang; }
+    u.rate = rate; u.pitch = pitch; u.volume = 1;
+    u.onend = function(){ if (my !== gen) return; sub++; speakNext(); };
+    u.onerror = function(e){ if (my !== gen || e.error === 'interrupted' || e.error === 'canceled') return; sub++; speakNext(); };
+    current = u;                                   // keep a reference: some browsers drop callbacks for collected utterances
+    synth.speak(u);
+    if (sub === 0 && idx % 5 === 0) remember();
+  }
+  function start(fromIdx){
+    ensure();
+    gen++; synth.cancel();
+    var warm = new SpeechSynthesisUtterance(' '); warm.volume = 0; synth.speak(warm);   // unlocks speech on iPhone within the tap
+    if (typeof fromIdx === 'number') { idx = Math.max(0, Math.min(items.length - 1, fromIdx)); sub = 0; queue = null; }
+    playing = true; setPlayUI(); wake(true);
+    var my = gen;
+    setTimeout(function(){ if (my === gen) { if (synth.paused) synth.resume(); speakNext(); } }, 60);
+  }
+  function pause(){
+    gen++; playing = false; synth.cancel(); sub = 0; queue = null;   // resume restarts the current paragraph cleanly
+    setPlayUI(); status(); remember(); wake(false);
+  }
+  function stop(){
+    gen++; playing = false; synth.cancel(); idx = 0; sub = 0; queue = null;
+    highlight(null); prog.style.width = '0%'; setPlayUI(); wake(false);
+    kicker.textContent = 'Read aloud'; title.textContent = 'The full dashboard, top to bottom'; secSel.value = '0';
+    prefs.pos = null; save();
+  }
+  function finish(){
+    gen++; playing = false; highlight(null); prog.style.width = '100%'; wake(false);
+    idx = 0; sub = 0; prefs.pos = null; save(); setPlayUI();
+    kicker.textContent = 'Finished'; title.textContent = 'That’s the whole dashboard';
+  }
+  function jump(delta){
+    ensure();
+    var n = Math.max(0, Math.min(items.length - 1, idx + delta));
+    if (playing) start(n); else { idx = n; sub = 0; queue = null; highlight(items[idx].el); status(); setPlayUI(); }
+  }
+  function startSection(i){ ensure(); var f = items.findIndex(function(it){ return it.sec === i; }); if (f >= 0) start(f); }
+
+  playBtn.addEventListener('click', function(){ if (playing) pause(); else start(); });
+  $('lpPrev').addEventListener('click', function(){ jump(-1); });
+  $('lpNext').addEventListener('click', function(){ jump(1); });
+  $('lpStop').addEventListener('click', stop);
+  secSel.addEventListener('focus', ensure);
+  secSel.addEventListener('change', function(){ var v = secSel.value; if (v === '0') start(0); else startSection(+v.slice(1)); });
+  var SPEEDS = [0.8, 0.9, 1, 1.1, 1.25, 1.5];
+  function setRate(r){
+    rate = Math.round(r * 100) / 100; rateIn.value = rate; prefs.rate = rate; save();
+    speedBtn.textContent = (rate % 1 === 0 ? rate.toFixed(0) : String(rate)) + '×';
+    $('lpRateVal').textContent = rate.toFixed(2).replace(/0$/, '') + '×';
+    if (built) fillSections();
+    if (playing) start();
+  }
+  speedBtn.addEventListener('click', function(){
+    var next = SPEEDS.find(function(s){ return s > rate + 0.001; }); setRate(next || SPEEDS[0]);
+  });
+  rateIn.addEventListener('change', function(){ setRate(+rateIn.value); });
+  pitchIn.addEventListener('input', function(){ $('lpPitchVal').textContent = (+pitchIn.value).toFixed(2).replace(/0$/, ''); });
+  pitchIn.addEventListener('change', function(){ pitch = +pitchIn.value; prefs.pitch = pitch; save(); if (playing) start(); });
+  voiceSel.addEventListener('change', function(){ var v = voice(); prefs.voice = voiceSel.value === '' ? null : (v && v.name); save(); if (playing) start(); });
+  $('lpFollow').addEventListener('change', function(e){ prefs.follow = e.target.checked; save(); });
+  $('lpDir').addEventListener('change', function(e){ prefs.dir = e.target.checked; save(); var was = playing, at = items[idx]; built = false; ensure();
+    if (at) { var f = items.findIndex(function(x){ return x.el === at.el; }); idx = f >= 0 ? f : 0; } if (was) start(); });
+  $('lpGear').addEventListener('click', function(){ var p = $('lpPanel'); p.hidden = !p.hidden; this.setAttribute('aria-expanded', String(!p.hidden)); if (!p.hidden) loadVoices(); });
+  $('lpTest').addEventListener('click', function(){
+    gen++; playing = false; setPlayUI(); synth.cancel();
+    var u = new SpeechSynthesisUtterance('This is the voice that will read your Mamba Market Review. The S and P 500 closed up 0.6 percent.');
+    var v = voice(); if (v) { u.voice = v; u.lang = v.lang; } u.rate = rate; u.pitch = pitch; u.volume = 1; current = u;
+    setTimeout(function(){ synth.speak(u); }, 60);
+  });
+  $('lpReset').addEventListener('click', function(){
+    prefs.voice = null; voiceSel.value = ''; pitch = 1; pitchIn.value = 1; prefs.pitch = 1; $('lpPitchVal').textContent = '1.0'; setRate(1);
+  });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && playing) pause(); });
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden && playing && !synth.speaking) start(); });
+
+  // Small "Listen" button beside every section heading.
+  Array.prototype.forEach.call(document.querySelectorAll('body section h2'), function(h){
+    if (h.closest('.lp-bar')) return;
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'lp-sec-btn'; b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>Listen';
+    b.setAttribute('aria-label', 'Listen from ' + clean(h));
+    b.addEventListener('click', function(){
+      ensure(); var s = h.closest('section'); var i = sections.findIndex(function(x){ return x.el === s; }); if (i >= 0) startSection(i);
+    });
+    h.appendChild(b);
+  });
+
+  // Start-up: offer to resume where this edition was left off.
+  setRate(rate); $('lpPitchVal').textContent = (+pitch).toFixed(2).replace(/0$/, '');
+  secSel.innerHTML = '<option value="0">Whole dashboard</option>';
+  setTimeout(function(){
+    ensure();
+    var p = prefs.pos;
+    if (p && p.ed === edition.slice(0, 120) && p.idx > 0 && p.idx < items.length) {
+      idx = p.idx; setPlayUI(); kicker.textContent = 'Pick up where you left off'; title.textContent = sections[items[idx].sec].name;
+      secSel.value = 's' + items[idx].sec;
+    }
+  }, 400);
+})();
+</script>
