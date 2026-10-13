@@ -979,15 +979,15 @@
   "last_quick_check": "2026-09-28"
  },
  "ET": {
-  "inst_own_pct": 30.5,
-  "inst_own_trend": "declining",
-  "inst_own_summary": "Fintel/Nasdaq data as of Sept 2025 show 1,191 institutions holding 30.5% of ET units with a -1.34% quarterly change in institutional shares; low because insiders (Kelcy Warren) and MLP retail hold much of the float.",
-  "inst_own_source": "https://fintel.io/so/us/et",
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "No aggregate institutional-ownership percentage surfaced; third-party 13F trackers show only small Q1-Q2 2026 position changes (Appaloosa cut ~615K units to ~1.58M; small adds by Sequoia and Cullen Value Fund).",
+  "inst_own_source": "https://www.insiderset.com/investors/stocks/et/activity",
   "moat_verdict": "stable",
-  "moat_summary": "Morningstar describes Energy Transfer as a diversified midstream firm with a nationwide competitive natural gas gathering and transport footprint and $5.0-5.5B of 2026 growth capex, but its acquisitive nature risks overpaying; explicit moat rating not shown in results.",
-  "moat_source": "https://www.morningstar.com/company-reports/1498307-energy-transfer-is-a-diversified-midstream-firm-with-a-competitive-natural-gas-footprint",
-  "last_deep_check": "2026-09-28",
-  "last_quick_check": "2026-09-28"
+  "moat_summary": "Morningstar's moat rating is paywalled; its public summary calls Energy Transfer a diversified midstream operator with a competitive natural gas and NGL footprint and a broad asset base (bear case: acquisitive strategy risks overpaying). Verdict is inferred, not a published rating.",
+  "moat_source": "https://www.morningstar.com/stocks/txse/et",
+  "last_deep_check": "2026-10-13",
+  "last_quick_check": "2026-10-13"
  },
  "ETN": {
   "inst_own_pct": 83.98,
