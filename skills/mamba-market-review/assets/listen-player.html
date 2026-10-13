@@ -206,6 +206,7 @@
       add(sec, el, txt(el, '.point-num') + ', ' + txt(el, '.point-label') + ': ' + st + '. ' + txt(el, '.point-vals')); return; }
     if (el.matches('.pull')) { add(sec, el, txt(el, '.pl') + ', ' + txt(el, '.pn') + '.'); return; }
     if (el.matches('.fcard')) { var s = el.querySelectorAll('.sym'); add(sec, el, (s[0] ? clean(s[0]) : '') + ', ' + txt(el, '.px') + ', ' + txt(el, '.chg') + (s[1] ? ', ' + clean(s[1]) : '') + '.'); return; }
+    if (el.matches('.card') && txt(el, '.wk')) { add(sec, el, txt(el, '.nm') + ', ' + txt(el, '.wk') + ' for the week, closing at ' + txt(el, '.px') + '.'); return; }
     if (el.matches('.btc-move')) { add(sec, el, txt(el, '.bm-label') + ', ' + txt(el, '.bm-val') + '.'); return; }
     if (el.matches('table')) { readTable(sec, el, !!el.closest('#universe')); return; }
     if (el.matches('p,li,.q,.hint,.qnum,.btc-price,.btc-chg-row,.section-note')) { add(sec, el, clean(el)); return; }
@@ -246,6 +247,8 @@
       addSection(heading('#detail h2', 'Selected fund') + ' \u00B7 ' + heading('#detail .nm', ''), all('#detail'), true);
       addSection('About this page', all('body header'));
       addSection('Before you invest', all('section.guide'));
+    } else if (document.getElementById('recap-data')) {                          // Week in Review: one section per block
+      all('.wrap > section').forEach(function(sec){ var h = sec.querySelector('h2'), l = sec.querySelector('.label'); addSection(l && l.textContent.trim() !== 'The week in one read' ? clean(l) : 'The week in one read', [sec]); });
     } else if (document.querySelector('.label')) {                               // World Watch: one section per label
       addSection(heading('h1', document.title), all('body > .top, body > .lede'));
       all('body > .label').forEach(function(l){
@@ -453,8 +456,8 @@
   });
 
   // Analyzer and ETF Explorer: when a different company or fund is picked, rebuild; if reading, read the new one.
-  all('#detail').forEach(function(d){
-    if (!document.getElementById('analyzer-data') && !document.getElementById('etf-data')) return;
+  all('#detail, #days').forEach(function(d){
+    if (!document.getElementById('analyzer-data') && !document.getElementById('etf-data') && !document.getElementById('recap-data')) return;
     var t = null;
     new MutationObserver(function(){
       clearTimeout(t);

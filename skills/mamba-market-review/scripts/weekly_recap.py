@@ -157,12 +157,15 @@ def render(out_path):
     if not weeks:
         raise SystemExit('no weekly files')
     urls = {}
-    for k, f in (('dashboard', '.dashboard-url.txt'), ('analyzer', '.analyzer-url.txt'), ('worldwatch', '.worldwatch-url.txt')):
+    for k, f in (('dashboard', '.dashboard-url.txt'), ('analyzer', '.analyzer-url.txt'), ('etf', '.etf-url.txt'),
+                 ('worldwatch', '.worldwatch-url.txt'), ('affirmations', '.affirmations-url.txt')):
         p = os.path.join(REPORTS, f)
         urls[k] = open(p).read().strip() if os.path.exists(p) else ''
     tpl = open(os.path.join(HERE, 'weekly_recap_template.html')).read()
     data = json.dumps({'weeks': weeks, 'urls': urls}, separators=(',', ':')).replace('</', '<\\/')
-    open(out_path, 'w').write(tpl.replace('__DATA__', data))
+    sys.path.insert(0, HERE)
+    from install_listen_player import player_block
+    open(out_path, 'w').write(tpl.replace('__DATA__', data) + '\n' + player_block() + '\n')
     w = weeks[0]
     spy = next((i for i in w['indexes'] if i['s'] == 'SPY'), None)
     lead = w['notes'].get('push') or w['notes'].get('headline', '')

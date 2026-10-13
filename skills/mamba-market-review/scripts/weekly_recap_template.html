@@ -147,7 +147,7 @@ function render(w){
   SID=0;
   $('dates').textContent=dfmt(w.week_start,{month:'long',day:'numeric'})+' – '+dfmt(w.week_end,{month:'long',day:'numeric',year:'numeric'});
   const n=w.notes;
-  $('nav').innerHTML=[['Dashboard',D.urls.dashboard],['10-Point Analyzer',D.urls.analyzer],['World Watch',D.urls.worldwatch]].filter(x=>x[1]).map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join('');
+  $('nav').innerHTML=[['Dashboard',D.urls.dashboard],['10-Point Analyzer',D.urls.analyzer],['ETF Explorer',D.urls.etf],['World Watch',D.urls.worldwatch],['Affirmation & Scripture',D.urls.affirmations]].filter(x=>x[1]).map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join('');
   $('lead').innerHTML=`<p class="label">The week in one read</p><h2>${esc(n.headline)}</h2><p>${esc(n.summary)}</p>${n.mood?`<div class="mood"><span class="pill">${esc(n.mood)}</span></div>`:''}`;
   $('idx').innerHTML=w.indexes.map(card).join('');
   const b=w.breadth;const upw=(b.up/b.total*100).toFixed(1);
