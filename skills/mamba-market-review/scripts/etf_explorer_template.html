@@ -80,6 +80,25 @@ td.rk{color:var(--muted);font:12px var(--mono);width:36px}
 .note{padding:12px 14px;background:var(--bg);border-radius:8px;color:var(--muted)}
 .toggle{display:inline-flex;gap:6px;align-items:center;font-size:13.5px;color:var(--muted)}
 .more{margin-top:8px;font:600 13.5px var(--body);background:none;border:1px solid var(--line);border-radius:7px;padding:6px 12px;color:var(--fg);cursor:pointer}
+.guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:16px}
+@media (max-width:880px){.guide{grid-template-columns:1fr}}
+.guide .panel h3{margin-bottom:6px}
+.guide .lead{color:var(--muted);margin:0 0 10px;font-size:14px}
+.three{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.three li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start}
+.three .n{font:800 15px var(--display);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.three b{display:block}
+.three span{color:var(--muted);font-size:13.5px}
+.blocks{width:100%;min-width:0}
+.blocks td,.blocks th{font-size:13px;padding:6px 6px}
+.blocks .kind{font:700 10.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.blocks button{font:600 13px var(--mono);color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.chk{border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;gap:3px;border-left-width:4px}
+.chk.good{border-left-color:var(--up)}.chk.mid{border-left-color:var(--core)}.chk.warn{border-left-color:var(--down)}.chk.na{border-left-color:var(--line)}
+.chk .k{font:700 10.5px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.chk .v{font:600 15px var(--body)}
+.chk .d{font-size:13px;color:var(--muted)}
 .foot{font-size:12.5px;color:var(--muted);max-width:90ch}
 </style>
 <div class="wrap">
@@ -91,6 +110,22 @@ td.rk{color:var(--muted);font:12px var(--mono);width:36px}
   <label for="lk">Which ETFs hold a stock?</label>
   <div class="row"><input id="lk" type="search" placeholder="Ticker, e.g. NVDA" autocomplete="off"><span class="src" id="lkmsg">Type a dashboard ticker to see every fund here that owns it, by weight.</span></div>
   <div class="lkres" id="lkres"></div>
+</section>
+<section class="guide" aria-label="Before you invest">
+  <div class="panel">
+    <h3>Before you invest, review three things</h3>
+    <p class="lead">Every fund page below scores these for you under &ldquo;Investing check&rdquo;.</p>
+    <ol class="three">
+      <li><span class="n">1</span><div><b>Holdings</b><span>What you actually own. How many names, and how much sits in the top 10? A fund with 60% in ten stocks is a concentrated bet, whatever its name says.</span></div></li>
+      <li><span class="n">2</span><div><b>Fees</b><span>The expense ratio comes out every year, in good years and bad. 0.03&ndash;0.20% is typical for broad index funds; above 0.50% the fund needs a clear reason to cost more.</span></div></li>
+      <li><span class="n">3</span><div><b>Liquidity</b><span>How much trades each day. Heavily traded funds have tight bid&ndash;ask spreads; thin ones can cost you on the way in and out, so use limit orders.</span></div></li>
+    </ol>
+  </div>
+  <div class="panel">
+    <h3>Three building blocks</h3>
+    <p class="lead">Most portfolios start from these. Click a ticker to open it.</p>
+    <div class="tbox"><table class="blocks"><thead><tr><th>Block</th><th>Fund</th><th class="num">Fee</th><th class="num">Top 10</th><th class="num">$ traded/day</th><th class="num">YTD</th></tr></thead><tbody id="blocks"></tbody></table></div>
+  </div>
 </section>
 <div class="layout">
   <aside class="side">
@@ -147,6 +182,22 @@ function holdingsHtml(f){
     </tbody></table></div>
     ${rows.length>25?`<button class="more" id="more">${showAll?'Show top 25':(h.count>h.rows.length&&!onlyDash?'Show the top '+rows.length+' of '+h.count.toLocaleString():'Show all '+rows.length)}</button>`:''}</div>`;
 }
+const BLOCKS=[['Market-cap weighted','The biggest companies get the biggest weight; you own the market as it is.',['SPY','VTI','QQQ']],
+  ['Equal-weighted','Every company gets the same weight, so the giants count no more than the rest.',['RSP']],
+  ['International stocks','Companies outside the US, for growth and currencies the US market doesn\'t give you.',['VEA','VWO','VT']]];
+const dollars=f=>f.vol&&f.price?f.vol*f.price:null;
+function fmtDollars(v){return v==null?'\u2014':v>=1e9?'$'+(v/1e9).toFixed(1)+'B':v>=1e6?'$'+(v/1e6).toFixed(0)+'M':'$'+(v/1e3).toFixed(0)+'K'}
+$('blocks').innerHTML=BLOCKS.map(([k,d,list])=>list.filter(s=>BY[s]).map((s,i)=>{const f=BY[s],h=f.h||{};return `<tr>${i===0?`<td rowspan="${list.length}" style="vertical-align:top;max-width:220px"><span class="kind">${esc(k)}</span><div style="font-size:12.5px;color:var(--muted);margin-top:2px">${esc(d)}</div></td>`:''}<td><button type="button" data-go="${s}">${s}</button> <span style="color:var(--muted);font-size:12.5px">${esc((f.name||'').replace(/^(State Street|iShares|Vanguard|Invesco)\s*/,''))}</span></td><td class="num">${f.er==null?'\u2014':f.er.toFixed(2)+'%'}</td><td class="num">${h.top10_pct!=null?h.top10_pct.toFixed(0)+'%':'\u2014'}</td><td class="num">${fmtDollars(dollars(f))}</td><td class="num ${cls(f.ytd)}">${pct(f.ytd)}</td></tr>`}).join('')).join('');
+$('blocks').onclick=e=>{const b=e.target.closest('[data-go]');if(b)pick(b.dataset.go)};
+function checks(f){
+  const h=f.h||{},out=[];
+  if(h.kind==='direct')out.push(['na','Holdings','Holds '+h.holds,'No company list: the price follows the asset itself.']);
+  else if(h.top10_pct!=null){const t=h.top10_pct,c=h.count;out.push([t>55?'warn':t>30?'mid':'good','Holdings',`${c.toLocaleString()} positions \u00B7 top 10 = ${t.toFixed(0)}%`,t>55?'Concentrated: a few names drive the result.':t>30?'Moderately concentrated: check you\'re comfortable with the top names.':'Broadly diversified.'])}
+  else out.push(['na','Holdings','Not reported yet','No SEC holdings filing found.']);
+  const er=f.er;out.push(er==null?['na','Fees','\u2014','No expense ratio on file.']:[er<=0.1?'good':er<=0.25?'good':er<=0.5?'mid':'warn','Fees',er.toFixed(2)+'% a year',er<=0.1?'Very low: about $'+(er*100).toFixed(0)+' a year per $10,000.':er<=0.25?'Low: about $'+(er*100).toFixed(0)+' a year per $10,000.':er<=0.5?'Moderate: about $'+(er*100).toFixed(0)+' a year per $10,000.':'High: about $'+(er*100).toFixed(0)+' a year per $10,000; make sure it earns that.']);
+  const dv=dollars(f);out.push(dv==null?['na','Liquidity','\u2014','No trading volume on file.']:[dv>=1e8?'good':dv>=1e7?'good':dv>=1e6?'mid':'warn','Liquidity',fmtDollars(dv)+' traded a day',dv>=1e8?'Very liquid: tight spreads, easy in and out.':dv>=1e7?'Liquid for everyday trade sizes.':dv>=1e6?'Thinner: use limit orders.':'Very thin: limit orders only, and check the bid\u2013ask spread.']);
+  return `<div class="panel"><h3>Investing check</h3><div class="checks">${out.map(([c,k,v,d])=>`<div class="chk ${c}"><span class="k">${k}</span><span class="v">${esc(v)}</span><span class="d">${esc(d)}</span></div>`).join('')}</div></div>`;
+}
 function detail(){
   const f=BY[cur];if(!f){$('detail').innerHTML='';return}
   const st=(k,v,c='')=>`<div class="stat"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`;
@@ -156,6 +207,7 @@ function detail(){
     <div class="stats">${st('Price',f.price==null?'—':'$'+f.price.toFixed(2))}${st('Today',pct(f.d1,2),cls(f.d1))}${st('5 day',pct(f.d5),cls(f.d5))}${st('1 month',pct(f.m1),cls(f.m1))}${st('YTD',pct(f.ytd),cls(f.ytd))}${st('1 year',pct(f.y1),cls(f.y1))}
     ${st('Assets',money(f.aum))}${st('Fee / yr',f.er==null?'—':f.er.toFixed(2)+'%')}${st('Launched',f.inc?f.inc.slice(0,4):'—')}</div>
     ${(f.similar||[]).length?`<p class="src" style="margin:12px 0 0">Most similar here: ${f.similar.map(([s,o])=>`<a href="#e-${s}" data-go="${s}">${s}</a> (${o}% overlap)`).join(', ')}</p>`:''}</div>
+    ${checks(f)}
     ${f.sectors&&f.sectors.length&&f.cls==='Equity'?`<div class="panel"><h3>Sector mix</h3><div class="secs">${f.sectors.map(([n,v])=>`<div class="sec"><span>${esc(n)}</span><span class="tr"><i style="width:${Math.min(100,v)}%"></i></span><span class="v">${v.toFixed(1)}%</span></div>`).join('')}</div></div>`:''}
     ${holdingsHtml(f)}`;
   const od=$('od');if(od)od.onchange=e=>{onlyDash=e.target.checked;showAll=false;detail()};

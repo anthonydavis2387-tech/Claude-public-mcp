@@ -54,6 +54,7 @@ def main(out_path):
         funds.append({**e, 'name': i.get('name') or quote.get(s, {}).get('name'), 'issuer': i.get('etfCompany'),
                       'aum': i.get('assetsUnderManagement'), 'er': i.get('expenseRatio'), 'inc': i.get('inceptionDate'),
                       'cls': i.get('assetClass'), 'price': quote.get(s, {}).get('price'),
+                      'vol': i.get('avgVolume') or quote.get(s, {}).get('avgVolume') or quote.get(s, {}).get('volume'),
                       'd1': quote.get(s, {}).get('changePercentage'), 'd5': c.get('5D'), 'm1': c.get('1M'),
                       'ytd': c.get('ytd'), 'y1': c.get('1Y'), 'sectors': sectors[:11], 'h': h})
     # Most similar funds by holdings overlap.

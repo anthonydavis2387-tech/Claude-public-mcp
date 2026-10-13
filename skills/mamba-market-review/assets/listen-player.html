@@ -245,6 +245,7 @@
     } else if (document.getElementById('etf-data')) {                            // ETF Explorer: the selected fund first
       addSection(heading('#detail h2', 'Selected fund') + ' \u00B7 ' + heading('#detail .nm', ''), all('#detail'), true);
       addSection('About this page', all('body header'));
+      addSection('Before you invest', all('section.guide'));
     } else if (document.querySelector('.label')) {                               // World Watch: one section per label
       addSection(heading('h1', document.title), all('body > .top, body > .lede'));
       all('body > .label').forEach(function(l){
