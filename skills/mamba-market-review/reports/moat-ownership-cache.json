@@ -3001,5 +3001,16 @@
   "moat_source": "https://www.morningstar.com/stocks/xnys/etr/quote",
   "last_deep_check": "2026-10-12",
   "last_quick_check": "2026-10-12"
+ },
+ "A": {
+  "inst_own_pct": 87.41,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "About 87.4% institutional per MarketBeat (Oct 2025); Fintel's long-holdings count is higher at about 99%. 683 institutional buyers against 527 sellers over 12 months; BlackRock 9.8%, Vanguard 7.1% (Jun 2026 13F).",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NYSE/A/institutional-ownership",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar's report headline calls Agilent's wide moat intact across life science, diagnostics and applied markets (leader in chromatography and mass spectrometry); the rating field itself is paywalled, so the verdict rests on the headline.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/a/quote",
+  "last_deep_check": "2026-10-14",
+  "last_quick_check": "2026-10-14"
  }
 }
