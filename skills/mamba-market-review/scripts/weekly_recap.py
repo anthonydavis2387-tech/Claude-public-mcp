@@ -185,7 +185,7 @@ def render(out_path, prior=None):
     w = weeks[0]
     spy = next((i for i in w['indexes'] if i['s'] == 'SPY'), None)
     lead = w['notes'].get('push') or w['notes'].get('headline', '')
-    print(f"STOP THE CAP: your weekly recap is ready. S&P 500 {spy['week_pct']:+.1f}% this week. {lead}".strip() if spy else
+    print(f"STOP THE CAP: your weekly recap is ready. S&P 500 {spy['week_pct']:+.2f}% this week. {lead}".strip() if spy else
           f"STOP THE CAP: your weekly recap is ready. {lead}".strip())
 
 

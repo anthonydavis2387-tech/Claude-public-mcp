@@ -1909,7 +1909,7 @@
  "notes": {
   "headline": "Records early, an AI scare Thursday, and a quiet rotation into defensive stocks",
   "push": "Defensives led while chips and small caps lagged.",
-  "summary": "The S&P 500 gained about 1.2% and set a record close on Tuesday, but the leadership changed during the week. Utilities, consumer staples, energy and health care each rose 2.8% to 4%. Tech slipped, and small caps fell about 0.9%. The 10-year Treasury yield touched its highest level since 2002 on Wednesday before a solid bond auction pulled it back. On Thursday, a report that OpenAI's revenue was running about $20 billion below what investors had been told hit chip and AI stocks. Friday brought a broad bounce into the start of bank earnings season. The VIX stayed near 15 all week, so the moves look like a rotation rather than fear.",
+  "summary": "The S&P 500 (SPY) finished the week +1.16% and set a record close on Tuesday, but the leadership changed during the week. Utilities (XLU) +3.97%, consumer staples (XLP) +3.60%, energy (XLE) +3.60% and health care (XLV) +2.79% led. Tech (XLK) was -0.52%, and small caps (IWM) -0.92%. The 10-year Treasury yield touched its highest level since 2002 on Wednesday before a solid bond auction pulled it back. On Thursday, a report that OpenAI's revenue was running about $20 billion below what investors had been told hit chip and AI stocks. Friday brought a broad bounce into the start of bank earnings season. The VIX stayed near 15 all week, so the moves look like a rotation rather than fear.",
   "mood": "Calm but rotating",
   "mood_detail": "The VIX ended near 14.8, down from 15.3 the Friday before. 194 of the 276 names the dashboard tracks rose for the week, and the equal-weight S&P beat the regular S&P. That says the average stock did better than the giants this week.",
   "days": [
@@ -1946,7 +1946,7 @@
    {
     "date": "2026-10-07",
     "headlines": [
-     "Stocks pulled back from records as bond yields and oil rose; the Russell 2000 fell 1.31%.",
+     "Stocks pulled back from records as bond yields and oil rose; the Russell 2000 was -1.31%.",
      "The 10-year yield hit 5.364% intraday, its highest since 2002, then eased after strong demand at a $39 billion auction.",
      "Brent traded above $102 intraday and settled at $100.20."
     ],
@@ -1965,7 +1965,7 @@
     "date": "2026-10-08",
     "headlines": [
      "Reports put OpenAI's annualized revenue near $50 billion, about $20 billion below figures given to investors; AI stocks sold off.",
-     "Nasdaq fell about 1.2%; chipmakers, up more than 80% this year, dropped 3.4% as a group (Reuters). The Dow edged up."
+     "Nasdaq -1.25%; chipmakers, up more than 80% this year, were -3.4% as a group (Reuters). The Dow finished slightly higher."
     ],
     "sources": [
      {
@@ -2013,7 +2013,7 @@
    },
    {
     "title": "AI trade tested",
-    "text": "Thursday's OpenAI revenue report was the first real crack in this year's AI story. Chip names such as ARM, INTC, TER, SWKS and ON finished the week down 8-13%. Power producers tied to AI data centers, VST and CEG, rose about 15%."
+    "text": "Thursday's OpenAI revenue report was the first real crack in this year's AI story. Chip names such as ARM, INTC, TER, SWKS and ON finished the week down 8-13%. Power producers tied to AI data centers rose: Vistra (VST) +15.33% and Constellation Energy (CEG) +15.76%."
    },
    {
     "title": "Defense over offense",

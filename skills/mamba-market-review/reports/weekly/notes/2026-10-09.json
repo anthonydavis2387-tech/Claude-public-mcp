@@ -1,45 +1,133 @@
 {
-  "headline": "Records early, an AI scare Thursday, and a quiet rotation into defensive stocks",
-  "push": "Defensives led while chips and small caps lagged.",
-  "summary": "The S&P 500 gained about 1.2% and set a record close on Tuesday, but the leadership changed during the week. Utilities, consumer staples, energy and health care each rose 2.8% to 4%. Tech slipped, and small caps fell about 0.9%. The 10-year Treasury yield touched its highest level since 2002 on Wednesday before a solid bond auction pulled it back. On Thursday, a report that OpenAI's revenue was running about $20 billion below what investors had been told hit chip and AI stocks. Friday brought a broad bounce into the start of bank earnings season. The VIX stayed near 15 all week, so the moves look like a rotation rather than fear.",
-  "mood": "Calm but rotating",
-  "mood_detail": "The VIX ended near 14.8, down from 15.3 the Friday before. 194 of the 276 names the dashboard tracks rose for the week, and the equal-weight S&P beat the regular S&P. That says the average stock did better than the giants this week.",
-  "days": [
-    {"date": "2026-10-05", "headlines": [
-      "Nasdaq closed at a record 27,477 (+1.05%); S&P 500 +0.66% to 7,773.95."
-    ], "sources": [{"name": "Market wrap via Digg", "url": "https://digg.com/world-business/r2fbx69g"}]},
-    {"date": "2026-10-06", "headlines": [
-      "S&P 500 closed at a record 7,818.93 (+0.6%), its first close above 7,800; Nasdaq also closed at a record.",
-      "Cooling Treasury yields and easing oil drove the gains; Marvell +5.8%, Broadcom +3.7%, AMD +2.8%.",
-      "Constellation Energy (CEG) rose after a long-term deal to supply Google with electricity."
-    ], "sources": [{"name": "La Nacion / AP index recap", "url": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-1062026-nid06102026/"}, {"name": "Tradejini", "url": "https://www.tradejini.com/blogs/us-stocks-edge-higher-as-sp-500-moves-closer-to-record-high"}]},
-    {"date": "2026-10-07", "headlines": [
-      "Stocks pulled back from records as bond yields and oil rose; the Russell 2000 fell 1.31%.",
-      "The 10-year yield hit 5.364% intraday, its highest since 2002, then eased after strong demand at a $39 billion auction.",
-      "Brent traded above $102 intraday and settled at $100.20."
-    ], "sources": [{"name": "AP via Coeur d'Alene Press", "url": "https://cdapress.com/news/2026/oct/07/wall-street-retreats-from-its-record-as-stocks-fall-worldwide/"}, {"name": "Reuters via Virginia Business", "url": "https://virginiabusiness.com/wall-street-closes-lower-treasury-yields-inflation/"}]},
-    {"date": "2026-10-08", "headlines": [
-      "Reports put OpenAI's annualized revenue near $50 billion, about $20 billion below figures given to investors; AI stocks sold off.",
-      "Nasdaq fell about 1.2%; chipmakers, up more than 80% this year, dropped 3.4% as a group (Reuters). The Dow edged up."
-    ], "sources": [{"name": "Crypto Briefing", "url": "https://cryptobriefing.com/nasdaq-composite-falls-openai-revenue-report/"}, {"name": "Wealth Professional", "url": "https://www.wealthprofessional.ca/investments/equity-markets/ai-selloff-drags-nasdaq-down-125-as-tsx-holds-its-ground/393743"}]},
-    {"date": "2026-10-09", "headlines": [
-      "All three indexes rose: Dow 51,655.01 (+0.83%), S&P 500 7,811.51 (+0.59%), Nasdaq 27,366.17 (+0.64%).",
-      "Oil prices and Treasury yields stabilized.",
-      "Telecoms sank after SpaceX agreed to buy an 800 MHz spectrum portfolio, a direct wireless threat: AT&T (T), Verizon (VZ) and T-Mobile (TMUS) fell 9-13%.",
-      "Humana (HUM) jumped about 11% on positive Medicare Advantage quality ratings."
-    ], "sources": [{"name": "TheStreet", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-09-2026"}, {"name": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-9-2026-105547352.html"}, {"name": "Finviz", "url": "https://finviz.com/news/400898/att-telecom-stocks-sink-as-spacex-acquires-spectrum-portfolio"}, {"name": "Stock Market Watch", "url": "https://stockmarketwatch.com/digest/2026-10-09"}]}
-  ],
-  "themes": [
-    {"title": "Rates near 24-year highs", "text": "The 10-year yield touched 5.36% on Wednesday, its highest since 2002, as oil above $100 kept inflation worries alive. A strong auction calmed it, and it ended the week near 5.2%. Rate-sensitive small caps lagged."},
-    {"title": "AI trade tested", "text": "Thursday's OpenAI revenue report was the first real crack in this year's AI story. Chip names such as ARM, INTC, TER, SWKS and ON finished the week down 8-13%. Power producers tied to AI data centers, VST and CEG, rose about 15%."},
-    {"title": "Defense over offense", "text": "Utilities (+4.0%), staples (+3.6%), energy (+3.6%) and health care (+2.8%) led the sectors. Tech (-0.5%) and industrials (-0.4%) lagged."},
-    {"title": "Telecom shock", "text": "SpaceX's spectrum purchase knocked about 9-13% off the big three wireless carriers in a single day."}
-  ],
-  "questions": [
-    "Utilities and staples led while the S&P set records. Is that rotation a warning about growth, or is money just leaving crowded AI trades?",
-    "The 10-year at 5.2-5.4% competes with stocks for money. What level would make you trim, and which of your watchlist names are most rate-sensitive?",
-    "Banks report next week, with JPM, GS, WFC and C on Tuesday. What would you need to hear on loan losses and the consumer to trust this market's strength?"
-  ],
-  "watchlist": ["AMGN", "CAT", "GLW", "KLAC", "RTX", "UNH"],
-  "gaps": "No daily dashboard snapshot was saved for Monday or Tuesday (the GitHub save was fixed on Tuesday), so those two days show prices and headlines only."
+ "headline": "Records early, an AI scare Thursday, and a quiet rotation into defensive stocks",
+ "push": "Defensives led while chips and small caps lagged.",
+ "summary": "The S&P 500 (SPY) finished the week +1.16% and set a record close on Tuesday, but the leadership changed during the week. Utilities (XLU) +3.97%, consumer staples (XLP) +3.60%, energy (XLE) +3.60% and health care (XLV) +2.79% led. Tech (XLK) was -0.52%, and small caps (IWM) -0.92%. The 10-year Treasury yield touched its highest level since 2002 on Wednesday before a solid bond auction pulled it back. On Thursday, a report that OpenAI's revenue was running about $20 billion below what investors had been told hit chip and AI stocks. Friday brought a broad bounce into the start of bank earnings season. The VIX stayed near 15 all week, so the moves look like a rotation rather than fear.",
+ "mood": "Calm but rotating",
+ "mood_detail": "The VIX ended near 14.8, down from 15.3 the Friday before. 194 of the 276 names the dashboard tracks rose for the week, and the equal-weight S&P beat the regular S&P. That says the average stock did better than the giants this week.",
+ "days": [
+  {
+   "date": "2026-10-05",
+   "headlines": [
+    "Nasdaq closed at a record 27,477 (+1.05%); S&P 500 +0.66% to 7,773.95."
+   ],
+   "sources": [
+    {
+     "name": "Market wrap via Digg",
+     "url": "https://digg.com/world-business/r2fbx69g"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "headlines": [
+    "S&P 500 closed at a record 7,818.93 (+0.6%), its first close above 7,800; Nasdaq also closed at a record.",
+    "Cooling Treasury yields and easing oil drove the gains; Marvell +5.8%, Broadcom +3.7%, AMD +2.8%.",
+    "Constellation Energy (CEG) rose after a long-term deal to supply Google with electricity."
+   ],
+   "sources": [
+    {
+     "name": "La Nacion / AP index recap",
+     "url": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-1062026-nid06102026/"
+    },
+    {
+     "name": "Tradejini",
+     "url": "https://www.tradejini.com/blogs/us-stocks-edge-higher-as-sp-500-moves-closer-to-record-high"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "headlines": [
+    "Stocks pulled back from records as bond yields and oil rose; the Russell 2000 was -1.31%.",
+    "The 10-year yield hit 5.364% intraday, its highest since 2002, then eased after strong demand at a $39 billion auction.",
+    "Brent traded above $102 intraday and settled at $100.20."
+   ],
+   "sources": [
+    {
+     "name": "AP via Coeur d'Alene Press",
+     "url": "https://cdapress.com/news/2026/oct/07/wall-street-retreats-from-its-record-as-stocks-fall-worldwide/"
+    },
+    {
+     "name": "Reuters via Virginia Business",
+     "url": "https://virginiabusiness.com/wall-street-closes-lower-treasury-yields-inflation/"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-08",
+   "headlines": [
+    "Reports put OpenAI's annualized revenue near $50 billion, about $20 billion below figures given to investors; AI stocks sold off.",
+    "Nasdaq -1.25%; chipmakers, up more than 80% this year, were -3.4% as a group (Reuters). The Dow finished slightly higher."
+   ],
+   "sources": [
+    {
+     "name": "Crypto Briefing",
+     "url": "https://cryptobriefing.com/nasdaq-composite-falls-openai-revenue-report/"
+    },
+    {
+     "name": "Wealth Professional",
+     "url": "https://www.wealthprofessional.ca/investments/equity-markets/ai-selloff-drags-nasdaq-down-125-as-tsx-holds-its-ground/393743"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "headlines": [
+    "All three indexes rose: Dow 51,655.01 (+0.83%), S&P 500 7,811.51 (+0.59%), Nasdaq 27,366.17 (+0.64%).",
+    "Oil prices and Treasury yields stabilized.",
+    "Telecoms sank after SpaceX agreed to buy an 800 MHz spectrum portfolio, a direct wireless threat: AT&T (T), Verizon (VZ) and T-Mobile (TMUS) fell 9-13%.",
+    "Humana (HUM) jumped about 11% on positive Medicare Advantage quality ratings."
+   ],
+   "sources": [
+    {
+     "name": "TheStreet",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-09-2026"
+    },
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-9-2026-105547352.html"
+    },
+    {
+     "name": "Finviz",
+     "url": "https://finviz.com/news/400898/att-telecom-stocks-sink-as-spacex-acquires-spectrum-portfolio"
+    },
+    {
+     "name": "Stock Market Watch",
+     "url": "https://stockmarketwatch.com/digest/2026-10-09"
+    }
+   ]
+  }
+ ],
+ "themes": [
+  {
+   "title": "Rates near 24-year highs",
+   "text": "The 10-year yield touched 5.36% on Wednesday, its highest since 2002, as oil above $100 kept inflation worries alive. A strong auction calmed it, and it ended the week near 5.2%. Rate-sensitive small caps lagged."
+  },
+  {
+   "title": "AI trade tested",
+   "text": "Thursday's OpenAI revenue report was the first real crack in this year's AI story. Chip names such as ARM, INTC, TER, SWKS and ON finished the week down 8-13%. Power producers tied to AI data centers rose: Vistra (VST) +15.33% and Constellation Energy (CEG) +15.76%."
+  },
+  {
+   "title": "Defense over offense",
+   "text": "Utilities (+4.0%), staples (+3.6%), energy (+3.6%) and health care (+2.8%) led the sectors. Tech (-0.5%) and industrials (-0.4%) lagged."
+  },
+  {
+   "title": "Telecom shock",
+   "text": "SpaceX's spectrum purchase knocked about 9-13% off the big three wireless carriers in a single day."
+  }
+ ],
+ "questions": [
+  "Utilities and staples led while the S&P set records. Is that rotation a warning about growth, or is money just leaving crowded AI trades?",
+  "The 10-year at 5.2-5.4% competes with stocks for money. What level would make you trim, and which of your watchlist names are most rate-sensitive?",
+  "Banks report next week, with JPM, GS, WFC and C on Tuesday. What would you need to hear on loan losses and the consumer to trust this market's strength?"
+ ],
+ "watchlist": [
+  "AMGN",
+  "CAT",
+  "GLW",
+  "KLAC",
+  "RTX",
+  "UNH"
+ ],
+ "gaps": "No daily dashboard snapshot was saved for Monday or Tuesday (the GitHub save was fixed on Tuesday), so those two days show prices and headlines only."
 }

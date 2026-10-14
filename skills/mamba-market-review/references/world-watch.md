@@ -15,6 +15,7 @@ Replaces the old 5pm futures-only check and the midnight scan. Two outputs, both
 
 1. Run the ~5 searches. Write `reports/world-watch/{date}.json` in the shape below. Every number in the text must come from a search result, and every region lists the source URL(s) it used. If a region had no usable result, say so in its headline and leave it without sources rather than guessing.
 2. `python3 skills/mamba-market-review/scripts/world_watch.py reports/world-watch/{date}.json /tmp/world-watch.html` (needs FMP_API_KEY).
+2b. `python3 skills/mamba-market-review/scripts/fact_check.py /tmp/world-watch.html --style-only` must print `0 error(s)`. The notes follow the house number style in `references/style-and-accuracy.md`: signed moves ("the DAX +1.59%", never "the DAX rose 1.59%"), `$` on oil, gold and Bitcoin prices, no `$` on index levels. Fix the notes JSON and rebuild until it is clean.
 3. Read the page at the URL in `reports/.worldwatch-url.txt` (the Artifact tool requires this), then publish `/tmp/world-watch.html` to that same `url`.
 4. Commit the notes JSON and push to the branch.
 5. Final reply = the reminder line the script printed. Nothing else.

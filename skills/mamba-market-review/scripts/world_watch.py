@@ -9,7 +9,8 @@ import html, json, os, sys, urllib.request
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-FUT = [('ESUSD', 'S&P 500 fut', True), ('NQUSD', 'Nasdaq 100 fut', True), ('CLUSD', 'WTI crude', True),
+# third field: priced in dollars ("$"); index futures and the dollar index are points, so no "$" (house style)
+FUT = [('ESUSD', 'S&P 500 fut', False), ('NQUSD', 'Nasdaq 100 fut', False), ('CLUSD', 'WTI crude', True),
        ('GCUSD', 'Gold', True), ('BTCUSD', 'Bitcoin', True), ('DXUSD', 'Dollar index', False)]
 REGIONS = [
     ('asia', 'Asia-Pacific', [('EWJ', 'Japan'), ('EWY', 'South Korea'), ('EWT', 'Taiwan'), ('INDA', 'India')]),
@@ -28,11 +29,14 @@ def quotes(syms):
 
 
 def pct(x):
-    return '&mdash;' if x is None else f"{'+' if x >= 0 else '&minus;'}{abs(x):.2f}%"
+    if x is None:
+        return '&mdash;'
+    return '0.00%' if round(x, 2) == 0 else f"{'+' if x > 0 else '-'}{abs(x):.2f}%"
 
 
 def cls(x):
-    return 'up' if (x or 0) > 0.05 else 'down' if (x or 0) < -0.05 else 'flat'
+    x = round(x or 0, 2)
+    return 'up' if x > 0 else 'down' if x < 0 else 'flat'
 
 
 def main(notes_path, out_path):
@@ -47,10 +51,10 @@ def main(notes_path, out_path):
         q = Q.get(s)
         if not q: continue
         px, ch = q['price'], q.get('changePercentage')
-        pxs = (f"${px:,.2f}" if px < 1000 else f"${px:,.0f}") if dollar else f"{px:,.2f}"
+        pxs = f"${px:,.2f}" if dollar else f"{px:,.2f}"
         fut_cells.append(f'<div class="tick"><span class="tl">{e(label)}</span><span class="tp">{pxs}</span><span class="tc {cls(ch)}">{pct(ch)}</span></div>')
         if s in ('ESUSD', 'NQUSD', 'CLUSD', 'GCUSD', 'BTCUSD'):
-            top5.append(f"{label.replace(' fut', '')} {'+' if (ch or 0) >= 0 else '-'}{abs(ch or 0):.1f}%")
+            top5.append(f"{label.replace(' fut', '')} {pct(ch)}")
 
     cards = []
     for key, name, etfs in REGIONS:

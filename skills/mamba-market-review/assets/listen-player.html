@@ -134,10 +134,17 @@
     t = t.replace(/S&(amp;)?P/g, 'S and P').replace(/&/g, ' and ');
     t = t.replace(/\s\(([A-Z]{1,5}(?:[.\-][A-Z]{1,2})?)\)/g, '');            // "ExxonMobil (XOM)" -> "ExxonMobil"
     t = t.replace(/\$(\d[\d,]*\.?\d*)\s?([KMBT])\b/g, function(m, n, s){ return n + SCALE[s] + ' dollars'; });
+    // Every price is said as dollars and cents, so the listener never has to guess ("$87.19" -> "87 dollars and 19 cents").
+    // Index levels, the VIX and bond futures carry no "$" on the page, so they stay plain numbers (points).
+    t = t.replace(/\$(\d[\d,]*)\.(\d{3,})(?!\d)/g, '$1.$2 dollars');
+    t = t.replace(/\$(\d[\d,]*)(?:\.(\d{1,2}))?(?!\d|[.,]\d)/g, function(m, n, c){
+      var cents = c ? +(c.length === 1 ? c + '0' : c) : 0;
+      if (n === '0') return cents + (cents === 1 ? ' cent' : ' cents');
+      return n + (n === '1' ? ' dollar' : ' dollars') + (cents ? ' and ' + cents + (cents === 1 ? ' cent' : ' cents') : ''); });
     t = t.replace(/([+\-−])\s?(\d[\d,]*\.?\d*)\s?%/g, function(m, s, n){ return (s === '+' ? ' up ' : ' down ') + n + ' percent'; });
     t = t.replace(/%/g, ' percent');
     t = t.replace(/(\d)\+(?!\d)/g, '$1 or more');
-    t = t.replace(/(\d)\s?[–—]\s?(\d)/g, '$1 to $2').replace(/[–—]/g, ', ');
+    t = t.replace(/(\d|cents?|dollars?)\s?[–—]\s?(\d)/g, '$1 to $2').replace(/[–—]/g, ', ');
     t = t.replace(/·|•/g, ', ').replace(/×/g, ' times ');
     t = t.replace(/\b(\d+)d\b/g, '$1-day').replace(/\b52-wk\b/gi, '52-week').replace(/\bwk\b/g, 'week');
     t = t.replace(/\b1Y\b/g, 'one-year').replace(/\b(\d+)M\b(?![a-z])/g, '$1-month').replace(/\bYTD\b/g, 'year to date');

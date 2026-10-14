@@ -55,7 +55,7 @@
          '<div class="ac-a">Profit ' + grew(ni) + (A.net_income_growth_prior != null ? '; the year before it ' + grew(A.net_income_growth_prior) : '') + '</div>' +
          '<div class="ac-n">Revenue ' + money(A.revenue, A.currency) + ' ' + pct(rev) + ' <span style="color:var(--ink-faint)">(prior yr ' + pct(A.revenue_growth_prior) + ')</span><br>' +
          'Net income ' + money(A.net_income, A.currency) + ' ' + pct(ni) + ' <span style="color:var(--ink-faint)">(prior yr ' + pct(A.net_income_growth_prior) + ')</span><br>' +
-         'EPS ' + (A.eps != null ? A.eps.toFixed(2) : '&mdash;') + ' ' + pct(A.eps_growth) + '<br>' +
+         'EPS ' + (A.eps != null ? (A.eps < 0 ? '-$' : '$') + Math.abs(A.eps).toFixed(2) : '&mdash;') + ' ' + pct(A.eps_growth) + '<br>' +
          'Net margin ' + (A.net_margin_prior != null ? A.net_margin_prior.toFixed(1) + '% &rarr; ' : '') + (A.net_margin != null ? A.net_margin.toFixed(1) + '%' : '&mdash;') + '</div></div>';
 
     // 2. Debt: up or down, and if up, what it paid for

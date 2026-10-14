@@ -39,7 +39,10 @@ the 10-Point Analyzer, the stock universe or the research cache in this session.
 5. Read the live page first: Artifact read of the URL in `reports/.weekly-url.txt` with `path: "index.html"` and
    `out_dir: "/tmp/stopthecap"` (also read it once without `path`, which a republish requires). Then run
    `python3 skills/mamba-market-review/scripts/weekly_recap.py render /tmp/stop-the-cap.html --prior /tmp/stopthecap/index.html`
-   and publish `/tmp/stop-the-cap.html` to that URL. `--prior` keeps every week already on the page even if earlier runs
+   and check it with `python3 skills/mamba-market-review/scripts/fact_check.py /tmp/stop-the-cap.html --style-only`
+   (it reads the notes from the page's data, so it covers the summary, headlines and themes). Fix the notes until it
+   prints `0 error(s)`, following the house number style in `references/style-and-accuracy.md`: signed moves with 2
+   decimals ("small caps (IWM) -0.92%"), never "fell about 0.9%". Then publish `/tmp/stop-the-cap.html` to that URL. `--prior` keeps every week already on the page even if earlier runs
    could not save their week files to GitHub. The script prints the phone-notification line.
 6. Commit the notes file and the built week file, then push as the routine prompt describes.
 7. The final reply is only the line the script printed; it becomes the phone notification.

@@ -119,19 +119,20 @@ const TV={'^VIX':'TVC:VIX','BTCUSD':'BITSTAMP:BTCUSD'};
 const tv=s=>'https://www.tradingview.com/chart/?symbol='+encodeURIComponent(TV[s]||s);
 const ana=s=>D.urls.analyzer?D.urls.analyzer+'#t-'+s:tv(s);
 const anaSector=n=>D.urls.analyzer?D.urls.analyzer+'#sector-'+n.replace(/\s+/g,'-'):'#';
-const pct=(v,d=1)=>v==null?'—':(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(d)+'%';
+const pct=(v,d=2)=>v==null?'—':(+v.toFixed(d)===0?'':v>0?'+':'-')+Math.abs(v).toFixed(d)+'%';
 const cls=v=>v>0.05?'up':v<-0.05?'down':'';
 const dfmt=(iso,o={weekday:'short',month:'short',day:'numeric'})=>new Date(iso+'T12:00:00').toLocaleDateString('en-US',o);
-const px=v=>v>=1000?v.toLocaleString('en-US',{maximumFractionDigits:0}):v.toFixed(2);
+const POINTS=new Set(['^VIX']);
+const px=(v,s)=>(POINTS.has(s)?'':'$')+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
 let SID=0;
-function spark(points,small){
+function spark(points,small,sym){
   const w=small?90:180,h=small?24:44,p=small?2:4;const ys=points.map(x=>x[1]);
   const lo=Math.min(...ys),hi=Math.max(...ys),rng=hi-lo||1;
   const X=i=>p+i*(w-2*p)/(points.length-1),Y=v=>h-p-(v-lo)*(h-2*p)/rng;
   const path=points.map((pt,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(pt[1]).toFixed(1)).join(' ');
   const up=ys[ys.length-1]>=ys[0];const col=up?'var(--up)':'var(--down)';const id='s'+(SID++);
   const base=Y(ys[0]).toFixed(1);
-  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" data-pts='${esc(JSON.stringify(points))}' role="img" aria-label="Closing prices ${esc(points.map(x=>x[0].slice(5)+' '+px(x[1])).join(', '))}">
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" data-pts='${esc(JSON.stringify(points))}' data-sym='${esc(sym||'')}' role="img" aria-label="Closing prices ${esc(points.map(x=>x[0].slice(5)+' '+px(x[1],sym)).join(', '))}">
     <line x1="${p}" x2="${w-p}" y1="${base}" y2="${base}" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 3" vector-effect="non-scaling-stroke"/>
     <path d="${path} L${X(points.length-1).toFixed(1)} ${h} L${X(0).toFixed(1)} ${h} Z" fill="${col}" opacity=".08"/>
     <path d="${path}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
@@ -140,8 +141,8 @@ function spark(points,small){
 function card(it){
   const last=it.points[it.points.length-1][1];
   return `<div class="card"><div class="top"><div><div class="nm">${esc(it.label)}</div><div class="tk">${esc(it.s.replace('^',''))}</div></div>
-   <div class="wk ${cls(it.week_pct)}">${pct(it.week_pct)}</div></div>${spark(it.points)}
-   <div class="top"><span class="px">${px(last)}</span><a class="tv" href="${tv(it.s)}" target="_blank" rel="noopener">5-day chart ↗</a></div></div>`;
+   <div class="wk ${cls(it.week_pct)}">${pct(it.week_pct)}</div></div>${spark(it.points,false,it.s)}
+   <div class="top"><span class="px">${px(last,it.s)}</span><a class="tv" href="${tv(it.s)}" target="_blank" rel="noopener">5-day chart ↗</a></div></div>`;
 }
 function render(w){
   SID=0;
@@ -174,16 +175,16 @@ function render(w){
      <span class="v ${cls(s.week_pct)}">${pct(s.week_pct)}</span></div>`}).join('');
   const mtab=(title,rows)=>`<div class="tbox"><h3 class="label" style="margin-bottom:4px">${title}</h3><table><thead><tr><th>Name</th><th>Sector</th><th>Week</th><th class="num">%</th></tr></thead><tbody>${rows.map(m=>`<tr>
     <td><a class="sym" href="${ana(m.s)}" target="_blank" rel="noopener">${m.s}</a><span class="co">${esc(m.name)}</span></td><td style="font-size:13px;color:var(--ink-soft)">${esc(m.sector||'')}</td>
-    <td>${spark(m.points,true)}</td><td class="num ${cls(m.week_pct)}">${pct(m.week_pct)}</td></tr>`).join('')}</tbody></table></div>`;
+    <td>${spark(m.points,true,m.s)}</td><td class="num ${cls(m.week_pct)}">${pct(m.week_pct)}</td></tr>`).join('')}</tbody></table></div>`;
   $('movers').innerHTML=mtab('Top 10 gainers',w.best)+mtab('Top 10 decliners',w.worst);
   $('watch').innerHTML=(w.watchlist||[]).length?`<table style="max-width:640px"><thead><tr><th>Name</th><th>Week</th><th class="num">Close</th><th class="num">%</th><th></th></tr></thead><tbody>${w.watchlist.filter(x=>x.points).map(m=>`<tr>
-    <td><a class="sym" href="${ana(m.s)}" target="_blank" rel="noopener">${m.s}</a><span class="co">${esc(m.name)}</span></td><td>${spark(m.points,true)}</td>
-    <td class="num">${px(m.points[m.points.length-1][1])}</td><td class="num ${cls(m.week_pct)}">${pct(m.week_pct)}</td>
+    <td><a class="sym" href="${ana(m.s)}" target="_blank" rel="noopener">${m.s}</a><span class="co">${esc(m.name)}</span></td><td>${spark(m.points,true,m.s)}</td>
+    <td class="num">${px(m.points[m.points.length-1][1],m.s)}</td><td class="num ${cls(m.week_pct)}">${pct(m.week_pct)}</td>
     <td style="font-size:12.5px"><a href="${tv(m.s)}" target="_blank" rel="noopener">5-day chart ↗</a></td></tr>`).join('')}</tbody></table>`:'<p>No watchlist names this week.</p>';
   const evDays=[...new Set(w.next_events.map(e=>e.day))];
   const erDays=[...new Set(w.next_earnings.map(e=>e.date))].sort();
   $('next').innerHTML=`<div><h3 class="label">Economic reports (times in MT)</h3>${evDays.map(d=>`<div class="evday"><h4>${dfmt(d)}</h4><ul>${w.next_events.filter(e=>e.day===d).map(e=>`<li><span class="t">${e.when.split(', ').pop()}</span>${esc(e.event)}${e.estimate!=null?` <span class="est">est ${e.estimate}, prior ${e.previous}</span>`:''}</li>`).join('')}</ul></div>`).join('')||'<p>None found.</p>'}</div>
-   <div><h3 class="label">Earnings from your dashboard names</h3>${erDays.map(d=>`<div class="evday"><h4>${dfmt(d)}</h4><ul>${w.next_earnings.filter(e=>e.date===d).map(e=>`<li><a class="sym" href="${ana(e.s)}" target="_blank" rel="noopener">${e.s}</a> ${esc(e.name||'')}${e.eps_est!=null?` <span class="est">EPS est ${e.eps_est}</span>`:''}</li>`).join('')}</ul></div>`).join('')||'<p>None scheduled.</p>'}</div>`;
+   <div><h3 class="label">Earnings from your dashboard names</h3>${erDays.map(d=>`<div class="evday"><h4>${dfmt(d)}</h4><ul>${w.next_earnings.filter(e=>e.date===d).map(e=>`<li><a class="sym" href="${ana(e.s)}" target="_blank" rel="noopener">${e.s}</a> ${esc(e.name||'')}${e.eps_est!=null?` <span class="est">EPS est ${e.eps_est<0?'-':''}$${Math.abs(e.eps_est).toFixed(2)}</span>`:''}</li>`).join('')}</ul></div>`).join('')||'<p>None scheduled.</p>'}</div>`;
   $('qs').innerHTML=(n.questions||[]).map(q=>`<li>${esc(q)}</li>`).join('');
   $('foot').innerHTML=`${n.gaps?`<div>${esc(n.gaps)}</div>`:''}<div>Prices: FMP daily closes from ${esc(w.indexes[0]?.base_date||'')} to ${esc(w.week_end)}. Weekly % compares Friday's close with the prior week's last close. Headlines come from the news sources linked under each day. Built ${esc(w.built_at.replace('T',' ').slice(0,16))} UTC.</div>`;
 }
@@ -194,5 +195,5 @@ $('wk').onchange=e=>{render(D.weeks.find(w=>w.week_end===e.target.value));window
 const tip=$('tip');
 document.addEventListener('mousemove',e=>{const s=e.target.closest&&e.target.closest('svg.spark');if(!s){tip.hidden=true;return}
   const pts=JSON.parse(s.dataset.pts);const r=s.getBoundingClientRect();const i=Math.max(0,Math.min(pts.length-1,Math.round((e.clientX-r.left)/r.width*(pts.length-1))));
-  tip.textContent=(i===0?'Prior close ':'')+dfmt(pts[i][0])+' · '+px(pts[i][1]);tip.hidden=false;tip.style.left=Math.min(e.clientX+12,innerWidth-170)+'px';tip.style.top=(e.clientY+14)+'px'});
+  tip.textContent=(i===0?'Prior close ':'')+dfmt(pts[i][0])+' · '+px(pts[i][1],s.dataset.sym);tip.hidden=false;tip.style.left=Math.min(e.clientX+12,innerWidth-170)+'px';tip.style.top=(e.clientY+14)+'px'});
 </script>
