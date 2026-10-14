@@ -1,0 +1,53 @@
+<style id="futures-note-css">
+  /* "Food for thought" card pinned at the top of the Futures Tape: the user's dollar-vs-indices reminder, its track record, and today's check */
+  .fnote { border: 1px solid var(--line-strong); border-left: 4px solid var(--accent); background: var(--surface); padding: 14px 18px; margin: 0 0 14px; display: grid; gap: 8px; }
+  .fnote .fn-k { font-family: 'Source Sans 3', sans-serif; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); }
+  .fnote blockquote { margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 19px; font-weight: 700; line-height: 1.35; }
+  .fnote blockquote cite { display: block; font-family: 'Source Sans 3', sans-serif; font-style: normal; font-size: 12px; font-weight: 400; color: var(--ink-faint); margin-top: 3px; }
+  .fnote .fn-better { font-size: 14.5px; line-height: 1.6; color: var(--ink); }
+  .fnote .fn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 22px; font-size: 13.5px; line-height: 1.55; color: var(--ink-soft); }
+  .fnote .fn-grid b { color: var(--ink); }
+  .fnote .fn-today { font-family: 'Source Sans 3', sans-serif; font-size: 13.5px; padding: 7px 10px; background: var(--gap-bg, var(--surface-2)); border-radius: 4px; }
+  .fnote .fn-today .ok { color: var(--green); font-weight: 700; } .fnote .fn-today .no { color: var(--red); font-weight: 700; }
+  .fnote .fn-src { font-family: 'Source Sans 3', sans-serif; font-size: 11.5px; color: var(--ink-faint); }
+</style>
+<div class="fnote" id="futures-note">
+  <span class="fn-k">Food for thought &middot; before you trade the index futures</span>
+  <blockquote>&ldquo;What&rsquo;s good for the US currency is bad for the indices, and vice versa.&rdquo;<cite>Your rule of thumb, from reading the news and Forex Factory</cite></blockquote>
+  <p class="fn-better" style="margin:0"><b>Said a little tighter:</b> &ldquo;A strong dollar is a headwind for stocks; a weak dollar is a tailwind.&rdquo; It is the same idea behind the trading-desk line &ldquo;good news is bad news&rdquo;: hot US data lifts the dollar and yields because the Fed may stay tight, and the indices sell off on what looks like good news.</p>
+  <div class="fn-grid">
+    <div><b>Why it usually works.</b> A stronger dollar tightens financial conditions and shrinks the overseas earnings of US multinationals when they are converted back to dollars. Dollar strength often comes from higher yields or a hawkish Fed, which also pressure stock valuations.</div>
+    <div><b>When it breaks.</b> In a strong-US-growth stretch the dollar and stocks can rise together, and in a US-specific scare both can fall together. Treat it as a lean, not a law: confirm with the 10-year yield and the news driving the move.</div>
+    <div><b>Track record (dollar fund UUP vs S&amp;P 500 fund SPY, daily closes).</b> <span id="fn-stats">__STATS__</span></div>
+  </div>
+  <div class="fn-today" id="fn-today"></div>
+  <div class="fn-src">Check the calendar first: high-impact US releases (CPI, jobs, Fed) are the days the dollar moves most. <a href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener">Forex Factory calendar &#8599;</a></div>
+</div>
+<script id="futures-note-js">
+(function(){ function run(){ try {
+  // Today's check, read from this page's own futures cards, so it is always the same data the tape shows.
+  function move(sym){
+    var cards = document.querySelectorAll('.fcard');
+    for (var i = 0; i < cards.length; i++) {
+      var s = cards[i].querySelector('.sym'); if (!s || s.textContent.trim().indexOf(sym + ' (') !== 0) continue;
+      var c = cards[i].querySelector('.chg'); if (!c) return null;
+      var v = parseFloat(c.textContent.replace(/[^\d.+\-]/g, '').replace('−', '-')); return isNaN(v) ? null : v;
+    }
+    return null;
+  }
+  var dx = move('DX'), es = move('ES'), nq = move('NQ'), el = document.getElementById('fn-today');
+  if (!el) return;
+  if (dx == null || es == null) { el.style.display = 'none'; return; }
+  function f(v){ return (+v.toFixed(2) === 0 ? '' : v > 0 ? '+' : '-') + Math.abs(v).toFixed(2) + '%'; }
+  var idx = nq != null && Math.abs(nq) > Math.abs(es) ? nq : es;   // judge by whichever index moved more
+  var held = dx * idx < 0, flat = Math.abs(dx) < 0.05;
+  el.innerHTML = '<b>On this tape:</b> dollar index (DX) ' + f(dx) + ', S&amp;P 500 futures (ES) ' + f(es) + (nq != null ? ', Nasdaq 100 futures (NQ) ' + f(nq) : '') + '. ' +
+    (flat ? 'The dollar barely moved, so the rule says little today.' :
+     Math.abs(es) < 0.1 && (nq == null || Math.abs(nq) < 0.1) ? 'The dollar moved but the indices barely did, so the rule was not tested today.' :
+     held ? '<span class="ok">The rule held:</span> they moved in opposite directions.' :
+            '<span class="no">The rule did not hold:</span> they moved the same way, so something other than the dollar is driving the indices. Check yields and the headlines.');
+} catch (e) {} }
+  // the card sits above the futures cards, so wait until they exist
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
+})();
+</script>
