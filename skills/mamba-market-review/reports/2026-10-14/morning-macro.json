@@ -1,0 +1,208 @@
+{
+ "date": "2026-10-14",
+ "session": "morning-macro",
+ "generated_at": "2026-10-14T14:06:08Z",
+ "futures": [
+  {
+   "symbol": "ES",
+   "name": "E-Mini S&P 500",
+   "last": 7823.25,
+   "chg_pct": -0.41,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NQ",
+   "name": "Nasdaq 100",
+   "last": 30576.75,
+   "chg_pct": -0.7,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "YM",
+   "name": "Mini Dow Jones Industrial Average Index",
+   "last": 52009,
+   "chg_pct": 0.14,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "RTY",
+   "name": "Micro E-mini Russell 2000 Index Futures",
+   "last": 2769.2,
+   "chg_pct": -1.1,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZB",
+   "name": "30 Year U.S. Treasury Bond Futures",
+   "last": 103,
+   "chg_pct": -0.72,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZN",
+   "name": "10-Year T-Note Futures",
+   "last": 104.17188,
+   "chg_pct": -0.54,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZF",
+   "name": "Five-Year US Treasury Note",
+   "last": 103.24219,
+   "chg_pct": -0.4,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZT",
+   "name": "2-Year T-Note Futures",
+   "last": 101.65234,
+   "chg_pct": -0.19,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "CL",
+   "name": "Crude Oil",
+   "last": 95.4,
+   "chg_pct": 1.34,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BZ",
+   "name": "Brent Crude Oil",
+   "last": 105.91,
+   "chg_pct": 0.21,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NG",
+   "name": "Natural Gas",
+   "last": 3.202,
+   "chg_pct": -2.47,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "RB",
+   "name": "Gasoline RBOB",
+   "last": 3.1448,
+   "chg_pct": 0.35,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "HO",
+   "name": "Heating Oil",
+   "last": 4.8996,
+   "chg_pct": -0.71,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "GC",
+   "name": "Gold Futures",
+   "last": 4118.2,
+   "chg_pct": -1.41,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "SI",
+   "name": "Silver Futures",
+   "last": 56.76,
+   "chg_pct": -4.65,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HG",
+   "name": "Copper",
+   "last": 6.6825,
+   "chg_pct": -0.65,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "PL",
+   "name": "Platinum",
+   "last": 1623.95,
+   "chg_pct": -2.83,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "PA",
+   "name": "Palladium",
+   "last": 1108,
+   "chg_pct": -1.72,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZM",
+   "name": "Soybean Meal Futures",
+   "last": 359.55,
+   "chg_pct": -1.0,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "CC",
+   "name": "Cocoa",
+   "last": 5832,
+   "chg_pct": 2.75,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "DX",
+   "name": "US Dollar",
+   "last": 102.59,
+   "chg_pct": 0.58,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BTC",
+   "name": "Bitcoin USD",
+   "last": 82165.49,
+   "chg_pct": -1.12,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "ETH",
+   "name": "Ethereum USD",
+   "last": 2443.67,
+   "chg_pct": -2.11,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "VIX",
+   "name": "CBOE Volatility Index",
+   "last": 15.77,
+   "chg_pct": 3.27,
+   "trend_flag": "neutral"
+  }
+ ],
+ "bitcoin": {
+  "price": 82165.49,
+  "chg_pct": -1.12,
+  "year_high": 126296,
+  "year_low": 57717.55,
+  "avg50": 81104.766,
+  "avg200": 72128.75,
+  "move_7d_pct": -1.33,
+  "move_30d_pct": 5.1,
+  "move_90d_pct": 28.85
+ },
+ "unavailable": [
+  "SR3",
+  "VX",
+  "ZC",
+  "ZS",
+  "ZW",
+  "ZL",
+  "KC",
+  "LE",
+  "6E",
+  "6J",
+  "6B",
+  "6A",
+  "6C",
+  "6S",
+  "6N",
+  "SB",
+  "CT"
+ ],
+ "macro": {
+  "note": "No dated Oct 14 market wire found via WebSearch (results were 2023-2025 or undated). Last verified context: Fed raised rates in Sept (first hike since 2023); FOMC Oct 27-28. Cash Treasury yields for Oct 14 not yet posted by FMP. Spot-ETF flow figures found were undated, so none quoted. Watchlist sync: dashboard held 19 names and the Analyzer 7; merged list (19 on, MPLX off) written to both."
+ }
+}
