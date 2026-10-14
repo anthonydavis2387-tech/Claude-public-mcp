@@ -181,7 +181,8 @@ def render(out_path, prior=None):
     data = json.dumps({'weeks': weeks, 'urls': urls}, separators=(',', ':')).replace('</', '<\\/')
     sys.path.insert(0, HERE)
     from install_listen_player import player_block
-    open(out_path, 'w').write(tpl.replace('__DATA__', data) + '\n' + player_block() + '\n')
+    from install_ticker_links import links_block
+    open(out_path, 'w').write(tpl.replace('__DATA__', data) + '\n' + links_block() + '\n' + player_block() + '\n')
     w = weeks[0]
     spy = next((i for i in w['indexes'] if i['s'] == 'SPY'), None)
     lead = w['notes'].get('push') or w['notes'].get('headline', '')

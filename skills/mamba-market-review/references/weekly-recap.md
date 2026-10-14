@@ -46,3 +46,5 @@ the 10-Point Analyzer, the stock universe or the research cache in this session.
    could not save their week files to GitHub. The script prints the phone-notification line.
 6. Commit the notes file and the built week file, then push as the routine prompt describes.
 7. The final reply is only the line the script printed; it becomes the phone notification.
+
+Every ticker symbol on the page is a link (stocks to the 10-Point Analyzer, ETFs to the ETF Explorer, futures and other tickers to TradingView). The build script adds the shared linker from `assets/ticker-links.html` automatically; see the ticker-links note in `references/reports-and-dashboard.md`.

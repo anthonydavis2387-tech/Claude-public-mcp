@@ -31,3 +31,5 @@ stock?"
 2. `python3 skills/mamba-market-review/scripts/etf_explorer.py /tmp/etf-explorer.html`, then publish that file to the
    `.etf-url.txt` URL.
 3. Commit `etf/`, then push.
+
+Every ticker symbol on the page is a link (stocks to the 10-Point Analyzer, ETFs to the ETF Explorer, futures and other tickers to TradingView). The build script adds the shared linker from `assets/ticker-links.html` automatically; see the ticker-links note in `references/reports-and-dashboard.md`.

@@ -177,7 +177,7 @@ function holdingsHtml(f){
     <label class="toggle"><input type="checkbox" id="od" ${onlyDash?'checked':''}> Only names in my dashboard</label></div>
     <p class="src" style="margin:0 0 8px">${src}</p>
     <div class="tbox"><table><thead><tr><th>#</th><th>Holding</th><th>Type</th><th class="num">Weight</th><th></th></tr></thead><tbody>
-    ${shown.map(r=>`<tr><td class="rk">${r.rank}</td><td>${r.tk?`<a class="sym" href="${r.in_uni?ana(r.tk):tv(r.tk)}" target="_blank" rel="noopener">${esc(r.tk)}</a>${r.in_uni?`<a class="ana" href="${ana(r.tk)}" target="_blank" rel="noopener" title="Open in the 10-Point Analyzer">ANALYZER</a>`:''} `:''}<span style="color:var(--muted);font-size:13px">${esc(r.name)}</span></td>
+    ${shown.map(r=>`<tr><td class="rk">${r.rank}</td><td>${r.tk?`${BY[r.tk]?`<a class="sym" href="#e-${r.tk}">${esc(r.tk)}</a>`:`<a class="sym" href="${r.in_uni?ana(r.tk):tv(r.tk)}" target="_blank" rel="noopener">${esc(r.tk)}</a>`}${r.in_uni?`<a class="ana" href="${ana(r.tk)}" target="_blank" rel="noopener" title="Open in the 10-Point Analyzer">ANALYZER</a>`:''} `:''}<span style="color:var(--muted);font-size:13px">${esc(r.name)}</span></td>
       <td style="font-size:12.5px;color:var(--muted)">${esc(CATN[r.cat]||r.cat||'')}${r.country&&r.country!=='US'?' · '+esc(r.country):''}</td><td class="num">${r.pct.toFixed(2)}%</td><td class="wbar"><i style="width:${Math.max(2,r.pct/mx*100)}%"></i></td></tr>`).join('')||'<tr><td colspan="5" style="color:var(--muted)">None of this fund\'s listed holdings are in your dashboard.</td></tr>'}
     </tbody></table></div>
     ${rows.length>25?`<button class="more" id="more">${showAll?'Show top 25':(h.count>h.rows.length&&!onlyDash?'Show the top '+rows.length+' of '+h.count.toLocaleString():'Show all '+rows.length)}</button>`:''}</div>`;
@@ -229,6 +229,7 @@ $('lk').oninput=e=>{const t=e.target.value.trim().toUpperCase();const r=D.index[
 $('lkres').onclick=e=>{const b=e.target.closest('[data-go]');if(b)pick(b.dataset.go)};
 const m=(location.hash||'').match(/^#e-([A-Z0-9.\-]+)$/);
 pick(m&&BY[m[1]]?m[1]:'SPY');
+window.addEventListener('hashchange',()=>{const h=(location.hash||'').match(/^#e-([A-Z0-9.\-]+)$/);if(h&&BY[h[1]])pick(h[1])});
 const nport=F.filter(f=>f.h&&f.h.kind==='nport'),asof=[...new Set(nport.map(f=>f.h.as_of))].sort();
 $('foot').textContent=`Holdings come from each fund's SEC N-PORT filing (funds report quarter-end holdings about 60 days later; ${nport.length} funds here, reporting dates ${asof[0]||'—'} to ${asof[asof.length-1]||'—'}). Fund stats and returns from FMP; returns are price only, so bond and income funds look lower than their total return. Built ${D.built_at.replace('T',' ').slice(0,16)} UTC.`;
 </script>

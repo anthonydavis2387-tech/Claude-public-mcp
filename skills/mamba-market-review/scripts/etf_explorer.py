@@ -76,8 +76,9 @@ def main(out_path):
     tpl = open(os.path.join(HERE, 'etf_explorer_template.html')).read()
     sys.path.insert(0, HERE)
     from install_listen_player import player_block
+    from install_ticker_links import links_block
     page = tpl.replace('__DATA__', json.dumps(data, separators=(',', ':')).replace('</', '<\\/'))
-    open(out_path, 'w').write(page + '\n' + player_block() + '\n')
+    open(out_path, 'w').write(page + '\n' + links_block() + '\n' + player_block() + '\n')
     kinds = {}
     for f in funds:
         kinds[f['h'].get('kind')] = kinds.get(f['h'].get('kind'), 0) + 1

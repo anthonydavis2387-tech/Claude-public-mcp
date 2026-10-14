@@ -34,3 +34,5 @@ Replaces the old 5pm futures-only check and the midnight scan. Two outputs, both
 Known data quirk: FMP's `BZUSD` (Brent) jumps on contract rolls (it showed −9% on a −2.5% day), so the script leaves it out. Quote Brent from the news source instead.
 
 The page carries the Listen player (read-aloud bar at the bottom); `world_watch.py` adds it, so there is nothing to do by hand.
+
+Every ticker symbol on the page is a link (stocks to the 10-Point Analyzer, ETFs to the ETF Explorer, futures and other tickers to TradingView). The build script adds the shared linker from `assets/ticker-links.html` automatically; see the ticker-links note in `references/reports-and-dashboard.md`.

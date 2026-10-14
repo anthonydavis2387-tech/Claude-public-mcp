@@ -1,0 +1,95 @@
+<style id="ticker-links-css">
+  /* Every ticker symbol is a link: stocks to the 10-Point Analyzer, ETFs to the ETF Explorer, futures and other tickers to TradingView. */
+  a.tkr { color: inherit; text-decoration: underline; text-decoration-style: dotted; text-decoration-color: var(--accent, currentColor); text-underline-offset: 3px; }
+  a.tkr:hover { color: var(--accent, inherit); text-decoration-style: solid; }
+</style>
+<script id="ticker-links">
+(function(){ try {
+  var L = __LINKDATA__;
+  var STOCK = {}, ETF = {}, OTHER = {};
+  L.stocks.forEach(function(s){ STOCK[s] = 1; }); L.etfs.forEach(function(s){ ETF[s] = 1; }); L.other.forEach(function(s){ OTHER[s] = 1; });
+  // Names on this page's own data (the dashboard directory, the Analyzer, the ETF list) are always current, so add them too.
+  [['directory-detail-data', STOCK], ['analyzer-data', STOCK]].forEach(function(x){
+    var el = document.getElementById(x[0]); if (!el) return;
+    try { Object.keys(JSON.parse(el.textContent)).forEach(function(s){ x[1][s] = 1; }); } catch (e) {}
+  });
+  var onAnalyzer = !!document.getElementById('analyzer-data'), onEtf = !!document.getElementById('etf-data');
+  var FUT = L.futures;                               // root -> TradingView symbol
+  var FUTCTX = /(futures?|crude|oil|brent|wti|gas|gasoline|heating|gold|silver|copper|platinum|palladium|soybean|cocoa|dollar index|bitcoin|ether|bond|note|treasur|vix|volatility|contract)[^.;]{0,40}$/i;
+  // Symbols that are also everyday words or abbreviations: linked only when written as a ticker, "(SYM)".
+  var AMBIG = {A:1,B:1,C:1,D:1,F:1,K:1,O:1,P:1,T:1,V:1,X:1,ON:1,SO:1,ET:1,MA:1,GE:1,ALL:1,NOW:1,COST:1,IT:1,KEY:1,LOW:1,BE:1,ARE:1,CAT:1,DE:1,NET:1,SPOT:1,HAS:1,PM:1,FAST:1,WELL:1,ICE:1,MO:1,BA:1,BX:1,GM:1,HD:1,KO:1,MS:1,PG:1,PH:1,WM:1,CB:1,CI:1,CL:1,EW:1,GD:1,VT:1,TAN:1,LIT:1,TIP:1,SHY:1,JETS:1,PAVE:1,QUAL:1,URA:1,BAI:1,MU:1,LNG:1,EV:1,AI:1,US:1,EU:1,UK:1,AM:1,ES:1,NQ:1,YM:1,DX:1,SI:1,GC:1,HO:1,NG:1,RB:1,PL:1,PA:1,CC:1,ZB:1,ZN:1,ZF:1,ZT:1,ZM:1,BZ:1,RTY:1};
+  var PLAINFUT = {VIX:1, BTC:1, ETH:1};             // never words, so linked wherever they appear
+  function target(sym, before, strict){
+    var futCtx = FUT[sym] && (strict === 'fut' || FUTCTX.test(before || ''));
+    if (futCtx) return ['https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(FUT[sym]), sym + ' on TradingView', '_blank'];
+    if (ETF[sym]) return onEtf ? ['#e-' + sym, 'Open ' + sym + ' in the ETF Explorer', '_self'] : [L.etfUrl + '#e-' + sym, 'Open ' + sym + ' in the ETF Explorer', '_blank'];
+    if (STOCK[sym]) return onAnalyzer ? ['#t-' + sym, 'Open ' + sym + ' in the 10-Point Analyzer', '_self'] : [L.analyzerUrl + '#t-' + sym, 'Open ' + sym + ' in the 10-Point Analyzer', '_blank'];
+    if (strict && (OTHER[sym] || FUT[sym])) return ['https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(FUT[sym] || sym.replace('-', '.')), sym + ' on TradingView', '_blank'];
+    return null;
+  }
+  function link(sym, t){
+    var a = document.createElement('a'); a.className = 'tkr'; a.href = t[0]; a.title = t[1]; a.textContent = sym;
+    if (t[2] === '_blank') { a.target = '_blank'; a.rel = 'noopener'; }
+    a.addEventListener('click', function(e){ e.stopPropagation(); });
+    return a;
+  }
+  var SKIP = {A:1, SCRIPT:1, STYLE:1, CODE:1, BUTTON:1, INPUT:1, SELECT:1, OPTION:1, TEXTAREA:1, H1:1, H2:1, LABEL:1, SVG:1, TITLE:1};
+  var SKIPCLS = /(^|\s)(lp-bar|lp-panel|page-nav|dsym|back-link|voice-bar|watch-toast|lookup|flagsrow|fdot|flag|lg-sw|rpill)(\s|$)/;   // checklist letters (T, RS...) are not tickers
+  var RX = /(^|[^A-Za-z0-9.\-$])([A-Z]{1,5}(?:[.\-][A-Z]{1,2})?)(?![A-Za-z0-9]|[.\-][A-Za-z0-9])/g;
+  function bad(p){ return SKIP[p.nodeName.toUpperCase()] || (typeof p.className === 'string' && SKIPCLS.test(p.className)); }
+  function skipped(n){
+    for (var p = n.nodeType === 1 ? n : n.parentNode; p && p !== document.body; p = p.parentNode) if (bad(p)) return true;
+    return false;
+  }
+  function process(node){
+    var text = node.nodeValue, whole = text.trim(), parent = node.parentNode;
+    // A node that is only a ticker (a table cell, chip or label): link it even when it is a short or word-like symbol.
+    var only = /^([A-Z]{1,5}(?:[.\-][A-Z]{1,2})?)$/.exec(whole);
+    var inFut = parent && parent.closest && parent.closest('.fcard, .futures-row, .ticks');
+    if (only && parent.childNodes.length === 1) {
+      var t0 = target(only[1], '', inFut ? 'fut' : true);
+      if (t0) { var pre = text.slice(0, text.indexOf(whole)), frag0 = document.createDocumentFragment();
+        if (pre) frag0.appendChild(document.createTextNode(pre)); frag0.appendChild(link(only[1], t0));
+        frag0.appendChild(document.createTextNode(text.slice(pre.length + whole.length))); parent.replaceChild(frag0, node); }
+      return;
+    }
+    var last = 0, frag = document.createDocumentFragment(), m, hit = false;
+    RX.lastIndex = 0;
+    while ((m = RX.exec(text))) {
+      var sym = m[2], start = m.index + m[1].length, end = start + sym.length;
+      var paren = text.charAt(start - 1) === '(' && /^[),\s]/.test(text.charAt(end) || ')');
+      var lead = start === text.search(/\S/) && /^ (\(|\u00b7 )/.test(text.slice(end, end + 3));   // "ES (E-Mini S&P 500)", "C · Citigroup Inc."
+      var before = text.slice(Math.max(0, start - 60), start);
+      var t = null;
+      if (paren || lead) t = target(sym, before, inFut || lead && FUT[sym] ? 'fut' : true);
+      else if (PLAINFUT[sym]) t = target(sym, before, 'fut');
+      else if (!AMBIG[sym] && sym.length >= 2) t = target(sym, before, false);
+      if (!t) continue;
+      frag.appendChild(document.createTextNode(text.slice(last, start)));
+      frag.appendChild(link(sym, t)); last = end; hit = true;
+    }
+    if (!hit) return;
+    frag.appendChild(document.createTextNode(text.slice(last)));
+    parent.replaceChild(frag, node);
+  }
+  function scan(root){
+    if (!root || root.nodeType !== 1 && root.nodeType !== 3) return;
+    if (skipped(root)) return;
+    if (root.nodeType === 3) { if (/[A-Z]/.test(root.nodeValue)) process(root); return; }
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT, { acceptNode: function(n){
+      if (n.nodeType === 1) return bad(n) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_SKIP;
+      return /[A-Z]/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP; } });
+    var nodes = []; while (w.nextNode()) nodes.push(w.currentNode);
+    nodes.forEach(process);
+  }
+  // Pages that draw content later (the Analyzer and ETF detail panels, Stop the Cap's week picker) are linked as they change.
+  var pending = [], timer = null;
+  var obs = new MutationObserver(function(muts){
+    muts.forEach(function(mu){ mu.addedNodes.forEach(function(n){ pending.push(n); }); });
+    clearTimeout(timer);
+    timer = setTimeout(function(){ var list = pending; pending = []; list.forEach(function(n){ if (n.isConnected) scan(n); }); obs.takeRecords(); }, 60);
+  });
+  scan(document.body);
+  obs.observe(document.body, { childList: true, subtree: true });
+} catch (e) {} })();
+</script>
