@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Brent trades below $106 as Houthi strikes hit Saudi Arabia and Iranian attacks on Hormuz tankers continue.",
+    "Asia, Europe and Latin America: no usable same-day close reports found tonight.",
+    "Wall Street was mixed on bank earnings and chip weakness."
+  ],
+  "on_notice": [
+    "Watch Brent near $106 for any follow-through from the Houthi strikes on Saudi Arabia.",
+    "Tanker traffic through the Strait of Hormuz and freight costs.",
+    "Asia open for the reaction to the chip weakness in US trading."
+  ],
+  "regions": {
+    "asia": {"headline": "No usable Asia close reports found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "china": {"headline": "No usable China close reports found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "europe": {"headline": "No usable Europe close reports found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "latam": {"headline": "No usable Latin America reports found tonight.", "detail": "The latest Rio Times brief found was from September, so no levels are quoted here.", "sources": []},
+    "mideast": {"headline": "Brent trades below $106 as Houthi strikes hit Saudi Arabia.", "detail": "Bloomberg reported Iran-backed Houthi missile and drone strikes across Saudi Arabia, with Iranian attacks on tankers in the Strait of Hormuz adding to supply risk and freight costs soaring.", "sources": [{"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-10-13/latest-oil-market-news-and-analysis-for-oct-14"}]}
+  }
+}
