@@ -21,6 +21,32 @@
   .akind.other { background: var(--surface-2); color: var(--ink-soft); }
   .annual-src { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-family: 'Source Sans 3', sans-serif; font-size: 12px; color: var(--ink-faint); line-height: 1.6; }
   .annual-src a { margin-right: 10px; }
+  /* Business profile box: life stage, where the business is based, product lines and their moats */
+  .bp-box { margin-top: 22px; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; background: var(--surface); font-family: 'Source Sans 3', sans-serif; }
+  .bp-box h3 { font-family: 'Source Sans 3', sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--plum); margin: 0 0 10px; }
+  .bp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px 18px; }
+  .bp-q { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); margin-bottom: 3px; }
+  .bp-stage { display: inline-block; font-weight: 700; font-size: 15px; padding: 2px 10px; border-radius: 999px; background: var(--plum-soft, var(--surface-2)); color: var(--plum); }
+  .bp-stage.s-hyper { background: var(--green-bg); color: var(--green); } .bp-stage.s-lev { background: var(--green-bg); color: var(--green); }
+  .bp-stage.s-ret { background: var(--amber-bg); color: var(--amber); } .bp-stage.s-dec { background: var(--red-bg); color: var(--red); }
+  .bp-txt { font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; margin-top: 6px; }
+  .bp-ev { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-soft); margin-top: 6px; line-height: 1.6; }
+  .bp-phases { display: flex; gap: 4px; margin-top: 8px; flex-wrap: wrap; }
+  .bp-phases span { font-size: 11px; padding: 2px 7px; border-radius: 5px; border: 1px solid var(--line); color: var(--ink-faint); }
+  .bp-phases span.on { border-color: var(--plum); color: var(--plum); font-weight: 700; }
+  .bp-reg { display: grid; grid-template-columns: minmax(90px, 160px) minmax(0, 1fr) 46px; gap: 6px; align-items: center; font-size: 12.5px; margin-top: 4px; }
+  .bp-reg i { display: block; height: 8px; border-radius: 3px; background: var(--plum); opacity: .7; }
+  .bp-reg .v { font-family: 'IBM Plex Mono', monospace; text-align: right; }
+  .bp-lines { width: 100%; border-collapse: collapse; margin-top: 4px; font-size: 13px; }
+  .bp-lines th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-faint); padding: 4px 6px; border-bottom: 1px solid var(--line); }
+  .bp-lines td { padding: 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .bp-lines td.num { font-family: 'IBM Plex Mono', monospace; text-align: right; white-space: nowrap; }
+  .bp-lines .up { color: var(--green); } .bp-lines .down { color: var(--red); }
+  .bp-chip { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--surface-2); color: var(--ink-soft); margin: 0 4px 3px 0; }
+  .bp-n { font-weight: 700; color: var(--ink); margin-right: 4px; }
+  .bp-note { font-size: 12px; color: var(--ink-faint); margin-top: 6px; line-height: 1.5; }
+  .bp-tbox { overflow-x: auto; max-width: 100%; }
+  #detail, .bp-box, .bp-grid > div { min-width: 0; }   /* let wide tables scroll inside the box instead of widening the page on phones */
 </style>
 <script id="annual-report">
 (function(){
@@ -102,21 +128,76 @@
     return h;
   }
 
+  var PHASES = ['Hyper growth', 'Operating leverage', 'Capital return', 'Decline'];
+  var SENS = {Cyclical: 'rises and falls with the economy', Sensitive: 'moves with the economy, but less than cyclical sectors', Defensive: 'holds up in slowdowns because demand is steady'};
+  function country(c){ try { return c ? new Intl.DisplayNames(['en'], {type: 'region'}).of(c) : null; } catch (e) { return c; } }
+  function key(n){ return String(n || '').toLowerCase().replace(/\(.*?\)/g, '').replace(/segment/g, '').replace(/[^a-z0-9]/g, '').replace(/s$/, ''); }
+  function sgn(v){ return v == null ? '&mdash;' : '<span class="' + (v > 0 ? 'up' : v < 0 ? 'down' : '') + '">' + (+v.toFixed(2) === 0 ? '' : v > 0 ? '+' : '-') + Math.abs(v).toFixed(1) + '%</span>'; }
+  function buildProfile(sym, A){
+    var P = A.profile || {}, S = A.stage || {}, R = A.research || {}, h = '';
+    h += '<div class="bp-box" data-sym="' + esc(sym) + '"><h3>Business Profile &middot; Life Stage, Economy &amp; Moats</h3><div class="bp-grid">';
+    // 1. Life stage
+    if (S.stage) {
+      var cls = /^Hyper/.test(S.stage) ? 's-hyper' : /^Operating/.test(S.stage) ? 's-lev' : /^Capital/.test(S.stage) ? 's-ret' : /^Decline/.test(S.stage) ? 's-dec' : '';
+      var m = S.op_margins || [];
+      h += '<div><div class="bp-q">Hyper growth, operating leverage, capital return or decline?</div><span class="bp-stage ' + cls + '">' + esc(S.stage) + '</span>' +
+           '<div class="bp-phases">' + PHASES.map(function(p){ return '<span class="' + (S.stage.indexOf(p) >= 0 ? 'on' : '') + '">' + p + '</span>'; }).join('') + '</div>' +
+           '<div class="bp-txt">' + esc(S.why || '') + '.</div>' +
+           '<div class="bp-ev">Revenue growth ' + sgn(S.revenue_growth) + ' (year before ' + sgn(S.revenue_growth_prior) + ')<br>' +
+           'Operating margin ' + [m[2], m[1], m[0]].map(function(x){ return x == null ? '&mdash;' : x.toFixed(1) + '%'; }).join(' &rarr; ') + ' (3 years)<br>' +
+           'Buybacks + dividends: ' + (S.payout_pct_fcf == null ? 'n/a (no positive free cash flow)' : S.payout_pct_fcf + '% of free cash flow') + '</div></div>';
+    }
+    // 2. Where the business is based
+    var regs = (A.regions && A.regions.lines) || [];
+    h += '<div><div class="bp-q">Where is it based: country, sector, economy?</div><div class="bp-txt" style="margin-top:0">' +
+         (P.country ? 'Headquartered in <b>' + esc(country(P.country)) + '</b>' + (P.adr ? ' (US-listed ADR)' : '') + (P.exchange ? ', listed on ' + esc(P.exchange) : '') + '.<br>' : '') +
+         (P.sector ? '<b>' + esc(P.sector) + '</b>' + (P.industry ? ' &rsaquo; ' + esc(P.industry) : '') + '.<br>' : '') +
+         (P.sensitivity ? 'Economic sensitivity: <b>' + P.sensitivity + '</b>, a sector that ' + SENS[P.sensitivity] + '.' : '') + '</div>' +
+         (regs.length ? '<div class="bp-q" style="margin-top:10px">Revenue by region' + (A.regions.year ? ' (FY' + A.regions.year + ')' : '') + '</div>' +
+           regs.slice(0, 6).map(function(r){ return '<div class="bp-reg"><span>' + esc(r.name) + '</span><span><i style="width:' + Math.min(100, r.share || 0) + '%"></i></span><span class="v">' + (r.share == null ? '&mdash;' : r.share.toFixed(1) + '%') + '</span></div>'; }).join('') +
+           (A.regions.overlap ? '<div class="bp-note">The company reports overlapping regions, so shares add to more than 100%.</div>' : '')
+         : '<div class="bp-note">The company does not report revenue by region.</div>') + '</div>';
+    h += '</div>';
+    // 3. Products and services, with moats per line
+    var lines = (A.products && A.products.lines) || [], SM = R.segment_moats || [];
+    var byKey = {}; lines.forEach(function(l){ byKey[key(l.name)] = l; });
+    h += '<div style="margin-top:16px"><div class="bp-q">Products &amp; services: how many moats does each have?</div>';
+    if (SM.length) {
+      h += '<div class="bp-tbox"><table class="bp-lines"><thead><tr><th>Business line</th><th style="text-align:right">Share of sales</th><th style="text-align:right">Growth</th><th>Moats</th></tr></thead><tbody>' +
+        SM.map(function(x){ var l = byKey[key(x.line)] || {};
+          return '<tr><td><b>' + esc(x.line) + '</b><div class="bp-note" style="margin-top:2px">' + esc(x.note || '') + '</div></td><td class="num">' + (l.share == null ? '&mdash;' : l.share.toFixed(1) + '%') + '</td><td class="num">' + sgn(l.growth) + '</td>' +
+                 '<td><span class="bp-n">' + x.sources.length + '</span>' + (x.sources.length ? x.sources.map(function(s){ return '<span class="bp-chip">' + esc(s) + '</span>'; }).join('') : '<span class="bp-chip">None clear</span>') + '</td></tr>'; }).join('') +
+        '</tbody></table></div><div class="bp-note">' + esc(R.segment_moats_basis || '') + ' Sales shares are FY' + ((A.products || {}).year || '') + ' as reported' + (A.products ? '' : '') + '; a dash means the company reports that line differently.</div>';
+    } else if (lines.length) {
+      h += '<div class="bp-txt" style="margin-top:0">' + lines.length + ' reported business line' + (lines.length > 1 ? 's' : '') + ' (FY' + A.products.year + ').</div>' +
+        '<div class="bp-tbox"><table class="bp-lines"><thead><tr><th>Business line</th><th style="text-align:right">Share of sales</th><th style="text-align:right">Growth</th></tr></thead><tbody>' +
+        lines.slice(0, 10).map(function(l){ return '<tr><td>' + esc(l.name) + '</td><td class="num">' + (l.share == null ? '&mdash;' : l.share.toFixed(1) + '%') + '</td><td class="num">' + sgn(l.growth) + '</td></tr>'; }).join('') +
+        '</tbody></table></div><div class="bp-note">Moats have not been assessed line by line for this company yet; the company-wide moat is in Point 10 above.</div>';
+    } else {
+      h += '<div class="bp-note">The company does not report revenue by business line; the company-wide moat is in Point 10 above.</div>';
+    }
+    h += '</div>';
+    // 4. Profit and net margin: already answered elsewhere on this page, so point to it rather than repeat it
+    h += '<div class="bp-note" style="margin-top:12px"><b>Profit &amp; net margin</b> are covered above and below: operating and gross margin in Point 4, net margin over the last 12 months in the TRAP #4 check, and net income with net margin by year in the Annual Report box.</div>';
+    return h + '</div>';
+  }
+
   function place(){
     var symEl = detail.querySelector('.dsym');
     if (!symEl) return;
     var sym = symEl.textContent.trim(), d = DATA[sym], A = d && d.annual;
-    var old = detail.querySelector('.annual-box');
+    var old = detail.querySelector('.annual-box'), oldP = detail.querySelector('.bp-box');
     if (old && old.getAttribute('data-sym') === sym) return;
     if (old) old.remove();
+    if (oldP) oldP.remove();
     if (!A || A.error || A.revenue == null) return;
     var wrap = document.createElement('div');
-    wrap.innerHTML = build(sym, A);
-    var box = wrap.firstChild, trap = detail.querySelector('.trap-box');
-    if (trap) trap.after(box);
+    wrap.innerHTML = buildProfile(sym, A) + build(sym, A);
+    var prof = wrap.children[0], box = wrap.children[1], trap = detail.querySelector('.trap-box');
+    if (trap) { trap.after(prof); prof.after(box); return; }
     else {
       var h3 = Array.prototype.filter.call(detail.querySelectorAll('h3'), function(x){ return /Trend Detail/.test(x.textContent); })[0];
-      if (h3) h3.before(box); else detail.appendChild(box);
+      if (h3) { h3.before(prof); h3.before(box); } else { detail.appendChild(prof); detail.appendChild(box); }
     }
   }
   new MutationObserver(place).observe(detail, { childList: true });

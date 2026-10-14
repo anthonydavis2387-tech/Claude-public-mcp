@@ -9,7 +9,7 @@ Usage: python3 annual_review.py analyzer_data.json out.json [--max-age-days 7]
   The written research (shareholder letter, innovation pipeline, management's own reason for any debt) lives in
   reports/annual-research-cache.json and is merged in as `annual.research` when present.
 """
-import json, os, sys, time, urllib.parse, urllib.request
+import json, os, re, sys, time, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta, timezone
 
@@ -135,11 +135,95 @@ def debt_story(bs, cf):
     return out
 
 
+SENSITIVITY = {'Basic Materials': 'Cyclical', 'Consumer Cyclical': 'Cyclical', 'Financial Services': 'Cyclical', 'Real Estate': 'Cyclical',
+               'Communication Services': 'Sensitive', 'Energy': 'Sensitive', 'Industrials': 'Sensitive', 'Technology': 'Sensitive',
+               'Consumer Defensive': 'Defensive', 'Healthcare': 'Defensive', 'Utilities': 'Defensive'}
+SKIP_SEG = re.compile(r'elimination|corporate|intersegment|reconcil|adjustment', re.I)
+
+
+REGION_NAMES = {'TAIWAN, PROVINCE OF CHINA': 'Taiwan', 'KOREA, REPUBLIC OF': 'South Korea', 'Geographic Distribution, Domestic': 'United States (domestic)',
+                'UNITED STATES': 'United States', 'Non-US': 'Outside the US', 'CHINA': 'China'}
+
+
+def seg_key(name):
+    return re.sub(r'[^a-z0-9]', '', re.sub(r'\(.*?\)', '', name.lower()).replace('segment', '')).rstrip('s')
+
+
+def seg_name(name, geo):
+    n = re.sub(r'\s+Segment$', '', name).strip()
+    n = REGION_NAMES.get(n, n)
+    return n.title() if geo and n.isupper() and len(n) > 3 else n
+
+
+def segments(rows, revenue=None, geo=False):
+    """Latest year's segment split (accounting lines dropped), with growth where the same line appears the year before."""
+    if not isinstance(rows, list) or not rows or not rows[0].get('data'):
+        return None
+    ok = lambda v: isinstance(v, (int, float)) and v > 0
+    cur = {k: v for k, v in rows[0]['data'].items() if ok(v) and not SKIP_SEG.search(k)}
+    prev = {seg_key(k): v for k, v in ((rows[1].get('data') or {}) if len(rows) > 1 else {}).items() if ok(v)}
+    if not cur:
+        return None
+    total = sum(cur.values())
+    base = revenue if geo and revenue else total
+    order = sorted(cur.items(), key=lambda x: (bool(re.match(r'(all )?other', x[0], re.I)), -x[1]))   # "Other" lines last
+    lines = [{'name': seg_name(k, geo), 'rev': v, 'share': round(v / base * 100, 1) if base else None,
+              'growth': pct(v, prev.get(seg_key(k)))} for k, v in order]
+    out = {'year': rows[0].get('fiscalYear'), 'lines': lines}
+    if geo and revenue and total > revenue * 1.1:
+        out['overlap'] = True   # the company reports overlapping regions (e.g. "Domestic" plus continents)
+    return out
+
+
+def life_stage(inc, debt):
+    """Where the business sits: hyper growth, operating leverage, capital return, or decline."""
+    def om(x):
+        return round(x['operatingIncome'] / x['revenue'] * 100, 1) if x.get('revenue') and x.get('operatingIncome') is not None else None
+    margins = [om(x) for x in inc[:3]]
+    g1 = pct(inc[0].get('revenue'), inc[1].get('revenue')) if len(inc) > 1 else None
+    g0 = pct(inc[1].get('revenue'), inc[2].get('revenue')) if len(inc) > 2 else None
+    dm = round(margins[0] - margins[1], 1) if len(margins) > 1 and None not in margins[:2] else None
+    payout = None
+    if debt and (debt.get('fcf') or 0) > 0:
+        payout = round((debt['uses']['buybacks'] + debt['uses']['dividends']) / debt['fcf'] * 100)
+    ev = {'revenue_growth': g1, 'revenue_growth_prior': g0, 'op_margins': margins, 'op_margin_change': dm, 'payout_pct_fcf': payout}
+    if g1 is None:
+        return {'stage': None, **ev}
+    if g1 < 0 and ((g0 is not None and g0 < 0) or (dm is not None and dm < -1)):
+        st, why = 'Decline', 'Revenue is shrinking' + (' for a second year' if g0 is not None and g0 < 0 else ' and operating margin is falling')
+    elif g1 >= 25 or (g0 is not None and g1 >= 20 and g0 >= 25):
+        st, why = 'Hyper growth', 'Revenue is growing 25% or more a year'
+    elif g1 >= 5 and dm is not None and dm >= 1:
+        st, why = 'Operating leverage', 'Revenue is growing and operating margin is widening, so profit grows faster than sales'
+    elif payout is not None and payout >= 50 and g1 < 15:
+        st, why = 'Capital return', 'Growth is modest and the company pays out most of its free cash flow in buybacks and dividends'
+    elif g1 < 0:
+        st, why = 'Between capital return and decline', 'Revenue dipped this year but margins held; watch whether it recovers'
+    elif g1 >= 10:
+        st, why = 'Between hyper growth and operating leverage', 'Growing at a double-digit rate without margins widening yet'
+    else:
+        st, why = 'Between operating leverage and capital return', 'Single-digit growth with steady margins and payouts below half of free cash flow'
+    if dm is not None and dm <= -2:
+        why += f'. Note: operating margin fell {abs(dm):.1f} points this year'
+    return {'stage': st, 'why': why, **ev}
+
+
 def review(sym):
+    try:
+        return _review(sym)
+    except Exception as e:   # one company's odd filing must not stop the run; it is retried on the next run
+        return sym, {'error': f'{type(e).__name__}: {e}'}
+
+
+def _review(sym):
     inc = fmp('income-statement', symbol=sym, period='annual', limit=3) or []
     bs = fmp('balance-sheet-statement', symbol=sym, period='annual', limit=2) or []
     cf = fmp('cash-flow-statement', symbol=sym, period='annual', limit=2) or []
     divs = fmp('dividends', symbol=sym, limit=16) or []
+    prof = (fmp('profile', symbol=sym) or [{}])
+    prof = prof[0] if isinstance(prof, list) and prof else {}
+    prod = fmp('revenue-product-segmentation', symbol=sym, period='annual')
+    geo = fmp('revenue-geographic-segmentation', symbol=sym, period='annual')
     if not isinstance(inc, list) or not inc:
         return sym, {'error': 'no annual statements'}
     a, b = inc[0], inc[1] if len(inc) > 1 else {}
@@ -159,8 +243,13 @@ def review(sym):
         'debt': debt_story(bs, cf) if isinstance(bs, list) and isinstance(cf, list) else None,
         'dividend': dividend_change(divs if isinstance(divs, list) else []),
         'report': annual_report_link(a.get('cik')),
+        'profile': {'country': prof.get('country'), 'sector': prof.get('sector'), 'industry': prof.get('industry'),
+                    'exchange': prof.get('exchange'), 'adr': prof.get('isAdr'), 'sensitivity': SENSITIVITY.get(prof.get('sector'))},
+        'products': segments(prod),
+        'regions': segments(geo, a.get('revenue'), geo=True),
         'checked': datetime.now(timezone.utc).date().isoformat(),
     }
+    out['stage'] = life_stage(inc, out['debt'])
     return sym, out
 
 

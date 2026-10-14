@@ -6,7 +6,7 @@ Usage: python3 etf_explorer.py out.html
 """
 import json, os, sys, time, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
@@ -31,6 +31,28 @@ def overlap(a, b):
     return sum(min(wa[k], wb[k]) for k in wa.keys() & wb.keys())
 
 
+def month_returns(sym):
+    """3, 6 and 9-month price returns: the latest close against the first close after the same day 3/6/9 months earlier (FMP's convention)."""
+    start = (date.today() - timedelta(days=300)).isoformat()
+    h = fmp('historical-price-eod/light', symbol=sym, **{'from': start})
+    if not isinstance(h, list) or not h:
+        return sym, {}
+    closes = sorted((x['date'], x['price']) for x in h if x.get('price'))
+    last_d, last_p = closes[-1]
+    ld = date.fromisoformat(last_d)
+    out = {}
+    for m in (3, 6, 9):
+        y, mo = ld.year, ld.month - m
+        while mo <= 0:
+            y, mo = y - 1, mo + 12
+        day = min(ld.day, [31, 29 if y % 4 == 0 else 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][mo - 1])
+        cut = date(y, mo, day).isoformat()
+        after = [p for d, p in closes if d > cut]   # first close after that day, the same convention as FMP's 1M/3M/6M figures
+        if after and closes[0][0] <= cut:
+            out[f'r{m}m'] = round((last_p / after[0] - 1) * 100, 2)
+    return sym, out
+
+
 def main(out_path):
     etfs = json.load(open(os.path.join(ROOT, 'etf', 'etf_list.json')))
     syms = [e['s'] for e in etfs]
@@ -42,6 +64,8 @@ def main(out_path):
             chg[r['symbol']] = r
     for r in fmp('batch-quote', symbols=','.join(syms)) or []:
         quote[r['symbol']] = r
+    with ThreadPoolExecutor(8) as ex:
+        months = dict(ex.map(month_returns, syms))
     funds = []
     for e in etfs:
         s = e['s']
@@ -56,13 +80,14 @@ def main(out_path):
                       'cls': i.get('assetClass'), 'price': quote.get(s, {}).get('price'),
                       'vol': i.get('avgVolume') or quote.get(s, {}).get('avgVolume') or quote.get(s, {}).get('volume'),
                       'd1': quote.get(s, {}).get('changePercentage'), 'd5': c.get('5D'), 'm1': c.get('1M'),
+                      'r3m': months.get(s, {}).get('r3m'), 'r6m': months.get(s, {}).get('r6m'), 'r9m': months.get(s, {}).get('r9m'),
                       'ytd': c.get('ytd'), 'y1': c.get('1Y'), 'sectors': sectors[:11], 'h': h})
     # Most similar funds by holdings overlap.
     held = [f for f in funds if f['h'].get('rows')]
     for f in held:
         sims = sorted(((round(overlap(f['h']['rows'], g['h']['rows']), 1), g['s']) for g in held if g is not f), reverse=True)
         f['similar'] = [[s, o] for o, s in sims[:3] if o >= 5]
-    stats = {f['s']: {k: f[k] for k in ('aum', 'er', 'inc', 'price', 'd5', 'm1', 'ytd', 'y1')} for f in funds}
+    stats = {f['s']: {k: f[k] for k in ('aum', 'er', 'inc', 'price', 'd5', 'm1', 'r3m', 'r6m', 'r9m', 'ytd', 'y1')} for f in funds}
     json.dump(stats, open(os.path.join(ROOT, 'etf', 'stats.json'), 'w'), indent=0)
     idx_p = os.path.join(ROOT, 'etf', 'holdings-index.json')
     index = json.load(open(idx_p)) if os.path.exists(idx_p) else {}

@@ -30,6 +30,11 @@ input,select{font:14px var(--body);padding:7px 10px;border:1px solid var(--line)
 #lk{width:200px;text-transform:uppercase}
 .lkres{display:flex;flex-wrap:wrap;gap:6px;font-size:14px}
 .tag{text-decoration:none}
+.lkres .tbox{width:100%}
+.lktab{min-width:560px}
+.lktab tbody tr{cursor:pointer}
+.lktab tbody tr:hover td{background:var(--bg)}
+.lkn{font-size:13px;color:var(--muted)}
 tr.hl td{background:var(--accent-soft)}
 tr.hl td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
 .focusnote{margin:0 0 8px;font-size:13.5px;color:var(--fg)}
@@ -137,7 +142,7 @@ td.rk{color:var(--muted);font:12px var(--mono);width:36px}
       <input id="q" type="search" placeholder="Search funds" aria-label="Search funds">
       <div class="two">
         <select id="fc" aria-label="Category"><option value="">All categories</option></select>
-        <select id="fs" aria-label="Sort"><option value="">Group by category</option><option value="aum">Largest assets</option><option value="y1">1-year return</option><option value="ytd">YTD return</option><option value="m1">1-month return</option><option value="d5">5-day return</option><option value="er">Lowest fee</option></select>
+        <select id="fs" aria-label="Sort"><option value="">Group by category</option><option value="aum">Largest assets</option><option value="y1">1-year return</option><option value="ytd">YTD return</option><option value="r9m">9-month return</option><option value="r6m">6-month return</option><option value="r3m">3-month return</option><option value="m1">1-month return</option><option value="d5">5-day return</option><option value="er">Lowest fee</option></select>
       </div>
     </div>
     <div class="list" id="list" role="list"></div>
@@ -153,7 +158,7 @@ const F=D.funds, BY=Object.fromEntries(F.map(f=>[f.s,f]));
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const pct=(v,d=2)=>v==null?'—':(+v.toFixed(d)===0?'':v>0?'+':'-')+Math.abs(v).toFixed(d)+'%';
-const cls=v=>v>0.05?'up':v<-0.05?'down':'';
+const cls=v=>v==null?'':+v.toFixed(2)>0?'up':+v.toFixed(2)<0?'down':'';
 const money=v=>v==null?'—':v>=1e12?'$'+(v/1e12).toFixed(2)+'T':v>=1e9?'$'+(v/1e9).toFixed(v>=1e10?0:1)+'B':'$'+(v/1e6).toFixed(0)+'M';
 const tv=s=>'https://www.tradingview.com/chart/?symbol='+encodeURIComponent(s);
 const ana=s=>D.urls.analyzer+'#t-'+s;
@@ -209,7 +214,7 @@ function detail(){
   $('detail').innerHTML=`<div class="panel"><div class="fh"><h2>${f.s}</h2><span class="nm">${esc(f.name)}</span>${f.core?'<span class="badge">CORE 50</span>':''}</div>
     <p class="why">${esc(f.cat)} · ${esc(f.why)}${f.issuer?' · '+esc(f.issuer):''}</p>
     <div class="links"><a href="${tv(f.s)}" target="_blank" rel="noopener">TradingView chart ↗</a><a href="https://finance.yahoo.com/quote/${f.s}/profile/" target="_blank" rel="noopener">Yahoo profile ↗</a></div>
-    <div class="stats">${st('Price',f.price==null?'—':'$'+f.price.toFixed(2))}${st('Today',pct(f.d1,2),cls(f.d1))}${st('5 day',pct(f.d5),cls(f.d5))}${st('1 month',pct(f.m1),cls(f.m1))}${st('YTD',pct(f.ytd),cls(f.ytd))}${st('1 year',pct(f.y1),cls(f.y1))}
+    <div class="stats">${st('Price',f.price==null?'—':'$'+f.price.toFixed(2))}${st('Today',pct(f.d1,2),cls(f.d1))}${st('5 day',pct(f.d5),cls(f.d5))}${st('1 month',pct(f.m1),cls(f.m1))}${st('3 months',pct(f.r3m),cls(f.r3m))}${st('6 months',pct(f.r6m),cls(f.r6m))}${st('9 months',pct(f.r9m),cls(f.r9m))}${st('YTD',pct(f.ytd),cls(f.ytd))}${st('1 year',pct(f.y1),cls(f.y1))}
     ${st('Assets',money(f.aum))}${st('Fee / yr',f.er==null?'—':f.er.toFixed(2)+'%')}${st('Launched',f.inc?f.inc.slice(0,4):'—')}</div>
     ${(f.similar||[]).length?`<p class="src" style="margin:12px 0 0">Most similar here: ${f.similar.map(([s,o])=>`<a href="#e-${s}" data-go="${s}">${s}</a> (${o}% overlap)`).join(', ')}</p>`:''}</div>
     ${checks(f)}
@@ -233,7 +238,8 @@ $('lk').oninput=e=>{const t=e.target.value.trim().toUpperCase();const r=D.index[
   if(!t){$('lkres').innerHTML='';$('lkmsg').textContent='Type a dashboard ticker to see every fund here that owns it, by weight.';return}
   if(!r){$('lkres').innerHTML='';$('lkmsg').textContent=t.length<2?'':'None of the 100 funds list '+t+' among their reported holdings, or it isn\'t a dashboard name.';return}
   $('lkmsg').innerHTML=`<a href="${ana(t)}" target="_blank" rel="noopener">${t}</a> is held by ${r.length} of these funds. Pick one to open it below with ${t} highlighted:`;
-  $('lkres').innerHTML=r.map(([s,w])=>`<a class="tag" href="#e-${s}" data-go="${s}" data-tk="${t}" title="Open ${s} below"><b>${s}</b><span>${w.toFixed(2)}%</span></a>`).join('')};
+  $('lkres').innerHTML=`<div class="tbox"><table class="lktab"><thead><tr><th>Fund</th><th class="num">${esc(t)} weight</th><th class="num">3 months</th><th class="num">6 months</th><th class="num">9 months</th><th class="num">YTD</th></tr></thead><tbody>${r.map(([s,w])=>{const f=BY[s]||{};
+    return `<tr data-go="${s}" data-tk="${t}"><td><a class="tag" href="#e-${s}" data-go="${s}" data-tk="${t}" title="Open ${s} below"><b>${s}</b></a> <span class="lkn">${esc(f.name||'')}</span></td><td class="num">${w.toFixed(2)}%</td><td class="num ${cls(f.r3m)}">${pct(f.r3m)}</td><td class="num ${cls(f.r6m)}">${pct(f.r6m)}</td><td class="num ${cls(f.r9m)}">${pct(f.r9m)}</td><td class="num ${cls(f.ytd)}">${pct(f.ytd)}</td></tr>`}).join('')}</tbody></table></div>`};
 $('lkres').onclick=e=>{const b=e.target.closest('[data-go]');if(b){e.preventDefault();pick(b.dataset.go,b.dataset.tk)}};
 const m=(location.hash||'').match(/^#e-([A-Z0-9.\-]+)$/);
 pick(m&&BY[m[1]]?m[1]:'SPY');

@@ -20,7 +20,59 @@
     "Annual report (SEC ARS PDF)",
     "https://www.sec.gov/Archives/edgar/data/318154/000031815426000035/amgn_ars_filing_2026.pdf"
    ]
-  ]
+  ],
+  "segment_moats": [
+   {
+    "line": "Prolia",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Denosumab patents expired in 2025 and biosimilars have launched, so this moat is eroding."
+   },
+   {
+    "line": "Repatha",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Patent-protected cholesterol drug; the VESALIUS-CV outcome data widen its use."
+   },
+   {
+    "line": "Otezla",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Patent-protected oral psoriasis drug."
+   },
+   {
+    "line": "ENBREL",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Patents run to 2029, but Medicare price negotiation cut sales about 33% last year."
+   },
+   {
+    "line": "EVENITY",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Patent-protected bone-building drug."
+   },
+   {
+    "line": "TEPEZZA",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "The only approved drug for thyroid eye disease."
+   },
+   {
+    "line": "XGEVA",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Same molecule as Prolia, so it faces the same biosimilar erosion."
+   }
+  ],
+  "segment_moats_basis": "Claude's assessment of each business line against Morningstar's five moat sources (intangible assets, switching costs, network effect, cost advantage, efficient scale), from the company's 10-K and the research sources listed."
  },
  "CAT": {
   "as_of": "2026-10-13",
@@ -42,7 +94,44 @@
     "Annual report (SEC ARS PDF)",
     "https://www.sec.gov/Archives/edgar/data/0000018230/000130817926000360/cat015318-ars.pdf"
    ]
-  ]
+  ],
+  "segment_moats": [
+   {
+    "line": "Power & Energy",
+    "sources": [
+     "Intangible assets",
+     "Switching costs",
+     "Cost advantage"
+    ],
+    "note": "Trusted brand, a large installed base of engines and turbines that needs Cat parts and service, and manufacturing scale."
+   },
+   {
+    "line": "Construction Industries",
+    "sources": [
+     "Intangible assets",
+     "Switching costs",
+     "Cost advantage"
+    ],
+    "note": "Brand, the largest dealer network for parts and service, and scale."
+   },
+   {
+    "line": "Resource Industries",
+    "sources": [
+     "Switching costs",
+     "Efficient scale",
+     "Intangible assets"
+    ],
+    "note": "Mining fleets and autonomy systems are hard to switch, and only a few companies build large mining trucks."
+   },
+   {
+    "line": "Financial Products",
+    "sources": [
+     "Cost advantage"
+    ],
+    "note": "Cheap funding thanks to the parent's credit rating; mainly supports equipment sales."
+   }
+  ],
+  "segment_moats_basis": "Claude's assessment of each business line against Morningstar's five moat sources (intangible assets, switching costs, network effect, cost advantage, efficient scale), from the company's 10-K and the research sources listed."
  },
  "GLW": {
   "as_of": "2026-10-13",
@@ -64,7 +153,52 @@
     "Q3 2025 10-Q (debt detail)",
     "https://www.sec.gov/Archives/edgar/data/24741/000002474125000121/glw-20250930.htm"
    ]
-  ]
+  ],
+  "segment_moats": [
+   {
+    "line": "Optical Communications",
+    "sources": [
+     "Intangible assets",
+     "Cost advantage",
+     "Switching costs"
+    ],
+    "note": "Fiber process know-how and patents, scale, and qualified-supplier status with data-center customers."
+   },
+   {
+    "line": "Display Technologies",
+    "sources": [
+     "Intangible assets",
+     "Efficient scale"
+    ],
+    "note": "Proprietary fusion glass process in a market with only a few suppliers."
+   },
+   {
+    "line": "Specialty Materials",
+    "sources": [
+     "Intangible assets",
+     "Switching costs"
+    ],
+    "note": "Gorilla Glass brand and patents, designed into phones years ahead."
+   },
+   {
+    "line": "Automotive Products",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Emissions-control substrate technology."
+   },
+   {
+    "line": "Life Sciences",
+    "sources": [],
+    "note": "Lab products in a competitive market; no clear moat."
+   },
+   {
+    "line": "Polycrystalline Silicon",
+    "sources": [],
+    "note": "Solar polysilicon is a commodity; trade protection, not a moat, supports it."
+   }
+  ],
+  "segment_moats_basis": "Claude's assessment of each business line against Morningstar's five moat sources (intangible assets, switching costs, network effect, cost advantage, efficient scale), from the company's 10-K and the research sources listed."
  },
  "KLAC": {
   "as_of": "2026-10-13",
@@ -82,7 +216,49 @@
     "FY2026 annual report (SEC ARS PDF)",
     "https://www.sec.gov/Archives/edgar/data/0000319201/000119312526397978/d311668dars.pdf"
    ]
-  ]
+  ],
+  "segment_moats": [
+   {
+    "line": "Wafer Inspection",
+    "sources": [
+     "Intangible assets",
+     "Switching costs",
+     "Efficient scale"
+    ],
+    "note": "Leading share in process control; tools are built into fab process recipes, and few rivals compete."
+   },
+   {
+    "line": "Services",
+    "sources": [
+     "Switching costs",
+     "Intangible assets"
+    ],
+    "note": "Service on a large installed base of KLA tools, with high renewal rates."
+   },
+   {
+    "line": "Patterning",
+    "sources": [
+     "Intangible assets",
+     "Switching costs"
+    ],
+    "note": "Metrology for advanced lithography, qualified into customer processes."
+   },
+   {
+    "line": "Specialty Semiconductor Process",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Niche deposition and etch tools."
+   },
+   {
+    "line": "PCB and Component Inspection",
+    "sources": [
+     "Intangible assets"
+    ],
+    "note": "Former Orbotech line; more competitive than the core business."
+   }
+  ],
+  "segment_moats_basis": "Claude's assessment of each business line against Morningstar's five moat sources (intangible assets, switching costs, network effect, cost advantage, efficient scale), from the company's 10-K and the research sources listed."
  },
  "RTX": {
   "as_of": "2026-10-13",
@@ -104,7 +280,36 @@
     "2026 proxy statement",
     "https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm"
    ]
-  ]
+  ],
+  "segment_moats": [
+   {
+    "line": "Pratt and Whitney",
+    "sources": [
+     "Switching costs",
+     "Intangible assets",
+     "Efficient scale"
+    ],
+    "note": "Decades of aftermarket service on engines in use, certified designs, and only a few engine makers worldwide."
+   },
+   {
+    "line": "Collins Aerospace Systems",
+    "sources": [
+     "Switching costs",
+     "Intangible assets"
+    ],
+    "note": "Certified components built into aircraft platforms for their whole life."
+   },
+   {
+    "line": "Raytheon Intelligence & Space",
+    "sources": [
+     "Efficient scale",
+     "Intangible assets",
+     "Switching costs"
+    ],
+    "note": "Few defense primes, classified technology, and multi-decade government programs."
+   }
+  ],
+  "segment_moats_basis": "Claude's assessment of each business line against Morningstar's five moat sources (intangible assets, switching costs, network effect, cost advantage, efficient scale), from the company's 10-K and the research sources listed."
  },
  "UNH": {
   "as_of": "2026-10-13",
@@ -126,6 +331,37 @@
     "Annual meeting update",
     "https://www.unitedhealthgroup.com/newsroom/2025/2025-06-uhg-updates-annual-shareholders-meeting-board-actions.html"
    ]
-  ]
+  ],
+  "segment_moats": [
+   {
+    "line": "UnitedHealthcare (insurance)",
+    "sources": [
+     "Cost advantage",
+     "Network effect"
+    ],
+    "note": "Scale to negotiate provider prices, and the breadth of its provider network."
+   },
+   {
+    "line": "Optum Rx (pharmacy benefits)",
+    "sources": [
+     "Cost advantage"
+    ],
+    "note": "Purchasing scale with drug makers and pharmacies."
+   },
+   {
+    "line": "Optum Insight (data and software)",
+    "sources": [
+     "Switching costs",
+     "Intangible assets"
+    ],
+    "note": "Software and data built into hospital and insurer workflows."
+   },
+   {
+    "line": "Optum Health (care delivery)",
+    "sources": [],
+    "note": "Under repair; management says it has not met expectations, and there is no clear moat yet."
+   }
+  ],
+  "segment_moats_basis": "Claude's assessment of each business line against Morningstar's five moat sources (intangible assets, switching costs, network effect, cost advantage, efficient scale), from the company's 10-K and the research sources listed."
  }
 }
