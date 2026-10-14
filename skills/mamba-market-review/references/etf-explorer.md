@@ -33,3 +33,5 @@ stock?"
 3. Commit `etf/`, then push.
 
 Every ticker symbol on the page is a link (stocks to the 10-Point Analyzer, ETFs to the ETF Explorer, futures and other tickers to TradingView). The build script adds the shared linker from `assets/ticker-links.html` automatically; see the ticker-links note in `references/reports-and-dashboard.md`.
+
+**Pick’a Stock** (the lookup box at the top; the user renamed it from "Which ETFs hold a stock?" on 2026-10-14): typing a dashboard ticker lists every fund here that holds it, by weight. Each result is a link that opens that fund in the panel below, scrolls to it, and highlights the stock's row in the holdings table with its rank and weight ("Showing AMGN in SPY: rank 56 of 508 holdings"), expanding past the top 25 when needed. Keep this behavior in `etf_explorer_template.html` (`pick(fund, ticker)`, `focusTk`).

@@ -29,6 +29,10 @@ h1{font:800 clamp(26px,4vw,34px)/1.1 var(--display);margin:0}
 input,select{font:14px var(--body);padding:7px 10px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--fg);min-width:0}
 #lk{width:200px;text-transform:uppercase}
 .lkres{display:flex;flex-wrap:wrap;gap:6px;font-size:14px}
+.tag{text-decoration:none}
+tr.hl td{background:var(--accent-soft)}
+tr.hl td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.focusnote{margin:0 0 8px;font-size:13.5px;color:var(--fg)}
 .tag{display:inline-flex;gap:6px;align-items:baseline;border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--bg);cursor:pointer;color:var(--fg);font:600 13px var(--body)}
 .tag b{font:600 12.5px var(--mono);color:var(--accent)}
 .tag span{font:12px var(--mono);color:var(--muted)}
@@ -107,7 +111,7 @@ td.rk{color:var(--muted);font:12px var(--mono);width:36px}
   <nav class="nav" id="nav" aria-label="Other pages"></nav>
 </header>
 <section class="lookup">
-  <label for="lk">Which ETFs hold a stock?</label>
+  <label for="lk">Pick&rsquo;a Stock</label>
   <div class="row"><input id="lk" type="search" placeholder="Ticker, e.g. NVDA" autocomplete="off"><span class="src" id="lkmsg">Type a dashboard ticker to see every fund here that owns it, by weight.</span></div>
   <div class="lkres" id="lkres"></div>
 </section>
@@ -155,7 +159,7 @@ const tv=s=>'https://www.tradingview.com/chart/?symbol='+encodeURIComponent(s);
 const ana=s=>D.urls.analyzer+'#t-'+s;
 const CATS=[...new Set(F.map(f=>f.cat))];
 const CATN={EC:'Stock',DBT:'Bond',STIV:'Short-term',RE:'Real estate',DCO:'Commodity deriv.',DFE:'FX deriv.',DIR:'Rate deriv.',DE:'Equity deriv.',DCR:'Credit deriv.',ABS:'Asset-backed',LON:'Loan',OTHER:'Other'};
-let cur=null, cat='', sort='', q='', showAll=false, onlyDash=false;
+let cur=null, cat='', sort='', q='', showAll=false, onlyDash=false, focusTk=null;
 $('nav').innerHTML=[['Dashboard',D.urls.dashboard],['10-Point Analyzer',D.urls.analyzer],['Stop the Cap',D.urls.weekly],['World Watch',D.urls.worldwatch]].filter(x=>x[1]).map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join('');
 $('fc').innerHTML+=CATS.map(c=>`<option>${esc(c)}</option>`).join('');
 function list(){
@@ -175,9 +179,10 @@ function holdingsHtml(f){
   const src=h.kind==='computed'?esc(h.note):`SEC N-PORT filing for ${h.source&&h.source!==f.s?`<b>${esc(h.source)}</b> (tracks the same index; ${esc(f.s)} itself doesn't file holdings)`:esc(f.s)}, as of ${esc(h.as_of)}. <a href="${esc(h.filing_url)}" target="_blank" rel="noopener">Filing ↗</a>`;
   return `<div class="panel"><div class="hhead"><h3 style="margin:0">Holdings <span class="src">· ${h.count.toLocaleString()} positions · top 10 = ${h.top10_pct}%</span></h3>
     <label class="toggle"><input type="checkbox" id="od" ${onlyDash?'checked':''}> Only names in my dashboard</label></div>
+    ${focusTk&&h.rows.some(r=>r.tk===focusTk)?`<p class="focusnote">Showing <b>${esc(focusTk)}</b> in ${esc(f.s)}: rank ${h.rows.findIndex(r=>r.tk===focusTk)+1} of ${(h.count||h.rows.length).toLocaleString()} holdings, ${h.rows.find(r=>r.tk===focusTk).pct.toFixed(2)}% of the fund.</p>`:''}
     <p class="src" style="margin:0 0 8px">${src}</p>
     <div class="tbox"><table><thead><tr><th>#</th><th>Holding</th><th>Type</th><th class="num">Weight</th><th></th></tr></thead><tbody>
-    ${shown.map(r=>`<tr><td class="rk">${r.rank}</td><td>${r.tk?`${BY[r.tk]?`<a class="sym" href="#e-${r.tk}">${esc(r.tk)}</a>`:`<a class="sym" href="${r.in_uni?ana(r.tk):tv(r.tk)}" target="_blank" rel="noopener">${esc(r.tk)}</a>`}${r.in_uni?`<a class="ana" href="${ana(r.tk)}" target="_blank" rel="noopener" title="Open in the 10-Point Analyzer">ANALYZER</a>`:''} `:''}<span style="color:var(--muted);font-size:13px">${esc(r.name)}</span></td>
+    ${shown.map(r=>`<tr data-tk="${esc(r.tk||'')}"${focusTk&&r.tk===focusTk?' class="hl"':''}><td class="rk">${r.rank}</td><td>${r.tk?`${BY[r.tk]?`<a class="sym" href="#e-${r.tk}">${esc(r.tk)}</a>`:`<a class="sym" href="${r.in_uni?ana(r.tk):tv(r.tk)}" target="_blank" rel="noopener">${esc(r.tk)}</a>`}${r.in_uni?`<a class="ana" href="${ana(r.tk)}" target="_blank" rel="noopener" title="Open in the 10-Point Analyzer">ANALYZER</a>`:''} `:''}<span style="color:var(--muted);font-size:13px">${esc(r.name)}</span></td>
       <td style="font-size:12.5px;color:var(--muted)">${esc(CATN[r.cat]||r.cat||'')}${r.country&&r.country!=='US'?' · '+esc(r.country):''}</td><td class="num">${r.pct.toFixed(2)}%</td><td class="wbar"><i style="width:${Math.max(2,r.pct/mx*100)}%"></i></td></tr>`).join('')||'<tr><td colspan="5" style="color:var(--muted)">None of this fund\'s listed holdings are in your dashboard.</td></tr>'}
     </tbody></table></div>
     ${rows.length>25?`<button class="more" id="more">${showAll?'Show top 25':(h.count>h.rows.length&&!onlyDash?'Show the top '+rows.length+' of '+h.count.toLocaleString():'Show all '+rows.length)}</button>`:''}</div>`;
@@ -214,7 +219,10 @@ function detail(){
   const mb=$('more');if(mb)mb.onclick=()=>{showAll=!showAll;detail()};
   $('detail').querySelectorAll('[data-go]').forEach(a=>a.onclick=e=>{e.preventDefault();pick(a.dataset.go)});
 }
-function pick(s){cur=s;showAll=false;list();detail();try{history.replaceState(null,'','#e-'+s)}catch(e){}
+function pick(s,tk){cur=s;focusTk=tk||null;showAll=false;onlyDash=onlyDash&&!tk;
+  if(tk){const h=(BY[s]||{}).h||{};const i=(h.rows||[]).findIndex(r=>r.tk===tk);if(i>=25)showAll=true}
+  list();detail();try{history.replaceState(null,'','#e-'+s)}catch(e){}
+  if(tk){const row=document.querySelector(`#detail tr[data-tk="${tk}"]`);(row||$('detail')).scrollIntoView({behavior:'smooth',block:row?'center':'start'});return}
   const el=document.querySelector(`.item[data-s="${s}"]`);if(el){const L=$('list');L.scrollTop=el.offsetTop-L.offsetTop-60}
   if(innerWidth<=880)$('detail').scrollIntoView({behavior:'smooth',block:'start'})}
 $('list').onclick=e=>{const b=e.target.closest('.item');if(b)pick(b.dataset.s)};
@@ -224,9 +232,9 @@ $('fs').onchange=e=>{sort=e.target.value;list()};
 $('lk').oninput=e=>{const t=e.target.value.trim().toUpperCase();const r=D.index[t];
   if(!t){$('lkres').innerHTML='';$('lkmsg').textContent='Type a dashboard ticker to see every fund here that owns it, by weight.';return}
   if(!r){$('lkres').innerHTML='';$('lkmsg').textContent=t.length<2?'':'None of the 100 funds list '+t+' among their reported holdings, or it isn\'t a dashboard name.';return}
-  $('lkmsg').innerHTML=`<a href="${ana(t)}" target="_blank" rel="noopener">${t}</a> is held by ${r.length} of these funds:`;
-  $('lkres').innerHTML=r.map(([s,w])=>`<button class="tag" data-go="${s}"><b>${s}</b><span>${w.toFixed(2)}%</span></button>`).join('')};
-$('lkres').onclick=e=>{const b=e.target.closest('[data-go]');if(b)pick(b.dataset.go)};
+  $('lkmsg').innerHTML=`<a href="${ana(t)}" target="_blank" rel="noopener">${t}</a> is held by ${r.length} of these funds. Pick one to open it below with ${t} highlighted:`;
+  $('lkres').innerHTML=r.map(([s,w])=>`<a class="tag" href="#e-${s}" data-go="${s}" data-tk="${t}" title="Open ${s} below"><b>${s}</b><span>${w.toFixed(2)}%</span></a>`).join('')};
+$('lkres').onclick=e=>{const b=e.target.closest('[data-go]');if(b){e.preventDefault();pick(b.dataset.go,b.dataset.tk)}};
 const m=(location.hash||'').match(/^#e-([A-Z0-9.\-]+)$/);
 pick(m&&BY[m[1]]?m[1]:'SPY');
 window.addEventListener('hashchange',()=>{const h=(location.hash||'').match(/^#e-([A-Z0-9.\-]+)$/);if(h&&BY[h[1]])pick(h[1])});
