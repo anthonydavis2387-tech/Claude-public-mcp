@@ -3012,5 +3012,27 @@
   "moat_source": "https://www.morningstar.com/stocks/xnys/a/quote",
   "last_deep_check": "2026-10-14",
   "last_quick_check": "2026-10-14"
+ },
+ "VEEV": {
+  "inst_own_pct": null,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "No aggregate institutional percentage found in search. Mixed 13F filings for the quarter ended Jun 30, 2026: Rockland Trust added about 21%, while Signaturefd cut about 43% and MN Services Vermogensbeheer about 28% (single-filer snapshots, not a total).",
+  "inst_own_source": "https://fintel.io/so/us/veev/rockland-trust",
+  "moat_verdict": "durable",
+  "moat_summary": "Switching-cost moat from GxP-regulated life-sciences software, with add-on module penetration rising from under 10% in 2015 to roughly 50-60%; main threat is Salesforce Life Sciences Cloud gaining with large pharma. Morningstar's own rating was not returned, so the verdict rests on third-party profiles.",
+  "moat_source": "https://www.findmymoat.com/stocks/XNYS%3AVEEV",
+  "last_deep_check": "2026-10-15",
+  "last_quick_check": "2026-10-15"
+ },
+ "AZO": {
+  "inst_own_pct": null,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "No clean aggregate percentage; Fintel shows institutional long shares near 101% of float (ex 13D/G, undated, so treated cautiously) and down about 9.7% in the latest quarter. Top holders Jun 30, 2026: JPMorgan about 8.0%, BlackRock about 7.9%, Vanguard about 6.9%.",
+  "inst_own_source": "https://fintel.io/so/us/azo",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar rates AutoZone wide-moat: over 150 megahubs and a dense store footprint support parts availability and commercial growth funded by the DIY core; risk is digital marketplaces eroding DIY margins.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/azo/quote",
+  "last_deep_check": "2026-10-15",
+  "last_quick_check": "2026-10-15"
  }
 }
