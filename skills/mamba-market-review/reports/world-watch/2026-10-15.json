@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Brent eased to around $103 in the latest Rio Times brief (Oct 12); no same-day oil quote found tonight.",
+    "Latin America: the Ibovespa +1.38% in the Oct 12 brief after a 52-week high; the Mexican peso weakened.",
+    "Asia, Europe and China: no usable same-day close reports found tonight."
+  ],
+  "on_notice": [
+    "Brent near $103 and any renewed Strait of Hormuz or Red Sea disruption.",
+    "The dollar index near 102.2, which was pressuring the real, peso and sol in the latest brief.",
+    "Asia open for the reaction to US trading."
+  ],
+  "regions": {
+    "asia": {"headline": "No usable Asia close reports found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "china": {"headline": "No usable China close reports found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "europe": {"headline": "No usable Europe close reports found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "latam": {"headline": "The Ibovespa +1.38% in the latest Rio Times brief (Oct 12).", "detail": "The Ibovespa closed at a 52-week high the prior Friday and the Mexican peso weakened. The dollar index was near 102.2, keeping the real, peso and sol under pressure. No same-day report was found.", "sources": [{"name": "Rio Times LATAM Pre-Open, Oct 12", "url": "https://www.riotimesonline.com/latam-pre-open-monday-october-12-2026/"}]},
+    "mideast": {"headline": "Brent eased to around $103 in the latest brief (Oct 12).", "detail": "No same-day oil quote was found tonight. The Oct 12 Rio Times brief had Brent easing to around $103.", "sources": [{"name": "Rio Times LATAM Pre-Open, Oct 12", "url": "https://www.riotimesonline.com/latam-pre-open-monday-october-12-2026/"}]}
+  }
+}
