@@ -1,0 +1,208 @@
+{
+ "date": "2026-10-15",
+ "session": "morning-macro",
+ "generated_at": "2026-10-15T14:04:42Z",
+ "futures": [
+  {
+   "symbol": "ES",
+   "name": "E-Mini S&P 500",
+   "last": 7721,
+   "chg_pct": -0.63,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "NQ",
+   "name": "Nasdaq 100",
+   "last": 29647.25,
+   "chg_pct": -1.77,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "YM",
+   "name": "Mini Dow Jones Industrial Average Index",
+   "last": 52015,
+   "chg_pct": 0.3,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "RTY",
+   "name": "Micro E-mini Russell 2000 Index Futures",
+   "last": 2741.2,
+   "chg_pct": -0.14,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZB",
+   "name": "30 Year U.S. Treasury Bond Futures",
+   "last": 106.0625,
+   "chg_pct": 1.8,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZN",
+   "name": "10-Year T-Note Futures",
+   "last": 105.85938,
+   "chg_pct": 0.94,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZF",
+   "name": "Five-Year US Treasury Note",
+   "last": 104.33594,
+   "chg_pct": 0.6,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZT",
+   "name": "2-Year T-Note Futures",
+   "last": 102.04297,
+   "chg_pct": 0.2,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "CL",
+   "name": "Crude Oil",
+   "last": 95.8,
+   "chg_pct": 0.75,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BZ",
+   "name": "Brent Crude Oil",
+   "last": 105.07,
+   "chg_pct": -0.93,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NG",
+   "name": "Natural Gas",
+   "last": 3.249,
+   "chg_pct": 1.59,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "RB",
+   "name": "Gasoline RBOB",
+   "last": 3.0687,
+   "chg_pct": -2.33,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "HO",
+   "name": "Heating Oil",
+   "last": 4.8207,
+   "chg_pct": 1.47,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "GC",
+   "name": "Gold Futures",
+   "last": 4174.9,
+   "chg_pct": 1.63,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "SI",
+   "name": "Silver Futures",
+   "last": 56.735,
+   "chg_pct": 1.54,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HG",
+   "name": "Copper",
+   "last": 6.5435,
+   "chg_pct": -1.76,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "PL",
+   "name": "Platinum",
+   "last": 1621.75,
+   "chg_pct": 0.44,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "PA",
+   "name": "Palladium",
+   "last": 1134,
+   "chg_pct": 3.42,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZM",
+   "name": "Soybean Meal Futures",
+   "last": 367.05,
+   "chg_pct": 0.7,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "CC",
+   "name": "Cocoa",
+   "last": 5799,
+   "chg_pct": 1.15,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "DX",
+   "name": "US Dollar",
+   "last": 101.87,
+   "chg_pct": -0.46,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BTC",
+   "name": "Bitcoin USD",
+   "last": 80408.57,
+   "chg_pct": -2.39,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ETH",
+   "name": "Ethereum USD",
+   "last": 2347.17,
+   "chg_pct": -4.73,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "VIX",
+   "name": "CBOE Volatility Index",
+   "last": 17.52,
+   "chg_pct": 3.85,
+   "trend_flag": "neutral"
+  }
+ ],
+ "bitcoin": {
+  "price": 80408.57,
+  "chg_pct": -2.39,
+  "year_high": 116410.06,
+  "year_low": 57717.55,
+  "avg50": 81163.1,
+  "avg200": 72204.04,
+  "move_7d_pct": -1.57,
+  "move_30d_pct": 6.38,
+  "move_90d_pct": 25.85
+ },
+ "unavailable": [
+  "SR3",
+  "VX",
+  "ZC",
+  "ZS",
+  "ZW",
+  "ZL",
+  "KC",
+  "LE",
+  "6E",
+  "6J",
+  "6B",
+  "6A",
+  "6C",
+  "6S",
+  "6N",
+  "SB",
+  "CT"
+ ],
+ "macro": {
+  "note": "No dated Oct 15 market wire found via WebSearch (results were 2018-2025 or undated). Last verified context: Fed raised rates in Sept (first hike since 2023); FOMC Oct 27-28. Latest FMP cash Treasury yields are Oct 13 (10-year 5.21%, 2-year 4.79%, 30-year 5.56%), not yet updated for Oct 14/15. Bitcoin and ETF-flow commentary found was undated, so none quoted. Watchlist sync: dashboard and Analyzer both held 20 names, identical (19 on, MPLX off); no write needed."
+ }
+}
