@@ -997,7 +997,7 @@
   "last_deep_check": "2026-09-28",
   "last_quick_check": "2026-09-28",
   "moat_source": "https://simplywall.st/community/narratives/us/capital-goods/nyse-etn/eaton/ta3l90cm-grid-to-chip-how-eaton-controls-the-physical-bottlenecks-of-ai-data-centers",
-  "moat_summary": "Eaton sits at the physical bottleneck of AI data-center power delivery (grid-to-chip voltage conversion); Electrical Americas orders were up 60% YoY with data-center orders up 240%, a hard-to-replicate infrastructure position.",
+  "moat_summary": "Eaton sits at the physical bottleneck of AI data-center power delivery (grid-to-chip voltage conversion); Electrical Americas orders +60% YoY with data-center orders +240% YoY, a hard-to-replicate infrastructure position.",
   "moat_verdict": "durable"
  },
  "EXC": {
@@ -3034,5 +3034,27 @@
   "moat_source": "https://www.morningstar.com/stocks/xnys/azo/quote",
   "last_deep_check": "2026-10-15",
   "last_quick_check": "2026-10-15"
+ },
+ "F": {
+  "inst_own_pct": 45.8,
+  "inst_own_trend": null,
+  "inst_own_summary": "About 45.8% institutional per Benzinga (Sept 2026 snapshot); MarketBeat shows 58.74% on 13F filings and TipRanks 24-53%, so sources disagree by method and date. No clear quarter-over-quarter direction was found.",
+  "inst_own_source": "https://www.benzinga.com/quote/F/ownership",
+  "moat_verdict": "eroding",
+  "moat_summary": "Morningstar rates Ford no moat (fair value $19), citing capital-intensive manufacturing, low barriers to entry, heavy rivalry from Chinese automakers, Hyundai/Kia and Tesla, and industry cyclicality; it sees upside in energy storage and BlueCruise software, but that does not add a moat.",
+  "moat_source": "https://www.morningstar.com/stocks/after-earnings-is-ford-stock-buy-sell-or-fairly-valued-8",
+  "last_deep_check": "2026-10-16",
+  "last_quick_check": "2026-10-16"
+ },
+ "AMRO": {
+  "inst_own_pct": 14.2,
+  "inst_own_trend": null,
+  "inst_own_summary": "About 14-18% institutional per Simply Wall St (14.2% on the AMRL.L line, 17.5% on AMRO.F); Pegasus Growth Capital holds roughly 28-30%, and share count grew 37.7% in a year, which points to dilution. Newly US-registered (S-1 filed Aug 2026), so no 13F trend yet.",
+  "inst_own_source": "https://simplywall.st/stocks/us/capital-goods/otc-amrl.l/amaero/ownership",
+  "moat_verdict": "stable",
+  "moat_summary": "Company filings claim the largest US domestic capacity for titanium and refractory spherical powder with traceable feedstock, a lower-cost domestic position, and a third titanium atomizer commissioned June 2026; these are management claims, no independent moat rating was found, and about $17.6M of cash as of June 30, 2026 is small for the build-out. (Lower-quality evidence; verify before relying on it.)",
+  "moat_source": "https://www.sec.gov/Archives/edgar/data/0002141616/000119312526395150/project_alchemy_-_s-1a_2.htm",
+  "last_deep_check": "2026-10-16",
+  "last_quick_check": "2026-10-16"
  }
 }
