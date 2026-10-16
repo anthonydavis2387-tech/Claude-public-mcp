@@ -1,0 +1,212 @@
+{
+ "date": "2026-10-16",
+ "session": "morning-macro",
+ "generated_at": "2026-10-16T14:06:15Z",
+ "futures": [
+  {
+   "symbol": "ES",
+   "name": "E-Mini S&P 500",
+   "last": 7784.25,
+   "chg_pct": -0.09,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NQ",
+   "name": "Nasdaq 100",
+   "last": 29843,
+   "chg_pct": -1.0,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "YM",
+   "name": "Mini Dow Jones Industrial Average Index",
+   "last": 52774,
+   "chg_pct": 0.66,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "RTY",
+   "name": "Micro E-mini Russell 2000 Index Futures",
+   "last": 2782.8,
+   "chg_pct": 0.04,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZB",
+   "name": "30 Year U.S. Treasury Bond Futures",
+   "last": 105.5625,
+   "chg_pct": 0.12,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZN",
+   "name": "10-Year T-Note Futures",
+   "last": 105.5,
+   "chg_pct": -0.03,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZF",
+   "name": "Five-Year US Treasury Note",
+   "last": 104.11,
+   "chg_pct": 0.02,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZT",
+   "name": "2-Year T-Note Futures",
+   "last": 101.96875,
+   "chg_pct": 0.03,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "CL",
+   "name": "Crude Oil",
+   "last": 95.97,
+   "chg_pct": -2.04,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BZ",
+   "name": "Brent Crude Oil",
+   "last": 105.42,
+   "chg_pct": -0.47,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NG",
+   "name": "Natural Gas",
+   "last": 3.075,
+   "chg_pct": -4.98,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "RB",
+   "name": "Gasoline RBOB",
+   "last": 3.0535,
+   "chg_pct": -0.85,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "HO",
+   "name": "Heating Oil",
+   "last": 4.6056,
+   "chg_pct": -1.05,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "GC",
+   "name": "Gold Futures",
+   "last": 4207.3,
+   "chg_pct": 0.89,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "SI",
+   "name": "Silver Futures",
+   "last": 57.82,
+   "chg_pct": 1.16,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HG",
+   "name": "Copper",
+   "last": 6.6045,
+   "chg_pct": 0.73,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "PL",
+   "name": "Platinum",
+   "last": 1649.8,
+   "chg_pct": 1.75,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "PA",
+   "name": "Palladium",
+   "last": 1127.25,
+   "chg_pct": -0.11,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZM",
+   "name": "Soybean Meal Futures",
+   "last": 356.05,
+   "chg_pct": -1.04,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "CC",
+   "name": "Cocoa",
+   "last": 5806.5,
+   "chg_pct": 1.25,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "DX",
+   "name": "US Dollar",
+   "last": 101.505,
+   "chg_pct": -0.27,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BTC",
+   "name": "Bitcoin USD",
+   "last": 81887.8,
+   "chg_pct": 1.4,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "ETH",
+   "name": "Ethereum USD",
+   "last": 2456.86,
+   "chg_pct": 4.47,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "VIX",
+   "name": "CBOE Volatility Index",
+   "last": 15.96,
+   "chg_pct": -3.04,
+   "trend_flag": "neutral"
+  }
+ ],
+ "bitcoin": {
+  "price": 81887.8,
+  "chg_pct": 1.4,
+  "year_high": 116410.06,
+  "year_low": 57717.55,
+  "avg50": 81225.2,
+  "avg200": 72284.91,
+  "move_7d_pct": -0.8,
+  "move_30d_pct": 7.54,
+  "move_90d_pct": 26.38
+ },
+ "unavailable": [
+  "SR3",
+  "VX",
+  "ZC",
+  "ZS",
+  "ZW",
+  "ZL",
+  "KC",
+  "LE",
+  "6E",
+  "6J",
+  "6B",
+  "6A",
+  "6C",
+  "6S",
+  "6N",
+  "SB",
+  "CT"
+ ],
+ "macro": {
+  "treasury_print_date": "2026-10-15",
+  "ust2y": 4.77,
+  "ust10y": 5.1,
+  "ust30y": 5.43,
+  "note": "No dated Oct 16 market wire found via WebSearch (latest dated item Oct 7). Spot BTC ETF flows from secondary aggregators citing SoSoValue/Farside: Oct 5-9 net outflow $678.9M; Oct 13 net inflow $175.6M. Watchlist sync: dashboard and Analyzer identical (19 on, MPLX off); no write needed."
+ }
+}

@@ -404,7 +404,8 @@ def main():
             alt_fut = fut
             fut = {f['symbol']: f for f in mm.get('futures') or []}
             alt_btc = d.get('bitcoin')
-            d = dict(d, bitcoin=mm.get('bitcoin') or d.get('bitcoin'))
+            mmac = {k: v for k, v in (mm.get('macro') or {}).items() if k in ('ust10y', 'ust2y', 'ust30y')}   # newer cash yields
+            d = dict(d, bitcoin=mm.get('bitcoin') or d.get('bitcoin'), macro=dict(d.get('macro') or {}, **mmac))
         prior = json.load(open(a[a.index('--prior') + 1])) if '--prior' in a else None
         check_values(lines, R, stocks, fut, etf, d, prior, alt_fut)
         check_aggregates(page, lines, R, stocks, d, prior)
