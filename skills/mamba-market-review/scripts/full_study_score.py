@@ -1,5 +1,5 @@
 """Scoring rules (see data_notes.scoring in snapshots). score(detail, price) -> flags dict."""
-FIN='Financial Services'
+FIN=('Financials','Financial Services')   # GICS name, and FMP's label in older snapshots
 def score(d, bench3m):
     f={}
     p=d.get('_price'); a50,a200=d.get('avg50'),d.get('avg200')
@@ -20,7 +20,7 @@ def score(d, bench3m):
     f['earnings_growth']='na' if e is None else 'red' if e<-10 else 'green' if e>=5 else 'neutral'
     q=[x for x in (d.get('fcf_last4q') or []) if x is not None]
     f['free_cash_flow']='na' if not q else 'green' if len(q)==4 and all(x>0 for x in q) else 'red' if sum(q)<0 else 'neutral'
-    de,nd=d.get('debt_to_equity'),d.get('net_debt_to_ebitda'); fin=d.get('sector')==FIN
+    de,nd=d.get('debt_to_equity'),d.get('net_debt_to_ebitda'); fin=d.get('sector') in FIN
     if de is None and nd is None: f['debt']='na'
     elif fin: f['debt']='neutral'
     elif (de is not None and de>2.5) or (nd is not None and nd>14): f['debt']='red'

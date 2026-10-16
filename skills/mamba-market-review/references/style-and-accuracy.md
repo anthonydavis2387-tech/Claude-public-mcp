@@ -17,7 +17,8 @@ without "dollars". This file is the house style that prevents both, and `scripts
 | Minus sign | plain hyphen-minus `-` | the Unicode `−` or `&minus;` |
 | Stock, ETF, crypto, commodity prices | `$87.19`, `$83,216.86`, `$4,187.40`, always 2 decimals | `87.19`, `$83,217` |
 | EPS, dividends, estimates | `$2.34`, `EPS est $2.65` | `EPS 2.34` |
-| Points, never dollars | index levels, ES, NQ, YM, RTY, ZB, ZN, ZF, ZT, DX, VIX: `7,854.75`, `15.25` | `$7,854.75` |
+| Points, never dollars | contracts quoted in points (ES, NQ, YM, RTY, ZB, ZN, ZF, ZT, DX) carry ` pts`: `ES 7,793.50 pts`, `DX 101.78 pts` (read aloud as "points"); the VIX and cash index levels are plain: `VIX 15.25`, `S&P 500 7,811.51` | `$7,854.75`, a bare `7,793.50` for ES/NQ/DX |
+| Sector names | the 11 standard GICS names only (below) | FMP's `Consumer Cyclical`, `Consumer Defensive`, `Financial Services`, `Healthcare`, `Technology`, `Basic Materials` |
 | Levels and distances | yields `5.21%`, shares `73.2%`, `15.5% above the 200-day` | a sign on a level |
 | Red-flag changes | `Citigroup (C) (2 → 5)` or `went from 2 to 5` | |
 
@@ -28,6 +29,26 @@ twice ("fell minus 4.72"), so use the sign alone.
 
 Prices are spoken as "87 dollars and 19 cents" by the player only when the page shows the `$`, which is why the `$`
 is never optional on a price and never added to points.
+
+## Sectors: the 11 GICS names, measured by the official sector funds
+
+On 2026-10-15 the user found "Consumer Cyclical" on the dashboard, no "Consumer Staples" (which the prose had cited),
+and fewer than 11 sectors. The cause: prose described the *average of our scanned names* in a sector, under FMP's own
+labels, as if it were the sector's performance. Rules since then:
+
+- Only these names, in this spelling: Information Technology, Financials, Health Care, Consumer Discretionary,
+  Communication Services, Industrials, Consumer Staples, Energy, Utilities, Real Estate, Materials.
+  `scripts/sectors.py` holds them and `gics()` maps FMP labels; every script that saves or shows a sector uses it.
+- A sector's move is its Select Sector SPDR fund (XLK, XLF, XLV, XLY, XLC, XLI, XLP, XLE, XLU, XLRE, XLB). Write it
+  with the fund: `Health Care (XLV) +1.86%`. "N of 11 sectors rose" counts the funds.
+- The average of our names in a sector is a different number. Say so every time: `our 33 Health Care names averaged
+  +1.40%`. Never present it as the sector's move.
+- The dashboard's sector table is generated, never hand-written, on every 2pm run:
+  `python3 scripts/sector_table.py reports/{date}/full-study.json page.html out.html`. It saves the fund closes in
+  the snapshot (`sector_funds`), writes all 11 sectors with fund close and day move beside our names' average, red
+  flags and 4+ count, and prints the one-line summary to reuse in the prose so text and table agree.
+- `fact_check.py` blocks FMP labels, a sector table with fewer than 11 rows, a fund move or "N of 11" that does not
+  match `sector_funds`, and an "our N names" average that does not match the snapshot.
 
 ## Where the numbers come from
 

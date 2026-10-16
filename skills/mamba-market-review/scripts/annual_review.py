@@ -12,6 +12,8 @@ Usage: python3 annual_review.py analyzer_data.json out.json [--max-age-days 7]
 import json, os, re, sys, time, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta, timezone
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sectors import gics, SENSITIVITY as GICS_SENSITIVITY
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPORTS = os.path.join(HERE, '..', 'reports')
@@ -135,9 +137,6 @@ def debt_story(bs, cf):
     return out
 
 
-SENSITIVITY = {'Basic Materials': 'Cyclical', 'Consumer Cyclical': 'Cyclical', 'Financial Services': 'Cyclical', 'Real Estate': 'Cyclical',
-               'Communication Services': 'Sensitive', 'Energy': 'Sensitive', 'Industrials': 'Sensitive', 'Technology': 'Sensitive',
-               'Consumer Defensive': 'Defensive', 'Healthcare': 'Defensive', 'Utilities': 'Defensive'}
 SKIP_SEG = re.compile(r'elimination|corporate|intersegment|reconcil|adjustment', re.I)
 
 
@@ -149,8 +148,13 @@ def seg_key(name):
     return re.sub(r'[^a-z0-9]', '', re.sub(r'\(.*?\)', '', name.lower()).replace('segment', '')).rstrip('s')
 
 
+GARBLED = re.compile(r'^[A-Z] \[[A-Z]\]$')   # FMP sometimes returns coded labels like "D [E]"; they are not real segment names
+
+
 def seg_name(name, geo):
     n = re.sub(r'\s+Segment$', '', name).strip()
+    if re.fullmatch(r'(?:[A-Z] )+[A-Z]', n):   # "H U M I R A" -> "HUMIRA"
+        n = n.replace(' ', '')
     n = REGION_NAMES.get(n, n)
     return n.title() if geo and n.isupper() and len(n) > 3 else n
 
@@ -160,7 +164,7 @@ def segments(rows, revenue=None, geo=False):
     if not isinstance(rows, list) or not rows or not rows[0].get('data'):
         return None
     ok = lambda v: isinstance(v, (int, float)) and v > 0
-    cur = {k: v for k, v in rows[0]['data'].items() if ok(v) and not SKIP_SEG.search(k)}
+    cur = {k: v for k, v in rows[0]['data'].items() if ok(v) and not SKIP_SEG.search(k) and not GARBLED.match(k.strip())}
     prev = {seg_key(k): v for k, v in ((rows[1].get('data') or {}) if len(rows) > 1 else {}).items() if ok(v)}
     if not cur:
         return None
@@ -172,6 +176,8 @@ def segments(rows, revenue=None, geo=False):
     out = {'year': rows[0].get('fiscalYear'), 'lines': lines}
     if geo and revenue and total > revenue * 1.1:
         out['overlap'] = True   # the company reports overlapping regions (e.g. "Domestic" plus continents)
+    elif geo and revenue and total < revenue * 0.9:
+        out['coverage'] = round(total / revenue * 100)   # the reported regions do not add up to total revenue
     return out
 
 
@@ -243,8 +249,8 @@ def _review(sym):
         'debt': debt_story(bs, cf) if isinstance(bs, list) and isinstance(cf, list) else None,
         'dividend': dividend_change(divs if isinstance(divs, list) else []),
         'report': annual_report_link(a.get('cik')),
-        'profile': {'country': prof.get('country'), 'sector': prof.get('sector'), 'industry': prof.get('industry'),
-                    'exchange': prof.get('exchange'), 'adr': prof.get('isAdr'), 'sensitivity': SENSITIVITY.get(prof.get('sector'))},
+        'profile': {'country': prof.get('country'), 'sector': gics(prof.get('sector')), 'industry': prof.get('industry'),
+                    'exchange': prof.get('exchange'), 'adr': prof.get('isAdr'), 'sensitivity': GICS_SENSITIVITY.get(gics(prof.get('sector')))},
         'products': segments(prod),
         'regions': segments(geo, a.get('revenue'), geo=True),
         'checked': datetime.now(timezone.utc).date().isoformat(),

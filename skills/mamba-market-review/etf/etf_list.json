@@ -63,67 +63,67 @@
   "s": "XLK",
   "cat": "Sectors",
   "core": true,
-  "why": "Technology"
+  "why": "Information Technology, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLF",
   "cat": "Sectors",
   "core": true,
-  "why": "Financials"
+  "why": "Financials, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLV",
   "cat": "Sectors",
   "core": true,
-  "why": "Health care"
+  "why": "Health Care, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLE",
   "cat": "Sectors",
   "core": true,
-  "why": "Energy"
+  "why": "Energy, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLI",
   "cat": "Sectors",
   "core": true,
-  "why": "Industrials"
+  "why": "Industrials, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLY",
   "cat": "Sectors",
   "core": true,
-  "why": "Consumer discretionary"
+  "why": "Consumer Discretionary, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLP",
   "cat": "Sectors",
   "core": true,
-  "why": "Consumer staples"
+  "why": "Consumer Staples, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLU",
   "cat": "Sectors",
   "core": true,
-  "why": "Utilities"
+  "why": "Utilities, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLB",
   "cat": "Sectors",
   "core": true,
-  "why": "Materials"
+  "why": "Materials, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLRE",
   "cat": "Sectors",
   "core": true,
-  "why": "Real estate"
+  "why": "Real Estate, one of the 11 S&P 500 sectors"
  },
  {
   "s": "XLC",
   "cat": "Sectors",
   "core": true,
-  "why": "Communication services"
+  "why": "Communication Services, one of the 11 S&P 500 sectors"
  },
  {
   "s": "KRE",

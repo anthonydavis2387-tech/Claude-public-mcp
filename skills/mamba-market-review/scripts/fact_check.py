@@ -22,8 +22,13 @@ from collections import defaultdict
 POINTS = {'ES', 'NQ', 'YM', 'RTY', 'ZB', 'ZN', 'ZF', 'ZT', 'DX', 'VIX'}
 DIR_WORDS = r'(?:fell|rose|lost|gained|slipped|jumped|dropped|climbed|added|declined|advanced|eased|edged up|edged down|sank|surged|slid|rallied|was up|was down|is up|is down|up|down)'
 NUM = r'(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)'
-SECTORS = ['Communication Services', 'Consumer Cyclical', 'Consumer Defensive', 'Financial Services', 'Basic Materials',
-           'Real Estate', 'Technology', 'Industrials', 'Healthcare', 'Health care', 'Utilities', 'Energy']
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from sectors import GICS_SECTORS, FMP_TO_GICS
+SECTORS = sorted(GICS_SECTORS, key=len, reverse=True)
+FMP_ONLY = re.compile(r'\b(Consumer Cyclical|Consumer Defensive|Financial Services|Basic Materials|Healthcare)\b(?=\s*\(|\s*[+\-]\d|\s+sector|\s+names|\s*$)'
+                      r'|(?<!Information )\b(Technology)\b(?=\s+sector|\s*\(?[+\-]\d)')   # bare "Technology" only as a sector, not "Micron Technology (MU)"
+POINTS_UNIT = {'ES', 'NQ', 'YM', 'RTY', 'ZB', 'ZN', 'ZF', 'ZT', 'DX'}   # quoted in points: written "7,793.50 pts" (the VIX stays a plain level)
 # words right after a percentage that mean it is not the day's move
 NOT_DAY = re.compile(r'^\s*(?:above|below|from|off|since|this (?:year|week|month)|year[- ]to[- ]date|YTD|over|in the (?:past|last)|on the (?:week|month|year)|for the (?:week|month|year)|week|month|of |owned|stake|share|institutional|weight|margin|yield|annual|a year)', re.I)
 
@@ -112,7 +117,8 @@ def check_style(lines, R):
 def check_values(lines, R, stocks, fut, etf, d, prior, alt_fut=None):
     known = {**{s: ('stock', t['price'], t['chg_pct']) for s, t in stocks.items()},
              **{s: ('etf', v['price'], v['chg_pct']) for s, v in etf.items()},
-             **{s: ('fut', f['last'], f['chg_pct']) for s, f in fut.items()}}
+             **{s: ('fut', f['last'], f['chg_pct']) for s, f in fut.items()},
+             **{v['fund']: ('etf', v['close'], v['chg_pct']) for v in (d.get('sector_funds') or {}).values()}}
     alt = {s: (f['last'], f['chg_pct']) for s, f in (alt_fut or {}).items()}   # 8am: prose may still quote the 2pm close
     for ln in lines:
         # (TICK) +1.23%  -- signed moves right after a ticker, optionally after a short aside
@@ -125,7 +131,7 @@ def check_values(lines, R, stocks, fut, etf, d, prior, alt_fut=None):
             ok = lambda w: w is not None and abs(got - round(w, decimals(val))) <= 0.5 * 10 ** -decimals(val) + 1e-9
             if not ok(want) and not (sym in alt and ok(alt[sym][1])):
                 R.err('wrong-move', f'{sym}: page says {sign}{val}%, data says {want:+.2f}%', clip(ln, m.start(), m.end()))
-        for m in re.finditer(r'\(([A-Z][A-Z0-9.\-]{0,5})\)(?:\s+(?:settled|closed|was|at|to))*\s+\$?' + NUM + r'\s+\(([+\-]?)' + NUM + r'%\)', ln):
+        for m in re.finditer(r'\(([A-Z][A-Z0-9.\-]{0,5})\)(?:\s+(?:settled|closed|was|at|to))*\s+\$?' + NUM + r'(?:\s*pts)?\s+\(([+\-]?)' + NUM + r'%\)', ln):
             sym, sign, val = m.group(1), m.group(3), m.group(4)
             if sym not in known:
                 continue
@@ -146,7 +152,9 @@ def check_values(lines, R, stocks, fut, etf, d, prior, alt_fut=None):
                 continue  # some other number (a level, a target); not this price
             points = sym in POINTS
             if points and dollar:
-                R.err('dollar-sign', f'{sym} is quoted in points, not dollars: drop the "$"', clip(ln, m.start(), m.end()))
+                R.err('dollar-sign', f'{sym} is quoted in points, not dollars: drop the "$" and write "pts"', clip(ln, m.start(), m.end()))
+            elif sym in POINTS_UNIT and not ln[m.end():m.end() + 5].lstrip().startswith('pts'):
+                R.err('points-label', f'{sym} price needs its unit: "{val} pts"', clip(ln, m.start(), m.end()))
             if not points and not dollar:
                 R.err('dollar-sign', f'{sym} price needs a "$"', clip(ln, m.start(), m.end()))
         # bare prices of a named stock without "$" anywhere in the same line
@@ -193,19 +201,46 @@ def check_aggregates(page, lines, R, stocks, d, prior):
         if k in expect and v != expect[k]:
             R.err('wrong-tile', f'tile "{k}": page says {v}, data says {expect[k]}')
     secs = sector_stats(stocks)
-    for name, cnt, a, _, r4 in re.findall(r'#sector-[^"]*">([^<]+)</a></td><td[^>]*>(\d+)</td><td[^>]*>([+\-−]?[\d.]+)%</td><td[^>]*>([\d.]+)</td><td[^>]*>(\d+)</td>', page):
-        s = secs.get(name)
-        if not s:
-            R.err('wrong-sector', f'sector table: unknown sector {name}'); continue
-        if int(cnt) != s['n'] or abs(num(a) - s['avg']) > 0.0051 or int(r4) != s['red4']:
-            R.err('wrong-sector', f'sector table {name}: page {cnt} names / {a}% / {r4} with 4+, data {s["n"]} / {s["avg"]:+.2f}% / {s["red4"]}')
-    alias = {'Health care': 'Healthcare', 'health care': 'Healthcare'}
+    funds = d.get('sector_funds') or {}
+    rows = re.findall(r'#sector-[^"]*">([^<]+)</a></td><td[^>]*>([A-Z]{2,5})</td><td[^>]*>\$([\d,.]+)</td><td[^>]*>([+\-]?[\d.]+)%</td><td[^>]*>(\d+)</td><td[^>]*>([^<]+)</td><td[^>]*>([^<]+)</td><td[^>]*>(\d+)</td>', page)
+    if 'id="directory-detail-data"' in page:   # the dashboard carries the sector table; other pages do not
+        if sorted(H.unescape(r[0]) for r in rows) != sorted(GICS_SECTORS):
+            R.err('sector-table', f'the sector table must list the 11 GICS sectors once each; it lists {sorted(H.unescape(r[0]) for r in rows)}')
+    for name, fund, close, day, cnt, a, _, r4 in rows:
+        name = H.unescape(name); f = funds.get(name); st = secs.get(name, {'n': 0, 'avg': None, 'red4': 0})
+        if not f:
+            R.err('sector-table', f'{name}: no official sector-fund data in the snapshot (run scripts/sector_table.py)'); continue
+        if fund != f['fund'] or abs(num(close) - f['close']) > 0.006 or abs(num(day) - f['chg_pct']) > 0.0051:
+            R.err('sector-table', f'{name}: page {fund} ${close} {day}%, data {f["fund"]} ${f["close"]} {f["chg_pct"]:+.2f}%')
+        if int(cnt) != st['n'] or int(r4) != st['red4'] or (st['avg'] is not None and abs(num(H.unescape(a).rstrip('%')) - st['avg']) > 0.0051):
+            R.err('sector-table', f'{name}: dashboard names {cnt} / {a} / {r4} with 4+, data {st["n"]} / {st["avg"]} / {st["red4"]}')
     for ln in lines:
+        for m in FMP_ONLY.finditer(ln):
+            w = m.group(1) or m.group(2)
+            R.err('sector-name', f'"{w}" is FMP\'s label; use the GICS name "{FMP_TO_GICS[w]}"', clip(ln, m.start(), m.end()))
         for sec in SECTORS:
-            for m in re.finditer(re.escape(sec) + r'(?: names)?(?: averaged| led the sectors at| was| at)?\s*\(?([+\-])' + NUM + r'%', ln):
-                key = alias.get(sec, sec)
-                if key in secs and abs(num(m.group(1) + m.group(2)) - secs[key]['avg']) > 0.0051:
-                    R.err('wrong-sector', f'{sec}: page says {m.group(1)}{m.group(2)}%, data says {secs[key]["avg"]:+.2f}%', clip(ln, m.start(), m.end()))
+            for m in re.finditer(r'(?<![A-Za-z])' + re.escape(sec) + r'(?:\s*\(([A-Z]{2,5})\))?(?: sector)?(?: fund)?(?: \(([A-Z]{2,5})\))?(?: names)?(?: that)?(?: averaged| led the sectors at| led at| was| were| at)?\s*(?:<[^>]+>)?\(?([+\-])' + NUM + r'%', ln):
+                if m.group(2) and not m.group(1):
+                    m_fund = m.group(2)
+                else:
+                    m_fund = m.group(1)
+                fund_tk = {v['fund'] for v in funds.values()} | {'XLK', 'XLF', 'XLV', 'XLY', 'XLC', 'XLI', 'XLP', 'XLE', 'XLU', 'XLRE', 'XLB'}
+                if m_fund and m_fund not in fund_tk:
+                    continue   # a company name ending in a sector word, e.g. "Applied Materials (AMAT)"
+                got = num(m.group(3) + m.group(4)); before = ln[max(0, m.start() - 45):m.start()].lower()
+                # "Health Care (XLV) +1.86%" is the official fund; "our 33 Health Care names averaged +2.25%" is the universe average
+                universe = not m_fund and (bool(re.search(r'(our|dashboard) (\d+ )?$', before)) or 'names' in ln[m.start():m.end()])
+                want = (secs.get(sec) or {}).get('avg') if universe else (funds.get(sec) or {}).get('chg_pct')
+                if want is None and not universe and sec in secs:
+                    want = secs[sec]['avg']
+                if want is not None and abs(got - want) > 0.0051:
+                    R.err('wrong-sector', f'{sec}: page says {m.group(3)}{m.group(4)}%, ' + (f'the official sector fund says {want:+.2f}%' if not universe else f'the dashboard names average {want:+.2f}%') +
+                          ('' if universe else ' (write "our N ... names averaged" for the universe average)'), clip(ln, m.start(), m.end()))
+        if funds:
+            up = sum(1 for v in funds.values() if v['chg_pct'] > 0)
+            for m in re.finditer(r'\b(\d+) of (?:the )?11 (?:S&P 500 )?sectors (?:rose|gained|advanced|were higher)', ln):
+                if int(m.group(1)) != up:
+                    R.err('wrong-count', f'page says {m.group(1)} of 11 sectors rose, the sector funds say {up}', clip(ln, m.start(), m.end()))
         for m in re.finditer(r'\b(\d+) of (\d+) names (?:carry|with|have) 4 or more red flags', ln):
             if int(m.group(1)) != red4 or int(m.group(2)) != n:
                 R.err('wrong-count', f'page says {m.group(1)} of {m.group(2)} with 4+ red, data says {red4} of {n}', clip(ln, m.start(), m.end()))
@@ -239,7 +274,10 @@ def check_cards(page, R, fut):
         if not f:
             continue
         px, ch = H.unescape(px).strip(), H.unescape(ch).strip().replace('−', '-')
+        unit = px.endswith(' pts'); px = px.replace(' pts', '')
         val = num(px.lstrip('$'))
+        if sym in POINTS_UNIT and not unit:
+            R.err('points-label', f'futures card {sym}: write "{px} pts"')
         if abs(val - f['last']) > 10 ** -decimals(px) * 0.6 + 1e-9:
             R.err('wrong-card', f'futures card {sym}: page {px}, data {f["last"]}')
         if (sym in POINTS) == px.startswith('$'):
@@ -259,6 +297,9 @@ def check_more_formats(page, R, stocks, fut, alt_fut=None):
         if sym not in fut:
             continue
         px = H.unescape(px).strip()
+        if sym in POINTS_UNIT and not px.endswith(' pts'):
+            R.err('points-label', f'table row {sym}: write "{px} pts"')
+        px = px.replace(' pts', '')
         if (sym in POINTS) == px.startswith('$'):
             R.err('dollar-sign', f'table row {sym}: ' + ('points, drop the "$"' if sym in POINTS else 'needs a "$"'), px)
         elif all(abs(num(px.lstrip('$')) - F[sym]['last']) > 10 ** -decimals(px) * 0.6 + 1e-9 for F in (fut, alt_fut or {}) if sym in F):
@@ -311,6 +352,9 @@ def check_islands(page, R, stocks):
                 continue
             if not t:
                 R.err('island', f'{name}: {sym} is not in the snapshot'); bad += 1; continue
+            sec = r.get('sector') or (r.get('detail') or {}).get('sector')
+            if sec and sec not in GICS_SECTORS:
+                R.err('island', f'{name}: {sym} sector "{sec}" is not a GICS name'); bad += 1
             for k in ('price', 'chg_pct', 'red_flag_count'):
                 if k in r and r[k] is not None and t.get(k) is not None and abs(r[k] - t[k]) > 1e-6:
                     R.err('island', f'{name}: {sym} {k} {r[k]} vs snapshot {t[k]}'); bad += 1

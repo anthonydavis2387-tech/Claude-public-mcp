@@ -9,7 +9,7 @@ import html, json, os, sys, urllib.request
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-# third field: priced in dollars ("$"); index futures and the dollar index are points, so no "$" (house style)
+# third field: priced in dollars ("$"); index futures and the dollar index are quoted in points, written "7,788.75 pts" (house style)
 FUT = [('ESUSD', 'S&P 500 fut', False), ('NQUSD', 'Nasdaq 100 fut', False), ('CLUSD', 'WTI crude', True),
        ('GCUSD', 'Gold', True), ('BTCUSD', 'Bitcoin', True), ('DXUSD', 'Dollar index', False)]
 REGIONS = [
@@ -51,7 +51,7 @@ def main(notes_path, out_path):
         q = Q.get(s)
         if not q: continue
         px, ch = q['price'], q.get('changePercentage')
-        pxs = f"${px:,.2f}" if dollar else f"{px:,.2f}"
+        pxs = f"${px:,.2f}" if dollar else f"{px:,.2f} pts"
         fut_cells.append(f'<div class="tick"><span class="tl">{e(label)}</span><span class="tp">{pxs}</span><span class="tc {cls(ch)}">{pct(ch)}</span></div>')
         if s in ('ESUSD', 'NQUSD', 'CLUSD', 'GCUSD', 'BTCUSD'):
             top5.append(f"{label.replace(' fut', '')} {pct(ch)}")

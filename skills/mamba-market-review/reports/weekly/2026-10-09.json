@@ -174,7 +174,7 @@
  "sectors": [
   {
    "s": "XLK",
-   "label": "Technology",
+   "label": "Information Technology",
    "base_date": "2026-10-02",
    "points": [
     [
@@ -206,7 +206,7 @@
   },
   {
    "s": "XLF",
-   "label": "Financial Services",
+   "label": "Financials",
    "base_date": "2026-10-02",
    "points": [
     [
@@ -238,7 +238,7 @@
   },
   {
    "s": "XLV",
-   "label": "Healthcare",
+   "label": "Health Care",
    "base_date": "2026-10-02",
    "points": [
     [
@@ -334,7 +334,7 @@
   },
   {
    "s": "XLY",
-   "label": "Consumer Cyclical",
+   "label": "Consumer Discretionary",
    "base_date": "2026-10-02",
    "points": [
     [
@@ -366,7 +366,7 @@
   },
   {
    "s": "XLP",
-   "label": "Consumer Defensive",
+   "label": "Consumer Staples",
    "base_date": "2026-10-02",
    "points": [
     [
@@ -430,7 +430,7 @@
   },
   {
    "s": "XLB",
-   "label": "Basic Materials",
+   "label": "Materials",
    "base_date": "2026-10-02",
    "points": [
     [
@@ -727,7 +727,7 @@
   {
    "s": "ZS",
    "name": "Zscaler, Inc.",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": 18.89,
    "points": [
     [
@@ -759,7 +759,7 @@
   {
    "s": "MRNA",
    "name": "Moderna, Inc.",
-   "sector": "Healthcare",
+   "sector": "Health Care",
    "week_pct": 18.41,
    "points": [
     [
@@ -855,7 +855,7 @@
   {
    "s": "CIEN",
    "name": "Ciena Corporation",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": 14.93,
    "points": [
     [
@@ -887,7 +887,7 @@
   {
    "s": "SHOP",
    "name": "Shopify Inc.",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": 12.85,
    "points": [
     [
@@ -951,7 +951,7 @@
   {
    "s": "MELI",
    "name": "MercadoLibre, Inc.",
-   "sector": "Consumer Cyclical",
+   "sector": "Consumer Discretionary",
    "week_pct": 11.39,
    "points": [
     [
@@ -983,7 +983,7 @@
   {
    "s": "HUM",
    "name": "Humana Inc.",
-   "sector": "Healthcare",
+   "sector": "Health Care",
    "week_pct": 11.2,
    "points": [
     [
@@ -1015,7 +1015,7 @@
   {
    "s": "ADSK",
    "name": "Autodesk, Inc.",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": 11.01,
    "points": [
     [
@@ -1049,7 +1049,7 @@
   {
    "s": "ARM",
    "name": "Arm Holdings plc American Depositary Shares",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": -13.4,
    "points": [
     [
@@ -1081,7 +1081,7 @@
   {
    "s": "INTC",
    "name": "Intel Corp.",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": -12.26,
    "points": [
     [
@@ -1113,7 +1113,7 @@
   {
    "s": "TER",
    "name": "Teradyne, Inc.",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": -10.32,
    "points": [
     [
@@ -1145,7 +1145,7 @@
   {
    "s": "SWKS",
    "name": "Skyworks Solutions, Inc.",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": -10.21,
    "points": [
     [
@@ -1273,7 +1273,7 @@
   {
    "s": "NBIS",
    "name": "Nebius Group N.V.",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": -8.95,
    "points": [
     [
@@ -1337,7 +1337,7 @@
   {
    "s": "ON",
    "name": "ON Semiconductor Corporation",
-   "sector": "Technology",
+   "sector": "Information Technology",
    "week_pct": -8.67,
    "points": [
     [
@@ -1909,7 +1909,7 @@
  "notes": {
   "headline": "Records early, an AI scare Thursday, and a quiet rotation into defensive stocks",
   "push": "Defensives led while chips and small caps lagged.",
-  "summary": "The S&P 500 (SPY) finished the week +1.16% and set a record close on Tuesday, but the leadership changed during the week. Utilities (XLU) +3.97%, consumer staples (XLP) +3.60%, energy (XLE) +3.60% and health care (XLV) +2.79% led. Tech (XLK) was -0.52%, and small caps (IWM) -0.92%. The 10-year Treasury yield touched its highest level since 2002 on Wednesday before a solid bond auction pulled it back. On Thursday, a report that OpenAI's revenue was running about $20 billion below what investors had been told hit chip and AI stocks. Friday brought a broad bounce into the start of bank earnings season. The VIX stayed near 15 all week, so the moves look like a rotation rather than fear.",
+  "summary": "The S&P 500 (SPY) finished the week +1.16% and set a record close on Tuesday, but the leadership changed during the week. Utilities (XLU) +3.97%, Consumer Staples (XLP) +3.60%, Energy (XLE) +3.60% and Health Care (XLV) +2.79% led. Information Technology (XLK) was -0.52%, and small caps (IWM) -0.92%. The 10-year Treasury yield touched its highest level since 2002 on Wednesday before a solid bond auction pulled it back. On Thursday, a report that OpenAI's revenue was running about $20 billion below what investors had been told hit chip and AI stocks. Friday brought a broad bounce into the start of bank earnings season. The VIX stayed near 15 all week, so the moves look like a rotation rather than fear.",
   "mood": "Calm but rotating",
   "mood_detail": "The VIX ended near 14.8, down from 15.3 the Friday before. 194 of the 276 names the dashboard tracks rose for the week, and the equal-weight S&P beat the regular S&P. That says the average stock did better than the giants this week.",
   "days": [
@@ -2017,7 +2017,7 @@
    },
    {
     "title": "Defense over offense",
-    "text": "Utilities (+4.0%), staples (+3.6%), energy (+3.6%) and health care (+2.8%) led the sectors. Tech (-0.5%) and industrials (-0.4%) lagged."
+    "text": "Utilities (XLU) +3.97%, Consumer Staples (XLP) +3.60%, Energy (XLE) +3.60% and Health Care (XLV) +2.79% led the 11 sectors. Information Technology (XLK) -0.52% and Industrials (XLI) -0.41% were the only two that fell."
    },
    {
     "title": "Telecom shock",

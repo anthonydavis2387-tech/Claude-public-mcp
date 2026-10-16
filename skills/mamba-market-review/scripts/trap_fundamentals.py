@@ -70,7 +70,7 @@ def check(sym, d):
     cr = km.get('currentRatioTTM') or ra.get('currentRatioTTM')
     capex = pct(km.get('capexToRevenueTTM'))
     if capex is not None: capex = abs(capex)
-    fin = d.get('sector') == 'Financial Services'
+    fin = d.get('sector') in ('Financials', 'Financial Services')
     cautions = []
     if (d.get('flags') or {}).get('debt') == 'red': cautions.append('Heavy debt')
     if misses >= 2: cautions.append(f'Missed {misses} of last {len(reported)} earnings')

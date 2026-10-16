@@ -148,7 +148,7 @@
            'Buybacks + dividends: ' + (S.payout_pct_fcf == null ? 'n/a (no positive free cash flow)' : S.payout_pct_fcf + '% of free cash flow') + '</div></div>';
     }
     // 2. Where the business is based
-    var regs = (A.regions && A.regions.lines) || [];
+    var regs = (A.regions && !A.regions.coverage && A.regions.lines) || [];   // an incomplete split is not shown as fact
     h += '<div><div class="bp-q">Where is it based: country, sector, economy?</div><div class="bp-txt" style="margin-top:0">' +
          (P.country ? 'Headquartered in <b>' + esc(country(P.country)) + '</b>' + (P.adr ? ' (US-listed ADR)' : '') + (P.exchange ? ', listed on ' + esc(P.exchange) : '') + '.<br>' : '') +
          (P.sector ? '<b>' + esc(P.sector) + '</b>' + (P.industry ? ' &rsaquo; ' + esc(P.industry) : '') + '.<br>' : '') +
@@ -156,7 +156,7 @@
          (regs.length ? '<div class="bp-q" style="margin-top:10px">Revenue by region' + (A.regions.year ? ' (FY' + A.regions.year + ')' : '') + '</div>' +
            regs.slice(0, 6).map(function(r){ return '<div class="bp-reg"><span>' + esc(r.name) + '</span><span><i style="width:' + Math.min(100, r.share || 0) + '%"></i></span><span class="v">' + (r.share == null ? '&mdash;' : r.share.toFixed(1) + '%') + '</span></div>'; }).join('') +
            (A.regions.overlap ? '<div class="bp-note">The company reports overlapping regions, so shares add to more than 100%.</div>' : '')
-         : '<div class="bp-note">The company does not report revenue by region.</div>') + '</div>';
+         : '<div class="bp-note">' + (A.regions && A.regions.coverage ? 'The region split FMP has for this company covers only ' + A.regions.coverage + '% of revenue, so it is not shown; see the annual report for the full breakdown.' : 'The company does not report revenue by region.') + '</div>') + '</div>';
     h += '</div>';
     // 3. Products and services, with moats per line
     var lines = (A.products && A.products.lines) || [], SM = R.segment_moats || [];

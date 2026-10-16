@@ -4,6 +4,8 @@ scores the 10 flags per reference docs. Moat/inst-own and TRAP data are merged a
 import json, os, sys, time, urllib.request, urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sectors import gics
 B='https://financialmodelingprep.com/stable'; K=os.environ['FMP_API_KEY']
 def get(path):
     sep='&' if '?' in path else '?'
@@ -89,7 +91,7 @@ def main(prior,out):
         sec=psec.get(s) or names.get(s)
         if not sec:
             pr=get(f'profile?symbol={s}') or [{}]; sec=pr[0].get('sector')
-        d['sector']=sec
+        d['sector']=gics(sec)   # standard GICS name (FMP says "Consumer Cyclical" etc.)
         d['benchmark_used']='QQQ' if 'nasdaq100' in lists[s] else 'SPY'
         return s,{'symbol':s,'name':q.get('name'),'lists':sorted(lists[s]),'price':p,'chg_pct':round(q.get('changePercentage') or 0,2),'detail':d}
     with ThreadPoolExecutor(8) as ex: res=dict(ex.map(one,syms))

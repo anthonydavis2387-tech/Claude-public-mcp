@@ -22,9 +22,9 @@ MT = ZoneInfo('America/Denver')
 B = 'https://financialmodelingprep.com/stable/'
 
 INDEXES = [('SPY', 'S&P 500'), ('QQQ', 'Nasdaq 100'), ('DIA', 'Dow 30'), ('IWM', 'Russell 2000'), ('RSP', 'S&P 500 equal-weight')]
-SECTORS = [('XLK', 'Technology'), ('XLF', 'Financial Services'), ('XLV', 'Healthcare'), ('XLE', 'Energy'),
-           ('XLI', 'Industrials'), ('XLY', 'Consumer Cyclical'), ('XLP', 'Consumer Defensive'), ('XLU', 'Utilities'),
-           ('XLB', 'Basic Materials'), ('XLRE', 'Real Estate'), ('XLC', 'Communication Services')]
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sectors import SECTOR_FUNDS, gics
+SECTORS = [(f, s) for s, f in SECTOR_FUNDS]   # the 11 S&P 500 sector funds, labeled with standard GICS names
 MACRO = [('^VIX', 'VIX (fear gauge)'), ('TLT', '20+ yr Treasuries'), ('UUP', 'US dollar'), ('USO', 'WTI crude oil'),
          ('GLD', 'Gold'), ('BTCUSD', 'Bitcoin')]
 ECON_KEEP = ('FOMC', 'Fed Interest Rate', 'Fed Chair', 'Beige Book', 'Nonfarm', 'Unemployment Rate', 'Inflation Rate',
@@ -97,7 +97,7 @@ def build(week_end, notes_path):
     for s, t in uni.items():
         se = series(s)
         if se:
-            moves.append({'s': s, 'name': t.get('name'), 'sector': (t.get('detail') or {}).get('sector') or t.get('sector'),
+            moves.append({'s': s, 'name': t.get('name'), 'sector': gics((t.get('detail') or {}).get('sector') or t.get('sector')),
                           'week_pct': se['week_pct'], 'points': se['points']})
     moves.sort(key=lambda m: m['week_pct'])
     up = sum(1 for m in moves if m['week_pct'] > 0)

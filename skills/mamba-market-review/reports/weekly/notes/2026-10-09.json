@@ -1,7 +1,7 @@
 {
  "headline": "Records early, an AI scare Thursday, and a quiet rotation into defensive stocks",
  "push": "Defensives led while chips and small caps lagged.",
- "summary": "The S&P 500 (SPY) finished the week +1.16% and set a record close on Tuesday, but the leadership changed during the week. Utilities (XLU) +3.97%, consumer staples (XLP) +3.60%, energy (XLE) +3.60% and health care (XLV) +2.79% led. Tech (XLK) was -0.52%, and small caps (IWM) -0.92%. The 10-year Treasury yield touched its highest level since 2002 on Wednesday before a solid bond auction pulled it back. On Thursday, a report that OpenAI's revenue was running about $20 billion below what investors had been told hit chip and AI stocks. Friday brought a broad bounce into the start of bank earnings season. The VIX stayed near 15 all week, so the moves look like a rotation rather than fear.",
+ "summary": "The S&P 500 (SPY) finished the week +1.16% and set a record close on Tuesday, but the leadership changed during the week. Utilities (XLU) +3.97%, Consumer Staples (XLP) +3.60%, Energy (XLE) +3.60% and Health Care (XLV) +2.79% led. Information Technology (XLK) was -0.52%, and small caps (IWM) -0.92%. The 10-year Treasury yield touched its highest level since 2002 on Wednesday before a solid bond auction pulled it back. On Thursday, a report that OpenAI's revenue was running about $20 billion below what investors had been told hit chip and AI stocks. Friday brought a broad bounce into the start of bank earnings season. The VIX stayed near 15 all week, so the moves look like a rotation rather than fear.",
  "mood": "Calm but rotating",
  "mood_detail": "The VIX ended near 14.8, down from 15.3 the Friday before. 194 of the 276 names the dashboard tracks rose for the week, and the equal-weight S&P beat the regular S&P. That says the average stock did better than the giants this week.",
  "days": [
@@ -109,7 +109,7 @@
   },
   {
    "title": "Defense over offense",
-   "text": "Utilities (+4.0%), staples (+3.6%), energy (+3.6%) and health care (+2.8%) led the sectors. Tech (-0.5%) and industrials (-0.4%) lagged."
+   "text": "Utilities (XLU) +3.97%, Consumer Staples (XLP) +3.60%, Energy (XLE) +3.60% and Health Care (XLV) +2.79% led the 11 sectors. Information Technology (XLK) -0.52% and Industrials (XLI) -0.41% were the only two that fell."
   },
   {
    "title": "Telecom shock",

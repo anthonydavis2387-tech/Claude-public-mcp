@@ -7,6 +7,8 @@ Usage: python3 etf_explorer.py out.html
 import json, os, sys, time, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta, timezone
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sectors import gics
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
@@ -73,7 +75,7 @@ def main(out_path):
         c = chg.get(s, {})
         hp = os.path.join(ROOT, 'etf', 'holdings', f'{s}.json')
         h = json.load(open(hp)) if os.path.exists(hp) else {'kind': 'missing'}
-        sectors = sorted([[x['industry'], round(x['exposure'], 1)] for x in (i.get('sectorsList') or []) if x.get('exposure')],
+        sectors = sorted([[gics(x['industry']), round(x['exposure'], 1)] for x in (i.get('sectorsList') or []) if x.get('exposure')],
                          key=lambda x: -x[1])
         funds.append({**e, 'name': i.get('name') or quote.get(s, {}).get('name'), 'issuer': i.get('etfCompany'),
                       'aum': i.get('assetsUnderManagement'), 'er': i.get('expenseRatio'), 'inc': i.get('inceptionDate'),
