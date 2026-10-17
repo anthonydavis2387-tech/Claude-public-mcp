@@ -1,0 +1,2567 @@
+{
+ "week_end": "2026-10-16",
+ "week_start": "2026-10-12",
+ "days": [
+  "2026-10-12",
+  "2026-10-13",
+  "2026-10-14",
+  "2026-10-15",
+  "2026-10-16"
+ ],
+ "built_at": "2026-10-17T14:55:18+00:00",
+ "indexes": [
+  {
+   "s": "SPY",
+   "label": "S&P 500",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     778.57
+    ],
+    [
+     "2026-10-12",
+     778.1
+    ],
+    [
+     "2026-10-13",
+     778.01
+    ],
+    [
+     "2026-10-14",
+     769.6
+    ],
+    [
+     "2026-10-15",
+     771.79
+    ],
+    [
+     "2026-10-16",
+     763.25
+    ]
+   ],
+   "week_pct": -1.97
+  },
+  {
+   "s": "QQQ",
+   "label": "Nasdaq 100",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     751.27
+    ],
+    [
+     "2026-10-12",
+     746.04
+    ],
+    [
+     "2026-10-13",
+     743.57
+    ],
+    [
+     "2026-10-14",
+     728.95
+    ],
+    [
+     "2026-10-15",
+     728
+    ],
+    [
+     "2026-10-16",
+     709.8
+    ]
+   ],
+   "week_pct": -5.52
+  },
+  {
+   "s": "DIA",
+   "label": "Dow 30",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     516.11
+    ],
+    [
+     "2026-10-12",
+     517.91
+    ],
+    [
+     "2026-10-13",
+     516.21
+    ],
+    [
+     "2026-10-14",
+     515.63
+    ],
+    [
+     "2026-10-15",
+     521.18
+    ],
+    [
+     "2026-10-16",
+     519.1
+    ]
+   ],
+   "week_pct": 0.58
+  },
+  {
+   "s": "IWM",
+   "label": "Russell 2000",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     278.94
+    ],
+    [
+     "2026-10-12",
+     277.9
+    ],
+    [
+     "2026-10-13",
+     276.7
+    ],
+    [
+     "2026-10-14",
+     271.37
+    ],
+    [
+     "2026-10-15",
+     275.08
+    ],
+    [
+     "2026-10-16",
+     270.44
+    ]
+   ],
+   "week_pct": -3.05
+  },
+  {
+   "s": "RSP",
+   "label": "S&P 500 equal-weight",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     213.04
+    ],
+    [
+     "2026-10-12",
+     213.19
+    ],
+    [
+     "2026-10-13",
+     213.3
+    ],
+    [
+     "2026-10-14",
+     212.09
+    ],
+    [
+     "2026-10-15",
+     215
+    ],
+    [
+     "2026-10-16",
+     214.09
+    ]
+   ],
+   "week_pct": 0.49
+  }
+ ],
+ "sectors": [
+  {
+   "s": "XLK",
+   "label": "Information Technology",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     198.78
+    ],
+    [
+     "2026-10-12",
+     196.36
+    ],
+    [
+     "2026-10-13",
+     196.28
+    ],
+    [
+     "2026-10-14",
+     190.43
+    ],
+    [
+     "2026-10-15",
+     189.19
+    ],
+    [
+     "2026-10-16",
+     183.47
+    ]
+   ],
+   "week_pct": -7.7
+  },
+  {
+   "s": "XLF",
+   "label": "Financials",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     54.73
+    ],
+    [
+     "2026-10-12",
+     55.05
+    ],
+    [
+     "2026-10-13",
+     54.82
+    ],
+    [
+     "2026-10-14",
+     54.52
+    ],
+    [
+     "2026-10-15",
+     55.27
+    ],
+    [
+     "2026-10-16",
+     55.52
+    ]
+   ],
+   "week_pct": 1.44
+  },
+  {
+   "s": "XLV",
+   "label": "Health Care",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     170.81
+    ],
+    [
+     "2026-10-12",
+     171.99
+    ],
+    [
+     "2026-10-13",
+     169.66
+    ],
+    [
+     "2026-10-14",
+     173.96
+    ],
+    [
+     "2026-10-15",
+     177.19
+    ],
+    [
+     "2026-10-16",
+     176.71
+    ]
+   ],
+   "week_pct": 3.45
+  },
+  {
+   "s": "XLY",
+   "label": "Consumer Discretionary",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     112.85
+    ],
+    [
+     "2026-10-12",
+     112.27
+    ],
+    [
+     "2026-10-13",
+     112.36
+    ],
+    [
+     "2026-10-14",
+     111.5
+    ],
+    [
+     "2026-10-15",
+     113.41
+    ],
+    [
+     "2026-10-16",
+     112.46
+    ]
+   ],
+   "week_pct": -0.35
+  },
+  {
+   "s": "XLC",
+   "label": "Communication Services",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     110.38
+    ],
+    [
+     "2026-10-12",
+     111.45
+    ],
+    [
+     "2026-10-13",
+     112.28
+    ],
+    [
+     "2026-10-14",
+     110.82
+    ],
+    [
+     "2026-10-15",
+     112.44
+    ],
+    [
+     "2026-10-16",
+     110.32
+    ]
+   ],
+   "week_pct": -0.05
+  },
+  {
+   "s": "XLI",
+   "label": "Industrials",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     169.25
+    ],
+    [
+     "2026-10-12",
+     169.15
+    ],
+    [
+     "2026-10-13",
+     168.67
+    ],
+    [
+     "2026-10-14",
+     167.04
+    ],
+    [
+     "2026-10-15",
+     167.89
+    ],
+    [
+     "2026-10-16",
+     167.76
+    ]
+   ],
+   "week_pct": -0.88
+  },
+  {
+   "s": "XLP",
+   "label": "Consumer Staples",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     83.43
+    ],
+    [
+     "2026-10-12",
+     84.41
+    ],
+    [
+     "2026-10-13",
+     84.19
+    ],
+    [
+     "2026-10-14",
+     86.06
+    ],
+    [
+     "2026-10-15",
+     86.68
+    ],
+    [
+     "2026-10-16",
+     87.62
+    ]
+   ],
+   "week_pct": 5.02
+  },
+  {
+   "s": "XLE",
+   "label": "Energy",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     65.08
+    ],
+    [
+     "2026-10-12",
+     66.01
+    ],
+    [
+     "2026-10-13",
+     67.2
+    ],
+    [
+     "2026-10-14",
+     67.63
+    ],
+    [
+     "2026-10-15",
+     66.56
+    ],
+    [
+     "2026-10-16",
+     68.24
+    ]
+   ],
+   "week_pct": 4.86
+  },
+  {
+   "s": "XLU",
+   "label": "Utilities",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     41.41
+    ],
+    [
+     "2026-10-12",
+     41.63
+    ],
+    [
+     "2026-10-13",
+     41.87
+    ],
+    [
+     "2026-10-14",
+     41.72
+    ],
+    [
+     "2026-10-15",
+     41.65
+    ],
+    [
+     "2026-10-16",
+     42.21
+    ]
+   ],
+   "week_pct": 1.93
+  },
+  {
+   "s": "XLRE",
+   "label": "Real Estate",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     41.61
+    ],
+    [
+     "2026-10-12",
+     41.92
+    ],
+    [
+     "2026-10-13",
+     41.83
+    ],
+    [
+     "2026-10-14",
+     41.49
+    ],
+    [
+     "2026-10-15",
+     41.99
+    ],
+    [
+     "2026-10-16",
+     42.16
+    ]
+   ],
+   "week_pct": 1.32
+  },
+  {
+   "s": "XLB",
+   "label": "Materials",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     49.43
+    ],
+    [
+     "2026-10-12",
+     49.44
+    ],
+    [
+     "2026-10-13",
+     49.72
+    ],
+    [
+     "2026-10-14",
+     49.67
+    ],
+    [
+     "2026-10-15",
+     50.56
+    ],
+    [
+     "2026-10-16",
+     50.92
+    ]
+   ],
+   "week_pct": 3.01
+  }
+ ],
+ "macro": [
+  {
+   "s": "^VIX",
+   "label": "VIX (fear gauge)",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     14.84
+    ],
+    [
+     "2026-10-12",
+     15.21
+    ],
+    [
+     "2026-10-13",
+     15.27
+    ],
+    [
+     "2026-10-14",
+     16.87
+    ],
+    [
+     "2026-10-15",
+     16.46
+    ],
+    [
+     "2026-10-16",
+     19.99
+    ]
+   ],
+   "week_pct": 34.7
+  },
+  {
+   "s": "TLT",
+   "label": "20+ yr Treasuries",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     77.98
+    ],
+    [
+     "2026-10-12",
+     78.05
+    ],
+    [
+     "2026-10-13",
+     78.37
+    ],
+    [
+     "2026-10-14",
+     78.89
+    ],
+    [
+     "2026-10-15",
+     79.97
+    ],
+    [
+     "2026-10-16",
+     80.05
+    ]
+   ],
+   "week_pct": 2.65
+  },
+  {
+   "s": "UUP",
+   "label": "US dollar",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     29.02
+    ],
+    [
+     "2026-10-12",
+     29.13
+    ],
+    [
+     "2026-10-13",
+     29.02
+    ],
+    [
+     "2026-10-14",
+     29.12
+    ],
+    [
+     "2026-10-15",
+     29
+    ],
+    [
+     "2026-10-16",
+     28.92
+    ]
+   ],
+   "week_pct": -0.34
+  },
+  {
+   "s": "USO",
+   "label": "WTI crude oil",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     148.2
+    ],
+    [
+     "2026-10-12",
+     151.03
+    ],
+    [
+     "2026-10-13",
+     153.09
+    ],
+    [
+     "2026-10-14",
+     153.56
+    ],
+    [
+     "2026-10-15",
+     157.31
+    ],
+    [
+     "2026-10-16",
+     161.76
+    ]
+   ],
+   "week_pct": 9.15
+  },
+  {
+   "s": "GLD",
+   "label": "Gold",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     384.58
+    ],
+    [
+     "2026-10-12",
+     382.15
+    ],
+    [
+     "2026-10-13",
+     381.67
+    ],
+    [
+     "2026-10-14",
+     375.99
+    ],
+    [
+     "2026-10-15",
+     382.71
+    ],
+    [
+     "2026-10-16",
+     382.01
+    ]
+   ],
+   "week_pct": -0.67
+  },
+  {
+   "s": "BTCUSD",
+   "label": "Bitcoin",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     82544.71
+    ],
+    [
+     "2026-10-12",
+     81742.5
+    ],
+    [
+     "2026-10-13",
+     83101.99
+    ],
+    [
+     "2026-10-14",
+     81566.29
+    ],
+    [
+     "2026-10-15",
+     82131.46
+    ],
+    [
+     "2026-10-16",
+     81500.04
+    ]
+   ],
+   "week_pct": -1.27
+  }
+ ],
+ "breadth": {
+  "up": 171,
+  "total": 275
+ },
+ "best": [
+  {
+   "s": "ACN",
+   "name": "Accenture plc",
+   "sector": "Information Technology",
+   "week_pct": 9.86,
+   "points": [
+    [
+     "2026-10-09",
+     209.06
+    ],
+    [
+     "2026-10-12",
+     214.87
+    ],
+    [
+     "2026-10-13",
+     213.56
+    ],
+    [
+     "2026-10-14",
+     214.96
+    ],
+    [
+     "2026-10-15",
+     224.92
+    ],
+    [
+     "2026-10-16",
+     229.68
+    ]
+   ]
+  },
+  {
+   "s": "AJG",
+   "name": "Arthur J. Gallagher & Co.",
+   "sector": "Financials",
+   "week_pct": 9.53,
+   "points": [
+    [
+     "2026-10-09",
+     232.7
+    ],
+    [
+     "2026-10-12",
+     233.92
+    ],
+    [
+     "2026-10-13",
+     232.9
+    ],
+    [
+     "2026-10-14",
+     237.04
+    ],
+    [
+     "2026-10-15",
+     250.1
+    ],
+    [
+     "2026-10-16",
+     254.88
+    ]
+   ]
+  },
+  {
+   "s": "COP",
+   "name": "ConocoPhillips",
+   "sector": "Energy",
+   "week_pct": 9.25,
+   "points": [
+    [
+     "2026-10-09",
+     134.1
+    ],
+    [
+     "2026-10-12",
+     137.56
+    ],
+    [
+     "2026-10-13",
+     140.9
+    ],
+    [
+     "2026-10-14",
+     142.34
+    ],
+    [
+     "2026-10-15",
+     141.73
+    ],
+    [
+     "2026-10-16",
+     146.51
+    ]
+   ]
+  },
+  {
+   "s": "KDP",
+   "name": "Keurig Dr Pepper Inc.",
+   "sector": "Consumer Staples",
+   "week_pct": 9.01,
+   "points": [
+    [
+     "2026-10-09",
+     31.76
+    ],
+    [
+     "2026-10-12",
+     32.75
+    ],
+    [
+     "2026-10-13",
+     32.66
+    ],
+    [
+     "2026-10-14",
+     33.12
+    ],
+    [
+     "2026-10-15",
+     34.18
+    ],
+    [
+     "2026-10-16",
+     34.62
+    ]
+   ]
+  },
+  {
+   "s": "WM",
+   "name": "Waste Management, Inc.",
+   "sector": "Industrials",
+   "week_pct": 8.63,
+   "points": [
+    [
+     "2026-10-09",
+     208.83
+    ],
+    [
+     "2026-10-12",
+     211.14
+    ],
+    [
+     "2026-10-13",
+     211.83
+    ],
+    [
+     "2026-10-14",
+     215.75
+    ],
+    [
+     "2026-10-15",
+     224.19
+    ],
+    [
+     "2026-10-16",
+     226.86
+    ]
+   ]
+  },
+  {
+   "s": "LMT",
+   "name": "Lockheed Martin Corporation",
+   "sector": "Industrials",
+   "week_pct": 8.34,
+   "points": [
+    [
+     "2026-10-09",
+     509.59
+    ],
+    [
+     "2026-10-12",
+     511.88
+    ],
+    [
+     "2026-10-13",
+     504.02
+    ],
+    [
+     "2026-10-14",
+     522.23
+    ],
+    [
+     "2026-10-15",
+     532.64
+    ],
+    [
+     "2026-10-16",
+     552.09
+    ]
+   ]
+  },
+  {
+   "s": "IDXX",
+   "name": "IDEXX Laboratories, Inc.",
+   "sector": "Health Care",
+   "week_pct": 8.18,
+   "points": [
+    [
+     "2026-10-09",
+     518
+    ],
+    [
+     "2026-10-12",
+     523.94
+    ],
+    [
+     "2026-10-13",
+     520.31
+    ],
+    [
+     "2026-10-14",
+     529.01
+    ],
+    [
+     "2026-10-15",
+     547.18
+    ],
+    [
+     "2026-10-16",
+     560.36
+    ]
+   ]
+  },
+  {
+   "s": "NOC",
+   "name": "Northrop Grumman Corporation",
+   "sector": "Industrials",
+   "week_pct": 8.14,
+   "points": [
+    [
+     "2026-10-09",
+     480.72
+    ],
+    [
+     "2026-10-12",
+     485
+    ],
+    [
+     "2026-10-13",
+     481.38
+    ],
+    [
+     "2026-10-14",
+     495.69
+    ],
+    [
+     "2026-10-15",
+     499.63
+    ],
+    [
+     "2026-10-16",
+     519.86
+    ]
+   ]
+  },
+  {
+   "s": "ALL",
+   "name": "The Allstate Corporation",
+   "sector": "Financials",
+   "week_pct": 8.04,
+   "points": [
+    [
+     "2026-10-09",
+     229.43
+    ],
+    [
+     "2026-10-12",
+     232.6
+    ],
+    [
+     "2026-10-13",
+     236.4
+    ],
+    [
+     "2026-10-14",
+     236.17
+    ],
+    [
+     "2026-10-15",
+     239.6
+    ],
+    [
+     "2026-10-16",
+     247.88
+    ]
+   ]
+  },
+  {
+   "s": "CCEP",
+   "name": "Coca-Cola Europacific Partners PLC",
+   "sector": "Consumer Staples",
+   "week_pct": 7.82,
+   "points": [
+    [
+     "2026-10-09",
+     104.25
+    ],
+    [
+     "2026-10-12",
+     105.08
+    ],
+    [
+     "2026-10-13",
+     105.38
+    ],
+    [
+     "2026-10-14",
+     107.22
+    ],
+    [
+     "2026-10-15",
+     109.77
+    ],
+    [
+     "2026-10-16",
+     112.4
+    ]
+   ]
+  }
+ ],
+ "worst": [
+  {
+   "s": "RKLB",
+   "name": "Rocket Lab USA, Inc.",
+   "sector": "Industrials",
+   "week_pct": -25.47,
+   "points": [
+    [
+     "2026-10-09",
+     68.21
+    ],
+    [
+     "2026-10-12",
+     65.71
+    ],
+    [
+     "2026-10-13",
+     64.22
+    ],
+    [
+     "2026-10-14",
+     59.18
+    ],
+    [
+     "2026-10-15",
+     55.25
+    ],
+    [
+     "2026-10-16",
+     50.84
+    ]
+   ]
+  },
+  {
+   "s": "LITE",
+   "name": "Lumentum Holdings Inc.",
+   "sector": "Information Technology",
+   "week_pct": -25.31,
+   "points": [
+    [
+     "2026-10-09",
+     1103.36
+    ],
+    [
+     "2026-10-12",
+     995.41
+    ],
+    [
+     "2026-10-13",
+     987.99
+    ],
+    [
+     "2026-10-14",
+     896.33
+    ],
+    [
+     "2026-10-15",
+     869.54
+    ],
+    [
+     "2026-10-16",
+     824.13
+    ]
+   ]
+  },
+  {
+   "s": "CRWV",
+   "name": "CoreWeave, Inc. Class A Common Stock",
+   "sector": "Information Technology",
+   "week_pct": -25.21,
+   "points": [
+    [
+     "2026-10-09",
+     82.08
+    ],
+    [
+     "2026-10-12",
+     80.26
+    ],
+    [
+     "2026-10-13",
+     77.81
+    ],
+    [
+     "2026-10-14",
+     65.78
+    ],
+    [
+     "2026-10-15",
+     69.69
+    ],
+    [
+     "2026-10-16",
+     61.39
+    ]
+   ]
+  },
+  {
+   "s": "NBIS",
+   "name": "Nebius Group N.V.",
+   "sector": "Information Technology",
+   "week_pct": -25.15,
+   "points": [
+    [
+     "2026-10-09",
+     221.07
+    ],
+    [
+     "2026-10-12",
+     210.06
+    ],
+    [
+     "2026-10-13",
+     206.86
+    ],
+    [
+     "2026-10-14",
+     186.01
+    ],
+    [
+     "2026-10-15",
+     188.41
+    ],
+    [
+     "2026-10-16",
+     165.47
+    ]
+   ]
+  },
+  {
+   "s": "HPE",
+   "name": "Hewlett Packard Enterprise Company",
+   "sector": "Information Technology",
+   "week_pct": -24.95,
+   "points": [
+    [
+     "2026-10-09",
+     73.46
+    ],
+    [
+     "2026-10-12",
+     70.33
+    ],
+    [
+     "2026-10-13",
+     68.81
+    ],
+    [
+     "2026-10-14",
+     63.11
+    ],
+    [
+     "2026-10-15",
+     58.63
+    ],
+    [
+     "2026-10-16",
+     55.13
+    ]
+   ]
+  },
+  {
+   "s": "DELL",
+   "name": "Dell Technologies Inc.",
+   "sector": "Information Technology",
+   "week_pct": -22.92,
+   "points": [
+    [
+     "2026-10-09",
+     586.06
+    ],
+    [
+     "2026-10-12",
+     576.76
+    ],
+    [
+     "2026-10-13",
+     572.47
+    ],
+    [
+     "2026-10-14",
+     507.93
+    ],
+    [
+     "2026-10-15",
+     473.39
+    ],
+    [
+     "2026-10-16",
+     451.71
+    ]
+   ]
+  },
+  {
+   "s": "BE",
+   "name": "Bloom Energy Corporation",
+   "sector": "Industrials",
+   "week_pct": -21.1,
+   "points": [
+    [
+     "2026-10-09",
+     280.5
+    ],
+    [
+     "2026-10-12",
+     262.28
+    ],
+    [
+     "2026-10-13",
+     263.45
+    ],
+    [
+     "2026-10-14",
+     239.34
+    ],
+    [
+     "2026-10-15",
+     236.3
+    ],
+    [
+     "2026-10-16",
+     221.31
+    ]
+   ]
+  },
+  {
+   "s": "TER",
+   "name": "Teradyne, Inc.",
+   "sector": "Information Technology",
+   "week_pct": -19.29,
+   "points": [
+    [
+     "2026-10-09",
+     402.68
+    ],
+    [
+     "2026-10-12",
+     383.85
+    ],
+    [
+     "2026-10-13",
+     380.29
+    ],
+    [
+     "2026-10-14",
+     359.44
+    ],
+    [
+     "2026-10-15",
+     343.21
+    ],
+    [
+     "2026-10-16",
+     325
+    ]
+   ]
+  },
+  {
+   "s": "AMAT",
+   "name": "Applied Materials, Inc.",
+   "sector": "Information Technology",
+   "week_pct": -19.28,
+   "points": [
+    [
+     "2026-10-09",
+     507.03
+    ],
+    [
+     "2026-10-12",
+     497.53
+    ],
+    [
+     "2026-10-13",
+     464.24
+    ],
+    [
+     "2026-10-14",
+     446.63
+    ],
+    [
+     "2026-10-15",
+     430.01
+    ],
+    [
+     "2026-10-16",
+     409.29
+    ]
+   ]
+  },
+  {
+   "s": "STX",
+   "name": "Seagate Technology Holdings plc",
+   "sector": "Information Technology",
+   "week_pct": -18.39,
+   "points": [
+    [
+     "2026-10-09",
+     783
+    ],
+    [
+     "2026-10-12",
+     753.25
+    ],
+    [
+     "2026-10-13",
+     747.2
+    ],
+    [
+     "2026-10-14",
+     713.54
+    ],
+    [
+     "2026-10-15",
+     690.81
+    ],
+    [
+     "2026-10-16",
+     639.01
+    ]
+   ]
+  }
+ ],
+ "watchlist": [
+  {
+   "s": "AAPL",
+   "name": "Apple Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     336.64
+    ],
+    [
+     "2026-10-12",
+     340.97
+    ],
+    [
+     "2026-10-13",
+     341.27
+    ],
+    [
+     "2026-10-14",
+     342.96
+    ],
+    [
+     "2026-10-15",
+     342
+    ],
+    [
+     "2026-10-16",
+     343.46
+    ]
+   ],
+   "week_pct": 2.03
+  },
+  {
+   "s": "AMD",
+   "name": "Advanced Micro Devices, Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     608.1
+    ],
+    [
+     "2026-10-12",
+     594.24
+    ],
+    [
+     "2026-10-13",
+     605.53
+    ],
+    [
+     "2026-10-14",
+     570.82
+    ],
+    [
+     "2026-10-15",
+     562.23
+    ],
+    [
+     "2026-10-16",
+     528.75
+    ]
+   ],
+   "week_pct": -13.05
+  },
+  {
+   "s": "AMGN",
+   "name": "Amgen Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     414.87
+    ],
+    [
+     "2026-10-12",
+     417.57
+    ],
+    [
+     "2026-10-13",
+     412.84
+    ],
+    [
+     "2026-10-14",
+     426.11
+    ],
+    [
+     "2026-10-15",
+     434.03
+    ],
+    [
+     "2026-10-16",
+     432.49
+    ]
+   ],
+   "week_pct": 4.25
+  },
+  {
+   "s": "AVGO",
+   "name": "Broadcom Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     361.54
+    ],
+    [
+     "2026-10-12",
+     354.73
+    ],
+    [
+     "2026-10-13",
+     357.31
+    ],
+    [
+     "2026-10-14",
+     346.25
+    ],
+    [
+     "2026-10-15",
+     344.33
+    ],
+    [
+     "2026-10-16",
+     328.75
+    ]
+   ],
+   "week_pct": -9.07
+  },
+  {
+   "s": "BE",
+   "name": "Bloom Energy Corporation",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     280.5
+    ],
+    [
+     "2026-10-12",
+     262.28
+    ],
+    [
+     "2026-10-13",
+     263.45
+    ],
+    [
+     "2026-10-14",
+     239.34
+    ],
+    [
+     "2026-10-15",
+     236.3
+    ],
+    [
+     "2026-10-16",
+     221.31
+    ]
+   ],
+   "week_pct": -21.1
+  },
+  {
+   "s": "CAT",
+   "name": "Caterpillar Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     800.47
+    ],
+    [
+     "2026-10-12",
+     799.37
+    ],
+    [
+     "2026-10-13",
+     772.78
+    ],
+    [
+     "2026-10-14",
+     748.98
+    ],
+    [
+     "2026-10-15",
+     735.64
+    ],
+    [
+     "2026-10-16",
+     730.76
+    ]
+   ],
+   "week_pct": -8.71
+  },
+  {
+   "s": "CRWD",
+   "name": "CrowdStrike Holdings, Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     275.04
+    ],
+    [
+     "2026-10-12",
+     263.01
+    ],
+    [
+     "2026-10-13",
+     261.21
+    ],
+    [
+     "2026-10-14",
+     249.29
+    ],
+    [
+     "2026-10-15",
+     244.57
+    ],
+    [
+     "2026-10-16",
+     227.39
+    ]
+   ],
+   "week_pct": -17.32
+  },
+  {
+   "s": "GLW",
+   "name": "Corning Inc",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     156.68
+    ],
+    [
+     "2026-10-12",
+     147.28
+    ],
+    [
+     "2026-10-13",
+     148.54
+    ],
+    [
+     "2026-10-14",
+     140.89
+    ],
+    [
+     "2026-10-15",
+     138.43
+    ],
+    [
+     "2026-10-16",
+     132
+    ]
+   ],
+   "week_pct": -15.75
+  },
+  {
+   "s": "GOOG",
+   "name": "Alphabet Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     347.86
+    ],
+    [
+     "2026-10-12",
+     348.97
+    ],
+    [
+     "2026-10-13",
+     349.52
+    ],
+    [
+     "2026-10-14",
+     343.65
+    ],
+    [
+     "2026-10-15",
+     344.91
+    ],
+    [
+     "2026-10-16",
+     336.91
+    ]
+   ],
+   "week_pct": -3.15
+  },
+  {
+   "s": "GOOGL",
+   "name": "Alphabet Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     351.66
+    ],
+    [
+     "2026-10-12",
+     352.72
+    ],
+    [
+     "2026-10-13",
+     353.78
+    ],
+    [
+     "2026-10-14",
+     347.64
+    ],
+    [
+     "2026-10-15",
+     349.22
+    ],
+    [
+     "2026-10-16",
+     340.59
+    ]
+   ],
+   "week_pct": -3.15
+  },
+  {
+   "s": "KLAC",
+   "name": "KLA Corporation",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     195.57
+    ],
+    [
+     "2026-10-12",
+     190.12
+    ],
+    [
+     "2026-10-13",
+     184
+    ],
+    [
+     "2026-10-14",
+     178.81
+    ],
+    [
+     "2026-10-15",
+     174.46
+    ],
+    [
+     "2026-10-16",
+     165.74
+    ]
+   ],
+   "week_pct": -15.25
+  },
+  {
+   "s": "LLY",
+   "name": "Eli Lilly and Company",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     1179.27
+    ],
+    [
+     "2026-10-12",
+     1182.62
+    ],
+    [
+     "2026-10-13",
+     1166.51
+    ],
+    [
+     "2026-10-14",
+     1208.74
+    ],
+    [
+     "2026-10-15",
+     1251.61
+    ],
+    [
+     "2026-10-16",
+     1257.03
+    ]
+   ],
+   "week_pct": 6.59
+  },
+  {
+   "s": "META",
+   "name": "Meta Platforms, Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     718.67
+    ],
+    [
+     "2026-10-12",
+     742.96
+    ],
+    [
+     "2026-10-13",
+     762.5
+    ],
+    [
+     "2026-10-14",
+     737.54
+    ],
+    [
+     "2026-10-15",
+     736.72
+    ],
+    [
+     "2026-10-16",
+     709.33
+    ]
+   ],
+   "week_pct": -1.3
+  },
+  {
+   "s": "MSFT",
+   "name": "Microsoft Corporation",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     535.07
+    ],
+    [
+     "2026-10-12",
+     541.15
+    ],
+    [
+     "2026-10-13",
+     543.45
+    ],
+    [
+     "2026-10-14",
+     533.69
+    ],
+    [
+     "2026-10-15",
+     539.44
+    ],
+    [
+     "2026-10-16",
+     529.05
+    ]
+   ],
+   "week_pct": -1.13
+  },
+  {
+   "s": "MU",
+   "name": "Micron Technology, Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     1029
+    ],
+    [
+     "2026-10-12",
+     989.04
+    ],
+    [
+     "2026-10-13",
+     953.19
+    ],
+    [
+     "2026-10-14",
+     914.13
+    ],
+    [
+     "2026-10-15",
+     931.24
+    ],
+    [
+     "2026-10-16",
+     878.84
+    ]
+   ],
+   "week_pct": -14.59
+  },
+  {
+   "s": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     418.78
+    ],
+    [
+     "2026-10-12",
+     403.83
+    ],
+    [
+     "2026-10-13",
+     397.03
+    ],
+    [
+     "2026-10-14",
+     375.04
+    ],
+    [
+     "2026-10-15",
+     370.27
+    ],
+    [
+     "2026-10-16",
+     342
+    ]
+   ],
+   "week_pct": -18.33
+  },
+  {
+   "s": "RTX",
+   "name": "RTX Corporation",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     185.97
+    ],
+    [
+     "2026-10-12",
+     186.66
+    ],
+    [
+     "2026-10-13",
+     183.02
+    ],
+    [
+     "2026-10-14",
+     186.47
+    ],
+    [
+     "2026-10-15",
+     186.95
+    ],
+    [
+     "2026-10-16",
+     193.92
+    ]
+   ],
+   "week_pct": 4.27
+  },
+  {
+   "s": "TSM",
+   "name": "Taiwan Semiconductor Manufacturing Company Limited",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     453.31
+    ],
+    [
+     "2026-10-12",
+     444.35
+    ],
+    [
+     "2026-10-13",
+     445.12
+    ],
+    [
+     "2026-10-14",
+     430
+    ],
+    [
+     "2026-10-15",
+     422.25
+    ],
+    [
+     "2026-10-16",
+     412.61
+    ]
+   ],
+   "week_pct": -8.98
+  },
+  {
+   "s": "UNH",
+   "name": "UnitedHealth Group Incorporated",
+   "base_date": "2026-10-09",
+   "points": [
+    [
+     "2026-10-09",
+     379.3
+    ],
+    [
+     "2026-10-12",
+     378.52
+    ],
+    [
+     "2026-10-13",
+     377.76
+    ],
+    [
+     "2026-10-14",
+     395.62
+    ],
+    [
+     "2026-10-15",
+     406.67
+    ],
+    [
+     "2026-10-16",
+     401.43
+    ]
+   ],
+   "week_pct": 5.83
+  }
+ ],
+ "daily": [
+  {
+   "date": "2026-10-12",
+   "saved": true,
+   "advancers": 167,
+   "names": 276,
+   "vix": 15.21,
+   "ust10y": 5.24,
+   "best": [
+    [
+     "SHOP",
+     4.9
+    ],
+    [
+     "META",
+     3.38
+    ],
+    [
+     "KDP",
+     3.12
+    ]
+   ],
+   "worst": [
+    [
+     "CIEN",
+     -9.99
+    ],
+    [
+     "LITE",
+     -9.78
+    ],
+    [
+     "COHR",
+     -7.86
+    ]
+   ],
+   "spy_pct": -0.06
+  },
+  {
+   "date": "2026-10-13",
+   "saved": true,
+   "advancers": 136,
+   "names": 276,
+   "vix": 15.25,
+   "ust10y": 5.21,
+   "best": [
+    [
+     "VLO",
+     4.67
+    ],
+    [
+     "ORCL",
+     4.24
+    ],
+    [
+     "PSX",
+     3.98
+    ]
+   ],
+   "worst": [
+    [
+     "AMAT",
+     -6.69
+    ],
+    [
+     "JNJ",
+     -5.7
+    ],
+    [
+     "C",
+     -5.6
+    ]
+   ],
+   "spy_pct": -0.01
+  },
+  {
+   "date": "2026-10-14",
+   "saved": true,
+   "advancers": 131,
+   "names": 276,
+   "vix": 16.82,
+   "ust10y": 5.19,
+   "best": [
+    [
+     "UNH",
+     4.76
+    ],
+    [
+     "MRNA",
+     4.65
+    ],
+    [
+     "BMY",
+     4.59
+    ]
+   ],
+   "worst": [
+    [
+     "CRWV",
+     -15.46
+    ],
+    [
+     "DELL",
+     -11.36
+    ],
+    [
+     "CIEN",
+     -10.22
+    ]
+   ],
+   "spy_pct": -1.08
+  },
+  {
+   "date": "2026-10-15",
+   "saved": true,
+   "advancers": 185,
+   "names": 276,
+   "vix": 16.47,
+   "ust10y": 5.19,
+   "best": [
+    [
+     "APP",
+     6.52
+    ],
+    [
+     "INTU",
+     6.36
+    ],
+    [
+     "NOW",
+     6.15
+    ]
+   ],
+   "worst": [
+    [
+     "HPE",
+     -7.1
+    ],
+    [
+     "DELL",
+     -6.67
+    ],
+    [
+     "RKLB",
+     -6.64
+    ]
+   ],
+   "spy_pct": 0.28
+  },
+  {
+   "date": "2026-10-16",
+   "saved": true,
+   "advancers": 131,
+   "names": 276,
+   "vix": 19.98,
+   "ust10y": 5.09,
+   "best": [
+    [
+     "TRGP",
+     4.31
+    ],
+    [
+     "AMRO",
+     4.31
+    ],
+    [
+     "FANG",
+     4.27
+    ]
+   ],
+   "worst": [
+    [
+     "NBIS",
+     -12.18
+    ],
+    [
+     "CRWV",
+     -11.91
+    ],
+    [
+     "MSTR",
+     -9.56
+    ]
+   ],
+   "spy_pct": -1.11
+  }
+ ],
+ "next_earnings": [
+  {
+   "s": "CB",
+   "name": "Chubb Limited",
+   "date": "2026-10-20",
+   "eps_est": 6.79
+  },
+  {
+   "s": "COF",
+   "name": "Capital One Financial Corporation",
+   "date": "2026-10-20",
+   "eps_est": 5.5
+  },
+  {
+   "s": "GE",
+   "name": "GE Aerospace",
+   "date": "2026-10-20",
+   "eps_est": 2.01
+  },
+  {
+   "s": "GM",
+   "name": "General Motors Company",
+   "date": "2026-10-20",
+   "eps_est": 3.7
+  },
+  {
+   "s": "ISRG",
+   "name": "Intuitive Surgical, Inc.",
+   "date": "2026-10-20",
+   "eps_est": 2.65
+  },
+  {
+   "s": "MMM",
+   "name": "3M Company",
+   "date": "2026-10-20",
+   "eps_est": 2.39
+  },
+  {
+   "s": "NFLX",
+   "name": "Netflix, Inc.",
+   "date": "2026-10-20",
+   "eps_est": 0.821
+  },
+  {
+   "s": "NOC",
+   "name": "Northrop Grumman Corporation",
+   "date": "2026-10-20",
+   "eps_est": 7.18
+  },
+  {
+   "s": "RTX",
+   "name": "RTX Corporation",
+   "date": "2026-10-20",
+   "eps_est": 1.78
+  },
+  {
+   "s": "ABT",
+   "name": "Abbott Laboratories",
+   "date": "2026-10-21",
+   "eps_est": 1.42
+  },
+  {
+   "s": "CME",
+   "name": "CME Group Inc.",
+   "date": "2026-10-21",
+   "eps_est": 2.98
+  },
+  {
+   "s": "CSX",
+   "name": "CSX Corporation",
+   "date": "2026-10-21",
+   "eps_est": 0.531
+  },
+  {
+   "s": "DHR",
+   "name": "Danaher Corporation",
+   "date": "2026-10-21",
+   "eps_est": 1.92
+  },
+  {
+   "s": "ELV",
+   "name": "Elevance Health Inc.",
+   "date": "2026-10-21",
+   "eps_est": 4.7
+  },
+  {
+   "s": "IBM",
+   "name": "International Business Machines Corporation",
+   "date": "2026-10-21",
+   "eps_est": 2.86
+  },
+  {
+   "s": "KMI",
+   "name": "Kinder Morgan, Inc.",
+   "date": "2026-10-21",
+   "eps_est": 0.3196
+  },
+  {
+   "s": "LRCX",
+   "name": "Lam Research Corporation",
+   "date": "2026-10-21",
+   "eps_est": 2.18
+  },
+  {
+   "s": "MCO",
+   "name": "Moody's Corporation",
+   "date": "2026-10-21",
+   "eps_est": 4.26
+  },
+  {
+   "s": "META",
+   "name": "Meta Platforms, Inc.",
+   "date": "2026-10-21",
+   "eps_est": 6.58
+  },
+  {
+   "s": "NEE",
+   "name": "NextEra Energy, Inc.",
+   "date": "2026-10-21",
+   "eps_est": 1.19
+  },
+  {
+   "s": "PM",
+   "name": "Philip Morris International Inc.",
+   "date": "2026-10-21",
+   "eps_est": 2.3
+  },
+  {
+   "s": "SAP",
+   "name": "SAP SE",
+   "date": "2026-10-21",
+   "eps_est": 2.03
+  },
+  {
+   "s": "T",
+   "name": "AT&T Inc.",
+   "date": "2026-10-21",
+   "eps_est": 0.601
+  },
+  {
+   "s": "TMO",
+   "name": "Thermo Fisher Scientific Inc.",
+   "date": "2026-10-21",
+   "eps_est": 6.4
+  },
+  {
+   "s": "TSLA",
+   "name": "Tesla, Inc.",
+   "date": "2026-10-21",
+   "eps_est": 0.4481
+  },
+  {
+   "s": "TXN",
+   "name": "Texas Instruments Incorporated",
+   "date": "2026-10-21",
+   "eps_est": 2.42
+  },
+  {
+   "s": "URI",
+   "name": "United Rentals, Inc.",
+   "date": "2026-10-21",
+   "eps_est": 13.97
+  },
+  {
+   "s": "BE",
+   "name": "Bloom Energy Corporation",
+   "date": "2026-10-22",
+   "eps_est": 0.688
+  },
+  {
+   "s": "BX",
+   "name": "Blackstone Inc.",
+   "date": "2026-10-22",
+   "eps_est": 1.28
+  },
+  {
+   "s": "CMCSA",
+   "name": "Comcast Corporation",
+   "date": "2026-10-22",
+   "eps_est": 0.987
+  },
+  {
+   "s": "FIX",
+   "name": "Comfort Systems USA, Inc.",
+   "date": "2026-10-22",
+   "eps_est": 12.85
+  },
+  {
+   "s": "HON",
+   "name": "Honeywell International Inc.",
+   "date": "2026-10-22",
+   "eps_est": 2.17
+  },
+  {
+   "s": "LMT",
+   "name": "Lockheed Martin Corporation",
+   "date": "2026-10-22",
+   "eps_est": 7.52
+  },
+  {
+   "s": "NDAQ",
+   "name": "Nasdaq, Inc.",
+   "date": "2026-10-22",
+   "eps_est": 1.02
+  },
+  {
+   "s": "NEM",
+   "name": "Newmont Corporation",
+   "date": "2026-10-22",
+   "eps_est": 1.95
+  },
+  {
+   "s": "NSC",
+   "name": "Norfolk Southern Corporation",
+   "date": "2026-10-22",
+   "eps_est": 3.47
+  },
+  {
+   "s": "PG",
+   "name": "The Procter & Gamble Company",
+   "date": "2026-10-22",
+   "eps_est": 1.88
+  },
+  {
+   "s": "ROP",
+   "name": "Roper Technologies, Inc.",
+   "date": "2026-10-22",
+   "eps_est": 5.79
+  },
+  {
+   "s": "UNP",
+   "name": "Union Pacific Corporation",
+   "date": "2026-10-22",
+   "eps_est": 3.47
+  },
+  {
+   "s": "VLO",
+   "name": "Valero Energy Corporation",
+   "date": "2026-10-22",
+   "eps_est": 20.9
+  },
+  {
+   "s": "WDC",
+   "name": "Western Digital Corporation",
+   "date": "2026-10-22",
+   "eps_est": 4.08
+  },
+  {
+   "s": "AXP",
+   "name": "American Express Company",
+   "date": "2026-10-23",
+   "eps_est": 4.58
+  },
+  {
+   "s": "SLB",
+   "name": "Slb N.V.",
+   "date": "2026-10-23",
+   "eps_est": 0.618
+  }
+ ],
+ "next_events": [
+  {
+   "when": "Thu Oct 22, 6:30 AM MT",
+   "day": "2026-10-22",
+   "event": "Initial Jobless Claims (Oct/17)",
+   "estimate": 200,
+   "previous": 199,
+   "impact": "High"
+  }
+ ],
+ "notes": {
+  "headline": "An AI-infrastructure selloff swamped the market while defensives and energy held up",
+  "push": "Tech and AI names sank while staples, energy and health care held up.",
+  "summary": "The S&P 500 (SPY) finished the week -1.97%, but the damage was lopsided. The Nasdaq 100 (QQQ) was -5.52% and small caps (IWM) -3.05%, while the Dow 30 (DIA) was +0.58% and the S&P 500 equal-weight (RSP) +0.49%. Information Technology (XLK) -7.70% was by far the weakest sector, and Consumer Staples (XLP) +5.02%, Energy (XLE) +4.86% and Health Care (XLV) +3.45% led. AI-linked names bore the brunt, with CoreWeave (CRWV) -25.21%, Nebius (NBIS) -25.15% and Dell Technologies (DELL) -22.92% for the week. The VIX closed Friday at 19.99, up from 14.84 a week earlier. Oil kept climbing: the WTI fund (USO) was +9.15% for the week. Seven of the 11 sectors rose, and 171 of the 275 names the dashboard tracks finished higher.",
+  "mood": "Nervous, tech-led selloff",
+  "mood_detail": "The VIX rose from 14.84 to 19.99 (+34.70%), the biggest jump in weeks, and the Nasdaq 100 (QQQ) -5.52% sharply lagged the equal-weight S&P 500 (RSP) +0.49%. Most stocks held up; the pain sat in AI and tech.",
+  "days": [
+   {
+    "date": "2026-10-12",
+    "headlines": [
+     "Columbus Day session: the Dow rose to about 51,850 while the S&P 500 (SPY) was -0.06% and the Nasdaq slipped; defensive sectors led while semiconductors and optical networking lagged.",
+     "Ciena (CIEN) -9.99% and Lumentum (LITE) -9.78% were among the biggest decliners."
+    ],
+    "sources": [
+     {
+      "name": "Tapeboard market pulse",
+      "url": "https://tapeboard.com/blog/market-pulse-2026-10-12"
+     },
+     {
+      "name": "Meta Trading Club",
+      "url": "https://www.metatradingclub.com/2026/10/12/"
+     }
+    ]
+   },
+   {
+    "date": "2026-10-13",
+    "headlines": [
+     "Indexes finished nearly flat: the S&P 500 closed at 7,805.45 and the Nasdaq at 27,204.38.",
+     "Energy led: Energy (XLE) +3.26% as WTI crude (CL) rose to $94.99 (+1.33%).",
+     "Applied Materials (AMAT) -6.69%, Johnson & Johnson (JNJ) -5.70% and Citigroup (C) -5.60% were among the biggest decliners."
+    ],
+    "sources": [
+     {
+      "name": "Tapeboard market pulse",
+      "url": "https://tapeboard.com/blog/market-pulse-2026-10-13"
+     }
+    ]
+   },
+   {
+    "date": "2026-10-14",
+    "headlines": [
+     "Tech sold off: S&P 500 (SPY) -1.08%, the VIX rose to 16.87 and Information Technology (XLK) -2.98% while Health Care (XLV) +2.53%.",
+     "CoreWeave (CRWV) -15.46% and Dell Technologies (DELL) -11.36% led the decliners after a Barclays downgrade of AI server makers.",
+     "UnitedHealth (UNH) +4.76% led the names the dashboard tracks."
+    ],
+    "sources": [
+     {
+      "name": "Tapeboard market pulse",
+      "url": "https://tapeboard.com/blog/market-pulse-2026-10-14"
+     },
+     {
+      "name": "TipRanks on CoreWeave and Nebius",
+      "url": "https://www.tipranks.com/news/company-announcements/coreweave-vs-nebius-which-stock-has-more-upside-after-todays-selloff-according-to-wall-street"
+     }
+    ]
+   },
+   {
+    "date": "2026-10-15",
+    "headlines": [
+     "A partial rebound: S&P 500 (SPY) +0.28%, with 185 of 276 tracked names rising.",
+     "Software led the bounce: AppLovin (APP) +6.52%, Intuit (INTU) +6.36% and ServiceNow (NOW) +6.15%.",
+     "Hewlett Packard Enterprise (HPE) -7.10% and Dell Technologies (DELL) -6.67% kept falling."
+    ],
+    "sources": []
+   },
+   {
+    "date": "2026-10-16",
+    "headlines": [
+     "The week ended with a rout in AI infrastructure: S&P 500 (SPY) -1.11% and the VIX closed at 19.98.",
+     "Nebius (NBIS) -12.18% and CoreWeave (CRWV) -11.91% fell as concern grew over AI debt; Strategy (MSTR) -9.56%.",
+     "Energy names such as Targa Resources (TRGP) +4.31% and Diamondback Energy (FANG) +4.27% rose."
+    ],
+    "sources": [
+     {
+      "name": "Investing Live: AI names fall as Nasdaq comes under pressure",
+      "url": "https://investinglive.com/stocks/ai-names-fall-as-the-nasdaq-comes-under-fresh-pressure/"
+     },
+     {
+      "name": "CoinCentral on AI debt spreads",
+      "url": "https://coincentral.com/coreweave-and-nebius-stocks-sink-as-ai-debt-spreads-widen-goldman-sachs-says"
+     }
+    ]
+   }
+  ],
+  "themes": [
+   {
+    "title": "AI infrastructure under pressure",
+    "text": "CoreWeave (CRWV) -25.21%, Nebius (NBIS) -25.15%, Hewlett Packard Enterprise (HPE) -24.95% and Dell Technologies (DELL) -22.92% led the week's decliners. Reports tied the selling to a Barclays downgrade of AI server makers and widening spreads on AI-related high-yield debt."
+   },
+   {
+    "title": "Defense and energy held up",
+    "text": "Consumer Staples (XLP) +5.02%, Energy (XLE) +4.86% and Health Care (XLV) +3.45% led the 11 sectors. Seven rose and four fell: Information Technology (XLK) -7.70%, Industrials (XLI) -0.88%, Consumer Discretionary (XLY) -0.35% and Communication Services (XLC) -0.05%."
+   },
+   {
+    "title": "Oil and bonds",
+    "text": "The WTI fund (USO) was +9.15% for the week and 20+ year Treasuries (TLT) +2.65%, so yields fell as investors sought safety. The 10-year yield ended the week near 5.09%, down from 5.24% on Monday."
+   },
+   {
+    "title": "Fear picked up",
+    "text": "The VIX closed at 19.99, up from 14.84 a week earlier, as the tech selloff deepened on Friday."
+   }
+  ],
+  "questions": [
+   "Information Technology (XLK) -7.70% while the equal-weight S&P 500 (RSP) was +0.49%: is this a contained AI unwind, or the start of something broader?",
+   "Falling yields and rising oil sent mixed signals. Which one is the market trusting more?",
+   "Several of your watchlist names are AI-linked. Which of them would you still own after another week like this one?"
+  ],
+  "watchlist": [
+   "AAPL",
+   "AMD",
+   "AMGN",
+   "AVGO",
+   "BE",
+   "CAT",
+   "CRWD",
+   "GLW",
+   "GOOG",
+   "GOOGL",
+   "KLAC",
+   "LLY",
+   "META",
+   "MSFT",
+   "MU",
+   "PANW",
+   "RTX",
+   "TSM",
+   "UNH"
+  ],
+  "gaps": "Searches found no full recap for Thursday or Friday, so those two days lean on the dashboard's saved snapshots; the Tapeboard figures for Monday to Wednesday come from one blog."
+ }
+}
