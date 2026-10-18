@@ -136,6 +136,9 @@ terminal, Windows Terminal, or Ghostty.
 - When a teammate finishes, it sends the lead an **idle notification containing
   its final answer**. If its turn ended on an API error, it reports the failure and the error text.
 - Messaging is one-to-one by name. To reach everyone, send one message per recipient.
+- Messaging an in-process teammate that has stopped **brings it back** in the same
+  session with its saved conversation (not after `/resume`). A message also wakes a
+  teammate waiting to retry a failed API request, so it retries immediately.
 - Agents without the Task tools coordinate through messages only.
 
 ---
