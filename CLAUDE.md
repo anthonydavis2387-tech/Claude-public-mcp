@@ -20,3 +20,6 @@ they get established.)
 ## Notes for Claude
 
 - Address the user as Mr. Davis.
+- Before spawning agent teams or writing agent definitions, read
+  `Docs/agent-teams-reference.md`, and add to its lessons-learned log after
+  meaningful team runs.
