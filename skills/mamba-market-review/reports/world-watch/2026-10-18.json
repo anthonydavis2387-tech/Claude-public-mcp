@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Brent settled at $109.86 (+3.70%) Friday, the highest settlement since May, on Hormuz attacks and Russian refinery fears.",
+    "Europe closed its best week since June: the DAX +0.95%, the STOXX 600 +0.70%.",
+    "Asia rebounded Friday: the Nikkei 225 +1.39% and the Hang Seng +0.52%, though the Nikkei fell 5.37% on the week."
+  ],
+  "on_notice": [
+    "Brent near $110 and any further Strait of Hormuz attacks when oil reopens.",
+    "Ukraine's threatened strikes on Russian refineries, a supply risk for oil and diesel.",
+    "The Nikkei 225 after its steepest weekly decline since July."
+  ],
+  "regions": {
+    "asia": {"headline": "The Nikkei 225 +1.39% on Friday, but -5.37% on the week.", "detail": "Japan's Nikkei 225 rebounded Friday to about 65,324, though sources vary on the exact close (one reported +1.85%). It was still the steepest weekly decline since July.", "sources": [{"name": "Trading Economics, Japan", "url": "https://tradingeconomics.com/japan/stock-market"}, {"name": "Share Talk, overnight Oct 16", "url": "https://www.share-talk.com/what-happened-overnight-friday-16th-october-2026/"}]},
+    "china": {"headline": "The Hang Seng +0.52% on Friday.", "detail": "The Hang Seng closed near 24,187 per Bloomberg and Armstrong Economics; Share Talk showed a larger gain, so treat the level as approximate. No usable Shanghai Composite close was found.", "sources": [{"name": "Armstrong Economics, Oct 16", "url": "https://www.armstrongeconomics.com/market-talk/market-talk-october-16-2026/"}, {"name": "Share Talk, overnight Oct 16", "url": "https://www.share-talk.com/what-happened-overnight-friday-16th-october-2026/"}]},
+    "europe": {"headline": "The DAX +0.95% and the STOXX 600 +0.70% as Europe wrapped its best week since June.", "detail": "The DAX closed near 25,623 and the STOXX 600 near 644.74. European shares rose Friday even after a tech selloff earlier in the week.", "sources": [{"name": "Business Recorder", "url": "https://www.brecorder.com/news/40444601/european-shares-close-out-best-week-since-june"}, {"name": "Armstrong Economics, Oct 16", "url": "https://www.armstrongeconomics.com/market-talk/market-talk-october-16-2026/"}]},
+    "latam": {"headline": "No usable same-day Latin America report found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "mideast": {"headline": "Brent $109.86 (+3.70%) and WTI $101.41 (+3.50%) at Friday's settlement.", "detail": "Brent touched $110 for the first time since May as Iran escalated attacks around the Strait of Hormuz and Ukraine vowed to hit Russian refineries. It was Brent's highest settlement since May 19, and WTI gained more than 10% on the week.", "sources": [{"name": "CNBC, oil price today", "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html"}, {"name": "Bloomberg, oil tops $110", "url": "https://www.bloomberg.com/news/articles/2026-10-16/oil-tops-110-for-first-time-since-may-as-supply-risk-grows"}, {"name": "Nation Thailand", "url": "https://www.nationthailand.com/news/world/40072388"}]}
+  }
+}
