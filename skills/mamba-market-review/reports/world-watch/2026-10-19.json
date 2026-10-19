@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Asia opened the week lower: the Nikkei 225 -0.62%, though CNBC's updates disagree on the exact move.",
+    "Brent held near $109 going into Monday on Strait of Hormuz and Iran threats.",
+    "No usable same-day Europe, China or Latin America closes were found tonight."
+  ],
+  "on_notice": [
+    "Brent near $109 and any new Strait of Hormuz or Iran headlines.",
+    "The Nikkei 225 after another soft session, following its steepest weekly decline since July.",
+    "Whether the Nasdaq's AI-led rebound holds after the worst Nasdaq week since April."
+  ],
+  "regions": {
+    "asia": {"headline": "The Nikkei 225 -0.62% on Monday.", "detail": "CNBC's live page showed the Nikkei 225 about 64,917, with its updates differing on the size of the loss, so treat the move as approximate.", "sources": [{"name": "CNBC, stock market news Oct. 19", "url": "https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html"}]},
+    "china": {"headline": "No usable same-day Hang Seng or Shanghai close found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "europe": {"headline": "No usable same-day Europe close found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "latam": {"headline": "No usable same-day Latin America report found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "mideast": {"headline": "Brent near $109 as Hormuz and Iran threats keep oil elevated.", "detail": "Brent was around $109 to $110 going into Monday, though reports differ on the latest level, so treat it as approximate.", "sources": [{"name": "CNBC, stock market news Oct. 19", "url": "https://www.cnbc.com/2026/10/18/stock-market-today-live-updates.html"}]}
+  }
+}
