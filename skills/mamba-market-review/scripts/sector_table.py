@@ -16,7 +16,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from sectors import SECTOR_FUNDS, gics
 
-BLOCK = re.compile(r'<div class="spotlight" id="sector-table".*?</table></div>(?:<p class="sector-note">.*?</p>)?</div>', re.S)
+BLOCK = re.compile(r'<div class="spotlight" id="sector-table".*?</table></div>(?:<p class="sector-note"[^>]*>.*?</p>)?</div>', re.S)
 OLD = re.compile(r'<div class="spotlight" style="border-top:1px solid var\(--line\)"><h3>Average move and red-flag load by sector</h3>.*?</table></div></div>', re.S)
 
 
