@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Asia sold off ahead of AI earnings: the Nikkei 225 -1.28%, the KOSPI -3.61%.",
+    "Brent near $109.70 and WTI near $103.92 as oil resumed its climb.",
+    "Riots in France are weighing on European sentiment; no same-day index closes found."
+  ],
+  "on_notice": [
+    "Results from AI bellwether companies, which drove Tuesday's Asian selloff.",
+    "French unrest and sovereign risk, and whether it spreads beyond France.",
+    "Oil near $109.70 Brent after Trump's order waiving some sanctions and tariffs on Russian energy."
+  ],
+  "regions": {
+    "asia": {"headline": "Asian stocks fell broadly: the Nikkei 225 -1.28%, the KOSPI -3.61%.", "detail": "The MSCI Asia ex-Japan index -0.93% as geopolitical risks rattled sentiment ahead of key results from AI bellwether companies. CNBC's earlier opening report showed smaller losses, so intraday figures differ.", "sources": [{"name": "The Star, Asian shares tumble", "url": "https://www.thestar.com.my/business/business-news/2026/10/20/asian-shares-tumble-oil-rises-as-markets-await-ai-sector-results"}, {"name": "CNBC, stock market news Oct. 20", "url": "https://www.cnbc.com/2026/10/19/stock-market-today-live-updates.html"}]},
+    "china": {"headline": "No usable same-day Hang Seng or Shanghai close found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "europe": {"headline": "No usable same-day Europe index close found; French riots are the theme.", "detail": "The dollar held firm against the euro as riots in France fuelled safe-haven demand. One analyst said French sovereign risk is being priced into European equities, but the euro's resilience suggests it is not yet seen as a systemic European problem.", "sources": [{"name": "AP via abc27", "url": "https://www.abc27.com/news/us-world/business/ap-asian-shares-are-mixed-with-tech-stocks-volatile-and-oil-falls-on-trumps-russian-sanctions-waiver/amp/"}]},
+    "latam": {"headline": "No usable same-day Latin America report found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "mideast": {"headline": "Brent near $109.70 as oil resumed its climb.", "detail": "Brent was around $109.70 and WTI around $103.92 in CNBC's morning report. Traders weighed a Trump executive order that waived some sanctions and tariffs on Russian energy.", "sources": [{"name": "CNBC, stock market news Oct. 20", "url": "https://www.cnbc.com/2026/10/19/stock-market-today-live-updates.html"}]}
+  }
+}
