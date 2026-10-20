@@ -3056,5 +3056,16 @@
   "moat_source": "https://www.sec.gov/Archives/edgar/data/0002141616/000119312526395150/project_alchemy_-_s-1a_2.htm",
   "last_deep_check": "2026-10-16",
   "last_quick_check": "2026-10-16"
+ },
+ "VYLR": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "Spun off from Corteva on 2026-10-01 (one VYLR share per Corteva share); no 13F ownership percentage published yet, so institutional holdings are not yet measurable.",
+  "inst_own_source": "https://www.sec.gov/Archives/edgar/data/0002128626/000119312526396054/ck0002128626-ex99_1.htm",
+  "moat_verdict": "stable",
+  "moat_summary": "Seed and genetics leader (Pioneer, Enlist brands; company says largest germplasm pool in the world); BofA cites innovation, brands and distribution as barriers, but returns are still modest (ROE about 4.3%) and PFAS litigation is inherited from Corteva.",
+  "moat_source": "https://www.trefis.com/data/companies/VYLR",
+  "last_deep_check": "2026-10-20",
+  "last_quick_check": "2026-10-20"
  }
 }
