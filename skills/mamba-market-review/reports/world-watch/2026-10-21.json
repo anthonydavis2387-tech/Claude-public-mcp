@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Asia mixed: the KOSPI +3.30%, the Nikkei 225 +0.85%, the Hang Seng -0.70%.",
+    "Brent near $110.40 and WTI around $98 to $100 as the Iran war keeps oil elevated.",
+    "UK inflation at 3.5% weighs on the FTSE 100 open; Europe mixed to flat early."
+  ],
+  "on_notice": [
+    "Oil near $110.40 Brent, after a Tuesday swing of more than $6, with attacks on Gulf shipping and no sign of diplomacy to end the Iran war.",
+    "Rate-hike worries at the Bank of England after UK inflation climbed to 3.5%.",
+    "Whether renewed oil strength revives inflation fears and hits growth stocks such as chipmakers."
+  ],
+  "regions": {
+    "asia": {"headline": "Asia mixed: the KOSPI +3.30%, the Nikkei 225 +0.85%.", "detail": "The KOSPI closed at 5,735.66 with chip and tech stocks leading, and the Nikkei 225 closed at 64,621.24 while the Topix +0.86% ended at 4,043.73. The Taiex +1.30%. Gains followed a Wall Street rally on strong earnings.", "sources": [{"name": "US News / AP, Asian shares mixed", "url": "https://www.usnews.com/news/business/articles/2026-10-21/asian-shares-are-mixed-with-kospi-up-3-after-us-stocks-rally-on-strong-earnings"}, {"name": "Invezz, Nikkei 225", "url": "https://invezz.com/news/2026/10/21/nikkei-225-climbs-as-japan-s-3-39-billion-trade-deficit-nearly-triples-forecasts"}]},
+    "china": {"headline": "Greater China lower: the Hang Seng -0.70%, the Shanghai Composite -0.60%.", "detail": "The Hang Seng closed at 23,707.11 and the Shanghai Composite at 3,713.36.", "sources": [{"name": "US News / AP, Asian shares mixed", "url": "https://www.usnews.com/news/business/articles/2026-10-21/asian-shares-are-mixed-with-kospi-up-3-after-us-stocks-rally-on-strong-earnings"}]},
+    "europe": {"headline": "Europe mixed to flat early; UK inflation at 3.5% weighs on London.", "detail": "The FTSE 100 opened 26 points lower at 10,706 as UK inflation climbed to 3.5%, raising concern about further Bank of England rate hikes. Early trading showed the STOXX 600 roughly flat, and no same-day close was found, so these are early-session readings.", "sources": [{"name": "Analytics Insight, FTSE 100 open", "url": "https://www.analyticsinsight.net/stocks/ftse-100-index-opens-26-points-lower-at-10706-amid-rising-inflation-brent-at-usd-1097"}]},
+    "latam": {"headline": "No usable same-day Latin America report found tonight.", "detail": "Searches returned only undated or older sessions, so no index levels are quoted here.", "sources": []},
+    "mideast": {"headline": "Brent near $110.40 as the Iran war keeps oil elevated.", "detail": "Brent jumped early Wednesday to $110.40 after nearing $112 on Tuesday, close to its highest since the war began in late February. WTI was around $98 to $100. Attacks on Gulf shipping continue with no sign of diplomatic progress.", "sources": [{"name": "US News / AP, Asian shares mixed", "url": "https://www.usnews.com/news/business/articles/2026-10-21/asian-shares-are-mixed-with-kospi-up-3-after-us-stocks-rally-on-strong-earnings"}, {"name": "Analytics Insight, FTSE 100 open", "url": "https://www.analyticsinsight.net/stocks/ftse-100-index-opens-26-points-lower-at-10706-amid-rising-inflation-brent-at-usd-1097"}]}
+  }
+}
