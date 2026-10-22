@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Europe rallied on Wednesday: the DAX +1.35% to a one-month high, the FTSE 100 +0.19%.",
+    "Asia on Wednesday: the KOSPI +3.30%, the Nikkei 225 +0.85%, the Hang Seng -0.70%.",
+    "Brent near $110 as attacks on Gulf shipping and Saudi Arabia keep oil elevated."
+  ],
+  "on_notice": [
+    "Oil near $110 Brent, with reported attacks on shipping near the Strait of Hormuz and on Saudi Arabia; watch for any overnight spike.",
+    "The ECB meeting next week, with Brent near $110 keeping inflation concern alive.",
+    "Reports of a Thursday Asian sell-off tied to Houthi strikes conflict on levels, so check the Asia open before trusting any figure."
+  ],
+  "regions": {
+    "asia": {"headline": "Asia mixed on Wednesday: the KOSPI +3.30%, the Nikkei 225 +0.85%.", "detail": "The KOSPI closed at 5,735.66 with chip and tech stocks leading, and the Nikkei 225 closed at 64,621.24. No verified Thursday close was found, and reports of a Thursday sell-off conflict on levels, so these are Wednesday readings.", "sources": [{"name": "US News / AP, Asian shares mixed", "url": "https://www.usnews.com/news/business/articles/2026-10-21/asian-shares-are-mixed-with-kospi-up-3-after-us-stocks-rally-on-strong-earnings"}]},
+    "china": {"headline": "Greater China lower on Wednesday: the Hang Seng -0.70%.", "detail": "The Hang Seng closed at 23,707.11 on Wednesday. No verified Thursday close was found.", "sources": [{"name": "US News / AP, Asian shares mixed", "url": "https://www.usnews.com/news/business/articles/2026-10-21/asian-shares-are-mixed-with-kospi-up-3-after-us-stocks-rally-on-strong-earnings"}]},
+    "europe": {"headline": "Europe higher on Wednesday: the DAX +1.35%, the FTSE 100 +0.19%.", "detail": "The DAX closed at 25,645.04, its highest close in about a month, and the FTSE 100 closed at 10,752.88 after opening lower on UK inflation of 3.5%. No Thursday close was found.", "sources": [{"name": "BBN Times, European stock markets today", "url": "https://www.bbntimes.com/global-economy/european-stock-markets-today-ftse-100-dax-40-cac-40-and-ftse-mib-close-higher-as-earnings-lift-sentiment"}]},
+    "latam": {"headline": "No usable same-day Latin America report found tonight.", "detail": "Searches returned only undated or older sessions, so no index levels are quoted here.", "sources": []},
+    "mideast": {"headline": "Brent near $110 as the Iran war keeps oil elevated.", "detail": "Brent was near $110 ahead of next week's European Central Bank meeting, with reported attacks on shipping near the Strait of Hormuz and on Saudi Arabia keeping supply concerns in focus.", "sources": [{"name": "BBN Times, European stock markets today", "url": "https://www.bbntimes.com/global-economy/european-stock-markets-today-ftse-100-dax-40-cac-40-and-ftse-mib-close-higher-as-earnings-lift-sentiment"}]}
+  }
+}
