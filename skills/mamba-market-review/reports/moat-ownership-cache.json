@@ -3067,5 +3067,27 @@
   "moat_source": "https://www.trefis.com/data/companies/VYLR",
   "last_deep_check": "2026-10-20",
   "last_quick_check": "2026-10-20"
+ },
+ "FITB": {
+  "inst_own_pct": 72.3,
+  "inst_own_trend": null,
+  "inst_own_summary": "About 72.3% institutional per Simply Wall St (Benzinga shows 70-71.5%, GuruFocus 85.7%, TipRanks 62.8%; methodology and dates differ); Vanguard and BlackRock are the largest holders.",
+  "inst_own_source": "https://simplywall.st/stocks/us/banks/nasdaq-fitb/fifth-third-bancorp/ownership",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar says it expects to maintain its no-moat rating on Fifth Third after the Comerica deal (a large regional bank with top retail deposit share in some markets, but JPMorgan is larger in Michigan); no evidence of erosion, so recorded as stable rather than durable.",
+  "moat_source": "https://www.morningstar.com/stocks/fifth-third-comerica-acquisition-expands-geographic-presence-scale",
+  "last_deep_check": "2026-10-22",
+  "last_quick_check": "2026-10-22"
+ },
+ "MDT": {
+  "inst_own_pct": 82.06,
+  "inst_own_trend": null,
+  "inst_own_summary": "About 82.1% institutional per MarketBeat (13F basis, Oct 2025); Fintel's long-holdings measure is higher at about 96%. Largest holders BlackRock (10.3% of reported 13F shares), Vanguard Capital Management (7.6%) and State Street (5.7%) at Jun 30 2026.",
+  "inst_own_source": "https://www.marketbeat.com/stocks/NYSE/MDT/institutional-ownership",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar has consistently rated Medtronic wide moat, rooted in intangible assets (IP, physician relationships) and switching costs in cardiac rhythm management and transcatheter aortic valves; the current rating field is paywalled, so the verdict rests on Morningstar articles from 2023-2025.",
+  "moat_source": "https://www.morningstar.com/stocks/dividend-aristocrat-thats-20-undervalued",
+  "last_deep_check": "2026-10-22",
+  "last_quick_check": "2026-10-22"
  }
 }
