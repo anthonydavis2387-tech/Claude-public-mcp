@@ -1,0 +1,19 @@
+{
+  "push_headlines": [
+    "Friday's sell-off: the Dow -1.23% to 52,215.16 and the S&P 500 -0.52% to 7,623.68 as oil jumped.",
+    "Brent settled at $116.72 and WTI at $103.27, the highest settles since April, on Houthi attacks in Saudi Arabia.",
+    "Asia rebounded Friday: the Kospi +0.30%, the Hang Seng +0.69%, the Nikkei 225 -0.34%."
+  ],
+  "on_notice": [
+    "Brent at $116.72 with a $120 bull case floated by analysts; watch the Sunday-night open for a gap in oil.",
+    "Reports of Houthi attacks on Saudi energy sites and a UAE oil spill keep Gulf supply in focus.",
+    "Energy was the lone bright spot Friday with the sector +2.50% to a record, while the Dow gave back 652.82 points."
+  ],
+  "regions": {
+    "asia": {"headline": "Asia mostly rebounded Friday: the Kospi +0.30%, the Nikkei 225 -0.34%.", "detail": "The Kospi closed at 5,550.30 after an early drop of about 2.4%, and the Nikkei 225 closed at 62,693.16 after recovering most of its losses. The Nikkei 225 is -4.03% on the week.", "sources": [{"name": "AP via Click2Houston, Asian shares mostly rebound", "url": "https://www.click2houston.com/business/2026/10/23/asian-shares-mostly-rebound-from-ai-related-losses-while-oil-prices-jump/"}, {"name": "BBN Times, Nikkei 225", "url": "https://www.bbntimes.com/global-economy/nikkei-225-dips-to-62-693-16-as-tech-stocks-recover-early-losses-amid-us-iran-tensions"}]},
+    "china": {"headline": "Greater China higher Friday: the Hang Seng +0.69%.", "detail": "The Hang Seng closed at 23,093.37. The Shanghai Composite was +0.90% at 3,690.48 in the intraday report, and the official close was not confirmed.", "sources": [{"name": "AP via Click2Houston, Asian shares mostly rebound", "url": "https://www.click2houston.com/business/2026/10/23/asian-shares-mostly-rebound-from-ai-related-losses-while-oil-prices-jump/"}, {"name": "Yahoo Finance, Hang Seng", "url": "https://finance.yahoo.com/quote/%5EHSI/"}]},
+    "europe": {"headline": "No sourced Friday European close was found tonight.", "detail": "Searches returned no citable European close for Friday, so no index levels are quoted here. The last sourced Europe reading in these notes is the Wednesday session on the prior page.", "sources": []},
+    "latam": {"headline": "No usable same-day Latin America report found tonight.", "detail": "Searches returned only undated or older sessions, so no index levels are quoted here.", "sources": []},
+    "mideast": {"headline": "Brent settled at $116.72, the highest since April, on Gulf supply fears.", "detail": "Brent +3.14% at $116.72 and WTI +3.80% at $103.27 on Houthi attacks in Saudi Arabia and a reported UAE oil spill. Brent is about +6% on the week. On Wall Street the Dow -1.23% and the S&P 500 -0.52% as energy rallied.", "sources": [{"name": "FinanceFeeds, Brent $116.72 settle", "url": "https://financefeeds.com/brent-crude-oil-price-116-72-saturday-week-ahead-houthi-saudi-fed-28-october-bull-120-bear-108/"}, {"name": "BBN Times, Dow Jones today", "url": "https://www.bbntimes.com/global-economy/dow-jones-today-djia-falls-to-52-215-16-as-american-express-slides-and-oil-prices-jump"}]}
+  }
+}
