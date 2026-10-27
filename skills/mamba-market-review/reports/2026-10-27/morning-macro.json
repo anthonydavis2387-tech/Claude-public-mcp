@@ -1,0 +1,214 @@
+{
+ "date": "2026-10-27",
+ "session": "morning-macro",
+ "generated_at": "2026-10-27T14:30:00Z",
+ "futures": [
+  {
+   "symbol": "ES",
+   "name": "E-Mini S&P 500",
+   "last": 7720,
+   "chg_pct": 0.07,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "NQ",
+   "name": "Nasdaq 100",
+   "last": 29522.5,
+   "chg_pct": 0.29,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "YM",
+   "name": "Mini Dow Jones Industrial Average Index",
+   "last": 52523,
+   "chg_pct": -0.05,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "RTY",
+   "name": "Micro E-mini Russell 2000 Index Futures",
+   "last": 2804.6,
+   "chg_pct": 0.25,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZB",
+   "name": "30 Year U.S. Treasury Bond Futures",
+   "last": 107.375,
+   "chg_pct": -0.12,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ZN",
+   "name": "10-Year T-Note Futures",
+   "last": 106.03125,
+   "chg_pct": -0.07,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZF",
+   "name": "Five-Year US Treasury Note",
+   "last": 104.35156,
+   "chg_pct": -0.07,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZT",
+   "name": "2-Year T-Note Futures",
+   "last": 101.99219,
+   "chg_pct": -0.04,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "CL",
+   "name": "Crude Oil",
+   "last": 101.21,
+   "chg_pct": -0.54,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BZ",
+   "name": "Brent Crude Oil",
+   "last": 115.34,
+   "chg_pct": -0.41,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NG",
+   "name": "Natural Gas",
+   "last": 2.976,
+   "chg_pct": -1.52,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "RB",
+   "name": "Gasoline RBOB",
+   "last": 3.1126,
+   "chg_pct": -0.63,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "HO",
+   "name": "Heating Oil",
+   "last": 4.6872,
+   "chg_pct": -1.01,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "GC",
+   "name": "Gold Futures",
+   "last": 4053.1,
+   "chg_pct": 0.36,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "SI",
+   "name": "Silver Futures",
+   "last": 54.205,
+   "chg_pct": -0.25,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HG",
+   "name": "Copper",
+   "last": 6.6185,
+   "chg_pct": 1.17,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "PL",
+   "name": "Platinum",
+   "last": 1536.15,
+   "chg_pct": -0.6,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "PA",
+   "name": "Palladium",
+   "last": 1024.25,
+   "chg_pct": -2.69,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZM",
+   "name": "Soybean Meal Futures",
+   "last": 338.55,
+   "chg_pct": -0.49,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "CC",
+   "name": "Cocoa",
+   "last": 5511,
+   "chg_pct": -1.45,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "DX",
+   "name": "US Dollar",
+   "last": 102.025,
+   "chg_pct": 0.16,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BTC",
+   "name": "Bitcoin USD",
+   "last": 79900.25,
+   "chg_pct": -0.14,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ETH",
+   "name": "Ethereum USD",
+   "last": 2316.62,
+   "chg_pct": -0.16,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "VIX",
+   "name": "CBOE Volatility Index",
+   "last": 18.06,
+   "chg_pct": -1.79,
+   "trend_flag": "neutral"
+  }
+ ],
+ "bitcoin": {
+  "price": 79900.25,
+  "chg_pct": -0.14,
+  "year_high": 116410.06,
+  "year_low": 57717.55,
+  "avg50": 81797.85,
+  "avg200": 72986.54,
+  "move_7d_pct": -3.66,
+  "move_30d_pct": -5.4,
+  "move_90d_pct": 25.05,
+  "day_low": 79380.36,
+  "day_high": 80345.39
+ },
+ "unavailable": [
+  "SR3",
+  "VX",
+  "ZC",
+  "ZS",
+  "ZW",
+  "ZL",
+  "KC",
+  "LE",
+  "6E",
+  "6J",
+  "6B",
+  "6A",
+  "6C",
+  "6S",
+  "6N",
+  "SB",
+  "CT"
+ ],
+ "macro": {
+  "treasury_print_date": "2026-10-23",
+  "ust2y": 4.69,
+  "ust10y": 5,
+  "ust30y": 5.33,
+  "note": "FMP treasury-rates still shows the Oct 23 print at run time. No dated Oct 27 market wire, Fed-odds read or spot BTC ETF flow figure found via WebSearch (results undated or older). Watchlist sync: dashboard and Analyzer identical (19 on); no write needed."
+ }
+}
