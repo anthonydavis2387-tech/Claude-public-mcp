@@ -3089,5 +3089,82 @@
   "moat_source": "https://www.morningstar.com/stocks/dividend-aristocrat-thats-20-undervalued",
   "last_deep_check": "2026-10-22",
   "last_quick_check": "2026-10-22"
+ },
+ "ACN": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "No aggregate institutional-ownership percentage surfaced; Q2 2026 13F top holders are BlackRock (~12.8% of the reported 13F pool), Vanguard Capital Management (8.2%) and State Street (6.3%), with mixed position changes among small filers.",
+  "inst_own_source": "https://www.insiderset.com/investors/stocks/ACN/activity",
+  "moat_verdict": "stable",
+  "moat_summary": "Secondhand reports cite a Morningstar narrow moat resting on switching costs and intangibles; bookings softened (Q3 bookings -2%, managed-services bookings -15%) and AI could compress delivery hours, though record advanced-AI bookings argue it is absorbing demand.",
+  "moat_source": "https://www.stockintent.com/blog/accenture-moat-analysis",
+  "last_deep_check": "2026-10-26",
+  "last_quick_check": "2026-10-26"
+ },
+ "BDX": {
+  "inst_own_pct": 87.47,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "As of 2026 Q1, 2,890 institutions held 241.06M shares (87.47%); holdings fell 46.78M shares from Q4 2025. Vanguard and BlackRock added, T. Rowe Price cut 1.85M shares. (Source link is a best match from search results; figure not verified on the page.)",
+  "inst_own_source": "https://www.tradingkey.com/markets/stocks/bdx/ownership",
+  "moat_verdict": "stable",
+  "moat_summary": "Morningstar maintains a narrow moat for Becton Dickinson (cost advantages, switching costs), unchanged across 2026 reviews; life sciences separation seen as final step of its course correction.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/bdx/quote",
+  "last_deep_check": "2026-10-26",
+  "last_quick_check": "2026-10-26"
+ },
+ "EW": {
+  "inst_own_pct": 87.03,
+  "inst_own_trend": "stable",
+  "inst_own_summary": "About 87% of shares are held by institutions, led by Vanguard (12.2%) and BlackRock (9.1%) as of Dec 2025; the searches showed no clear net buying or selling trend.",
+  "inst_own_source": "https://fintel.io/so/us/ew",
+  "moat_verdict": "durable",
+  "moat_summary": "Wide moat built on the SAPIEN TAVR platform, 15+ years of clinical evidence and durable pricing, with share gains after Boston Scientific exited TAVR. Abbott and Medtronic competition and reimbursement shifts are risks.",
+  "moat_source": "https://seekingalpha.com/article/4909180-edwards-lifesciences-has-everything-investors-want-except-value",
+  "last_deep_check": "2026-10-26",
+  "last_quick_check": "2026-10-26"
+ },
+ "TTWO": {
+  "inst_own_pct": 95.46,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "Institutions hold about 95% of shares, with 12-month inflows of $33.06B versus $4.08B of outflows, though some holders such as Wellington (-24.4%) trimmed.",
+  "inst_own_source": "https://www.tradingkey.com/markets/stocks/ttwo/ownership",
+  "moat_verdict": "durable",
+  "moat_summary": "Moat rests on Rockstar's GTA franchise IP and the exclusive NBA simulation license through 2035. It is title-concentrated, and mobile has a weaker moat due to user acquisition costs and platform fees.",
+  "moat_source": "https://beanvest.com/stock/take-two-interactive/moat",
+  "last_deep_check": "2026-10-26",
+  "last_quick_check": "2026-10-26"
+ },
+ "CIEN": {
+  "inst_own_pct": 72.47,
+  "inst_own_trend": "rising",
+  "inst_own_summary": "About 72.5% institutional in Q1 2026 per VCP Scanner (up from 48.2% in Q4 2025, a large jump on a third-party tracker); FMR about 15.0%, BlackRock about 9.5% (trimmed 19.8%), while State Street and Geode added and several smaller active managers cut.",
+  "inst_own_source": "https://vcpscanner.com/stock/cien/institutional-holders",
+  "moat_verdict": "stable",
+  "moat_summary": "Technology leadership and coherent-optics IP (WaveLogic) give a lead of roughly 12 to 18 months in 1.6T optics, but Nokia now holds about 20% global share against Ciena's 19%, Morningstar's bear case is rising competition against its dominant share, and the top 10 customers often exceed 50% of revenue. The Morningstar moat rating itself is paywalled.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/cien/quote",
+  "last_deep_check": "2026-10-27",
+  "last_quick_check": "2026-10-27"
+ },
+ "VST": {
+  "inst_own_pct": null,
+  "inst_own_trend": null,
+  "inst_own_summary": "No aggregate institutional-ownership percentage surfaced; the filer-level 13F data found is mixed (Morgan Stanley +4.32% to 8.26M shares in Q1 2026, Stevens Capital -46.43%, Exchange Traded Concepts +11.68% in Q2 2026).",
+  "inst_own_source": "https://fintel.io/so/us/vst/morgan-stanley",
+  "moat_verdict": "stable",
+  "moat_summary": "Nuclear plants carry high build costs and regulatory barriers and the integrated retail-plus-generation model hedges its own output, but the sources found are low-quality aggregators (no Morningstar rating surfaced) and flag about $21B of debt, so the verdict is a cautious 'stable'.",
+  "moat_source": "https://pitchgrade.com/companies/vistra-ai-use-cases",
+  "last_deep_check": "2026-10-27",
+  "last_quick_check": "2026-10-27"
+ },
+ "ROK": {
+  "inst_own_pct": 75.75,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "About 75.75% institutional and hedge-fund ownership per MarketBeat (mid-2026); sources disagree on the latest direction (VCP Scanner shows a 6.34-point quarterly fall, Equibles shares held +1.5%), so the trend is left as mixed. Vanguard holds about 14.2M shares.",
+  "inst_own_source": "https://www.marketbeat.com/instant-alerts/filing-amundi-raises-stock-holdings-in-rockwell-automation-inc-rok-2026-07-30/",
+  "moat_verdict": "durable",
+  "moat_summary": "Morningstar's headline calls Rockwell's automation portfolio wide-moat: a decades-long installed base drives aftermarket and upgrade revenue and software layered on the hardware adds switching costs; the bear case is larger rivals (Siemens with Nvidia) outspending it on R&D. The rating field itself is paywalled.",
+  "moat_source": "https://www.morningstar.com/stocks/xnys/rok/quote",
+  "last_deep_check": "2026-10-27",
+  "last_quick_check": "2026-10-27"
  }
 }
