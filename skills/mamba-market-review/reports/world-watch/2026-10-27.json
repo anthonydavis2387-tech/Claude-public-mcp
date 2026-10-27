@@ -1,0 +1,18 @@
+{
+  "push_headlines": [
+    "No verified Asia close was found tonight, so no index levels are quoted.",
+    "No verified European close or oil settle was found for Tuesday.",
+    "Latin America: no usable same-day report found."
+  ],
+  "on_notice": [
+    "Oil and Gulf supply remain the main overnight risk; sources found tonight disagreed on levels, so none are quoted.",
+    "Check the futures tiles above for the overnight tone before the open."
+  ],
+  "regions": {
+    "asia": {"headline": "No verified Asia close was found tonight.", "detail": "Search snippets disagreed on direction and level for the same indices, so no index levels are quoted here.", "sources": []},
+    "china": {"headline": "No verified Greater China close was found tonight.", "detail": "Searches returned no citable same-day report, so no index levels are quoted here.", "sources": []},
+    "europe": {"headline": "No verified Tuesday European close was found tonight.", "detail": "Snapshots from different times of day conflicted, so no index levels are quoted here.", "sources": []},
+    "latam": {"headline": "No usable same-day Latin America report found tonight.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "mideast": {"headline": "No verified Tuesday oil or Middle East update was found tonight.", "detail": "Reported oil quotes varied widely between sources, so no oil prices are quoted here. The futures tiles above carry the live oil quote.", "sources": []}
+  }
+}
