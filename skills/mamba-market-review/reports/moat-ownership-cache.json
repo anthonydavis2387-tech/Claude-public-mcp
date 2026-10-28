@@ -3166,5 +3166,16 @@
   "moat_source": "https://www.morningstar.com/stocks/xnys/rok/quote",
   "last_deep_check": "2026-10-27",
   "last_quick_check": "2026-10-27"
+ },
+ "LHX": {
+  "inst_own_pct": null,
+  "inst_own_trend": "mixed",
+  "inst_own_summary": "No single trustworthy aggregate surfaced: vcpscanner shows 1,692 institutional holders in Q1 2026 and a 97.97% figure it flags as implausible; top holders are BlackRock about 9.6%, Vanguard Capital Management about 6.5%, Capital World Investors about 5.9% (shares down 5.4% on the quarter) and State Street about 4.7%. Morgan Stanley added 15.25% to its position in Q1 2026.",
+  "inst_own_source": "https://vcpscanner.com/stock/lhx/institutional-holders",
+  "moat_verdict": "stable",
+  "moat_summary": "No Morningstar rating found; a third-party aggregator scores the moat 62/100, strongest in Missile Solutions (scarce solid-rocket-motor propulsion capacity, qualified content on programs such as PAC-3) and moderate in mission integration, secure radios and electronic warfare. Government exposure alone is not a moat.",
+  "moat_source": "https://www.findmymoat.com/stocks/XNYS%3ALHX",
+  "last_deep_check": "2026-10-28",
+  "last_quick_check": "2026-10-28"
  }
 }
