@@ -26,7 +26,7 @@ import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from sectors import GICS_SECTORS, FMP_TO_GICS
 SECTORS = sorted(GICS_SECTORS, key=len, reverse=True)
-FMP_ONLY = re.compile(r'\b(Consumer Cyclical|Consumer Defensive|Financial Services|Basic Materials|(?<!HCA )Healthcare)\b(?=\s*\(|\s*[+\-]\d|\s+sector|\s+names|\s*$)'
+FMP_ONLY = re.compile(r'\b(Consumer Cyclical|Consumer Defensive|(?<!PNC )Financial Services|Basic Materials|(?<!HCA )Healthcare)\b(?=\s*\(|\s*[+\-]\d|\s+sector|\s+names|\s*$)'
                       r'|(?<!Information )\b(Technology)\b(?=\s+sector|\s*\(?[+\-]\d)')   # bare "Technology" only as a sector, not "Micron Technology (MU)"
 POINTS_UNIT = {'ES', 'NQ', 'YM', 'RTY', 'ZB', 'ZN', 'ZF', 'ZT', 'DX'}   # quoted in points: written "7,793.50 pts" (the VIX stays a plain level)
 # words right after a percentage that mean it is not the day's move
