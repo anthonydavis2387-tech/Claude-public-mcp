@@ -1,0 +1,214 @@
+{
+ "date": "2026-11-02",
+ "session": "morning-macro",
+ "generated_at": "2026-11-02T15:54:00Z",
+ "futures": [
+  {
+   "symbol": "ES",
+   "name": "E-Mini S&P 500",
+   "last": 7685.25,
+   "chg_pct": 0.94,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "NQ",
+   "name": "Nasdaq 100",
+   "last": 28835,
+   "chg_pct": 1.05,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "YM",
+   "name": "Mini Dow Jones Industrial Average Index",
+   "last": 52515,
+   "chg_pct": 1.15,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "RTY",
+   "name": "Micro E-mini Russell 2000 Index Futures",
+   "last": 2855.3,
+   "chg_pct": 1.21,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ZB",
+   "name": "30 Year U.S. Treasury Bond Futures",
+   "last": 108.1875,
+   "chg_pct": 0.49,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ZN",
+   "name": "10-Year T-Note Futures",
+   "last": 106.73438,
+   "chg_pct": 0.09,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ZF",
+   "name": "Five-Year US Treasury Note",
+   "last": 104.9,
+   "chg_pct": 0.0,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ZT",
+   "name": "2-Year T-Note Futures",
+   "last": 102.23438,
+   "chg_pct": -0.04,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "CL",
+   "name": "Crude Oil",
+   "last": 97.46,
+   "chg_pct": -6.4,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BZ",
+   "name": "Brent Crude Oil",
+   "last": 106.19,
+   "chg_pct": -6.38,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "NG",
+   "name": "Natural Gas",
+   "last": 2.909,
+   "chg_pct": 0.38,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "RB",
+   "name": "Gasoline RBOB",
+   "last": 2.9482,
+   "chg_pct": -6.6,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HO",
+   "name": "Heating Oil",
+   "last": 4.4824,
+   "chg_pct": -4.14,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "GC",
+   "name": "Gold Futures",
+   "last": 3969.7,
+   "chg_pct": 1.82,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "SI",
+   "name": "Silver Futures",
+   "last": 51.095,
+   "chg_pct": 3.69,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HG",
+   "name": "Copper",
+   "last": 6.573,
+   "chg_pct": 1.4,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "PL",
+   "name": "Platinum",
+   "last": 1457.8,
+   "chg_pct": 1.52,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "PA",
+   "name": "Palladium",
+   "last": 973.25,
+   "chg_pct": -1.46,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZM",
+   "name": "Soybean Meal Futures",
+   "last": 321.05,
+   "chg_pct": -1.09,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "CC",
+   "name": "Cocoa",
+   "last": 5476.5,
+   "chg_pct": 0.43,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "DX",
+   "name": "US Dollar",
+   "last": 101.57,
+   "chg_pct": -0.17,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BTC",
+   "name": "Bitcoin USD",
+   "last": 77602.17,
+   "chg_pct": -0.81,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ETH",
+   "name": "Ethereum USD",
+   "last": 2279.44,
+   "chg_pct": 0.3,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "VIX",
+   "name": "CBOE Volatility Index",
+   "last": 18.46,
+   "chg_pct": -4.94,
+   "trend_flag": "green"
+  }
+ ],
+ "bitcoin": {
+  "price": 77602.17,
+  "chg_pct": -0.81,
+  "year_high": 116410.06,
+  "year_low": 57717.55,
+  "avg50": 81915.91,
+  "avg200": 73148.89,
+  "move_7d_pct": -3.01,
+  "move_30d_pct": -8.43,
+  "move_90d_pct": 21.16,
+  "day_low": 77516.266,
+  "day_high": 78611.45
+ },
+ "unavailable": [
+  "SR3",
+  "VX",
+  "ZC",
+  "ZS",
+  "ZW",
+  "ZL",
+  "KC",
+  "LE",
+  "6E",
+  "6J",
+  "6B",
+  "6A",
+  "6C",
+  "6S",
+  "6N",
+  "SB",
+  "CT"
+ ],
+ "macro": {
+  "treasury_print_date": "2026-10-30",
+  "ust2y": 4.56,
+  "ust10y": 4.94,
+  "ust30y": 5.31,
+  "note": "FMP treasury-rates print at run time. WebSearch found no Nov 2-dated wire coverage. Watchlist sync: dashboard and Analyzer identical (19 on); no write needed."
+ }
+}
