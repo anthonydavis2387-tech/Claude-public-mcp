@@ -1,0 +1,214 @@
+{
+ "date": "2026-11-04",
+ "session": "morning-macro",
+ "generated_at": "2026-11-04T15:03:00Z",
+ "futures": [
+  {
+   "symbol": "ES",
+   "name": "E-Mini S&P 500",
+   "last": 7725.25,
+   "chg_pct": 1.69,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "NQ",
+   "name": "Nasdaq 100",
+   "last": 28792,
+   "chg_pct": 1.72,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "YM",
+   "name": "Mini Dow Jones Industrial Average Index",
+   "last": 53069,
+   "chg_pct": 2.26,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "RTY",
+   "name": "Micro E-mini Russell 2000 Index Futures",
+   "last": 2871.3,
+   "chg_pct": 1.64,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "ZB",
+   "name": "30 Year U.S. Treasury Bond Futures",
+   "last": 107.6875,
+   "chg_pct": 0.17,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ZN",
+   "name": "10-Year T-Note Futures",
+   "last": 106.64063,
+   "chg_pct": 0.13,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ZF",
+   "name": "Five-Year US Treasury Note",
+   "last": 104.88281,
+   "chg_pct": 0.07,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ZT",
+   "name": "2-Year T-Note Futures",
+   "last": 102.21875,
+   "chg_pct": 0.0,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "CL",
+   "name": "Crude Oil",
+   "last": 93.59,
+   "chg_pct": -2.6,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "BZ",
+   "name": "Brent Crude Oil",
+   "last": 100.94,
+   "chg_pct": -2.57,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "NG",
+   "name": "Natural Gas",
+   "last": 2.893,
+   "chg_pct": -0.07,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "RB",
+   "name": "Gasoline RBOB",
+   "last": 2.8128,
+   "chg_pct": -2.37,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HO",
+   "name": "Heating Oil",
+   "last": 4.4072,
+   "chg_pct": -2.72,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "GC",
+   "name": "Gold Futures",
+   "last": 4048.9,
+   "chg_pct": 2.75,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "SI",
+   "name": "Silver Futures",
+   "last": 52.16,
+   "chg_pct": 4.84,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "HG",
+   "name": "Copper",
+   "last": 6.4033,
+   "chg_pct": 0.02,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "PL",
+   "name": "Platinum",
+   "last": 1481.05,
+   "chg_pct": 3.57,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "PA",
+   "name": "Palladium",
+   "last": 993,
+   "chg_pct": 6.36,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "ZM",
+   "name": "Soybean Meal Futures",
+   "last": 317.15,
+   "chg_pct": -0.27,
+   "trend_flag": "red"
+  },
+  {
+   "symbol": "CC",
+   "name": "Cocoa",
+   "last": 5373.5,
+   "chg_pct": -1.13,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "DX",
+   "name": "US Dollar",
+   "last": 101.27,
+   "chg_pct": -0.46,
+   "trend_flag": "green"
+  },
+  {
+   "symbol": "BTC",
+   "name": "Bitcoin USD",
+   "last": 79436.38859,
+   "chg_pct": 2.71,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "ETH",
+   "name": "Ethereum USD",
+   "last": 2401.88,
+   "chg_pct": 5.72,
+   "trend_flag": "neutral"
+  },
+  {
+   "symbol": "VIX",
+   "name": "CBOE Volatility Index",
+   "last": 17.15,
+   "chg_pct": -17.67,
+   "trend_flag": "neutral"
+  }
+ ],
+ "bitcoin": {
+  "price": 79436.39,
+  "chg_pct": 2.71,
+  "year_high": 116410.06,
+  "year_low": 57717.55,
+  "avg50": 81896.33,
+  "avg200": 73157.61,
+  "move_7d_pct": -2.23,
+  "move_30d_pct": -7.36,
+  "move_90d_pct": 23.6,
+  "day_low": 75709.914,
+  "day_high": 79589.5
+ },
+ "unavailable": [
+  "SR3",
+  "VX",
+  "ZC",
+  "ZS",
+  "ZW",
+  "ZL",
+  "KC",
+  "LE",
+  "6E",
+  "6J",
+  "6B",
+  "6A",
+  "6C",
+  "6S",
+  "6N",
+  "SB",
+  "CT"
+ ],
+ "macro": {
+  "treasury_print_date": "2026-11-02",
+  "ust2y": 4.59,
+  "ust10y": 4.91,
+  "ust30y": 5.28,
+  "note": "FMP treasury-rates newest print is Nov 2 (Nov 3 not yet posted). WebSearch found no Nov 4-dated wire coverage of the Fed, oil, yields or Bitcoin ETF flows, so no verified cause is stated. Watchlist sync: dashboard and Analyzer identical (19 on); no write needed."
+ }
+}
