@@ -37,6 +37,7 @@ h = re.sub(r'(<h2>Futures Tape</h2><span class="section-note">)[^<]*(</span>)', 
 # ---------- edition bar ----------
 h = re.sub(r'<div class="edition-bar"><span>.*?</span>', lambda m: f'<div class="edition-bar"><span>2pm MT full study session, {C["today_label"]} (market close) &mdash; all futures, Bitcoin, Dow 30, live Nasdaq 100, live S&amp;P 500 Top 100, the large-cap proxy and the three sector baskets, {len(T)} unique names. Compared against the {C["prior_short"]} full study.</span>', h, count=1, flags=re.S)
 
+h = re.sub(r'(<span class="session-badge">)[^<]*(</span>)', r'\1Full Study\2', h, count=1)
 # ---------- lead (keep the nav block) ----------
 i, j = sec(h, '<section id="lead" class="lead-section">')
 lead = h[i:j]; nav = re.search(r'<nav class="page-nav".*?</nav>', lead, re.S).group(0)
