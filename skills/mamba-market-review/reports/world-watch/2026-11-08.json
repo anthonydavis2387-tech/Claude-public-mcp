@@ -1,0 +1,18 @@
+{
+  "push_headlines": [
+    "Europe's last close on Thursday: the STOXX 600 -0.38%, the DAX -0.43%, the FTSE 100 -0.43%.",
+    "Oil: Brent closed at $103.60 on Nov 3, its lowest since Oct 7, on US-Iran peace-talk hopes.",
+    "Mexico's IPC 71,033 +0.30% on Thursday after a surprise Banxico rate cut."
+  ],
+  "on_notice": [
+    "Gulf supply and US-Iran talks remain the main overnight risk for oil; tanker attacks pushed prices back up late last week.",
+    "It is Sunday, so no Asian close is available; the futures tiles above carry the overnight tone."
+  ],
+  "regions": {
+    "asia": {"headline": "No verified Asia close was found today.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "china": {"headline": "No verified Greater China close was found today.", "detail": "Searches returned no citable same-day report, so no index levels are quoted here.", "sources": []},
+    "europe": {"headline": "Europe's latest close found was Thursday, with tech and financials leading losses.", "detail": "The STOXX 600 -0.38% at 654.87, the DAX -0.43% at 26,325.01 and the FTSE 100 -0.43% at 10,782.66, as concerns over tighter US regulation of artificial intelligence weighed on technology and financial shares. No later close was found.", "sources": [{"name": "Qatar Tribune", "url": "https://www.qatar-tribune.com/article/262874/business/ai-fears-weigh-on-eu-markets-as-rheinmetall-plunges-nearly-17"}, {"name": "Money Times", "url": "https://www.moneytimes.com.br/europa-5-11-26-lils/"}]},
+    "latam": {"headline": "Mexico's IPC hit a six-month high after a surprise Banxico rate cut.", "detail": "The S&P/BMV IPC closed at 71,033 +0.30% on Thursday, while the dollar (USD/MXN) +0.73% at 18.76 pesos. No later Latin America report was found.", "sources": [{"name": "Rio Times", "url": "https://www.riotimesonline.com/mexico-markets-ipc-peso-thursday-november-5-2026/"}]},
+    "mideast": {"headline": "Oil fell sharply on the week on US-Iran peace-talk hopes, with Gulf supply risk still a floor.", "detail": "Brent closed at $103.60 on Nov 3, its lowest since Oct 7, after settling at $104.77 on Nov 2, with WTI at $96.46 on Nov 2. Goldman Sachs raised its December Brent forecast to $105. Tanker attacks in the Gulf pushed prices back up later in the week.", "sources": [{"name": "Nation Thailand", "url": "https://www.nationthailand.com/news/world/40073076"}, {"name": "Nation Thailand", "url": "https://www.nationthailand.com/news/world/40073041"}, {"name": "ARY News", "url": "https://arynews.tv/oil-set-for-sharp-weekly-drop-but-middle-east-supply-concerns-provide-floor"}]}
+  }
+}
