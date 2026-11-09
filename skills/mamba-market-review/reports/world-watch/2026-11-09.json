@@ -1,0 +1,18 @@
+{
+  "push_headlines": [
+    "No verified Asia or Europe close was found for Monday, so no index levels are quoted.",
+    "Oil: no same-day price report was found; US-Iran talks and Gulf supply remain the main risk.",
+    "Latin America: no same-day report was found; the futures tiles carry the overnight tone."
+  ],
+  "on_notice": [
+    "US-Iran talks and Gulf supply remain the main overnight risk for oil.",
+    "Asia opens soon, so the futures tiles above are the best read on the overnight tone."
+  ],
+  "regions": {
+    "asia": {"headline": "No verified Asia close was found today.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "china": {"headline": "No verified Greater China close was found today.", "detail": "Searches returned no citable same-day report, so no index levels are quoted here.", "sources": []},
+    "europe": {"headline": "No verified Europe close was found today.", "detail": "Searches returned only older sessions, so no index levels are quoted here.", "sources": []},
+    "latam": {"headline": "No verified Latin America report was found today.", "detail": "The latest Rio Times coverage found was from late October, so no levels are quoted here.", "sources": []},
+    "mideast": {"headline": "No same-day oil report was found; US-Iran talks and Gulf supply remain the risk.", "detail": "The latest dated oil report found was from October 21, so no prices are quoted here.", "sources": []}
+  }
+}
