@@ -102,6 +102,8 @@ def check_style(lines, R):
         for m in re.finditer(r'\(([A-Z][A-Z0-9.\-]{0,5})\)((?:,[^,.;()]{1,45},)?)\s+(' + DIR_WORDS + r'\s+(?:by\s+)?)?(?:at\s+)?' + NUM + '%', ln):
             if NOT_DAY.match(ln[m.end():m.end() + 30]):
                 continue
+            if not m.group(3) and re.search(r'(?<![\d.])0(?:\.0+)?%$', m.group(0)):
+                continue  # a flat move is written "0.00%" with no sign (house style)
             R.err('unsigned-move', f'{m.group(1)}: write the move with its sign right after the ticker, e.g. "({m.group(1)}) -1.23%"', clip(ln, m.start(), m.end()))
         for m in re.finditer(r'\(([A-Z][A-Z0-9.\-]{0,5})\)\s+(?:closed\s+|ended\s+|finished\s+)?' + NUM + r'%\s+(?:lower|higher)', ln):
             R.err('unsigned-move', f'{m.group(1)}: write "({m.group(1)}) -0.04%" instead of "x% lower/higher"', clip(ln, m.start(), m.end()))
