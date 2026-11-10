@@ -1,0 +1,56 @@
+{
+  "push_headlines": [
+    "Asia rallied on a tech rebound: the Nikkei 225 +2.87% to 60,459.58, the Hang Seng +0.44%.",
+    "Oil kept sliding on US-Iran deal hopes: Brent $91.49 (-1.17%), WTI $86.04 (-0.93%).",
+    "A hotter-than-expected US CPI report lifted Treasury yields and December rate-hike bets."
+  ],
+  "on_notice": [
+    "Rate-hike pricing after the hot US CPI report is the main overnight risk for index futures.",
+    "US-Iran talks: Brent briefly dipped below $90.00 for the first time since August, so any headline on the talks can move oil sharply.",
+    "Brazil's Copom minutes and the real near 5.51 per dollar, its weakest in at least six months, keep Latin America on watch."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Asia rallied as AI and chip stocks rebounded and oil fell.",
+      "detail": "Japan's Nikkei 225 +2.87% to 60,459.58. South Korea's Kospi led the region with a gain of more than 4%, closing at 5,239.13. The rally followed a tech rebound on Wall Street and a further drop in oil.",
+      "sources": [
+        {"name": "CNBC live updates", "url": "https://cnbc.com/2026/11/09/stock-market-today-live-updates.html"},
+        {"name": "IOL Markets today", "url": "https://iol.co.za/business/economy/2026-11-10-markets-today-oil-prices-slide-further-as-hopes-of-us-iran-deal-lift-global-stocks/"},
+        {"name": "investingLive", "url": "https://investinglive.com/stock-market-update/nikkei-kospi-extend-rebound-as-ai-and-chip-stocks-surge-recouping-friday-s-rout/"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong edged higher on HSBC and chip stocks; no verified Shanghai close was found.",
+      "detail": "The Hang Seng +0.44% to 24,557.04, led by HSBC and chip names. Searches returned no citable same-day Shanghai Composite close, so no mainland level is quoted here.",
+      "sources": [
+        {"name": "BBN Times", "url": "https://bbntimes.com/financial/hong-kong-stock-exchange-hang-seng-index-rises-to-24-557-04-as-hsbc-and-chip-stocks-lead"}
+      ]
+    },
+    "europe": {
+      "headline": "Europe closed mostly higher on lower oil, but the hot US CPI report trimmed gains.",
+      "detail": "The STOXX 600 closed near 658.32, within two points of its August record. Germany's DAX +0.31% to 26,347.45 after US inflation data erased most of its earlier gain, the FTSE 100 -0.29% to 10,751.59, Spain's IBEX 35 +0.98% to 19,936.40 and Italy's FTSE MIB +0.69% to 51,755.08.",
+      "sources": [
+        {"name": "Irish Times", "url": "https://www.irishtimes.com/business/2026/11/10/european-shares-near-record-high-as-lower-oil-prices-boost-sentiment/"},
+        {"name": "Investing.com", "url": "https://uk.investing.com/news/stock-market-news/european-shares-inch-toward-record-highs-as-sinking-oil-eases-inflation-anxiety-4970531"},
+        {"name": "US Muslims (markets wire)", "url": "https://www.usmuslims.com/european-stocks-close-higher-except-in-uk-as-falling-oil-prices-ease-inflation-380945h.htm"},
+        {"name": "Capp Notes closing look", "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-10"}
+      ]
+    },
+    "latam": {
+      "headline": "No Tuesday close was found; Brazil's stocks came in off a strong Monday, with the real weak.",
+      "detail": "On Monday the Ibovespa +2.22% to 172,236, its second straight gain, but it remains 17.6% below its October high. The real ended near 5.51 per dollar, its weakest in at least six months, ahead of Tuesday's Copom minutes.",
+      "sources": [
+        {"name": "Rio Times morning call", "url": "https://www.riotimesonline.com/brazils-financial-morning-call-for-tuesday-november-10-2026/"},
+        {"name": "Rio Times markets", "url": "https://www.riotimesonline.com/brazil-markets-ibovespa-real-monday-november-9-2026/"}
+      ]
+    },
+    "mideast": {
+      "headline": "Oil fell again as US-Iran deal hopes grew; Brent briefly dipped below $90.00.",
+      "detail": "Brent settled at $91.49 (-1.17%) and WTI at $86.04 (-0.93%). Brent touched a session low of $89.16, its first trade below $90.00 since August, after President Trump signaled restraint on Iran while talks progress.",
+      "sources": [
+        {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html"},
+        {"name": "Oilprice.com", "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Plunge-Below-92-as-Trump-Signals-Restraint-on-Iran.html"}
+      ]
+    }
+  }
+}
