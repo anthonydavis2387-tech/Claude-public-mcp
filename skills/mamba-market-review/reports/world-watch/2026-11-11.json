@@ -1,0 +1,53 @@
+{
+  "push_headlines": [
+    "Europe set a record: the STOXX 600 +0.72% to about 663.05, the DAX +1.12%, on AI optimism from Siemens Energy and CoreWeave.",
+    "Oil rebounded after Iran denied talks with Washington: Brent $92.76 (+1.39%), WTI $86.53 (+0.57%).",
+    "Hong Kong slipped: the Hang Seng -0.98% to 24,315.92 as tech shares weakened."
+  ],
+  "on_notice": [
+    "Iran diplomacy: Tehran's denial of talks reversed Tuesday's slide in oil, so any new headline can swing crude sharply overnight.",
+    "Hawkish repricing of Fed rate expectations after Tuesday's hot CPI report remains the main overnight risk for index futures.",
+    "Brazil's fiscal-adjustment talks between the government and Senate are steadying the real after it hit its weakest close in 15 months on Tuesday."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "No verified Nikkei or Kospi close was found for Wednesday; earlier snapshots showed both higher.",
+      "detail": "Searches returned only intraday snapshots for Japan and South Korea, so no closing levels are quoted here. Regional trading was choppy as US rate worries tempered the tech rebound of the prior two sessions.",
+      "sources": [
+        {"name": "Iraqi News (AFP wire)", "url": "https://www.iraqinews.com/business/asian-stocks-fluctuate-as-us-rate-worries-temper-tech-bounce/"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong fell on weaker tech shares; no verified Shanghai close was found.",
+      "detail": "The Hang Seng -0.98% to 24,315.92 and the Hang Seng Tech Index -1.41%. Searches returned no citable Shanghai Composite close, so no mainland level is quoted here.",
+      "sources": [
+        {"name": "ad-hoc-news", "url": "https://www.ad-hoc-news.de/boerse/news/marktberichte/hang-seng-closes-at-24-315-92-down-0-98-percent/70494407"}
+      ]
+    },
+    "europe": {
+      "headline": "European shares logged a record close as AI optimism outweighed Fed worries.",
+      "detail": "The STOXX 600 +0.72% to about 663.05, a record close, after upbeat outlooks from Siemens Energy and CoreWeave lifted technology. Germany's DAX +1.12% to 26,642.06, France's CAC 40 +0.66% to 8,332.88, the FTSE 100 +0.78% to 10,835.48 and the EURO STOXX 50 +1.04% to 6,393.39.",
+      "sources": [
+        {"name": "MarketScreener", "url": "https://www.marketscreener.com/news/europe-s-stoxx-600-near-record-high-as-siemens-energy-coreweave-outlooks-lift-sentiment-ce785edbda88f720"},
+        {"name": "MLQ.ai", "url": "https://mlq.ai/news/european-stocks-close-at-a-record-as-siemens-energy-and-coreweave-lift-ai-shares/"},
+        {"name": "RTTNews", "url": "https://www.rttnews.com/story.aspx?Id=3713039"}
+      ]
+    },
+    "latam": {
+      "headline": "Brazil's stocks rose and the real firmed on fiscal-adjustment hopes.",
+      "detail": "The Ibovespa +0.42% to 172,060.43 as the government and Senate negotiated a 2027 fiscal package, with Petrobras weighing after its quarterly results. The dollar -0.43% to 5.56 reais, a day after its highest close in 15 months.",
+      "sources": [
+        {"name": "InvestNews", "url": "https://investnews.com.br/investimentos/ibovespa-fecha-alta-11-11-2026/"},
+        {"name": "SpaceMoney", "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/ibovespa-alta-dolar-recua-ajuste-fiscal"}
+      ]
+    },
+    "mideast": {
+      "headline": "Oil bounced from its lowest settle since August after Iran denied talks with the US.",
+      "detail": "Brent settled at $92.76 (+1.39%) and WTI at $86.53 (+0.57%). Brent had traded as high as $93.90 late morning in New York before easing, after Iran's top security official denied any talks with Washington.",
+      "sources": [
+        {"name": "MLQ.ai", "url": "https://mlq.ai/news/brent-rises-as-iran-denies-talks-and-the-eia-sees-oil-near-100-through-year-end/"},
+        {"name": "FXStreet", "url": "https://fxstreet.com/news/wti-oil-steadies-above-85-as-hopes-of-a-middle-east-peace-agreement-start-to-fade-202611111206"}
+      ]
+    }
+  }
+}
