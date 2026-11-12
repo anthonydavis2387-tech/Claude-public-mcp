@@ -1,0 +1,54 @@
+{
+  "push_headlines": [
+    "Oil jumped on Houthi claims of attacks on Saudi energy sites: Brent settled at $95.82 and WTI at $88.74, gains of $3.06 and $2.21.",
+    "Asia slid on Nvidia leadership worries: the Hang Seng -1.26%, the Nikkei near 60,819 (-0.70%), the Kospi -0.60%.",
+    "Europe edged past Wednesday's record: the STOXX 600 about +0.20% near 664, the DAX about +0.50%."
+  ],
+  "on_notice": [
+    "Gulf energy security: Houthi claims of strikes on Saudi pipeline and Yanbu facilities, plus reported tanker explosions in the Strait of Hormuz, can move crude sharply overnight.",
+    "Nvidia leadership concerns hit chip stocks across Asia and pressured S&P 500 and Nasdaq 100 futures earlier in the day; watch for any company statement.",
+    "Treasury yields surged and Fed hike concerns intensified on Thursday, weighing on gold and silver."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Tokyo and Seoul fell as worries about Nvidia's leadership hit chipmakers.",
+      "detail": "The Nikkei 225 -0.70% to about 60,819, while the broader Topix +0.20% to 3,937.33. South Korea's Kospi -0.60% and Singapore's FTSE Straits Times -0.13%. One Indian wire report put the Nikkei lower at 60,650, so the Nikkei close is approximate.",
+      "sources": [
+        {"name": "Upstox", "url": "https://upstox.com/news/market-news/us-stocks/dow-futures-trade-flat-s-and-p-500-nasdaq-futures-tank-amid-nvidia-s-leadership-concerns-micron-tech-intel-in-focus/article-203384/"},
+        {"name": "The Tribune", "url": "https://tribuneindia.com/news/business/sensex-nifty-close-flat-as-investors-await-october-cpi-data-realty-banking-stocks-gain"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong fell for a second day; no verified Shanghai close was found.",
+      "detail": "The Hang Seng -1.26%, near 24,009.72, as tech and AI chip stocks sold off on the Nvidia story. Searches returned no citable Shanghai Composite close, so no mainland level is quoted here.",
+      "sources": [
+        {"name": "Malay Mail", "url": "https://www.malaymail.com/news/money/2026/11/12/tokyo-seoul-and-hong-kong-all-in-the-red-asia-stocks-slide-as-investors-fret-about-life-after-jensen-huang/242983"},
+        {"name": "Upstox", "url": "https://upstox.com/news/market-news/us-stocks/dow-futures-trade-flat-s-and-p-500-nasdaq-futures-tank-amid-nvidia-s-leadership-concerns-micron-tech-intel-in-focus/article-203384/"}
+      ]
+    },
+    "europe": {
+      "headline": "European shares inched above Wednesday's record; no confirmed final close was found.",
+      "detail": "The STOXX 600 about +0.20% to the 664 area in late trade, after a record close of 663.05 on Wednesday, and Germany's DAX about +0.50%. Early in the session the STOXX 600 had reached 665.38. These are late-session readings, not official closes.",
+      "sources": [
+        {"name": "Kitco", "url": "https://kitco.com/news/article/2026-11-12/gold-silver-slide-treasury-yields-surge-fed-hike-concerns-intensify-kitco"},
+        {"name": "Yahoo Finance", "url": "https://au.finance.yahoo.com/news/european-shares-near-record-high-083802841.html"}
+      ]
+    },
+    "latam": {
+      "headline": "No Ibovespa close for Thursday was found; Brazil awaited October inflation data.",
+      "detail": "The latest verified Ibovespa close is Wednesday's 172,060 (+0.42%). Rio Times' regional board showed Chile's S&P IPSA 10,552.02 (-0.43%), Colombia's MSCI COLCAP 2,486.39 (-1.65%) and Mexico's IPC +0.73%. Brazil's Selic rate has stood at 13.75% since 17 September.",
+      "sources": [
+        {"name": "Rio Times", "url": "https://www.riotimesonline.com/latin-american-pulse-for-thursday-november-12-2026/"},
+        {"name": "Rio Times", "url": "https://www.riotimesonline.com/brazil-stocks-dollar-await-inflation-data-nov-12/"}
+      ]
+    },
+    "mideast": {
+      "headline": "Oil rallied after Houthi claims of attacks on Saudi energy sites and reported tanker blasts near Hormuz.",
+      "detail": "Brent settled at $95.82 (+3.30%) and WTI at $88.74 (+2.55%), gains of $3.06 and $2.21. The Houthis claimed strikes on a pumping station on Saudi Arabia's East-West pipeline, a Yanbu oil facility and an Aramco building in Riyadh; the Saudi-led coalition said it destroyed two drones. Iran's military said four tankers were hit by explosions in the Strait of Hormuz, which could not be immediately verified.",
+      "sources": [
+        {"name": "Yahoo Finance", "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html"},
+        {"name": "rallies.ai", "url": "https://rallies.ai/news/oil-settles-3-higher-on-attacks-on-saudi-energy-sites-strait-of-hormuz-disruptions-274558af43909ac1"}
+      ]
+    }
+  }
+}
