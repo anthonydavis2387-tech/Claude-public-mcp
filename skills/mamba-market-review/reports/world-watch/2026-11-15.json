@@ -1,0 +1,54 @@
+{
+  "push_headlines": [
+    "Oil posted a second weekly loss on surplus worries: Brent settled Friday at $95.84 and WTI at $88.56, weekly moves of -2.52% and -2.50%.",
+    "Asia split Friday on the Nvidia CEO exit: the Nikkei +0.53% to 61,142.35, the Hang Seng -1.55% to 23,637.60, the Kospi -0.98%.",
+    "Europe notched a third straight record: the STOXX 600 +0.02% to 664.14, capping a +2.4% week, its best since June."
+  ],
+  "on_notice": [
+    "Asia reopens first: Hong Kong has fallen three sessions in a row and the Hang Seng Tech index -3% on Friday, so watch whether the AI selloff tied to Jensen Huang's resignation from Nvidia carries into Monday.",
+    "Oil's focus has shifted from shortages to surplus after the IEA flagged a growing glut, but attacks on shipping around the US blockade of Iran remain a supply risk.",
+    "Fed hike bets: fed funds futures earlier this month priced roughly an 80% chance of a hike at the December 8-9 meeting, so US data this week can move S&P 500 and Nasdaq 100 futures."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Tokyo rose and Seoul fell on Friday as markets weighed the fallout from Nvidia's leadership change.",
+      "detail": "The Nikkei 225 +0.53% to 61,142.35, while South Korea's Kospi -0.98% to 5,290.53. Seven of ten Asian benchmarks closed lower; Taiwan's Taiex +1.35% led the gainers. Markets reopen Monday morning local time; this page has Friday's closes.",
+      "sources": [
+        {"name": "SKN Finance", "url": "https://skn-finance.com/asian-markets-mixed-on-november-13-2026-as-nikkei-gains-0-53-and-hang-seng-falls-1-55/"},
+        {"name": "Armenpress", "url": "https://armenpress.am/en/article/1265619"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong fell for a third straight session; no verified Shanghai close was found.",
+      "detail": "The Hang Seng -1.55% to 23,637.60, down 370.95 points, as the Hang Seng Tech index -3% on AI worries. Searches returned no citable Shanghai Composite close for Friday, so no mainland level is quoted here.",
+      "sources": [
+        {"name": "Edge Consultancy", "url": "https://edgeconsultancykw.com/asia-market-wrap-13-november-2026/"},
+        {"name": "SKN Finance", "url": "https://skn-finance.com/asian-markets-mixed-on-november-13-2026-as-nikkei-gains-0-53-and-hang-seng-falls-1-55/"}
+      ]
+    },
+    "europe": {
+      "headline": "The STOXX 600 closed at a third straight record and its best week since June.",
+      "detail": "The STOXX 600 +0.02% to 664.14, just above Thursday's record of 664.01, for a weekly gain of about 2.4%. The Euro STOXX 50 -0.19% to 6,386.86, a +3.51% week. Insurers and oil majors offset a chip selloff; no confirmed DAX or FTSE 100 close was found.",
+      "sources": [
+        {"name": "MLQ.ai", "url": "https://mlq.ai/news/european-stocks-close-at-another-record-as-insurers-and-oil-majors-offset-a-chip-selloff-capping-the-stoxx-600s-best-week-since-june/"},
+        {"name": "Euronews", "url": "https://www.euronews.com/2026/11/13/european-shares-fall-as-nvidia-ceos-exit-raises-doubts-over-ai-boom"}
+      ]
+    },
+    "latam": {
+      "headline": "No Ibovespa close for Friday was found.",
+      "detail": "The latest verified Ibovespa reading is Wednesday's 172,301.21 (+0.56%). The index has rebounded from 165,528.92 on 3 November, its lowest close since the runoff, while the dollar has held near R$5.50.",
+      "sources": [
+        {"name": "Rio Times", "url": "https://www.riotimesonline.com/brazil-stocks-rebound-real-weak-nov-9/"},
+        {"name": "Rio Times", "url": "https://www.riotimesonline.com/?p=786167"}
+      ]
+    },
+    "mideast": {
+      "headline": "Oil fell for a second straight week as surplus worries outweighed Middle East risk.",
+      "detail": "Brent settled Friday at $95.84 and WTI at $88.56, nearly unchanged on the day; for the week Brent -2.52% and WTI -2.50%. Reuters cited lower geopolitical risk from the US-Israeli war against Iran and an IEA report pointing to a larger global surplus, though attacks on shipping continue to pose a supply risk.",
+      "sources": [
+        {"name": "EnergyNow", "url": "https://energynow.com/2026/11/oil-prices-fall-for-second-straight-week-as-global-supply-surplus-emerges-wti-closes-at-88-56-brent-at-95-84/"},
+        {"name": "Nation Thailand", "url": "https://www.nationthailand.com/news/world/40073488"}
+      ]
+    }
+  }
+}
