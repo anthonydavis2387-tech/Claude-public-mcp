@@ -1,0 +1,49 @@
+{
+  "push_headlines": [
+    "Oil slid on recovering Middle East exports: Brent -3.55% to $92.44 and WTI -3.21% to $85.72.",
+    "Asia fell on the Nvidia fallout: the Nikkei 225 -2.42% to 59,662.02 after Japan's GDP contracted; the Hang Seng +0.52% to 23,759.37.",
+    "Europe's five-day record run ended: the STOXX 600 -0.28% to 662.31 as AI worries hit tech."
+  ],
+  "on_notice": [
+    "Nvidia reports Tuesday after Jensen Huang's exit as CEO, and the Nasdaq slid for a third straight day, so Nasdaq 100 futures may swing overnight.",
+    "Asian chipmakers took the brunt on Monday (SK Hynix -7.9%, Taiwan's Taiex -4.1%), so watch whether the selling extends Tuesday.",
+    "Oil has turned toward surplus: the IEA sees a fourth-quarter surplus above 1.7 million barrels a day as Hormuz flows recover."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Tokyo and Seoul fell as the Nvidia fallout extended into a second week.",
+      "detail": "The Nikkei 225 -2.42% to 59,662.02 after data showed Japan's economy contracted last quarter. In Seoul, SK Hynix -7.9% and Samsung Electronics -4.5% dragged the Kospi; Taiwan's Taiex -4.1% with TSMC -3.4%. No verified Kospi close was found.",
+      "sources": [
+        {"name": "WTOP (AP)", "url": "https://wtop.com/world/2026/11/stocks-decline-in-asia-as-investor-concerns-over-nvidia-fallout-extend-into-another-week/"},
+        {"name": "ABC News (AP)", "url": "https://abcnews.com/amp/Business/wireStory/stocks-decline-asia-investor-concerns-nvidia-fallout-extend-138169919"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong bucked the region as bargain hunters returned; no verified Shanghai close was found.",
+      "detail": "The Hang Seng +0.52% to 23,759.37, snapping a three-session losing run as buyers stepped in at lower valuations. Searches returned no citable Shanghai Composite close for Monday, so no mainland level is quoted here.",
+      "sources": [
+        {"name": "WTOP (AP)", "url": "https://wtop.com/world/2026/11/stocks-decline-in-asia-as-investor-concerns-over-nvidia-fallout-extend-into-another-week/"}
+      ]
+    },
+    "europe": {
+      "headline": "The STOXX 600 slipped from record territory, ending a five-session winning run.",
+      "detail": "The STOXX 600 -0.28% to 662.31 as worries about the AI trade weighed on tech shares. No confirmed DAX or FTSE 100 close was found.",
+      "sources": [
+        {"name": "Yahoo Finance (Reuters)", "url": "https://sg.finance.yahoo.com/news/european-shares-hit-record-highs-083743723.html"}
+      ]
+    },
+    "latam": {
+      "headline": "No Ibovespa close for Monday was found.",
+      "detail": "Searches returned no Rio Times or B3 report for Monday's session, so no Brazilian level is quoted here.",
+      "sources": []
+    },
+    "mideast": {
+      "headline": "Oil fell sharply as Middle East exports recovered and surplus forecasts grew.",
+      "detail": "Brent -3.55% to $92.44 and WTI -3.21% to $85.72 in afternoon trade, per CNBC. The IEA expects a fourth-quarter supply surplus above 1.7 million barrels a day as Strait of Hormuz flows recover, and Goldman Sachs sees Brent averaging $88.00 in 2027.",
+      "sources": [
+        {"name": "CNBC", "url": "https://cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html"},
+        {"name": "HDFC Sky", "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-november-16-2026-brent-falls-1percent-to-94-86-wti-slips-below-88-as-supply-surplus-looms"}
+      ]
+    }
+  }
+}
