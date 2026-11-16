@@ -19,7 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPORTS = os.path.join(HERE, '..', 'reports')
 CACHE = os.path.join(REPORTS, 'annual-cache.json')
 RESEARCH = os.path.join(REPORTS, 'annual-research-cache.json')
-SEC_UA = os.environ.get('SEC_USER_AGENT', 'Mamba Market Review anthonydavis2387@gmail.com')
+SEC_UA = os.environ.get('SEC_USER_AGENT', 'Mamba Market Review research script')
 _last = [0.0]
 
 
