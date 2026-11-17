@@ -1,0 +1,49 @@
+{
+  "push_headlines": [
+    "Europe had its worst day in eight months: the STOXX 600 -1.75% to 650.72 on AI jitters before Nvidia's results.",
+    "Asia slid on new US curbs on China's access to AI chips: the Nikkei 225 -1.18% near 58,960 and the Hang Seng -0.77% near 23,570.",
+    "Oil eased on surplus forecasts: Brent -0.70% to $91.80 and WTI near $85.20."
+  ],
+  "on_notice": [
+    "Nvidia reports after Tuesday's close under interim CEO Colette Kress, so Nasdaq 100 futures may swing overnight.",
+    "Washington said it will tighten China's access to advanced AI chips, which hit Asian chipmakers; watch whether Seoul and Taipei extend losses Wednesday.",
+    "Tanker attacks near the Strait of Hormuz are offsetting the surplus story in oil, so a fresh incident could reverse Tuesday's dip."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Tokyo and Seoul fell as tech sold off on new US chip curbs and Nvidia nerves.",
+      "detail": "The Nikkei 225 -1.18% near 58,960 in Tuesday trade, led down by Kioxia, Advantest and SoftBank Group. The Kospi -2.00% shortly after the open and Taiwan shares -1.40%. No verified closing levels for Seoul or Taipei were found.",
+      "sources": [
+        {"name": "FXStreet", "url": "https://www.fxstreet.com/news/asian-stocks-slide-as-us-tech-curbs-weigh-on-sentiment-nvidia-earnings-awaited-202611170501"},
+        {"name": "Lufkin Daily News (Reuters)", "url": "https://lufkindailynews.com/news_reuters/business/asian-shares-fall-before-nvidia-earnings-anthropic-ipo-test-tech-rally/article_f0fd148f-9631-585f-88b5-6d95f7a56e3f.html"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong gave back Monday's gain as tech led the decline; no verified Shanghai close was found.",
+      "detail": "The Hang Seng -0.77% near 23,570 and the Hang Seng Tech index about -2.00%, as the US move to tighten China's access to advanced AI chips weighed on the sector. Searches returned no citable Shanghai Composite level for Tuesday.",
+      "sources": [
+        {"name": "FXStreet", "url": "https://www.fxstreet.com/news/asian-stocks-slide-as-us-tech-curbs-weigh-on-sentiment-nvidia-earnings-awaited-202611170501"}
+      ]
+    },
+    "europe": {
+      "headline": "The STOXX 600 had its worst day in eight months on AI jitters, with Deutsche Bank sliding.",
+      "detail": "The STOXX 600 -1.75% to 650.72, its biggest one-day drop since March 20, leaving it 2.5% below last week's record high. Tech led the selling ahead of Nvidia's results. No confirmed DAX or FTSE 100 close was found.",
+      "sources": [
+        {"name": "MarketScreener (Reuters)", "url": "https://www.marketscreener.com/news/european-stocks-mark-worst-day-in-eight-months-on-ai-jitters-deutsche-bank-slides-ce785edcdd8df723"}
+      ]
+    },
+    "latam": {
+      "headline": "No Ibovespa close for Tuesday was found.",
+      "detail": "Searches returned no Rio Times or B3 report for Tuesday's session, so no Brazilian level is quoted here.",
+      "sources": []
+    },
+    "mideast": {
+      "headline": "Oil eased on surplus forecasts, with Hormuz tanker attacks limiting the drop.",
+      "detail": "Brent -0.70% to $91.80 and WTI near $85.20, per HDFC Sky, as the IEA's view of a fourth-quarter surplus and recovering Gulf exports weighed. OilPrice.com reported tanker attacks near the Strait of Hormuz offsetting part of that pressure, with Brent stuck near $93.00 in US morning trade.",
+      "sources": [
+        {"name": "HDFC Sky", "url": "https://hdfcsky.com/news/brent-crude-oil-price-today-november-17-2026-brent-falls-0-7percent-to-91-8-wti-slips-to-85-2-as-surplus-looms"},
+        {"name": "OilPrice.com", "url": "https://oilprice.com/Energy/Energy-General/Brent-Stuck-Near-93-as-Hormuz-Tanker-Attacks-Offset-Gulf-Export-Surge.html"}
+      ]
+    }
+  }
+}
