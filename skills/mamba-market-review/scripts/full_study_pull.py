@@ -41,7 +41,7 @@ def main(prior,out):
     scr=get('company-screener?exchange=NASDAQ,NYSE&country=US&isEtf=false&isFund=false&isActivelyTrading=true&marketCapMoreThan=20000000000&limit=400') or []
     scr.sort(key=lambda x:-(x.get('marketCap') or 0))
     base=set(DOW)|set(nd)|set(sp100)
-    bad=('%','notes','trust','preferred','depositary','capital obligations',' pfd')
+    bad=('%','notes','trust','preferred','depositary','capital obligations',' pfd','collateral',' tr mt',' mtg bond',' debenture')
     proxy=[];names={}
     for x in scr:
         s=x['symbol']; n=(x.get('companyName') or '')
