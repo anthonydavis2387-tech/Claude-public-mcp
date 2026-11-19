@@ -1,0 +1,50 @@
+{
+  "push_headlines": [
+    "Europe fell for a fourth day on AI valuation worries: the DAX -1.06% to 25,463.81 and the FTSE 100 -0.93% to 10,452.68.",
+    "Asia split after Nvidia's results: Tokyo and Seoul gained on chipmakers while the Hang Seng -1.12% to 22,816.43.",
+    "Oil was flat as Hormuz mine reports offset surplus fears: Brent +0.03% to $91.98 and WTI -0.06% to $83.21."
+  ],
+  "on_notice": [
+    "Nvidia guided fourth-quarter revenue near $130 billion, but the stock is also fighting headlines around Jensen Huang, so Nasdaq 100 futures may stay jumpy overnight.",
+    "Iran's navy said two tankers struck mines in the Strait of Hormuz, an unverified claim; any confirmation could lift oil quickly.",
+    "Hong Kong tech hit a four-month low on US chip restrictions, so watch whether Friday's Asian open extends that slide."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Tokyo and Seoul rose on Nvidia's results, led by chipmakers.",
+      "detail": "The Nikkei 225 traded above 59,300 in Thursday's session after Nvidia reported third-quarter revenue of $115.8 billion, with SoftBank Group and Tokyo Electron among the leaders. The Kospi near 5,080, with SK Hynix +4.19% and Samsung Electronics +2.31%. No verified closing levels were found.",
+      "sources": [
+        {"name": "EdaFace News", "url": "https://news.edaface.com/2026/11/19/nvidia-rally-push-nikkei-and-kospi-rise-hang-seng-fall/"},
+        {"name": "Coinpedia", "url": "https://coinpedia.org/news/asian-markets-split-after-nvidia-rally-nikkei-and-kospi-rise-hang-seng-falls/"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong fell as China tech hit a four-month low on US chip curbs; no verified Shanghai close was found.",
+      "detail": "The Hang Seng -1.12% to 22,816.43 and the Hang Seng Tech index -2.50% to a four-month low, per one report; other reports put the Hang Seng's drop closer to 2%. Searches returned no citable Shanghai Composite level for Thursday.",
+      "sources": [
+        {"name": "EdaFace News", "url": "https://news.edaface.com/2026/11/19/nvidia-rally-push-nikkei-and-kospi-rise-hang-seng-fall/"}
+      ]
+    },
+    "europe": {
+      "headline": "European stocks extended their losing streak on AI valuation and growth worries.",
+      "detail": "The DAX -1.06% to 25,463.81 and the FTSE 100 -0.93% to 10,452.68, per Kitco's end-of-day report, with the STOXX 600 near 638.41 after Wednesday's 644.05 close. Bloomberg reported the streak as the longest since August, with food and beverage, personal care, health care and real estate the biggest laggards.",
+      "sources": [
+        {"name": "Kitco", "url": "https://kitco.com/news/article/2026-11-19/gold-falls-below-3650-silver-tumbles-fed-rate-concerns-pressure-metals"},
+        {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-19/european-stocks-rebound-as-anthropic-ipo-revives-the-ai-trade"}
+      ]
+    },
+    "latam": {
+      "headline": "No Ibovespa close for Thursday was found.",
+      "detail": "Searches returned no Rio Times or B3 report for Thursday's session, so no Brazilian level is quoted here.",
+      "sources": []
+    },
+    "mideast": {
+      "headline": "Oil ended flat as reported mine strikes in the Strait of Hormuz offset surplus fears.",
+      "detail": "Brent +0.03% to $91.98 and WTI -0.06% to $83.21, WTI's lowest close since August 26, per Reuters. Iran's navy said two tankers struck mines in the Strait and exploded, a claim not independently verified, while US inventories and surplus forecasts kept a lid on prices.",
+      "sources": [
+        {"name": "Reuters via Investing.com", "url": "https://au.investing.com/news/commodities-news/oil-prices-steady-as-supply-surplus-softens-sentiment-though-gulf-war-supports-4782046"},
+        {"name": "Yahoo Finance (Reuters)", "url": "https://finance.yahoo.com/news/oil-prices-steady-supply-surplus-024608326.html"}
+      ]
+    }
+  }
+}
