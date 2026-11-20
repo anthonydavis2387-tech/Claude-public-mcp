@@ -122,6 +122,8 @@ def check_values(lines, R, stocks, fut, etf, d, prior, alt_fut=None):
              **{s: ('fut', f['last'], f['chg_pct']) for s, f in fut.items()},
              **{v['fund']: ('etf', v['close'], v['chg_pct']) for v in (d.get('sector_funds') or {}).values()}}
     alt = {s: (f['last'], f['chg_pct']) for s, f in (alt_fut or {}).items()}   # 8am: prose may still quote the 2pm close
+    # a stock whose ticker is also a futures root (Colgate-Palmolive CL vs WTI crude CL): either move is valid
+    dual = {s: stocks[s]['chg_pct'] for s in fut if s in stocks}
     for ln in lines:
         # (TICK) +1.23%  -- signed moves right after a ticker, optionally after a short aside
         for m in re.finditer(r'\(([A-Z][A-Z0-9.\-]{0,5})\)((?:,[^,.;()]{1,45},)?)\s+(?:was flat at\s+)?([+\-])' + NUM + '%', ln):
@@ -131,7 +133,7 @@ def check_values(lines, R, stocks, fut, etf, d, prior, alt_fut=None):
             want = known[sym][2]
             got = num(sign + val)
             ok = lambda w: w is not None and abs(got - round(w, decimals(val))) <= 0.5 * 10 ** -decimals(val) + 1e-9
-            if not ok(want) and not (sym in alt and ok(alt[sym][1])):
+            if not ok(want) and not (sym in alt and ok(alt[sym][1])) and not (sym in dual and ok(dual[sym])):
                 R.err('wrong-move', f'{sym}: page says {sign}{val}%, data says {want:+.2f}%', clip(ln, m.start(), m.end()))
         for m in re.finditer(r'\(([A-Z][A-Z0-9.\-]{0,5})\)(?:\s+(?:settled|closed|was|at|to))*\s+\$?' + NUM + r'(?:\s*pts)?\s+\(([+\-]?)' + NUM + r'%\)', ln):
             sym, sign, val = m.group(1), m.group(3), m.group(4)
