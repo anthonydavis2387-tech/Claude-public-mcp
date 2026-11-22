@@ -1,0 +1,45 @@
+{
+  "push_headlines": [
+    "Friday's global tech rout: the Nikkei 225 -5.06%, the Kospi -5.21% and Taiwan's Taiex -6.23%, then the Euro Stoxx 50 -2.81% to 5,941.95.",
+    "Europe closed broadly lower Friday: the STOXX 600 -2.00% to 625.65, the DAX -2.60% to 24,802.78 and the FTSE 100 -1.02% to 10,346.34.",
+    "Oil edged up Friday but fell for a third week: Brent +0.64% to $92.57 and WTI +0.93% to $83.98, while gold -4.62% to $3,515.40."
+  ],
+  "on_notice": [
+    "CME FedWatch showed a 99% probability of a 25-basis-point Fed hike in December, and Governor Waller floated a 50-basis-point move, so rate headlines can swing futures tonight.",
+    "Asia reopens Monday after Friday's worst day in months for Tokyo, Seoul and Taipei; watch whether chipmakers and SoftBank Group extend the slide.",
+    "Bitcoin fell to a near five-month low around $58,000 on Friday as the dollar firmed, so crypto is a quick read on weekend risk appetite."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Asia sold off hard Friday as the global tech rout hit chipmakers.",
+      "detail": "The Nikkei 225 -5.06%, the Kospi -5.21% and Taiwan's Taiex -6.23% on Friday, per an end-of-day European wrap. Reports tied the Nikkei's drop to a sharp fall in SoftBank Group and hot Japanese core inflation that raised bets on a December rate hike. No verified closing levels were found.",
+      "sources": [
+        {"name": "Edge Consultancy Europe Market Wrap", "url": "https://edgeconsultancykw.com/europe-market-wrap-20-november-2026/"}
+      ]
+    },
+    "china": {
+      "headline": "No verified Hang Seng or Shanghai close for Friday was found.",
+      "detail": "Searches returned no citable Hong Kong or mainland China closing levels for Friday's session, so none are quoted here.",
+      "sources": []
+    },
+    "europe": {
+      "headline": "Every major European index closed lower Friday, led by technology.",
+      "detail": "The STOXX 600 -2.00% to 625.65, the Euro Stoxx 50 -2.81% to 5,941.95, the DAX -2.60% to 24,802.78, the FTSE 100 -1.02% to 10,346.34 and the CAC 40 -1.89% to 7,927.75. The STOXX 600 technology sector -5.39% and banks -3.05%, while health care -0.16% held up best.",
+      "sources": [
+        {"name": "Edge Consultancy Europe Market Wrap", "url": "https://edgeconsultancykw.com/europe-market-wrap-20-november-2026/"}
+      ]
+    },
+    "latam": {
+      "headline": "No Ibovespa report for Friday was found.",
+      "detail": "Searches returned no Rio Times or B3 report for Friday's session, and Brazil's Black Consciousness holiday may have closed B3, which could not be confirmed. No Brazilian level is quoted here.",
+      "sources": []
+    },
+    "mideast": {
+      "headline": "Oil rose Friday but posted a third straight weekly loss as Middle East exports stayed strong.",
+      "detail": "Brent +0.64% to $92.57 and WTI +0.93% to $83.98 at Friday's settlement, with Brent about -5% on the week. Strong Middle East exports outweighed Houthi attacks and reports of tanker disruptions in the Strait of Hormuz.",
+      "sources": [
+        {"name": "Investrade Market Review", "url": "https://investrade.com/market-review-november-20-2026/"}
+      ]
+    }
+  }
+}
