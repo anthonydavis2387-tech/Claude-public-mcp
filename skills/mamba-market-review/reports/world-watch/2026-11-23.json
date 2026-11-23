@@ -1,0 +1,52 @@
+{
+  "push_headlines": [
+    "Wall Street roared back Monday: the S&P 500 +4.73% to 7,237.17 and the Nasdaq +6.51% to 24,089.56, the best day since April 2025.",
+    "Europe rebounded as chipmakers led: the STOXX 600 +1.87% to 637.32, ending five straight daily declines.",
+    "Asia was split: the Kospi -3.30% to 4,708.54 while Taiwan's Taiex +2.20%; Tokyo was closed for a holiday."
+  ],
+  "on_notice": [
+    "Monday's rebound followed Friday's slide into correction territory; watch whether Asia, led by Seoul and Tokyo's reopening, follows Wall Street higher tonight.",
+    "Oil slipped Monday, with Brent trading near $91.97 midmorning, as Iranian attacks on Strait of Hormuz shipping limited the losses.",
+    "Brazil's Ibovespa -0.95% to its lowest close since January 13 on fiscal-package worries; the real stays a pressure point."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Seoul sold off again while Taipei bounced; Tokyo was closed for a holiday.",
+      "detail": "The Kospi -3.30% to 4,708.54 after falling as much as 5.80% intraday on AI-bubble fears, while Taiwan's Taiex +2.20% after opening lower. In India the Nifty 50 -1.75% to 25,349.65.",
+      "sources": [
+        {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount"},
+        {"name": "Business Standard", "url": "https://business-standard.com/markets/news/stock-market-live-november-23-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126112300084_1.html"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong pared a near 2% early drop to finish about flat.",
+      "detail": "The Hang Seng about -0.10% at the close after falling nearly 2% earlier in the session. No verified Shanghai Composite close was found, so none is quoted here.",
+      "sources": [
+        {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount"}
+      ]
+    },
+    "europe": {
+      "headline": "European stocks snapped a five-day losing streak as chipmakers rallied.",
+      "detail": "The STOXX 600 +1.87% to 637.32 (a single report; treat as provisional) after a near 6% drop the previous week. Chipmakers ASML, ASM International and BE Semiconductor gained between 2.80% and 4.00% after Nvidia's board reinstated Jensen Huang as CEO.",
+      "sources": [
+        {"name": "MLQ.ai", "url": "https://mlq.ai/news/european-stocks-close-up-nearly-2-as-chipmakers-lead-a-rebound-from-the-ai-rout/"},
+        {"name": "MarketScreener", "url": "https://www.marketscreener.com/news/european-stocks-recover-after-steep-technology-led-selloff-ce7851dad98cf522"}
+      ]
+    },
+    "latam": {
+      "headline": "Brazil's Ibovespa fell to its lowest close since January 13.",
+      "detail": "The Ibovespa -0.95% to 164,796.05 as Petrobras weighed and caution over the fiscal package in the lower house grew. Hapvida -5.84% led the losers, while Magazine Luiza +9.63% led the gainers.",
+      "sources": [
+        {"name": "SBT News", "url": "https://sbtnews.sbt.com.br/noticia/economia/ibovespa-fecha-em-queda-0-95-e-renova-minima-de-janeiro"},
+        {"name": "SpaceMoney", "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/ibovespa-queda-petrobras-risco-fiscal-2"}
+      ]
+    },
+    "mideast": {
+      "headline": "Oil eased with the global selloff as Hormuz shipping attacks limited losses.",
+      "detail": "Brent -0.65% to $91.97 and WTI near $82.92 by midmorning in London, per CNBC; no settlement price was found. Iranian attacks on ships in the Strait of Hormuz kept a floor under prices after Brent's third straight weekly loss.",
+      "sources": [
+        {"name": "CNBC", "url": "https://www.cnbc.com/amp/2026/11/23/oil-prices-fall-amid-equity-sell-off-though-iran-war-attacks-limit-losses.html"}
+      ]
+    }
+  }
+}
