@@ -1,0 +1,57 @@
+{
+  "push_headlines": [
+    "Asian chipmakers rallied on Jensen Huang's return: the Nikkei 225 +3.91% to 58,644.63 and the Kospi +6.98% back above 5,000.",
+    "Europe gave back some of Monday's rebound: the STOXX 600 -0.66% to 632.74 as ASML slipped.",
+    "Oil kept sliding on US-Iran talk hopes: Brent near $89.08 (-0.32%), about 24% below its October 30 close."
+  ],
+  "on_notice": [
+    "Wall Street split Tuesday, with the Dow +0.85% to close above 50,000 while tech lagged; watch whether Asia's chip rally holds tonight.",
+    "Hong Kong's Hang Seng -0.73% to an 18-month low even as Seoul and Tokyo surged; China remains the weak spot in the region.",
+    "Brent is down about 24% from $117.64 on October 30 ahead of the OPEC+ meeting on November 29; any US-Iran deal headline could move it sharply."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Tokyo and Seoul surged as chip suppliers rallied on Nvidia's leadership news.",
+      "detail": "The Nikkei 225 +3.91% to 58,644.63 as Tokyo caught up after Monday's holiday (other reports put the gain near +4.11%). The Kospi +6.98% to 5,036.99, recovering from Monday's 4,708.54 (a single report; treat as provisional), and Taiwan's Taiex also posted a large gain.",
+      "sources": [
+        {"name": "Capp Notes", "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"},
+        {"name": "Investing.com", "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-411-5047180"},
+        {"name": "MLQ.ai", "url": "https://mlq.ai/news/taiwans-taiex-closes-up-9-and-the-kospi-tops-5000-as-asian-chipmakers-rally-on-huangs-return/"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong slipped to an 18-month low as early AI gains faded.",
+      "detail": "The Hang Seng -0.73% to 22,219.65 and the Hang Seng Tech Index -1.17% to 3,466, with Xiaomi and Meituan both down more than 3%. No verified Shanghai Composite close was found, so none is quoted here.",
+      "sources": [
+        {"name": "ad-hoc-news", "url": "https://www.ad-hoc-news.de/boerse/news/marktberichte/hang-seng-closes-0-73-prozent-lower-as-ai-gains-fade/70549505"},
+        {"name": "The Standard", "url": "https://thestandard.com.hk/finance/article/349469/Hong-Kong-shares-close-lower-Xiaomi-and-Meituan-down-over-3pc"}
+      ]
+    },
+    "europe": {
+      "headline": "European stocks eased as Monday's tech rally faded.",
+      "detail": "The STOXX 600 -0.66% to 632.74, giving back part of Monday's rebound, with ASML -3.45% in US trading. No verified DAX or FTSE 100 close was found, so none is quoted here.",
+      "sources": [
+        {"name": "Capp Notes", "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"},
+        {"name": "CNN Markets", "url": "https://edition.cnn.com/markets"}
+      ]
+    },
+    "latam": {
+      "headline": "Brazil's Ibovespa fell again as Vale and Petrobras weighed.",
+      "detail": "The Ibovespa -0.43% to 164,089.81 after trading as high as 167,580 intraday; Vale -5.51% and CSN -6.90% as commodities came under pressure, and Petrobras's chief gave no promise of extraordinary dividends. The dollar eased to about R$5.91.",
+      "sources": [
+        {"name": "SpaceMoney", "url": "https://www.spacemoney.com.br/economia/macroeconomia/ibovespa-queda-vale-petrobras-dolar-plp-meta-fiscal"},
+        {"name": "Tribuna do Sertão (Estadão Conteúdo)", "url": "https://www.tribunadosertao.com.br/geral/2026/11/24/1029329-fechamento-do-mercado-financeiro"},
+        {"name": "Minhas Economias", "url": "https://minhaseconomias.com.br/blog/planejamento-financeiro/ibovespa-fecha-em-queda-com-commodities-sob-pressao-e-pacote-fiscal"}
+      ]
+    },
+    "mideast": {
+      "headline": "Oil drifted lower as markets weighed a possible US-Iran agreement.",
+      "detail": "January Brent $89.08 (-0.32%) at 15:58 GMT, about 24% below its October 30 close of $117.64, ahead of the OPEC+ meeting on November 29. WTI traded near $79.79. No settlement price was found.",
+      "sources": [
+        {"name": "FinanceFeeds", "url": "https://financefeeds.com/brent-crude-oil-price-89-08-tuesday-24-percent-monthly-slide-opec-plus-29-november-bull-92-bear-86/"},
+        {"name": "Investify", "url": "https://www.investify.pk/crude-oil-price"},
+        {"name": "Kotak Neo", "url": "https://www.kotakneo.com/news/commodities/oil-price-today-24-november-2026-brent-falls-below-90-us-iran-talks-supply-risks/"}
+      ]
+    }
+  }
+}
