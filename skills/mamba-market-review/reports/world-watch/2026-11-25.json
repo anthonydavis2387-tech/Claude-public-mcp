@@ -1,0 +1,57 @@
+{
+  "push_headlines": [
+    "The AI chip sell-off hit Asia hard: the Kospi -6.16% to 4,697.51 and the Nikkei 225 -2.78% to 57,011.62.",
+    "Europe followed lower: the STOXX 600 -1.06% to 626.03 and the DAX -1.26% to 24,702.13.",
+    "Brent bounced to $92.41 (+1.10%) after the Houthis claimed a strike on Saudi Arabia's Ras Tanura refinery."
+  ],
+  "on_notice": [
+    "The AI sell-off is the story: Nasdaq futures traded -3.03% Wednesday morning; watch whether Asian chipmakers stabilize tonight after Seoul's sidecar trigger.",
+    "China keeps weakening: the Shanghai Composite -2.03% to 3,476.47, below 3,500 and its lowest close since July 2025, and the Hang Seng's seventh straight decline.",
+    "OPEC+ meets Sunday, November 29 on 2027 quotas, with Gulf attack headlines and US-Iran talks pulling oil in both directions."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Seoul and Tokyo gave back Tuesday's chip rally as the AI sell-off returned.",
+      "detail": "The Kospi -6.16% to 4,697.51, losing 308.52 points, and the Korea Exchange triggered a sell-side sidecar at 9:08 a.m. as Samsung Electronics and SK hynix slid. The Nikkei 225 -2.78% to 57,011.62, losing 1,633.01 points after a morning low of 56,502.97. Taiwan's Taiex also slid sharply.",
+      "sources": [
+        {"name": "Korea JoongAng Daily", "url": "https://koreajoongangdaily.com/business/kospi-plunges-back-below-5000-as-chip-selloff-returns/12990750"},
+        {"name": "ABC News (Australia) live blog", "url": "https://abc.net.au/news/2026-11-25/asx-markets-business-live-news/107423208"},
+        {"name": "National Herald", "url": "https://www.nationalheraldindia.com/business/asian-stocks-slide-as-ai-sell-off-deepens-taiwan-falls-more-than-6-per-cent"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong broke below 22,000 and Shanghai lost 3,500 as tech led losses.",
+      "detail": "The Hang Seng -1.14% to about 21,966, down 253 points for a seventh straight decline, and the Hang Seng Tech Index -2.60% to 3,378. The Shanghai Composite -2.03% to 3,476.47, its lowest close since July 2025, on turnover of 1.39 trillion yuan.",
+      "sources": [
+        {"name": "The Standard", "url": "https://www.thestandard.com.hk/finance/article/349608/Hang-Seng-Index-closes-below-22000-marks"},
+        {"name": "Longbridge", "url": "https://longbridge.com/en/news/306749385"},
+        {"name": "BigGo Finance", "url": "https://finance.biggo.com/news/9a41ae49-d3b1-466a-a4cc-47bfedc97df7"}
+      ]
+    },
+    "europe": {
+      "headline": "European stocks fell for a second day, with Germany taking the brunt.",
+      "detail": "The STOXX 600 -1.06% to 626.03 at the 17:30 CET close, the DAX -1.26% to 24,702.13 and the FTSE 100 -0.32% to 10,433.66 (another report has 10,426). Infineon and miners led the losses, while Sanofi jumped on its $41 billion Insmed deal.",
+      "sources": [
+        {"name": "MLQ.ai", "url": "https://mlq.ai/news/european-stocks-close-lower-as-infineon-and-miners-slide-sanofi-jumps-on-its-41-billion-insmed-deal/"},
+        {"name": "Longbridge", "url": "https://longbridge.com/en/news/306809580"}
+      ]
+    },
+    "latam": {
+      "headline": "Brazil's Ibovespa snapped a four-day losing streak.",
+      "detail": "The Ibovespa +1.58% to 166,684.61, trading between 164,000 and 167,000 on R$26.2 billion of volume, with US data, a proposed US tariff on Brazilian goods and the federal budget revision in focus. The commercial dollar -1.59% to R$5.8168.",
+      "sources": [
+        {"name": "BMC News", "url": "https://bmcnews.com.br/mercados/ibovespa-tem-alta-de-1-58-aos-166-684-61-pontos/"},
+        {"name": "Canal Rural", "url": "https://www.canalrural.com.br/economia/ibovespa-fecha-em-alta-de-158-e-dolar-comercial-recua-159/"},
+        {"name": "Minhas Economias", "url": "https://minhaseconomias.com.br/blog/planejamento-financeiro/ibovespa-fecha-em-alta-com-dados-economicos-dos-eua-e-cenario-fiscal-no-radar"}
+      ]
+    },
+    "mideast": {
+      "headline": "Oil rebounded after a Houthi claim of a strike on Saudi Arabia's Ras Tanura refinery.",
+      "detail": "January Brent $92.41 (+1.10%) at 13:05 GMT, up from Tuesday's $91.40 settlement, in an $89.50 to $92.73 range; another report had it near $93.60 by mid-morning New York time. Riyadh said it shot down four drones. Uncertainty over 2027 output quotas ahead of Sunday's OPEC+ meeting added support. No settlement price was found.",
+      "sources": [
+        {"name": "FinanceFeeds", "url": "https://financefeeds.com/brent-crude-oil-price-92-41-wednesday-houthi-ras-tanura-claim-opec-plus-29-november-bull-95-bear-89/"},
+        {"name": "OilPrice.com", "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html"}
+      ]
+    }
+  }
+}
