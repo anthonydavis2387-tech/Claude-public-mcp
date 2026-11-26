@@ -1,0 +1,55 @@
+{
+  "push_headlines": [
+    "Europe rallied with US markets shut for Thanksgiving: the STOXX 600 +1.83% to 637.50 and the DAX +2.14% to 25,231.42.",
+    "Brazil's Ibovespa +6.07% to 176,799.84, its best day since the election's first round, on reports Luiz Carlos Trabuco may take the Finance Ministry.",
+    "Asia bounced back after Wednesday's chip rout: the Nikkei 225 +0.90% to 57,499.16 and the Hang Seng +1.20% to 22,226.88."
+  ],
+  "on_notice": [
+    "OPEC+ meets Sunday, November 29 on 2027 output policy, with analysts seeing a market leaning toward surplus and Gulf attack headlines still in play.",
+    "The AI trade is still fragile: the Kospi touched +2.60% intraday before ending +0.30%, so watch whether chipmakers hold the rebound into Friday's shortened US session.",
+    "Milder-than-feared US tariff proposals fueled the relief rally; reports say they are unlikely to take effect before February or March."
+  ],
+  "regions": {
+    "asia": {
+      "headline": "Tokyo and Taipei led a rebound in AI-linked shares; Seoul faded late.",
+      "detail": "The Nikkei 225 +0.90% to 57,499.16, led by SoftBank and Kioxia. The Kospi +0.30% to 4,711.21 after Wednesday's -6.20% drop, after touching +2.60% intraday. Taiwan's Taiex +2.50%.",
+      "sources": [
+        {"name": "BNN Bloomberg (AP)", "url": "https://www.bnnbloomberg.ca/markets/2026/11/26/world-shares-push-higher-while-markets-in-us-will-be-closed-for-thanksgiving/"},
+        {"name": "US News (AP)", "url": "https://www.usnews.com/news/us/articles/2026-11-26/asian-shares-rebound-led-by-ai-stocks-after-wall-street-pares-sharp-losses"}
+      ]
+    },
+    "china": {
+      "headline": "Hong Kong snapped its losing streak while Shanghai went nowhere.",
+      "detail": "The Hang Seng +1.20% to 22,226.88, back above 22,000 after seven straight declines. The Shanghai Composite was essentially flat at 3,476.88, up less than 0.1%.",
+      "sources": [
+        {"name": "BNN Bloomberg (AP)", "url": "https://www.bnnbloomberg.ca/markets/2026/11/26/world-shares-push-higher-while-markets-in-us-will-be-closed-for-thanksgiving/"}
+      ]
+    },
+    "europe": {
+      "headline": "European stocks posted a broad relief rally on tariff relief and a tech rebound.",
+      "detail": "The STOXX 600 +1.83% to 637.50, the DAX +2.14% to 25,231.42, the CAC 40 +1.61% to 8,108.74 and the FTSE 100 +1.75% to 10,609.30; Italy's FTSE MIB +2.36% led the majors. Imperial Brands +13.00% on Altria bid talk. The regional tech index is still about -12.00% this month.",
+      "sources": [
+        {"name": "MLQ.ai", "url": "https://mlq.ai/news/europes-stoxx-600-gains-18-imperial-brands-jumps-13-on-altria-bid-talk/"},
+        {"name": "CNBC", "url": "https://www.cnbc.com/amp/2026/11/26/stock-markets-today-.html"}
+      ]
+    },
+    "latam": {
+      "headline": "Brazil's Ibovespa soared on Finance Ministry hopes and soft inflation.",
+      "detail": "The Ibovespa +6.07% to 176,799.84, its biggest gain since the first round of the presidential election, as banks led on expectations that Bradesco chairman Luiz Carlos Trabuco will take the Finance Ministry. November's IPCA-15 came in at 0.22%, below October's 0.32%. The commercial dollar -1.26% to R$5.7435, its fourth straight decline.",
+      "sources": [
+        {"name": "SBT News", "url": "https://sbtnews.sbt.com.br/noticia/economia/ibovespa-dispara-6-e-dolar-cai-com-trabuco-no-radar"},
+        {"name": "B3 Bora Investir", "url": "https://borainvestir.b3.com.br/noticias/mercado/ibovespa-b3-sobe-6-com-ipca-15-e-ministerio-da-fazenda-no-radar-dolar-cai-a-r-574/"},
+        {"name": "Melhor Investimento", "url": "https://melhorinvestimento.net/noticias/ibovespa-hoje"}
+      ]
+    },
+    "mideast": {
+      "headline": "Oil held its gains ahead of Sunday's OPEC+ meeting, but quotes conflict.",
+      "detail": "AP had Brent $90.79 (+0.20%) on Thursday; other reports put it near $91.09 (+0.50%), and one intraday report near $94.97. Supply worries after the attack on Saudi Arabia's largest refinery and Strait of Hormuz risk are weighed against a building surplus. No settlement price was found.",
+      "sources": [
+        {"name": "BNN Bloomberg (AP)", "url": "https://www.bnnbloomberg.ca/markets/2026/11/26/world-shares-push-higher-while-markets-in-us-will-be-closed-for-thanksgiving/"},
+        {"name": "MarketScreener", "url": "https://www.marketscreener.com/news/opec-allies-face-tough-choices-as-surplus-builds-hormuz-risks-persist-commodities-roundup-ce7851d9d980f723"},
+        {"name": "FX Empire", "url": "https://www.fxempire.com/forecasts/article/oil-price-forecast-rebound-faces-a-test-as-opec-quota-talks-near-1647404"}
+      ]
+    }
+  }
+}
