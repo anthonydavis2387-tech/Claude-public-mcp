@@ -32,7 +32,8 @@ def trend_txt(f):
 cards = ''.join(f'<div class="fcard"><span class="src-tag">FMP</span><div class="sym">{s} ({NAMES[s]})</div><div class="px mono">{fpx(s, F[s]["last"])}</div><div class="chg {cls(F[s]["chg_pct"])} mono">{sg(F[s]["chg_pct"])}</div><div class="sym" style="margin-top:4px;font-size:10px">{trend_txt(F[s])}</div></div>' for s in NAMES)
 i = h.index('<div class="futures-row">'); j = h.index('</section>', i)
 h = h[:i] + f'<div class="futures-row">{cards}</div>' + h[j:]
-h = re.sub(r'(<h2>Futures Tape</h2><span class="section-note">)[^<]*(</span>)', lambda m: m.group(1) + f'2:00pm MT, {C["long_label"]} (close). FMP futures quotes; daily % vs prior settle.' + m.group(2), h, count=1)
+# the 8am run writes a note with inner tags (<strong>Data Notes:</strong>), so match up to the note's own </span>
+h = re.sub(r'(<h2>Futures Tape</h2><span class="section-note">).*?(</span>)', lambda m: m.group(1) + f'2:00pm MT, {C["long_label"]} (close). FMP futures quotes; daily % vs prior settle. <strong>Data Notes:</strong> FMP does not price VX, SR3, ZC, ZS, ZW, ZL, KC, LE, SB, CT or the currency futures (6E, 6J, 6B, 6A, 6C, 6S, 6N) on this plan, so they are left off the tape.' + m.group(2), h, count=1, flags=re.S)
 
 # ---------- edition bar ----------
 h = re.sub(r'<div class="edition-bar"><span>.*?</span>', lambda m: f'<div class="edition-bar"><span>2pm MT full study session, {C["today_label"]} (market close) &mdash; all futures, Bitcoin, Dow 30, live Nasdaq 100, live S&amp;P 500 Top 100, the large-cap proxy and the three sector baskets, {len(T)} unique names. Compared against the {C["prior_short"]} full study.</span>', h, count=1, flags=re.S)
